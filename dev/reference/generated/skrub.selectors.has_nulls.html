@@ -786,7 +786,7 @@
 <h1>has_nulls<a class="headerlink" href="#has-nulls" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.has_nulls">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">has_nulls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proportion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/309e647/skrub/selectors/_selectors.py#L844"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.has_nulls" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">has_nulls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proportion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/785d89c/skrub/selectors/_selectors.py#L844"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.has_nulls" title="Link to this definition">#</a></dt>
 <dd><p>Select columns that contain at least one null value, or a proportion of null     values above a given threshold.</p>
 <p>Use this selector to identify columns needing imputation or
 with excessive missing data. This is useful for data quality
@@ -794,7 +794,7 @@ checks and preprocessing pipelines.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>proportion</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a>, optional</span></dt><dd><p>Default 0.0. Select columns where the proportion of null values exceeds
+<dt><strong>proportion</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#float" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a>, optional</span></dt><dd><p>Default 0.0. Select columns where the proportion of null values exceeds
 this threshold (range: 0.0 to 1.0).</p>
 <ul class="simple">
 <li><p>0.0 (default): Selects any column with at least one null value</p></li>

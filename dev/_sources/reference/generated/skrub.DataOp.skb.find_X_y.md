@@ -5,7 +5,7 @@
 Find the nodes that have been marked with `mark_as_X()` and `mark_as_y()`.
 
 * **Returns:**
-  [`dict`](https://docs.python.org/3/library/stdtypes.html#dict)
+  [`dict`](https://docs.python.org/3/builtins/stdtypes.html#dict)
   : A dictionary containing the following keys (all are optional):
     - “X”, if a node has been marked with [`DataOp.skb.mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X).
     - “y”, if a node has been marked with [`DataOp.skb.mark_as_y()`](skrub.DataOp.skb.mark_as_y.md#skrub.DataOp.skb.mark_as_y).

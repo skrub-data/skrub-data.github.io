@@ -231,7 +231,7 @@
 ### Deprecations
 
 - The parameter `order_by` of [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) is deprecated. Passing
-  `order_by` now emits a [`DeprecationWarning`](https://docs.python.org/3/library/exceptions.html#DeprecationWarning)
+  `order_by` now emits a [`DeprecationWarning`](https://docs.python.org/3/builtins/exceptions.html#DeprecationWarning)
   [#2101](https://github.com/skrub-data/skrub/pull/2101) by [Heidi Koivisto](https://github.com/uniheko).
 
 ## Release 0.9.0
@@ -1337,7 +1337,7 @@ package.
 
 ### Bug fixes
 
-* Fixed a bug in the [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) causing a [`FutureWarning`](https://docs.python.org/3/library/exceptions.html#FutureWarning)
+* Fixed a bug in the [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) causing a [`FutureWarning`](https://docs.python.org/3/builtins/exceptions.html#FutureWarning)
   when using the `get_feature_names_out()` method. [#262](https://github.com/skrub-data/skrub/pull/262) by [Lilian Boulard](https://github.com/LilianBoulard)
 
 ## Dirty-cat Release 0.2.1
@@ -1361,7 +1361,7 @@ package.
 
 * Fixed a bug that resulted in the [`GapEncoder`](reference/generated/skrub.GapEncoderhtml.md#skrub.GapEncoder) ignoring the analyzer argument. [#242](https://github.com/skrub-data/skrub/pull/242) by [Jovan Stojanovic](https://github.com/jovan-stojanovic)
 * [`GapEncoder`](reference/generated/skrub.GapEncoderhtml.md#skrub.GapEncoder)’s `get_feature_names_out` now accepts all iterators, not just lists. [#255](https://github.com/skrub-data/skrub/pull/255) by [Lilian Boulard](https://github.com/LilianBoulard)
-* Fixed [`DeprecationWarning`](https://docs.python.org/3/library/exceptions.html#DeprecationWarning) raised by the usage of `distutils.version.LooseVersion`. [#261](https://github.com/skrub-data/skrub/pull/261) by [Lilian Boulard](https://github.com/LilianBoulard)
+* Fixed [`DeprecationWarning`](https://docs.python.org/3/builtins/exceptions.html#DeprecationWarning) raised by the usage of `distutils.version.LooseVersion`. [#261](https://github.com/skrub-data/skrub/pull/261) by [Lilian Boulard](https://github.com/LilianBoulard)
 
 ### Notes
 

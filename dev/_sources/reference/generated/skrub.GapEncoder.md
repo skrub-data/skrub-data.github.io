@@ -251,7 +251,7 @@ For each topic, labels with the highest activations are selected.
   **n_labels**
   : The number of labels used to describe each topic.
 * **Returns:**
-  [`list`](https://docs.python.org/3/library/stdtypes.html#list) of [`str`](https://docs.python.org/3/library/stdtypes.html#str)
+  [`list`](https://docs.python.org/3/builtins/stdtypes.html#list) of [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
   : The labels that best describe each topic.
 
 <!-- !! processed by numpydoc !! -->
@@ -300,7 +300,7 @@ matrix `V` of `X`, and its non-negative factorization `HW`.
   **X**
   : The data to encode.
 * **Returns:**
-  [`float`](https://docs.python.org/3/library/functions.html#float)
+  [`float`](https://docs.python.org/3/builtins/functions.html#float)
   : The Kullback-Leibler divergence.
 
 <!-- !! processed by numpydoc !! -->

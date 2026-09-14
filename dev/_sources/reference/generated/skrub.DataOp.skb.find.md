@@ -14,7 +14,7 @@ Find a node (DataOp or choice) in the computational graph.
       and returns a Boolean. The first node for which it returns True
       is returned.
 * **Returns:**
-  DataOp or [`None`](https://docs.python.org/3/library/constants.html#None)
+  DataOp or [`None`](https://docs.python.org/3/builtins/constants.html#None)
   : The node named `what`, when `what` is a string, or the first
     node for which `what` returned True, if `what` is a callable.
     If nothing was found, `None` is returned.

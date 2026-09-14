@@ -612,6 +612,14 @@ a.param-doc-link::before {
     width: 14px;
     height: 14px;
     cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.copy-paste-icon:focus-visible {
+    outline: 1px solid currentColor;
+    outline-offset: 1px;
 }
 
 .features {
@@ -670,7 +678,6 @@ a.param-doc-link::before {
 }
 
 .features .features-container {
-  max-width: 15em;
   max-height: 10em;
   overflow: auto;
   scrollbar-width: thin;
@@ -742,10 +749,11 @@ a.param-doc-link::before {
                   <tbody>
 
         <tr class="user-set">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy alpha to clipboard"
                  onclick="copyToClipboard('alpha',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-alpha;"
@@ -761,10 +769,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy fit_intercept to clipboard"
                  onclick="copyToClipboard('fit_intercept',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-fit_intercept;"
@@ -780,10 +789,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy copy_X to clipboard"
                  onclick="copyToClipboard('copy_X',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-copy_X;"
@@ -799,10 +809,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy max_iter to clipboard"
                  onclick="copyToClipboard('max_iter',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-max_iter;"
@@ -818,10 +829,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy tol to clipboard"
                  onclick="copyToClipboard('tol',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-tol;"
@@ -837,10 +849,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy class_weight to clipboard"
                  onclick="copyToClipboard('class_weight',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-class_weight;"
@@ -856,10 +869,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy solver to clipboard"
                  onclick="copyToClipboard('solver',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-solver;"
@@ -867,7 +881,7 @@ a.param-doc-link::before {
             solver
             <span class="param-doc-description"
             style="position-anchor: --doc-link-solver;">
-            solver: {&#x27;auto&#x27;, &#x27;svd&#x27;, &#x27;cholesky&#x27;, &#x27;lsqr&#x27;, &#x27;sparse_cg&#x27;,             &#x27;sag&#x27;, &#x27;saga&#x27;, &#x27;lbfgs&#x27;}, default=&#x27;auto&#x27;<br><br>Solver to use in the computational routines:<br><br>- &#x27;auto&#x27; chooses the solver automatically based on the type of data.<br><br>- &#x27;svd&#x27; uses a Singular Value Decomposition of X to compute the Ridge<br>  coefficients. It is the most stable solver, in particular more stable<br>  for singular matrices than &#x27;cholesky&#x27; at the cost of being slower.<br><br>- &#x27;cholesky&#x27; uses the standard scipy.linalg.solve function to<br>  obtain a closed-form solution.<br><br>- &#x27;sparse_cg&#x27; uses the conjugate gradient solver as found in<br>  scipy.sparse.linalg.cg. As an iterative algorithm, this solver is<br>  more appropriate than &#x27;cholesky&#x27; for large-scale data<br>  (possibility to set \`tol\` and \`max_iter\`).<br><br>- &#x27;lsqr&#x27; uses the dedicated regularized least-squares routine<br>  scipy.sparse.linalg.lsqr. It is the fastest and uses an iterative<br>  procedure.<br><br>- &#x27;sag&#x27; uses a Stochastic Average Gradient descent, and &#x27;saga&#x27; uses<br>  its unbiased and more flexible version named SAGA. Both methods<br>  use an iterative procedure, and are often faster than other solvers<br>  when both n_samples and n_features are large. Note that &#x27;sag&#x27; and<br>  &#x27;saga&#x27; fast convergence is only guaranteed on features with<br>  approximately the same scale. You can preprocess the data with a<br>  scaler from sklearn.preprocessing.<br><br>  .. versionadded:: 0.17<br>     Stochastic Average Gradient descent solver.<br>  .. versionadded:: 0.19<br>     SAGA solver.<br><br>- &#x27;lbfgs&#x27; uses L-BFGS-B algorithm implemented in<br>  \`scipy.optimize.minimize\`. It can be used only when \`positive\`<br>  is True.</span>
+            solver: {&#x27;auto&#x27;, &#x27;svd&#x27;, &#x27;cholesky&#x27;, &#x27;lsqr&#x27;, &#x27;sparse_cg&#x27;,             &#x27;sag&#x27;, &#x27;saga&#x27;, &#x27;lbfgs&#x27;}, default=&#x27;auto&#x27;<br><br>Solver to use in the computational routines:<br><br>- &#x27;auto&#x27; chooses the solver automatically based on the type of data.<br><br>- &#x27;svd&#x27; uses a Singular Value Decomposition of X to compute the Ridge<br>  coefficients. It is the most stable solver, in particular more stable<br>  for singular matrices than &#x27;cholesky&#x27; at the cost of being slower.<br><br>- &#x27;cholesky&#x27; uses the standard :func:\`scipy.linalg.solve\` function to<br>  obtain a closed-form solution.<br><br>- &#x27;sparse_cg&#x27; uses the conjugate gradient solver as found in<br>  :func:\`scipy.sparse.linalg.cg\`. As an iterative algorithm, this solver is<br>  more appropriate than &#x27;cholesky&#x27; for large-scale data<br>  (possibility to set \`tol\` and \`max_iter\`).<br><br>- &#x27;lsqr&#x27; uses the dedicated regularized least-squares routine<br>  :func:\`scipy.sparse.linalg.lsqr\`. It is the fastest and uses an iterative<br>  procedure.<br><br>- &#x27;sag&#x27; uses a Stochastic Average Gradient descent, and &#x27;saga&#x27; uses<br>  its unbiased and more flexible version named SAGA. Both methods<br>  use an iterative procedure, and are often faster than other solvers<br>  when both n_samples and n_features are large. Note that &#x27;sag&#x27; and<br>  &#x27;saga&#x27; fast convergence is only guaranteed on features with<br>  approximately the same scale. You can preprocess the data with a<br>  scaler from sklearn.preprocessing.<br><br>  .. versionadded:: 0.17<br>     Stochastic Average Gradient descent solver.<br>  .. versionadded:: 0.19<br>     SAGA solver.<br><br>- &#x27;lbfgs&#x27; uses L-BFGS-B algorithm implemented in<br>  \`scipy.optimize.minimize\`. It can be used only when \`positive\`<br>  is True.</span>
         </a>
     </td>
             <td class="value">&#x27;auto&#x27;</td>
@@ -875,10 +889,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy positive to clipboard"
                  onclick="copyToClipboard('positive',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-positive;"
@@ -894,10 +909,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy random_state to clipboard"
                  onclick="copyToClipboard('random_state',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-random_state;"
@@ -1675,6 +1691,14 @@ a.param-doc-link::before {
     width: 14px;
     height: 14px;
     cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.copy-paste-icon:focus-visible {
+    outline: 1px solid currentColor;
+    outline-offset: 1px;
 }
 
 .features {
@@ -1733,7 +1757,6 @@ a.param-doc-link::before {
 }
 
 .features .features-container {
-  max-width: 15em;
   max-height: 10em;
   overflow: auto;
   scrollbar-width: thin;
@@ -1805,10 +1828,11 @@ a.param-doc-link::before {
                   <tbody>
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy alpha to clipboard"
                  onclick="copyToClipboard('alpha',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-alpha;"
@@ -1824,10 +1848,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy fit_intercept to clipboard"
                  onclick="copyToClipboard('fit_intercept',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-fit_intercept;"
@@ -1843,10 +1868,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy copy_X to clipboard"
                  onclick="copyToClipboard('copy_X',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-copy_X;"
@@ -1862,10 +1888,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy max_iter to clipboard"
                  onclick="copyToClipboard('max_iter',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-max_iter;"
@@ -1881,10 +1908,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy tol to clipboard"
                  onclick="copyToClipboard('tol',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-tol;"
@@ -1900,10 +1928,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy class_weight to clipboard"
                  onclick="copyToClipboard('class_weight',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-class_weight;"
@@ -1919,10 +1948,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy solver to clipboard"
                  onclick="copyToClipboard('solver',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-solver;"
@@ -1930,7 +1960,7 @@ a.param-doc-link::before {
             solver
             <span class="param-doc-description"
             style="position-anchor: --doc-link-solver;">
-            solver: {&#x27;auto&#x27;, &#x27;svd&#x27;, &#x27;cholesky&#x27;, &#x27;lsqr&#x27;, &#x27;sparse_cg&#x27;,             &#x27;sag&#x27;, &#x27;saga&#x27;, &#x27;lbfgs&#x27;}, default=&#x27;auto&#x27;<br><br>Solver to use in the computational routines:<br><br>- &#x27;auto&#x27; chooses the solver automatically based on the type of data.<br><br>- &#x27;svd&#x27; uses a Singular Value Decomposition of X to compute the Ridge<br>  coefficients. It is the most stable solver, in particular more stable<br>  for singular matrices than &#x27;cholesky&#x27; at the cost of being slower.<br><br>- &#x27;cholesky&#x27; uses the standard scipy.linalg.solve function to<br>  obtain a closed-form solution.<br><br>- &#x27;sparse_cg&#x27; uses the conjugate gradient solver as found in<br>  scipy.sparse.linalg.cg. As an iterative algorithm, this solver is<br>  more appropriate than &#x27;cholesky&#x27; for large-scale data<br>  (possibility to set \`tol\` and \`max_iter\`).<br><br>- &#x27;lsqr&#x27; uses the dedicated regularized least-squares routine<br>  scipy.sparse.linalg.lsqr. It is the fastest and uses an iterative<br>  procedure.<br><br>- &#x27;sag&#x27; uses a Stochastic Average Gradient descent, and &#x27;saga&#x27; uses<br>  its unbiased and more flexible version named SAGA. Both methods<br>  use an iterative procedure, and are often faster than other solvers<br>  when both n_samples and n_features are large. Note that &#x27;sag&#x27; and<br>  &#x27;saga&#x27; fast convergence is only guaranteed on features with<br>  approximately the same scale. You can preprocess the data with a<br>  scaler from sklearn.preprocessing.<br><br>  .. versionadded:: 0.17<br>     Stochastic Average Gradient descent solver.<br>  .. versionadded:: 0.19<br>     SAGA solver.<br><br>- &#x27;lbfgs&#x27; uses L-BFGS-B algorithm implemented in<br>  \`scipy.optimize.minimize\`. It can be used only when \`positive\`<br>  is True.</span>
+            solver: {&#x27;auto&#x27;, &#x27;svd&#x27;, &#x27;cholesky&#x27;, &#x27;lsqr&#x27;, &#x27;sparse_cg&#x27;,             &#x27;sag&#x27;, &#x27;saga&#x27;, &#x27;lbfgs&#x27;}, default=&#x27;auto&#x27;<br><br>Solver to use in the computational routines:<br><br>- &#x27;auto&#x27; chooses the solver automatically based on the type of data.<br><br>- &#x27;svd&#x27; uses a Singular Value Decomposition of X to compute the Ridge<br>  coefficients. It is the most stable solver, in particular more stable<br>  for singular matrices than &#x27;cholesky&#x27; at the cost of being slower.<br><br>- &#x27;cholesky&#x27; uses the standard :func:\`scipy.linalg.solve\` function to<br>  obtain a closed-form solution.<br><br>- &#x27;sparse_cg&#x27; uses the conjugate gradient solver as found in<br>  :func:\`scipy.sparse.linalg.cg\`. As an iterative algorithm, this solver is<br>  more appropriate than &#x27;cholesky&#x27; for large-scale data<br>  (possibility to set \`tol\` and \`max_iter\`).<br><br>- &#x27;lsqr&#x27; uses the dedicated regularized least-squares routine<br>  :func:\`scipy.sparse.linalg.lsqr\`. It is the fastest and uses an iterative<br>  procedure.<br><br>- &#x27;sag&#x27; uses a Stochastic Average Gradient descent, and &#x27;saga&#x27; uses<br>  its unbiased and more flexible version named SAGA. Both methods<br>  use an iterative procedure, and are often faster than other solvers<br>  when both n_samples and n_features are large. Note that &#x27;sag&#x27; and<br>  &#x27;saga&#x27; fast convergence is only guaranteed on features with<br>  approximately the same scale. You can preprocess the data with a<br>  scaler from sklearn.preprocessing.<br><br>  .. versionadded:: 0.17<br>     Stochastic Average Gradient descent solver.<br>  .. versionadded:: 0.19<br>     SAGA solver.<br><br>- &#x27;lbfgs&#x27; uses L-BFGS-B algorithm implemented in<br>  \`scipy.optimize.minimize\`. It can be used only when \`positive\`<br>  is True.</span>
         </a>
     </td>
             <td class="value">&#x27;auto&#x27;</td>
@@ -1938,10 +1968,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy positive to clipboard"
                  onclick="copyToClipboard('positive',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-positive;"
@@ -1957,10 +1988,11 @@ a.param-doc-link::before {
 
 
         <tr class="default">
-            <td><i class="copy-paste-icon"
+            <td><button type="button" class="copy-paste-icon"
+                 aria-label="Copy random_state to clipboard"
                  onclick="copyToClipboard('random_state',
                           this.parentElement.nextElementSibling)"
-            ></i></td>
+            ></button></td>
             <td class="param">
         <a class="param-doc-link"
             style="anchor-name: --doc-link-random_state;"
@@ -2230,8 +2262,8 @@ X
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_3180e47a-wrapper" hidden>
-    <template id="report_3180e47a-template">
+<div id="report_a75d4ccc-wrapper" hidden>
+    <template id="report_a75d4ccc-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -3656,7 +3688,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="0197d251"
+                id="ae51ac31"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -3686,7 +3718,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="c1f36f8f"
+                id="60ab3202"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -3734,7 +3766,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="a32b9b80"
+                id="5cf56119"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3762,7 +3794,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="9b3361d4"
+                id="cb12ff20"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3796,7 +3828,7 @@ data-spans_\_0_\_0
 
 
                 <th
-                id="2b051a93"
+                id="ea12b3b5"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3824,7 +3856,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="1bce9943"
+                id="e603e669"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3858,7 +3890,7 @@ data-spans_\_1_\_0
 
 
                 <th
-                id="0eeb2d28"
+                id="477c7e32"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3886,7 +3918,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="40881cd2"
+                id="63e6dc65"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3920,7 +3952,7 @@ data-spans_\_2_\_0
 
 
                 <th
-                id="72875e26"
+                id="26f625dd"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3948,7 +3980,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="4439f92c"
+                id="e4991f17"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3982,7 +4014,7 @@ data-spans_\_3_\_0
 
 
                 <th
-                id="7a1c0885"
+                id="a85c0418"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4010,7 +4042,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="0a047b60"
+                id="186044a6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4074,7 +4106,7 @@ data-spans_\_4_\_0
 
 
                 <th
-                id="c96defe0"
+                id="763b2b10"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4102,7 +4134,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="da05bc9a"
+                id="cf0739d3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4136,7 +4168,7 @@ data-spans_\_5_\_0
 
 
                 <th
-                id="1be74563"
+                id="eb462349"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4164,7 +4196,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="d18849f0"
+                id="6f33a32d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4198,7 +4230,7 @@ data-spans_\_6_\_0
 
 
                 <th
-                id="c91097e4"
+                id="b25fba35"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4226,7 +4258,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="c7af13e7"
+                id="3208d780"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4260,7 +4292,7 @@ data-spans_\_7_\_0
 
 
                 <th
-                id="e9a08e6d"
+                id="0e06f26d"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4288,7 +4320,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="493720b8"
+                id="96e7a5d3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4330,7 +4362,7 @@ data-spans_\_8_\_0
 
 
                 <th
-                id="9488a36b"
+                id="8fe79600"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4358,7 +4390,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="26deb0b1"
+                id="73e64c5e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4909,7 +4941,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_3180e47a">
+    <skrub-table-report class="report" id="report_a75d4ccc">
     </skrub-table-report>
 
     <script type="module">
@@ -6013,7 +6045,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_3180e47a-wrapper-fallback">
+<div id="report_a75d4ccc-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -6024,8 +6056,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_3180e47a-wrapper").removeAttribute("hidden");
- document.getElementById("report_3180e47a-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_a75d4ccc-wrapper").removeAttribute("hidden");
+ document.getElementById("report_a75d4ccc-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -6068,8 +6100,8 @@ y
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_22a831f9-wrapper" hidden>
-    <template id="report_22a831f9-template">
+<div id="report_25b878a9-wrapper" hidden>
+    <template id="report_25b878a9-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -7494,7 +7526,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="7add4a79"
+                id="6afcc199"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -7524,7 +7556,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="6c644440"
+                id="9bf555ef"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -7572,7 +7604,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="23c22367"
+                id="28b05fb7"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7600,7 +7632,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="e4b8e8c2"
+                id="11aa77e9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7634,7 +7666,7 @@ data-spans_\_0_\_0
 
 
                 <th
-                id="bda544ed"
+                id="8a8071d6"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7662,7 +7694,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="74ddb950"
+                id="1b4de39a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7696,7 +7728,7 @@ data-spans_\_1_\_0
 
 
                 <th
-                id="5f5b37a5"
+                id="a628fb98"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7724,7 +7756,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="57dd59cb"
+                id="5a6c0403"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7758,7 +7790,7 @@ data-spans_\_2_\_0
 
 
                 <th
-                id="cb19a9d5"
+                id="47eda788"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7786,7 +7818,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="76e7abad"
+                id="447a415c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7820,7 +7852,7 @@ data-spans_\_3_\_0
 
 
                 <th
-                id="d8063d1f"
+                id="7b8355f2"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7848,7 +7880,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="f76d8177"
+                id="c754a2c5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7912,7 +7944,7 @@ data-spans_\_4_\_0
 
 
                 <th
-                id="7de133b4"
+                id="68abfc9e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7940,7 +7972,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="37688986"
+                id="cde97563"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7974,7 +8006,7 @@ data-spans_\_5_\_0
 
 
                 <th
-                id="8e10875b"
+                id="310b8709"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -8002,7 +8034,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="b6b16bcb"
+                id="4866d315"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8036,7 +8068,7 @@ data-spans_\_6_\_0
 
 
                 <th
-                id="c6ad9ee6"
+                id="73464646"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -8064,7 +8096,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="03d050cb"
+                id="787e3f57"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8098,7 +8130,7 @@ data-spans_\_7_\_0
 
 
                 <th
-                id="adb0ac9b"
+                id="ebc853ad"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -8126,7 +8158,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="b0914568"
+                id="86d52151"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8160,7 +8192,7 @@ data-spans_\_8_\_0
 
 
                 <th
-                id="73618bfe"
+                id="5d2912dd"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -8188,7 +8220,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="263c73a6"
+                id="09616974"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8731,7 +8763,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_22a831f9">
+    <skrub-table-report class="report" id="report_25b878a9">
     </skrub-table-report>
 
     <script type="module">
@@ -9835,7 +9867,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_22a831f9-wrapper-fallback">
+<div id="report_25b878a9-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -9846,8 +9878,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_22a831f9-wrapper").removeAttribute("hidden");
- document.getElementById("report_22a831f9-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_25b878a9-wrapper").removeAttribute("hidden");
+ document.getElementById("report_25b878a9-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -9923,8 +9955,8 @@ search.results_
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_1a3c403a-wrapper" hidden>
-    <template id="report_1a3c403a-template">
+<div id="report_39026774-wrapper" hidden>
+    <template id="report_39026774-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -11349,7 +11381,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="42403af1"
+                id="ee6aba57"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -11379,7 +11411,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="fc83f280"
+                id="bd00941b"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -11413,7 +11445,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="f25f3db0"
+                id="2777b78b"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -11447,7 +11479,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="cb5ac6ae"
+                id="5c784875"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -11495,7 +11527,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="9ac610b8"
+                id="8fae6693"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11523,7 +11555,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="64879eaa"
+                id="f49311da"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11553,7 +11585,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="229d986b"
+                id="e8894f2c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11583,7 +11615,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="9686c983"
+                id="1917ac6c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11617,7 +11649,7 @@ data-spans_\_0_\_2
 
 
                 <th
-                id="16ff61c8"
+                id="a853e3b0"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11645,7 +11677,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="e6b973a1"
+                id="7fb3d791"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11675,7 +11707,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="eae3864c"
+                id="a286da98"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11705,7 +11737,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="7aa1b610"
+                id="b533385f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11739,7 +11771,7 @@ data-spans_\_1_\_2
 
 
                 <th
-                id="2b0f2db1"
+                id="b5f08591"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11767,7 +11799,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="40e610ae"
+                id="fa9a707a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11797,7 +11829,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="a4b267eb"
+                id="58a9f521"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11827,7 +11859,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="663821f0"
+                id="413f2b21"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11861,7 +11893,7 @@ data-spans_\_2_\_2
 
 
                 <th
-                id="a0de68c2"
+                id="f63ca2aa"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11889,7 +11921,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="54e912d7"
+                id="a54e6467"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11919,7 +11951,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="3d469e56"
+                id="3865d3bf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11949,7 +11981,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="cd70109a"
+                id="0e2a6cea"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11983,7 +12015,7 @@ data-spans_\_3_\_2
 
 
                 <th
-                id="56389521"
+                id="ed275aad"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12011,7 +12043,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="9dbc747f"
+                id="d0e44cac"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12041,7 +12073,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="c5d6729a"
+                id="5e70b9f6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12071,7 +12103,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="06ed23d6"
+                id="e00a75d7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12105,7 +12137,7 @@ data-spans_\_4_\_2
 
 
                 <th
-                id="94ad680e"
+                id="f2dee261"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12133,7 +12165,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="08901df9"
+                id="275ac040"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12163,7 +12195,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="41497bbe"
+                id="e987bec5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12193,7 +12225,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="685a7725"
+                id="d7290c28"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12227,7 +12259,7 @@ data-spans_\_5_\_2
 
 
                 <th
-                id="4693c11a"
+                id="72de13f2"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12255,7 +12287,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="3f16dba7"
+                id="a9074684"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12285,7 +12317,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="5b498ab9"
+                id="c07e94d3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12315,7 +12347,7 @@ data-spans_\_6_\_1
 
 
                 <td
-                id="a3932c74"
+                id="089b4be2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12349,7 +12381,7 @@ data-spans_\_6_\_2
 
 
                 <th
-                id="247e93a7"
+                id="616ff1c6"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12377,7 +12409,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="089442ef"
+                id="79df9c78"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12407,7 +12439,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="ed4d088a"
+                id="46ca3dd1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12437,7 +12469,7 @@ data-spans_\_7_\_1
 
 
                 <td
-                id="ea645140"
+                id="85ba72a0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13228,7 +13260,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_1a3c403a">
+    <skrub-table-report class="report" id="report_39026774">
     </skrub-table-report>
 
     <script type="module">
@@ -14332,7 +14364,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_1a3c403a-wrapper-fallback">
+<div id="report_39026774-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -14343,8 +14375,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_1a3c403a-wrapper").removeAttribute("hidden");
- document.getElementById("report_1a3c403a-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_39026774-wrapper").removeAttribute("hidden");
+ document.getElementById("report_39026774-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -14374,7 +14406,7 @@ search.plot_results()
 
 <div class="output_subarea output_html rendered_html output_result">
 <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="215e8d2a-7b68-4386-95c9-8dd424d0a154" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("215e8d2a-7b68-4386-95c9-8dd424d0a154")) {                    Plotly.newPlot(                        "215e8d2a-7b68-4386-95c9-8dd424d0a154",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"PNEOBD0MIEAAAAAAAAAuQBuASB+y8y1AAAAAAAAAFEAHYzG6RhckQAAAAAAAAC5AYUjrm9IVJEBIJZL1XhQoQA=="}},{"label":"lr","ticktext":["0.015","0.022","0.033","0.049","0.073","0.108","0.160","0.237","0.351","0.520"],"tickvals":[-4.189664084302747,-3.796791280939163,-3.403918477575579,-3.0110456742119958,-2.6181728708484115,-2.2253000674848282,-1.8324272641212445,-1.4395544607576607,-1.046681657394077,-0.6538088540304932],"values":{"dtype":"f8","bdata":"xoJdMePfCcC4rbyLAOzkv6DnzNlpwwbAbjk9TTfCEMCfrW2QLAMCwBsFZlxVqQbA068tDcOz6b\\u002fkIToLNM31vw=="}},{"label":"score time","ticktext":["0.07","0.08","0.09","0.10","0.12","0.13","0.14","0.15","0.17","0.18"],"tickvals":[0.06660947799682618,0.07901726298862034,0.0914250479804145,0.10383283297220866,0.11624061796400281,0.128648402955797,0.14105618794759114,0.1534639729393853,0.16587175793117948,0.17827954292297363],"values":{"dtype":"f8","bdata":"V9a\\u002fBIqpvz825bCfBfLAP6hekNOmgsU\\u002fmpmZmVENsT+4SGOPt+3EPzMzMzPd0cY\\u002faKASZByhwT+GkQmEGTTAPw=="}},{"label":"fit time","ticktext":["0.66","0.70","0.75","0.79","0.83","0.87","0.91","0.95","0.99","1.04"],"tickvals":[0.6627461910247803,0.7041500621371799,0.7455539332495795,0.7869578043619792,0.8283616754743788,0.8697655465867784,0.911169417699178,0.9525732888115777,0.9939771599239773,1.035381031036377],"values":{"dtype":"f8","bdata":"PlIE5+oa6D8Dq3QL7x3uPzMzM7PrkPA\\u002fAAAAgDc15T+Nfc\\u002fPltfuPxtkZJlvce4\\u002ftmSDYyKj7D8YVRz6D4voPw=="}},{"label":"score","ticktext":["0.542","0.546","0.551","0.555","0.560","0.564","0.569","0.573","0.578","0.582"],"tickvals":[0.542,0.5464444444444445,0.550888888888889,0.5553333333333333,0.5597777777777778,0.5642222222222223,0.5686666666666668,0.5731111111111111,0.5775555555555556,0.5820000000000001],"values":{"dtype":"f8","bdata":"OrTIdr6f4j+6SQwCK4fiP2ZmZmZmZuI\\u002f6Pup8dJN4j+TGARWDi3iP5ZDi2zn++E\\u002fmpmZmZmZ4T\\u002fy0k1iEFjhPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"OrTIdr6f4j+6SQwCK4fiP2ZmZmZmZuI\\u002f6Pup8dJN4j+TGARWDi3iP5ZDi2zn++E\\u002fmpmZmZmZ4T\\u002fy0k1iEFjhPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.0.0.min.js" integrity="sha256-FEYfO0yRyLtZCpnW0Dw/0DHKQO7Afrq3ml4+rBB818o=" crossorigin="anonymous"></script>                <div id="315021f9-14a5-409e-b63a-567fc7dcba76" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("315021f9-14a5-409e-b63a-567fc7dcba76")) {                    Plotly.newPlot(                        "315021f9-14a5-409e-b63a-567fc7dcba76",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"PNEOBD0MIEAAAAAAAAAuQBuASB+y8y1AAAAAAAAAFEAHYzG6RhckQAAAAAAAAC5AYUjrm9IVJEBIJZL1XhQoQA=="}},{"label":"lr","ticktext":["0.015","0.022","0.033","0.049","0.073","0.108","0.160","0.237","0.351","0.520"],"tickvals":[-4.189664084302747,-3.796791280939163,-3.403918477575579,-3.0110456742119958,-2.6181728708484115,-2.2253000674848282,-1.8324272641212445,-1.4395544607576607,-1.046681657394077,-0.6538088540304932],"values":{"dtype":"f8","bdata":"xoJdMePfCcC4rbyLAOzkv6DnzNlpwwbAbjk9TTfCEMCfrW2QLAMCwBsFZlxVqQbA068tDcOz6b\\u002fkIToLNM31vw=="}},{"label":"score time","ticktext":["0.096","0.103","0.111","0.118","0.126","0.134","0.141","0.149","0.156","0.164"],"tickvals":[0.09565968513488769,0.10323529243469239,0.11081089973449706,0.11838650703430176,0.12596211433410645,0.13353772163391114,0.1411133289337158,0.14868893623352053,0.1562645435333252,0.1638401508331299],"values":{"dtype":"f8","bdata":"WNOnSocCwj\\u002faYereFUrBP+jaAZ+ol8E\\u002fMzMzMyd9uD878Zh4KH\\u002fAP83MzMy2+MQ\\u002fyr7RrjLtwT8R2K4QSo3CPw=="}},{"label":"fit time","ticktext":["0.67","0.71","0.74","0.77","0.80","0.84","0.87","0.90","0.93","0.96"],"tickvals":[0.6739179611206054,0.7061658382415771,0.7384137153625487,0.7706615924835205,0.8029094696044922,0.8351573467254638,0.8674052238464356,0.8996531009674072,0.9319009780883789,0.9641488552093506],"values":{"dtype":"f8","bdata":"+OmwUGdX6D8zMzOzTtruPzl9qKgHI+4\\u002fZmZmZryQ5T8ySaVmvbXsPy2arz0lLe4\\u002fMGUJ1r2s7T+rqBQHZcDoPw=="}},{"label":"score","ticktext":["0.542","0.546","0.551","0.555","0.560","0.564","0.569","0.573","0.578","0.582"],"tickvals":[0.542,0.5464444444444445,0.550888888888889,0.5553333333333333,0.5597777777777778,0.5642222222222223,0.5686666666666668,0.5731111111111111,0.5775555555555556,0.5820000000000001],"values":{"dtype":"f8","bdata":"OrTIdr6f4j+6SQwCK4fiP2ZmZmZmZuI\\u002f6Pup8dJN4j+TGARWDi3iP5ZDi2zn++E\\u002fmpmZmZmZ4T\\u002fy0k1iEFjhPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"OrTIdr6f4j+6SQwCK4fiP2ZmZmZmZuI\\u002f6Pup8dJN4j+TGARWDi3iP5ZDi2zn++E\\u002fmpmZmZmZ4T\\u002fy0k1iEFjhPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br />
@@ -14603,8 +14635,8 @@ X.assign(
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_6b104eea-wrapper" hidden>
-    <template id="report_6b104eea-template">
+<div id="report_3110b7e0-wrapper" hidden>
+    <template id="report_3110b7e0-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -16029,7 +16061,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="780a2681"
+                id="006d84b0"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -16059,7 +16091,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="8c40bcb9"
+                id="859dd3c6"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -16093,7 +16125,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="c78aa545"
+                id="a4150e16"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -16141,7 +16173,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="3ffc826e"
+                id="65bb15de"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16169,7 +16201,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="5b54e351"
+                id="6f5107a8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16199,7 +16231,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="c630c07b"
+                id="66fc1f51"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16233,7 +16265,7 @@ data-spans_\_0_\_1
 
 
                 <th
-                id="9b8244e1"
+                id="2d0ec120"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16261,7 +16293,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="8103a8ab"
+                id="682553da"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16291,7 +16323,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="b89b5503"
+                id="2e50cd70"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16325,7 +16357,7 @@ data-spans_\_1_\_1
 
 
                 <th
-                id="0b98cf77"
+                id="82079ff9"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16353,7 +16385,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="e757da37"
+                id="5ba09c9d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16383,7 +16415,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="7cd04261"
+                id="c4176095"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16417,7 +16449,7 @@ data-spans_\_2_\_1
 
 
                 <th
-                id="e29f936f"
+                id="8d1562ba"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16445,7 +16477,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="2b3c645b"
+                id="972a182a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16475,7 +16507,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="a25daf06"
+                id="0c24bcf4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16509,7 +16541,7 @@ data-spans_\_3_\_1
 
 
                 <th
-                id="51459bc1"
+                id="baabb6da"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16537,7 +16569,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="c5a59ee7"
+                id="eb3d447a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16567,7 +16599,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="b7b0723b"
+                id="7d523bc9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16641,7 +16673,7 @@ data-spans_\_4_\_1
 
 
                 <th
-                id="80851b6b"
+                id="8a132042"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16669,7 +16701,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="bfdf91cc"
+                id="7414458a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16699,7 +16731,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="62f3c400"
+                id="3e2fdcc2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16733,7 +16765,7 @@ data-spans_\_5_\_1
 
 
                 <th
-                id="a177e505"
+                id="06e42782"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16761,7 +16793,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="8c295ac0"
+                id="f4dbe4d3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16791,7 +16823,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="999a037e"
+                id="5e00355f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16825,7 +16857,7 @@ data-spans_\_6_\_1
 
 
                 <th
-                id="c8eb6740"
+                id="19571d88"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16853,7 +16885,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="0107965c"
+                id="d38ebef8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16883,7 +16915,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="22b52d55"
+                id="5dbfae20"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16917,7 +16949,7 @@ data-spans_\_7_\_1
 
 
                 <th
-                id="36b7632d"
+                id="e65cdcfe"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16945,7 +16977,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="2151dc0d"
+                id="15ecc45b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16983,7 +17015,7 @@ data-spans_\_8_\_0
 
 
                 <td
-                id="6e187934"
+                id="3cf377fe"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17017,7 +17049,7 @@ data-spans_\_8_\_1
 
 
                 <th
-                id="5efd85c9"
+                id="7239e81a"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -17045,7 +17077,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="2cf1f0bd"
+                id="a719d53b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17075,7 +17107,7 @@ data-spans_\_9_\_0
 
 
                 <td
-                id="ef981475"
+                id="5ad0926f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17748,7 +17780,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_6b104eea">
+    <skrub-table-report class="report" id="report_3110b7e0">
     </skrub-table-report>
 
     <script type="module">
@@ -18852,7 +18884,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_6b104eea-wrapper-fallback">
+<div id="report_3110b7e0-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -18863,8 +18895,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_6b104eea-wrapper").removeAttribute("hidden");
- document.getElementById("report_6b104eea-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_3110b7e0-wrapper").removeAttribute("hidden");
+ document.getElementById("report_3110b7e0-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -18944,8 +18976,8 @@ X.skb.apply(encoder, cols="text")
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_456efaeb-wrapper" hidden>
-    <template id="report_456efaeb-template">
+<div id="report_7f57b2d2-wrapper" hidden>
+    <template id="report_7f57b2d2-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -20370,7 +20402,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="b15282e3"
+                id="87e2b785"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -20400,7 +20432,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="e2951ee4"
+                id="cf3c52be"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20434,7 +20466,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="caae5697"
+                id="38a07337"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20468,7 +20500,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="7103b4b6"
+                id="d15148fc"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20502,7 +20534,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="aeefdfe9"
+                id="75934ec2"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20536,7 +20568,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="772da919"
+                id="7dda6d3b"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20570,7 +20602,7 @@ data-spans_\_-1_\_4
 
 
                 <th
-                id="3ffb81dc"
+                id="f1e00b00"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20604,7 +20636,7 @@ data-spans_\_-1_\_5
 
 
                 <th
-                id="3613f4c7"
+                id="f0b30313"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20638,7 +20670,7 @@ data-spans_\_-1_\_6
 
 
                 <th
-                id="8be1dbfe"
+                id="e0988299"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20672,7 +20704,7 @@ data-spans_\_-1_\_7
 
 
                 <th
-                id="81051728"
+                id="fbbf39ad"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20706,7 +20738,7 @@ data-spans_\_-1_\_8
 
 
                 <th
-                id="af924037"
+                id="7e6fb2ef"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20754,7 +20786,7 @@ data-spans_\_-1_\_9
 
 
                 <th
-                id="907a9530"
+                id="b5bec07e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -20782,7 +20814,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="ca5bcb92"
+                id="c94b88d7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20812,7 +20844,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="1b8004b8"
+                id="448d3fdf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20842,7 +20874,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="a0ac7ec8"
+                id="d8f384e0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20872,7 +20904,7 @@ data-spans_\_0_\_2
 
 
                 <td
-                id="05c5484e"
+                id="66b464dc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20902,7 +20934,7 @@ data-spans_\_0_\_3
 
 
                 <td
-                id="11a5b9db"
+                id="cb968c55"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20932,7 +20964,7 @@ data-spans_\_0_\_4
 
 
                 <td
-                id="b25bf1ca"
+                id="5b686299"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20962,7 +20994,7 @@ data-spans_\_0_\_5
 
 
                 <td
-                id="1d8c1e3f"
+                id="e0faafad"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20992,7 +21024,7 @@ data-spans_\_0_\_6
 
 
                 <td
-                id="d5148ec6"
+                id="87b9cfd4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21022,7 +21054,7 @@ data-spans_\_0_\_7
 
 
                 <td
-                id="5bb06ad9"
+                id="3c036751"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21052,7 +21084,7 @@ data-spans_\_0_\_8
 
 
                 <td
-                id="9eb3053b"
+                id="576303aa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21086,7 +21118,7 @@ data-spans_\_0_\_9
 
 
                 <th
-                id="ff5ec4a4"
+                id="86b26ddc"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -21114,7 +21146,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="ae86e9b7"
+                id="ef5342aa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21144,7 +21176,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="210d444c"
+                id="e483fd3e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21174,7 +21206,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="27618182"
+                id="e73563ca"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21204,7 +21236,7 @@ data-spans_\_1_\_2
 
 
                 <td
-                id="e98626bb"
+                id="bf9d15ca"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21234,7 +21266,7 @@ data-spans_\_1_\_3
 
 
                 <td
-                id="ac3295dd"
+                id="89f24951"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21264,7 +21296,7 @@ data-spans_\_1_\_4
 
 
                 <td
-                id="e831002c"
+                id="e3088752"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21294,7 +21326,7 @@ data-spans_\_1_\_5
 
 
                 <td
-                id="1d3995ee"
+                id="cc04f87c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21324,7 +21356,7 @@ data-spans_\_1_\_6
 
 
                 <td
-                id="e3877787"
+                id="4fcfe56f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21354,7 +21386,7 @@ data-spans_\_1_\_7
 
 
                 <td
-                id="6bfb8272"
+                id="60b72f33"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21384,7 +21416,7 @@ data-spans_\_1_\_8
 
 
                 <td
-                id="405f5075"
+                id="d59373d4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21418,7 +21450,7 @@ data-spans_\_1_\_9
 
 
                 <th
-                id="35748908"
+                id="0c410c29"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -21446,7 +21478,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="51860e69"
+                id="f7eacd77"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21476,7 +21508,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="b6fdc12e"
+                id="83b1102c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21506,7 +21538,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="3adebd84"
+                id="7b4ff846"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21536,7 +21568,7 @@ data-spans_\_2_\_2
 
 
                 <td
-                id="2f1fe540"
+                id="ece832fc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21566,7 +21598,7 @@ data-spans_\_2_\_3
 
 
                 <td
-                id="74a4dee6"
+                id="7bcce623"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21596,7 +21628,7 @@ data-spans_\_2_\_4
 
 
                 <td
-                id="97ee9906"
+                id="6db7673b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21626,7 +21658,7 @@ data-spans_\_2_\_5
 
 
                 <td
-                id="3341d09a"
+                id="b9a42600"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21656,7 +21688,7 @@ data-spans_\_2_\_6
 
 
                 <td
-                id="ce0ca4ea"
+                id="c83fb4b4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21686,7 +21718,7 @@ data-spans_\_2_\_7
 
 
                 <td
-                id="b49e1089"
+                id="1e3fd091"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21716,7 +21748,7 @@ data-spans_\_2_\_8
 
 
                 <td
-                id="27a35985"
+                id="bda0c623"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21750,7 +21782,7 @@ data-spans_\_2_\_9
 
 
                 <th
-                id="ffa8ad63"
+                id="038a56a4"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -21778,7 +21810,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="310df94a"
+                id="df3b4bfd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21808,7 +21840,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="ce024113"
+                id="fe816063"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21838,7 +21870,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="f8f6d718"
+                id="7cd2a24c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21868,7 +21900,7 @@ data-spans_\_3_\_2
 
 
                 <td
-                id="33b4c1f3"
+                id="b972c6bd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21898,7 +21930,7 @@ data-spans_\_3_\_3
 
 
                 <td
-                id="5d381be4"
+                id="b0f8f206"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21928,7 +21960,7 @@ data-spans_\_3_\_4
 
 
                 <td
-                id="3205cfdb"
+                id="f994e08b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21958,7 +21990,7 @@ data-spans_\_3_\_5
 
 
                 <td
-                id="62bbee14"
+                id="71ed4908"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21988,7 +22020,7 @@ data-spans_\_3_\_6
 
 
                 <td
-                id="63562dfa"
+                id="d81916a3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22018,7 +22050,7 @@ data-spans_\_3_\_7
 
 
                 <td
-                id="50583deb"
+                id="e3832591"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22048,7 +22080,7 @@ data-spans_\_3_\_8
 
 
                 <td
-                id="3109bd49"
+                id="25a2412a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22082,7 +22114,7 @@ data-spans_\_3_\_9
 
 
                 <th
-                id="25b6aad0"
+                id="d03418b3"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -22110,7 +22142,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="70d6f84e"
+                id="5c5ce1ed"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22140,7 +22172,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="16cc9bd4"
+                id="9d669966"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22170,7 +22202,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="c3644de4"
+                id="fa89ab49"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22200,7 +22232,7 @@ data-spans_\_4_\_2
 
 
                 <td
-                id="e7f3bdc5"
+                id="74216d0e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22230,7 +22262,7 @@ data-spans_\_4_\_3
 
 
                 <td
-                id="f337b5d6"
+                id="214c36fd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22260,7 +22292,7 @@ data-spans_\_4_\_4
 
 
                 <td
-                id="c64735db"
+                id="fb130117"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22290,7 +22322,7 @@ data-spans_\_4_\_5
 
 
                 <td
-                id="121b1712"
+                id="40b3a9f1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22320,7 +22352,7 @@ data-spans_\_4_\_6
 
 
                 <td
-                id="7dda1a4a"
+                id="62d1a750"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22350,7 +22382,7 @@ data-spans_\_4_\_7
 
 
                 <td
-                id="b7c0487c"
+                id="364f5207"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22380,7 +22412,7 @@ data-spans_\_4_\_8
 
 
                 <td
-                id="bf64f2a9"
+                id="addf45dc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22534,7 +22566,7 @@ data-spans_\_4_\_9
 
 
                 <th
-                id="0af5908e"
+                id="6042084e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -22562,7 +22594,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="b618dcc9"
+                id="d6ce7e2e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22592,7 +22624,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="bc7b964a"
+                id="15a3c80f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22622,7 +22654,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="0a307abd"
+                id="18efc686"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22652,7 +22684,7 @@ data-spans_\_5_\_2
 
 
                 <td
-                id="02f6ab81"
+                id="08ee4174"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22682,7 +22714,7 @@ data-spans_\_5_\_3
 
 
                 <td
-                id="a9a63e0c"
+                id="1ec5f858"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22712,7 +22744,7 @@ data-spans_\_5_\_4
 
 
                 <td
-                id="7839d3ae"
+                id="0fbf3d83"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22742,7 +22774,7 @@ data-spans_\_5_\_5
 
 
                 <td
-                id="736272d7"
+                id="51236669"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22772,7 +22804,7 @@ data-spans_\_5_\_6
 
 
                 <td
-                id="7bf07043"
+                id="efc97ace"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22802,7 +22834,7 @@ data-spans_\_5_\_7
 
 
                 <td
-                id="71ee9f84"
+                id="64d9d339"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22832,7 +22864,7 @@ data-spans_\_5_\_8
 
 
                 <td
-                id="7d38c84d"
+                id="c45fccf0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22866,7 +22898,7 @@ data-spans_\_5_\_9
 
 
                 <th
-                id="ce618fc0"
+                id="383a4f4c"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -22894,7 +22926,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="fbe2000e"
+                id="d5f400b9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22924,7 +22956,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="608e929b"
+                id="14cf040f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22954,7 +22986,7 @@ data-spans_\_6_\_1
 
 
                 <td
-                id="0b9c698c"
+                id="56aa6d65"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22984,7 +23016,7 @@ data-spans_\_6_\_2
 
 
                 <td
-                id="d90d1a8f"
+                id="190f0b72"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23014,7 +23046,7 @@ data-spans_\_6_\_3
 
 
                 <td
-                id="380b1f5e"
+                id="2b40dca8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23044,7 +23076,7 @@ data-spans_\_6_\_4
 
 
                 <td
-                id="32181cc3"
+                id="134d8149"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23074,7 +23106,7 @@ data-spans_\_6_\_5
 
 
                 <td
-                id="2e6a2edc"
+                id="d18433a4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23104,7 +23136,7 @@ data-spans_\_6_\_6
 
 
                 <td
-                id="30b42654"
+                id="d343d2e4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23134,7 +23166,7 @@ data-spans_\_6_\_7
 
 
                 <td
-                id="bb53f961"
+                id="88449154"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23164,7 +23196,7 @@ data-spans_\_6_\_8
 
 
                 <td
-                id="b0a7fe71"
+                id="0decb6bb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23198,7 +23230,7 @@ data-spans_\_6_\_9
 
 
                 <th
-                id="58b78a41"
+                id="7e817350"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -23226,7 +23258,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="97c149dd"
+                id="c4af9db7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23256,7 +23288,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="4d236681"
+                id="94fb295c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23286,7 +23318,7 @@ data-spans_\_7_\_1
 
 
                 <td
-                id="0c34a4ce"
+                id="23701fbf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23316,7 +23348,7 @@ data-spans_\_7_\_2
 
 
                 <td
-                id="55fa56cc"
+                id="6322c2ac"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23346,7 +23378,7 @@ data-spans_\_7_\_3
 
 
                 <td
-                id="bdf3297d"
+                id="f3a1db23"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23376,7 +23408,7 @@ data-spans_\_7_\_4
 
 
                 <td
-                id="b6ab711a"
+                id="eab1dc26"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23406,7 +23438,7 @@ data-spans_\_7_\_5
 
 
                 <td
-                id="ea8f610b"
+                id="fb112dfa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23436,7 +23468,7 @@ data-spans_\_7_\_6
 
 
                 <td
-                id="4f5b47dc"
+                id="2a144a01"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23466,7 +23498,7 @@ data-spans_\_7_\_7
 
 
                 <td
-                id="60677dab"
+                id="4c6ef7fa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23496,7 +23528,7 @@ data-spans_\_7_\_8
 
 
                 <td
-                id="0edee69a"
+                id="b3b87bc6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23530,7 +23562,7 @@ data-spans_\_7_\_9
 
 
                 <th
-                id="b3720092"
+                id="75582c15"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -23558,7 +23590,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="8c7c1c1f"
+                id="f215ad98"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23588,7 +23620,7 @@ data-spans_\_8_\_0
 
 
                 <td
-                id="b61e44c7"
+                id="35c17990"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23618,7 +23650,7 @@ data-spans_\_8_\_1
 
 
                 <td
-                id="649945d8"
+                id="1764a644"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23648,7 +23680,7 @@ data-spans_\_8_\_2
 
 
                 <td
-                id="3eb28a0e"
+                id="08332b0b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23678,7 +23710,7 @@ data-spans_\_8_\_3
 
 
                 <td
-                id="ae3af11e"
+                id="8a3c06e6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23708,7 +23740,7 @@ data-spans_\_8_\_4
 
 
                 <td
-                id="8770c689"
+                id="c7df8fb9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23738,7 +23770,7 @@ data-spans_\_8_\_5
 
 
                 <td
-                id="884f5012"
+                id="b743c54a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23768,7 +23800,7 @@ data-spans_\_8_\_6
 
 
                 <td
-                id="2aca297d"
+                id="393eba8c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23798,7 +23830,7 @@ data-spans_\_8_\_7
 
 
                 <td
-                id="94e56245"
+                id="dbf8cd14"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23828,7 +23860,7 @@ data-spans_\_8_\_8
 
 
                 <td
-                id="95577931"
+                id="329ec310"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23862,7 +23894,7 @@ data-spans_\_8_\_9
 
 
                 <th
-                id="9b7c0dd3"
+                id="09e23a89"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -23890,7 +23922,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="105fa4ee"
+                id="122f2b3c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23920,7 +23952,7 @@ data-spans_\_9_\_0
 
 
                 <td
-                id="0d48aa67"
+                id="aaffa45a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23950,7 +23982,7 @@ data-spans_\_9_\_1
 
 
                 <td
-                id="91958159"
+                id="239a2742"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23980,7 +24012,7 @@ data-spans_\_9_\_2
 
 
                 <td
-                id="7916221b"
+                id="5c4e2b64"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24010,7 +24042,7 @@ data-spans_\_9_\_3
 
 
                 <td
-                id="4874e8ef"
+                id="2f75f3fc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24040,7 +24072,7 @@ data-spans_\_9_\_4
 
 
                 <td
-                id="a24f15fd"
+                id="57df8235"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24070,7 +24102,7 @@ data-spans_\_9_\_5
 
 
                 <td
-                id="c7c53724"
+                id="61fd8391"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24100,7 +24132,7 @@ data-spans_\_9_\_6
 
 
                 <td
-                id="7a51d8b7"
+                id="982d865b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24130,7 +24162,7 @@ data-spans_\_9_\_7
 
 
                 <td
-                id="5c42cc5c"
+                id="83af7121"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24160,7 +24192,7 @@ data-spans_\_9_\_8
 
 
                 <td
-                id="675b3f96"
+                id="8a694093"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25835,7 +25867,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_456efaeb">
+    <skrub-table-report class="report" id="report_7f57b2d2">
     </skrub-table-report>
 
     <script type="module">
@@ -26939,7 +26971,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_456efaeb-wrapper-fallback">
+<div id="report_7f57b2d2-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -26950,8 +26982,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_456efaeb-wrapper").removeAttribute("hidden");
- document.getElementById("report_456efaeb-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_7f57b2d2-wrapper").removeAttribute("hidden");
+ document.getElementById("report_7f57b2d2-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -27006,7 +27038,7 @@ search.plot_results()
 
 <div class="output_subarea output_html rendered_html output_result">
 <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="563836bb-7eed-408d-bf98-9fc84c437d63" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("563836bb-7eed-408d-bf98-9fc84c437d63")) {                    Plotly.newPlot(                        "563836bb-7eed-408d-bf98-9fc84c437d63",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkDJulM9WPQlQPouMefi2hdA+7W08M72H0AQAQ+PlRgsQPRApxS\\u002f+CFAeIEjVIXqK0AYaZnjxwsiQAAAAAAAABRAAAAAAAAALkBD9bZCjewjQK\\u002fF0zD5GBhA2jr8xCElGEAt+xHknAsgQKiTuLyKCChAxzeVJU4WKEA="}},{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAguF+9ps0vPwAAAAAAAAAAAAAAAAAAAAAAAAAAAADwP4caSdxz6O8\\u002fAAAAAAAA8D800ydsZ\\u002ffvPztFlRsX6+8\\u002fmwbOPPDw7z8AAAAAAADwPwAAAAAAAPA\\u002fopZiIMLs7z9SRiFVr\\u002fHvP2mK8JKJ7e8\\u002f0KNgpI\\u002f\\u002f7z8="}},{"label":"lr","ticktext":["NaN","0.011","0.017","0.025","0.038","0.056","0.084","0.126","0.187","0.280","0.418"],"tickvals":[-4.842913055511124,-4.481931229268992,-4.080840311222178,-3.6797493931753644,-3.278658475128551,-2.877567557081737,-2.4764766390349235,-2.07538572098811,-1.6742948029412963,-1.2732038848944827,-0.872112966847669],"values":{"dtype":"f8","bdata":"WgsNTu55BMCBkieIaVD5v7Yqm5kkXxPAxS2Fk9EXAsAUnI0yCecRwBHLd8576wbAmOfgc1no679NY1HbdH0BwJmxwUkgh\\u002fO\\u002ftiqbmSRfE8C2KpuZJF8TwO9W86O\\u002fUxPAtiqbmSRfE8CbFwyEm1cTwEYIdkgWSxPASA2GqqlLE8A="}},{"label":"\\u03b1","ticktext":["NaN","0.04","0.09","0.19","0.43","0.96","2.15","4.81","10.76","24.04","53.73"],"tickvals":[-3.9772483789581226,-3.253498479969906,-2.449331925538554,-1.6451653711072027,-0.8409988166758513,-0.036832262244499425,0.7673342921868525,1.5715008466182034,2.3756674010495553,3.179833955480907,3.984000509912259],"values":{"dtype":"f8","bdata":"n40dmWfRD8CfjR2ZZ9EPwJVuhv0FygtAO0Ik2sK\\u002fD8CI\\u002ffmENMUPwJ+NHZln0Q\\u002fAffZIq2LHD8CfjR2ZZ9EPwJ+NHZln0Q\\u002fAVpDKqDvfD0CkAeHX69j8Px+zbIK\\u002fbgbAh20ODFgTBUClnwpmk7kJwOjiFtigUwZA0dxCXs\\u002fOC0A="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAD8+QYlhlxUPwAAAAAAAPA\\u002fQWlUeu47cz\\u002fmxjQIPFNjPwAAAAAAAAAAKlkteXfcYT8AAAAAAAAAAIiQckTRTUg\\u002fAAAAAAAA8D8oSyvLNufvPwAAAAAAAPA\\u002fQeDjVAbv7z8nrI7P0PjvP4Ohid8\\u002f\\u002fu8\\u002fSLmx9Krf7z8="}},{"label":"score time","ticktext":["0.08","0.10","0.12","0.14","0.15","0.17","0.19","0.21","0.22","0.24"],"tickvals":[0.08450789451599121,0.10201275613572862,0.11951761775546603,0.13702247937520345,0.15452734099494086,0.17203220261467828,0.1895370642344157,0.2070419258541531,0.2245467874738905,0.24205164909362792],"values":{"dtype":"f8","bdata":"DmrY0ONMxj8f7ZBxMu3EP4ntlCjGwrk\\u002f2yp5dIQVxj9mZmZmjPvOP6TVagYn5cY\\u002fivhfNMFxyT8keaLUYNPLPx0aVMHZF8I\\u002f2uI8JIXRuz8NUmJxmK69P2LMtjY4jcA\\u002f\\u002fgAQ\\u002fdCsuD8zMzMzT6K1P3ZM2McpJrs\\u002fYW7U5s4ZuT8="}},{"label":"fit time","ticktext":["0.2","0.3","0.4","0.6","0.7","0.8","1.0","1.1","1.2","1.3"],"tickvals":[0.17857728004455567,0.3075444327460395,0.43651158544752333,0.5654787381490072,0.694445890850491,0.8234130435519749,0.9523801962534587,1.0813473489549426,1.2103145016564265,1.3392816543579102],"values":{"dtype":"f8","bdata":"mpmZmbJt9T9Te+DnM7XxP2ME9CuqwN4\\u002f0BvGYL0C8z8iglxnmTjyP3j7wr28Fuo\\u002fffk5Skny7T9WVpou+r3sPxnLphgZh+U\\u002fAFNRM01x0z814LRZca3WP\\u002fz9p+vL59E\\u002fzczMzJ7bxj+HUB1rkGbLPynbVPAEtNQ\\u002fAW4heo1X0j8="}},{"label":"score","ticktext":["0.50","0.53","0.56","0.59","0.63","0.66","0.69","0.72","0.75","0.78"],"tickvals":[0.499,0.5305555555555556,0.5621111111111111,0.5936666666666667,0.6252222222222222,0.6567777777777778,0.6883333333333334,0.7198888888888889,0.7514444444444445,0.783],"values":{"dtype":"f8","bdata":"dZMYBFYO6T\\u002fLoUW28\\u002f3oPyGwcmiR7eg\\u002ff2q8dJMY6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"dZMYBFYO6T\\u002fLoUW28\\u002f3oPyGwcmiR7eg\\u002ff2q8dJMY6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.0.0.min.js" integrity="sha256-FEYfO0yRyLtZCpnW0Dw/0DHKQO7Afrq3ml4+rBB818o=" crossorigin="anonymous"></script>                <div id="54cb9e3b-4404-49a0-a01a-23b650f7e79b" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("54cb9e3b-4404-49a0-a01a-23b650f7e79b")) {                    Plotly.newPlot(                        "54cb9e3b-4404-49a0-a01a-23b650f7e79b",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkCSdad6sOgXQH2XmHNx7SVA+7W08M72H0AQAQ+PlRgsQPRApxS\\u002f+CFAeIEjVIXqK0AYaZnjxwsiQAAAAAAAABRAAAAAAAAALkBD9bZCjewjQK\\u002fF0zD5GBhA2jr8xCElGEAt+xHknAsgQKiTuLyKCChAxzeVJU4WKEA="}},{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAguF+9ps0vPwAAAAAAAAAAAAAAAAAAAAAAAAAAAADwP4caSdxz6O8\\u002fAAAAAAAA8D800ydsZ\\u002ffvPztFlRsX6+8\\u002fmwbOPPDw7z8AAAAAAADwPwAAAAAAAPA\\u002fopZiIMLs7z9SRiFVr\\u002fHvP2mK8JKJ7e8\\u002f0KNgpI\\u002f\\u002f7z8="}},{"label":"lr","ticktext":["NaN","0.011","0.017","0.025","0.038","0.056","0.084","0.126","0.187","0.280","0.418"],"tickvals":[-4.842913055511124,-4.481931229268992,-4.080840311222178,-3.6797493931753644,-3.278658475128551,-2.877567557081737,-2.4764766390349235,-2.07538572098811,-1.6742948029412963,-1.2732038848944827,-0.872112966847669],"values":{"dtype":"f8","bdata":"WgsNTu55BMC2KpuZJF8TwN\\u002feZTGTovm\\u002fxS2Fk9EXAsAUnI0yCecRwBHLd8576wbAmOfgc1no679NY1HbdH0BwJmxwUkgh\\u002fO\\u002ftiqbmSRfE8C2KpuZJF8TwO9W86O\\u002fUxPAtiqbmSRfE8CbFwyEm1cTwEYIdkgWSxPASA2GqqlLE8A="}},{"label":"\\u03b1","ticktext":["NaN","0.04","0.09","0.19","0.43","0.96","2.15","4.81","10.76","24.04","53.73"],"tickvals":[-3.9772483789581226,-3.253498479969906,-2.449331925538554,-1.6451653711072027,-0.8409988166758513,-0.036832262244499425,0.7673342921868525,1.5715008466182034,2.3756674010495553,3.179833955480907,3.984000509912259],"values":{"dtype":"f8","bdata":"n40dmWfRD8BVswyLdtMLQJ+NHZln0Q\\u002fAO0Ik2sK\\u002fD8CI\\u002ffmENMUPwJ+NHZln0Q\\u002fAffZIq2LHD8CfjR2ZZ9EPwJ+NHZln0Q\\u002fAVpDKqDvfD0CkAeHX69j8Px+zbIK\\u002fbgbAh20ODFgTBUClnwpmk7kJwOjiFtigUwZA0dxCXs\\u002fOC0A="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAADwP6CheI3NeUM\\u002fQWlUeu47cz\\u002fmxjQIPFNjPwAAAAAAAAAAKlkteXfcYT8AAAAAAAAAAIiQckTRTUg\\u002fAAAAAAAA8D8oSyvLNufvPwAAAAAAAPA\\u002fQeDjVAbv7z8nrI7P0PjvP4Ohid8\\u002f\\u002fu8\\u002fSLmx9Krf7z8="}},{"label":"score time","ticktext":["0.08","0.10","0.12","0.14","0.16","0.18","0.21","0.23","0.25","0.27"],"tickvals":[0.07963023185729981,0.10067267417907716,0.1217151165008545,0.14275755882263183,0.16380000114440918,0.18484244346618653,0.20588488578796385,0.2269273281097412,0.24796977043151855,0.2690122127532959],"values":{"dtype":"f8","bdata":"D7j3sVBlxj\\u002fmL8UcnVW+PxJfG\\u002fIlCsg\\u002fcGcacq19xz9WjrfGp+PHPyp71SZrC8c\\u002fAAAAAH830T8H5G6+PsnFP2HRyHBpYr0\\u002fh3fl+5i3uz\\u002fQZhTE\\u002f5W9PwVD44+Subg\\u002fUcFOWoHAtT+amZmZpWK0P0TrZww0u7w\\u002fjwQWq18dvD8="}},{"label":"fit time","ticktext":["0.2","0.3","0.4","0.5","0.7","0.8","0.9","1.0","1.2","1.3"],"tickvals":[0.16969361305236816,0.29304615126715766,0.41639868948194714,0.5397512276967367,0.6631037659115262,0.7864563041263157,0.9098088423411052,1.0331613805558946,1.156513918770684,1.2798664569854736],"values":{"dtype":"f8","bdata":"AAAAQFV69D\\u002fb2DcP8sjfP44zRk9gV\\u002fE\\u002f64ihg48d8j\\u002fhkgenu\\u002fzvP1LlEkEoQ+s\\u002fyRdS8vUf7T\\u002f4JqAZj3PpP5Ao1vGIe+Q\\u002f2fIwsOqMzz9XAX6MyzPWPwaz4sZFetA\\u002f5ViBKKeoyD8zMzMzhbjFP6UGXv4efNQ\\u002f9yyrZ7uB0j8="}},{"label":"score","ticktext":["0.50","0.53","0.57","0.60","0.63","0.66","0.70","0.73","0.76","0.80"],"tickvals":[0.499,0.5321111111111111,0.5652222222222222,0.5983333333333333,0.6314444444444445,0.6645555555555556,0.6976666666666667,0.7307777777777777,0.7638888888888888,0.7969999999999999],"values":{"dtype":"f8","bdata":"Gi\\u002fdJAaB6T\\u002fKoUW28\\u002f3oPyGwcmiR7eg\\u002fU7gehetR6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"Gi\\u002fdJAaB6T\\u002fKoUW28\\u002f3oPyGwcmiR7eg\\u002fU7gehetR6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br />
@@ -27037,7 +27069,7 @@ search.plot_results(show_choices=["encoder", "classifier"], show_times=["score"]
 
 <div class="output_subarea output_html rendered_html output_result">
 <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="ec761af6-5e72-4e5d-8742-6a11952871d3" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("ec761af6-5e72-4e5d-8742-6a11952871d3")) {                    Plotly.newPlot(                        "ec761af6-5e72-4e5d-8742-6a11952871d3",                        [{"dimensions":[{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAEFhLiai0Pi0oe2am4nI\\u002fAAAAAAAAAAAAAAAAAADwPzh3npKD9u8\\u002fL25yu1L87z+bNqCua\\u002fDvPwAAAAAAAPA\\u002fAAAAAAAA8D8AAAAAAADwPwAAAAAAAPA\\u002fAAAAAAAA8D8WWdPkGPLvP76q62+s2u8\\u002fAAAAAAAA8D8="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPA\\u002f5BiTYmaXYz8AAAAAAAAAAEOgtjpoL3A\\u002fyziJBOGKcT8AAAAAAAAAAJBAqWtWwk0\\u002fVmZsOO\\u002f\\u002f7z8AAAAAAADwPwAAAAAAAPA\\u002fJqXEb4XX7z\\u002fsZsOO+N7vPwAAAAAAAPA\\u002fAAAAAAAA8D8="}},{"label":"score time","ticktext":["0.08","0.10","0.12","0.14","0.15","0.17","0.19","0.21","0.22","0.24"],"tickvals":[0.08450789451599121,0.10201275613572862,0.11951761775546603,0.13702247937520345,0.15452734099494086,0.17203220261467828,0.1895370642344157,0.2070419258541531,0.2245467874738905,0.24205164909362792],"values":{"dtype":"f8","bdata":"Lru+jE83xj8\\u002fRaClEOzEP+fSc+mcnbk\\u002fGVHJVpf+xT9mZmZmjPvOP\\u002fLrC7E7A8c\\u002foyOB0BV8yT9lxd\\u002f8w+PLP\\u002f\\u002f0p7y8QcI\\u002fnn0Tv5e9uz8iAMxQGLW9P0uEBJLyp8A\\u002foL5oXyVkuD8zMzMzT6K1PwioVFj5G7s\\u002foquJRBHxuD8="}},{"label":"score","ticktext":["0.50","0.53","0.56","0.59","0.63","0.66","0.69","0.72","0.75","0.78"],"tickvals":[0.499,0.5305555555555556,0.5621111111111111,0.5936666666666667,0.6252222222222222,0.6567777777777778,0.6883333333333334,0.7198888888888889,0.7514444444444445,0.783],"values":{"dtype":"f8","bdata":"dZMYBFYO6T\\u002fLoUW28\\u002f3oPyGwcmiR7eg\\u002ff2q8dJMY6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"dZMYBFYO6T\\u002fLoUW28\\u002f3oPyGwcmiR7eg\\u002ff2q8dJMY6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.0.0.min.js" integrity="sha256-FEYfO0yRyLtZCpnW0Dw/0DHKQO7Afrq3ml4+rBB818o=" crossorigin="anonymous"></script>                <div id="4b1a2df2-5a60-44ce-880b-3655af537e5c" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("4b1a2df2-5a60-44ce-880b-3655af537e5c")) {                    Plotly.newPlot(                        "4b1a2df2-5a60-44ce-880b-3655af537e5c",                        [{"dimensions":[{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAEFhLiai0Pi0oe2am4nI\\u002fAAAAAAAAAAAAAAAAAADwPzh3npKD9u8\\u002fL25yu1L87z+bNqCua\\u002fDvPwAAAAAAAPA\\u002fAAAAAAAA8D8AAAAAAADwPwAAAAAAAPA\\u002fAAAAAAAA8D8WWdPkGPLvP76q62+s2u8\\u002fAAAAAAAA8D8="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAADwPxVk\\u002fa1dK3I\\u002f5BiTYmaXYz8AAAAAAAAAAEOgtjpoL3A\\u002fyziJBOGKcT8AAAAAAAAAAJBAqWtWwk0\\u002fVmZsOO\\u002f\\u002f7z8AAAAAAADwPwAAAAAAAPA\\u002fJqXEb4XX7z\\u002fsZsOO+N7vPwAAAAAAAPA\\u002fAAAAAAAA8D8="}},{"label":"score time","ticktext":["0.08","0.10","0.12","0.14","0.16","0.18","0.21","0.23","0.25","0.27"],"tickvals":[0.07963023185729981,0.10067267417907716,0.1217151165008545,0.14275755882263183,0.16380000114440918,0.18484244346618653,0.20588488578796385,0.2269273281097412,0.24796977043151855,0.2690122127532959],"values":{"dtype":"f8","bdata":"6UXeBWBLxj8QZ2lj5FK+P5ed1AzQ88c\\u002f22Z5Ox5ixz\\u002fBjC24LenHPylKXg6UL8c\\u002fAAAAAH830T\\u002f7ybi08dzFP3otgHIdx70\\u002fSaUepKSfuz\\u002f+FpTkz529P9b2VNbU+bg\\u002fDD6HGyZptT+amZmZpWK0P5VdfHj0rrw\\u002fSxG5S2bsuz8="}},{"label":"score","ticktext":["0.50","0.53","0.57","0.60","0.63","0.66","0.70","0.73","0.76","0.80"],"tickvals":[0.499,0.5321111111111111,0.5652222222222222,0.5983333333333333,0.6314444444444445,0.6645555555555556,0.6976666666666667,0.7307777777777777,0.7638888888888888,0.7969999999999999],"values":{"dtype":"f8","bdata":"Gi\\u002fdJAaB6T\\u002fKoUW28\\u002f3oPyGwcmiR7eg\\u002fU7gehetR6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"Gi\\u002fdJAaB6T\\u002fKoUW28\\u002f3oPyGwcmiR7eg\\u002fU7gehetR6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br />
@@ -27054,8 +27086,8 @@ such as the argument of a [`deferred()`](../../reference/generated/skrub.deferre
 other DataOps’ methods or operators. Additionally, choices can be
 inter-dependent. Find more information in the [user guide](../../modules/data_ops/validation/tuning_validating_data_ops.md#user-guide-data-ops-tuning-validating-dataops).
 
-**Total running time of the script:** (0 minutes 43.776 seconds)
+**Total running time of the script:** (0 minutes 45.263 seconds)
 
-**Estimated memory usage:**  569 MB
+**Estimated memory usage:**  586 MB
 
 <a id="sphx-glr-download-auto-examples-02-data-ops-1130-choices-py"></a>

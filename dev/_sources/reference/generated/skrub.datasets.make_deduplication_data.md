@@ -21,7 +21,7 @@ Characters are misspelled with probability `prob_mistake_per_letter`.
   : Determines random number generation for dataset noise. Pass an int
     for reproducible output across multiple function calls.
 * **Returns:**
-  [`list`](https://docs.python.org/3/library/stdtypes.html#list) of [`str`](https://docs.python.org/3/library/stdtypes.html#str)
+  [`list`](https://docs.python.org/3/builtins/stdtypes.html#list) of [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
   : List of duplicated examples with spelling mistakes.
 
 ### Examples

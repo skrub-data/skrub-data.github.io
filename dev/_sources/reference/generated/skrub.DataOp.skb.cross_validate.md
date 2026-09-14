@@ -24,7 +24,7 @@ scikit-learn cross-validation.
     scikit-learn’s `return_estimator` parameter is named
     `return_learner` here.
 * **Returns:**
-  [`dict`](https://docs.python.org/3/library/stdtypes.html#dict)
+  [`dict`](https://docs.python.org/3/builtins/stdtypes.html#dict)
   : Cross-validation results.
 
 #### SEE ALSO

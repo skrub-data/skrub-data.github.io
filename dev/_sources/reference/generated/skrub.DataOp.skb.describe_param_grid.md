@@ -13,7 +13,7 @@ Please refer to the examples gallery for a full explanation of choices
 and hyper-parameter tuning.
 
 * **Returns:**
-  [`str`](https://docs.python.org/3/library/stdtypes.html#str)
+  [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
   : A textual description of the different choices contained in this
     DataOp.
 

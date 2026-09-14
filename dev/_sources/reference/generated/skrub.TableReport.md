@@ -195,7 +195,7 @@ in the report, selecting both columns “a” and “b”.
 Get the report data in Python Dictionary format.
 
 * **Returns:**
-  [`dict`](https://docs.python.org/3/library/stdtypes.html#dict)
+  [`dict`](https://docs.python.org/3/builtins/stdtypes.html#dict)
   : The report data
 
 <!-- !! processed by numpydoc !! -->
@@ -205,7 +205,7 @@ Get the report data in Python Dictionary format.
 Get the report as a full HTML page.
 
 * **Returns:**
-  [`str`](https://docs.python.org/3/library/stdtypes.html#str)
+  [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
   : The HTML page.
 
 <!-- !! processed by numpydoc !! -->
@@ -215,7 +215,7 @@ Get the report as a full HTML page.
 Get the report as an HTML fragment that can be inserted in a page.
 
 * **Returns:**
-  [`str`](https://docs.python.org/3/library/stdtypes.html#str)
+  [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
   : The HTML snippet.
 
 <!-- !! processed by numpydoc !! -->
@@ -231,7 +231,7 @@ be quite verbose. Plots can be disabled by setting
 The schema of the JSON data is reported in [TableReport JSON schema](../table_report_json_schema.md#table-report-json-schema).
 
 * **Returns:**
-  [`str`](https://docs.python.org/3/library/stdtypes.html#str)
+  [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
   : The JSON data.
 
 <!-- !! processed by numpydoc !! -->
@@ -251,7 +251,7 @@ not be used with untrusted data or in contexts where the data may be too
 large, as it could lead to performance issues or security risks.
 
 * **Returns:**
-  [`str`](https://docs.python.org/3/library/stdtypes.html#str)
+  [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
   : The Markdown report.
 
 <!-- !! processed by numpydoc !! -->

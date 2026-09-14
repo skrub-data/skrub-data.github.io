@@ -168,7 +168,7 @@ is the name of the input column, or a default name for the encoder, and
   **input_features**
   : The input features. Ignored, only here for compatibility.
 * **Returns:**
-  [`list`](https://docs.python.org/3/library/stdtypes.html#list) of [`str`](https://docs.python.org/3/library/stdtypes.html#str)
+  [`list`](https://docs.python.org/3/builtins/stdtypes.html#list) of [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
   : The list of feature names.
 
 <!-- !! processed by numpydoc !! -->

@@ -95,7 +95,7 @@ useful to extract column names to be used in dataframe operations.
   **df**
   : A pandas or polars dataframe to evaluate the selector against.
 * **Returns:**
-  [`list`](https://docs.python.org/3/library/stdtypes.html#list) of [`str`](https://docs.python.org/3/library/stdtypes.html#str)
+  [`list`](https://docs.python.org/3/builtins/stdtypes.html#list) of [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
   : The names of columns from `df` that the selector matches.
 
 #### SEE ALSO
@@ -142,7 +142,7 @@ positional indices (0, 1, 2, …) of matching columns instead of their names.
   **df**
   : A pandas or polars dataframe to evaluate the selector against.
 * **Returns:**
-  [`list`](https://docs.python.org/3/library/stdtypes.html#list) of [`int`](https://docs.python.org/3/library/functions.html#int)
+  [`list`](https://docs.python.org/3/builtins/stdtypes.html#list) of [`int`](https://docs.python.org/3/builtins/functions.html#int)
   : The indices (zero-indexed) of columns from `df` that the
     selector matches.
 

@@ -40,7 +40,7 @@ Split an environment into training and testing environments.
     Kwargs for the `split()` method itself should be passed to
     `mark_as_X`.
 * **Returns:**
-  [`dict`](https://docs.python.org/3/library/stdtypes.html#dict)
+  [`dict`](https://docs.python.org/3/builtins/stdtypes.html#dict)
   : The return value is slightly different than scikit-learn’s. Rather than
     a tuple, it returns a dictionary with the following keys:
     - train: a dictionary containing the training environment

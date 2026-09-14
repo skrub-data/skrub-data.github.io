@@ -137,7 +137,7 @@ Get the output feature names.
   **input_features**
   : Input feature names. Ignored.
 * **Returns:**
-  [`list`](https://docs.python.org/3/library/stdtypes.html#list) of [`str`](https://docs.python.org/3/library/stdtypes.html#str)
+  [`list`](https://docs.python.org/3/builtins/stdtypes.html#list) of [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
   : The names of the output features.
 
 <!-- !! processed by numpydoc !! -->

@@ -786,7 +786,7 @@
 <h1>filter<a class="headerlink" href="#filter" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.filter">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predicate</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/309e647/skrub/selectors/_base.py#L817"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.filter" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predicate</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/785d89c/skrub/selectors/_base.py#L817"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.filter" title="Link to this definition">#</a></dt>
 <dd><p>Select columns for which a custom predicate function returns <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
 <p>This allows selecting columns based on an arbitrary criterion. The predicate takes
 as input the column (a pandas or polars Series) and must return True if it
@@ -798,13 +798,13 @@ single predicate.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>predicate</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#callable" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">callable()</span></code></a></span></dt><dd><p>A function that takes a column and optional extra arguments, returning
+<dt><strong>predicate</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#callable" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">callable()</span></code></a></span></dt><dd><p>A function that takes a column and optional extra arguments, returning
 <code class="docutils literal notranslate"><span class="pre">True</span></code> to select the column or <code class="docutils literal notranslate"><span class="pre">False</span></code> to exclude it.
 Signature: <code class="docutils literal notranslate"><span class="pre">predicate(col,</span> <span class="pre">*args,</span> <span class="pre">**kwargs)</span> <span class="pre">-&gt;</span> <span class="pre">bool</span></code></p>
 </dd>
-<dt><strong>*args</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">tuple</span></code></a></span></dt><dd><p>Extra positional arguments passed to the predicate.</p>
+<dt><strong>*args</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#tuple" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">tuple</span></code></a></span></dt><dd><p>Extra positional arguments passed to the predicate.</p>
 </dd>
-<dt><strong>**kwargs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Extra keyword arguments passed to the predicate.</p>
+<dt><strong>**kwargs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Extra keyword arguments passed to the predicate.</p>
 </dd>
 </dl>
 </dd>

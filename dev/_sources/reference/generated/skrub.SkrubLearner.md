@@ -183,7 +183,7 @@ The returned dictionary can be used with [`SkrubLearner.set_named_params()`](#sk
 Only choices that have been given an explicit name are included in the result.
 
 * **Returns:**
-  [`dict`](https://docs.python.org/3/library/stdtypes.html#dict)
+  [`dict`](https://docs.python.org/3/builtins/stdtypes.html#dict)
   : The choices set on this SkrubLearner. The key is the choice name.
     For discrete choices (created with [`skrub.choose_from()`](skrub.choose_from.md#skrub.choose_from),
     [`skrub.choose_bool()`](skrub.choose_bool.md#skrub.choose_bool), …) the value is the index of the
@@ -245,7 +245,7 @@ See [`DataOp.skb.full_report()`](skrub.DataOp.skb.full_report.md#skrub.DataOp.sk
   **full_report_kwargs**
   : See [`DataOp.skb.full_report()`](skrub.DataOp.skb.full_report.md#skrub.DataOp.skb.full_report)
 * **Returns:**
-  [`dict`](https://docs.python.org/3/library/stdtypes.html#dict)
+  [`dict`](https://docs.python.org/3/builtins/stdtypes.html#dict)
   : The result of `DataOp.skb.full_report`: a dict containing
     `'result'`, `'error'` and `'report_path'`.
 

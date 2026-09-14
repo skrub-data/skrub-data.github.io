@@ -20,7 +20,7 @@ Yield splits of an environment into training and testing environments.
     splitter, an iterable yielding pairs of (train, test) indices, or an
     int to specify the number of folds for KFold splitting.
 * **Yields:**
-  [`dict`](https://docs.python.org/3/library/stdtypes.html#dict)
+  [`dict`](https://docs.python.org/3/builtins/stdtypes.html#dict)
   : For each split, a dict is produced, containing the following keys:
     - train: a dictionary containing the training environment
     - test: a dictionary containing the test environment

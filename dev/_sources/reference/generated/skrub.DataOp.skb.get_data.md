@@ -5,7 +5,7 @@
 Collect the values of the variables contained in the DataOp.
 
 * **Returns:**
-  [`dict`](https://docs.python.org/3/library/stdtypes.html#dict) mapping variable names to their values
+  [`dict`](https://docs.python.org/3/builtins/stdtypes.html#dict) mapping variable names to their values
   : Variables for which no value was given do not appear in the result.
 
 #### SEE ALSO
