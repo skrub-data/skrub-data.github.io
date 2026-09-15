@@ -157,15 +157,6 @@
   [`DataOp.skb.eval()`](reference/generated/skrub.DataOp.skb.evalhtml.md#skrub.DataOp.skb.eval), `SkrubLearner.predict()`, etc., or in
   [`DataOp.skb.find()`](reference/generated/skrub.DataOp.skb.findhtml.md#skrub.DataOp.skb.find) or [`SkrubLearner.truncated_after()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.truncated_after). [#2062](https://github.com/skrub-data/skrub/pull/2062) by
   [Jérôme Dockès](https://github.com/jeromedockes).
-- The [`DropSimilar`](reference/generated/skrub.DropSimilarhtml.md#skrub.DropSimilar) transformer has been added, for removing columns in a
-  dataframe that present high correlation with other columns. [#2023](https://github.com/skrub-data/skrub/pull/2023) by
-  [Eloi Massoulié](https://github.com/emassoulie).
-- `ToFloat32` now allows users to specify `decimal` and `thousand`
-  separators to parse numerical columns that use formatting different from the default
-  formatting used in Python, such as `1'234,5`.
-  Additionally, negative numbers indicated with parentheses can be converted to the
-  regular numeric format (`(432)` becomes `-432`). [#1772](https://github.com/skrub-data/skrub/pull/1772) by [Gabriela
-  Gómez Jiménez](https://github.com/gabrielapgomezji).
 
 **Misc**:
 

@@ -36,8 +36,10 @@ numerical features when using linear models.
       [`HistGradientBoostingClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier) is used as the final
       step;
     - a scikit-learn estimator: the provided estimator is used as the final step.
-    - a scikit-learn pipeline : the whole pipeline is kept and usual pre-processing by the TableVectorizer
-      is added before, depending on the estimator in the last step of the pipeline.
+    - a scikit-learn pipeline : if given a pipeline the steps are extracted and
+      returned in a new pipeline with the usual pre-processing by the
+      TableVectorizer (depending on the estimator
+      in the last step of the pipeline) added before.
 
   **n_jobs**
   : Number of jobs to run in parallel in the [`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer) step. `None`
