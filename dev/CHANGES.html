@@ -600,6 +600,11 @@
 a DataOp that extracts one of the items.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2243">#2243</a> by <a class="reference external" href="https://github.com/e-strauss">Elias Strauss</a>.</p></li>
 </ul>
+<dl class="simple">
+<dt>– TabularPipeline now uses the estimator when given a pipeline to determine</dt><dd><p>the parameters of the TableVectorizer.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2152">#2152</a> by <a class="reference external" href="https://github.com/Khaoula Riad and Marine Michaut">&#64;Khaoula Riad and Marine Michaut</a>.</p>
+</dd>
+</dl>
 </section>
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
@@ -751,6 +756,15 @@ provides an alternative for referring to a node in the environment passed to
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.eval.html#skrub.DataOp.skb.eval" title="skrub.DataOp.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.eval()</span></code></a>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.predict()</span></code>, etc., or in
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.find.html#skrub.DataOp.skb.find" title="skrub.DataOp.skb.find"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.find()</span></code></a> or <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.truncated_after" title="skrub.SkrubLearner.truncated_after"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.truncated_after()</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2062">#2062</a> by
 <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p>The <a class="reference internal" href="reference/generated/skrub.DropSimilar.html#skrub.DropSimilar" title="skrub.DropSimilar"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropSimilar</span></code></a> transformer has been added, for removing columns in a
+dataframe that present high correlation with other columns. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2023">#2023</a> by
+<a class="reference external" href="https://github.com/emassoulie">Eloi Massoulié</a>.</p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ToFloat32</span></code> now allows users to specify <code class="docutils literal notranslate"><span class="pre">decimal</span></code> and <code class="docutils literal notranslate"><span class="pre">thousand</span></code>
+separators to parse numerical columns that use formatting different from the default
+formatting used in Python, such as <code class="docutils literal notranslate"><span class="pre">1'234,5</span></code>.
+Additionally, negative numbers indicated with parentheses can be converted to the
+regular numeric format (<code class="docutils literal notranslate"><span class="pre">(432)</span></code> becomes <code class="docutils literal notranslate"><span class="pre">-432</span></code>). <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1772">#1772</a> by <a class="reference external" href="https://github.com/gabrielapgomezji">Gabriela
+Gómez Jiménez</a>.</p></li>
 </ul>
 <p><strong>Misc</strong>:</p>
 <ul class="simple">
