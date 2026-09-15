@@ -63,6 +63,8 @@
   as the second step.
   [#2222](https://github.com/skrub-data/skrub/pull/2222) by [Ashwin V. Mohanan](https://github.com/ashwinvis), with guidance from
   [Jérôme Dockès](https://github.com/jeromedockes).
+- Removed the parameter `how` of [`DataOp.skb.apply()`](reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply). [#2281](https://github.com/skrub-data/skrub/pull/2281) by
+  [Eloi Massoulié](https://github.com/emassoulie).
 
 ### Bugfixes
 
