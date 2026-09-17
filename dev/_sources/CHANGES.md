@@ -24,6 +24,9 @@
 - The `TextEncoder` has been renamed [`LLMEncoder`](reference/generated/skrub.LLMEncoderhtml.md#skrub.LLMEncoder). It is still available
   as an alias, but will be removed in a future release. [#2255](https://github.com/skrub-data/skrub/pull/2255) by
   [Riccardo Cappuzzo](https://github.com/rcap107).
+- Removed deprecated parameters `max_plot_columns` and `max_association_columns`
+  from [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport). Use `plot_distributions` and `compute_associations`
+  instead. [#2271](https://github.com/skrub-data/skrub/pull/2271) by [m4nn2609-dot](https://github.com/m4nn2609-dot).
 
 ## Release 0.10.1
 

@@ -1,6 +1,6 @@
 # Cleaner
 
-### *class* skrub.Cleaner(drop_null_fraction=1.0, drop_if_constant=False, drop_if_unique=False, datetime_format=None, null_strings=None, parse_numbers=False, cast_to_float32=False, cast_to_str=False, n_jobs=1, numeric_dtype=None)
+### *class* skrub.Cleaner(drop_null_fraction=1.0, drop_if_constant=False, datetime_format=None, null_strings=None, parse_numbers=False, cast_to_float32=False, cast_to_str=False, n_jobs=1)
 
 Column-wise consistency checks and sanitization of dtypes, null values and dates.
 
@@ -22,18 +22,6 @@ dates, and removing uninformative columns. See the “Notes” section for a ful
   : If set to true, drop columns that contain a single unique value. Note that
     missing values are considered as one additional distinct value.
 
-  **drop_if_unique**
-  : If set to true, drop columns that contain only unique values, i.e., the number
-    of unique values is equal to the number of rows in the column. Numeric columns
-    are never dropped.
-    <br/>
-    #### Deprecated
-    Deprecated since version 0.9.0.
-    <br/>
-    This functionality can drop informative columns and is unlikely to be
-    of use in practice. It is therefore deprecated and will be removed in a
-    future version.
-
   **datetime_format**
   : The format to use when parsing dates. If None, the format is inferred.
 
@@ -53,14 +41,6 @@ dates, and removing uninformative columns. See the “Notes” section for a ful
     non-categorical, and non-datetime columns, converting them to strings.
     If `False`, this step is skipped and such columns retain their
     original dtype (e.g., lists, structs).
-
-  **numeric_dtype**
-  : If set to “float32”, this parameter has the same effect as
-    `cast_to_float32=True` and `parse_numbers=True`: it casts
-    numeric columns to `float32`.
-    <br/>
-    #### Deprecated
-    Deprecated since version 0.9.0: Use `cast_to_float32=True` with `parse_numbers=True` instead.
 
   **null_strings**
   : Additional strings to consider as null values, beyond the default list.

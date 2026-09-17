@@ -1,6 +1,6 @@
 # TableReport
 
-### *class* skrub.TableReport(dataframe, n_rows=None, order_by=None, title=None, column_filters=None, verbose=None, plot_distributions='auto', compute_associations='auto', open_tab='table', max_plot_columns=None, max_association_columns=None)
+### *class* skrub.TableReport(dataframe, n_rows=None, order_by=None, title=None, column_filters=None, verbose=None, plot_distributions='auto', compute_associations='auto', open_tab='table')
 
 Summarize the contents of a dataframe.
 
@@ -64,20 +64,6 @@ or programmatically with `.dict()`, `.json()`, or `.markdown()`.
     - `"auto"` (default): compute associations only when the number of
       columns does not exceed the configured `table_report_associations_threshold`
       (see [`set_config()`](skrub.set_config.md#skrub.set_config)).
-
-  **max_plot_columns**
-  : Deprecated in favor of `plot_distributions`. This parameter overrides
-    the value chosen for `plot_distributions` when it is not None.
-    <br/>
-    #### Deprecated
-    Deprecated since version 0.9.0.
-
-  **max_association_columns**
-  : Deprecated in favor of `compute_associations`. This parameter overrides
-    the value chosen for `compute_associations` when it is not None.
-    <br/>
-    #### Deprecated
-    Deprecated since version 0.9.0.
 
   **open_tab**
   : The tab that will be displayed by default when the report is opened.
