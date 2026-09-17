@@ -17,6 +17,10 @@
 
 ### Changes
 
+- The minimum version of Python has been increased to 3.11. The minimum version of
+  scikit-learn has been increased to 1.5.2. [#2280](https://github.com/skrub-data/skrub/pull/2280) by
+  [Riccardo Cappuzzo](https://github.com/rcap107).
+
 ### Bugfixes
 
 ### Deprecations

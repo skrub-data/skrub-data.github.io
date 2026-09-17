@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**04:31.577** total execution time for 5 files **from auto_examples/03_joining**:
+**05:30.742** total execution time for 5 files **from auto_examples/03_joining**:
 
 .. container::
 
@@ -33,17 +33,17 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_03_joining_0070_join_aggregation.py` (``0070_join_aggregation.py``)
-     - 02:30.787
-     - 916.7
+     - 03:29.490
+     - 634.8
    * - :ref:`sphx_glr_auto_examples_03_joining_0060_multiple_key_join.py` (``0060_multiple_key_join.py``)
-     - 00:42.932
-     - 2981.2
+     - 00:41.864
+     - 3039.3
    * - :ref:`sphx_glr_auto_examples_03_joining_0080_interpolation_join.py` (``0080_interpolation_join.py``)
-     - 00:40.745
-     - 2678.9
+     - 00:40.613
+     - 2717.8
    * - :ref:`sphx_glr_auto_examples_03_joining_0040_fuzzy_joining.py` (``0040_fuzzy_joining.py``)
-     - 00:32.695
-     - 579.7
+     - 00:33.692
+     - 596.4
    * - :ref:`sphx_glr_auto_examples_03_joining_0050_deduplication.py` (``0050_deduplication.py``)
-     - 00:04.418
-     - 566.1
+     - 00:05.083
+     - 593.3
