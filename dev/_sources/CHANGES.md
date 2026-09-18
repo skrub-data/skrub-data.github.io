@@ -23,6 +23,12 @@
 
 ### Bugfixes
 
+- [`ToDatetime`](reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime) (and therefore [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer)) now accepts pandas
+  columns containing `datetime.date` objects. Pandas stores those in an
+  `object` column, so they used to be rejected, whereas the equivalent polars
+  `Date` column was accepted.
+  [#2231](https://github.com/skrub-data/skrub/pull/2231) by [Sanjay Santhanam](https://github.com/Sanjays2402).
+
 ### Deprecations
 
 - The `TextEncoder` has been renamed [`LLMEncoder`](reference/generated/skrub.LLMEncoderhtml.md#skrub.LLMEncoder). It is still available

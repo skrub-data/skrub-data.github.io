@@ -616,6 +616,13 @@ scikit-learn has been increased to 1.5.2. <a class="reference external" href="ht
 </section>
 <section id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a> (and therefore <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>) now accepts pandas
+columns containing <code class="docutils literal notranslate"><span class="pre">datetime.date</span></code> objects. Pandas stores those in an
+<code class="docutils literal notranslate"><span class="pre">object</span></code> column, so they used to be rejected, whereas the equivalent polars
+<code class="docutils literal notranslate"><span class="pre">Date</span></code> column was accepted.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2231">#2231</a> by <a class="reference external" href="https://github.com/Sanjays2402">Sanjay Santhanam</a>.</p></li>
+</ul>
 </section>
 <section id="deprecations">
 <h3>Deprecations<a class="headerlink" href="#deprecations" title="Link to this heading">#</a></h3>
