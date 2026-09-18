@@ -85,110 +85,28 @@ $ mamba install -c conda-forge skrub[transformers]
 </div>
 <div class="tab-pane fade" id="source-tab-pane" role="tabpanel" aria-labelledby="source-tab" tabindex="0">
     <hr />
+<!-- Now that you're set up, -->
+<!-- you may return to :ref:`writing your first pull request<writing-your-first-pull-request>` -->
+<!-- and start coding! -->
 
-<a id="installing-from-source"></a>
+## Installing from source
 
-## Advanced Usage for Contributors
-
-### 1. Fork the project
-
-To contribute to the project, you first need to
-[fork skrub on GitHub](https://github.com/skrub-data/skrub/fork).
-
-That will enable you to push your commits to a branch *on your fork*.
-
-### 2. Clone your fork
-
-Clone your forked repo to your local machine:
+Clone your project from the main repository:
 
 ```console
-git clone https://github.com/<YOUR_USERNAME>/skrub
+git clone https://github.com/skrub-data/skrub.git
 cd skrub
 ```
 
-Next, add the *upstream* remote (i.e. the official skrub repository). This allows you
-to pull the latest changes from the main repository:
-
-```console
-git remote add upstream https://github.com/skrub-data/skrub.git
-```
-
-Verify that both the origin (your fork) and upstream (official repo)
-are correctly set up:
-
-```console
-git remote -v
-```
-
-You should see something like this:
-
-```console
-origin  git@github.com:<YOUR_USERNAME>/skrub.git (fetch)
-origin  git@github.com:<YOUR_USERNAME>/skrub.git (push)
-upstream        git@github.com:skrub-data/skrub.git (fetch)
-upstream        git@github.com:skrub-data/skrub.git (push)
-```
-
-### 3. Setup your environment
-
-Now, setup a development environment.
-You can set up a virtual environment with Conda, or with python’s `venv`:
-
-- With [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html):
-
-```console
-conda create -n env_skrub python=3.13
-conda activate env_skrub
-```
-
-- With [venv](https://docs.python.org/3/library/venv.html):
-
-```console
-python -m venv env_skrub
-source env_skrub/bin/activate
-```
-
-Then, with the environment activated and at the root of your local copy of skrub,
-install the local package in editable mode with development dependencies:
+Install skrub in the current environment with development dependencies:
 
 ```console
 pip install -e ".[dev]"
 ```
 
-Enabling pre-commit hooks ensures code style consistency by triggering checks (mainly formatting) every time you run a `git commit`.
+## Contributing to the library
 
-```console
-pre-commit install
-```
-
-Optionally, configure Git to ignore certain revisions in git blame and
-IDE integrations. These revisions are listed in .git-blame-ignore-revs:
-
-```console
-git config blame.ignoreRevsFile .git-blame-ignore-revs
-```
-
-### 4. Run the tests
-
-To ensure your environment is correctly set up, run the test suite:
-
-```console
-pytest --pyargs skrub
-```
-
-Testing should take about 5 minutes.
-
-If you see some warnings like:
-
-```sh
-UserWarning: Only pandas and polars DataFrames are supported, but input is a Numpy array. Please convert Numpy arrays to DataFrames before passing them to skrub transformers. Converting to pandas DataFrame with columns ['0', '1', …].
-  warnings.warn(
-```
-
-This is expected, and you may proceed with the next steps without worrying about them.
-However, no tests should fail at this point: if they do fail, then let us know.
-
-After that, your environment is ready for development!
+To contribute to the library, check the [contributing guide](CONTRIBUTINGhtml.md#fork-project)
 
 **Deep learning dependencies**
 
@@ -201,10 +119,6 @@ and [sentence-transformers](https://pypi.org/project/sentence-transformers/).
 ```console
 $ pip install -e ".[transformers]"
 ```
-
-Now that you’re set up,
-you may return to [writing your first pull request](CONTRIBUTINGhtml.md#writing-your-first-pull-request)
-and start coding!
 
     </div>
 </div>

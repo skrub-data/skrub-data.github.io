@@ -744,11 +744,84 @@ of scope or unrelated to the problem at hand.</p>
 </section>
 <section id="setting-up-the-environment">
 <h4>Setting up the environment<a class="headerlink" href="#setting-up-the-environment" title="Link to this heading">#</a></h4>
-<p>To setup your development environment, you need to follow the steps in “From Source” tab
-present in <a class="reference internal" href="install.html#installing-from-source"><span class="std std-ref">Installing from source</span></a> page.
-After that, you can return to this page to continue.</p>
-<p>Now that the development environment is ready, you may create a new branch and start working on
-the new issue.</p>
+<section id="fork-the-project">
+<span id="fork-project"></span><h5>Fork the project<a class="headerlink" href="#fork-the-project" title="Link to this heading">#</a></h5>
+<p>To contribute to the project, you first need to
+<a class="reference external" href="https://github.com/skrub-data/skrub/fork">fork skrub on GitHub</a>.</p>
+<p>That will enable you to push your commits to a branch <em>on your fork</em>.</p>
+</section>
+<section id="clone-your-fork">
+<h5>Clone your fork<a class="headerlink" href="#clone-your-fork" title="Link to this heading">#</a></h5>
+<p>Clone your forked repo to your local machine:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git clone https://github.com/&lt;YOUR_USERNAME&gt;/skrub</span>
+<span class="go">cd skrub</span>
+</pre></div>
+</div>
+<p>Next, add the <em>upstream</em> remote (i.e. the official skrub repository). This allows you
+to pull the latest changes from the main repository:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git remote add upstream https://github.com/skrub-data/skrub.git</span>
+</pre></div>
+</div>
+<p>Verify that both the origin (your fork) and upstream (official repo)
+are correctly set up:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git remote -v</span>
+</pre></div>
+</div>
+<p>You should see something like this:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">origin  git@github.com:&lt;YOUR_USERNAME&gt;/skrub.git (fetch)</span>
+<span class="go">origin  git@github.com:&lt;YOUR_USERNAME&gt;/skrub.git (push)</span>
+<span class="go">upstream        git@github.com:skrub-data/skrub.git (fetch)</span>
+<span class="go">upstream        git@github.com:skrub-data/skrub.git (push)</span>
+</pre></div>
+</div>
+</section>
+<section id="set-up-your-environment">
+<h5>Set up your environment<a class="headerlink" href="#set-up-your-environment" title="Link to this heading">#</a></h5>
+<p>Set up the development environment.
+You can set up a virtual environment with Conda, or with python’s <code class="docutils literal notranslate"><span class="pre">venv</span></code>:</p>
+<ul class="simple">
+<li><p>With <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">conda</a>:</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">conda create -n env_skrub python=3.13</span>
+<span class="go">conda activate env_skrub</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>With <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a>:</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python -m venv env_skrub</span>
+<span class="go">source env_skrub/bin/activate</span>
+</pre></div>
+</div>
+<p>Install the local package at the root of your local copy of skrub in editable mode. Modifications done in the source folder are reflected in the installed package.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install -e .</span>
+</pre></div>
+</div>
+<p>For installing with development dependencies:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install -e ".[dev]"</span>
+</pre></div>
+</div>
+</section>
+<section id="installing-pre-commit-hooks">
+<h5>Installing pre-commit hooks<a class="headerlink" href="#installing-pre-commit-hooks" title="Link to this heading">#</a></h5>
+<p>Enabling pre-commit hooks ensures code style consistency by triggering checks (mainly formatting) every time you run a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pre-commit install</span>
+</pre></div>
+</div>
+<p>Optionally, configure Git to ignore certain revisions in git blame and
+IDE integrations. These revisions are listed in .git-blame-ignore-revs:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git config blame.ignoreRevsFile .git-blame-ignore-revs</span>
+</pre></div>
+</div>
+</section>
+<section id="run-the-tests">
+<h5>Run the tests<a class="headerlink" href="#run-the-tests" title="Link to this heading">#</a></h5>
+<p>To ensure your environment is correctly set up, run the test suite:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pytest --pyargs skrub</span>
+</pre></div>
+</div>
+<p>Testing should take about 5 minutes.</p>
+<p>Now that the development environment is ready, you may create a new branch and start working on the new issue.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># fetch latest updates and start from the current head</span>
 git<span class="w"> </span>fetch<span class="w"> </span>upstream
 git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>my-branch-name-eg-fix-issue-123
@@ -761,6 +834,7 @@ git<span class="w"> </span>push<span class="w"> </span>--set-upstream<span class
 <p>At this point, if you visit again the <a class="reference external" href="https://github.com/skrub-data/skrub/pulls">pull requests
 page</a> github should show a
 banner asking if you want to open a pull request from your new branch.</p>
+</section>
 </section>
 <section id="implementation-guidelines">
 <span id="id2"></span><h4>Implementation Guidelines<a class="headerlink" href="#implementation-guidelines" title="Link to this heading">#</a></h4>
@@ -1126,7 +1200,14 @@ merging the PR.</p>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-your-first-pull-request">Writing your first Pull Request</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-the-ground">Preparing the ground</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-the-environment">Setting up the environment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-the-environment">Setting up the environment</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#fork-the-project">Fork the project</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-your-fork">Clone your fork</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-your-environment">Set up your environment</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-pre-commit-hooks">Installing pre-commit hooks</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#run-the-tests">Run the tests</a></li>
+</ul>
+</li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-guidelines">Implementation Guidelines</a></li>
 </ul>
 </li>

@@ -660,87 +660,21 @@ and <a class="reference external" href="https://anaconda.org/conda-forge/sentenc
 </div>
 </div>
 <div class="tab-pane fade" id="source-tab-pane" role="tabpanel" aria-labelledby="source-tab" tabindex="0">
-    <hr /><section id="advanced-usage-for-contributors">
-<span id="installing-from-source"></span><h2>Advanced Usage for Contributors<a class="headerlink" href="#advanced-usage-for-contributors" title="Link to this heading">#</a></h2>
-<section id="fork-the-project">
-<h3>1. Fork the project<a class="headerlink" href="#fork-the-project" title="Link to this heading">#</a></h3>
-<p>To contribute to the project, you first need to
-<a class="reference external" href="https://github.com/skrub-data/skrub/fork">fork skrub on GitHub</a>.</p>
-<p>That will enable you to push your commits to a branch <em>on your fork</em>.</p>
-</section>
-<section id="clone-your-fork">
-<h3>2. Clone your fork<a class="headerlink" href="#clone-your-fork" title="Link to this heading">#</a></h3>
-<p>Clone your forked repo to your local machine:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git clone https://github.com/&lt;YOUR_USERNAME&gt;/skrub</span>
+    <hr /><span class="target" id="installing-from-source"></span><section id="id7">
+<h2>Installing from source<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<p>Clone your project from the main repository:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git clone https://github.com/skrub-data/skrub.git</span>
 <span class="go">cd skrub</span>
 </pre></div>
 </div>
-<p>Next, add the <em>upstream</em> remote (i.e. the official skrub repository). This allows you
-to pull the latest changes from the main repository:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git remote add upstream https://github.com/skrub-data/skrub.git</span>
-</pre></div>
-</div>
-<p>Verify that both the origin (your fork) and upstream (official repo)
-are correctly set up:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git remote -v</span>
-</pre></div>
-</div>
-<p>You should see something like this:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">origin  git@github.com:&lt;YOUR_USERNAME&gt;/skrub.git (fetch)</span>
-<span class="go">origin  git@github.com:&lt;YOUR_USERNAME&gt;/skrub.git (push)</span>
-<span class="go">upstream        git@github.com:skrub-data/skrub.git (fetch)</span>
-<span class="go">upstream        git@github.com:skrub-data/skrub.git (push)</span>
-</pre></div>
-</div>
-</section>
-<section id="setup-your-environment">
-<h3>3. Setup your environment<a class="headerlink" href="#setup-your-environment" title="Link to this heading">#</a></h3>
-<p>Now, setup a development environment.
-You can set up a virtual environment with Conda, or with python’s <code class="docutils literal notranslate"><span class="pre">venv</span></code>:</p>
-<ul class="simple">
-<li><p>With <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">conda</a>:</p></li>
-</ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">conda create -n env_skrub python=3.13</span>
-<span class="go">conda activate env_skrub</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>With <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a>:</p></li>
-</ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python -m venv env_skrub</span>
-<span class="go">source env_skrub/bin/activate</span>
-</pre></div>
-</div>
-<p>Then, with the environment activated and at the root of your local copy of skrub,
-install the local package in editable mode with development dependencies:</p>
+<p>Install skrub in the current environment with development dependencies:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install -e ".[dev]"</span>
 </pre></div>
 </div>
-<p>Enabling pre-commit hooks ensures code style consistency by triggering checks (mainly formatting) every time you run a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code>.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pre-commit install</span>
-</pre></div>
-</div>
-<p>Optionally, configure Git to ignore certain revisions in git blame and
-IDE integrations. These revisions are listed in .git-blame-ignore-revs:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git config blame.ignoreRevsFile .git-blame-ignore-revs</span>
-</pre></div>
-</div>
 </section>
-<section id="run-the-tests">
-<h3>4. Run the tests<a class="headerlink" href="#run-the-tests" title="Link to this heading">#</a></h3>
-<p>To ensure your environment is correctly set up, run the test suite:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pytest --pyargs skrub</span>
-</pre></div>
-</div>
-<p>Testing should take about 5 minutes.</p>
-<p>If you see some warnings like:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>UserWarning:<span class="w"> </span>Only<span class="w"> </span>pandas<span class="w"> </span>and<span class="w"> </span>polars<span class="w"> </span>DataFrames<span class="w"> </span>are<span class="w"> </span>supported,<span class="w"> </span>but<span class="w"> </span>input<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>Numpy<span class="w"> </span>array.<span class="w"> </span>Please<span class="w"> </span>convert<span class="w"> </span>Numpy<span class="w"> </span>arrays<span class="w"> </span>to<span class="w"> </span>DataFrames<span class="w"> </span>before<span class="w"> </span>passing<span class="w"> </span>them<span class="w"> </span>to<span class="w"> </span>skrub<span class="w"> </span>transformers.<span class="w"> </span>Converting<span class="w"> </span>to<span class="w"> </span>pandas<span class="w"> </span>DataFrame<span class="w"> </span>with<span class="w"> </span>columns<span class="w"> </span><span class="o">[</span><span class="s1">'0'</span>,<span class="w"> </span><span class="s1">'1'</span>,<span class="w"> </span>…<span class="o">]</span>.
-<span class="w">  </span>warnings.warn<span class="o">(</span>
-</pre></div>
-</div>
-<p>This is expected, and you may proceed with the next steps without worrying about them.
-However, no tests should fail at this point: if they do fail, then let us know.</p>
-<p>After that, your environment is ready for development!</p>
+<section id="contributing-to-the-library">
+<h2>Contributing to the library<a class="headerlink" href="#contributing-to-the-library" title="Link to this heading">#</a></h2>
+<p>To contribute to the library, check the <a class="reference internal" href="CONTRIBUTING.html#fork-project"><span class="std std-ref">contributing guide</span></a></p>
 <p><strong>Deep learning dependencies</strong></p>
 <p>Deep-learning based encoders like <a class="reference internal" href="reference/generated/skrub.LLMEncoder.html#skrub.LLMEncoder" title="skrub.LLMEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code></a> require installing optional
 dependencies to use them. The following will install
@@ -750,13 +684,9 @@ and <a class="reference external" href="https://pypi.org/project/sentence-transf
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">".[transformers]"</span>
 </pre></div>
 </div>
-<p>Now that you’re set up,
-you may return to <a class="reference internal" href="CONTRIBUTING.html#writing-your-first-pull-request"><span class="std std-ref">writing your first pull request</span></a>
-and start coding!</p>
     </div>
 </div>
 </div></section>
-</section>
 </section>
 
 
@@ -806,13 +736,8 @@ and start coding!</p>
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-usage-for-contributors">Advanced Usage for Contributors</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fork-the-project">1. Fork the project</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-your-fork">2. Clone your fork</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-your-environment">3. Setup your environment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#run-the-tests">4. Run the tests</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Installing from source</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-to-the-library">Contributing to the library</a></li>
 </ul>
   </nav></div>
 
