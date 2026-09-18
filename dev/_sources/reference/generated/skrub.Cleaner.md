@@ -187,14 +187,31 @@ We can inspect all the processing steps that were applied to a given column:
 
 ### Methods
 
-| [`fit`](#skrub.Cleaner.fit)(X[, y])                                               | Fit transformer.                                                           |
-|-----------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [`fit_transform`](#skrub.Cleaner.fit_transform)(X[, y])                           | Fit transformer and transform dataframe.                                   |
-| [`get_feature_names_out`](#skrub.Cleaner.get_feature_names_out)([input_features]) | Return the column names of the output of `transform` as a list of strings. |
-| [`get_params`](#skrub.Cleaner.get_params)([deep])                                 | Get parameters for this estimator.                                         |
-| [`set_output`](#skrub.Cleaner.set_output)(\*[, transform])                        | Set output container.                                                      |
-| [`set_params`](#skrub.Cleaner.set_params)(\*\*params)                             | Set the parameters of this estimator.                                      |
-| [`transform`](#skrub.Cleaner.transform)(X)                                        | Transform dataframe.                                                       |
+| [`describe_transformations`](#skrub.Cleaner.describe_transformations)([max_cols])   | Returns a string reporting the transformations applied by the         TableVectorizer and the columns they are each applied to.   |
+|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| [`fit`](#skrub.Cleaner.fit)(X[, y])                                                 | Fit transformer.                                                                                                                  |
+| [`fit_transform`](#skrub.Cleaner.fit_transform)(X[, y])                             | Fit transformer and transform dataframe.                                                                                          |
+| [`get_feature_names_out`](#skrub.Cleaner.get_feature_names_out)([input_features])   | Return the column names of the output of `transform` as a list of strings.                                                        |
+| [`get_params`](#skrub.Cleaner.get_params)([deep])                                   | Get parameters for this estimator.                                                                                                |
+| [`set_output`](#skrub.Cleaner.set_output)(\*[, transform])                          | Set output container.                                                                                                             |
+| [`set_params`](#skrub.Cleaner.set_params)(\*\*params)                               | Set the parameters of this estimator.                                                                                             |
+| [`transform`](#skrub.Cleaner.transform)(X)                                          | Transform dataframe.                                                                                                              |
+<!-- !! processed by numpydoc !! -->
+
+#### describe_transformations(max_cols=10)
+
+Returns a string reporting the transformations applied by the         TableVectorizer and the columns they are each applied to.
+
+* **Parameters:**
+  **max_cols**
+  : The maximum amount of columns to list per transformer. Any overflow is
+    represented by `...`
+* **Returns:**
+  **full_list**
+  : An ASCII formatted message sorting transformers by category
+    (preprocessing, specific processors, etc.) and listing the columns
+    to which each of these transformers is applied.
+
 <!-- !! processed by numpydoc !! -->
 
 #### fit(X, y=None)

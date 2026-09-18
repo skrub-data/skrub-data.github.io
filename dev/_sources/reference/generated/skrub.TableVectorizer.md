@@ -362,14 +362,33 @@ ValueError: Column 'A' used twice in 'specific_transformers', at indices 0 and 1
 
 ### Methods
 
-| [`fit`](#skrub.TableVectorizer.fit)(X[, y])                                               | Fit transformer.                                                           |
-|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [`fit_transform`](#skrub.TableVectorizer.fit_transform)(X[, y])                           | Fit transformer and transform dataframe.                                   |
-| [`get_feature_names_out`](#skrub.TableVectorizer.get_feature_names_out)([input_features]) | Return the column names of the output of `transform` as a list of strings. |
-| [`get_params`](#skrub.TableVectorizer.get_params)([deep])                                 | Get parameters for this estimator.                                         |
-| [`set_output`](#skrub.TableVectorizer.set_output)(\*[, transform])                        | Set output container.                                                      |
-| [`set_params`](#skrub.TableVectorizer.set_params)(\*\*params)                             | Set the parameters of this estimator.                                      |
-| [`transform`](#skrub.TableVectorizer.transform)(X)                                        | Transform dataframe.                                                       |
+| [`describe_transformations`](#skrub.TableVectorizer.describe_transformations)([max_cols])   | Returns a string reporting the transformations applied by the             TableVectorizer and the columns they are each applied to.   |
+|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| [`fit`](#skrub.TableVectorizer.fit)(X[, y])                                                 | Fit transformer.                                                                                                                      |
+| [`fit_transform`](#skrub.TableVectorizer.fit_transform)(X[, y])                             | Fit transformer and transform dataframe.                                                                                              |
+| [`get_feature_names_out`](#skrub.TableVectorizer.get_feature_names_out)([input_features])   | Return the column names of the output of `transform` as a list of strings.                                                            |
+| [`get_params`](#skrub.TableVectorizer.get_params)([deep])                                   | Get parameters for this estimator.                                                                                                    |
+| [`set_output`](#skrub.TableVectorizer.set_output)(\*[, transform])                          | Set output container.                                                                                                                 |
+| [`set_params`](#skrub.TableVectorizer.set_params)(\*\*params)                               | Set the parameters of this estimator.                                                                                                 |
+| [`transform`](#skrub.TableVectorizer.transform)(X)                                          | Transform dataframe.                                                                                                                  |
+<!-- !! processed by numpydoc !! -->
+
+#### describe_transformations(max_cols=10)
+
+Returns a string reporting the transformations applied by the             TableVectorizer and the columns they are each applied to.
+
+This covers every preprocessing step, each of the `numeric`, `datetime`,         `low cardinality` and `high cardinality` transformations and any         specific transformer. Post-processors being always the same         (ToFloat applied to every numeric column), they are not mentioned.
+
+* **Parameters:**
+  **max_cols**
+  : The maximum amount of columns to list per transformer. Any overflow is
+    represented by `...`
+* **Returns:**
+  **full_list**
+  : An ASCII formatted message sorting transformers by category
+    (preprocessing, specific processors, etc.) and listing the columns
+    to which each of these transformers is applied.
+
 <!-- !! processed by numpydoc !! -->
 
 #### fit(X, y=None)

@@ -10,10 +10,18 @@
   (of known size), for example `first, second = data_op`. Each target becomes
   a DataOp that extracts one of the items.
   [#2243](https://github.com/skrub-data/skrub/pull/2243) by [Elias Strauss](https://github.com/e-strauss).
-
-– TabularPipeline now uses the estimator when given a pipeline to determine
-: the parameters of the TableVectorizer.
+- TabularPipeline now uses the estimator when given a pipeline to determine
+  the parameters of the TableVectorizer.
   [#2152](https://github.com/skrub-data/skrub/pull/2152) by [@Khaoula Riad and Marine Michaut](https://github.com/Khaoula Riad and Marine Michaut).
+- The [`Cleaner`](reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) and [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) classes now have a
+
+  ```
+  :method:`list_transformations`
+  ```
+
+   method that outputs a human-readable
+  summary of the columns transformed by each of its steps.
+  [#2122](https://github.com/skrub-data/skrub/pull/2122) by [Eloi Massoulié](https://github.com/emassoulie).
 
 ### Changes
 
