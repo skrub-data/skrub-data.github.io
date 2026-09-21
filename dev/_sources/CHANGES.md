@@ -45,6 +45,8 @@
 - Removed deprecated parameters `max_plot_columns` and `max_association_columns`
   from [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport). Use `plot_distributions` and `compute_associations`
   instead. [#2271](https://github.com/skrub-data/skrub/pull/2271) by [m4nn2609-dot](https://github.com/m4nn2609-dot).
+- Removed deprecated parameter `order_by` from [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport).
+  [#2289](https://github.com/skrub-data/skrub/pull/2289) by [Lisa McBride](https://github.com/lisaleemcb).
 
 ## Release 0.10.1
 

@@ -851,11 +851,6 @@ Present only when <code class="docutils literal notranslate"><span class="pre">a
 <td><p><strong>Optional.</strong> Present only when a <code class="docutils literal notranslate"><span class="pre">title</span></code> argument was passed to
 <a class="reference internal" href="generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">order_by</span></code></p></td>
-<td><p>string</p></td>
-<td><p><strong>Optional.</strong> Name of the column used for sorting when the deprecated
-parameter <code class="docutils literal notranslate"><span class="pre">order_by</span></code> was passed to <a class="reference internal" href="generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -1059,14 +1054,14 @@ for non-constant numeric columns (even when <code class="docutils literal notran
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">histogram_plot</span></code></p></td>
 <td><p>string (SVG)</p></td>
-<td><p><strong>Optional</strong>. Present only when <code class="docutils literal notranslate"><span class="pre">plots_skipped</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code> and
-<code class="docutils literal notranslate"><span class="pre">order_by</span></code> is not set. Distribution histogram as an inline SVG
+<td><p><strong>Optional</strong>. Present only when <code class="docutils literal notranslate"><span class="pre">plots_skipped</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code>.
+Distribution histogram as an inline SVG
 string.</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">line_plot</span></code></p></td>
 <td><p>string (SVG)</p></td>
-<td><p><strong>Optional</strong>. Present only when <code class="docutils literal notranslate"><span class="pre">plots_skipped</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code> and <code class="docutils literal notranslate"><span class="pre">order_by</span></code>
-is set. Line chart of the column values against the sort column as
+<td><p><strong>Optional</strong>. Present only when <code class="docutils literal notranslate"><span class="pre">plots_skipped</span></code> is <a href="#id1"><span class="problematic" id="id2">``</span></a>false`.
+Line chart of the column values against the sort column as
 an inline SVG string.</p></td>
 </tr>
 </tbody>

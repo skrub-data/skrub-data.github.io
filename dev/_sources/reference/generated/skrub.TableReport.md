@@ -1,6 +1,6 @@
 # TableReport
 
-### *class* skrub.TableReport(dataframe, n_rows=None, order_by=None, title=None, column_filters=None, verbose=None, plot_distributions='auto', compute_associations='auto', open_tab='table')
+### *class* skrub.TableReport(dataframe, n_rows=None, title=None, column_filters=None, verbose=None, plot_distributions='auto', compute_associations='auto', open_tab='table')
 
 Summarize the contents of a dataframe.
 
@@ -22,14 +22,6 @@ or programmatically with `.dict()`, `.json()`, or `.markdown()`.
     <br/>
     The default value `None` uses the global configuration (see
     [`set_config()`](skrub.set_config.md#skrub.set_config)), which then defaults to 10.
-
-  **order_by**
-  : Deprecated. Column name to use for sorting. Other numerical columns
-    will be plotted as function of the sorting column. Must be of
-    numerical or datetime type.
-    <br/>
-    #### Deprecated
-    Deprecated since version 0.10.0.
 
   **title**
   : Title for the report.
