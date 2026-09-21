@@ -33,7 +33,7 @@ examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Here we give a bird&#x27;s eye view of the DataOps workflow on a simple regression task that we saw in an early example &lt;example_encodings&gt;: predicting the salaries of US Government employees.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we give a bird&#x27;s eye view of the DataOps workflow on a simple regression task that we saw in an early example: predicting the salaries of US Government employees.">
 
 .. only:: html
 
