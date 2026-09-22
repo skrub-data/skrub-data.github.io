@@ -644,7 +644,7 @@ are available by using</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">config</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">get_config</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">config</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
-<span class="go">dict_keys(['use_table_report_data_ops', 'table_report_plots_threshold', 'table_report_associations_threshold', 'table_report_n_rows', 'table_report_verbosity', 'subsampling_seed', 'enable_subsampling', 'float_precision', 'cardinality_threshold', 'data_dir', 'eager_data_ops', 'data_ops_open_graph_dropdown'])</span>
+<span class="go">dict_keys(['use_table_report_data_ops', 'table_report_plots_threshold', 'table_report_associations_threshold', 'table_report_n_rows', 'table_report_verbosity', 'subsampling_seed', 'enable_subsampling', 'float_precision', 'cardinality_threshold', 'data_dir', 'cache', 'target_cache_size', 'eager_data_ops', 'data_ops_open_graph_dropdown'])</span>
 </pre></div>
 </div>
 <p>These are the parameters currently available in the global configuration:</p>
@@ -708,6 +708,16 @@ are available by using</p>
 <td><p><code class="docutils literal notranslate"><span class="pre">~/skrub_data</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">SKB_DATA_DIRECTORY</span></code></p></td>
 <td><p>Set the default location used by skrub to store datasets and other data, such as the Data Ops reports.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cache</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SKB_CACHE</span></code></p></td>
+<td><p>Enable <a class="reference internal" href="../../modules/data_ops/ml_pipeline/caching.html#user-guide-data-ops-caching"><span class="std std-ref">caching</span></a> of the estimators and functions used in a DataOp. <code class="docutils literal notranslate"><span class="pre">True</span></code> uses a default directory inside <code class="docutils literal notranslate"><span class="pre">data_dir</span></code>; a path can also be provided.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">target_cache_size</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">'2G'</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SKB_TARGET_CACHE_SIZE</span></code></p></td>
+<td><p>Approximate size above which the cache directory is pruned, as an int (bytes) or a string such as <code class="docutils literal notranslate"><span class="pre">'3G'</span></code>. <code class="docutils literal notranslate"><span class="pre">None</span></code> disables pruning.</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">eager_data_ops</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>

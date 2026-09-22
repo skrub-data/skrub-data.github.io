@@ -6,6 +6,12 @@
 
 ### New Features
 
+- It is now possible to enable persistent caching of estimators and functions
+  used in a [DataOp](data_opshtml.md#user-guide-data-ops-index), by setting a value for
+  `cache` in [`set_config()`](reference/generated/skrub.set_confightml.md#skrub.set_config). This caching can be turned off on a
+  node-by-node basis by using the `no_cache` parameter of [`deferred()`](reference/generated/skrub.deferredhtml.md#skrub.deferred),
+  [`.skb.apply`](reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply) and [`.skb.apply_func`](reference/generated/skrub.DataOp.skb.apply_funchtml.md#skrub.DataOp.skb.apply_func). See the [user guide](modules/data_ops/ml_pipeline/cachinghtml.md#user-guide-data-ops-caching) for more information.
+  [#2017](https://github.com/skrub-data/skrub/pull/2017) by [Jérôme Dockès](https://github.com/jeromedockes).
 - It is now possible to unpack a [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) that evaluates to an iterable
   (of known size), for example `first, second = data_op`. Each target becomes
   a DataOp that extracts one of the items.

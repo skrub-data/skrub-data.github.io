@@ -1,6 +1,6 @@
 # deferred
 
-### skrub.deferred(func)
+### skrub.deferred(func=None, , no_cache=False)
 
 Wrap function calls in a DataOp [`DataOp`](skrub.DataOp.md#skrub.DataOp).
 
@@ -15,6 +15,13 @@ and `deferred`.
 * **Parameters:**
   **func**
   : The function to wrap
+
+  **no_cache**
+  : If True, caching is forbidden for this function: calls will not be
+    cached even if the configuration enables caching with
+    skrub.set_config(cache=’/path/to/cache_dir’).
+    <br/>
+    See [Caching for faster recomputation](../../modules/data_ops/ml_pipeline/caching.md#user-guide-data-ops-caching) for more information about caching.
 * **Returns:**
   A new function
   : When called, rather than applying the original function immediately, it
@@ -78,6 +85,32 @@ used with the `@` syntax:
 >>> e.skb.eval({'x': 3})
 INFO x = 3
 3
+```
+
+It is possible to pass `no_cache` with the decorator syntax as well:
+
+```pycon
+>>> @skrub.deferred(no_cache=True)
+... def f(x): return x * 2
+```
+
+is equivalent to:
+
+```pycon
+>>> def f(x): return x * 2
+>>> f = skrub.deferred(f, no_cache=True)
+```
+
+The original function is available as the `func` attribute:
+
+```pycon
+>>> f(2)  # Call the deferred function, returns a DataOp.
+<Call 'f'>
+Result:
+―――――――
+4
+>>> f.func(2)  # Call the original function.
+4
 ```
 
 **Advanced examples**

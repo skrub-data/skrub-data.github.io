@@ -1,6 +1,6 @@
 # skrub.DataOp.skb.apply
 
-#### DataOp.skb.apply(estimator, , y=None, cols=all(), exclude_cols=None, no_wrap=False, allow_reject=False, unsupervised=False, fit_kwargs=None, fit_transform_kwargs=None, transform_kwargs=None, predict_kwargs=None, predict_proba_kwargs=None, decision_function_kwargs=None, score_kwargs=None)
+#### DataOp.skb.apply(estimator, , y=None, cols=all(), exclude_cols=None, no_wrap=False, allow_reject=False, unsupervised=False, fit_kwargs=None, fit_transform_kwargs=None, transform_kwargs=None, predict_kwargs=None, predict_proba_kwargs=None, decision_function_kwargs=None, score_kwargs=None, no_cache=False)
 
 Apply an estimator that follows the scikit-learn API to a dataframe or numpy array.
 
@@ -78,6 +78,13 @@ Apply an estimator that follows the scikit-learn API to a dataframe or numpy arr
   **score_kwargs**
   : Extra named arguments for `score`. See the description of the
     `fit_kwargs` parameter.
+
+  **no_cache**
+  : If True, caching is forbidden for this estimator: it will not be
+    cached even if the configuration enables caching with
+    skrub.set_config(cache=’/path/to/cache_dir’).
+    <br/>
+    See [Caching for faster recomputation](../../modules/data_ops/ml_pipeline/caching.md#user-guide-data-ops-caching) for more information about caching.
 * **Returns:**
   result
   : The transformed dataframe when `estimator` is a transformer, and

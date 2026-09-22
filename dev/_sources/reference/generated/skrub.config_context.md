@@ -1,6 +1,6 @@
 # config_context
 
-### skrub.config_context(, use_table_report_data_ops=None, table_report_plots_threshold=None, table_report_associations_threshold=None, table_report_n_rows=None, table_report_verbosity=None, subsampling_seed=None, max_plot_columns=None, max_association_columns=None, enable_subsampling=None, float_precision=None, cardinality_threshold=None, data_dir=None, eager_data_ops=None, data_ops_open_graph_dropdown=None)
+### skrub.config_context(, use_table_report_data_ops=None, table_report_plots_threshold=None, table_report_associations_threshold=None, table_report_n_rows=None, table_report_verbosity=None, subsampling_seed=None, max_plot_columns=None, max_association_columns=None, enable_subsampling=None, float_precision=None, cardinality_threshold=None, data_dir=None, cache=unchanged, target_cache_size=unchanged, eager_data_ops=None, data_ops_open_graph_dropdown=None)
 
 Context manager for global skrub configuration.
 
@@ -90,6 +90,29 @@ Context manager for global skrub configuration.
     This configuration can also be set with the `SKB_DATA_DIRECTORY`
     environment variable. The deprecated `SKRUB_DATA_DIRECTORY` is still
     supported with a deprecation warning.
+
+  **cache**
+  : Caching to use for the evaluation of DataOps.
+    - If False (or None), no caching is used.
+    - If True, the cache directory is in a default location (data_dir / \_cache).
+    - If a string (or Path), this path is used as the cache directory.
+    <br/>
+    This configuration can also be set with the `SKB_CACHE`
+    environment variable.
+    <br/>
+    See [Caching for faster recomputation](../../modules/data_ops/ml_pipeline/caching.md#user-guide-data-ops-caching) for more information about caching.
+
+  **target_cache_size**
+  : When using caching, the cache will be pruned if it grows bigger than
+    this size. Can be an int to set a size in bytes, or a string like
+    ‘3000000K’, ‘3000M’, ‘3G’. None means never prune the cache. By default
+    it is set to 2G; set to None if you prefer to manage the cache
+    yourself.
+    <br/>
+    This configuration can also be set with the `SKB_TARGET_CACHE_SIZE`
+    environment variable (Set it to ‘None’ or ‘’ to mean None ie no limit).
+    <br/>
+    See [Caching for faster recomputation](../../modules/data_ops/ml_pipeline/caching.md#user-guide-data-ops-caching) for more information about caching.
 
   **eager_data_ops**
   : Eagerly perform checks on the DataOps as soon they are created, and

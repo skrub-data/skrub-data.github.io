@@ -240,6 +240,7 @@ it 'style' --> <script>
     * [Documenting the DataOps plan with node names and descriptions](modules/data_ops/ml_pipeline/documenting_data_ops_planhtml.md)
     * [Evaluating and debugging the DataOps plan with `.skb.full_report()`](modules/data_ops/ml_pipeline/evaluating_debugging_data_opshtml.md)
     * [Using only a part of a DataOps plan](modules/data_ops/ml_pipeline/using_part_of_data_ops_planhtml.md)
+    * [Caching for faster recomputation](modules/data_ops/ml_pipeline/cachinghtml.md)
     * [Subsampling data for easier development and debugging](modules/data_ops/ml_pipeline/subsampling_datahtml.md)
   * [Tuning and validating skrub DataOps plans](data_opshtml.md#tuning-and-validating-skrub-dataops-plans)
     * [Tuning and validating skrub DataOps plans](modules/data_ops/validation/tuning_validating_data_opshtml.md)

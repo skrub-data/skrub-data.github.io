@@ -34,6 +34,7 @@
 - [Using previews for easier development and debugging](https://skrub-data.org/stable/_sources/modules/data_ops/basics/using_previews.md)
 - [Applying machine-learning estimators](https://skrub-data.org/stable/_sources/modules/data_ops/ml_pipeline/applying_ml_estimators.md)
 - [Applying different transformers using skrub selectors and DataOps](https://skrub-data.org/stable/_sources/modules/data_ops/ml_pipeline/applying_different_transformers.md)
+- [Caching for faster recomputation](https://skrub-data.org/stable/_sources/modules/data_ops/ml_pipeline/caching.md)
 - [Documenting the DataOps plan with node names and descriptions](https://skrub-data.org/stable/_sources/modules/data_ops/ml_pipeline/documenting_data_ops_plan.md)
 - [Evaluating and debugging the DataOps plan with .skb.full_report()](https://skrub-data.org/stable/_sources/modules/data_ops/ml_pipeline/evaluating_debugging_data_ops.md)
 - [Subsampling data for easier development and debugging](https://skrub-data.org/stable/_sources/modules/data_ops/ml_pipeline/subsampling_data.md)

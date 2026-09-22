@@ -786,7 +786,7 @@
 <h1>deferred<a class="headerlink" href="#deferred" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.deferred">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deferred</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/eda81ed/skrub/_data_ops/_data_ops.py#L1789"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deferred" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deferred</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2926a34/skrub/_data_ops/_data_ops.py#L1897"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deferred" title="Link to this definition">#</a></dt>
 <dd><p>Wrap function calls in a DataOp <a class="reference internal" href="skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a>.</p>
 <p>When this decorator is applied, the resulting function returns DataOps.
 The returned DataOp wraps the call to the original function, and the
@@ -794,10 +794,15 @@ call is executed when the DataOp is evaluated. This allows including calls
 to any function as a step in a learner, rather than executing it immediately.</p>
 <p>See the examples gallery for an in-depth explanation of skrub DataOps
 and <code class="docutils literal notranslate"><span class="pre">deferred</span></code>.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
+<dd class="field-odd"><dl>
 <dt><strong>func</strong><span class="classifier">function</span></dt><dd><p>The function to wrap</p>
+</dd>
+<dt><strong>no_cache</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default = <a class="reference external" href="https://docs.python.org/3/builtins/constants.html#False" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">False</span></code></a></span></dt><dd><p>If True, caching is forbidden for this function: calls will not be
+cached even if the configuration enables caching with
+skrub.set_config(cache=’/path/to/cache_dir’).</p>
+<p>See <a class="reference internal" href="../../modules/data_ops/ml_pipeline/caching.html#user-guide-data-ops-caching"><span class="std std-ref">Caching for faster recomputation</span></a> for more information about caching.</p>
 </dd>
 </dl>
 </dd>
@@ -860,6 +865,26 @@ used with the <code class="docutils literal notranslate"><span class="pre">&#64;
 <span class="gp">&gt;&gt;&gt; </span><span class="n">e</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">'x'</span><span class="p">:</span> <span class="mi">3</span><span class="p">})</span>
 <span class="go">INFO x = 3</span>
 <span class="go">3</span>
+</pre></div>
+</div>
+<p>It is possible to pass <code class="docutils literal notranslate"><span class="pre">no_cache</span></code> with the decorator syntax as well:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span><span class="p">(</span><span class="n">no_cache</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">... </span><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<p>is equivalent to:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">deferred</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">no_cache</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The original function is available as the <code class="docutils literal notranslate"><span class="pre">func</span></code> attribute:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Call the deferred function, returns a DataOp.</span>
+<span class="go">&lt;Call 'f'&gt;</span>
+<span class="go">Result:</span>
+<span class="go">―――――――</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">func</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Call the original function.</span>
+<span class="go">4</span>
 </pre></div>
 </div>
 <p><strong>Advanced examples</strong></p>

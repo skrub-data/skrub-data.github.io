@@ -33,8 +33,8 @@ X
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_ffea9db1-wrapper" hidden>
-    <template id="report_ffea9db1-template">
+<div id="report_125bbe03-wrapper" hidden>
+    <template id="report_125bbe03-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -1459,7 +1459,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="117341bf"
+                id="27bc737e"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -1489,7 +1489,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="c3f69c0f"
+                id="08b5d5ce"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1523,7 +1523,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="c1f54ba4"
+                id="03180f2c"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1557,7 +1557,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="4b98255d"
+                id="bc4fdb9e"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1591,7 +1591,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="5d8baa9f"
+                id="d7642e83"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1625,7 +1625,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="1fd93f1b"
+                id="0675b9d6"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1659,7 +1659,7 @@ data-spans_\_-1_\_4
 
 
                 <th
-                id="9590dbeb"
+                id="5cbfa7da"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1693,7 +1693,7 @@ data-spans_\_-1_\_5
 
 
                 <th
-                id="db8d0969"
+                id="0d0e2c5f"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1727,7 +1727,7 @@ data-spans_\_-1_\_6
 
 
                 <th
-                id="e85f828e"
+                id="de1c253b"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1775,7 +1775,7 @@ data-spans_\_-1_\_7
 
 
                 <th
-                id="cae442ee"
+                id="3efd4659"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -1803,7 +1803,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="8c6721a7"
+                id="2c20479e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1833,7 +1833,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="4985f4bb"
+                id="1fa522d6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1863,7 +1863,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="063266f3"
+                id="3ae32237"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1893,7 +1893,7 @@ data-spans_\_0_\_2
 
 
                 <td
-                id="58c7c03e"
+                id="dabcaa05"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1923,7 +1923,7 @@ data-spans_\_0_\_3
 
 
                 <td
-                id="6b095057"
+                id="0c1869e4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1953,7 +1953,7 @@ data-spans_\_0_\_4
 
 
                 <td
-                id="43a25a88"
+                id="e6c4672b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1983,7 +1983,7 @@ data-spans_\_0_\_5
 
 
                 <td
-                id="d951f636"
+                id="c89dbee6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2013,7 +2013,7 @@ data-spans_\_0_\_6
 
 
                 <td
-                id="10dff268"
+                id="3ffd1005"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2047,7 +2047,7 @@ data-spans_\_0_\_7
 
 
                 <th
-                id="391937e4"
+                id="3643cf25"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2075,7 +2075,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="5b733418"
+                id="daefc3ca"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2105,7 +2105,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="ecddfb94"
+                id="ba26aeeb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2135,7 +2135,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="b26f58a6"
+                id="035a2b40"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2165,7 +2165,7 @@ data-spans_\_1_\_2
 
 
                 <td
-                id="29b36043"
+                id="923a69b0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2195,7 +2195,7 @@ data-spans_\_1_\_3
 
 
                 <td
-                id="4d1c2825"
+                id="211086db"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2225,7 +2225,7 @@ data-spans_\_1_\_4
 
 
                 <td
-                id="94557f33"
+                id="7a4e465b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2255,7 +2255,7 @@ data-spans_\_1_\_5
 
 
                 <td
-                id="d95e55ce"
+                id="fe7de9d1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2285,7 +2285,7 @@ data-spans_\_1_\_6
 
 
                 <td
-                id="c0e7ccc1"
+                id="e143e7d9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2319,7 +2319,7 @@ data-spans_\_1_\_7
 
 
                 <th
-                id="d9dc55f5"
+                id="f6ab7070"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2347,7 +2347,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="a180fbcb"
+                id="a40c4402"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2377,7 +2377,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="3bc675a4"
+                id="87b3bddf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2407,7 +2407,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="4a16bd21"
+                id="1608501c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2437,7 +2437,7 @@ data-spans_\_2_\_2
 
 
                 <td
-                id="1537cd2f"
+                id="4736e60b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2467,7 +2467,7 @@ data-spans_\_2_\_3
 
 
                 <td
-                id="8b77b487"
+                id="1c340a52"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2497,7 +2497,7 @@ data-spans_\_2_\_4
 
 
                 <td
-                id="de548e96"
+                id="19a1344c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2527,7 +2527,7 @@ data-spans_\_2_\_5
 
 
                 <td
-                id="6a2e0141"
+                id="f0c81b71"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2557,7 +2557,7 @@ data-spans_\_2_\_6
 
 
                 <td
-                id="270a3e3f"
+                id="bce61296"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2591,7 +2591,7 @@ data-spans_\_2_\_7
 
 
                 <th
-                id="7320e8f1"
+                id="092883fc"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2619,7 +2619,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="49287976"
+                id="b5e7258c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2649,7 +2649,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="97c31b2d"
+                id="0b96e29b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2679,7 +2679,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="f2a3a675"
+                id="3119f563"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2709,7 +2709,7 @@ data-spans_\_3_\_2
 
 
                 <td
-                id="15323921"
+                id="d8401a34"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2739,7 +2739,7 @@ data-spans_\_3_\_3
 
 
                 <td
-                id="71297089"
+                id="eb255249"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2769,7 +2769,7 @@ data-spans_\_3_\_4
 
 
                 <td
-                id="11d938a0"
+                id="88a46113"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2799,7 +2799,7 @@ data-spans_\_3_\_5
 
 
                 <td
-                id="2c0d0866"
+                id="50b6532f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2829,7 +2829,7 @@ data-spans_\_3_\_6
 
 
                 <td
-                id="a3f3acd7"
+                id="29dd4378"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2863,7 +2863,7 @@ data-spans_\_3_\_7
 
 
                 <th
-                id="51f03c53"
+                id="677f85f4"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2891,7 +2891,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="83b3a288"
+                id="63ea1ed9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2921,7 +2921,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="75209e1a"
+                id="c88937d3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2951,7 +2951,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="3336b8c4"
+                id="e18e7bbe"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2981,7 +2981,7 @@ data-spans_\_4_\_2
 
 
                 <td
-                id="46283b0c"
+                id="a019fd0b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3011,7 +3011,7 @@ data-spans_\_4_\_3
 
 
                 <td
-                id="04af0e54"
+                id="22057798"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3041,7 +3041,7 @@ data-spans_\_4_\_4
 
 
                 <td
-                id="05e74918"
+                id="f3fe7d7e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3071,7 +3071,7 @@ data-spans_\_4_\_5
 
 
                 <td
-                id="62ab1099"
+                id="d0bdf782"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3101,7 +3101,7 @@ data-spans_\_4_\_6
 
 
                 <td
-                id="733a81f1"
+                id="828b57fc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3235,7 +3235,7 @@ data-spans_\_4_\_7
 
 
                 <th
-                id="8b58b4fc"
+                id="9da26b7f"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3263,7 +3263,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="ecd41b46"
+                id="51922628"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3293,7 +3293,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="8c8eaae6"
+                id="fb58fa60"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3323,7 +3323,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="c2b5dae8"
+                id="e484a893"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3353,7 +3353,7 @@ data-spans_\_5_\_2
 
 
                 <td
-                id="ce997da2"
+                id="b3e195c3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3383,7 +3383,7 @@ data-spans_\_5_\_3
 
 
                 <td
-                id="121b54b1"
+                id="7442ad90"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3413,7 +3413,7 @@ data-spans_\_5_\_4
 
 
                 <td
-                id="6abab361"
+                id="741f1dbb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3443,7 +3443,7 @@ data-spans_\_5_\_5
 
 
                 <td
-                id="95067e90"
+                id="a71f1cc7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3473,7 +3473,7 @@ data-spans_\_5_\_6
 
 
                 <td
-                id="1906a9c3"
+                id="05023157"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3507,7 +3507,7 @@ data-spans_\_5_\_7
 
 
                 <th
-                id="df299d7a"
+                id="36bdcb8e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3535,7 +3535,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="6b2fade6"
+                id="55767261"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3565,7 +3565,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="a864135f"
+                id="6eeda56d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3595,7 +3595,7 @@ data-spans_\_6_\_1
 
 
                 <td
-                id="01606274"
+                id="5812a583"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3625,7 +3625,7 @@ data-spans_\_6_\_2
 
 
                 <td
-                id="d7364b4c"
+                id="aa5ab05f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3655,7 +3655,7 @@ data-spans_\_6_\_3
 
 
                 <td
-                id="4a8204cb"
+                id="2d6f6a35"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3685,7 +3685,7 @@ data-spans_\_6_\_4
 
 
                 <td
-                id="ed2a5671"
+                id="8ab8fec1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3715,7 +3715,7 @@ data-spans_\_6_\_5
 
 
                 <td
-                id="78b55715"
+                id="f660575d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3745,7 +3745,7 @@ data-spans_\_6_\_6
 
 
                 <td
-                id="99e12d21"
+                id="c8163f4d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3779,7 +3779,7 @@ data-spans_\_6_\_7
 
 
                 <th
-                id="4e224dec"
+                id="03eb6152"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3807,7 +3807,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="ddb32abd"
+                id="4784e9ef"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3837,7 +3837,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="e760ca26"
+                id="d3df6718"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3867,7 +3867,7 @@ data-spans_\_7_\_1
 
 
                 <td
-                id="540305b1"
+                id="972bdb65"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3897,7 +3897,7 @@ data-spans_\_7_\_2
 
 
                 <td
-                id="c18cd52a"
+                id="82d6e132"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3927,7 +3927,7 @@ data-spans_\_7_\_3
 
 
                 <td
-                id="8bf235e1"
+                id="d7d63698"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3957,7 +3957,7 @@ data-spans_\_7_\_4
 
 
                 <td
-                id="5cc5d7f1"
+                id="6c0cb618"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3987,7 +3987,7 @@ data-spans_\_7_\_5
 
 
                 <td
-                id="1064717b"
+                id="a767be75"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4017,7 +4017,7 @@ data-spans_\_7_\_6
 
 
                 <td
-                id="d9428c20"
+                id="19df03f4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4051,7 +4051,7 @@ data-spans_\_7_\_7
 
 
                 <th
-                id="1233acd3"
+                id="735b9c34"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4079,7 +4079,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="675fc9c2"
+                id="d127a6e7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4109,7 +4109,7 @@ data-spans_\_8_\_0
 
 
                 <td
-                id="bdf15454"
+                id="acd25954"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4139,7 +4139,7 @@ data-spans_\_8_\_1
 
 
                 <td
-                id="4a1e19df"
+                id="fca0c8f4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4169,7 +4169,7 @@ data-spans_\_8_\_2
 
 
                 <td
-                id="37e61f21"
+                id="bcdf47ff"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4199,7 +4199,7 @@ data-spans_\_8_\_3
 
 
                 <td
-                id="153f585c"
+                id="30f4b9c2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4229,7 +4229,7 @@ data-spans_\_8_\_4
 
 
                 <td
-                id="c7c4aadb"
+                id="338da063"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4259,7 +4259,7 @@ data-spans_\_8_\_5
 
 
                 <td
-                id="18b6f5f3"
+                id="2427db15"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4289,7 +4289,7 @@ data-spans_\_8_\_6
 
 
                 <td
-                id="a6eb574a"
+                id="42abf137"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4323,7 +4323,7 @@ data-spans_\_8_\_7
 
 
                 <th
-                id="e9f0b372"
+                id="6158f79a"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4351,7 +4351,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="bcadb05f"
+                id="27f196ba"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4381,7 +4381,7 @@ data-spans_\_9_\_0
 
 
                 <td
-                id="fd0dcbc8"
+                id="62e50e94"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4411,7 +4411,7 @@ data-spans_\_9_\_1
 
 
                 <td
-                id="d7ea2507"
+                id="26e36ac4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4441,7 +4441,7 @@ data-spans_\_9_\_2
 
 
                 <td
-                id="87b74df1"
+                id="904be215"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4471,7 +4471,7 @@ data-spans_\_9_\_3
 
 
                 <td
-                id="e33b5a0d"
+                id="059eacc6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4501,7 +4501,7 @@ data-spans_\_9_\_4
 
 
                 <td
-                id="e4a11262"
+                id="44864127"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4531,7 +4531,7 @@ data-spans_\_9_\_5
 
 
                 <td
-                id="8e0cad28"
+                id="41d6616d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4561,7 +4561,7 @@ data-spans_\_9_\_6
 
 
                 <td
-                id="2fd018be"
+                id="0dc2857d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5776,7 +5776,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_ffea9db1">
+    <skrub-table-report class="report" id="report_125bbe03">
     </skrub-table-report>
 
     <script type="module">
@@ -6880,7 +6880,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_ffea9db1-wrapper-fallback">
+<div id="report_125bbe03-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -6891,8 +6891,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_ffea9db1-wrapper").removeAttribute("hidden");
- document.getElementById("report_ffea9db1-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_125bbe03-wrapper").removeAttribute("hidden");
+ document.getElementById("report_125bbe03-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -6927,8 +6927,8 @@ Xt
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_c38dc335-wrapper" hidden>
-    <template id="report_c38dc335-template">
+<div id="report_972b6e35-wrapper" hidden>
+    <template id="report_972b6e35-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -8356,7 +8356,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="8e42d1f7"
+                id="431a1981"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -8386,7 +8386,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="7a6c5d09"
+                id="3cdaacc6"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8420,7 +8420,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="98c5e429"
+                id="be07e10d"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8454,7 +8454,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="2b3bd662"
+                id="a3352d98"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8488,7 +8488,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="bf6c614a"
+                id="1dcea5fd"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8522,7 +8522,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="936292c1"
+                id="28d607e7"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8556,7 +8556,7 @@ data-spans_\_-1_\_4
 
 
                 <th
-                id="fcdf430c"
+                id="773834a8"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8590,7 +8590,7 @@ data-spans_\_-1_\_5
 
 
                 <th
-                id="156fec30"
+                id="c32a30f0"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8624,7 +8624,7 @@ data-spans_\_-1_\_6
 
 
                 <th
-                id="9f552a4c"
+                id="60511b1d"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8658,7 +8658,7 @@ data-spans_\_-1_\_7
 
 
                 <th
-                id="6db6c455"
+                id="791da072"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8692,7 +8692,7 @@ data-spans_\_-1_\_8
 
 
                 <th
-                id="61cb45d5"
+                id="cf652107"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8726,7 +8726,7 @@ data-spans_\_-1_\_9
 
 
                 <th
-                id="3120b013"
+                id="cc196092"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8760,7 +8760,7 @@ data-spans_\_-1_\_10
 
 
                 <th
-                id="b79d2b25"
+                id="7622972d"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8794,7 +8794,7 @@ data-spans_\_-1_\_11
 
 
                 <th
-                id="cdb31b61"
+                id="f0340c01"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8828,7 +8828,7 @@ data-spans_\_-1_\_12
 
 
                 <th
-                id="963dfda5"
+                id="ba450ee7"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8862,7 +8862,7 @@ data-spans_\_-1_\_13
 
 
                 <th
-                id="c35dc49e"
+                id="c180844a"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8896,7 +8896,7 @@ data-spans_\_-1_\_14
 
 
                 <th
-                id="fc284b9e"
+                id="bc144993"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8930,7 +8930,7 @@ data-spans_\_-1_\_15
 
 
                 <th
-                id="aa03b214"
+                id="168109e6"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8964,7 +8964,7 @@ data-spans_\_-1_\_16
 
 
                 <th
-                id="b2019d00"
+                id="0d4132b3"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8998,7 +8998,7 @@ data-spans_\_-1_\_17
 
 
                 <th
-                id="2ceaa082"
+                id="e6887216"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9032,7 +9032,7 @@ data-spans_\_-1_\_18
 
 
                 <th
-                id="b937eb61"
+                id="fa1ec32e"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9066,7 +9066,7 @@ data-spans_\_-1_\_19
 
 
                 <th
-                id="e273ecbf"
+                id="cefcd359"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9100,7 +9100,7 @@ data-spans_\_-1_\_20
 
 
                 <th
-                id="b8459e2e"
+                id="6d74ac2b"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9134,7 +9134,7 @@ data-spans_\_-1_\_21
 
 
                 <th
-                id="c52bce02"
+                id="437c40d4"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9168,7 +9168,7 @@ data-spans_\_-1_\_22
 
 
                 <th
-                id="7285e7f7"
+                id="c76a807b"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9202,7 +9202,7 @@ data-spans_\_-1_\_23
 
 
                 <th
-                id="879de354"
+                id="69b0d861"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9236,7 +9236,7 @@ data-spans_\_-1_\_24
 
 
                 <th
-                id="26236fc6"
+                id="fcea659c"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9270,7 +9270,7 @@ data-spans_\_-1_\_25
 
 
                 <th
-                id="023cbd41"
+                id="bd8688f4"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9304,7 +9304,7 @@ data-spans_\_-1_\_26
 
 
                 <th
-                id="24b5326e"
+                id="453fa30a"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9338,7 +9338,7 @@ data-spans_\_-1_\_27
 
 
                 <th
-                id="cd2d9fad"
+                id="98cb2749"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9372,7 +9372,7 @@ data-spans_\_-1_\_28
 
 
                 <th
-                id="cc2379a7"
+                id="d2409899"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9406,7 +9406,7 @@ data-spans_\_-1_\_29
 
 
                 <th
-                id="87b9dcb5"
+                id="c9d6755c"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9440,7 +9440,7 @@ data-spans_\_-1_\_30
 
 
                 <th
-                id="94969980"
+                id="6ecba445"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9474,7 +9474,7 @@ data-spans_\_-1_\_31
 
 
                 <th
-                id="ec799f6f"
+                id="453cc165"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9508,7 +9508,7 @@ data-spans_\_-1_\_32
 
 
                 <th
-                id="d32dfa35"
+                id="a722f0e8"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9542,7 +9542,7 @@ data-spans_\_-1_\_33
 
 
                 <th
-                id="c3b180c9"
+                id="b19ad346"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9576,7 +9576,7 @@ data-spans_\_-1_\_34
 
 
                 <th
-                id="5ee28153"
+                id="f25c8b76"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9610,7 +9610,7 @@ data-spans_\_-1_\_35
 
 
                 <th
-                id="5a3964b3"
+                id="6be058a7"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9644,7 +9644,7 @@ data-spans_\_-1_\_36
 
 
                 <th
-                id="0a78b466"
+                id="99fc8a03"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9678,7 +9678,7 @@ data-spans_\_-1_\_37
 
 
                 <th
-                id="3fee9fa1"
+                id="42e2e47c"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9712,7 +9712,7 @@ data-spans_\_-1_\_38
 
 
                 <th
-                id="30ae7089"
+                id="b6e07ee7"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9746,7 +9746,7 @@ data-spans_\_-1_\_39
 
 
                 <th
-                id="03c58cac"
+                id="8412d343"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9780,7 +9780,7 @@ data-spans_\_-1_\_40
 
 
                 <th
-                id="77e62488"
+                id="2635475f"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9814,7 +9814,7 @@ data-spans_\_-1_\_41
 
 
                 <th
-                id="07106d38"
+                id="f293acc1"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9848,7 +9848,7 @@ data-spans_\_-1_\_42
 
 
                 <th
-                id="3bffe1c4"
+                id="00e0171e"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9882,7 +9882,7 @@ data-spans_\_-1_\_43
 
 
                 <th
-                id="6d28fc41"
+                id="2509ad71"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9916,7 +9916,7 @@ data-spans_\_-1_\_44
 
 
                 <th
-                id="94a608db"
+                id="627fc0ec"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9950,7 +9950,7 @@ data-spans_\_-1_\_45
 
 
                 <th
-                id="40d716b5"
+                id="7a203588"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9984,7 +9984,7 @@ data-spans_\_-1_\_46
 
 
                 <th
-                id="f776ab47"
+                id="9ddb8fac"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10018,7 +10018,7 @@ data-spans_\_-1_\_47
 
 
                 <th
-                id="af1c8419"
+                id="f8e4825f"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10052,7 +10052,7 @@ data-spans_\_-1_\_48
 
 
                 <th
-                id="669d1042"
+                id="9f987627"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10086,7 +10086,7 @@ data-spans_\_-1_\_49
 
 
                 <th
-                id="2d5930eb"
+                id="b39eabc2"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10120,7 +10120,7 @@ data-spans_\_-1_\_50
 
 
                 <th
-                id="84a485ac"
+                id="b81055bf"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10154,7 +10154,7 @@ data-spans_\_-1_\_51
 
 
                 <th
-                id="598931a9"
+                id="01e954bb"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10188,7 +10188,7 @@ data-spans_\_-1_\_52
 
 
                 <th
-                id="2a6bf66c"
+                id="f592124a"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10222,7 +10222,7 @@ data-spans_\_-1_\_53
 
 
                 <th
-                id="a52390a5"
+                id="133a211e"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10256,7 +10256,7 @@ data-spans_\_-1_\_54
 
 
                 <th
-                id="b5aea003"
+                id="8acc2845"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10290,7 +10290,7 @@ data-spans_\_-1_\_55
 
 
                 <th
-                id="7bc6241e"
+                id="f0daa9c2"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10324,7 +10324,7 @@ data-spans_\_-1_\_56
 
 
                 <th
-                id="ccce593e"
+                id="68d1058f"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10358,7 +10358,7 @@ data-spans_\_-1_\_57
 
 
                 <th
-                id="cdd4837d"
+                id="ae6c9284"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10392,7 +10392,7 @@ data-spans_\_-1_\_58
 
 
                 <th
-                id="c616a69e"
+                id="46eb9192"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10426,7 +10426,7 @@ data-spans_\_-1_\_59
 
 
                 <th
-                id="699a622c"
+                id="c159f916"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10460,7 +10460,7 @@ data-spans_\_-1_\_60
 
 
                 <th
-                id="1617da80"
+                id="fb9edc03"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10494,7 +10494,7 @@ data-spans_\_-1_\_61
 
 
                 <th
-                id="3be93605"
+                id="a8fcc095"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10528,7 +10528,7 @@ data-spans_\_-1_\_62
 
 
                 <th
-                id="320dcc02"
+                id="1879b8f8"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10562,7 +10562,7 @@ data-spans_\_-1_\_63
 
 
                 <th
-                id="e6620974"
+                id="9fc90819"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10596,7 +10596,7 @@ data-spans_\_-1_\_64
 
 
                 <th
-                id="bc8fea9c"
+                id="74faf1c1"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -10644,7 +10644,7 @@ data-spans_\_-1_\_65
 
 
                 <th
-                id="9a28587f"
+                id="9dc3ed81"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -10672,7 +10672,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="f06bdaea"
+                id="075e4021"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10702,7 +10702,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="67a0631f"
+                id="f02f2a23"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10732,7 +10732,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="b62bd662"
+                id="12fdb5ce"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10762,7 +10762,7 @@ data-spans_\_0_\_2
 
 
                 <td
-                id="cc109b63"
+                id="54fbd66b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10783,8 +10783,8 @@ data-spans_\_0_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.2177201509475708"
-                data-value-str="0.2177201509475708"
+                data-value-repr="0.21772520244121552"
+                data-value-str="0.21772520244121552"
 
                 data-column-idx="3"
 
@@ -10792,7 +10792,7 @@ data-spans_\_0_\_3
 
 
                 <td
-                id="316081c9"
+                id="6327a458"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10813,8 +10813,8 @@ data-spans_\_0_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.3529508709907532"
-                data-value-str="0.3529508709907532"
+                data-value-repr="0.352960467338562"
+                data-value-str="0.352960467338562"
 
                 data-column-idx="4"
 
@@ -10822,7 +10822,7 @@ data-spans_\_0_\_4
 
 
                 <td
-                id="cb807ba5"
+                id="710ef83e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10843,8 +10843,8 @@ data-spans_\_0_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.041600409895181656"
-                data-value-str="-0.041600409895181656"
+                data-value-repr="-0.041599906980991364"
+                data-value-str="-0.041599906980991364"
 
                 data-column-idx="5"
 
@@ -10852,7 +10852,7 @@ data-spans_\_0_\_5
 
 
                 <td
-                id="5108fe4a"
+                id="9222a9d1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10873,8 +10873,8 @@ data-spans_\_0_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08996350318193436"
-                data-value-str="-0.08996350318193436"
+                data-value-repr="-0.08996710181236267"
+                data-value-str="-0.08996710181236267"
 
                 data-column-idx="6"
 
@@ -10882,7 +10882,7 @@ data-spans_\_0_\_6
 
 
                 <td
-                id="01d11c0a"
+                id="d59a5362"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10903,16 +10903,16 @@ data-spans_\_0_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.4464949369430542"
-                data-value-str="-0.4464949369430542"
+                data-value-repr="-0.44650524854660034"
+                data-value-str="-0.44650524854660034"
 
                 data-column-idx="7"
 
-                >-0.446</td>
+                >-0.447</td>
 
 
                 <td
-                id="44ca5960"
+                id="fb7701c8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10933,8 +10933,8 @@ data-spans_\_0_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.23812934756278992"
-                data-value-str="-0.23812934756278992"
+                data-value-repr="-0.23813633620738983"
+                data-value-str="-0.23813633620738983"
 
                 data-column-idx="8"
 
@@ -10942,7 +10942,7 @@ data-spans_\_0_\_8
 
 
                 <td
-                id="ca221506"
+                id="215857e3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10963,8 +10963,8 @@ data-spans_\_0_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.18488381803035736"
-                data-value-str="-0.18488381803035736"
+                data-value-repr="-0.18488307297229767"
+                data-value-str="-0.18488307297229767"
 
                 data-column-idx="9"
 
@@ -10972,7 +10972,7 @@ data-spans_\_0_\_9
 
 
                 <td
-                id="75d8fdc7"
+                id="8617d4dd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10993,8 +10993,8 @@ data-spans_\_0_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05134773254394531"
-                data-value-str="-0.05134773254394531"
+                data-value-repr="-0.05133740231394768"
+                data-value-str="-0.05133740231394768"
 
                 data-column-idx="10"
 
@@ -11002,7 +11002,7 @@ data-spans_\_0_\_10
 
 
                 <td
-                id="c615255c"
+                id="6227c09e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11023,8 +11023,8 @@ data-spans_\_0_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.22925004363059998"
-                data-value-str="-0.22925004363059998"
+                data-value-repr="-0.22925804555416107"
+                data-value-str="-0.22925804555416107"
 
                 data-column-idx="11"
 
@@ -11032,7 +11032,7 @@ data-spans_\_0_\_11
 
 
                 <td
-                id="200857bd"
+                id="ddf88e63"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11053,16 +11053,16 @@ data-spans_\_0_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.06904038786888123"
-                data-value-str="-0.06904038786888123"
+                data-value-repr="-0.06905096024274826"
+                data-value-str="-0.06905096024274826"
 
                 data-column-idx="12"
 
-                >-0.0690</td>
+                >-0.0691</td>
 
 
                 <td
-                id="6ac09dbc"
+                id="1c12e801"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11083,8 +11083,8 @@ data-spans_\_0_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.025658251717686653"
-                data-value-str="-0.025658251717686653"
+                data-value-repr="-0.025656413286924362"
+                data-value-str="-0.025656413286924362"
 
                 data-column-idx="13"
 
@@ -11092,7 +11092,7 @@ data-spans_\_0_\_13
 
 
                 <td
-                id="7a7a39e6"
+                id="116d211a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11113,8 +11113,8 @@ data-spans_\_0_\_14
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.12491840869188309"
-                data-value-str="-0.12491840869188309"
+                data-value-repr="-0.12497013062238693"
+                data-value-str="-0.12497013062238693"
 
                 data-column-idx="14"
 
@@ -11122,7 +11122,7 @@ data-spans_\_0_\_14
 
 
                 <td
-                id="7e1bd6c2"
+                id="819f851b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11143,16 +11143,16 @@ data-spans_\_0_\_15
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08183474093675613"
-                data-value-str="-0.08183474093675613"
+                data-value-repr="-0.08188796043395996"
+                data-value-str="-0.08188796043395996"
 
                 data-column-idx="15"
 
-                >-0.0818</td>
+                >-0.0819</td>
 
 
                 <td
-                id="c9c9ed87"
+                id="91c18837"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11173,16 +11173,16 @@ data-spans_\_0_\_16
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04880083352327347"
-                data-value-str="0.04880083352327347"
+                data-value-repr="0.04890532046556473"
+                data-value-str="0.04890532046556473"
 
                 data-column-idx="16"
 
-                >0.0488</td>
+                >0.0489</td>
 
 
                 <td
-                id="186087b2"
+                id="b9014d0c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11203,16 +11203,16 @@ data-spans_\_0_\_17
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0788026973605156"
-                data-value-str="0.0788026973605156"
+                data-value-repr="0.078936867415905"
+                data-value-str="0.078936867415905"
 
                 data-column-idx="17"
 
-                >0.0788</td>
+                >0.0789</td>
 
 
                 <td
-                id="ac03b9a4"
+                id="0452b7b8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11233,8 +11233,8 @@ data-spans_\_0_\_18
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.11766785383224487"
-                data-value-str="0.11766785383224487"
+                data-value-repr="0.11811963468790054"
+                data-value-str="0.11811963468790054"
 
                 data-column-idx="18"
 
@@ -11242,7 +11242,7 @@ data-spans_\_0_\_18
 
 
                 <td
-                id="97c5fb0b"
+                id="00b32c53"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11263,16 +11263,16 @@ data-spans_\_0_\_19
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.021477213129401207"
-                data-value-str="0.021477213129401207"
+                data-value-repr="0.02220265381038189"
+                data-value-str="0.02220265381038189"
 
                 data-column-idx="19"
 
-                >0.0215</td>
+                >0.0222</td>
 
 
                 <td
-                id="7f4b21a8"
+                id="d1c2a716"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11293,16 +11293,16 @@ data-spans_\_0_\_20
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.23204128444194794"
-                data-value-str="-0.23204128444194794"
+                data-value-repr="-0.23250924050807953"
+                data-value-str="-0.23250924050807953"
 
                 data-column-idx="20"
 
-                >-0.232</td>
+                >-0.233</td>
 
 
                 <td
-                id="03cf436c"
+                id="5d7b2293"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11323,16 +11323,16 @@ data-spans_\_0_\_21
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1966128796339035"
-                data-value-str="-0.1966128796339035"
+                data-value-repr="-0.1963062882423401"
+                data-value-str="-0.1963062882423401"
 
                 data-column-idx="21"
 
-                >-0.197</td>
+                >-0.196</td>
 
 
                 <td
-                id="fec02531"
+                id="c4d3103a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11353,16 +11353,16 @@ data-spans_\_0_\_22
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.12611117959022522"
-                data-value-str="0.12611117959022522"
+                data-value-repr="0.12760792672634125"
+                data-value-str="0.12760792672634125"
 
                 data-column-idx="22"
 
-                >0.126</td>
+                >0.128</td>
 
 
                 <td
-                id="1559e7de"
+                id="b18fb6f5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11383,16 +11383,16 @@ data-spans_\_0_\_23
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.35614585876464844"
-                data-value-str="-0.35614585876464844"
+                data-value-repr="-0.3572140336036682"
+                data-value-str="-0.3572140336036682"
 
                 data-column-idx="23"
 
-                >-0.356</td>
+                >-0.357</td>
 
 
                 <td
-                id="717b83c1"
+                id="5ce18124"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11413,16 +11413,16 @@ data-spans_\_0_\_24
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.059298429638147354"
-                data-value-str="0.059298429638147354"
+                data-value-repr="0.05737791582942009"
+                data-value-str="0.05737791582942009"
 
                 data-column-idx="24"
 
-                >0.0593</td>
+                >0.0574</td>
 
 
                 <td
-                id="ddadd2c3"
+                id="d135370b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11443,16 +11443,16 @@ data-spans_\_0_\_25
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.18650969862937927"
-                data-value-str="-0.18650969862937927"
+                data-value-repr="-0.1903989017009735"
+                data-value-str="-0.1903989017009735"
 
                 data-column-idx="25"
 
-                >-0.187</td>
+                >-0.190</td>
 
 
                 <td
-                id="5d1a79b0"
+                id="0ccd8a01"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11473,16 +11473,16 @@ data-spans_\_0_\_26
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.14023353159427643"
-                data-value-str="-0.14023353159427643"
+                data-value-repr="-0.14766454696655273"
+                data-value-str="-0.14766454696655273"
 
                 data-column-idx="26"
 
-                >-0.140</td>
+                >-0.148</td>
 
 
                 <td
-                id="a53dfe0b"
+                id="ad039941"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11503,16 +11503,16 @@ data-spans_\_0_\_27
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.17003247141838074"
-                data-value-str="-0.17003247141838074"
+                data-value-repr="0.1576564908027649"
+                data-value-str="0.1576564908027649"
 
                 data-column-idx="27"
 
-                >-0.170</td>
+                >0.158</td>
 
 
                 <td
-                id="d6864e00"
+                id="5e271c5c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11533,16 +11533,16 @@ data-spans_\_0_\_28
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.021123787388205528"
-                data-value-str="0.021123787388205528"
+                data-value-repr="0.013156354427337646"
+                data-value-str="0.013156354427337646"
 
                 data-column-idx="28"
 
-                >0.0211</td>
+                >0.0132</td>
 
 
                 <td
-                id="a3da870f"
+                id="6c10d74b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11563,16 +11563,16 @@ data-spans_\_0_\_29
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04372984543442726"
-                data-value-str="0.04372984543442726"
+                data-value-repr="0.03602874279022217"
+                data-value-str="0.03602874279022217"
 
                 data-column-idx="29"
 
-                >0.0437</td>
+                >0.0360</td>
 
 
                 <td
-                id="0d24f575"
+                id="07f11de8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11593,16 +11593,16 @@ data-spans_\_0_\_30
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.006022163201123476"
-                data-value-str="-0.006022163201123476"
+                data-value-repr="0.026342427358031273"
+                data-value-str="0.026342427358031273"
 
                 data-column-idx="30"
 
-                >-0.00602</td>
+                >0.0263</td>
 
 
                 <td
-                id="e21d2e90"
+                id="5ad14f5f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11623,16 +11623,16 @@ data-spans_\_0_\_31
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.01766893081367016"
-                data-value-str="-0.01766893081367016"
+                data-value-repr="-0.018059488385915756"
+                data-value-str="-0.018059488385915756"
 
                 data-column-idx="31"
 
-                >-0.0177</td>
+                >-0.0181</td>
 
 
                 <td
-                id="4b01c528"
+                id="4fca0a88"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11653,16 +11653,16 @@ data-spans_\_0_\_32
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.017642155289649963"
-                data-value-str="-0.017642155289649963"
+                data-value-repr="0.015352928079664707"
+                data-value-str="0.015352928079664707"
 
                 data-column-idx="32"
 
-                >-0.0176</td>
+                >0.0154</td>
 
 
                 <td
-                id="febe49fa"
+                id="3b92189e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11692,7 +11692,7 @@ data-spans_\_0_\_33
 
 
                 <td
-                id="8ae08309"
+                id="ec96c064"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11713,8 +11713,8 @@ data-spans_\_0_\_34
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.3977052867412567"
-                data-value-str="0.3977052867412567"
+                data-value-repr="0.3977164030075073"
+                data-value-str="0.3977164030075073"
 
                 data-column-idx="34"
 
@@ -11722,7 +11722,7 @@ data-spans_\_0_\_34
 
 
                 <td
-                id="a4659181"
+                id="020334f6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11743,8 +11743,8 @@ data-spans_\_0_\_35
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.14588956534862518"
-                data-value-str="-0.14588956534862518"
+                data-value-repr="-0.14589349925518036"
+                data-value-str="-0.14589349925518036"
 
                 data-column-idx="35"
 
@@ -11752,7 +11752,7 @@ data-spans_\_0_\_35
 
 
                 <td
-                id="413e4609"
+                id="b14d426c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11773,8 +11773,8 @@ data-spans_\_0_\_36
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.1798054426908493"
-                data-value-str="0.1798054426908493"
+                data-value-repr="0.17980976402759552"
+                data-value-str="0.17980976402759552"
 
                 data-column-idx="36"
 
@@ -11782,7 +11782,7 @@ data-spans_\_0_\_36
 
 
                 <td
-                id="cb52f8dc"
+                id="79a3eced"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11803,8 +11803,8 @@ data-spans_\_0_\_37
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0653393417596817"
-                data-value-str="-0.0653393417596817"
+                data-value-repr="-0.06534108519554138"
+                data-value-str="-0.06534108519554138"
 
                 data-column-idx="37"
 
@@ -11812,7 +11812,7 @@ data-spans_\_0_\_37
 
 
                 <td
-                id="cf09b01e"
+                id="0dfb6312"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11833,8 +11833,8 @@ data-spans_\_0_\_38
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.09476644545793533"
-                data-value-str="0.09476644545793533"
+                data-value-repr="0.09476809948682785"
+                data-value-str="0.09476809948682785"
 
                 data-column-idx="38"
 
@@ -11842,7 +11842,7 @@ data-spans_\_0_\_38
 
 
                 <td
-                id="83fdc89a"
+                id="60cfedbe"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11863,8 +11863,8 @@ data-spans_\_0_\_39
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.09316405653953552"
-                data-value-str="0.09316405653953552"
+                data-value-repr="0.09316887706518173"
+                data-value-str="0.09316887706518173"
 
                 data-column-idx="39"
 
@@ -11872,7 +11872,7 @@ data-spans_\_0_\_39
 
 
                 <td
-                id="33ea9670"
+                id="bc79b946"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11893,8 +11893,8 @@ data-spans_\_0_\_40
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.7816202640533447"
-                data-value-str="0.7816202640533447"
+                data-value-repr="0.781640887260437"
+                data-value-str="0.781640887260437"
 
                 data-column-idx="40"
 
@@ -11902,7 +11902,7 @@ data-spans_\_0_\_40
 
 
                 <td
-                id="0c72506d"
+                id="b635301f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11923,8 +11923,8 @@ data-spans_\_0_\_41
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.30533626675605774"
-                data-value-str="0.30533626675605774"
+                data-value-repr="0.3053421974182129"
+                data-value-str="0.3053421974182129"
 
                 data-column-idx="41"
 
@@ -11932,7 +11932,7 @@ data-spans_\_0_\_41
 
 
                 <td
-                id="6cf84b07"
+                id="b43771ff"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11953,8 +11953,8 @@ data-spans_\_0_\_42
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.2853351831436157"
-                data-value-str="-0.2853351831436157"
+                data-value-repr="-0.28534266352653503"
+                data-value-str="-0.28534266352653503"
 
                 data-column-idx="42"
 
@@ -11962,7 +11962,7 @@ data-spans_\_0_\_42
 
 
                 <td
-                id="03356613"
+                id="e28ec20d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11983,8 +11983,8 @@ data-spans_\_0_\_43
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.12732158601284027"
-                data-value-str="-0.12732158601284027"
+                data-value-repr="-0.12732502818107605"
+                data-value-str="-0.12732502818107605"
 
                 data-column-idx="43"
 
@@ -11992,7 +11992,7 @@ data-spans_\_0_\_43
 
 
                 <td
-                id="49fbc7a6"
+                id="6b0cd03a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12013,8 +12013,8 @@ data-spans_\_0_\_44
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1185707151889801"
-                data-value-str="-0.1185707151889801"
+                data-value-repr="-0.1185780018568039"
+                data-value-str="-0.1185780018568039"
 
                 data-column-idx="44"
 
@@ -12022,7 +12022,7 @@ data-spans_\_0_\_44
 
 
                 <td
-                id="b3a323da"
+                id="b8abf648"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12043,8 +12043,8 @@ data-spans_\_0_\_45
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.4160597026348114"
-                data-value-str="-0.4160597026348114"
+                data-value-repr="-0.41607287526130676"
+                data-value-str="-0.41607287526130676"
 
                 data-column-idx="45"
 
@@ -12052,7 +12052,7 @@ data-spans_\_0_\_45
 
 
                 <td
-                id="c469ca5b"
+                id="01fd1ffd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12073,8 +12073,8 @@ data-spans_\_0_\_46
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.052080970257520676"
-                data-value-str="-0.052080970257520676"
+                data-value-repr="-0.05209280923008919"
+                data-value-str="-0.05209280923008919"
 
                 data-column-idx="46"
 
@@ -12082,7 +12082,7 @@ data-spans_\_0_\_46
 
 
                 <td
-                id="b3431a91"
+                id="fe66082e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12103,8 +12103,8 @@ data-spans_\_0_\_47
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1719793826341629"
-                data-value-str="-0.1719793826341629"
+                data-value-repr="-0.1719779372215271"
+                data-value-str="-0.1719779372215271"
 
                 data-column-idx="47"
 
@@ -12112,7 +12112,7 @@ data-spans_\_0_\_47
 
 
                 <td
-                id="87ac2274"
+                id="98cacc8f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12133,8 +12133,8 @@ data-spans_\_0_\_48
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.202521413564682"
-                data-value-str="0.202521413564682"
+                data-value-repr="0.2025230973958969"
+                data-value-str="0.2025230973958969"
 
                 data-column-idx="48"
 
@@ -12142,7 +12142,7 @@ data-spans_\_0_\_48
 
 
                 <td
-                id="a80a962f"
+                id="bfd81fbf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12163,16 +12163,16 @@ data-spans_\_0_\_49
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.009077186696231365"
-                data-value-str="0.009077186696231365"
+                data-value-repr="0.009072371758520603"
+                data-value-str="0.009072371758520603"
 
                 data-column-idx="49"
 
-                >0.00908</td>
+                >0.00907</td>
 
 
                 <td
-                id="1c7ff2bb"
+                id="78aac684"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12193,8 +12193,8 @@ data-spans_\_0_\_50
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11761625856161118"
-                data-value-str="-0.11761625856161118"
+                data-value-repr="-0.11759412288665771"
+                data-value-str="-0.11759412288665771"
 
                 data-column-idx="50"
 
@@ -12202,7 +12202,7 @@ data-spans_\_0_\_50
 
 
                 <td
-                id="5e9ed9ac"
+                id="291ebe19"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12223,16 +12223,16 @@ data-spans_\_0_\_51
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02289104089140892"
-                data-value-str="-0.02289104089140892"
+                data-value-repr="-0.022849122062325478"
+                data-value-str="-0.022849122062325478"
 
                 data-column-idx="51"
 
-                >-0.0229</td>
+                >-0.0228</td>
 
 
                 <td
-                id="70bb61a7"
+                id="7e9e6edf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12253,8 +12253,8 @@ data-spans_\_0_\_52
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.08972959965467453"
-                data-value-str="0.08972959965467453"
+                data-value-repr="0.089682936668396"
+                data-value-str="0.089682936668396"
 
                 data-column-idx="52"
 
@@ -12262,7 +12262,7 @@ data-spans_\_0_\_52
 
 
                 <td
-                id="2045e8ff"
+                id="5e05215c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12283,8 +12283,8 @@ data-spans_\_0_\_53
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11584368348121643"
-                data-value-str="-0.11584368348121643"
+                data-value-repr="-0.11578714847564697"
+                data-value-str="-0.11578714847564697"
 
                 data-column-idx="53"
 
@@ -12292,7 +12292,7 @@ data-spans_\_0_\_53
 
 
                 <td
-                id="bdb911cc"
+                id="f0430461"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12313,8 +12313,8 @@ data-spans_\_0_\_54
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.029539063572883606"
-                data-value-str="-0.029539063572883606"
+                data-value-repr="-0.029495008289813995"
+                data-value-str="-0.029495008289813995"
 
                 data-column-idx="54"
 
@@ -12322,7 +12322,7 @@ data-spans_\_0_\_54
 
 
                 <td
-                id="a1bcc3d7"
+                id="deb1e25d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12343,16 +12343,16 @@ data-spans_\_0_\_55
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0976654663681984"
-                data-value-str="0.0976654663681984"
+                data-value-repr="0.09776070713996887"
+                data-value-str="0.09776070713996887"
 
                 data-column-idx="55"
 
-                >0.0977</td>
+                >0.0978</td>
 
 
                 <td
-                id="a26c9769"
+                id="90e7c27d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12373,16 +12373,16 @@ data-spans_\_0_\_56
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.036178331822156906"
-                data-value-str="-0.036178331822156906"
+                data-value-repr="-0.03635096922516823"
+                data-value-str="-0.03635096922516823"
 
                 data-column-idx="56"
 
-                >-0.0362</td>
+                >-0.0364</td>
 
 
                 <td
-                id="c7065292"
+                id="a9854864"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12403,16 +12403,16 @@ data-spans_\_0_\_57
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.015469614416360855"
-                data-value-str="-0.015469614416360855"
+                data-value-repr="-0.015109002590179443"
+                data-value-str="-0.015109002590179443"
 
                 data-column-idx="57"
 
-                >-0.0155</td>
+                >-0.0151</td>
 
 
                 <td
-                id="100aedef"
+                id="a10c3591"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12433,16 +12433,16 @@ data-spans_\_0_\_58
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0200917087495327"
-                data-value-str="0.0200917087495327"
+                data-value-repr="0.020164579153060913"
+                data-value-str="0.020164579153060913"
 
                 data-column-idx="58"
 
-                >0.0201</td>
+                >0.0202</td>
 
 
                 <td
-                id="bd1eaef7"
+                id="a1ce23b5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12463,8 +12463,8 @@ data-spans_\_0_\_59
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02844858169555664"
-                data-value-str="-0.02844858169555664"
+                data-value-repr="-0.028417127206921577"
+                data-value-str="-0.028417127206921577"
 
                 data-column-idx="59"
 
@@ -12472,7 +12472,7 @@ data-spans_\_0_\_59
 
 
                 <td
-                id="90e6eb21"
+                id="da43168c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12493,16 +12493,16 @@ data-spans_\_0_\_60
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0446794293820858"
-                data-value-str="0.0446794293820858"
+                data-value-repr="0.04444543272256851"
+                data-value-str="0.04444543272256851"
 
                 data-column-idx="60"
 
-                >0.0447</td>
+                >0.0444</td>
 
 
                 <td
-                id="f5631fa8"
+                id="6c9ed904"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12523,16 +12523,16 @@ data-spans_\_0_\_61
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.09739729762077332"
-                data-value-str="-0.09739729762077332"
+                data-value-repr="-0.0978282243013382"
+                data-value-str="-0.0978282243013382"
 
                 data-column-idx="61"
 
-                >-0.0974</td>
+                >-0.0978</td>
 
 
                 <td
-                id="7e62a3aa"
+                id="0cf38108"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12553,16 +12553,16 @@ data-spans_\_0_\_62
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0926557257771492"
-                data-value-str="-0.0926557257771492"
+                data-value-repr="-0.0934218019247055"
+                data-value-str="-0.0934218019247055"
 
                 data-column-idx="62"
 
-                >-0.0927</td>
+                >-0.0934</td>
 
 
                 <td
-                id="285e7a4d"
+                id="5a835cc3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12583,16 +12583,16 @@ data-spans_\_0_\_63
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.033182766288518906"
-                data-value-str="0.033182766288518906"
+                data-value-repr="0.04018156975507736"
+                data-value-str="0.04018156975507736"
 
                 data-column-idx="63"
 
-                >0.0332</td>
+                >0.0402</td>
 
 
                 <td
-                id="12081ccc"
+                id="7ef429aa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12622,7 +12622,7 @@ data-spans_\_0_\_64
 
 
                 <td
-                id="da733a85"
+                id="af633365"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12656,7 +12656,7 @@ data-spans_\_0_\_65
 
 
                 <th
-                id="ee7dbd7f"
+                id="12fa4777"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12684,7 +12684,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="4749e9ac"
+                id="a26a4c77"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12714,7 +12714,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="4c5d6dbc"
+                id="b5f7dac8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12744,7 +12744,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="39542ff7"
+                id="aa7f8d6b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12774,7 +12774,7 @@ data-spans_\_1_\_2
 
 
                 <td
-                id="f1fa8633"
+                id="138c7f45"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12795,8 +12795,8 @@ data-spans_\_1_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.16292253136634827"
-                data-value-str="0.16292253136634827"
+                data-value-repr="0.1629263013601303"
+                data-value-str="0.1629263013601303"
 
                 data-column-idx="3"
 
@@ -12804,7 +12804,7 @@ data-spans_\_1_\_3
 
 
                 <td
-                id="cf3e9ee0"
+                id="73a81001"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12825,8 +12825,8 @@ data-spans_\_1_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.23201267421245575"
-                data-value-str="0.23201267421245575"
+                data-value-repr="0.23201902210712433"
+                data-value-str="0.23201902210712433"
 
                 data-column-idx="4"
 
@@ -12834,7 +12834,7 @@ data-spans_\_1_\_4
 
 
                 <td
-                id="f1f909df"
+                id="dbf7f66e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12855,8 +12855,8 @@ data-spans_\_1_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02951376512646675"
-                data-value-str="-0.02951376512646675"
+                data-value-repr="-0.029513394460082054"
+                data-value-str="-0.029513394460082054"
 
                 data-column-idx="5"
 
@@ -12864,7 +12864,7 @@ data-spans_\_1_\_5
 
 
                 <td
-                id="b6b09aa4"
+                id="dcd80f33"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12885,8 +12885,8 @@ data-spans_\_1_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.06151537597179413"
-                data-value-str="-0.06151537597179413"
+                data-value-repr="-0.061517804861068726"
+                data-value-str="-0.061517804861068726"
 
                 data-column-idx="6"
 
@@ -12894,7 +12894,7 @@ data-spans_\_1_\_6
 
 
                 <td
-                id="214011a8"
+                id="ead00a88"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12915,8 +12915,8 @@ data-spans_\_1_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.38338878750801086"
-                data-value-str="-0.38338878750801086"
+                data-value-repr="-0.38339564204216003"
+                data-value-str="-0.38339564204216003"
 
                 data-column-idx="7"
 
@@ -12924,7 +12924,7 @@ data-spans_\_1_\_7
 
 
                 <td
-                id="d5d27bde"
+                id="c8f89f62"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12945,8 +12945,8 @@ data-spans_\_1_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.01609850488603115"
-                data-value-str="-0.01609850488603115"
+                data-value-repr="-0.016101520508527756"
+                data-value-str="-0.016101520508527756"
 
                 data-column-idx="8"
 
@@ -12954,7 +12954,7 @@ data-spans_\_1_\_8
 
 
                 <td
-                id="58fce651"
+                id="43ad6006"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12975,8 +12975,8 @@ data-spans_\_1_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.09457984566688538"
-                data-value-str="-0.09457984566688538"
+                data-value-repr="-0.09456650167703629"
+                data-value-str="-0.09456650167703629"
 
                 data-column-idx="9"
 
@@ -12984,7 +12984,7 @@ data-spans_\_1_\_9
 
 
                 <td
-                id="75a3b820"
+                id="1bef605e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13005,16 +13005,16 @@ data-spans_\_1_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.057673852890729904"
-                data-value-str="-0.057673852890729904"
+                data-value-repr="-0.05761870741844177"
+                data-value-str="-0.05761870741844177"
 
                 data-column-idx="10"
 
-                >-0.0577</td>
+                >-0.0576</td>
 
 
                 <td
-                id="0995a27e"
+                id="08d266d8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13035,8 +13035,8 @@ data-spans_\_1_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.10813942551612854"
-                data-value-str="0.10813942551612854"
+                data-value-repr="0.10813825577497482"
+                data-value-str="0.10813825577497482"
 
                 data-column-idx="11"
 
@@ -13044,7 +13044,7 @@ data-spans_\_1_\_11
 
 
                 <td
-                id="4b473c9c"
+                id="08e8fcc6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13065,8 +13065,8 @@ data-spans_\_1_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.04664166271686554"
-                data-value-str="-0.04664166271686554"
+                data-value-repr="-0.04664507135748863"
+                data-value-str="-0.04664507135748863"
 
                 data-column-idx="12"
 
@@ -13074,7 +13074,7 @@ data-spans_\_1_\_12
 
 
                 <td
-                id="d8efdef6"
+                id="a46de23d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13095,16 +13095,16 @@ data-spans_\_1_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03263666853308678"
-                data-value-str="0.03263666853308678"
+                data-value-repr="0.0327034592628479"
+                data-value-str="0.0327034592628479"
 
                 data-column-idx="13"
 
-                >0.0326</td>
+                >0.0327</td>
 
 
                 <td
-                id="28007fed"
+                id="de922234"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13125,16 +13125,16 @@ data-spans_\_1_\_14
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.12849454581737518"
-                data-value-str="-0.12849454581737518"
+                data-value-repr="-0.1286146193742752"
+                data-value-str="-0.1286146193742752"
 
                 data-column-idx="14"
 
-                >-0.128</td>
+                >-0.129</td>
 
 
                 <td
-                id="85745446"
+                id="297b9e7c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13155,8 +13155,8 @@ data-spans_\_1_\_15
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.013162353076040745"
-                data-value-str="-0.013162353076040745"
+                data-value-repr="-0.013183469884097576"
+                data-value-str="-0.013183469884097576"
 
                 data-column-idx="15"
 
@@ -13164,7 +13164,7 @@ data-spans_\_1_\_15
 
 
                 <td
-                id="c5852bca"
+                id="3112992f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13185,16 +13185,16 @@ data-spans_\_1_\_16
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.02938964031636715"
-                data-value-str="0.02938964031636715"
+                data-value-repr="0.029687337577342987"
+                data-value-str="0.029687337577342987"
 
                 data-column-idx="16"
 
-                >0.0294</td>
+                >0.0297</td>
 
 
                 <td
-                id="9c9c753f"
+                id="e5488e0b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13215,16 +13215,16 @@ data-spans_\_1_\_17
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.10262342542409897"
-                data-value-str="-0.10262342542409897"
+                data-value-repr="-0.101992167532444"
+                data-value-str="-0.101992167532444"
 
                 data-column-idx="17"
 
-                >-0.103</td>
+                >-0.102</td>
 
 
                 <td
-                id="b5e576f5"
+                id="e57128bd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13245,16 +13245,16 @@ data-spans_\_1_\_18
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.044473156332969666"
-                data-value-str="-0.044473156332969666"
+                data-value-repr="-0.042956966906785965"
+                data-value-str="-0.042956966906785965"
 
                 data-column-idx="18"
 
-                >-0.0445</td>
+                >-0.0430</td>
 
 
                 <td
-                id="6853a851"
+                id="392defa5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13275,16 +13275,16 @@ data-spans_\_1_\_19
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.03765210509300232"
-                data-value-str="-0.03765210509300232"
+                data-value-repr="-0.03634492680430412"
+                data-value-str="-0.03634492680430412"
 
                 data-column-idx="19"
 
-                >-0.0377</td>
+                >-0.0363</td>
 
 
                 <td
-                id="2b6da6c2"
+                id="d33f4f46"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13305,16 +13305,16 @@ data-spans_\_1_\_20
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05416513979434967"
-                data-value-str="-0.05416513979434967"
+                data-value-repr="-0.055570606142282486"
+                data-value-str="-0.055570606142282486"
 
                 data-column-idx="20"
 
-                >-0.0542</td>
+                >-0.0556</td>
 
 
                 <td
-                id="690c5618"
+                id="81bfae0f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13335,16 +13335,16 @@ data-spans_\_1_\_21
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.27510812878608704"
-                data-value-str="-0.27510812878608704"
+                data-value-repr="-0.27555522322654724"
+                data-value-str="-0.27555522322654724"
 
                 data-column-idx="21"
 
-                >-0.275</td>
+                >-0.276</td>
 
 
                 <td
-                id="c86dbb36"
+                id="46e094c3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13365,16 +13365,16 @@ data-spans_\_1_\_22
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.2515593469142914"
-                data-value-str="0.2515593469142914"
+                data-value-repr="0.25629135966300964"
+                data-value-str="0.25629135966300964"
 
                 data-column-idx="22"
 
-                >0.252</td>
+                >0.256</td>
 
 
                 <td
-                id="77f6df2a"
+                id="82d688ba"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13395,16 +13395,16 @@ data-spans_\_1_\_23
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.14828427135944366"
-                data-value-str="0.14828427135944366"
+                data-value-repr="0.14235134422779083"
+                data-value-str="0.14235134422779083"
 
                 data-column-idx="23"
 
-                >0.148</td>
+                >0.142</td>
 
 
                 <td
-                id="2ffb5cd1"
+                id="f2e08350"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13425,16 +13425,16 @@ data-spans_\_1_\_24
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11852564662694931"
-                data-value-str="-0.11852564662694931"
+                data-value-repr="-0.1306786835193634"
+                data-value-str="-0.1306786835193634"
 
                 data-column-idx="24"
 
-                >-0.119</td>
+                >-0.131</td>
 
 
                 <td
-                id="048defe0"
+                id="cf70136d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13455,16 +13455,16 @@ data-spans_\_1_\_25
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0016061514616012573"
-                data-value-str="-0.0016061514616012573"
+                data-value-repr="-0.008963879197835922"
+                data-value-str="-0.008963879197835922"
 
                 data-column-idx="25"
 
-                >-0.00161</td>
+                >-0.00896</td>
 
 
                 <td
-                id="a5d3cc5d"
+                id="8940c006"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13485,16 +13485,16 @@ data-spans_\_1_\_26
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.019603978842496872"
-                data-value-str="0.019603978842496872"
+                data-value-repr="0.013528809882700443"
+                data-value-str="0.013528809882700443"
 
                 data-column-idx="26"
 
-                >0.0196</td>
+                >0.0135</td>
 
 
                 <td
-                id="439026a1"
+                id="d3ec5203"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13515,16 +13515,16 @@ data-spans_\_1_\_27
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0384242944419384"
-                data-value-str="0.0384242944419384"
+                data-value-repr="-0.05869336426258087"
+                data-value-str="-0.05869336426258087"
 
                 data-column-idx="27"
 
-                >0.0384</td>
+                >-0.0587</td>
 
 
                 <td
-                id="98bb5876"
+                id="343a503f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13545,16 +13545,16 @@ data-spans_\_1_\_28
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0008743480429984629"
-                data-value-str="0.0008743480429984629"
+                data-value-repr="0.011729524470865726"
+                data-value-str="0.011729524470865726"
 
                 data-column-idx="28"
 
-                >0.000874</td>
+                >0.0117</td>
 
 
                 <td
-                id="e0eca0af"
+                id="df908ab4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13575,16 +13575,16 @@ data-spans_\_1_\_29
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05562073364853859"
-                data-value-str="-0.05562073364853859"
+                data-value-repr="-0.03340727090835571"
+                data-value-str="-0.03340727090835571"
 
                 data-column-idx="29"
 
-                >-0.0556</td>
+                >-0.0334</td>
 
 
                 <td
-                id="0d53d691"
+                id="a6fd09d1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13605,16 +13605,16 @@ data-spans_\_1_\_30
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05567507445812225"
-                data-value-str="-0.05567507445812225"
+                data-value-repr="-0.04695191606879234"
+                data-value-str="-0.04695191606879234"
 
                 data-column-idx="30"
 
-                >-0.0557</td>
+                >-0.0470</td>
 
 
                 <td
-                id="11bc6e6b"
+                id="69d28f06"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13635,16 +13635,16 @@ data-spans_\_1_\_31
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.11143242567777634"
-                data-value-str="0.11143242567777634"
+                data-value-repr="0.09084495902061462"
+                data-value-str="0.09084495902061462"
 
                 data-column-idx="31"
 
-                >0.111</td>
+                >0.0908</td>
 
 
                 <td
-                id="dfdfda21"
+                id="f5f0a44a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13665,16 +13665,16 @@ data-spans_\_1_\_32
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.07851318269968033"
-                data-value-str="-0.07851318269968033"
+                data-value-repr="0.058868613094091415"
+                data-value-str="0.058868613094091415"
 
                 data-column-idx="32"
 
-                >-0.0785</td>
+                >0.0589</td>
 
 
                 <td
-                id="408fae5d"
+                id="4e153c0a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13704,7 +13704,7 @@ data-spans_\_1_\_33
 
 
                 <td
-                id="e5aa1943"
+                id="80368d1a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13725,8 +13725,8 @@ data-spans_\_1_\_34
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.8472420573234558"
-                data-value-str="0.8472420573234558"
+                data-value-repr="0.8472643494606018"
+                data-value-str="0.8472643494606018"
 
                 data-column-idx="34"
 
@@ -13734,7 +13734,7 @@ data-spans_\_1_\_34
 
 
                 <td
-                id="264da784"
+                id="9a0b72a8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13755,8 +13755,8 @@ data-spans_\_1_\_35
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11793555319309235"
-                data-value-str="-0.11793555319309235"
+                data-value-repr="-0.11794105917215347"
+                data-value-str="-0.11794105917215347"
 
                 data-column-idx="35"
 
@@ -13764,7 +13764,7 @@ data-spans_\_1_\_35
 
 
                 <td
-                id="d59d57fd"
+                id="024e31fe"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13785,8 +13785,8 @@ data-spans_\_1_\_36
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.04859006777405739"
-                data-value-str="-0.04859006777405739"
+                data-value-repr="-0.04859188199043274"
+                data-value-str="-0.04859188199043274"
 
                 data-column-idx="36"
 
@@ -13794,7 +13794,7 @@ data-spans_\_1_\_36
 
 
                 <td
-                id="fc11ba7f"
+                id="e938c290"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13815,8 +13815,8 @@ data-spans_\_1_\_37
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11061852425336838"
-                data-value-str="-0.11061852425336838"
+                data-value-repr="-0.11061930656433105"
+                data-value-str="-0.11061930656433105"
 
                 data-column-idx="37"
 
@@ -13824,7 +13824,7 @@ data-spans_\_1_\_37
 
 
                 <td
-                id="88b5f75a"
+                id="987ae568"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13845,8 +13845,8 @@ data-spans_\_1_\_38
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.052885595709085464"
-                data-value-str="-0.052885595709085464"
+                data-value-repr="-0.05288805812597275"
+                data-value-str="-0.05288805812597275"
 
                 data-column-idx="38"
 
@@ -13854,7 +13854,7 @@ data-spans_\_1_\_38
 
 
                 <td
-                id="d3efcc2e"
+                id="e63395db"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13875,8 +13875,8 @@ data-spans_\_1_\_39
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.04862493649125099"
-                data-value-str="-0.04862493649125099"
+                data-value-repr="-0.0486261211335659"
+                data-value-str="-0.0486261211335659"
 
                 data-column-idx="39"
 
@@ -13884,7 +13884,7 @@ data-spans_\_1_\_39
 
 
                 <td
-                id="e3fcc8d7"
+                id="1e8648e0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13905,8 +13905,8 @@ data-spans_\_1_\_40
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.10777086019515991"
-                data-value-str="-0.10777086019515991"
+                data-value-repr="-0.10777447372674942"
+                data-value-str="-0.10777447372674942"
 
                 data-column-idx="40"
 
@@ -13914,7 +13914,7 @@ data-spans_\_1_\_40
 
 
                 <td
-                id="8ab7aa16"
+                id="2884e45b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13935,8 +13935,8 @@ data-spans_\_1_\_41
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.008096729405224323"
-                data-value-str="0.008096729405224323"
+                data-value-repr="0.0080963633954525"
+                data-value-str="0.0080963633954525"
 
                 data-column-idx="41"
 
@@ -13944,7 +13944,7 @@ data-spans_\_1_\_41
 
 
                 <td
-                id="ee261252"
+                id="1bc8dd00"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13965,8 +13965,8 @@ data-spans_\_1_\_42
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02359168790280819"
-                data-value-str="-0.02359168790280819"
+                data-value-repr="-0.0235894825309515"
+                data-value-str="-0.0235894825309515"
 
                 data-column-idx="42"
 
@@ -13974,7 +13974,7 @@ data-spans_\_1_\_42
 
 
                 <td
-                id="b0c0a128"
+                id="351123df"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13995,8 +13995,8 @@ data-spans_\_1_\_43
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05524472892284393"
-                data-value-str="-0.05524472892284393"
+                data-value-repr="-0.05523911863565445"
+                data-value-str="-0.05523911863565445"
 
                 data-column-idx="43"
 
@@ -14004,7 +14004,7 @@ data-spans_\_1_\_43
 
 
                 <td
-                id="03fe3788"
+                id="517bb87e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14025,8 +14025,8 @@ data-spans_\_1_\_44
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05661745369434357"
-                data-value-str="-0.05661745369434357"
+                data-value-repr="-0.056618109345436096"
+                data-value-str="-0.056618109345436096"
 
                 data-column-idx="44"
 
@@ -14034,7 +14034,7 @@ data-spans_\_1_\_44
 
 
                 <td
-                id="67cc0377"
+                id="cb5551a4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14055,8 +14055,8 @@ data-spans_\_1_\_45
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.008620532229542732"
-                data-value-str="-0.008620532229542732"
+                data-value-repr="-0.008621170185506344"
+                data-value-str="-0.008621170185506344"
 
                 data-column-idx="45"
 
@@ -14064,7 +14064,7 @@ data-spans_\_1_\_45
 
 
                 <td
-                id="3e38ea5e"
+                id="24d7b9f9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14085,16 +14085,16 @@ data-spans_\_1_\_46
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0560544952750206"
-                data-value-str="0.0560544952750206"
+                data-value-repr="0.05604025349020958"
+                data-value-str="0.05604025349020958"
 
                 data-column-idx="46"
 
-                >0.0561</td>
+                >0.0560</td>
 
 
                 <td
-                id="02a3cd76"
+                id="69a50803"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14115,8 +14115,8 @@ data-spans_\_1_\_47
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05861562862992287"
-                data-value-str="-0.05861562862992287"
+                data-value-repr="-0.05859953537583351"
+                data-value-str="-0.05859953537583351"
 
                 data-column-idx="47"
 
@@ -14124,7 +14124,7 @@ data-spans_\_1_\_47
 
 
                 <td
-                id="d69bf142"
+                id="26097971"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14145,16 +14145,16 @@ data-spans_\_1_\_48
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02135835774242878"
-                data-value-str="-0.02135835774242878"
+                data-value-repr="-0.021344857290387154"
+                data-value-str="-0.021344857290387154"
 
                 data-column-idx="48"
 
-                >-0.0214</td>
+                >-0.0213</td>
 
 
                 <td
-                id="d8fd76d0"
+                id="2776bd19"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14175,8 +14175,8 @@ data-spans_\_1_\_49
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.002983531914651394"
-                data-value-str="-0.002983531914651394"
+                data-value-repr="-0.00297551485709846"
+                data-value-str="-0.00297551485709846"
 
                 data-column-idx="49"
 
@@ -14184,7 +14184,7 @@ data-spans_\_1_\_49
 
 
                 <td
-                id="14982e5b"
+                id="a7f8a407"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14205,16 +14205,16 @@ data-spans_\_1_\_50
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.006415133364498615"
-                data-value-str="-0.006415133364498615"
+                data-value-repr="-0.0064739347435534"
+                data-value-str="-0.0064739347435534"
 
                 data-column-idx="50"
 
-                >-0.00642</td>
+                >-0.00647</td>
 
 
                 <td
-                id="f4bece82"
+                id="9e3dc6cb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14235,16 +14235,16 @@ data-spans_\_1_\_51
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.07844265550374985"
-                data-value-str="-0.07844265550374985"
+                data-value-repr="-0.07846372574567795"
+                data-value-str="-0.07846372574567795"
 
                 data-column-idx="51"
 
-                >-0.0784</td>
+                >-0.0785</td>
 
 
                 <td
-                id="edadded1"
+                id="bc7592f7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14265,16 +14265,16 @@ data-spans_\_1_\_52
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1474820226430893"
-                data-value-str="-0.1474820226430893"
+                data-value-repr="-0.1475309133529663"
+                data-value-str="-0.1475309133529663"
 
                 data-column-idx="52"
 
-                >-0.147</td>
+                >-0.148</td>
 
 
                 <td
-                id="7d09a3c3"
+                id="558964a8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14295,16 +14295,16 @@ data-spans_\_1_\_53
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02013320103287697"
-                data-value-str="-0.02013320103287697"
+                data-value-repr="-0.020319554954767227"
+                data-value-str="-0.020319554954767227"
 
                 data-column-idx="53"
 
-                >-0.0201</td>
+                >-0.0203</td>
 
 
                 <td
-                id="fdbe9913"
+                id="059e1684"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14325,8 +14325,8 @@ data-spans_\_1_\_54
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.10404990613460541"
-                data-value-str="-0.10404990613460541"
+                data-value-repr="-0.10418453067541122"
+                data-value-str="-0.10418453067541122"
 
                 data-column-idx="54"
 
@@ -14334,7 +14334,7 @@ data-spans_\_1_\_54
 
 
                 <td
-                id="48f376e2"
+                id="57d664eb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14355,8 +14355,8 @@ data-spans_\_1_\_55
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.16963507235050201"
-                data-value-str="0.16963507235050201"
+                data-value-repr="0.16998949646949768"
+                data-value-str="0.16998949646949768"
 
                 data-column-idx="55"
 
@@ -14364,7 +14364,7 @@ data-spans_\_1_\_55
 
 
                 <td
-                id="23b15912"
+                id="c03baae6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14385,16 +14385,16 @@ data-spans_\_1_\_56
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.00656250212341547"
-                data-value-str="-0.00656250212341547"
+                data-value-repr="-0.00723693473264575"
+                data-value-str="-0.00723693473264575"
 
                 data-column-idx="56"
 
-                >-0.00656</td>
+                >-0.00724</td>
 
 
                 <td
-                id="0e876170"
+                id="19932357"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14415,16 +14415,16 @@ data-spans_\_1_\_57
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.06893700361251831"
-                data-value-str="-0.06893700361251831"
+                data-value-repr="-0.06865343451499939"
+                data-value-str="-0.06865343451499939"
 
                 data-column-idx="57"
 
-                >-0.0689</td>
+                >-0.0687</td>
 
 
                 <td
-                id="19e0acf1"
+                id="91be9b69"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14445,16 +14445,16 @@ data-spans_\_1_\_58
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.09527744352817535"
-                data-value-str="-0.09527744352817535"
+                data-value-repr="-0.0955071672797203"
+                data-value-str="-0.0955071672797203"
 
                 data-column-idx="58"
 
-                >-0.0953</td>
+                >-0.0955</td>
 
 
                 <td
-                id="1244e233"
+                id="6b591456"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14475,8 +14475,8 @@ data-spans_\_1_\_59
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.6611453890800476"
-                data-value-str="0.6611453890800476"
+                data-value-repr="0.6611977219581604"
+                data-value-str="0.6611977219581604"
 
                 data-column-idx="59"
 
@@ -14484,7 +14484,7 @@ data-spans_\_1_\_59
 
 
                 <td
-                id="67e74618"
+                id="ef5d8b6e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14505,16 +14505,16 @@ data-spans_\_1_\_60
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.19606728851795197"
-                data-value-str="0.19606728851795197"
+                data-value-repr="0.19531771540641785"
+                data-value-str="0.19531771540641785"
 
                 data-column-idx="60"
 
-                >0.196</td>
+                >0.195</td>
 
 
                 <td
-                id="cf34a970"
+                id="197dd5fe"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14535,16 +14535,16 @@ data-spans_\_1_\_61
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0744171068072319"
-                data-value-str="0.0744171068072319"
+                data-value-repr="0.07378555089235306"
+                data-value-str="0.07378555089235306"
 
                 data-column-idx="61"
 
-                >0.0744</td>
+                >0.0738</td>
 
 
                 <td
-                id="f0808625"
+                id="c1c19e11"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14565,16 +14565,16 @@ data-spans_\_1_\_62
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.07782977819442749"
-                data-value-str="0.07782977819442749"
+                data-value-repr="0.08034258335828781"
+                data-value-str="0.08034258335828781"
 
                 data-column-idx="62"
 
-                >0.0778</td>
+                >0.0803</td>
 
 
                 <td
-                id="515962a2"
+                id="85c90e0c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14595,16 +14595,16 @@ data-spans_\_1_\_63
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.09530021250247955"
-                data-value-str="0.09530021250247955"
+                data-value-repr="0.09485750645399094"
+                data-value-str="0.09485750645399094"
 
                 data-column-idx="63"
 
-                >0.0953</td>
+                >0.0949</td>
 
 
                 <td
-                id="18add517"
+                id="3c4271db"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14634,7 +14634,7 @@ data-spans_\_1_\_64
 
 
                 <td
-                id="e2fd9b1d"
+                id="9f213c56"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14668,7 +14668,7 @@ data-spans_\_1_\_65
 
 
                 <th
-                id="a0fedde1"
+                id="1f0f9724"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -14696,7 +14696,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="93430706"
+                id="7cf0f654"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14726,7 +14726,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="c7819925"
+                id="6623e2b3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14756,7 +14756,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="3cba04d6"
+                id="52c4d0b0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14786,7 +14786,7 @@ data-spans_\_2_\_2
 
 
                 <td
-                id="60642508"
+                id="25a70cdf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14807,8 +14807,8 @@ data-spans_\_2_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.13237963616847992"
-                data-value-str="0.13237963616847992"
+                data-value-repr="0.13238240778446198"
+                data-value-str="0.13238240778446198"
 
                 data-column-idx="3"
 
@@ -14816,7 +14816,7 @@ data-spans_\_2_\_3
 
 
                 <td
-                id="eb3aba18"
+                id="09bce320"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14837,8 +14837,8 @@ data-spans_\_2_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.25529664754867554"
-                data-value-str="0.25529664754867554"
+                data-value-repr="0.2553023397922516"
+                data-value-str="0.2553023397922516"
 
                 data-column-idx="4"
 
@@ -14846,7 +14846,7 @@ data-spans_\_2_\_4
 
 
                 <td
-                id="b7905eb8"
+                id="82f566df"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14867,8 +14867,8 @@ data-spans_\_2_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.35040801763534546"
-                data-value-str="0.35040801763534546"
+                data-value-repr="0.3504181206226349"
+                data-value-str="0.3504181206226349"
 
                 data-column-idx="5"
 
@@ -14876,7 +14876,7 @@ data-spans_\_2_\_5
 
 
                 <td
-                id="d59a0b5c"
+                id="58ccf491"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14897,8 +14897,8 @@ data-spans_\_2_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.01074266992509365"
-                data-value-str="-0.01074266992509365"
+                data-value-repr="-0.010746533051133156"
+                data-value-str="-0.010746533051133156"
 
                 data-column-idx="6"
 
@@ -14906,7 +14906,7 @@ data-spans_\_2_\_6
 
 
                 <td
-                id="afbf67a1"
+                id="20350c22"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14927,8 +14927,8 @@ data-spans_\_2_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.079019695520401"
-                data-value-str="-0.079019695520401"
+                data-value-repr="-0.07901494950056076"
+                data-value-str="-0.07901494950056076"
 
                 data-column-idx="7"
 
@@ -14936,7 +14936,7 @@ data-spans_\_2_\_7
 
 
                 <td
-                id="5595b21d"
+                id="46a98d62"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14957,8 +14957,8 @@ data-spans_\_2_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.4042556881904602"
-                data-value-str="-0.4042556881904602"
+                data-value-repr="-0.4042675793170929"
+                data-value-str="-0.4042675793170929"
 
                 data-column-idx="8"
 
@@ -14966,7 +14966,7 @@ data-spans_\_2_\_8
 
 
                 <td
-                id="19cc4a52"
+                id="eb60a162"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -14987,8 +14987,8 @@ data-spans_\_2_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.15188956260681152"
-                data-value-str="-0.15188956260681152"
+                data-value-repr="-0.15188027918338776"
+                data-value-str="-0.15188027918338776"
 
                 data-column-idx="9"
 
@@ -14996,7 +14996,7 @@ data-spans_\_2_\_9
 
 
                 <td
-                id="01c53dc4"
+                id="fea9aca5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15017,8 +15017,8 @@ data-spans_\_2_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.01841292716562748"
-                data-value-str="-0.01841292716562748"
+                data-value-repr="-0.018390750512480736"
+                data-value-str="-0.018390750512480736"
 
                 data-column-idx="10"
 
@@ -15026,7 +15026,7 @@ data-spans_\_2_\_10
 
 
                 <td
-                id="80fbf540"
+                id="f1358f9a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15047,8 +15047,8 @@ data-spans_\_2_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.4229309558868408"
-                data-value-str="-0.4229309558868408"
+                data-value-repr="-0.42293787002563477"
+                data-value-str="-0.42293787002563477"
 
                 data-column-idx="11"
 
@@ -15056,7 +15056,7 @@ data-spans_\_2_\_11
 
 
                 <td
-                id="02236565"
+                id="53216c97"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15077,16 +15077,16 @@ data-spans_\_2_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.07270295917987823"
-                data-value-str="-0.07270295917987823"
+                data-value-repr="-0.07275895774364471"
+                data-value-str="-0.07275895774364471"
 
                 data-column-idx="12"
 
-                >-0.0727</td>
+                >-0.0728</td>
 
 
                 <td
-                id="c3122ed4"
+                id="53299f9d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15107,8 +15107,8 @@ data-spans_\_2_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.026470143347978592"
-                data-value-str="-0.026470143347978592"
+                data-value-repr="-0.026525871828198433"
+                data-value-str="-0.026525871828198433"
 
                 data-column-idx="13"
 
@@ -15116,7 +15116,7 @@ data-spans_\_2_\_13
 
 
                 <td
-                id="58810643"
+                id="2b13f617"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15137,8 +15137,8 @@ data-spans_\_2_\_14
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.09041597694158554"
-                data-value-str="-0.09041597694158554"
+                data-value-repr="-0.09044048190116882"
+                data-value-str="-0.09044048190116882"
 
                 data-column-idx="14"
 
@@ -15146,7 +15146,7 @@ data-spans_\_2_\_14
 
 
                 <td
-                id="7445f801"
+                id="04896629"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15167,16 +15167,16 @@ data-spans_\_2_\_15
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.010200422257184982"
-                data-value-str="0.010200422257184982"
+                data-value-repr="0.009923438541591167"
+                data-value-str="0.009923438541591167"
 
                 data-column-idx="15"
 
-                >0.0102</td>
+                >0.00992</td>
 
 
                 <td
-                id="f2c99794"
+                id="d75e8fa0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15197,16 +15197,16 @@ data-spans_\_2_\_16
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.08073445409536362"
-                data-value-str="0.08073445409536362"
+                data-value-repr="0.08106406033039093"
+                data-value-str="0.08106406033039093"
 
                 data-column-idx="16"
 
-                >0.0807</td>
+                >0.0811</td>
 
 
                 <td
-                id="25443a28"
+                id="11724763"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15227,16 +15227,16 @@ data-spans_\_2_\_17
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.017544114962220192"
-                data-value-str="-0.017544114962220192"
+                data-value-repr="-0.017354637384414673"
+                data-value-str="-0.017354637384414673"
 
                 data-column-idx="17"
 
-                >-0.0175</td>
+                >-0.0174</td>
 
 
                 <td
-                id="791876c9"
+                id="f51b33cb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15257,16 +15257,16 @@ data-spans_\_2_\_18
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03164755553007126"
-                data-value-str="0.03164755553007126"
+                data-value-repr="0.03293011337518692"
+                data-value-str="0.03293011337518692"
 
                 data-column-idx="18"
 
-                >0.0316</td>
+                >0.0329</td>
 
 
                 <td
-                id="5bdcdf46"
+                id="42421f38"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15287,16 +15287,16 @@ data-spans_\_2_\_19
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06591278314590454"
-                data-value-str="0.06591278314590454"
+                data-value-repr="0.06720788776874542"
+                data-value-str="0.06720788776874542"
 
                 data-column-idx="19"
 
-                >0.0659</td>
+                >0.0672</td>
 
 
                 <td
-                id="46a602c6"
+                id="a2a301aa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15317,16 +15317,16 @@ data-spans_\_2_\_20
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.2779940366744995"
-                data-value-str="-0.2779940366744995"
+                data-value-repr="-0.2791598439216614"
+                data-value-str="-0.2791598439216614"
 
                 data-column-idx="20"
 
-                >-0.278</td>
+                >-0.279</td>
 
 
                 <td
-                id="fa8082d0"
+                id="a789dac4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15347,8 +15347,8 @@ data-spans_\_2_\_21
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1405028998851776"
-                data-value-str="-0.1405028998851776"
+                data-value-repr="-0.14112265408039093"
+                data-value-str="-0.14112265408039093"
 
                 data-column-idx="21"
 
@@ -15356,7 +15356,7 @@ data-spans_\_2_\_21
 
 
                 <td
-                id="2027d4a7"
+                id="6f421818"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15377,16 +15377,16 @@ data-spans_\_2_\_22
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.006256416440010071"
-                data-value-str="-0.006256416440010071"
+                data-value-repr="-0.004901777487248182"
+                data-value-str="-0.004901777487248182"
 
                 data-column-idx="22"
 
-                >-0.00626</td>
+                >-0.00490</td>
 
 
                 <td
-                id="fbcc5822"
+                id="dad238ae"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15407,16 +15407,16 @@ data-spans_\_2_\_23
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.036976445466279984"
-                data-value-str="-0.036976445466279984"
+                data-value-repr="-0.039340995252132416"
+                data-value-str="-0.039340995252132416"
 
                 data-column-idx="23"
 
-                >-0.0370</td>
+                >-0.0393</td>
 
 
                 <td
-                id="7ee112a9"
+                id="fdd29dc1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15437,16 +15437,16 @@ data-spans_\_2_\_24
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.08318120986223221"
-                data-value-str="0.08318120986223221"
+                data-value-repr="0.07211688905954361"
+                data-value-str="0.07211688905954361"
 
                 data-column-idx="24"
 
-                >0.0832</td>
+                >0.0721</td>
 
 
                 <td
-                id="fb4db034"
+                id="bd4e79af"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15467,16 +15467,16 @@ data-spans_\_2_\_25
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.09040342271327972"
-                data-value-str="-0.09040342271327972"
+                data-value-repr="-0.08505348116159439"
+                data-value-str="-0.08505348116159439"
 
                 data-column-idx="25"
 
-                >-0.0904</td>
+                >-0.0851</td>
 
 
                 <td
-                id="541a5f78"
+                id="d48bbe32"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15497,16 +15497,16 @@ data-spans_\_2_\_26
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.053768955171108246"
-                data-value-str="-0.053768955171108246"
+                data-value-repr="-0.029139185324311256"
+                data-value-str="-0.029139185324311256"
 
                 data-column-idx="26"
 
-                >-0.0538</td>
+                >-0.0291</td>
 
 
                 <td
-                id="a2385d71"
+                id="a8e24776"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15527,16 +15527,16 @@ data-spans_\_2_\_27
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.39872094988822937"
-                data-value-str="0.39872094988822937"
+                data-value-repr="-0.4047825038433075"
+                data-value-str="-0.4047825038433075"
 
                 data-column-idx="27"
 
-                >0.399</td>
+                >-0.405</td>
 
 
                 <td
-                id="f1a09cc4"
+                id="60fe0998"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15557,16 +15557,16 @@ data-spans_\_2_\_28
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.04931236803531647"
-                data-value-str="-0.04931236803531647"
+                data-value-repr="0.00998613703995943"
+                data-value-str="0.00998613703995943"
 
                 data-column-idx="28"
 
-                >-0.0493</td>
+                >0.00999</td>
 
 
                 <td
-                id="539bdde4"
+                id="24740b0e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15587,16 +15587,16 @@ data-spans_\_2_\_29
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11557924002408981"
-                data-value-str="-0.11557924002408981"
+                data-value-repr="-0.04751633107662201"
+                data-value-str="-0.04751633107662201"
 
                 data-column-idx="29"
 
-                >-0.116</td>
+                >-0.0475</td>
 
 
                 <td
-                id="0a168cf4"
+                id="1cc56602"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15617,16 +15617,16 @@ data-spans_\_2_\_30
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.22875483334064484"
-                data-value-str="-0.22875483334064484"
+                data-value-repr="-0.2366911917924881"
+                data-value-str="-0.2366911917924881"
 
                 data-column-idx="30"
 
-                >-0.229</td>
+                >-0.237</td>
 
 
                 <td
-                id="c8658eca"
+                id="ddb6e203"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15647,16 +15647,16 @@ data-spans_\_2_\_31
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.27966684103012085"
-                data-value-str="-0.27966684103012085"
+                data-value-repr="-0.31327831745147705"
+                data-value-str="-0.31327831745147705"
 
                 data-column-idx="31"
 
-                >-0.280</td>
+                >-0.313</td>
 
 
                 <td
-                id="8cc7df85"
+                id="39aed347"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15677,16 +15677,16 @@ data-spans_\_2_\_32
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.2147449553012848"
-                data-value-str="0.2147449553012848"
+                data-value-repr="-0.051850005984306335"
+                data-value-str="-0.051850005984306335"
 
                 data-column-idx="32"
 
-                >0.215</td>
+                >-0.0519</td>
 
 
                 <td
-                id="95f9a10e"
+                id="ee760087"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15716,7 +15716,7 @@ data-spans_\_2_\_33
 
 
                 <td
-                id="eb887aa5"
+                id="27d8fb82"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15737,8 +15737,8 @@ data-spans_\_2_\_34
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04800497367978096"
-                data-value-str="0.04800497367978096"
+                data-value-repr="0.048005979508161545"
+                data-value-str="0.048005979508161545"
 
                 data-column-idx="34"
 
@@ -15746,7 +15746,7 @@ data-spans_\_2_\_34
 
 
                 <td
-                id="0d4aad90"
+                id="4895a0af"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15767,8 +15767,8 @@ data-spans_\_2_\_35
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.01605008915066719"
-                data-value-str="0.01605008915066719"
+                data-value-repr="0.01605023629963398"
+                data-value-str="0.01605023629963398"
 
                 data-column-idx="35"
 
@@ -15776,7 +15776,7 @@ data-spans_\_2_\_35
 
 
                 <td
-                id="042970fe"
+                id="3b6df15c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15797,8 +15797,8 @@ data-spans_\_2_\_36
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0070354831404984"
-                data-value-str="0.0070354831404984"
+                data-value-repr="0.007036133669316769"
+                data-value-str="0.007036133669316769"
 
                 data-column-idx="36"
 
@@ -15806,7 +15806,7 @@ data-spans_\_2_\_36
 
 
                 <td
-                id="93729823"
+                id="2bd869ff"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15827,8 +15827,8 @@ data-spans_\_2_\_37
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.08721873909235"
-                data-value-str="0.08721873909235"
+                data-value-repr="0.08722078800201416"
+                data-value-str="0.08722078800201416"
 
                 data-column-idx="37"
 
@@ -15836,7 +15836,7 @@ data-spans_\_2_\_37
 
 
                 <td
-                id="cd852316"
+                id="a5a5bb2a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15857,8 +15857,8 @@ data-spans_\_2_\_38
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.11999652534723282"
-                data-value-str="0.11999652534723282"
+                data-value-repr="0.12000004947185516"
+                data-value-str="0.12000004947185516"
 
                 data-column-idx="38"
 
@@ -15866,7 +15866,7 @@ data-spans_\_2_\_38
 
 
                 <td
-                id="331967aa"
+                id="600dbc47"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15887,8 +15887,8 @@ data-spans_\_2_\_39
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.05896224454045296"
-                data-value-str="0.05896224454045296"
+                data-value-repr="0.058964651077985764"
+                data-value-str="0.058964651077985764"
 
                 data-column-idx="39"
 
@@ -15896,7 +15896,7 @@ data-spans_\_2_\_39
 
 
                 <td
-                id="35bf90dc"
+                id="ec7dc565"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15917,8 +15917,8 @@ data-spans_\_2_\_40
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.21272854506969452"
-                data-value-str="0.21272854506969452"
+                data-value-repr="0.21272650361061096"
+                data-value-str="0.21272650361061096"
 
                 data-column-idx="40"
 
@@ -15926,7 +15926,7 @@ data-spans_\_2_\_40
 
 
                 <td
-                id="0c505a71"
+                id="5cdb34f9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15947,8 +15947,8 @@ data-spans_\_2_\_41
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.23466269671916962"
-                data-value-str="-0.23466269671916962"
+                data-value-repr="-0.2346634864807129"
+                data-value-str="-0.2346634864807129"
 
                 data-column-idx="41"
 
@@ -15956,7 +15956,7 @@ data-spans_\_2_\_41
 
 
                 <td
-                id="24b39441"
+                id="652c311c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15977,8 +15977,8 @@ data-spans_\_2_\_42
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.37522709369659424"
-                data-value-str="0.37522709369659424"
+                data-value-repr="0.3752109408378601"
+                data-value-str="0.3752109408378601"
 
                 data-column-idx="42"
 
@@ -15986,7 +15986,7 @@ data-spans_\_2_\_42
 
 
                 <td
-                id="9ed7fc8d"
+                id="a0b9c4e6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16007,16 +16007,16 @@ data-spans_\_2_\_43
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.7324823141098022"
-                data-value-str="0.7324823141098022"
+                data-value-repr="0.73252272605896"
+                data-value-str="0.73252272605896"
 
                 data-column-idx="43"
 
-                >0.732</td>
+                >0.733</td>
 
 
                 <td
-                id="1a98fce7"
+                id="ce9065ee"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16037,8 +16037,8 @@ data-spans_\_2_\_44
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.46023961901664734"
-                data-value-str="-0.46023961901664734"
+                data-value-repr="-0.46025118231773376"
+                data-value-str="-0.46025118231773376"
 
                 data-column-idx="44"
 
@@ -16046,7 +16046,7 @@ data-spans_\_2_\_44
 
 
                 <td
-                id="a96a3d63"
+                id="a90b4aff"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16067,8 +16067,8 @@ data-spans_\_2_\_45
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04766151309013367"
-                data-value-str="0.04766151309013367"
+                data-value-repr="0.04767557978630066"
+                data-value-str="0.04767557978630066"
 
                 data-column-idx="45"
 
@@ -16076,7 +16076,7 @@ data-spans_\_2_\_45
 
 
                 <td
-                id="0e643336"
+                id="d408b99d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16097,16 +16097,16 @@ data-spans_\_2_\_46
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.059965457767248154"
-                data-value-str="0.059965457767248154"
+                data-value-repr="0.059946075081825256"
+                data-value-str="0.059946075081825256"
 
                 data-column-idx="46"
 
-                >0.0600</td>
+                >0.0599</td>
 
 
                 <td
-                id="a3b1dd97"
+                id="1f32fe58"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16127,8 +16127,8 @@ data-spans_\_2_\_47
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0294955987483263"
-                data-value-str="0.0294955987483263"
+                data-value-repr="0.029506348073482513"
+                data-value-str="0.029506348073482513"
 
                 data-column-idx="47"
 
@@ -16136,7 +16136,7 @@ data-spans_\_2_\_47
 
 
                 <td
-                id="a5b2d93d"
+                id="a35bab1f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16157,8 +16157,8 @@ data-spans_\_2_\_48
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.17553821206092834"
-                data-value-str="0.17553821206092834"
+                data-value-repr="0.17555388808250427"
+                data-value-str="0.17555388808250427"
 
                 data-column-idx="48"
 
@@ -16166,7 +16166,7 @@ data-spans_\_2_\_48
 
 
                 <td
-                id="37c2211b"
+                id="516a321d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16187,8 +16187,8 @@ data-spans_\_2_\_49
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03170426934957504"
-                data-value-str="0.03170426934957504"
+                data-value-repr="0.031706251204013824"
+                data-value-str="0.031706251204013824"
 
                 data-column-idx="49"
 
@@ -16196,7 +16196,7 @@ data-spans_\_2_\_49
 
 
                 <td
-                id="3bb6f46c"
+                id="fc0997c1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16217,16 +16217,16 @@ data-spans_\_2_\_50
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.01286361925303936"
-                data-value-str="0.01286361925303936"
+                data-value-repr="0.01283916924148798"
+                data-value-str="0.01283916924148798"
 
                 data-column-idx="50"
 
-                >0.0129</td>
+                >0.0128</td>
 
 
                 <td
-                id="02e509ba"
+                id="60802f86"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16247,8 +16247,8 @@ data-spans_\_2_\_51
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.01761053502559662"
-                data-value-str="-0.01761053502559662"
+                data-value-repr="-0.017598938196897507"
+                data-value-str="-0.017598938196897507"
 
                 data-column-idx="51"
 
@@ -16256,7 +16256,7 @@ data-spans_\_2_\_51
 
 
                 <td
-                id="8e954648"
+                id="3f369974"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16277,8 +16277,8 @@ data-spans_\_2_\_52
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0549209862947464"
-                data-value-str="-0.0549209862947464"
+                data-value-repr="-0.0549108125269413"
+                data-value-str="-0.0549108125269413"
 
                 data-column-idx="52"
 
@@ -16286,7 +16286,7 @@ data-spans_\_2_\_52
 
 
                 <td
-                id="58b3158a"
+                id="8ccba018"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16307,16 +16307,16 @@ data-spans_\_2_\_53
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.060680922120809555"
-                data-value-str="-0.060680922120809555"
+                data-value-repr="-0.06076010689139366"
+                data-value-str="-0.06076010689139366"
 
                 data-column-idx="53"
 
-                >-0.0607</td>
+                >-0.0608</td>
 
 
                 <td
-                id="919e4a78"
+                id="78e6c822"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16337,16 +16337,16 @@ data-spans_\_2_\_54
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08693364262580872"
-                data-value-str="-0.08693364262580872"
+                data-value-repr="-0.08657244592905045"
+                data-value-str="-0.08657244592905045"
 
                 data-column-idx="54"
 
-                >-0.0869</td>
+                >-0.0866</td>
 
 
                 <td
-                id="cdb40f97"
+                id="4da4ed13"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16367,16 +16367,16 @@ data-spans_\_2_\_55
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.028326572850346565"
-                data-value-str="0.028326572850346565"
+                data-value-repr="0.028893999755382538"
+                data-value-str="0.028893999755382538"
 
                 data-column-idx="55"
 
-                >0.0283</td>
+                >0.0289</td>
 
 
                 <td
-                id="796f5ac9"
+                id="5192bfe1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16397,16 +16397,16 @@ data-spans_\_2_\_56
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.02944546565413475"
-                data-value-str="0.02944546565413475"
+                data-value-repr="0.029287440702319145"
+                data-value-str="0.029287440702319145"
 
                 data-column-idx="56"
 
-                >0.0294</td>
+                >0.0293</td>
 
 
                 <td
-                id="1eea3cbe"
+                id="2daf1b25"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16427,16 +16427,16 @@ data-spans_\_2_\_57
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.00620714807882905"
-                data-value-str="0.00620714807882905"
+                data-value-repr="0.006883231922984123"
+                data-value-str="0.006883231922984123"
 
                 data-column-idx="57"
 
-                >0.00621</td>
+                >0.00688</td>
 
 
                 <td
-                id="e3081378"
+                id="3ca528e2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16457,16 +16457,16 @@ data-spans_\_2_\_58
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.004888464231044054"
-                data-value-str="-0.004888464231044054"
+                data-value-repr="-0.0046212258748710155"
+                data-value-str="-0.0046212258748710155"
 
                 data-column-idx="58"
 
-                >-0.00489</td>
+                >-0.00462</td>
 
 
                 <td
-                id="eb395bf8"
+                id="881182e6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16487,16 +16487,16 @@ data-spans_\_2_\_59
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06088981404900551"
-                data-value-str="0.06088981404900551"
+                data-value-repr="0.06120948866009712"
+                data-value-str="0.06120948866009712"
 
                 data-column-idx="59"
 
-                >0.0609</td>
+                >0.0612</td>
 
 
                 <td
-                id="0ddde984"
+                id="4b726395"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16517,16 +16517,16 @@ data-spans_\_2_\_60
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.033561982214450836"
-                data-value-str="0.033561982214450836"
+                data-value-repr="0.03266701474785805"
+                data-value-str="0.03266701474785805"
 
                 data-column-idx="60"
 
-                >0.0336</td>
+                >0.0327</td>
 
 
                 <td
-                id="8ccb8b81"
+                id="97f814ec"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16547,16 +16547,16 @@ data-spans_\_2_\_61
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.043418437242507935"
-                data-value-str="-0.043418437242507935"
+                data-value-repr="-0.04379861056804657"
+                data-value-str="-0.04379861056804657"
 
                 data-column-idx="61"
 
-                >-0.0434</td>
+                >-0.0438</td>
 
 
                 <td
-                id="3a2d7b8c"
+                id="ced0fd8b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16577,16 +16577,16 @@ data-spans_\_2_\_62
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.001490107853896916"
-                data-value-str="0.001490107853896916"
+                data-value-repr="0.004727918654680252"
+                data-value-str="0.004727918654680252"
 
                 data-column-idx="62"
 
-                >0.00149</td>
+                >0.00473</td>
 
 
                 <td
-                id="714a399d"
+                id="2ca97b34"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16607,16 +16607,16 @@ data-spans_\_2_\_63
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.11322733014822006"
-                data-value-str="0.11322733014822006"
+                data-value-repr="0.08483973890542984"
+                data-value-str="0.08483973890542984"
 
                 data-column-idx="63"
 
-                >0.113</td>
+                >0.0848</td>
 
 
                 <td
-                id="50ded9a7"
+                id="de917b05"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16646,7 +16646,7 @@ data-spans_\_2_\_64
 
 
                 <td
-                id="b87c244d"
+                id="1e02403b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16680,7 +16680,7 @@ data-spans_\_2_\_65
 
 
                 <th
-                id="cfc57d76"
+                id="b9011132"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16708,7 +16708,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="d26ed528"
+                id="76821b03"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16738,7 +16738,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="f530f6e4"
+                id="31e99b37"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16768,7 +16768,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="b35f63a7"
+                id="602e6a34"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16798,7 +16798,7 @@ data-spans_\_3_\_2
 
 
                 <td
-                id="0c8279ab"
+                id="8ab95c8a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16819,8 +16819,8 @@ data-spans_\_3_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.05818254500627518"
-                data-value-str="0.05818254500627518"
+                data-value-repr="0.05818391218781471"
+                data-value-str="0.05818391218781471"
 
                 data-column-idx="3"
 
@@ -16828,7 +16828,7 @@ data-spans_\_3_\_3
 
 
                 <td
-                id="e0d0576f"
+                id="878970a0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16849,8 +16849,8 @@ data-spans_\_3_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0880068689584732"
-                data-value-str="0.0880068689584732"
+                data-value-repr="0.08800924569368362"
+                data-value-str="0.08800924569368362"
 
                 data-column-idx="4"
 
@@ -16858,7 +16858,7 @@ data-spans_\_3_\_4
 
 
                 <td
-                id="2b576e70"
+                id="44903bad"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16879,8 +16879,8 @@ data-spans_\_3_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06378258019685745"
-                data-value-str="0.06378258019685745"
+                data-value-repr="0.06378481537103653"
+                data-value-str="0.06378481537103653"
 
                 data-column-idx="5"
 
@@ -16888,7 +16888,7 @@ data-spans_\_3_\_5
 
 
                 <td
-                id="65b3d760"
+                id="58573c6f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16909,16 +16909,16 @@ data-spans_\_3_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0005821450031362474"
-                data-value-str="0.0005821450031362474"
+                data-value-repr="0.0005814581527374685"
+                data-value-str="0.0005814581527374685"
 
                 data-column-idx="6"
 
-                >0.000582</td>
+                >0.000581</td>
 
 
                 <td
-                id="09c376e1"
+                id="81c56fa8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16939,8 +16939,8 @@ data-spans_\_3_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.2949121296405792"
-                data-value-str="-0.2949121296405792"
+                data-value-repr="-0.29491958022117615"
+                data-value-str="-0.29491958022117615"
 
                 data-column-idx="7"
 
@@ -16948,7 +16948,7 @@ data-spans_\_3_\_7
 
 
                 <td
-                id="a7ef478e"
+                id="fdb6b862"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16969,8 +16969,8 @@ data-spans_\_3_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1300455927848816"
-                data-value-str="-0.1300455927848816"
+                data-value-repr="-0.13005590438842773"
+                data-value-str="-0.13005590438842773"
 
                 data-column-idx="8"
 
@@ -16978,7 +16978,7 @@ data-spans_\_3_\_8
 
 
                 <td
-                id="0a57d944"
+                id="22d3e78d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16999,8 +16999,8 @@ data-spans_\_3_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.5754651427268982"
-                data-value-str="0.5754651427268982"
+                data-value-repr="0.5754806995391846"
+                data-value-str="0.5754806995391846"
 
                 data-column-idx="9"
 
@@ -17008,7 +17008,7 @@ data-spans_\_3_\_9
 
 
                 <td
-                id="cb1da8d5"
+                id="4c356847"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17029,8 +17029,8 @@ data-spans_\_3_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06398534774780273"
-                data-value-str="0.06398534774780273"
+                data-value-repr="0.06399858742952347"
+                data-value-str="0.06399858742952347"
 
                 data-column-idx="10"
 
@@ -17038,7 +17038,7 @@ data-spans_\_3_\_10
 
 
                 <td
-                id="d64317ae"
+                id="acd6da9a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17059,8 +17059,8 @@ data-spans_\_3_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.09018395841121674"
-                data-value-str="-0.09018395841121674"
+                data-value-repr="-0.09019555151462555"
+                data-value-str="-0.09019555151462555"
 
                 data-column-idx="11"
 
@@ -17068,7 +17068,7 @@ data-spans_\_3_\_11
 
 
                 <td
-                id="2eac360c"
+                id="fea338c0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17089,16 +17089,16 @@ data-spans_\_3_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.013602874241769314"
-                data-value-str="0.013602874241769314"
+                data-value-repr="0.013661048375070095"
+                data-value-str="0.013661048375070095"
 
                 data-column-idx="12"
 
-                >0.0136</td>
+                >0.0137</td>
 
 
                 <td
-                id="e036f7bd"
+                id="2c614272"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17119,16 +17119,16 @@ data-spans_\_3_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.005507308524101973"
-                data-value-str="-0.005507308524101973"
+                data-value-repr="-0.005515944678336382"
+                data-value-str="-0.005515944678336382"
 
                 data-column-idx="13"
 
-                >-0.00551</td>
+                >-0.00552</td>
 
 
                 <td
-                id="3d118ca7"
+                id="fad23cde"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17149,16 +17149,16 @@ data-spans_\_3_\_14
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.025792060419917107"
-                data-value-str="0.025792060419917107"
+                data-value-repr="0.025867700576782227"
+                data-value-str="0.025867700576782227"
 
                 data-column-idx="14"
 
-                >0.0258</td>
+                >0.0259</td>
 
 
                 <td
-                id="639f021f"
+                id="bb63f7bb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17179,16 +17179,16 @@ data-spans_\_3_\_15
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0386430099606514"
-                data-value-str="0.0386430099606514"
+                data-value-repr="0.03876333311200142"
+                data-value-str="0.03876333311200142"
 
                 data-column-idx="15"
 
-                >0.0386</td>
+                >0.0388</td>
 
 
                 <td
-                id="0d9c0bab"
+                id="754f1322"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17209,8 +17209,8 @@ data-spans_\_3_\_16
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.42576590180397034"
-                data-value-str="0.42576590180397034"
+                data-value-repr="0.4257819652557373"
+                data-value-str="0.4257819652557373"
 
                 data-column-idx="16"
 
@@ -17218,7 +17218,7 @@ data-spans_\_3_\_16
 
 
                 <td
-                id="34b626e7"
+                id="b06a353e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17239,16 +17239,16 @@ data-spans_\_3_\_17
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.15942120552062988"
-                data-value-str="-0.15942120552062988"
+                data-value-repr="-0.1598615050315857"
+                data-value-str="-0.1598615050315857"
 
                 data-column-idx="17"
 
-                >-0.159</td>
+                >-0.160</td>
 
 
                 <td
-                id="d4809807"
+                id="8ef23feb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17269,16 +17269,16 @@ data-spans_\_3_\_18
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.17392820119857788"
-                data-value-str="-0.17392820119857788"
+                data-value-repr="-0.17456749081611633"
+                data-value-str="-0.17456749081611633"
 
                 data-column-idx="18"
 
-                >-0.174</td>
+                >-0.175</td>
 
 
                 <td
-                id="89f9d72b"
+                id="1936fcd4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17299,16 +17299,16 @@ data-spans_\_3_\_19
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03396601229906082"
-                data-value-str="0.03396601229906082"
+                data-value-repr="0.03325074538588524"
+                data-value-str="0.03325074538588524"
 
                 data-column-idx="19"
 
-                >0.0340</td>
+                >0.0333</td>
 
 
                 <td
-                id="750be18f"
+                id="024e3026"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17329,16 +17329,16 @@ data-spans_\_3_\_20
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.02348102070391178"
-                data-value-str="0.02348102070391178"
+                data-value-repr="0.023956013843417168"
+                data-value-str="0.023956013843417168"
 
                 data-column-idx="20"
 
-                >0.0235</td>
+                >0.0240</td>
 
 
                 <td
-                id="576ca87e"
+                id="c9caefc7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17359,16 +17359,16 @@ data-spans_\_3_\_21
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.00931656826287508"
-                data-value-str="-0.00931656826287508"
+                data-value-repr="-0.008134064264595509"
+                data-value-str="-0.008134064264595509"
 
                 data-column-idx="21"
 
-                >-0.00932</td>
+                >-0.00813</td>
 
 
                 <td
-                id="b0589c08"
+                id="92fe80bb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17389,16 +17389,16 @@ data-spans_\_3_\_22
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.013450429774820805"
-                data-value-str="0.013450429774820805"
+                data-value-repr="0.013876882381737232"
+                data-value-str="0.013876882381737232"
 
                 data-column-idx="22"
 
-                >0.0135</td>
+                >0.0139</td>
 
 
                 <td
-                id="1b7c1cfb"
+                id="5c0ff626"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17419,16 +17419,16 @@ data-spans_\_3_\_23
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.15418191254138947"
-                data-value-str="-0.15418191254138947"
+                data-value-repr="-0.15732792019844055"
+                data-value-str="-0.15732792019844055"
 
                 data-column-idx="23"
 
-                >-0.154</td>
+                >-0.157</td>
 
 
                 <td
-                id="208f40c7"
+                id="10d1b94e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17449,16 +17449,16 @@ data-spans_\_3_\_24
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.04365997388958931"
-                data-value-str="-0.04365997388958931"
+                data-value-repr="-0.047530222684144974"
+                data-value-str="-0.047530222684144974"
 
                 data-column-idx="24"
 
-                >-0.0437</td>
+                >-0.0475</td>
 
 
                 <td
-                id="55303e8b"
+                id="2f8095fd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17479,16 +17479,16 @@ data-spans_\_3_\_25
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.16937284171581268"
-                data-value-str="0.16937284171581268"
+                data-value-repr="0.1681511253118515"
+                data-value-str="0.1681511253118515"
 
                 data-column-idx="25"
 
-                >0.169</td>
+                >0.168</td>
 
 
                 <td
-                id="cc201d25"
+                id="e4ce063c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17509,16 +17509,16 @@ data-spans_\_3_\_26
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.05067858844995499"
-                data-value-str="0.05067858844995499"
+                data-value-repr="0.05192718654870987"
+                data-value-str="0.05192718654870987"
 
                 data-column-idx="26"
 
-                >0.0507</td>
+                >0.0519</td>
 
 
                 <td
-                id="330507e0"
+                id="f57ddbec"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17539,16 +17539,16 @@ data-spans_\_3_\_27
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.026595409959554672"
-                data-value-str="-0.026595409959554672"
+                data-value-repr="0.017841478809714317"
+                data-value-str="0.017841478809714317"
 
                 data-column-idx="27"
 
-                >-0.0266</td>
+                >0.0178</td>
 
 
                 <td
-                id="049d4867"
+                id="2ffccda9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17569,16 +17569,16 @@ data-spans_\_3_\_28
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.12286368012428284"
-                data-value-str="0.12286368012428284"
+                data-value-repr="0.10062672197818756"
+                data-value-str="0.10062672197818756"
 
                 data-column-idx="28"
 
-                >0.123</td>
+                >0.101</td>
 
 
                 <td
-                id="350873cc"
+                id="6797e6b0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17599,16 +17599,16 @@ data-spans_\_3_\_29
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.042132552713155746"
-                data-value-str="-0.042132552713155746"
+                data-value-repr="-0.07382118701934814"
+                data-value-str="-0.07382118701934814"
 
                 data-column-idx="29"
 
-                >-0.0421</td>
+                >-0.0738</td>
 
 
                 <td
-                id="1709b151"
+                id="f575fbb0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17629,16 +17629,16 @@ data-spans_\_3_\_30
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.05004122480750084"
-                data-value-str="0.05004122480750084"
+                data-value-repr="0.06110416725277901"
+                data-value-str="0.06110416725277901"
 
                 data-column-idx="30"
 
-                >0.0500</td>
+                >0.0611</td>
 
 
                 <td
-                id="0a1a0e29"
+                id="0cd7e5e1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17659,16 +17659,16 @@ data-spans_\_3_\_31
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02890162169933319"
-                data-value-str="-0.02890162169933319"
+                data-value-repr="-0.031058309599757195"
+                data-value-str="-0.031058309599757195"
 
                 data-column-idx="31"
 
-                >-0.0289</td>
+                >-0.0311</td>
 
 
                 <td
-                id="a51e7644"
+                id="c7732130"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17689,16 +17689,16 @@ data-spans_\_3_\_32
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.026377055794000626"
-                data-value-str="0.026377055794000626"
+                data-value-repr="-0.0258439052850008"
+                data-value-str="-0.0258439052850008"
 
                 data-column-idx="32"
 
-                >0.0264</td>
+                >-0.0258</td>
 
 
                 <td
-                id="7da6803f"
+                id="1627fd0d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17728,7 +17728,7 @@ data-spans_\_3_\_33
 
 
                 <td
-                id="ed924bf0"
+                id="327b3197"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17749,8 +17749,8 @@ data-spans_\_3_\_34
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04607284441590309"
-                data-value-str="0.04607284441590309"
+                data-value-repr="0.04607439413666725"
+                data-value-str="0.04607439413666725"
 
                 data-column-idx="34"
 
@@ -17758,7 +17758,7 @@ data-spans_\_3_\_34
 
 
                 <td
-                id="a5fd0291"
+                id="2b33df59"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17779,8 +17779,8 @@ data-spans_\_3_\_35
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0237127635627985"
-                data-value-str="0.0237127635627985"
+                data-value-repr="0.023713544011116028"
+                data-value-str="0.023713544011116028"
 
                 data-column-idx="35"
 
@@ -17788,7 +17788,7 @@ data-spans_\_3_\_35
 
 
                 <td
-                id="786ae070"
+                id="71795893"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17809,8 +17809,8 @@ data-spans_\_3_\_36
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0693899393081665"
-                data-value-str="0.0693899393081665"
+                data-value-repr="0.06939177960157394"
+                data-value-str="0.06939177960157394"
 
                 data-column-idx="36"
 
@@ -17818,7 +17818,7 @@ data-spans_\_3_\_36
 
 
                 <td
-                id="5237e9ab"
+                id="bc2f78de"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17839,8 +17839,8 @@ data-spans_\_3_\_37
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03892377018928528"
-                data-value-str="0.03892377018928528"
+                data-value-repr="0.038924690335989"
+                data-value-str="0.038924690335989"
 
                 data-column-idx="37"
 
@@ -17848,7 +17848,7 @@ data-spans_\_3_\_37
 
 
                 <td
-                id="19034886"
+                id="b62f9ad7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17869,8 +17869,8 @@ data-spans_\_3_\_38
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0573405958712101"
-                data-value-str="0.0573405958712101"
+                data-value-repr="0.05734171345829964"
+                data-value-str="0.05734171345829964"
 
                 data-column-idx="38"
 
@@ -17878,7 +17878,7 @@ data-spans_\_3_\_38
 
 
                 <td
-                id="c44272c6"
+                id="3c74fd43"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17899,8 +17899,8 @@ data-spans_\_3_\_39
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.048958003520965576"
-                data-value-str="0.048958003520965576"
+                data-value-repr="0.04896004498004913"
+                data-value-str="0.04896004498004913"
 
                 data-column-idx="39"
 
@@ -17908,7 +17908,7 @@ data-spans_\_3_\_39
 
 
                 <td
-                id="b6786777"
+                id="9927d6c6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17929,8 +17929,8 @@ data-spans_\_3_\_40
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.13100501894950867"
-                data-value-str="0.13100501894950867"
+                data-value-repr="0.13100752234458923"
+                data-value-str="0.13100752234458923"
 
                 data-column-idx="40"
 
@@ -17938,7 +17938,7 @@ data-spans_\_3_\_40
 
 
                 <td
-                id="5380f243"
+                id="239130c2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17959,8 +17959,8 @@ data-spans_\_3_\_41
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.062026478350162506"
-                data-value-str="0.062026478350162506"
+                data-value-repr="0.06203310936689377"
+                data-value-str="0.06203310936689377"
 
                 data-column-idx="41"
 
@@ -17968,7 +17968,7 @@ data-spans_\_3_\_41
 
 
                 <td
-                id="197f9346"
+                id="7fb6f918"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17989,8 +17989,8 @@ data-spans_\_3_\_42
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.020836152136325836"
-                data-value-str="0.020836152136325836"
+                data-value-repr="0.020834192633628845"
+                data-value-str="0.020834192633628845"
 
                 data-column-idx="42"
 
@@ -17998,7 +17998,7 @@ data-spans_\_3_\_42
 
 
                 <td
-                id="32668487"
+                id="b609bf6f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18019,8 +18019,8 @@ data-spans_\_3_\_43
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.018174894154071808"
-                data-value-str="0.018174894154071808"
+                data-value-repr="0.018179776147007942"
+                data-value-str="0.018179776147007942"
 
                 data-column-idx="43"
 
@@ -18028,7 +18028,7 @@ data-spans_\_3_\_43
 
 
                 <td
-                id="c049f18f"
+                id="680b8af2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18049,8 +18049,8 @@ data-spans_\_3_\_44
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06289082765579224"
-                data-value-str="0.06289082765579224"
+                data-value-repr="0.06289017200469971"
+                data-value-str="0.06289017200469971"
 
                 data-column-idx="44"
 
@@ -18058,7 +18058,7 @@ data-spans_\_3_\_44
 
 
                 <td
-                id="9d8783af"
+                id="5b871d25"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18079,8 +18079,8 @@ data-spans_\_3_\_45
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.017083249986171722"
-                data-value-str="-0.017083249986171722"
+                data-value-repr="-0.01708812825381756"
+                data-value-str="-0.01708812825381756"
 
                 data-column-idx="45"
 
@@ -18088,7 +18088,7 @@ data-spans_\_3_\_45
 
 
                 <td
-                id="6ed46a9f"
+                id="9722b14a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18109,8 +18109,8 @@ data-spans_\_3_\_46
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.06075989827513695"
-                data-value-str="-0.06075989827513695"
+                data-value-repr="-0.06076587364077568"
+                data-value-str="-0.06076587364077568"
 
                 data-column-idx="46"
 
@@ -18118,7 +18118,7 @@ data-spans_\_3_\_46
 
 
                 <td
-                id="a26a7aeb"
+                id="92383750"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18139,8 +18139,8 @@ data-spans_\_3_\_47
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.007689279969781637"
-                data-value-str="-0.007689279969781637"
+                data-value-repr="-0.007685787510126829"
+                data-value-str="-0.007685787510126829"
 
                 data-column-idx="47"
 
@@ -18148,7 +18148,7 @@ data-spans_\_3_\_47
 
 
                 <td
-                id="33cd27cd"
+                id="a912467b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18169,8 +18169,8 @@ data-spans_\_3_\_48
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.025611691176891327"
-                data-value-str="-0.025611691176891327"
+                data-value-repr="-0.02561015635728836"
+                data-value-str="-0.02561015635728836"
 
                 data-column-idx="48"
 
@@ -18178,7 +18178,7 @@ data-spans_\_3_\_48
 
 
                 <td
-                id="0b8a6191"
+                id="7cff0542"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18199,8 +18199,8 @@ data-spans_\_3_\_49
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.019900210201740265"
-                data-value-str="-0.019900210201740265"
+                data-value-repr="-0.019901063293218613"
+                data-value-str="-0.019901063293218613"
 
                 data-column-idx="49"
 
@@ -18208,7 +18208,7 @@ data-spans_\_3_\_49
 
 
                 <td
-                id="1779f2fa"
+                id="1978c360"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18229,8 +18229,8 @@ data-spans_\_3_\_50
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.11640924215316772"
-                data-value-str="0.11640924215316772"
+                data-value-repr="0.11635385453701019"
+                data-value-str="0.11635385453701019"
 
                 data-column-idx="50"
 
@@ -18238,7 +18238,7 @@ data-spans_\_3_\_50
 
 
                 <td
-                id="09fe3da9"
+                id="56013359"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18259,16 +18259,16 @@ data-spans_\_3_\_51
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04695550352334976"
-                data-value-str="0.04695550352334976"
+                data-value-repr="0.046896204352378845"
+                data-value-str="0.046896204352378845"
 
                 data-column-idx="51"
 
-                >0.0470</td>
+                >0.0469</td>
 
 
                 <td
-                id="6d6af851"
+                id="a2d99d49"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18289,8 +18289,8 @@ data-spans_\_3_\_52
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08930748701095581"
-                data-value-str="-0.08930748701095581"
+                data-value-repr="-0.08930296450853348"
+                data-value-str="-0.08930296450853348"
 
                 data-column-idx="52"
 
@@ -18298,7 +18298,7 @@ data-spans_\_3_\_52
 
 
                 <td
-                id="46af543d"
+                id="5a74b76e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18319,8 +18319,8 @@ data-spans_\_3_\_53
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.13053205609321594"
-                data-value-str="0.13053205609321594"
+                data-value-repr="0.13075993955135345"
+                data-value-str="0.13075993955135345"
 
                 data-column-idx="53"
 
@@ -18328,7 +18328,7 @@ data-spans_\_3_\_53
 
 
                 <td
-                id="ef01ca95"
+                id="f2a25e40"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18349,16 +18349,16 @@ data-spans_\_3_\_54
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.15288002789020538"
-                data-value-str="0.15288002789020538"
+                data-value-repr="0.15249095857143402"
+                data-value-str="0.15249095857143402"
 
                 data-column-idx="54"
 
-                >0.153</td>
+                >0.152</td>
 
 
                 <td
-                id="dc923529"
+                id="a6ba6180"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18379,16 +18379,16 @@ data-spans_\_3_\_55
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.012354867532849312"
-                data-value-str="-0.012354867532849312"
+                data-value-repr="-0.01284770481288433"
+                data-value-str="-0.01284770481288433"
 
                 data-column-idx="55"
 
-                >-0.0124</td>
+                >-0.0128</td>
 
 
                 <td
-                id="69939c7c"
+                id="b10c602b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18409,16 +18409,16 @@ data-spans_\_3_\_56
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04585344344377518"
-                data-value-str="0.04585344344377518"
+                data-value-repr="0.045969158411026"
+                data-value-str="0.045969158411026"
 
                 data-column-idx="56"
 
-                >0.0459</td>
+                >0.0460</td>
 
 
                 <td
-                id="0d166f1b"
+                id="00185cee"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18439,16 +18439,16 @@ data-spans_\_3_\_57
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.17682448029518127"
-                data-value-str="0.17682448029518127"
+                data-value-repr="0.17573001980781555"
+                data-value-str="0.17573001980781555"
 
                 data-column-idx="57"
 
-                >0.177</td>
+                >0.176</td>
 
 
                 <td
-                id="d735518f"
+                id="c4bd7e71"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18469,16 +18469,16 @@ data-spans_\_3_\_58
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0017765454249456525"
-                data-value-str="-0.0017765454249456525"
+                data-value-repr="-0.0018950877711176872"
+                data-value-str="-0.0018950877711176872"
 
                 data-column-idx="58"
 
-                >-0.00178</td>
+                >-0.00190</td>
 
 
                 <td
-                id="d8d94c2c"
+                id="fb7498fc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18499,16 +18499,16 @@ data-spans_\_3_\_59
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.07268630713224411"
-                data-value-str="0.07268630713224411"
+                data-value-repr="0.07347707450389862"
+                data-value-str="0.07347707450389862"
 
                 data-column-idx="59"
 
-                >0.0727</td>
+                >0.0735</td>
 
 
                 <td
-                id="1ed1d1c3"
+                id="10a8fa4b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18529,16 +18529,16 @@ data-spans_\_3_\_60
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.23434555530548096"
-                data-value-str="-0.23434555530548096"
+                data-value-repr="-0.23554815351963043"
+                data-value-str="-0.23554815351963043"
 
                 data-column-idx="60"
 
-                >-0.234</td>
+                >-0.236</td>
 
 
                 <td
-                id="82e695cd"
+                id="6c1d8c25"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18559,8 +18559,8 @@ data-spans_\_3_\_61
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.31223490834236145"
-                data-value-str="-0.31223490834236145"
+                data-value-repr="-0.31226301193237305"
+                data-value-str="-0.31226301193237305"
 
                 data-column-idx="61"
 
@@ -18568,7 +18568,7 @@ data-spans_\_3_\_61
 
 
                 <td
-                id="64d48ece"
+                id="ce168fbe"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18589,16 +18589,16 @@ data-spans_\_3_\_62
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.5949411988258362"
-                data-value-str="0.5949411988258362"
+                data-value-repr="0.5907672047615051"
+                data-value-str="0.5907672047615051"
 
                 data-column-idx="62"
 
-                >0.595</td>
+                >0.591</td>
 
 
                 <td
-                id="64fb0739"
+                id="81e6f655"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18619,16 +18619,16 @@ data-spans_\_3_\_63
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.020685890689492226"
-                data-value-str="0.020685890689492226"
+                data-value-repr="0.03144940361380577"
+                data-value-str="0.03144940361380577"
 
                 data-column-idx="63"
 
-                >0.0207</td>
+                >0.0314</td>
 
 
                 <td
-                id="76469a5a"
+                id="7ae15528"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18658,7 +18658,7 @@ data-spans_\_3_\_64
 
 
                 <td
-                id="0c4b4225"
+                id="52bcd3c1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18692,7 +18692,7 @@ data-spans_\_3_\_65
 
 
                 <th
-                id="458c1038"
+                id="9c286dd5"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -18720,7 +18720,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="5c202059"
+                id="e76ebf5a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18750,7 +18750,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="2a7743f5"
+                id="4d2f4987"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18780,7 +18780,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="96589d8e"
+                id="4c854c1c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18810,7 +18810,7 @@ data-spans_\_4_\_2
 
 
                 <td
-                id="3cc0504a"
+                id="01a90e34"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18831,8 +18831,8 @@ data-spans_\_4_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.014567624777555466"
-                data-value-str="0.014567624777555466"
+                data-value-repr="0.014567951671779156"
+                data-value-str="0.014567951671779156"
 
                 data-column-idx="3"
 
@@ -18840,7 +18840,7 @@ data-spans_\_4_\_3
 
 
                 <td
-                id="b6dd757a"
+                id="6b73b855"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18861,8 +18861,8 @@ data-spans_\_4_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.02588283084332943"
-                data-value-str="0.02588283084332943"
+                data-value-repr="0.02588357962667942"
+                data-value-str="0.02588357962667942"
 
                 data-column-idx="4"
 
@@ -18870,7 +18870,7 @@ data-spans_\_4_\_4
 
 
                 <td
-                id="6cd176af"
+                id="8d00e25b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18891,8 +18891,8 @@ data-spans_\_4_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0014966976596042514"
-                data-value-str="-0.0014966976596042514"
+                data-value-repr="-0.001496600452810526"
+                data-value-str="-0.001496600452810526"
 
                 data-column-idx="5"
 
@@ -18900,7 +18900,7 @@ data-spans_\_4_\_5
 
 
                 <td
-                id="d6016afe"
+                id="849ba2a3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18921,8 +18921,8 @@ data-spans_\_4_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.02684289962053299"
-                data-value-str="0.02684289962053299"
+                data-value-repr="0.02684357762336731"
+                data-value-str="0.02684357762336731"
 
                 data-column-idx="6"
 
@@ -18930,7 +18930,7 @@ data-spans_\_4_\_6
 
 
                 <td
-                id="7811f986"
+                id="f7a22d50"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18951,8 +18951,8 @@ data-spans_\_4_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.03668661043047905"
-                data-value-str="-0.03668661043047905"
+                data-value-repr="-0.03668377175927162"
+                data-value-str="-0.03668377175927162"
 
                 data-column-idx="7"
 
@@ -18960,7 +18960,7 @@ data-spans_\_4_\_7
 
 
                 <td
-                id="63b168fa"
+                id="0577b51b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18981,8 +18981,8 @@ data-spans_\_4_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.031180132180452347"
-                data-value-str="-0.031180132180452347"
+                data-value-repr="-0.031184375286102295"
+                data-value-str="-0.031184375286102295"
 
                 data-column-idx="8"
 
@@ -18990,7 +18990,7 @@ data-spans_\_4_\_8
 
 
                 <td
-                id="d00cf6de"
+                id="a56ecd81"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19011,8 +19011,8 @@ data-spans_\_4_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.019778981804847717"
-                data-value-str="-0.019778981804847717"
+                data-value-repr="-0.019787369295954704"
+                data-value-str="-0.019787369295954704"
 
                 data-column-idx="9"
 
@@ -19020,7 +19020,7 @@ data-spans_\_4_\_9
 
 
                 <td
-                id="ef0bf5ff"
+                id="e2c55656"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19041,8 +19041,8 @@ data-spans_\_4_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.05071152746677399"
-                data-value-str="0.05071152746677399"
+                data-value-repr="0.05067487061023712"
+                data-value-str="0.05067487061023712"
 
                 data-column-idx="10"
 
@@ -19050,7 +19050,7 @@ data-spans_\_4_\_10
 
 
                 <td
-                id="7fef890e"
+                id="70d494ec"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19071,8 +19071,8 @@ data-spans_\_4_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02158692479133606"
-                data-value-str="-0.02158692479133606"
+                data-value-repr="-0.021596046164631844"
+                data-value-str="-0.021596046164631844"
 
                 data-column-idx="11"
 
@@ -19080,7 +19080,7 @@ data-spans_\_4_\_11
 
 
                 <td
-                id="444fc492"
+                id="30eec36d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19101,8 +19101,8 @@ data-spans_\_4_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.010851995088160038"
-                data-value-str="0.010851995088160038"
+                data-value-repr="0.010861912742257118"
+                data-value-str="0.010861912742257118"
 
                 data-column-idx="12"
 
@@ -19110,7 +19110,7 @@ data-spans_\_4_\_12
 
 
                 <td
-                id="25237940"
+                id="94b71ace"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19131,16 +19131,16 @@ data-spans_\_4_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0008828575373627245"
-                data-value-str="-0.0008828575373627245"
+                data-value-repr="-0.0008053558995015919"
+                data-value-str="-0.0008053558995015919"
 
                 data-column-idx="13"
 
-                >-0.000883</td>
+                >-0.000805</td>
 
 
                 <td
-                id="6e469ffb"
+                id="200e5d87"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19161,16 +19161,16 @@ data-spans_\_4_\_14
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.02653529867529869"
-                data-value-str="0.02653529867529869"
+                data-value-repr="0.02655840292572975"
+                data-value-str="0.02655840292572975"
 
                 data-column-idx="14"
 
-                >0.0265</td>
+                >0.0266</td>
 
 
                 <td
-                id="8b24b31d"
+                id="36ec97d1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19191,16 +19191,16 @@ data-spans_\_4_\_15
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.021847834810614586"
-                data-value-str="0.021847834810614586"
+                data-value-repr="0.022082526236772537"
+                data-value-str="0.022082526236772537"
 
                 data-column-idx="15"
 
-                >0.0218</td>
+                >0.0221</td>
 
 
                 <td
-                id="1d55bd71"
+                id="13cf6a0a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19221,16 +19221,16 @@ data-spans_\_4_\_16
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.10360485315322876"
-                data-value-str="0.10360485315322876"
+                data-value-repr="0.10344354063272476"
+                data-value-str="0.10344354063272476"
 
                 data-column-idx="16"
 
-                >0.104</td>
+                >0.103</td>
 
 
                 <td
-                id="581e147b"
+                id="43c373c5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19251,16 +19251,16 @@ data-spans_\_4_\_17
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.026330998167395592"
-                data-value-str="-0.026330998167395592"
+                data-value-repr="-0.025718556717038155"
+                data-value-str="-0.025718556717038155"
 
                 data-column-idx="17"
 
-                >-0.0263</td>
+                >-0.0257</td>
 
 
                 <td
-                id="17d43c04"
+                id="13a070cb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19281,16 +19281,16 @@ data-spans_\_4_\_18
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04842638224363327"
-                data-value-str="0.04842638224363327"
+                data-value-repr="0.047731149941682816"
+                data-value-str="0.047731149941682816"
 
                 data-column-idx="18"
 
-                >0.0484</td>
+                >0.0477</td>
 
 
                 <td
-                id="dd5ad84f"
+                id="dc171c69"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19311,16 +19311,16 @@ data-spans_\_4_\_19
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.034106265753507614"
-                data-value-str="0.034106265753507614"
+                data-value-repr="0.03170767053961754"
+                data-value-str="0.03170767053961754"
 
                 data-column-idx="19"
 
-                >0.0341</td>
+                >0.0317</td>
 
 
                 <td
-                id="b58592fd"
+                id="806197dc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19341,16 +19341,16 @@ data-spans_\_4_\_20
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08377084136009216"
-                data-value-str="-0.08377084136009216"
+                data-value-repr="-0.08441386371850967"
+                data-value-str="-0.08441386371850967"
 
                 data-column-idx="20"
 
-                >-0.0838</td>
+                >-0.0844</td>
 
 
                 <td
-                id="005e6b76"
+                id="a345b593"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19371,16 +19371,16 @@ data-spans_\_4_\_21
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.009961829520761967"
-                data-value-str="0.009961829520761967"
+                data-value-repr="0.009991945698857307"
+                data-value-str="0.009991945698857307"
 
                 data-column-idx="21"
 
-                >0.00996</td>
+                >0.00999</td>
 
 
                 <td
-                id="c51b53d1"
+                id="719b397c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19401,16 +19401,16 @@ data-spans_\_4_\_22
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.07138824462890625"
-                data-value-str="-0.07138824462890625"
+                data-value-repr="-0.07465531677007675"
+                data-value-str="-0.07465531677007675"
 
                 data-column-idx="22"
 
-                >-0.0714</td>
+                >-0.0747</td>
 
 
                 <td
-                id="258c1d35"
+                id="eb5a0710"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19431,16 +19431,16 @@ data-spans_\_4_\_23
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06590581685304642"
-                data-value-str="0.06590581685304642"
+                data-value-repr="0.06700704991817474"
+                data-value-str="0.06700704991817474"
 
                 data-column-idx="23"
 
-                >0.0659</td>
+                >0.0670</td>
 
 
                 <td
-                id="649f6aa9"
+                id="365ac4c3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19461,16 +19461,16 @@ data-spans_\_4_\_24
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.050394706428050995"
-                data-value-str="0.050394706428050995"
+                data-value-repr="0.0543413981795311"
+                data-value-str="0.0543413981795311"
 
                 data-column-idx="24"
 
-                >0.0504</td>
+                >0.0543</td>
 
 
                 <td
-                id="a9a41232"
+                id="c4f6859a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19491,16 +19491,16 @@ data-spans_\_4_\_25
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08817806839942932"
-                data-value-str="-0.08817806839942932"
+                data-value-repr="-0.08368133008480072"
+                data-value-str="-0.08368133008480072"
 
                 data-column-idx="25"
 
-                >-0.0882</td>
+                >-0.0837</td>
 
 
                 <td
-                id="f214dfe2"
+                id="f8e073c3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19521,16 +19521,16 @@ data-spans_\_4_\_26
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02881394699215889"
-                data-value-str="-0.02881394699215889"
+                data-value-repr="-0.04447893798351288"
+                data-value-str="-0.04447893798351288"
 
                 data-column-idx="26"
 
-                >-0.0288</td>
+                >-0.0445</td>
 
 
                 <td
-                id="5192e3f1"
+                id="1bf01af1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19551,16 +19551,16 @@ data-spans_\_4_\_27
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.005911566782742739"
-                data-value-str="-0.005911566782742739"
+                data-value-repr="0.01798504963517189"
+                data-value-str="0.01798504963517189"
 
                 data-column-idx="27"
 
-                >-0.00591</td>
+                >0.0180</td>
 
 
                 <td
-                id="1059a3dd"
+                id="b9f83613"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19581,16 +19581,16 @@ data-spans_\_4_\_28
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.049516767263412476"
-                data-value-str="0.049516767263412476"
+                data-value-repr="0.04480723664164543"
+                data-value-str="0.04480723664164543"
 
                 data-column-idx="28"
 
-                >0.0495</td>
+                >0.0448</td>
 
 
                 <td
-                id="2bea7f82"
+                id="8c1ee00a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19611,16 +19611,16 @@ data-spans_\_4_\_29
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11638294160366058"
-                data-value-str="-0.11638294160366058"
+                data-value-repr="-0.11022702604532242"
+                data-value-str="-0.11022702604532242"
 
                 data-column-idx="29"
 
-                >-0.116</td>
+                >-0.110</td>
 
 
                 <td
-                id="40ae1369"
+                id="9441b379"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19641,16 +19641,16 @@ data-spans_\_4_\_30
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.009145017713308334"
-                data-value-str="-0.009145017713308334"
+                data-value-repr="-0.10376347601413727"
+                data-value-str="-0.10376347601413727"
 
                 data-column-idx="30"
 
-                >-0.00915</td>
+                >-0.104</td>
 
 
                 <td
-                id="560ac4b5"
+                id="075d10d2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19671,16 +19671,16 @@ data-spans_\_4_\_31
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.02182602696120739"
-                data-value-str="0.02182602696120739"
+                data-value-repr="-0.015077922493219376"
+                data-value-str="-0.015077922493219376"
 
                 data-column-idx="31"
 
-                >0.0218</td>
+                >-0.0151</td>
 
 
                 <td
-                id="1afbe3eb"
+                id="0dcf922f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19701,16 +19701,16 @@ data-spans_\_4_\_32
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.04493612423539162"
-                data-value-str="-0.04493612423539162"
+                data-value-repr="-0.011619018390774727"
+                data-value-str="-0.011619018390774727"
 
                 data-column-idx="32"
 
-                >-0.0449</td>
+                >-0.0116</td>
 
 
                 <td
-                id="3292299d"
+                id="25825da2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19740,7 +19740,7 @@ data-spans_\_4_\_33
 
 
                 <td
-                id="1699607d"
+                id="e0888d7b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19761,8 +19761,8 @@ data-spans_\_4_\_34
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.09034360200166702"
-                data-value-str="0.09034360200166702"
+                data-value-repr="0.09034579992294312"
+                data-value-str="0.09034579992294312"
 
                 data-column-idx="34"
 
@@ -19770,7 +19770,7 @@ data-spans_\_4_\_34
 
 
                 <td
-                id="d4b2829a"
+                id="5d756de5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19791,8 +19791,8 @@ data-spans_\_4_\_35
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.02419808879494667"
-                data-value-str="0.02419808879494667"
+                data-value-repr="0.02419866807758808"
+                data-value-str="0.02419866807758808"
 
                 data-column-idx="35"
 
@@ -19800,7 +19800,7 @@ data-spans_\_4_\_35
 
 
                 <td
-                id="b1ace16d"
+                id="744e241a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19821,8 +19821,8 @@ data-spans_\_4_\_36
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.025946732610464096"
-                data-value-str="0.025946732610464096"
+                data-value-repr="0.025948548689484596"
+                data-value-str="0.025948548689484596"
 
                 data-column-idx="36"
 
@@ -19830,7 +19830,7 @@ data-spans_\_4_\_36
 
 
                 <td
-                id="2568fc1d"
+                id="2a68987b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19851,8 +19851,8 @@ data-spans_\_4_\_37
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.24311043322086334"
-                data-value-str="0.24311043322086334"
+                data-value-repr="0.24311783909797668"
+                data-value-str="0.24311783909797668"
 
                 data-column-idx="37"
 
@@ -19860,7 +19860,7 @@ data-spans_\_4_\_37
 
 
                 <td
-                id="378a8d05"
+                id="6ffe568b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19881,8 +19881,8 @@ data-spans_\_4_\_38
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.3898608386516571"
-                data-value-str="0.3898608386516571"
+                data-value-repr="0.3898705840110779"
+                data-value-str="0.3898705840110779"
 
                 data-column-idx="38"
 
@@ -19890,7 +19890,7 @@ data-spans_\_4_\_38
 
 
                 <td
-                id="7722c0f6"
+                id="3317b18d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19911,8 +19911,8 @@ data-spans_\_4_\_39
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.06312023848295212"
-                data-value-str="-0.06312023848295212"
+                data-value-repr="-0.06312154233455658"
+                data-value-str="-0.06312154233455658"
 
                 data-column-idx="39"
 
@@ -19920,7 +19920,7 @@ data-spans_\_4_\_39
 
 
                 <td
-                id="080b2d17"
+                id="cfb2d6bf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19941,8 +19941,8 @@ data-spans_\_4_\_40
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.01422189176082611"
-                data-value-str="-0.01422189176082611"
+                data-value-repr="-0.014214695431292057"
+                data-value-str="-0.014214695431292057"
 
                 data-column-idx="40"
 
@@ -19950,7 +19950,7 @@ data-spans_\_4_\_40
 
 
                 <td
-                id="44fbf4a2"
+                id="cd777808"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19971,8 +19971,8 @@ data-spans_\_4_\_41
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1455213725566864"
-                data-value-str="-0.1455213725566864"
+                data-value-repr="-0.14552581310272217"
+                data-value-str="-0.14552581310272217"
 
                 data-column-idx="41"
 
@@ -19980,7 +19980,7 @@ data-spans_\_4_\_41
 
 
                 <td
-                id="a2fac963"
+                id="7d345656"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20001,8 +20001,8 @@ data-spans_\_4_\_42
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.033804651349782944"
-                data-value-str="-0.033804651349782944"
+                data-value-repr="-0.03379657119512558"
+                data-value-str="-0.03379657119512558"
 
                 data-column-idx="42"
 
@@ -20010,7 +20010,7 @@ data-spans_\_4_\_42
 
 
                 <td
-                id="f1857d9a"
+                id="fd928df9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20031,8 +20031,8 @@ data-spans_\_4_\_43
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04432490095496178"
-                data-value-str="0.04432490095496178"
+                data-value-repr="0.04432154819369316"
+                data-value-str="0.04432154819369316"
 
                 data-column-idx="43"
 
@@ -20040,7 +20040,7 @@ data-spans_\_4_\_43
 
 
                 <td
-                id="2def7c4d"
+                id="446dc0a3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20061,8 +20061,8 @@ data-spans_\_4_\_44
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.00448213517665863"
-                data-value-str="0.00448213517665863"
+                data-value-repr="0.004477462265640497"
+                data-value-str="0.004477462265640497"
 
                 data-column-idx="44"
 
@@ -20070,7 +20070,7 @@ data-spans_\_4_\_44
 
 
                 <td
-                id="a33e0e16"
+                id="f53701fb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20091,8 +20091,8 @@ data-spans_\_4_\_45
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08045097440481186"
-                data-value-str="-0.08045097440481186"
+                data-value-repr="-0.08047311007976532"
+                data-value-str="-0.08047311007976532"
 
                 data-column-idx="45"
 
@@ -20100,7 +20100,7 @@ data-spans_\_4_\_45
 
 
                 <td
-                id="e6ea2130"
+                id="9401c8bf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20121,16 +20121,16 @@ data-spans_\_4_\_46
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.018235020339488983"
-                data-value-str="0.018235020339488983"
+                data-value-repr="0.01827104389667511"
+                data-value-str="0.01827104389667511"
 
                 data-column-idx="46"
 
-                >0.0182</td>
+                >0.0183</td>
 
 
                 <td
-                id="75a005d8"
+                id="d9927399"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20151,8 +20151,8 @@ data-spans_\_4_\_47
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.12232451885938644"
-                data-value-str="0.12232451885938644"
+                data-value-repr="0.12228178977966309"
+                data-value-str="0.12228178977966309"
 
                 data-column-idx="47"
 
@@ -20160,7 +20160,7 @@ data-spans_\_4_\_47
 
 
                 <td
-                id="3754a510"
+                id="72da696b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20181,8 +20181,8 @@ data-spans_\_4_\_48
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.19059889018535614"
-                data-value-str="-0.19059889018535614"
+                data-value-repr="-0.19059599936008453"
+                data-value-str="-0.19059599936008453"
 
                 data-column-idx="48"
 
@@ -20190,7 +20190,7 @@ data-spans_\_4_\_48
 
 
                 <td
-                id="3ed78259"
+                id="22e4a070"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20211,8 +20211,8 @@ data-spans_\_4_\_49
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06257804483175278"
-                data-value-str="0.06257804483175278"
+                data-value-repr="0.06255409121513367"
+                data-value-str="0.06255409121513367"
 
                 data-column-idx="49"
 
@@ -20220,7 +20220,7 @@ data-spans_\_4_\_49
 
 
                 <td
-                id="dff333d0"
+                id="bef0abca"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20241,16 +20241,16 @@ data-spans_\_4_\_50
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.06223880127072334"
-                data-value-str="-0.06223880127072334"
+                data-value-repr="-0.062108080834150314"
+                data-value-str="-0.062108080834150314"
 
                 data-column-idx="50"
 
-                >-0.0622</td>
+                >-0.0621</td>
 
 
                 <td
-                id="3683f137"
+                id="33c58abe"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20271,16 +20271,16 @@ data-spans_\_4_\_51
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.050928790122270584"
-                data-value-str="0.050928790122270584"
+                data-value-repr="0.050972312688827515"
+                data-value-str="0.050972312688827515"
 
                 data-column-idx="51"
 
-                >0.0509</td>
+                >0.0510</td>
 
 
                 <td
-                id="d98de535"
+                id="c48d7547"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20301,8 +20301,8 @@ data-spans_\_4_\_52
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0725385844707489"
-                data-value-str="0.0725385844707489"
+                data-value-repr="0.07252614200115204"
+                data-value-str="0.07252614200115204"
 
                 data-column-idx="52"
 
@@ -20310,7 +20310,7 @@ data-spans_\_4_\_52
 
 
                 <td
-                id="1351d2ed"
+                id="5c3b388e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20331,8 +20331,8 @@ data-spans_\_4_\_53
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.09092825651168823"
-                data-value-str="-0.09092825651168823"
+                data-value-repr="-0.09085538238286972"
+                data-value-str="-0.09085538238286972"
 
                 data-column-idx="53"
 
@@ -20340,7 +20340,7 @@ data-spans_\_4_\_53
 
 
                 <td
-                id="796fa915"
+                id="e29d8e6b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20361,16 +20361,16 @@ data-spans_\_4_\_54
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04306288808584213"
-                data-value-str="0.04306288808584213"
+                data-value-repr="0.04265012592077255"
+                data-value-str="0.04265012592077255"
 
                 data-column-idx="54"
 
-                >0.0431</td>
+                >0.0427</td>
 
 
                 <td
-                id="7dad8203"
+                id="b42d7ac7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20391,16 +20391,16 @@ data-spans_\_4_\_55
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04096408933401108"
-                data-value-str="0.04096408933401108"
+                data-value-repr="0.039181601256132126"
+                data-value-str="0.039181601256132126"
 
                 data-column-idx="55"
 
-                >0.0410</td>
+                >0.0392</td>
 
 
                 <td
-                id="6dc72801"
+                id="8cf4e3a1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20421,16 +20421,16 @@ data-spans_\_4_\_56
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.2549300491809845"
-                data-value-str="-0.2549300491809845"
+                data-value-repr="-0.25347208976745605"
+                data-value-str="-0.25347208976745605"
 
                 data-column-idx="56"
 
-                >-0.255</td>
+                >-0.253</td>
 
 
                 <td
-                id="94eb3526"
+                id="3cb2e1f3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20451,16 +20451,16 @@ data-spans_\_4_\_57
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.039408158510923386"
-                data-value-str="-0.039408158510923386"
+                data-value-repr="-0.040504734963178635"
+                data-value-str="-0.040504734963178635"
 
                 data-column-idx="57"
 
-                >-0.0394</td>
+                >-0.0405</td>
 
 
                 <td
-                id="1d4a9229"
+                id="76c1e610"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20481,8 +20481,8 @@ data-spans_\_4_\_58
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.013337379321455956"
-                data-value-str="0.013337379321455956"
+                data-value-repr="0.013273708522319794"
+                data-value-str="0.013273708522319794"
 
                 data-column-idx="58"
 
@@ -20490,7 +20490,7 @@ data-spans_\_4_\_58
 
 
                 <td
-                id="15681ee6"
+                id="c1bd3b95"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20511,16 +20511,16 @@ data-spans_\_4_\_59
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.13612468540668488"
-                data-value-str="-0.13612468540668488"
+                data-value-repr="-0.13802316784858704"
+                data-value-str="-0.13802316784858704"
 
                 data-column-idx="59"
 
-                >-0.136</td>
+                >-0.138</td>
 
 
                 <td
-                id="8dd8e9e0"
+                id="64e6f3f3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20541,16 +20541,16 @@ data-spans_\_4_\_60
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.1642855554819107"
-                data-value-str="0.1642855554819107"
+                data-value-repr="0.16579669713974"
+                data-value-str="0.16579669713974"
 
                 data-column-idx="60"
 
-                >0.164</td>
+                >0.166</td>
 
 
                 <td
-                id="1ff99ac7"
+                id="a8b496ce"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20571,16 +20571,16 @@ data-spans_\_4_\_61
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.1554366499185562"
-                data-value-str="0.1554366499185562"
+                data-value-repr="0.15334133803844452"
+                data-value-str="0.15334133803844452"
 
                 data-column-idx="61"
 
-                >0.155</td>
+                >0.153</td>
 
 
                 <td
-                id="50c14b9e"
+                id="ff4d125b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20601,16 +20601,16 @@ data-spans_\_4_\_62
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.1755632609128952"
-                data-value-str="0.1755632609128952"
+                data-value-repr="0.16923148930072784"
+                data-value-str="0.16923148930072784"
 
                 data-column-idx="62"
 
-                >0.176</td>
+                >0.169</td>
 
 
                 <td
-                id="11b5a863"
+                id="7610fd3a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20631,16 +20631,16 @@ data-spans_\_4_\_63
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.006838570348918438"
-                data-value-str="0.006838570348918438"
+                data-value-repr="0.06434523314237595"
+                data-value-str="0.06434523314237595"
 
                 data-column-idx="63"
 
-                >0.00684</td>
+                >0.0643</td>
 
 
                 <td
-                id="12f72781"
+                id="9ddecee2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20670,7 +20670,7 @@ data-spans_\_4_\_64
 
 
                 <td
-                id="aa5f93e8"
+                id="982ee96d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21384,7 +21384,7 @@ data-spans_\_4_\_65
 
 
                 <th
-                id="ec64c3e7"
+                id="f6790e42"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -21412,7 +21412,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="19287853"
+                id="c7dfa258"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21442,7 +21442,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="e2bc75db"
+                id="f0bbac04"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21472,7 +21472,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="3fdb30a6"
+                id="70e978f2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21502,7 +21502,7 @@ data-spans_\_5_\_2
 
 
                 <td
-                id="d4f993af"
+                id="33808675"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21523,8 +21523,8 @@ data-spans_\_5_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.146755650639534"
-                data-value-str="0.146755650639534"
+                data-value-repr="0.14675873517990112"
+                data-value-str="0.14675873517990112"
 
                 data-column-idx="3"
 
@@ -21532,7 +21532,7 @@ data-spans_\_5_\_3
 
 
                 <td
-                id="bd2a69f3"
+                id="ac5468a3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21553,8 +21553,8 @@ data-spans_\_5_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.19922056794166565"
-                data-value-str="0.19922056794166565"
+                data-value-repr="0.19922420382499695"
+                data-value-str="0.19922420382499695"
 
                 data-column-idx="4"
 
@@ -21562,7 +21562,7 @@ data-spans_\_5_\_4
 
 
                 <td
-                id="bef34479"
+                id="b3384841"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21583,8 +21583,8 @@ data-spans_\_5_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.3695636987686157"
-                data-value-str="0.3695636987686157"
+                data-value-repr="0.3695738613605499"
+                data-value-str="0.3695738613605499"
 
                 data-column-idx="5"
 
@@ -21592,7 +21592,7 @@ data-spans_\_5_\_5
 
 
                 <td
-                id="49f09f85"
+                id="9d4087b1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21613,8 +21613,8 @@ data-spans_\_5_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.011312482878565788"
-                data-value-str="0.011312482878565788"
+                data-value-repr="0.011308994144201279"
+                data-value-str="0.011308994144201279"
 
                 data-column-idx="6"
 
@@ -21622,7 +21622,7 @@ data-spans_\_5_\_6
 
 
                 <td
-                id="4e6ccfea"
+                id="c2a43659"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21643,16 +21643,16 @@ data-spans_\_5_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0012862392468377948"
-                data-value-str="0.0012862392468377948"
+                data-value-repr="0.0012824072036892176"
+                data-value-str="0.0012824072036892176"
 
                 data-column-idx="7"
 
-                >0.00129</td>
+                >0.00128</td>
 
 
                 <td
-                id="2cee533b"
+                id="6fe48037"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21673,8 +21673,8 @@ data-spans_\_5_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.5498859286308289"
-                data-value-str="0.5498859286308289"
+                data-value-repr="0.549899697303772"
+                data-value-str="0.549899697303772"
 
                 data-column-idx="8"
 
@@ -21682,7 +21682,7 @@ data-spans_\_5_\_8
 
 
                 <td
-                id="ae9c9dba"
+                id="b6b7ea41"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21703,8 +21703,8 @@ data-spans_\_5_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.012727443128824234"
-                data-value-str="-0.012727443128824234"
+                data-value-repr="-0.012723076157271862"
+                data-value-str="-0.012723076157271862"
 
                 data-column-idx="9"
 
@@ -21712,7 +21712,7 @@ data-spans_\_5_\_9
 
 
                 <td
-                id="e485aea5"
+                id="5ca90066"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21733,8 +21733,8 @@ data-spans_\_5_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.05272455886006355"
-                data-value-str="0.05272455886006355"
+                data-value-repr="0.052741777151823044"
+                data-value-str="0.052741777151823044"
 
                 data-column-idx="10"
 
@@ -21742,7 +21742,7 @@ data-spans_\_5_\_10
 
 
                 <td
-                id="d683fbe7"
+                id="c5861172"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21763,8 +21763,8 @@ data-spans_\_5_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.2101760059595108"
-                data-value-str="-0.2101760059595108"
+                data-value-repr="-0.21018463373184204"
+                data-value-str="-0.21018463373184204"
 
                 data-column-idx="11"
 
@@ -21772,7 +21772,7 @@ data-spans_\_5_\_11
 
 
                 <td
-                id="c5ec11db"
+                id="2a8dd085"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21793,8 +21793,8 @@ data-spans_\_5_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0390845388174057"
-                data-value-str="0.0390845388174057"
+                data-value-repr="0.03910275176167488"
+                data-value-str="0.03910275176167488"
 
                 data-column-idx="12"
 
@@ -21802,7 +21802,7 @@ data-spans_\_5_\_12
 
 
                 <td
-                id="bd2bd713"
+                id="7bdd762d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21823,8 +21823,8 @@ data-spans_\_5_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.07987801730632782"
-                data-value-str="-0.07987801730632782"
+                data-value-repr="-0.0798870176076889"
+                data-value-str="-0.0798870176076889"
 
                 data-column-idx="13"
 
@@ -21832,7 +21832,7 @@ data-spans_\_5_\_13
 
 
                 <td
-                id="299a94be"
+                id="fde61d3d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21853,8 +21853,8 @@ data-spans_\_5_\_14
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.22493650019168854"
-                data-value-str="0.22493650019168854"
+                data-value-repr="0.2248864322900772"
+                data-value-str="0.2248864322900772"
 
                 data-column-idx="14"
 
@@ -21862,7 +21862,7 @@ data-spans_\_5_\_14
 
 
                 <td
-                id="7a457938"
+                id="8aa4dcad"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21883,8 +21883,8 @@ data-spans_\_5_\_15
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.019881704822182655"
-                data-value-str="-0.019881704822182655"
+                data-value-repr="-0.019901352003216743"
+                data-value-str="-0.019901352003216743"
 
                 data-column-idx="15"
 
@@ -21892,7 +21892,7 @@ data-spans_\_5_\_15
 
 
                 <td
-                id="140fa305"
+                id="03f91a8c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21913,16 +21913,16 @@ data-spans_\_5_\_16
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.051410824060440063"
-                data-value-str="0.051410824060440063"
+                data-value-repr="0.05158905312418938"
+                data-value-str="0.05158905312418938"
 
                 data-column-idx="16"
 
-                >0.0514</td>
+                >0.0516</td>
 
 
                 <td
-                id="41a15d49"
+                id="200eb3fb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21943,8 +21943,8 @@ data-spans_\_5_\_17
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04629795625805855"
-                data-value-str="0.04629795625805855"
+                data-value-repr="0.04634953662753105"
+                data-value-str="0.04634953662753105"
 
                 data-column-idx="17"
 
@@ -21952,7 +21952,7 @@ data-spans_\_5_\_17
 
 
                 <td
-                id="28d2cebc"
+                id="5b414999"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21973,16 +21973,16 @@ data-spans_\_5_\_18
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.00895833782851696"
-                data-value-str="0.00895833782851696"
+                data-value-repr="0.009379904717206955"
+                data-value-str="0.009379904717206955"
 
                 data-column-idx="18"
 
-                >0.00896</td>
+                >0.00938</td>
 
 
                 <td
-                id="57496ea8"
+                id="8f7f19b4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22003,16 +22003,16 @@ data-spans_\_5_\_19
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.04926770552992821"
-                data-value-str="-0.04926770552992821"
+                data-value-repr="-0.048085227608680725"
+                data-value-str="-0.048085227608680725"
 
                 data-column-idx="19"
 
-                >-0.0493</td>
+                >-0.0481</td>
 
 
                 <td
-                id="ece26ff7"
+                id="44b00dc3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22033,16 +22033,16 @@ data-spans_\_5_\_20
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11905118823051453"
-                data-value-str="-0.11905118823051453"
+                data-value-repr="-0.11828314512968063"
+                data-value-str="-0.11828314512968063"
 
                 data-column-idx="20"
 
-                >-0.119</td>
+                >-0.118</td>
 
 
                 <td
-                id="0aa6627c"
+                id="0c5b2e82"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22063,16 +22063,16 @@ data-spans_\_5_\_21
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04514297842979431"
-                data-value-str="0.04514297842979431"
+                data-value-repr="0.04462843015789986"
+                data-value-str="0.04462843015789986"
 
                 data-column-idx="21"
 
-                >0.0451</td>
+                >0.0446</td>
 
 
                 <td
-                id="b130b304"
+                id="13cfe446"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22093,16 +22093,16 @@ data-spans_\_5_\_22
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.13692952692508698"
-                data-value-str="-0.13692952692508698"
+                data-value-repr="-0.1363658905029297"
+                data-value-str="-0.1363658905029297"
 
                 data-column-idx="22"
 
-                >-0.137</td>
+                >-0.136</td>
 
 
                 <td
-                id="b04d8553"
+                id="402df83d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22123,16 +22123,16 @@ data-spans_\_5_\_23
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03542006015777588"
-                data-value-str="0.03542006015777588"
+                data-value-repr="0.03530976176261902"
+                data-value-str="0.03530976176261902"
 
                 data-column-idx="23"
 
-                >0.0354</td>
+                >0.0353</td>
 
 
                 <td
-                id="88b120a8"
+                id="2f6df60d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22153,8 +22153,8 @@ data-spans_\_5_\_24
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.29315584897994995"
-                data-value-str="-0.29315584897994995"
+                data-value-repr="-0.2932615280151367"
+                data-value-str="-0.2932615280151367"
 
                 data-column-idx="24"
 
@@ -22162,7 +22162,7 @@ data-spans_\_5_\_24
 
 
                 <td
-                id="01d6fa08"
+                id="76a05d62"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22183,16 +22183,16 @@ data-spans_\_5_\_25
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1471490114927292"
-                data-value-str="-0.1471490114927292"
+                data-value-repr="-0.15414965152740479"
+                data-value-str="-0.15414965152740479"
 
                 data-column-idx="25"
 
-                >-0.147</td>
+                >-0.154</td>
 
 
                 <td
-                id="319d80b8"
+                id="bc78294f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22213,16 +22213,16 @@ data-spans_\_5_\_26
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.09197954088449478"
-                data-value-str="-0.09197954088449478"
+                data-value-repr="-0.0938652977347374"
+                data-value-str="-0.0938652977347374"
 
                 data-column-idx="26"
 
-                >-0.0920</td>
+                >-0.0939</td>
 
 
                 <td
-                id="fb91ce59"
+                id="fe093934"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22243,16 +22243,16 @@ data-spans_\_5_\_27
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.09710004180669785"
-                data-value-str="-0.09710004180669785"
+                data-value-repr="0.09192173182964325"
+                data-value-str="0.09192173182964325"
 
                 data-column-idx="27"
 
-                >-0.0971</td>
+                >0.0919</td>
 
 
                 <td
-                id="3833e78e"
+                id="fee4bc55"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22273,16 +22273,16 @@ data-spans_\_5_\_28
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.09690862149000168"
-                data-value-str="0.09690862149000168"
+                data-value-repr="0.08276095241308212"
+                data-value-str="0.08276095241308212"
 
                 data-column-idx="28"
 
-                >0.0969</td>
+                >0.0828</td>
 
 
                 <td
-                id="5594b395"
+                id="01d3c07e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22303,16 +22303,16 @@ data-spans_\_5_\_29
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11371563374996185"
-                data-value-str="-0.11371563374996185"
+                data-value-repr="-0.10897646844387054"
+                data-value-str="-0.10897646844387054"
 
                 data-column-idx="29"
 
-                >-0.114</td>
+                >-0.109</td>
 
 
                 <td
-                id="93c246df"
+                id="0beecfd9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22333,16 +22333,16 @@ data-spans_\_5_\_30
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.06557677686214447"
-                data-value-str="-0.06557677686214447"
+                data-value-repr="-0.0478055439889431"
+                data-value-str="-0.0478055439889431"
 
                 data-column-idx="30"
 
-                >-0.0656</td>
+                >-0.0478</td>
 
 
                 <td
-                id="00ffb37a"
+                id="884c5f2a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22363,16 +22363,16 @@ data-spans_\_5_\_31
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.20726226270198822"
-                data-value-str="0.20726226270198822"
+                data-value-repr="0.20189906656742096"
+                data-value-str="0.20189906656742096"
 
                 data-column-idx="31"
 
-                >0.207</td>
+                >0.202</td>
 
 
                 <td
-                id="7515582b"
+                id="0f0ea785"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22393,16 +22393,16 @@ data-spans_\_5_\_32
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.106270432472229"
-                data-value-str="-0.106270432472229"
+                data-value-repr="0.13770735263824463"
+                data-value-str="0.13770735263824463"
 
                 data-column-idx="32"
 
-                >-0.106</td>
+                >0.138</td>
 
 
                 <td
-                id="762be175"
+                id="b499d54f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22432,7 +22432,7 @@ data-spans_\_5_\_33
 
 
                 <td
-                id="27fcbd02"
+                id="101e2a36"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22453,8 +22453,8 @@ data-spans_\_5_\_34
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04999133571982384"
-                data-value-str="0.04999133571982384"
+                data-value-repr="0.049992915242910385"
+                data-value-str="0.049992915242910385"
 
                 data-column-idx="34"
 
@@ -22462,7 +22462,7 @@ data-spans_\_5_\_34
 
 
                 <td
-                id="753c0f3e"
+                id="b3384b62"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22483,8 +22483,8 @@ data-spans_\_5_\_35
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.011395441368222237"
-                data-value-str="0.011395441368222237"
+                data-value-repr="0.011395584791898727"
+                data-value-str="0.011395584791898727"
 
                 data-column-idx="35"
 
@@ -22492,7 +22492,7 @@ data-spans_\_5_\_35
 
 
                 <td
-                id="6efda4e1"
+                id="98bb53b5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22513,8 +22513,8 @@ data-spans_\_5_\_36
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.010623373091220856"
-                data-value-str="0.010623373091220856"
+                data-value-repr="0.010624253191053867"
+                data-value-str="0.010624253191053867"
 
                 data-column-idx="36"
 
@@ -22522,7 +22522,7 @@ data-spans_\_5_\_36
 
 
                 <td
-                id="f604fa7b"
+                id="e699bb4b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22543,8 +22543,8 @@ data-spans_\_5_\_37
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0891685038805008"
-                data-value-str="0.0891685038805008"
+                data-value-repr="0.08917107433080673"
+                data-value-str="0.08917107433080673"
 
                 data-column-idx="37"
 
@@ -22552,7 +22552,7 @@ data-spans_\_5_\_37
 
 
                 <td
-                id="c3add402"
+                id="13f3945b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22573,8 +22573,8 @@ data-spans_\_5_\_38
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.12242218106985092"
-                data-value-str="0.12242218106985092"
+                data-value-repr="0.12242493033409119"
+                data-value-str="0.12242493033409119"
 
                 data-column-idx="38"
 
@@ -22582,7 +22582,7 @@ data-spans_\_5_\_38
 
 
                 <td
-                id="72084c5c"
+                id="cff0acaf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22603,8 +22603,8 @@ data-spans_\_5_\_39
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.5203808546066284"
-                data-value-str="0.5203808546066284"
+                data-value-repr="0.5203964710235596"
+                data-value-str="0.5203964710235596"
 
                 data-column-idx="39"
 
@@ -22612,7 +22612,7 @@ data-spans_\_5_\_39
 
 
                 <td
-                id="5e098677"
+                id="ef2da20f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22633,8 +22633,8 @@ data-spans_\_5_\_40
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.2708733081817627"
-                data-value-str="0.2708733081817627"
+                data-value-repr="0.2708800435066223"
+                data-value-str="0.2708800435066223"
 
                 data-column-idx="40"
 
@@ -22642,7 +22642,7 @@ data-spans_\_5_\_40
 
 
                 <td
-                id="1c7bde22"
+                id="bfbb42a6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22663,8 +22663,8 @@ data-spans_\_5_\_41
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.08338421583175659"
-                data-value-str="0.08338421583175659"
+                data-value-repr="0.08338433504104614"
+                data-value-str="0.08338433504104614"
 
                 data-column-idx="41"
 
@@ -22672,7 +22672,7 @@ data-spans_\_5_\_41
 
 
                 <td
-                id="28b37306"
+                id="69834e63"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22693,8 +22693,8 @@ data-spans_\_5_\_42
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1990504115819931"
-                data-value-str="-0.1990504115819931"
+                data-value-repr="-0.1990519016981125"
+                data-value-str="-0.1990519016981125"
 
                 data-column-idx="42"
 
@@ -22702,7 +22702,7 @@ data-spans_\_5_\_42
 
 
                 <td
-                id="c7f12f13"
+                id="6169289c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22723,8 +22723,8 @@ data-spans_\_5_\_43
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11109525710344315"
-                data-value-str="-0.11109525710344315"
+                data-value-repr="-0.1111064925789833"
+                data-value-str="-0.1111064925789833"
 
                 data-column-idx="43"
 
@@ -22732,7 +22732,7 @@ data-spans_\_5_\_43
 
 
                 <td
-                id="d5866f1a"
+                id="8df3e292"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22753,16 +22753,16 @@ data-spans_\_5_\_44
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.00621909461915493"
-                data-value-str="-0.00621909461915493"
+                data-value-repr="-0.00620661536231637"
+                data-value-str="-0.00620661536231637"
 
                 data-column-idx="44"
 
-                >-0.00622</td>
+                >-0.00621</td>
 
 
                 <td
-                id="a655e292"
+                id="604534a3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22783,8 +22783,8 @@ data-spans_\_5_\_45
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.8147987127304077"
-                data-value-str="0.8147987127304077"
+                data-value-repr="0.814818263053894"
+                data-value-str="0.814818263053894"
 
                 data-column-idx="45"
 
@@ -22792,7 +22792,7 @@ data-spans_\_5_\_45
 
 
                 <td
-                id="6b849677"
+                id="7a46c1ff"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22813,8 +22813,8 @@ data-spans_\_5_\_46
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.23667392134666443"
-                data-value-str="0.23667392134666443"
+                data-value-repr="0.2366887331008911"
+                data-value-str="0.2366887331008911"
 
                 data-column-idx="46"
 
@@ -22822,7 +22822,7 @@ data-spans_\_5_\_46
 
 
                 <td
-                id="5a593d6b"
+                id="b59c5ebd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22843,8 +22843,8 @@ data-spans_\_5_\_47
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.18650123476982117"
-                data-value-str="0.18650123476982117"
+                data-value-repr="0.18650200963020325"
+                data-value-str="0.18650200963020325"
 
                 data-column-idx="47"
 
@@ -22852,7 +22852,7 @@ data-spans_\_5_\_47
 
 
                 <td
-                id="681b7997"
+                id="7f626855"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22873,8 +22873,8 @@ data-spans_\_5_\_48
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.15987266600131989"
-                data-value-str="-0.15987266600131989"
+                data-value-repr="-0.15986734628677368"
+                data-value-str="-0.15986734628677368"
 
                 data-column-idx="48"
 
@@ -22882,7 +22882,7 @@ data-spans_\_5_\_48
 
 
                 <td
-                id="7b83eee4"
+                id="95cb4a92"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22903,8 +22903,8 @@ data-spans_\_5_\_49
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.011215047910809517"
-                data-value-str="-0.011215047910809517"
+                data-value-repr="-0.011214285157620907"
+                data-value-str="-0.011214285157620907"
 
                 data-column-idx="49"
 
@@ -22912,7 +22912,7 @@ data-spans_\_5_\_49
 
 
                 <td
-                id="0a61832e"
+                id="44030e88"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22933,8 +22933,8 @@ data-spans_\_5_\_50
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1289568841457367"
-                data-value-str="-0.1289568841457367"
+                data-value-repr="-0.12898680567741394"
+                data-value-str="-0.12898680567741394"
 
                 data-column-idx="50"
 
@@ -22942,7 +22942,7 @@ data-spans_\_5_\_50
 
 
                 <td
-                id="19a2c30f"
+                id="3a17fc7b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22963,8 +22963,8 @@ data-spans_\_5_\_51
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.021880390122532845"
-                data-value-str="0.021880390122532845"
+                data-value-repr="0.02186926268041134"
+                data-value-str="0.02186926268041134"
 
                 data-column-idx="51"
 
@@ -22972,7 +22972,7 @@ data-spans_\_5_\_51
 
 
                 <td
-                id="08a1419c"
+                id="05efdf00"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22993,16 +22993,16 @@ data-spans_\_5_\_52
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.002158175455406308"
-                data-value-str="-0.002158175455406308"
+                data-value-repr="-0.0021926744375377893"
+                data-value-str="-0.0021926744375377893"
 
                 data-column-idx="52"
 
-                >-0.00216</td>
+                >-0.00219</td>
 
 
                 <td
-                id="d780a257"
+                id="7db2d1be"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23023,16 +23023,16 @@ data-spans_\_5_\_53
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08512943983078003"
-                data-value-str="-0.08512943983078003"
+                data-value-repr="-0.08518631756305695"
+                data-value-str="-0.08518631756305695"
 
                 data-column-idx="53"
 
-                >-0.0851</td>
+                >-0.0852</td>
 
 
                 <td
-                id="1dbbdd80"
+                id="1d68a284"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23053,8 +23053,8 @@ data-spans_\_5_\_54
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1773073524236679"
-                data-value-str="-0.1773073524236679"
+                data-value-repr="-0.1773664951324463"
+                data-value-str="-0.1773664951324463"
 
                 data-column-idx="54"
 
@@ -23062,7 +23062,7 @@ data-spans_\_5_\_54
 
 
                 <td
-                id="9a73fc14"
+                id="a2a35867"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23083,8 +23083,8 @@ data-spans_\_5_\_55
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.020286772400140762"
-                data-value-str="-0.020286772400140762"
+                data-value-repr="-0.020283188670873642"
+                data-value-str="-0.020283188670873642"
 
                 data-column-idx="55"
 
@@ -23092,7 +23092,7 @@ data-spans_\_5_\_55
 
 
                 <td
-                id="7cdc0029"
+                id="ac84b7c6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23113,16 +23113,16 @@ data-spans_\_5_\_56
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.09717948734760284"
-                data-value-str="0.09717948734760284"
+                data-value-repr="0.09728879481554031"
+                data-value-str="0.09728879481554031"
 
                 data-column-idx="56"
 
-                >0.0972</td>
+                >0.0973</td>
 
 
                 <td
-                id="6964707f"
+                id="8cf806b8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23143,8 +23143,8 @@ data-spans_\_5_\_57
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.08690232038497925"
-                data-value-str="0.08690232038497925"
+                data-value-repr="0.0869097039103508"
+                data-value-str="0.0869097039103508"
 
                 data-column-idx="57"
 
@@ -23152,7 +23152,7 @@ data-spans_\_5_\_57
 
 
                 <td
-                id="f8c1464a"
+                id="ebdbfdac"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23173,16 +23173,16 @@ data-spans_\_5_\_58
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04969989135861397"
-                data-value-str="0.04969989135861397"
+                data-value-repr="0.04984339699149132"
+                data-value-str="0.04984339699149132"
 
                 data-column-idx="58"
 
-                >0.0497</td>
+                >0.0498</td>
 
 
                 <td
-                id="3fa4ce95"
+                id="fa984e13"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23203,16 +23203,16 @@ data-spans_\_5_\_59
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.009433054365217686"
-                data-value-str="-0.009433054365217686"
+                data-value-repr="-0.009417945519089699"
+                data-value-str="-0.009417945519089699"
 
                 data-column-idx="59"
 
-                >-0.00943</td>
+                >-0.00942</td>
 
 
                 <td
-                id="3cc350b0"
+                id="3515d34d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23233,8 +23233,8 @@ data-spans_\_5_\_60
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.21093186736106873"
-                data-value-str="0.21093186736106873"
+                data-value-repr="0.21066991984844208"
+                data-value-str="0.21066991984844208"
 
                 data-column-idx="60"
 
@@ -23242,7 +23242,7 @@ data-spans_\_5_\_60
 
 
                 <td
-                id="108a0f14"
+                id="cae3f867"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23263,8 +23263,8 @@ data-spans_\_5_\_61
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.17692743241786957"
-                data-value-str="-0.17692743241786957"
+                data-value-repr="-0.17665590345859528"
+                data-value-str="-0.17665590345859528"
 
                 data-column-idx="61"
 
@@ -23272,7 +23272,7 @@ data-spans_\_5_\_61
 
 
                 <td
-                id="e3dd90d5"
+                id="7c76487c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23293,16 +23293,16 @@ data-spans_\_5_\_62
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.011637641116976738"
-                data-value-str="-0.011637641116976738"
+                data-value-repr="-0.011061013676226139"
+                data-value-str="-0.011061013676226139"
 
                 data-column-idx="62"
 
-                >-0.0116</td>
+                >-0.0111</td>
 
 
                 <td
-                id="232a3894"
+                id="6d5ed1ea"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23323,16 +23323,16 @@ data-spans_\_5_\_63
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.04018484055995941"
-                data-value-str="-0.04018484055995941"
+                data-value-repr="-0.02628433331847191"
+                data-value-str="-0.02628433331847191"
 
                 data-column-idx="63"
 
-                >-0.0402</td>
+                >-0.0263</td>
 
 
                 <td
-                id="0ae9ae23"
+                id="36a1d7f8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23362,7 +23362,7 @@ data-spans_\_5_\_64
 
 
                 <td
-                id="2958d19b"
+                id="4a8c27ac"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23396,7 +23396,7 @@ data-spans_\_5_\_65
 
 
                 <th
-                id="11928d7f"
+                id="daa39bbe"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -23424,7 +23424,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="dddaf5d1"
+                id="7099a1b7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23454,7 +23454,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="2f08e4cb"
+                id="550022ef"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23484,7 +23484,7 @@ data-spans_\_6_\_1
 
 
                 <td
-                id="47e7b315"
+                id="ee98b206"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23514,7 +23514,7 @@ data-spans_\_6_\_2
 
 
                 <td
-                id="3b909bf2"
+                id="429a575a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23535,8 +23535,8 @@ data-spans_\_6_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.10536693036556244"
-                data-value-str="0.10536693036556244"
+                data-value-repr="0.10536906123161316"
+                data-value-str="0.10536906123161316"
 
                 data-column-idx="3"
 
@@ -23544,7 +23544,7 @@ data-spans_\_6_\_3
 
 
                 <td
-                id="c7483778"
+                id="9c98d264"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23565,8 +23565,8 @@ data-spans_\_6_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.157121941447258"
-                data-value-str="0.157121941447258"
+                data-value-repr="0.15712592005729675"
+                data-value-str="0.15712592005729675"
 
                 data-column-idx="4"
 
@@ -23574,7 +23574,7 @@ data-spans_\_6_\_4
 
 
                 <td
-                id="f30aee08"
+                id="281bb7f6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23595,8 +23595,8 @@ data-spans_\_6_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04270675405859947"
-                data-value-str="0.04270675405859947"
+                data-value-repr="0.04270835593342781"
+                data-value-str="0.04270835593342781"
 
                 data-column-idx="5"
 
@@ -23604,7 +23604,7 @@ data-spans_\_6_\_5
 
 
                 <td
-                id="64126bfd"
+                id="e26ae084"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23625,8 +23625,8 @@ data-spans_\_6_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.027460645884275436"
-                data-value-str="-0.027460645884275436"
+                data-value-repr="-0.027462506666779518"
+                data-value-str="-0.027462506666779518"
 
                 data-column-idx="6"
 
@@ -23634,7 +23634,7 @@ data-spans_\_6_\_6
 
 
                 <td
-                id="0e70fe1e"
+                id="9449b9e2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23655,8 +23655,8 @@ data-spans_\_6_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.23673482239246368"
-                data-value-str="-0.23673482239246368"
+                data-value-repr="-0.23674027621746063"
+                data-value-str="-0.23674027621746063"
 
                 data-column-idx="7"
 
@@ -23664,7 +23664,7 @@ data-spans_\_6_\_7
 
 
                 <td
-                id="8a94b016"
+                id="cf605718"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23685,8 +23685,8 @@ data-spans_\_6_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.021805400028824806"
-                data-value-str="-0.021805400028824806"
+                data-value-repr="-0.021808389574289322"
+                data-value-str="-0.021808389574289322"
 
                 data-column-idx="8"
 
@@ -23694,7 +23694,7 @@ data-spans_\_6_\_8
 
 
                 <td
-                id="966c911a"
+                id="0d965184"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23715,8 +23715,8 @@ data-spans_\_6_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08355384320020676"
-                data-value-str="-0.08355384320020676"
+                data-value-repr="-0.08355741947889328"
+                data-value-str="-0.08355741947889328"
 
                 data-column-idx="9"
 
@@ -23724,7 +23724,7 @@ data-spans_\_6_\_9
 
 
                 <td
-                id="67b1a04c"
+                id="8a7db033"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23745,8 +23745,8 @@ data-spans_\_6_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.03287360444664955"
-                data-value-str="-0.03287360444664955"
+                data-value-repr="-0.03287217393517494"
+                data-value-str="-0.03287217393517494"
 
                 data-column-idx="10"
 
@@ -23754,7 +23754,7 @@ data-spans_\_6_\_10
 
 
                 <td
-                id="bf8ec1a0"
+                id="d04044ff"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23775,8 +23775,8 @@ data-spans_\_6_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.07068528234958649"
-                data-value-str="0.07068528234958649"
+                data-value-repr="0.07067693769931793"
+                data-value-str="0.07067693769931793"
 
                 data-column-idx="11"
 
@@ -23784,7 +23784,7 @@ data-spans_\_6_\_11
 
 
                 <td
-                id="ec8264a2"
+                id="8736c8ed"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23805,8 +23805,8 @@ data-spans_\_6_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02625890076160431"
-                data-value-str="-0.02625890076160431"
+                data-value-repr="-0.026251008734107018"
+                data-value-str="-0.026251008734107018"
 
                 data-column-idx="12"
 
@@ -23814,7 +23814,7 @@ data-spans_\_6_\_12
 
 
                 <td
-                id="4eeaef29"
+                id="f5042dce"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23835,16 +23835,16 @@ data-spans_\_6_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.023936904966831207"
-                data-value-str="0.023936904966831207"
+                data-value-repr="0.02396634966135025"
+                data-value-str="0.02396634966135025"
 
                 data-column-idx="13"
 
-                >0.0239</td>
+                >0.0240</td>
 
 
                 <td
-                id="0446ae3b"
+                id="3dbe5761"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23865,8 +23865,8 @@ data-spans_\_6_\_14
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.061847954988479614"
-                data-value-str="-0.061847954988479614"
+                data-value-repr="-0.06184742972254753"
+                data-value-str="-0.06184742972254753"
 
                 data-column-idx="14"
 
@@ -23874,7 +23874,7 @@ data-spans_\_6_\_14
 
 
                 <td
-                id="b5998861"
+                id="e1b039b1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23895,8 +23895,8 @@ data-spans_\_6_\_15
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08136972039937973"
-                data-value-str="-0.08136972039937973"
+                data-value-repr="-0.08138558268547058"
+                data-value-str="-0.08138558268547058"
 
                 data-column-idx="15"
 
@@ -23904,7 +23904,7 @@ data-spans_\_6_\_15
 
 
                 <td
-                id="39a4c7af"
+                id="28543b45"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23925,8 +23925,8 @@ data-spans_\_6_\_16
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.018488438799977303"
-                data-value-str="0.018488438799977303"
+                data-value-repr="0.018511926755309105"
+                data-value-str="0.018511926755309105"
 
                 data-column-idx="16"
 
@@ -23934,7 +23934,7 @@ data-spans_\_6_\_16
 
 
                 <td
-                id="14da2476"
+                id="508452f8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23955,8 +23955,8 @@ data-spans_\_6_\_17
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.018796183168888092"
-                data-value-str="0.018796183168888092"
+                data-value-repr="0.018780263140797615"
+                data-value-str="0.018780263140797615"
 
                 data-column-idx="17"
 
@@ -23964,7 +23964,7 @@ data-spans_\_6_\_17
 
 
                 <td
-                id="041396b9"
+                id="de6fcc76"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23985,16 +23985,16 @@ data-spans_\_6_\_18
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03767821192741394"
-                data-value-str="0.03767821192741394"
+                data-value-repr="0.03792448714375496"
+                data-value-str="0.03792448714375496"
 
                 data-column-idx="18"
 
-                >0.0377</td>
+                >0.0379</td>
 
 
                 <td
-                id="b796ecc9"
+                id="9610b0d1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24015,16 +24015,16 @@ data-spans_\_6_\_19
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.03190728276968002"
-                data-value-str="-0.03190728276968002"
+                data-value-repr="-0.0320255421102047"
+                data-value-str="-0.0320255421102047"
 
                 data-column-idx="19"
 
-                >-0.0319</td>
+                >-0.0320</td>
 
 
                 <td
-                id="e802cf27"
+                id="2169e43e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24045,16 +24045,16 @@ data-spans_\_6_\_20
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.00906152930110693"
-                data-value-str="0.00906152930110693"
+                data-value-repr="0.009119782596826553"
+                data-value-str="0.009119782596826553"
 
                 data-column-idx="20"
 
-                >0.00906</td>
+                >0.00912</td>
 
 
                 <td
-                id="dfaf4bd6"
+                id="4d0aa577"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24075,16 +24075,16 @@ data-spans_\_6_\_21
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.07919897139072418"
-                data-value-str="-0.07919897139072418"
+                data-value-repr="-0.07895650714635849"
+                data-value-str="-0.07895650714635849"
 
                 data-column-idx="21"
 
-                >-0.0792</td>
+                >-0.0790</td>
 
 
                 <td
-                id="d31f4d9a"
+                id="625ec558"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24105,16 +24105,16 @@ data-spans_\_6_\_22
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.08554787933826447"
-                data-value-str="0.08554787933826447"
+                data-value-repr="0.08647507429122925"
+                data-value-str="0.08647507429122925"
 
                 data-column-idx="22"
 
-                >0.0855</td>
+                >0.0865</td>
 
 
                 <td
-                id="02b22052"
+                id="650798ab"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24135,16 +24135,16 @@ data-spans_\_6_\_23
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.028863465413451195"
-                data-value-str="-0.028863465413451195"
+                data-value-repr="-0.030534222722053528"
+                data-value-str="-0.030534222722053528"
 
                 data-column-idx="23"
 
-                >-0.0289</td>
+                >-0.0305</td>
 
 
                 <td
-                id="9c0b23f4"
+                id="8bd846d0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24165,16 +24165,16 @@ data-spans_\_6_\_24
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.046411048620939255"
-                data-value-str="0.046411048620939255"
+                data-value-repr="0.04416777193546295"
+                data-value-str="0.04416777193546295"
 
                 data-column-idx="24"
 
-                >0.0464</td>
+                >0.0442</td>
 
 
                 <td
-                id="218ad031"
+                id="977be8cd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24195,16 +24195,16 @@ data-spans_\_6_\_25
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.10261224210262299"
-                data-value-str="0.10261224210262299"
+                data-value-repr="0.10105891525745392"
+                data-value-str="0.10105891525745392"
 
                 data-column-idx="25"
 
-                >0.103</td>
+                >0.101</td>
 
 
                 <td
-                id="ec1c75b8"
+                id="3fc10138"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24225,8 +24225,8 @@ data-spans_\_6_\_26
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05084780976176262"
-                data-value-str="-0.05084780976176262"
+                data-value-repr="-0.05078791454434395"
+                data-value-str="-0.05078791454434395"
 
                 data-column-idx="26"
 
@@ -24234,7 +24234,7 @@ data-spans_\_6_\_26
 
 
                 <td
-                id="6ccf13d4"
+                id="1cc910df"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24255,16 +24255,16 @@ data-spans_\_6_\_27
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03872975707054138"
-                data-value-str="0.03872975707054138"
+                data-value-repr="-0.044071897864341736"
+                data-value-str="-0.044071897864341736"
 
                 data-column-idx="27"
 
-                >0.0387</td>
+                >-0.0441</td>
 
 
                 <td
-                id="6f5cbc4c"
+                id="8c099956"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24285,16 +24285,16 @@ data-spans_\_6_\_28
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.031251512467861176"
-                data-value-str="-0.031251512467861176"
+                data-value-repr="-0.030019497498869896"
+                data-value-str="-0.030019497498869896"
 
                 data-column-idx="28"
 
-                >-0.0313</td>
+                >-0.0300</td>
 
 
                 <td
-                id="869f00dc"
+                id="274601f9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24315,16 +24315,16 @@ data-spans_\_6_\_29
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.033534593880176544"
-                data-value-str="-0.033534593880176544"
+                data-value-repr="-0.023518698289990425"
+                data-value-str="-0.023518698289990425"
 
                 data-column-idx="29"
 
-                >-0.0335</td>
+                >-0.0235</td>
 
 
                 <td
-                id="732b418e"
+                id="0ab32b07"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24345,16 +24345,16 @@ data-spans_\_6_\_30
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02814839594066143"
-                data-value-str="-0.02814839594066143"
+                data-value-repr="-0.04239039868116379"
+                data-value-str="-0.04239039868116379"
 
                 data-column-idx="30"
 
-                >-0.0281</td>
+                >-0.0424</td>
 
 
                 <td
-                id="22ff6d5b"
+                id="f6038b26"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24375,16 +24375,16 @@ data-spans_\_6_\_31
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.11533688008785248"
-                data-value-str="0.11533688008785248"
+                data-value-repr="0.12153969705104828"
+                data-value-str="0.12153969705104828"
 
                 data-column-idx="31"
 
-                >0.115</td>
+                >0.122</td>
 
 
                 <td
-                id="15754fe3"
+                id="e22a8e0b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24405,16 +24405,16 @@ data-spans_\_6_\_32
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05408351868391037"
-                data-value-str="-0.05408351868391037"
+                data-value-repr="0.03891032934188843"
+                data-value-str="0.03891032934188843"
 
                 data-column-idx="32"
 
-                >-0.0541</td>
+                >0.0389</td>
 
 
                 <td
-                id="05c2c5ad"
+                id="d7710323"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24444,7 +24444,7 @@ data-spans_\_6_\_33
 
 
                 <td
-                id="5fb05c72"
+                id="53e0a578"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24465,8 +24465,8 @@ data-spans_\_6_\_34
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06224168464541435"
-                data-value-str="0.06224168464541435"
+                data-value-repr="0.06224403157830238"
+                data-value-str="0.06224403157830238"
 
                 data-column-idx="34"
 
@@ -24474,7 +24474,7 @@ data-spans_\_6_\_34
 
 
                 <td
-                id="42b4616d"
+                id="4224fbb2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24495,8 +24495,8 @@ data-spans_\_6_\_35
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.22941449284553528"
-                data-value-str="0.22941449284553528"
+                data-value-repr="0.22942006587982178"
+                data-value-str="0.22942006587982178"
 
                 data-column-idx="35"
 
@@ -24504,7 +24504,7 @@ data-spans_\_6_\_35
 
 
                 <td
-                id="5d2c97a5"
+                id="f78bf73b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24525,8 +24525,8 @@ data-spans_\_6_\_36
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.002450002124533057"
-                data-value-str="0.002450002124533057"
+                data-value-repr="0.0024489115457981825"
+                data-value-str="0.0024489115457981825"
 
                 data-column-idx="36"
 
@@ -24534,7 +24534,7 @@ data-spans_\_6_\_36
 
 
                 <td
-                id="b591dd01"
+                id="2a701c4b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24555,8 +24555,8 @@ data-spans_\_6_\_37
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.031309403479099274"
-                data-value-str="-0.031309403479099274"
+                data-value-repr="-0.031310051679611206"
+                data-value-str="-0.031310051679611206"
 
                 data-column-idx="37"
 
@@ -24564,7 +24564,7 @@ data-spans_\_6_\_37
 
 
                 <td
-                id="0d24b7f0"
+                id="3037b0ea"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24585,8 +24585,8 @@ data-spans_\_6_\_38
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03562793508172035"
-                data-value-str="0.03562793508172035"
+                data-value-repr="0.03562891110777855"
+                data-value-str="0.03562891110777855"
 
                 data-column-idx="38"
 
@@ -24594,7 +24594,7 @@ data-spans_\_6_\_38
 
 
                 <td
-                id="22d87773"
+                id="6c9a06b5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24615,8 +24615,8 @@ data-spans_\_6_\_39
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0028970646671950817"
-                data-value-str="-0.0028970646671950817"
+                data-value-repr="-0.002896911697462201"
+                data-value-str="-0.002896911697462201"
 
                 data-column-idx="39"
 
@@ -24624,7 +24624,7 @@ data-spans_\_6_\_39
 
 
                 <td
-                id="0e7cd721"
+                id="1bdea723"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24645,8 +24645,8 @@ data-spans_\_6_\_40
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.007268886081874371"
-                data-value-str="0.007268886081874371"
+                data-value-repr="0.007268903777003288"
+                data-value-str="0.007268903777003288"
 
                 data-column-idx="40"
 
@@ -24654,7 +24654,7 @@ data-spans_\_6_\_40
 
 
                 <td
-                id="1fbc89d8"
+                id="0f3d46b6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24675,8 +24675,8 @@ data-spans_\_6_\_41
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.05149419233202934"
-                data-value-str="0.05149419233202934"
+                data-value-repr="0.05149352177977562"
+                data-value-str="0.05149352177977562"
 
                 data-column-idx="41"
 
@@ -24684,7 +24684,7 @@ data-spans_\_6_\_41
 
 
                 <td
-                id="0b1bf12d"
+                id="495e574d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24705,8 +24705,8 @@ data-spans_\_6_\_42
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0471637025475502"
-                data-value-str="0.0471637025475502"
+                data-value-repr="0.04716499522328377"
+                data-value-str="0.04716499522328377"
 
                 data-column-idx="42"
 
@@ -24714,7 +24714,7 @@ data-spans_\_6_\_42
 
 
                 <td
-                id="b41fdd26"
+                id="62a95878"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24735,8 +24735,8 @@ data-spans_\_6_\_43
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.009748456999659538"
-                data-value-str="-0.009748456999659538"
+                data-value-repr="-0.009748198091983795"
+                data-value-str="-0.009748198091983795"
 
                 data-column-idx="43"
 
@@ -24744,7 +24744,7 @@ data-spans_\_6_\_43
 
 
                 <td
-                id="0f566f06"
+                id="da6cb34e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24765,8 +24765,8 @@ data-spans_\_6_\_44
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.07844811677932739"
-                data-value-str="0.07844811677932739"
+                data-value-repr="0.07844394445419312"
+                data-value-str="0.07844394445419312"
 
                 data-column-idx="44"
 
@@ -24774,7 +24774,7 @@ data-spans_\_6_\_44
 
 
                 <td
-                id="62f37b25"
+                id="8829f1fd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24795,16 +24795,16 @@ data-spans_\_6_\_45
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.009675263427197933"
-                data-value-str="-0.009675263427197933"
+                data-value-repr="-0.00966998003423214"
+                data-value-str="-0.00966998003423214"
 
                 data-column-idx="45"
 
-                >-0.00968</td>
+                >-0.00967</td>
 
 
                 <td
-                id="096266a7"
+                id="875df196"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24825,8 +24825,8 @@ data-spans_\_6_\_46
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.13078400492668152"
-                data-value-str="-0.13078400492668152"
+                data-value-repr="-0.1307920515537262"
+                data-value-str="-0.1307920515537262"
 
                 data-column-idx="46"
 
@@ -24834,7 +24834,7 @@ data-spans_\_6_\_46
 
 
                 <td
-                id="bb582102"
+                id="aa441789"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24855,8 +24855,8 @@ data-spans_\_6_\_47
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.25243818759918213"
-                data-value-str="0.25243818759918213"
+                data-value-repr="0.25246840715408325"
+                data-value-str="0.25246840715408325"
 
                 data-column-idx="47"
 
@@ -24864,7 +24864,7 @@ data-spans_\_6_\_47
 
 
                 <td
-                id="a0478452"
+                id="7a48e5fb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24885,8 +24885,8 @@ data-spans_\_6_\_48
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.1518019139766693"
-                data-value-str="0.1518019139766693"
+                data-value-repr="0.15182676911354065"
+                data-value-str="0.15182676911354065"
 
                 data-column-idx="48"
 
@@ -24894,7 +24894,7 @@ data-spans_\_6_\_48
 
 
                 <td
-                id="27b403cb"
+                id="35d754d4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24915,8 +24915,8 @@ data-spans_\_6_\_49
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.030873127281665802"
-                data-value-str="0.030873127281665802"
+                data-value-repr="0.03085050731897354"
+                data-value-str="0.03085050731897354"
 
                 data-column-idx="49"
 
@@ -24924,7 +24924,7 @@ data-spans_\_6_\_49
 
 
                 <td
-                id="aa93e5cd"
+                id="438c2cb0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24945,8 +24945,8 @@ data-spans_\_6_\_50
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0991387665271759"
-                data-value-str="-0.0991387665271759"
+                data-value-repr="-0.09905902296304703"
+                data-value-str="-0.09905902296304703"
 
                 data-column-idx="50"
 
@@ -24954,7 +24954,7 @@ data-spans_\_6_\_50
 
 
                 <td
-                id="33dfd3d4"
+                id="bc48526b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24975,16 +24975,16 @@ data-spans_\_6_\_51
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.016048990190029144"
-                data-value-str="-0.016048990190029144"
+                data-value-repr="-0.015943678095936775"
+                data-value-str="-0.015943678095936775"
 
                 data-column-idx="51"
 
-                >-0.0160</td>
+                >-0.0159</td>
 
 
                 <td
-                id="facfbdf0"
+                id="02bda6aa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25005,16 +25005,16 @@ data-spans_\_6_\_52
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0019861545879393816"
-                data-value-str="-0.0019861545879393816"
+                data-value-repr="-0.0021065485198050737"
+                data-value-str="-0.0021065485198050737"
 
                 data-column-idx="52"
 
-                >-0.00199</td>
+                >-0.00211</td>
 
 
                 <td
-                id="12900125"
+                id="f861b35a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25035,16 +25035,16 @@ data-spans_\_6_\_53
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="9.58749806159176e-05"
-                data-value-str="9.58749806159176e-05"
+                data-value-repr="-3.2149566777661676e-06"
+                data-value-str="-3.2149566777661676e-06"
 
                 data-column-idx="53"
 
-                >9.59e-05</td>
+                >-3.21e-06</td>
 
 
                 <td
-                id="7dbb7e6f"
+                id="2ca960a4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25065,16 +25065,16 @@ data-spans_\_6_\_54
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.017013708129525185"
-                data-value-str="0.017013708129525185"
+                data-value-repr="0.017390955239534378"
+                data-value-str="0.017390955239534378"
 
                 data-column-idx="54"
 
-                >0.0170</td>
+                >0.0174</td>
 
 
                 <td
-                id="3bfd2a0e"
+                id="092fe74b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25095,16 +25095,16 @@ data-spans_\_6_\_55
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0040021552704274654"
-                data-value-str="0.0040021552704274654"
+                data-value-repr="0.004457679111510515"
+                data-value-str="0.004457679111510515"
 
                 data-column-idx="55"
 
-                >0.00400</td>
+                >0.00446</td>
 
 
                 <td
-                id="a2279281"
+                id="c51c2066"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25125,16 +25125,16 @@ data-spans_\_6_\_56
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03985777869820595"
-                data-value-str="0.03985777869820595"
+                data-value-repr="0.03963091969490051"
+                data-value-str="0.03963091969490051"
 
                 data-column-idx="56"
 
-                >0.0399</td>
+                >0.0396</td>
 
 
                 <td
-                id="d123d1e3"
+                id="cfbebb18"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25155,16 +25155,16 @@ data-spans_\_6_\_57
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.022070040926337242"
-                data-value-str="0.022070040926337242"
+                data-value-repr="0.02250676602125168"
+                data-value-str="0.02250676602125168"
 
                 data-column-idx="57"
 
-                >0.0221</td>
+                >0.0225</td>
 
 
                 <td
-                id="e02cfa24"
+                id="1498ff56"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25185,16 +25185,16 @@ data-spans_\_6_\_58
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.024473685771226883"
-                data-value-str="-0.024473685771226883"
+                data-value-repr="-0.023224417120218277"
+                data-value-str="-0.023224417120218277"
 
                 data-column-idx="58"
 
-                >-0.0245</td>
+                >-0.0232</td>
 
 
                 <td
-                id="39cc5c77"
+                id="f3d8428b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25215,16 +25215,16 @@ data-spans_\_6_\_59
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.010622142814099789"
-                data-value-str="0.010622142814099789"
+                data-value-repr="0.010830664075911045"
+                data-value-str="0.010830664075911045"
 
                 data-column-idx="59"
 
-                >0.0106</td>
+                >0.0108</td>
 
 
                 <td
-                id="58c98080"
+                id="1b504cf0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25245,16 +25245,16 @@ data-spans_\_6_\_60
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0383874736726284"
-                data-value-str="-0.0383874736726284"
+                data-value-repr="-0.03940976411104202"
+                data-value-str="-0.03940976411104202"
 
                 data-column-idx="60"
 
-                >-0.0384</td>
+                >-0.0394</td>
 
 
                 <td
-                id="619e2df6"
+                id="ebcf5c82"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25275,16 +25275,16 @@ data-spans_\_6_\_61
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.03395604342222214"
-                data-value-str="-0.03395604342222214"
+                data-value-repr="-0.03499266132712364"
+                data-value-str="-0.03499266132712364"
 
                 data-column-idx="61"
 
-                >-0.0340</td>
+                >-0.0350</td>
 
 
                 <td
-                id="3e8e1124"
+                id="318c6808"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25305,16 +25305,16 @@ data-spans_\_6_\_62
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.027651295065879822"
-                data-value-str="0.027651295065879822"
+                data-value-repr="0.026827296242117882"
+                data-value-str="0.026827296242117882"
 
                 data-column-idx="62"
 
-                >0.0277</td>
+                >0.0268</td>
 
 
                 <td
-                id="8dd776f5"
+                id="36aa4dec"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25335,16 +25335,16 @@ data-spans_\_6_\_63
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0053864736109972"
-                data-value-str="0.0053864736109972"
+                data-value-repr="-0.022188806906342506"
+                data-value-str="-0.022188806906342506"
 
                 data-column-idx="63"
 
-                >0.00539</td>
+                >-0.0222</td>
 
 
                 <td
-                id="6c9070cb"
+                id="b602f12f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25374,7 +25374,7 @@ data-spans_\_6_\_64
 
 
                 <td
-                id="588803c5"
+                id="0447f5b3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25408,7 +25408,7 @@ data-spans_\_6_\_65
 
 
                 <th
-                id="96073642"
+                id="6edd4e27"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -25436,7 +25436,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="f7ec318f"
+                id="33bbdae3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25466,7 +25466,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="1bf0d570"
+                id="c022c47e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25496,7 +25496,7 @@ data-spans_\_7_\_1
 
 
                 <td
-                id="8d61ef02"
+                id="2c145064"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25526,7 +25526,7 @@ data-spans_\_7_\_2
 
 
                 <td
-                id="66721eb8"
+                id="8d8a6ac1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25547,8 +25547,8 @@ data-spans_\_7_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.1421770304441452"
-                data-value-str="0.1421770304441452"
+                data-value-repr="0.142179936170578"
+                data-value-str="0.142179936170578"
 
                 data-column-idx="3"
 
@@ -25556,7 +25556,7 @@ data-spans_\_7_\_3
 
 
                 <td
-                id="7cafa512"
+                id="283eff40"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25577,8 +25577,8 @@ data-spans_\_7_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.25330737233161926"
-                data-value-str="0.25330737233161926"
+                data-value-repr="0.25331243872642517"
+                data-value-str="0.25331243872642517"
 
                 data-column-idx="4"
 
@@ -25586,7 +25586,7 @@ data-spans_\_7_\_4
 
 
                 <td
-                id="57f6c222"
+                id="fc77c418"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25607,8 +25607,8 @@ data-spans_\_7_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.43061283230781555"
-                data-value-str="0.43061283230781555"
+                data-value-repr="0.43062475323677063"
+                data-value-str="0.43062475323677063"
 
                 data-column-idx="5"
 
@@ -25616,7 +25616,7 @@ data-spans_\_7_\_5
 
 
                 <td
-                id="f1f44fcc"
+                id="f8cdad54"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25637,8 +25637,8 @@ data-spans_\_7_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.005425508599728346"
-                data-value-str="-0.005425508599728346"
+                data-value-repr="-0.005429751705378294"
+                data-value-str="-0.005429751705378294"
 
                 data-column-idx="6"
 
@@ -25646,7 +25646,7 @@ data-spans_\_7_\_6
 
 
                 <td
-                id="0ebeec38"
+                id="bc407c2a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25667,8 +25667,8 @@ data-spans_\_7_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06596505641937256"
-                data-value-str="0.06596505641937256"
+                data-value-repr="0.06596818566322327"
+                data-value-str="0.06596818566322327"
 
                 data-column-idx="7"
 
@@ -25676,7 +25676,7 @@ data-spans_\_7_\_7
 
 
                 <td
-                id="e6382a87"
+                id="896526b7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25697,8 +25697,8 @@ data-spans_\_7_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.016857046633958817"
-                data-value-str="-0.016857046633958817"
+                data-value-repr="-0.016853448003530502"
+                data-value-str="-0.016853448003530502"
 
                 data-column-idx="8"
 
@@ -25706,7 +25706,7 @@ data-spans_\_7_\_8
 
 
                 <td
-                id="d7522b85"
+                id="e83c2b78"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25727,8 +25727,8 @@ data-spans_\_7_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.022162707522511482"
-                data-value-str="-0.022162707522511482"
+                data-value-repr="-0.022163355723023415"
+                data-value-str="-0.022163355723023415"
 
                 data-column-idx="9"
 
@@ -25736,7 +25736,7 @@ data-spans_\_7_\_9
 
 
                 <td
-                id="41adf79d"
+                id="3507377a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25757,8 +25757,8 @@ data-spans_\_7_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.02169058658182621"
-                data-value-str="0.02169058658182621"
+                data-value-repr="0.021682944148778915"
+                data-value-str="0.021682944148778915"
 
                 data-column-idx="10"
 
@@ -25766,7 +25766,7 @@ data-spans_\_7_\_10
 
 
                 <td
-                id="4b822430"
+                id="eb33a39d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25787,8 +25787,8 @@ data-spans_\_7_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11199600249528885"
-                data-value-str="-0.11199600249528885"
+                data-value-repr="-0.1119953915476799"
+                data-value-str="-0.1119953915476799"
 
                 data-column-idx="11"
 
@@ -25796,7 +25796,7 @@ data-spans_\_7_\_11
 
 
                 <td
-                id="8195a113"
+                id="1faf6324"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25817,8 +25817,8 @@ data-spans_\_7_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06702262163162231"
-                data-value-str="0.06702262163162231"
+                data-value-repr="0.06701810657978058"
+                data-value-str="0.06701810657978058"
 
                 data-column-idx="12"
 
@@ -25826,7 +25826,7 @@ data-spans_\_7_\_12
 
 
                 <td
-                id="0034fdb3"
+                id="7c7cd543"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25847,8 +25847,8 @@ data-spans_\_7_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.23310893774032593"
-                data-value-str="0.23310893774032593"
+                data-value-repr="0.2331046462059021"
+                data-value-str="0.2331046462059021"
 
                 data-column-idx="13"
 
@@ -25856,7 +25856,7 @@ data-spans_\_7_\_13
 
 
                 <td
-                id="cdf8cd99"
+                id="dfb176c4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25877,16 +25877,16 @@ data-spans_\_7_\_14
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.13650497794151306"
-                data-value-str="0.13650497794151306"
+                data-value-repr="0.13643331825733185"
+                data-value-str="0.13643331825733185"
 
                 data-column-idx="14"
 
-                >0.137</td>
+                >0.136</td>
 
 
                 <td
-                id="f2700d89"
+                id="6c84a19e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25907,8 +25907,8 @@ data-spans_\_7_\_15
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04189854487776756"
-                data-value-str="0.04189854487776756"
+                data-value-repr="0.041916098445653915"
+                data-value-str="0.041916098445653915"
 
                 data-column-idx="15"
 
@@ -25916,7 +25916,7 @@ data-spans_\_7_\_15
 
 
                 <td
-                id="50bb2182"
+                id="992b1eae"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25937,8 +25937,8 @@ data-spans_\_7_\_16
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.08936094492673874"
-                data-value-str="0.08936094492673874"
+                data-value-repr="0.08942277729511261"
+                data-value-str="0.08942277729511261"
 
                 data-column-idx="16"
 
@@ -25946,7 +25946,7 @@ data-spans_\_7_\_16
 
 
                 <td
-                id="47a06cac"
+                id="da73ab15"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25967,16 +25967,16 @@ data-spans_\_7_\_17
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.08775117248296738"
-                data-value-str="0.08775117248296738"
+                data-value-repr="0.08771917968988419"
+                data-value-str="0.08771917968988419"
 
                 data-column-idx="17"
 
-                >0.0878</td>
+                >0.0877</td>
 
 
                 <td
-                id="02edc315"
+                id="19953958"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25997,16 +25997,16 @@ data-spans_\_7_\_18
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.05381500720977783"
-                data-value-str="0.05381500720977783"
+                data-value-repr="0.05387241393327713"
+                data-value-str="0.05387241393327713"
 
                 data-column-idx="18"
 
-                >0.0538</td>
+                >0.0539</td>
 
 
                 <td
-                id="7dbd3e93"
+                id="7668e6ba"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26027,16 +26027,16 @@ data-spans_\_7_\_19
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.02381865307688713"
-                data-value-str="0.02381865307688713"
+                data-value-repr="0.023563457652926445"
+                data-value-str="0.023563457652926445"
 
                 data-column-idx="19"
 
-                >0.0238</td>
+                >0.0236</td>
 
 
                 <td
-                id="385e7720"
+                id="572205e4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26057,16 +26057,16 @@ data-spans_\_7_\_20
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.179199680685997"
-                data-value-str="-0.179199680685997"
+                data-value-repr="-0.17952674627304077"
+                data-value-str="-0.17952674627304077"
 
                 data-column-idx="20"
 
-                >-0.179</td>
+                >-0.180</td>
 
 
                 <td
-                id="9a8344c1"
+                id="261b2900"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26087,16 +26087,16 @@ data-spans_\_7_\_21
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.04839219152927399"
-                data-value-str="-0.04839219152927399"
+                data-value-repr="-0.04812551662325859"
+                data-value-str="-0.04812551662325859"
 
                 data-column-idx="21"
 
-                >-0.0484</td>
+                >-0.0481</td>
 
 
                 <td
-                id="327654b8"
+                id="bbd37147"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26117,16 +26117,16 @@ data-spans_\_7_\_22
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.038940735161304474"
-                data-value-str="-0.038940735161304474"
+                data-value-repr="-0.03905951976776123"
+                data-value-str="-0.03905951976776123"
 
                 data-column-idx="22"
 
-                >-0.0389</td>
+                >-0.0391</td>
 
 
                 <td
-                id="f4f9ce4e"
+                id="6e8f1b91"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26147,16 +26147,16 @@ data-spans_\_7_\_23
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.012004454620182514"
-                data-value-str="0.012004454620182514"
+                data-value-repr="0.012179495766758919"
+                data-value-str="0.012179495766758919"
 
                 data-column-idx="23"
 
-                >0.0120</td>
+                >0.0122</td>
 
 
                 <td
-                id="526a36ad"
+                id="895ec573"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26177,16 +26177,16 @@ data-spans_\_7_\_24
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0389782078564167"
-                data-value-str="-0.0389782078564167"
+                data-value-repr="-0.041214268654584885"
+                data-value-str="-0.041214268654584885"
 
                 data-column-idx="24"
 
-                >-0.0390</td>
+                >-0.0412</td>
 
 
                 <td
-                id="dff2c1b9"
+                id="14c0e0e3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26207,16 +26207,16 @@ data-spans_\_7_\_25
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.013834699988365173"
-                data-value-str="0.013834699988365173"
+                data-value-repr="0.014890627935528755"
+                data-value-str="0.014890627935528755"
 
                 data-column-idx="25"
 
-                >0.0138</td>
+                >0.0149</td>
 
 
                 <td
-                id="52bca071"
+                id="afc418dd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26237,16 +26237,16 @@ data-spans_\_7_\_26
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.015099531039595604"
-                data-value-str="-0.015099531039595604"
+                data-value-repr="-0.0119420625269413"
+                data-value-str="-0.0119420625269413"
 
                 data-column-idx="26"
 
-                >-0.0151</td>
+                >-0.0119</td>
 
 
                 <td
-                id="2b9a744c"
+                id="4cd5a33e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26267,16 +26267,16 @@ data-spans_\_7_\_27
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0821525976061821"
-                data-value-str="0.0821525976061821"
+                data-value-repr="-0.07559259980916977"
+                data-value-str="-0.07559259980916977"
 
                 data-column-idx="27"
 
-                >0.0822</td>
+                >-0.0756</td>
 
 
                 <td
-                id="4980d2aa"
+                id="264181b1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26297,16 +26297,16 @@ data-spans_\_7_\_28
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03550040349364281"
-                data-value-str="0.03550040349364281"
+                data-value-repr="0.033724069595336914"
+                data-value-str="0.033724069595336914"
 
                 data-column-idx="28"
 
-                >0.0355</td>
+                >0.0337</td>
 
 
                 <td
-                id="550808c0"
+                id="59bd15eb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26327,16 +26327,16 @@ data-spans_\_7_\_29
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.09760712087154388"
-                data-value-str="-0.09760712087154388"
+                data-value-repr="-0.11042813956737518"
+                data-value-str="-0.11042813956737518"
 
                 data-column-idx="29"
 
-                >-0.0976</td>
+                >-0.110</td>
 
 
                 <td
-                id="dd25eafb"
+                id="f18df2dd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26357,16 +26357,16 @@ data-spans_\_7_\_30
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04878431186079979"
-                data-value-str="0.04878431186079979"
+                data-value-repr="0.02199125476181507"
+                data-value-str="0.02199125476181507"
 
                 data-column-idx="30"
 
-                >0.0488</td>
+                >0.0220</td>
 
 
                 <td
-                id="ce232a9c"
+                id="d353c4e3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26387,16 +26387,16 @@ data-spans_\_7_\_31
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.11442171782255173"
-                data-value-str="0.11442171782255173"
+                data-value-repr="0.1306852549314499"
+                data-value-str="0.1306852549314499"
 
                 data-column-idx="31"
 
-                >0.114</td>
+                >0.131</td>
 
 
                 <td
-                id="d34ccd67"
+                id="5880d594"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26417,16 +26417,16 @@ data-spans_\_7_\_32
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.07625947892665863"
-                data-value-str="-0.07625947892665863"
+                data-value-repr="0.06003239378333092"
+                data-value-str="0.06003239378333092"
 
                 data-column-idx="32"
 
-                >-0.0763</td>
+                >0.0600</td>
 
 
                 <td
-                id="47df1bad"
+                id="62a3d889"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26456,7 +26456,7 @@ data-spans_\_7_\_33
 
 
                 <td
-                id="d4daa428"
+                id="0f679a12"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26477,8 +26477,8 @@ data-spans_\_7_\_34
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.007741755805909634"
-                data-value-str="0.007741755805909634"
+                data-value-repr="0.007742028217762709"
+                data-value-str="0.007742028217762709"
 
                 data-column-idx="34"
 
@@ -26486,7 +26486,7 @@ data-spans_\_7_\_34
 
 
                 <td
-                id="d22c93f8"
+                id="e7a2fc7b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26507,16 +26507,16 @@ data-spans_\_7_\_35
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-5.356871770345606e-05"
-                data-value-str="-5.356871770345606e-05"
+                data-value-repr="-5.345830140868202e-05"
+                data-value-str="-5.345830140868202e-05"
 
                 data-column-idx="35"
 
-                >-5.36e-05</td>
+                >-5.35e-05</td>
 
 
                 <td
-                id="95bf347e"
+                id="87bd6d8c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26537,8 +26537,8 @@ data-spans_\_7_\_36
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04282360523939133"
-                data-value-str="0.04282360523939133"
+                data-value-repr="0.042824916541576385"
+                data-value-str="0.042824916541576385"
 
                 data-column-idx="36"
 
@@ -26546,7 +26546,7 @@ data-spans_\_7_\_36
 
 
                 <td
-                id="60f8e7e3"
+                id="26d217a5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26567,8 +26567,8 @@ data-spans_\_7_\_37
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.02026483789086342"
-                data-value-str="0.02026483789086342"
+                data-value-repr="0.02026534266769886"
+                data-value-str="0.02026534266769886"
 
                 data-column-idx="37"
 
@@ -26576,7 +26576,7 @@ data-spans_\_7_\_37
 
 
                 <td
-                id="4854043f"
+                id="181c7d21"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26597,8 +26597,8 @@ data-spans_\_7_\_38
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.042899180203676224"
-                data-value-str="0.042899180203676224"
+                data-value-repr="0.04290018603205681"
+                data-value-str="0.04290018603205681"
 
                 data-column-idx="38"
 
@@ -26606,7 +26606,7 @@ data-spans_\_7_\_38
 
 
                 <td
-                id="617f0ddb"
+                id="1285b3ec"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26627,8 +26627,8 @@ data-spans_\_7_\_39
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.003150792559608817"
-                data-value-str="0.003150792559608817"
+                data-value-repr="0.003151013981550932"
+                data-value-str="0.003151013981550932"
 
                 data-column-idx="39"
 
@@ -26636,7 +26636,7 @@ data-spans_\_7_\_39
 
 
                 <td
-                id="ccf81ff7"
+                id="f79e3a8b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26657,8 +26657,8 @@ data-spans_\_7_\_40
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.019045477733016014"
-                data-value-str="0.019045477733016014"
+                data-value-repr="0.01904560625553131"
+                data-value-str="0.01904560625553131"
 
                 data-column-idx="40"
 
@@ -26666,7 +26666,7 @@ data-spans_\_7_\_40
 
 
                 <td
-                id="a2b9c737"
+                id="ac45b333"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26687,8 +26687,8 @@ data-spans_\_7_\_41
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.006843966897577047"
-                data-value-str="-0.006843966897577047"
+                data-value-repr="-0.006843778304755688"
+                data-value-str="-0.006843778304755688"
 
                 data-column-idx="41"
 
@@ -26696,7 +26696,7 @@ data-spans_\_7_\_41
 
 
                 <td
-                id="d5b3edbc"
+                id="66ccc39c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26717,8 +26717,8 @@ data-spans_\_7_\_42
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.016752934083342552"
-                data-value-str="0.016752934083342552"
+                data-value-repr="0.016752857714891434"
+                data-value-str="0.016752857714891434"
 
                 data-column-idx="42"
 
@@ -26726,7 +26726,7 @@ data-spans_\_7_\_42
 
 
                 <td
-                id="901f5302"
+                id="b1201809"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26747,8 +26747,8 @@ data-spans_\_7_\_43
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.02260872721672058"
-                data-value-str="0.02260872721672058"
+                data-value-repr="0.0226115882396698"
+                data-value-str="0.0226115882396698"
 
                 data-column-idx="43"
 
@@ -26756,7 +26756,7 @@ data-spans_\_7_\_43
 
 
                 <td
-                id="8872f628"
+                id="931e94ba"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26777,8 +26777,8 @@ data-spans_\_7_\_44
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.005787328351289034"
-                data-value-str="0.005787328351289034"
+                data-value-repr="0.005786800757050514"
+                data-value-str="0.005786800757050514"
 
                 data-column-idx="44"
 
@@ -26786,7 +26786,7 @@ data-spans_\_7_\_44
 
 
                 <td
-                id="f952ca8b"
+                id="135a165b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26807,8 +26807,8 @@ data-spans_\_7_\_45
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.013208681717514992"
-                data-value-str="-0.013208681717514992"
+                data-value-repr="-0.013208293356001377"
+                data-value-str="-0.013208293356001377"
 
                 data-column-idx="45"
 
@@ -26816,7 +26816,7 @@ data-spans_\_7_\_45
 
 
                 <td
-                id="5eaca2a6"
+                id="eb314bbd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26837,8 +26837,8 @@ data-spans_\_7_\_46
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.003409032244235277"
-                data-value-str="0.003409032244235277"
+                data-value-repr="0.003408847376704216"
+                data-value-str="0.003408847376704216"
 
                 data-column-idx="46"
 
@@ -26846,7 +26846,7 @@ data-spans_\_7_\_46
 
 
                 <td
-                id="8af30681"
+                id="e6849e0a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26867,16 +26867,16 @@ data-spans_\_7_\_47
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.004964330233633518"
-                data-value-str="0.004964330233633518"
+                data-value-repr="0.004967909771949053"
+                data-value-str="0.004967909771949053"
 
                 data-column-idx="47"
 
-                >0.00496</td>
+                >0.00497</td>
 
 
                 <td
-                id="ddaa5070"
+                id="a2361024"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26897,8 +26897,8 @@ data-spans_\_7_\_48
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0056625846773386"
-                data-value-str="-0.0056625846773386"
+                data-value-repr="-0.005657536443322897"
+                data-value-str="-0.005657536443322897"
 
                 data-column-idx="48"
 
@@ -26906,7 +26906,7 @@ data-spans_\_7_\_48
 
 
                 <td
-                id="2e3a9042"
+                id="615d60b2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26927,16 +26927,16 @@ data-spans_\_7_\_49
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.00036745032412"
-                data-value-str="0.00036745032412"
+                data-value-repr="0.00036550607183016837"
+                data-value-str="0.00036550607183016837"
 
                 data-column-idx="49"
 
-                >0.000367</td>
+                >0.000366</td>
 
 
                 <td
-                id="9c465142"
+                id="ded7c4d0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26957,16 +26957,16 @@ data-spans_\_7_\_50
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0019855459686368704"
-                data-value-str="-0.0019855459686368704"
+                data-value-repr="-0.001976726111024618"
+                data-value-str="-0.001976726111024618"
 
                 data-column-idx="50"
 
-                >-0.00199</td>
+                >-0.00198</td>
 
 
                 <td
-                id="c3936f6b"
+                id="9de442a5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26987,8 +26987,8 @@ data-spans_\_7_\_51
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.02525075525045395"
-                data-value-str="0.02525075525045395"
+                data-value-repr="0.025269318372011185"
+                data-value-str="0.025269318372011185"
 
                 data-column-idx="51"
 
@@ -26996,7 +26996,7 @@ data-spans_\_7_\_51
 
 
                 <td
-                id="d18f3946"
+                id="f36c2727"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27017,8 +27017,8 @@ data-spans_\_7_\_52
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.001517942058853805"
-                data-value-str="-0.001517942058853805"
+                data-value-repr="-0.0015163151547312737"
+                data-value-str="-0.0015163151547312737"
 
                 data-column-idx="52"
 
@@ -27026,7 +27026,7 @@ data-spans_\_7_\_52
 
 
                 <td
-                id="ac7af53d"
+                id="7a5772e6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27047,16 +27047,16 @@ data-spans_\_7_\_53
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.005166073329746723"
-                data-value-str="0.005166073329746723"
+                data-value-repr="0.0051596760749816895"
+                data-value-str="0.0051596760749816895"
 
                 data-column-idx="53"
 
-                >0.00517</td>
+                >0.00516</td>
 
 
                 <td
-                id="eb2c6f6c"
+                id="fb9819a5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27077,8 +27077,8 @@ data-spans_\_7_\_54
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.019779540598392487"
-                data-value-str="0.019779540598392487"
+                data-value-repr="0.019750360399484634"
+                data-value-str="0.019750360399484634"
 
                 data-column-idx="54"
 
@@ -27086,7 +27086,7 @@ data-spans_\_7_\_54
 
 
                 <td
-                id="1436ac0e"
+                id="3fbc06e8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27107,16 +27107,16 @@ data-spans_\_7_\_55
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.012177928350865841"
-                data-value-str="-0.012177928350865841"
+                data-value-repr="-0.012039386667311192"
+                data-value-str="-0.012039386667311192"
 
                 data-column-idx="55"
 
-                >-0.0122</td>
+                >-0.0120</td>
 
 
                 <td
-                id="2e01af30"
+                id="118abc87"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27137,8 +27137,8 @@ data-spans_\_7_\_56
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.015961529687047005"
-                data-value-str="-0.015961529687047005"
+                data-value-repr="-0.016034245491027832"
+                data-value-str="-0.016034245491027832"
 
                 data-column-idx="56"
 
@@ -27146,7 +27146,7 @@ data-spans_\_7_\_56
 
 
                 <td
-                id="63986555"
+                id="481822a6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27167,16 +27167,16 @@ data-spans_\_7_\_57
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.007352104410529137"
-                data-value-str="0.007352104410529137"
+                data-value-repr="0.007497621700167656"
+                data-value-str="0.007497621700167656"
 
                 data-column-idx="57"
 
-                >0.00735</td>
+                >0.00750</td>
 
 
                 <td
-                id="c9499ede"
+                id="f57455c1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27197,16 +27197,16 @@ data-spans_\_7_\_58
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.007891115732491016"
-                data-value-str="0.007891115732491016"
+                data-value-repr="0.008081740699708462"
+                data-value-str="0.008081740699708462"
 
                 data-column-idx="58"
 
-                >0.00789</td>
+                >0.00808</td>
 
 
                 <td
-                id="d76ddd18"
+                id="2be09f66"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27227,8 +27227,8 @@ data-spans_\_7_\_59
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.020677149295806885"
-                data-value-str="0.020677149295806885"
+                data-value-repr="0.020657530054450035"
+                data-value-str="0.020657530054450035"
 
                 data-column-idx="59"
 
@@ -27236,7 +27236,7 @@ data-spans_\_7_\_59
 
 
                 <td
-                id="575e005f"
+                id="f5ea47ff"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27257,16 +27257,16 @@ data-spans_\_7_\_60
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.008615227416157722"
-                data-value-str="0.008615227416157722"
+                data-value-repr="0.008233505301177502"
+                data-value-str="0.008233505301177502"
 
                 data-column-idx="60"
 
-                >0.00862</td>
+                >0.00823</td>
 
 
                 <td
-                id="149b6ede"
+                id="11ff4dd6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27287,16 +27287,16 @@ data-spans_\_7_\_61
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.023965317755937576"
-                data-value-str="-0.023965317755937576"
+                data-value-repr="-0.0240643210709095"
+                data-value-str="-0.0240643210709095"
 
                 data-column-idx="61"
 
-                >-0.0240</td>
+                >-0.0241</td>
 
 
                 <td
-                id="6ff781a0"
+                id="85956d87"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27317,16 +27317,16 @@ data-spans_\_7_\_62
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.031005391851067543"
-                data-value-str="-0.031005391851067543"
+                data-value-repr="-0.030422143638134003"
+                data-value-str="-0.030422143638134003"
 
                 data-column-idx="62"
 
-                >-0.0310</td>
+                >-0.0304</td>
 
 
                 <td
-                id="43b0d0bf"
+                id="ac875952"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27347,16 +27347,16 @@ data-spans_\_7_\_63
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.021005114540457726"
-                data-value-str="0.021005114540457726"
+                data-value-repr="0.015225794166326523"
+                data-value-str="0.015225794166326523"
 
                 data-column-idx="63"
 
-                >0.0210</td>
+                >0.0152</td>
 
 
                 <td
-                id="541b55bf"
+                id="6f631aad"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27386,7 +27386,7 @@ data-spans_\_7_\_64
 
 
                 <td
-                id="06748f44"
+                id="d8de366d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27420,7 +27420,7 @@ data-spans_\_7_\_65
 
 
                 <th
-                id="8ae282e6"
+                id="c42c0f7f"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -27448,7 +27448,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="c809f25a"
+                id="f8b62895"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27478,7 +27478,7 @@ data-spans_\_8_\_0
 
 
                 <td
-                id="ec903017"
+                id="e61c77c0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27508,7 +27508,7 @@ data-spans_\_8_\_1
 
 
                 <td
-                id="913507d3"
+                id="22a0393e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27538,7 +27538,7 @@ data-spans_\_8_\_2
 
 
                 <td
-                id="48c99bc5"
+                id="56d61b3d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27559,8 +27559,8 @@ data-spans_\_8_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06682466715574265"
-                data-value-str="0.06682466715574265"
+                data-value-repr="0.06682627648115158"
+                data-value-str="0.06682627648115158"
 
                 data-column-idx="3"
 
@@ -27568,7 +27568,7 @@ data-spans_\_8_\_3
 
 
                 <td
-                id="eaf7b31e"
+                id="d9e5524a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27589,8 +27589,8 @@ data-spans_\_8_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.13747908174991608"
-                data-value-str="0.13747908174991608"
+                data-value-repr="0.13748285174369812"
+                data-value-str="0.13748285174369812"
 
                 data-column-idx="4"
 
@@ -27598,7 +27598,7 @@ data-spans_\_8_\_4
 
 
                 <td
-                id="7dec162a"
+                id="8b82cc91"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27619,8 +27619,8 @@ data-spans_\_8_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.06949685513973236"
-                data-value-str="-0.06949685513973236"
+                data-value-repr="-0.06949837505817413"
+                data-value-str="-0.06949837505817413"
 
                 data-column-idx="5"
 
@@ -27628,7 +27628,7 @@ data-spans_\_8_\_5
 
 
                 <td
-                id="ec7ae927"
+                id="c1a0e5b9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27649,8 +27649,8 @@ data-spans_\_8_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.03849504888057709"
-                data-value-str="-0.03849504888057709"
+                data-value-repr="-0.038496192544698715"
+                data-value-str="-0.038496192544698715"
 
                 data-column-idx="6"
 
@@ -27658,7 +27658,7 @@ data-spans_\_8_\_6
 
 
                 <td
-                id="50093fdb"
+                id="f02f28db"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27679,8 +27679,8 @@ data-spans_\_8_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.009729702956974506"
-                data-value-str="0.009729702956974506"
+                data-value-repr="0.009728750213980675"
+                data-value-str="0.009728750213980675"
 
                 data-column-idx="7"
 
@@ -27688,7 +27688,7 @@ data-spans_\_8_\_7
 
 
                 <td
-                id="50c7bd56"
+                id="f0444b14"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27709,8 +27709,8 @@ data-spans_\_8_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.006402868311852217"
-                data-value-str="-0.006402868311852217"
+                data-value-repr="-0.0063995979726314545"
+                data-value-str="-0.0063995979726314545"
 
                 data-column-idx="8"
 
@@ -27718,7 +27718,7 @@ data-spans_\_8_\_8
 
 
                 <td
-                id="c71db159"
+                id="dd05ea67"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27739,8 +27739,8 @@ data-spans_\_8_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.01848653517663479"
-                data-value-str="0.01848653517663479"
+                data-value-repr="0.018490048125386238"
+                data-value-str="0.018490048125386238"
 
                 data-column-idx="9"
 
@@ -27748,7 +27748,7 @@ data-spans_\_8_\_9
 
 
                 <td
-                id="5a53b4ad"
+                id="78d75341"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27769,8 +27769,8 @@ data-spans_\_8_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.009347355924546719"
-                data-value-str="0.009347355924546719"
+                data-value-repr="0.009347109124064445"
+                data-value-str="0.009347109124064445"
 
                 data-column-idx="10"
 
@@ -27778,7 +27778,7 @@ data-spans_\_8_\_10
 
 
                 <td
-                id="d70a5c30"
+                id="4d122859"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27799,8 +27799,8 @@ data-spans_\_8_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05214584618806839"
-                data-value-str="-0.05214584618806839"
+                data-value-repr="-0.052134640514850616"
+                data-value-str="-0.052134640514850616"
 
                 data-column-idx="11"
 
@@ -27808,7 +27808,7 @@ data-spans_\_8_\_11
 
 
                 <td
-                id="2f77433d"
+                id="4eb73071"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27829,16 +27829,16 @@ data-spans_\_8_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0367632657289505"
-                data-value-str="0.0367632657289505"
+                data-value-repr="0.03674967959523201"
+                data-value-str="0.03674967959523201"
 
                 data-column-idx="12"
 
-                >0.0368</td>
+                >0.0367</td>
 
 
                 <td
-                id="eec2ba03"
+                id="b7689752"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27859,16 +27859,16 @@ data-spans_\_8_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0026854760944843292"
-                data-value-str="0.0026854760944843292"
+                data-value-repr="0.0026642654556781054"
+                data-value-str="0.0026642654556781054"
 
                 data-column-idx="13"
 
-                >0.00269</td>
+                >0.00266</td>
 
 
                 <td
-                id="ff3b51d8"
+                id="ff301ec4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27889,16 +27889,16 @@ data-spans_\_8_\_14
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.08478808403015137"
-                data-value-str="0.08478808403015137"
+                data-value-repr="0.08472935110330582"
+                data-value-str="0.08472935110330582"
 
                 data-column-idx="14"
 
-                >0.0848</td>
+                >0.0847</td>
 
 
                 <td
-                id="773940cc"
+                id="6ab1630c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27919,8 +27919,8 @@ data-spans_\_8_\_15
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.09967256337404251"
-                data-value-str="-0.09967256337404251"
+                data-value-repr="-0.09965643286705017"
+                data-value-str="-0.09965643286705017"
 
                 data-column-idx="15"
 
@@ -27928,7 +27928,7 @@ data-spans_\_8_\_15
 
 
                 <td
-                id="9a4d8e5f"
+                id="18361275"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27949,8 +27949,8 @@ data-spans_\_8_\_16
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.21946099400520325"
-                data-value-str="0.21946099400520325"
+                data-value-repr="0.21941719949245453"
+                data-value-str="0.21941719949245453"
 
                 data-column-idx="16"
 
@@ -27958,7 +27958,7 @@ data-spans_\_8_\_16
 
 
                 <td
-                id="dcd8043e"
+                id="fdde09c9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27979,16 +27979,16 @@ data-spans_\_8_\_17
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0579603910446167"
-                data-value-str="0.0579603910446167"
+                data-value-repr="0.05818818509578705"
+                data-value-str="0.05818818509578705"
 
                 data-column-idx="17"
 
-                >0.0580</td>
+                >0.0582</td>
 
 
                 <td
-                id="c1dc8824"
+                id="a5fb1978"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28009,16 +28009,16 @@ data-spans_\_8_\_18
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.016584452241659164"
-                data-value-str="0.016584452241659164"
+                data-value-repr="0.01685033179819584"
+                data-value-str="0.01685033179819584"
 
                 data-column-idx="18"
 
-                >0.0166</td>
+                >0.0169</td>
 
 
                 <td
-                id="45db5a64"
+                id="a9225821"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28039,16 +28039,16 @@ data-spans_\_8_\_19
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04931086674332619"
-                data-value-str="0.04931086674332619"
+                data-value-repr="0.05038253590464592"
+                data-value-str="0.05038253590464592"
 
                 data-column-idx="19"
 
-                >0.0493</td>
+                >0.0504</td>
 
 
                 <td
-                id="c8203358"
+                id="0a0063d4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28069,8 +28069,8 @@ data-spans_\_8_\_20
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.35361412167549133"
-                data-value-str="-0.35361412167549133"
+                data-value-repr="-0.35364967584609985"
+                data-value-str="-0.35364967584609985"
 
                 data-column-idx="20"
 
@@ -28078,7 +28078,7 @@ data-spans_\_8_\_20
 
 
                 <td
-                id="64e4fd8f"
+                id="98597af2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28099,16 +28099,16 @@ data-spans_\_8_\_21
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.09744508564472198"
-                data-value-str="0.09744508564472198"
+                data-value-repr="0.09624455124139786"
+                data-value-str="0.09624455124139786"
 
                 data-column-idx="21"
 
-                >0.0974</td>
+                >0.0962</td>
 
 
                 <td
-                id="8c6244b2"
+                id="484a3603"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28129,16 +28129,16 @@ data-spans_\_8_\_22
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.4083634614944458"
-                data-value-str="-0.4083634614944458"
+                data-value-repr="-0.40908390283584595"
+                data-value-str="-0.40908390283584595"
 
                 data-column-idx="22"
 
-                >-0.408</td>
+                >-0.409</td>
 
 
                 <td
-                id="77a18ea9"
+                id="7d543065"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28159,16 +28159,16 @@ data-spans_\_8_\_23
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.3422349691390991"
-                data-value-str="0.3422349691390991"
+                data-value-repr="0.34596723318099976"
+                data-value-str="0.34596723318099976"
 
                 data-column-idx="23"
 
-                >0.342</td>
+                >0.346</td>
 
 
                 <td
-                id="e47a29c7"
+                id="2480d959"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28189,16 +28189,16 @@ data-spans_\_8_\_24
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.4921933710575104"
-                data-value-str="-0.4921933710575104"
+                data-value-repr="-0.490860253572464"
+                data-value-str="-0.490860253572464"
 
                 data-column-idx="24"
 
-                >-0.492</td>
+                >-0.491</td>
 
 
                 <td
-                id="29108ab6"
+                id="aac165a2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28219,16 +28219,16 @@ data-spans_\_8_\_25
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.4034012258052826"
-                data-value-str="0.4034012258052826"
+                data-value-repr="0.4008621573448181"
+                data-value-str="0.4008621573448181"
 
                 data-column-idx="25"
 
-                >0.403</td>
+                >0.401</td>
 
 
                 <td
-                id="d59b3e01"
+                id="d70430a9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28249,16 +28249,16 @@ data-spans_\_8_\_26
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.6812421083450317"
-                data-value-str="-0.6812421083450317"
+                data-value-repr="-0.6781207919120789"
+                data-value-str="-0.6781207919120789"
 
                 data-column-idx="26"
 
-                >-0.681</td>
+                >-0.678</td>
 
 
                 <td
-                id="cbb4adac"
+                id="d9534a84"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28279,16 +28279,16 @@ data-spans_\_8_\_27
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.14693836867809296"
-                data-value-str="-0.14693836867809296"
+                data-value-repr="0.09873265773057938"
+                data-value-str="0.09873265773057938"
 
                 data-column-idx="27"
 
-                >-0.147</td>
+                >0.0987</td>
 
 
                 <td
-                id="9733c50c"
+                id="a333693f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28309,16 +28309,16 @@ data-spans_\_8_\_28
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.27413660287857056"
-                data-value-str="-0.27413660287857056"
+                data-value-repr="-0.2992563843727112"
+                data-value-str="-0.2992563843727112"
 
                 data-column-idx="28"
 
-                >-0.274</td>
+                >-0.299</td>
 
 
                 <td
-                id="f9dac7a5"
+                id="4d116461"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28339,16 +28339,16 @@ data-spans_\_8_\_29
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08188510686159134"
-                data-value-str="-0.08188510686159134"
+                data-value-repr="-0.12667131423950195"
+                data-value-str="-0.12667131423950195"
 
                 data-column-idx="29"
 
-                >-0.0819</td>
+                >-0.127</td>
 
 
                 <td
-                id="62133b1d"
+                id="ed299343"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28369,16 +28369,16 @@ data-spans_\_8_\_30
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.19087772071361542"
-                data-value-str="0.19087772071361542"
+                data-value-repr="0.1567184031009674"
+                data-value-str="0.1567184031009674"
 
                 data-column-idx="30"
 
-                >0.191</td>
+                >0.157</td>
 
 
                 <td
-                id="03b7d326"
+                id="4080a0f5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28399,16 +28399,16 @@ data-spans_\_8_\_31
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.22387190163135529"
-                data-value-str="-0.22387190163135529"
+                data-value-repr="-0.22450628876686096"
+                data-value-str="-0.22450628876686096"
 
                 data-column-idx="31"
 
-                >-0.224</td>
+                >-0.225</td>
 
 
                 <td
-                id="8ff42fe5"
+                id="15a71abb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28429,16 +28429,16 @@ data-spans_\_8_\_32
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.017241720110177994"
-                data-value-str="0.017241720110177994"
+                data-value-repr="-0.04400459676980972"
+                data-value-str="-0.04400459676980972"
 
                 data-column-idx="32"
 
-                >0.0172</td>
+                >-0.0440</td>
 
 
                 <td
-                id="be0d5eac"
+                id="63006633"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28468,7 +28468,7 @@ data-spans_\_8_\_33
 
 
                 <td
-                id="86f2f8df"
+                id="8877dea5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28489,8 +28489,8 @@ data-spans_\_8_\_34
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.20106950402259827"
-                data-value-str="0.20106950402259827"
+                data-value-repr="0.20107294619083405"
+                data-value-str="0.20107294619083405"
 
                 data-column-idx="34"
 
@@ -28498,7 +28498,7 @@ data-spans_\_8_\_34
 
 
                 <td
-                id="eb7272ca"
+                id="019e164d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28519,8 +28519,8 @@ data-spans_\_8_\_35
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.11206816136837006"
-                data-value-str="0.11206816136837006"
+                data-value-repr="0.1120719313621521"
+                data-value-str="0.1120719313621521"
 
                 data-column-idx="35"
 
@@ -28528,7 +28528,7 @@ data-spans_\_8_\_35
 
 
                 <td
-                id="b769fbcb"
+                id="faf6d6a1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28549,8 +28549,8 @@ data-spans_\_8_\_36
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03142484277486801"
-                data-value-str="0.03142484277486801"
+                data-value-repr="0.03142806142568588"
+                data-value-str="0.03142806142568588"
 
                 data-column-idx="36"
 
@@ -28558,7 +28558,7 @@ data-spans_\_8_\_36
 
 
                 <td
-                id="665c0709"
+                id="5a52978f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28579,8 +28579,8 @@ data-spans_\_8_\_37
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.8808019757270813"
-                data-value-str="0.8808019757270813"
+                data-value-repr="0.8808232545852661"
+                data-value-str="0.8808232545852661"
 
                 data-column-idx="37"
 
@@ -28588,7 +28588,7 @@ data-spans_\_8_\_37
 
 
                 <td
-                id="0ab6fead"
+                id="cf07040b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28609,8 +28609,8 @@ data-spans_\_8_\_38
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.6105449199676514"
-                data-value-str="-0.6105449199676514"
+                data-value-repr="-0.6105638742446899"
+                data-value-str="-0.6105638742446899"
 
                 data-column-idx="38"
 
@@ -28618,7 +28618,7 @@ data-spans_\_8_\_38
 
 
                 <td
-                id="be04bdc0"
+                id="95624e63"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28639,8 +28639,8 @@ data-spans_\_8_\_39
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.11735087633132935"
-                data-value-str="0.11735087633132935"
+                data-value-repr="0.1173543632030487"
+                data-value-str="0.1173543632030487"
 
                 data-column-idx="39"
 
@@ -28648,7 +28648,7 @@ data-spans_\_8_\_39
 
 
                 <td
-                id="1a193690"
+                id="96921944"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28669,8 +28669,8 @@ data-spans_\_8_\_40
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.09927115589380264"
-                data-value-str="0.09927115589380264"
+                data-value-repr="0.0992751494050026"
+                data-value-str="0.0992751494050026"
 
                 data-column-idx="40"
 
@@ -28678,7 +28678,7 @@ data-spans_\_8_\_40
 
 
                 <td
-                id="01ead661"
+                id="976ea4ee"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28699,8 +28699,8 @@ data-spans_\_8_\_41
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.09866995364427567"
-                data-value-str="-0.09866995364427567"
+                data-value-repr="-0.09867307543754578"
+                data-value-str="-0.09867307543754578"
 
                 data-column-idx="41"
 
@@ -28708,7 +28708,7 @@ data-spans_\_8_\_41
 
 
                 <td
-                id="a22737c2"
+                id="85fad6ac"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28729,8 +28729,8 @@ data-spans_\_8_\_42
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.09276054054498672"
-                data-value-str="0.09276054054498672"
+                data-value-repr="0.09276720881462097"
+                data-value-str="0.09276720881462097"
 
                 data-column-idx="42"
 
@@ -28738,7 +28738,7 @@ data-spans_\_8_\_42
 
 
                 <td
-                id="9033662c"
+                id="bafcabd7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28759,8 +28759,8 @@ data-spans_\_8_\_43
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05666975677013397"
-                data-value-str="-0.05666975677013397"
+                data-value-repr="-0.056670159101486206"
+                data-value-str="-0.056670159101486206"
 
                 data-column-idx="43"
 
@@ -28768,7 +28768,7 @@ data-spans_\_8_\_43
 
 
                 <td
-                id="4dea4f02"
+                id="26c30114"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28789,8 +28789,8 @@ data-spans_\_8_\_44
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.05434326082468033"
-                data-value-str="0.05434326082468033"
+                data-value-repr="0.05434397980570793"
+                data-value-str="0.05434397980570793"
 
                 data-column-idx="44"
 
@@ -28798,7 +28798,7 @@ data-spans_\_8_\_44
 
 
                 <td
-                id="505fedb0"
+                id="8ffbfa7d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28819,8 +28819,8 @@ data-spans_\_8_\_45
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05083100497722626"
-                data-value-str="-0.05083100497722626"
+                data-value-repr="-0.05083632841706276"
+                data-value-str="-0.05083632841706276"
 
                 data-column-idx="45"
 
@@ -28828,7 +28828,7 @@ data-spans_\_8_\_45
 
 
                 <td
-                id="c69c09a8"
+                id="5e80b5dc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28849,8 +28849,8 @@ data-spans_\_8_\_46
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0905645415186882"
-                data-value-str="-0.0905645415186882"
+                data-value-repr="-0.09056185185909271"
+                data-value-str="-0.09056185185909271"
 
                 data-column-idx="46"
 
@@ -28858,7 +28858,7 @@ data-spans_\_8_\_46
 
 
                 <td
-                id="782940de"
+                id="81e12c21"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28879,8 +28879,8 @@ data-spans_\_8_\_47
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03228168562054634"
-                data-value-str="0.03228168562054634"
+                data-value-repr="0.032278988510370255"
+                data-value-str="0.032278988510370255"
 
                 data-column-idx="47"
 
@@ -28888,7 +28888,7 @@ data-spans_\_8_\_47
 
 
                 <td
-                id="23ab6f28"
+                id="1e77415e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28909,8 +28909,8 @@ data-spans_\_8_\_48
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1020127609372139"
-                data-value-str="-0.1020127609372139"
+                data-value-repr="-0.10202138125896454"
+                data-value-str="-0.10202138125896454"
 
                 data-column-idx="48"
 
@@ -28918,7 +28918,7 @@ data-spans_\_8_\_48
 
 
                 <td
-                id="98750d3f"
+                id="904c2a41"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28939,8 +28939,8 @@ data-spans_\_8_\_49
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.03451855108141899"
-                data-value-str="-0.03451855108141899"
+                data-value-repr="-0.03451121225953102"
+                data-value-str="-0.03451121225953102"
 
                 data-column-idx="49"
 
@@ -28948,7 +28948,7 @@ data-spans_\_8_\_49
 
 
                 <td
-                id="2d2675a0"
+                id="665d225a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28969,8 +28969,8 @@ data-spans_\_8_\_50
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.037567950785160065"
-                data-value-str="-0.037567950785160065"
+                data-value-repr="-0.037631575018167496"
+                data-value-str="-0.037631575018167496"
 
                 data-column-idx="50"
 
@@ -28978,7 +28978,7 @@ data-spans_\_8_\_50
 
 
                 <td
-                id="9dffd396"
+                id="0f6b51e2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -28999,16 +28999,16 @@ data-spans_\_8_\_51
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.037275753915309906"
-                data-value-str="-0.037275753915309906"
+                data-value-repr="-0.03735704720020294"
+                data-value-str="-0.03735704720020294"
 
                 data-column-idx="51"
 
-                >-0.0373</td>
+                >-0.0374</td>
 
 
                 <td
-                id="f6d62607"
+                id="9165507f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29029,8 +29029,8 @@ data-spans_\_8_\_52
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0342276506125927"
-                data-value-str="-0.0342276506125927"
+                data-value-repr="-0.034203384071588516"
+                data-value-str="-0.034203384071588516"
 
                 data-column-idx="52"
 
@@ -29038,7 +29038,7 @@ data-spans_\_8_\_52
 
 
                 <td
-                id="67561b0d"
+                id="b0115263"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29059,8 +29059,8 @@ data-spans_\_8_\_53
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0781056210398674"
-                data-value-str="-0.0781056210398674"
+                data-value-repr="-0.07810258120298386"
+                data-value-str="-0.07810258120298386"
 
                 data-column-idx="53"
 
@@ -29068,7 +29068,7 @@ data-spans_\_8_\_53
 
 
                 <td
-                id="49587621"
+                id="f9005d11"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29089,16 +29089,16 @@ data-spans_\_8_\_54
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.057349901646375656"
-                data-value-str="0.057349901646375656"
+                data-value-repr="0.0571322925388813"
+                data-value-str="0.0571322925388813"
 
                 data-column-idx="54"
 
-                >0.0573</td>
+                >0.0571</td>
 
 
                 <td
-                id="e4cf0109"
+                id="e2b746b6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29119,16 +29119,16 @@ data-spans_\_8_\_55
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03918115422129631"
-                data-value-str="0.03918115422129631"
+                data-value-repr="0.03868168592453003"
+                data-value-str="0.03868168592453003"
 
                 data-column-idx="55"
 
-                >0.0392</td>
+                >0.0387</td>
 
 
                 <td
-                id="6c93edf4"
+                id="2e32ae65"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29149,16 +29149,16 @@ data-spans_\_8_\_56
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.041402418166399"
-                data-value-str="-0.041402418166399"
+                data-value-repr="-0.04117308557033539"
+                data-value-str="-0.04117308557033539"
 
                 data-column-idx="56"
 
-                >-0.0414</td>
+                >-0.0412</td>
 
 
                 <td
-                id="fc4c3148"
+                id="23a17c4f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29179,16 +29179,16 @@ data-spans_\_8_\_57
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.026019049808382988"
-                data-value-str="0.026019049808382988"
+                data-value-repr="0.0254298634827137"
+                data-value-str="0.0254298634827137"
 
                 data-column-idx="57"
 
-                >0.0260</td>
+                >0.0254</td>
 
 
                 <td
-                id="fb5918af"
+                id="142193a6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29209,16 +29209,16 @@ data-spans_\_8_\_58
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0041090743616223335"
-                data-value-str="0.0041090743616223335"
+                data-value-repr="0.004001185297966003"
+                data-value-str="0.004001185297966003"
 
                 data-column-idx="58"
 
-                >0.00411</td>
+                >0.00400</td>
 
 
                 <td
-                id="98ef48d5"
+                id="08a86cfe"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29239,16 +29239,16 @@ data-spans_\_8_\_59
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04910555109381676"
-                data-value-str="0.04910555109381676"
+                data-value-repr="0.04935571178793907"
+                data-value-str="0.04935571178793907"
 
                 data-column-idx="59"
 
-                >0.0491</td>
+                >0.0494</td>
 
 
                 <td
-                id="43b4fd0c"
+                id="9cff0bf9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29269,16 +29269,16 @@ data-spans_\_8_\_60
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.07164201140403748"
-                data-value-str="0.07164201140403748"
+                data-value-repr="0.07207543402910233"
+                data-value-str="0.07207543402910233"
 
                 data-column-idx="60"
 
-                >0.0716</td>
+                >0.0721</td>
 
 
                 <td
-                id="0067f785"
+                id="1f239394"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29299,16 +29299,16 @@ data-spans_\_8_\_61
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02156754583120346"
-                data-value-str="-0.02156754583120346"
+                data-value-repr="-0.020085403695702553"
+                data-value-str="-0.020085403695702553"
 
                 data-column-idx="61"
 
-                >-0.0216</td>
+                >-0.0201</td>
 
 
                 <td
-                id="26213260"
+                id="ffe7c583"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29329,16 +29329,16 @@ data-spans_\_8_\_62
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02364160865545273"
-                data-value-str="-0.02364160865545273"
+                data-value-repr="-0.024436037987470627"
+                data-value-str="-0.024436037987470627"
 
                 data-column-idx="62"
 
-                >-0.0236</td>
+                >-0.0244</td>
 
 
                 <td
-                id="5d9cb2ef"
+                id="3acd3d95"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29359,16 +29359,16 @@ data-spans_\_8_\_63
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.06740111112594604"
-                data-value-str="-0.06740111112594604"
+                data-value-repr="-0.0681796744465828"
+                data-value-str="-0.0681796744465828"
 
                 data-column-idx="63"
 
-                >-0.0674</td>
+                >-0.0682</td>
 
 
                 <td
-                id="0e2ae206"
+                id="a8665457"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29398,7 +29398,7 @@ data-spans_\_8_\_64
 
 
                 <td
-                id="510f4622"
+                id="35105f1e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29432,7 +29432,7 @@ data-spans_\_8_\_65
 
 
                 <th
-                id="e4653420"
+                id="dcfd681b"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -29460,7 +29460,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="e6feac97"
+                id="3a033d41"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29490,7 +29490,7 @@ data-spans_\_9_\_0
 
 
                 <td
-                id="6ebb5ba8"
+                id="2472213e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29520,7 +29520,7 @@ data-spans_\_9_\_1
 
 
                 <td
-                id="6fcbbc83"
+                id="b863d4e2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29550,7 +29550,7 @@ data-spans_\_9_\_2
 
 
                 <td
-                id="6ea6e184"
+                id="00bb6d64"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29571,8 +29571,8 @@ data-spans_\_9_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.12248280644416809"
-                data-value-str="0.12248280644416809"
+                data-value-repr="0.12248554080724716"
+                data-value-str="0.12248554080724716"
 
                 data-column-idx="3"
 
@@ -29580,7 +29580,7 @@ data-spans_\_9_\_3
 
 
                 <td
-                id="aea9ba23"
+                id="415d4225"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29601,8 +29601,8 @@ data-spans_\_9_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.2316831350326538"
-                data-value-str="0.2316831350326538"
+                data-value-repr="0.23168933391571045"
+                data-value-str="0.23168933391571045"
 
                 data-column-idx="4"
 
@@ -29610,7 +29610,7 @@ data-spans_\_9_\_4
 
 
                 <td
-                id="8b0784c0"
+                id="5ce0c5f4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29631,8 +29631,8 @@ data-spans_\_9_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.10533973574638367"
-                data-value-str="-0.10533973574638367"
+                data-value-repr="-0.10534200817346573"
+                data-value-str="-0.10534200817346573"
 
                 data-column-idx="5"
 
@@ -29640,7 +29640,7 @@ data-spans_\_9_\_5
 
 
                 <td
-                id="d8e6fe08"
+                id="49513ce5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29661,8 +29661,8 @@ data-spans_\_9_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08278615027666092"
-                data-value-str="-0.08278615027666092"
+                data-value-repr="-0.08278850466012955"
+                data-value-str="-0.08278850466012955"
 
                 data-column-idx="6"
 
@@ -29670,7 +29670,7 @@ data-spans_\_9_\_6
 
 
                 <td
-                id="d29b6bbc"
+                id="f791713c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29691,8 +29691,8 @@ data-spans_\_9_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.09258723258972168"
-                data-value-str="-0.09258723258972168"
+                data-value-repr="-0.09258852154016495"
+                data-value-str="-0.09258852154016495"
 
                 data-column-idx="7"
 
@@ -29700,7 +29700,7 @@ data-spans_\_9_\_7
 
 
                 <td
-                id="0948a0bd"
+                id="b64ae15c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29721,8 +29721,8 @@ data-spans_\_9_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.03806523233652115"
-                data-value-str="-0.03806523233652115"
+                data-value-repr="-0.038067206740379333"
+                data-value-str="-0.038067206740379333"
 
                 data-column-idx="8"
 
@@ -29730,7 +29730,7 @@ data-spans_\_9_\_8
 
 
                 <td
-                id="d7024257"
+                id="0c708e85"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29751,8 +29751,8 @@ data-spans_\_9_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.044967714697122574"
-                data-value-str="-0.044967714697122574"
+                data-value-repr="-0.04497396945953369"
+                data-value-str="-0.04497396945953369"
 
                 data-column-idx="9"
 
@@ -29760,7 +29760,7 @@ data-spans_\_9_\_9
 
 
                 <td
-                id="eda27f14"
+                id="e17eba04"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29781,16 +29781,16 @@ data-spans_\_9_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.004042207263410091"
-                data-value-str="-0.004042207263410091"
+                data-value-repr="-0.004084078595042229"
+                data-value-str="-0.004084078595042229"
 
                 data-column-idx="10"
 
-                >-0.00404</td>
+                >-0.00408</td>
 
 
                 <td
-                id="a38fd942"
+                id="c1331cba"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29811,8 +29811,8 @@ data-spans_\_9_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.018992740660905838"
-                data-value-str="0.018992740660905838"
+                data-value-repr="0.0189975518733263"
+                data-value-str="0.0189975518733263"
 
                 data-column-idx="11"
 
@@ -29820,7 +29820,7 @@ data-spans_\_9_\_11
 
 
                 <td
-                id="92b9868c"
+                id="63b5cb9a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29841,8 +29841,8 @@ data-spans_\_9_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.015408695675432682"
-                data-value-str="0.015408695675432682"
+                data-value-repr="0.015416743233799934"
+                data-value-str="0.015416743233799934"
 
                 data-column-idx="12"
 
@@ -29850,7 +29850,7 @@ data-spans_\_9_\_12
 
 
                 <td
-                id="073fee5e"
+                id="234e61dd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29871,16 +29871,16 @@ data-spans_\_9_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.006197077222168446"
-                data-value-str="0.006197077222168446"
+                data-value-repr="0.006240693386644125"
+                data-value-str="0.006240693386644125"
 
                 data-column-idx="13"
 
-                >0.00620</td>
+                >0.00624</td>
 
 
                 <td
-                id="d692ca67"
+                id="270f75f2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29901,8 +29901,8 @@ data-spans_\_9_\_14
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.11584250628948212"
-                data-value-str="0.11584250628948212"
+                data-value-repr="0.11582593619823456"
+                data-value-str="0.11582593619823456"
 
                 data-column-idx="14"
 
@@ -29910,7 +29910,7 @@ data-spans_\_9_\_14
 
 
                 <td
-                id="4930f0e3"
+                id="775636ff"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29931,16 +29931,16 @@ data-spans_\_9_\_15
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.01281976792961359"
-                data-value-str="0.01281976792961359"
+                data-value-repr="0.013016524724662304"
+                data-value-str="0.013016524724662304"
 
                 data-column-idx="15"
 
-                >0.0128</td>
+                >0.0130</td>
 
 
                 <td
-                id="0f7eef48"
+                id="383a5e6d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29961,8 +29961,8 @@ data-spans_\_9_\_16
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.10236522555351257"
-                data-value-str="0.10236522555351257"
+                data-value-repr="0.10195682942867279"
+                data-value-str="0.10195682942867279"
 
                 data-column-idx="16"
 
@@ -29970,7 +29970,7 @@ data-spans_\_9_\_16
 
 
                 <td
-                id="199216cd"
+                id="14ba1044"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -29991,16 +29991,16 @@ data-spans_\_9_\_17
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06293955445289612"
-                data-value-str="0.06293955445289612"
+                data-value-repr="0.06328701227903366"
+                data-value-str="0.06328701227903366"
 
                 data-column-idx="17"
 
-                >0.0629</td>
+                >0.0633</td>
 
 
                 <td
-                id="4eb56c66"
+                id="1e5d9c61"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30021,16 +30021,16 @@ data-spans_\_9_\_18
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.10751909762620926"
-                data-value-str="0.10751909762620926"
+                data-value-repr="0.10634773224592209"
+                data-value-str="0.10634773224592209"
 
                 data-column-idx="18"
 
-                >0.108</td>
+                >0.106</td>
 
 
                 <td
-                id="7e17ada9"
+                id="441449e0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30051,16 +30051,16 @@ data-spans_\_9_\_19
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03937730938196182"
-                data-value-str="0.03937730938196182"
+                data-value-repr="0.03683280199766159"
+                data-value-str="0.03683280199766159"
 
                 data-column-idx="19"
 
-                >0.0394</td>
+                >0.0368</td>
 
 
                 <td
-                id="5051f619"
+                id="1736999a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30081,16 +30081,16 @@ data-spans_\_9_\_20
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0590863972902298"
-                data-value-str="-0.0590863972902298"
+                data-value-repr="-0.059655629098415375"
+                data-value-str="-0.059655629098415375"
 
                 data-column-idx="20"
 
-                >-0.0591</td>
+                >-0.0597</td>
 
 
                 <td
-                id="a4f11d3d"
+                id="237240cb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30111,16 +30111,16 @@ data-spans_\_9_\_21
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.020581630989909172"
-                data-value-str="-0.020581630989909172"
+                data-value-repr="-0.0199880413711071"
+                data-value-str="-0.0199880413711071"
 
                 data-column-idx="21"
 
-                >-0.0206</td>
+                >-0.0200</td>
 
 
                 <td
-                id="6f8d9430"
+                id="9c9f547e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30141,16 +30141,16 @@ data-spans_\_9_\_22
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.05428895354270935"
-                data-value-str="0.05428895354270935"
+                data-value-repr="0.05073867738246918"
+                data-value-str="0.05073867738246918"
 
                 data-column-idx="22"
 
-                >0.0543</td>
+                >0.0507</td>
 
 
                 <td
-                id="603f2a02"
+                id="75e0ea2c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30171,16 +30171,16 @@ data-spans_\_9_\_23
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.06802099943161011"
-                data-value-str="-0.06802099943161011"
+                data-value-repr="-0.06702228635549545"
+                data-value-str="-0.06702228635549545"
 
                 data-column-idx="23"
 
-                >-0.0680</td>
+                >-0.0670</td>
 
 
                 <td
-                id="b87963b7"
+                id="2efe64bb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30201,16 +30201,16 @@ data-spans_\_9_\_24
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.011800874955952168"
-                data-value-str="-0.011800874955952168"
+                data-value-repr="-0.009191915392875671"
+                data-value-str="-0.009191915392875671"
 
                 data-column-idx="24"
 
-                >-0.0118</td>
+                >-0.00919</td>
 
 
                 <td
-                id="98b6e7ad"
+                id="a52a7425"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30231,16 +30231,16 @@ data-spans_\_9_\_25
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.09271448105573654"
-                data-value-str="0.09271448105573654"
+                data-value-repr="0.09915575385093689"
+                data-value-str="0.09915575385093689"
 
                 data-column-idx="25"
 
-                >0.0927</td>
+                >0.0992</td>
 
 
                 <td
-                id="22de0312"
+                id="1a5c93c4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30261,16 +30261,16 @@ data-spans_\_9_\_26
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0492231585085392"
-                data-value-str="0.0492231585085392"
+                data-value-repr="0.048821140080690384"
+                data-value-str="0.048821140080690384"
 
                 data-column-idx="26"
 
-                >0.0492</td>
+                >0.0488</td>
 
 
                 <td
-                id="06dfb82b"
+                id="04b02425"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30291,16 +30291,16 @@ data-spans_\_9_\_27
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.014256591908633709"
-                data-value-str="0.014256591908633709"
+                data-value-repr="-0.0010999938240274787"
+                data-value-str="-0.0010999938240274787"
 
                 data-column-idx="27"
 
-                >0.0143</td>
+                >-0.00110</td>
 
 
                 <td
-                id="5aa5b4c3"
+                id="4ae4c761"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30321,16 +30321,16 @@ data-spans_\_9_\_28
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06359086185693741"
-                data-value-str="0.06359086185693741"
+                data-value-repr="0.05222579464316368"
+                data-value-str="0.05222579464316368"
 
                 data-column-idx="28"
 
-                >0.0636</td>
+                >0.0522</td>
 
 
                 <td
-                id="dd3e9318"
+                id="f34076c5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30351,16 +30351,16 @@ data-spans_\_9_\_29
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.01003914512693882"
-                data-value-str="-0.01003914512693882"
+                data-value-repr="-0.02108408324420452"
+                data-value-str="-0.02108408324420452"
 
                 data-column-idx="29"
 
-                >-0.0100</td>
+                >-0.0211</td>
 
 
                 <td
-                id="21a2390d"
+                id="37239c0a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30381,16 +30381,16 @@ data-spans_\_9_\_30
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06709793210029602"
-                data-value-str="0.06709793210029602"
+                data-value-repr="0.014893868938088417"
+                data-value-str="0.014893868938088417"
 
                 data-column-idx="30"
 
-                >0.0671</td>
+                >0.0149</td>
 
 
                 <td
-                id="c316f841"
+                id="cf60b9d7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30411,16 +30411,16 @@ data-spans_\_9_\_31
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.05353991687297821"
-                data-value-str="0.05353991687297821"
+                data-value-repr="0.04163370281457901"
+                data-value-str="0.04163370281457901"
 
                 data-column-idx="31"
 
-                >0.0535</td>
+                >0.0416</td>
 
 
                 <td
-                id="da801cee"
+                id="fa00a335"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30441,16 +30441,16 @@ data-spans_\_9_\_32
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0937347412109375"
-                data-value-str="-0.0937347412109375"
+                data-value-repr="0.014055992476642132"
+                data-value-str="0.014055992476642132"
 
                 data-column-idx="32"
 
-                >-0.0937</td>
+                >0.0141</td>
 
 
                 <td
-                id="e42a15b2"
+                id="c8ffef17"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30480,7 +30480,7 @@ data-spans_\_9_\_33
 
 
                 <td
-                id="1613c663"
+                id="84f7be1b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30501,8 +30501,8 @@ data-spans_\_9_\_34
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03390554338693619"
-                data-value-str="0.03390554338693619"
+                data-value-repr="0.033906564116477966"
+                data-value-str="0.033906564116477966"
 
                 data-column-idx="34"
 
@@ -30510,7 +30510,7 @@ data-spans_\_9_\_34
 
 
                 <td
-                id="5aa08faf"
+                id="eb94d44f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30531,8 +30531,8 @@ data-spans_\_9_\_35
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.010536742396652699"
-                data-value-str="0.010536742396652699"
+                data-value-repr="0.010536953806877136"
+                data-value-str="0.010536953806877136"
 
                 data-column-idx="35"
 
@@ -30540,7 +30540,7 @@ data-spans_\_9_\_35
 
 
                 <td
-                id="b583f493"
+                id="7eadb1f1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30561,8 +30561,8 @@ data-spans_\_9_\_36
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.029030943289399147"
-                data-value-str="0.029030943289399147"
+                data-value-repr="0.02903245948255062"
+                data-value-str="0.02903245948255062"
 
                 data-column-idx="36"
 
@@ -30570,7 +30570,7 @@ data-spans_\_9_\_36
 
 
                 <td
-                id="145d1ec3"
+                id="5db595ab"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30591,8 +30591,8 @@ data-spans_\_9_\_37
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.13731609284877777"
-                data-value-str="0.13731609284877777"
+                data-value-repr="0.13732029497623444"
+                data-value-str="0.13732029497623444"
 
                 data-column-idx="37"
 
@@ -30600,7 +30600,7 @@ data-spans_\_9_\_37
 
 
                 <td
-                id="51f52672"
+                id="d3197aac"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30621,8 +30621,8 @@ data-spans_\_9_\_38
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.229572594165802"
-                data-value-str="0.229572594165802"
+                data-value-repr="0.2295779287815094"
+                data-value-str="0.2295779287815094"
 
                 data-column-idx="38"
 
@@ -30630,7 +30630,7 @@ data-spans_\_9_\_38
 
 
                 <td
-                id="52f08879"
+                id="39878e7d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30651,8 +30651,8 @@ data-spans_\_9_\_39
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.019878413528203964"
-                data-value-str="-0.019878413528203964"
+                data-value-repr="-0.019877778366208076"
+                data-value-str="-0.019877778366208076"
 
                 data-column-idx="39"
 
@@ -30660,7 +30660,7 @@ data-spans_\_9_\_39
 
 
                 <td
-                id="2167cb94"
+                id="02325b96"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30681,8 +30681,8 @@ data-spans_\_9_\_40
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.002931752009317279"
-                data-value-str="-0.002931752009317279"
+                data-value-repr="-0.0029346649535000324"
+                data-value-str="-0.0029346649535000324"
 
                 data-column-idx="40"
 
@@ -30690,7 +30690,7 @@ data-spans_\_9_\_40
 
 
                 <td
-                id="7916afb3"
+                id="88db6b82"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30711,8 +30711,8 @@ data-spans_\_9_\_41
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0603189580142498"
-                data-value-str="-0.0603189580142498"
+                data-value-repr="-0.06031523644924164"
+                data-value-str="-0.06031523644924164"
 
                 data-column-idx="41"
 
@@ -30720,7 +30720,7 @@ data-spans_\_9_\_41
 
 
                 <td
-                id="d0df57f2"
+                id="3db73d48"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30741,8 +30741,8 @@ data-spans_\_9_\_42
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.014832892455160618"
-                data-value-str="-0.014832892455160618"
+                data-value-repr="-0.01483223121613264"
+                data-value-str="-0.01483223121613264"
 
                 data-column-idx="42"
 
@@ -30750,7 +30750,7 @@ data-spans_\_9_\_42
 
 
                 <td
-                id="1029b262"
+                id="f380f80a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30771,8 +30771,8 @@ data-spans_\_9_\_43
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.025119652971625328"
-                data-value-str="0.025119652971625328"
+                data-value-repr="0.025130778551101685"
+                data-value-str="0.025130778551101685"
 
                 data-column-idx="43"
 
@@ -30780,7 +30780,7 @@ data-spans_\_9_\_43
 
 
                 <td
-                id="6ea8b502"
+                id="181cb0cd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30801,8 +30801,8 @@ data-spans_\_9_\_44
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.019307374954223633"
-                data-value-str="0.019307374954223633"
+                data-value-repr="0.019304558634757996"
+                data-value-str="0.019304558634757996"
 
                 data-column-idx="44"
 
@@ -30810,7 +30810,7 @@ data-spans_\_9_\_44
 
 
                 <td
-                id="7e1fd926"
+                id="fdf9f878"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30831,8 +30831,8 @@ data-spans_\_9_\_45
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.07323382049798965"
-                data-value-str="-0.07323382049798965"
+                data-value-repr="-0.07323509454727173"
+                data-value-str="-0.07323509454727173"
 
                 data-column-idx="45"
 
@@ -30840,7 +30840,7 @@ data-spans_\_9_\_45
 
 
                 <td
-                id="40a8924a"
+                id="5774cb9e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30861,16 +30861,16 @@ data-spans_\_9_\_46
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0026222846936434507"
-                data-value-str="-0.0026222846936434507"
+                data-value-repr="-0.002634623320773244"
+                data-value-str="-0.002634623320773244"
 
                 data-column-idx="46"
 
-                >-0.00262</td>
+                >-0.00263</td>
 
 
                 <td
-                id="d983fb4e"
+                id="25b5bac8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30891,8 +30891,8 @@ data-spans_\_9_\_47
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.09579198062419891"
-                data-value-str="0.09579198062419891"
+                data-value-repr="0.09582748264074326"
+                data-value-str="0.09582748264074326"
 
                 data-column-idx="47"
 
@@ -30900,7 +30900,7 @@ data-spans_\_9_\_47
 
 
                 <td
-                id="a0980220"
+                id="c7d2f96c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30921,8 +30921,8 @@ data-spans_\_9_\_48
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.12927143275737762"
-                data-value-str="-0.12927143275737762"
+                data-value-repr="-0.12922880053520203"
+                data-value-str="-0.12922880053520203"
 
                 data-column-idx="48"
 
@@ -30930,7 +30930,7 @@ data-spans_\_9_\_48
 
 
                 <td
-                id="2a5ef75c"
+                id="36c391ea"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30951,8 +30951,8 @@ data-spans_\_9_\_49
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.009133764542639256"
-                data-value-str="-0.009133764542639256"
+                data-value-repr="-0.009128988720476627"
+                data-value-str="-0.009128988720476627"
 
                 data-column-idx="49"
 
@@ -30960,7 +30960,7 @@ data-spans_\_9_\_49
 
 
                 <td
-                id="0bb873d9"
+                id="f3ad401d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -30981,16 +30981,16 @@ data-spans_\_9_\_50
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.017927095293998718"
-                data-value-str="-0.017927095293998718"
+                data-value-repr="-0.018149062991142273"
+                data-value-str="-0.018149062991142273"
 
                 data-column-idx="50"
 
-                >-0.0179</td>
+                >-0.0181</td>
 
 
                 <td
-                id="3b9da552"
+                id="83e1bbd7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31011,8 +31011,8 @@ data-spans_\_9_\_51
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.24170657992362976"
-                data-value-str="0.24170657992362976"
+                data-value-repr="0.2415393888950348"
+                data-value-str="0.2415393888950348"
 
                 data-column-idx="51"
 
@@ -31020,7 +31020,7 @@ data-spans_\_9_\_51
 
 
                 <td
-                id="374197f3"
+                id="95b6b33c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31041,16 +31041,16 @@ data-spans_\_9_\_52
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.029482195153832436"
-                data-value-str="-0.029482195153832436"
+                data-value-repr="-0.02943740412592888"
+                data-value-str="-0.02943740412592888"
 
                 data-column-idx="52"
 
-                >-0.0295</td>
+                >-0.0294</td>
 
 
                 <td
-                id="509f880b"
+                id="ae54457c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31071,16 +31071,16 @@ data-spans_\_9_\_53
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.018108531832695007"
-                data-value-str="0.018108531832695007"
+                data-value-repr="0.017838450148701668"
+                data-value-str="0.017838450148701668"
 
                 data-column-idx="53"
 
-                >0.0181</td>
+                >0.0178</td>
 
 
                 <td
-                id="4f617999"
+                id="d5d913e3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31101,16 +31101,16 @@ data-spans_\_9_\_54
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.02770562469959259"
-                data-value-str="-0.02770562469959259"
+                data-value-repr="-0.027853675186634064"
+                data-value-str="-0.027853675186634064"
 
                 data-column-idx="54"
 
-                >-0.0277</td>
+                >-0.0279</td>
 
 
                 <td
-                id="142a595c"
+                id="5d0e5983"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31131,16 +31131,16 @@ data-spans_\_9_\_55
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05107222869992256"
-                data-value-str="-0.05107222869992256"
+                data-value-repr="-0.05085133761167526"
+                data-value-str="-0.05085133761167526"
 
                 data-column-idx="55"
 
-                >-0.0511</td>
+                >-0.0509</td>
 
 
                 <td
-                id="dc56f71b"
+                id="d0a81b46"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31161,16 +31161,16 @@ data-spans_\_9_\_56
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11221589893102646"
-                data-value-str="-0.11221589893102646"
+                data-value-repr="-0.11269408464431763"
+                data-value-str="-0.11269408464431763"
 
                 data-column-idx="56"
 
-                >-0.112</td>
+                >-0.113</td>
 
 
                 <td
-                id="82c38a29"
+                id="b02f844b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31191,16 +31191,16 @@ data-spans_\_9_\_57
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.009824014268815517"
-                data-value-str="-0.009824014268815517"
+                data-value-repr="-0.009158563800156116"
+                data-value-str="-0.009158563800156116"
 
                 data-column-idx="57"
 
-                >-0.00982</td>
+                >-0.00916</td>
 
 
                 <td
-                id="37fed991"
+                id="13ec4f97"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31221,16 +31221,16 @@ data-spans_\_9_\_58
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.004599893931299448"
-                data-value-str="0.004599893931299448"
+                data-value-repr="0.004972994793206453"
+                data-value-str="0.004972994793206453"
 
                 data-column-idx="58"
 
-                >0.00460</td>
+                >0.00497</td>
 
 
                 <td
-                id="c3890d69"
+                id="fdd45932"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31251,16 +31251,16 @@ data-spans_\_9_\_59
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0327276773750782"
-                data-value-str="0.0327276773750782"
+                data-value-repr="0.033200573176145554"
+                data-value-str="0.033200573176145554"
 
                 data-column-idx="59"
 
-                >0.0327</td>
+                >0.0332</td>
 
 
                 <td
-                id="9f6c869a"
+                id="776cdbb3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31281,16 +31281,16 @@ data-spans_\_9_\_60
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03390716388821602"
-                data-value-str="0.03390716388821602"
+                data-value-repr="0.03287801146507263"
+                data-value-str="0.03287801146507263"
 
                 data-column-idx="60"
 
-                >0.0339</td>
+                >0.0329</td>
 
 
                 <td
-                id="65c2dd88"
+                id="94fb2a1c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31311,16 +31311,16 @@ data-spans_\_9_\_61
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.05840606987476349"
-                data-value-str="-0.05840606987476349"
+                data-value-repr="-0.055695246905088425"
+                data-value-str="-0.055695246905088425"
 
                 data-column-idx="61"
 
-                >-0.0584</td>
+                >-0.0557</td>
 
 
                 <td
-                id="b76938c9"
+                id="dd130acb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31341,16 +31341,16 @@ data-spans_\_9_\_62
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0532979741692543"
-                data-value-str="-0.0532979741692543"
+                data-value-repr="-0.05260193720459938"
+                data-value-str="-0.05260193720459938"
 
                 data-column-idx="62"
 
-                >-0.0533</td>
+                >-0.0526</td>
 
 
                 <td
-                id="9be2fa10"
+                id="61db127e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31371,16 +31371,16 @@ data-spans_\_9_\_63
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.026599982753396034"
-                data-value-str="0.026599982753396034"
+                data-value-repr="0.020203890278935432"
+                data-value-str="0.020203890278935432"
 
                 data-column-idx="63"
 
-                >0.0266</td>
+                >0.0202</td>
 
 
                 <td
-                id="d9d55c92"
+                id="e641f6f9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31410,7 +31410,7 @@ data-spans_\_9_\_64
 
 
                 <td
-                id="c7746b60"
+                id="011c4b69"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -31692,7 +31692,7 @@ data-spans_\_9_\_65
 
                 <dt>Unique values</dt>
                 <dd>
-                    685 (7.4%)
+                    687 (7.4%)
 
                     <span class="toggletip-wrapper">
                         <div class="toggletip" data-manager="Toggletip">
@@ -31862,7 +31862,7 @@ data-spans_\_9_\_65
 
                 <dt>Unique values</dt>
                 <dd>
-                    687 (7.4%)
+                    685 (7.4%)
 
                     <span class="toggletip-wrapper">
                         <div class="toggletip" data-manager="Toggletip">
@@ -31951,7 +31951,7 @@ data-spans_\_9_\_65
 
                 <dt>Unique values</dt>
                 <dd>
-                    685 (7.4%)
+                    686 (7.4%)
 
                     <span class="toggletip-wrapper">
                         <div class="toggletip" data-manager="Toggletip">
@@ -32236,7 +32236,7 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00443 ±
+                <dd>-0.00442 ±
                     0.110
 
                 </dd>
@@ -32326,7 +32326,7 @@ data-spans_\_9_\_65
 
                 <dt>Median ± IQR</dt>
                 <dd>-0.00478 ±
-                    0.0443
+                    0.0442
 
                 </dd>
 
@@ -32501,7 +32501,7 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.00181 ±
+                <dd>0.00176 ±
                     0.0313
 
                 </dd>
@@ -32677,7 +32677,7 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.00659 ±
+                <dd>0.00629 ±
                     0.119
 
                 </dd>
@@ -32853,8 +32853,8 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.000234 ±
-                    0.0790
+                <dd>-0.000246 ±
+                    0.0792
 
                 </dd>
 
@@ -32942,8 +32942,8 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00472 ±
-                    0.0759
+                <dd>-0.00474 ±
+                    0.0763
 
                 </dd>
 
@@ -33024,15 +33024,15 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.0101 ±
+                <dd>0.0102 ±
                     0.151
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.00735 ±
-                    0.0563
+                <dd>0.00736 ±
+                    0.0557
 
                 </dd>
 
@@ -33113,22 +33113,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.00134 ±
+                <dd>0.00133 ±
                     0.148
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00240 ±
-                    0.0877
+                <dd>-0.00242 ±
+                    0.0882
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
                     <span class="min-value">-0.525</span> |
-                    <span class="max-value">0.554</span>
+                    <span class="max-value">0.553</span>
 
                 </dd>
 
@@ -33205,14 +33205,14 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.000810 ±
+                <dd>0.00116 ±
                     0.116
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.424</span> |
+                    <span class="min-value">-0.425</span> |
                     <span class="max-value">0.491</span>
 
                 </dd>
@@ -33294,15 +33294,15 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.00737 ±
-                    0.0930
+                <dd>0.00739 ±
+                    0.0925
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.611</span> |
-                    <span class="max-value">0.507</span>
+                    <span class="min-value">-0.608</span> |
+                    <span class="max-value">0.509</span>
 
                 </dd>
 
@@ -33374,22 +33374,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.00205 ±
+                <dd>0.00191 ±
                     0.140
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.00213 ±
-                    0.0775
+                <dd>0.000834 ±
+                    0.0781
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.408</span> |
-                    <span class="max-value">0.555</span>
+                    <span class="min-value">-0.409</span> |
+                    <span class="max-value">0.557</span>
 
                 </dd>
 
@@ -33463,14 +33463,14 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.00872 ±
+                <dd>0.00882 ±
                     0.132
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00148 ±
+                <dd>-0.00149 ±
                     0.0674
 
                 </dd>
@@ -33478,7 +33478,7 @@ data-spans_\_9_\_65
                 <dt>Min | Max</dt>
                 <dd>
                     <span class="min-value">-0.660</span> |
-                    <span class="max-value">0.553</span>
+                    <span class="max-value">0.559</span>
 
                 </dd>
 
@@ -33552,21 +33552,21 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-0.00642 ±
+                <dd>-0.00626 ±
                     0.131
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.000320 ±
-                    0.0468
+                <dd>0.000502 ±
+                    0.0474
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.492</span> |
+                    <span class="min-value">-0.491</span> |
                     <span class="max-value">0.822</span>
 
                 </dd>
@@ -33639,22 +33639,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-0.00666 ±
+                <dd>-0.00665 ±
                     0.127
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00151 ±
-                    0.0973
+                <dd>-0.00137 ±
+                    0.0997
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.445</span> |
-                    <span class="max-value">0.535</span>
+                    <span class="min-value">-0.441</span> |
+                    <span class="max-value">0.537</span>
 
                 </dd>
 
@@ -33728,22 +33728,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-0.00278 ±
+                <dd>-0.00300 ±
                     0.121
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.000470 ±
-                    0.0713
+                <dd>0.00117 ±
+                    0.0703
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.681</span> |
-                    <span class="max-value">0.531</span>
+                    <span class="min-value">-0.678</span> |
+                    <span class="max-value">0.518</span>
 
                 </dd>
 
@@ -33817,22 +33817,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.00291 ±
+                <dd>-0.00228 ±
                     0.119
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>5.86e-05 ±
-                    0.0461
+                <dd>-0.000236 ±
+                    0.0520
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.748</span> |
-                    <span class="max-value">0.595</span>
+                    <span class="min-value">-0.561</span> |
+                    <span class="max-value">0.754</span>
 
                 </dd>
 
@@ -33906,22 +33906,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.00324 ±
+                <dd>0.00317 ±
                     0.116
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.00586 ±
-                    0.0498
+                <dd>0.00695 ±
+                    0.0403
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.374</span> |
-                    <span class="max-value">0.771</span>
+                    <span class="min-value">-0.441</span> |
+                    <span class="max-value">0.750</span>
 
                 </dd>
 
@@ -33993,22 +33993,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.000979 ±
+                <dd>-0.000979 ±
                     0.115
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00480 ±
-                    0.0646
+                <dd>-0.00391 ±
+                    0.0681
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.299</span> |
-                    <span class="max-value">0.771</span>
+                    <span class="min-value">-0.330</span> |
+                    <span class="max-value">0.692</span>
 
                 </dd>
 
@@ -34082,22 +34082,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.00900 ±
+                <dd>0.00781 ±
                     0.113
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00202 ±
-                    0.0662
+                <dd>-0.00206 ±
+                    0.0634
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.466</span> |
-                    <span class="max-value">0.531</span>
+                    <span class="min-value">-0.381</span> |
+                    <span class="max-value">0.504</span>
 
                 </dd>
 
@@ -34120,8 +34120,6 @@ data-spans_\_9_\_65
     data-name-repr="&#39;lsa_division_28&#39;"
     data-column-name="lsa_division_28"
     data-column-idx="31"
-
-     data-has-low-outliers
 
 
      data-has-high-outliers
@@ -34171,22 +34169,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.00453 ±
+                <dd>0.00422 ±
                     0.109
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00320 ±
-                    0.0522
+                <dd>-0.00340 ±
+                    0.0540
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.396</span> |
-                    <span class="max-value">0.562</span>
+                    <span class="min-value">-0.381</span> |
+                    <span class="max-value">0.521</span>
 
                 </dd>
 
@@ -34210,8 +34208,8 @@ data-spans_\_9_\_65
     data-column-name="lsa_division_29"
     data-column-idx="32"
 
+     data-has-low-outliers
 
-     data-has-high-outliers
 
     data-manager="FilterableColumn SampleColumnSummary"
 
@@ -34258,22 +34256,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.000270 ±
-                    0.107
+                <dd>-0.00127 ±
+                    0.106
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00139 ±
-                    0.0716
+                <dd>0.000242 ±
+                    0.0611
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.338</span> |
-                    <span class="max-value">0.530</span>
+                    <span class="min-value">-0.551</span> |
+                    <span class="max-value">0.304</span>
 
                 </dd>
 
@@ -34839,7 +34837,7 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.000350 ±
+                <dd>0.000349 ±
                     0.113
 
                 </dd>
@@ -35183,7 +35181,7 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00300 ±
+                <dd>-0.00301 ±
                     0.0589
 
                 </dd>
@@ -35280,7 +35278,7 @@ data-spans_\_9_\_65
                 <dt>Min | Max</dt>
                 <dd>
                     <span class="min-value">-0.503</span> |
-                    <span class="max-value">0.730</span>
+                    <span class="max-value">0.731</span>
 
                 </dd>
 
@@ -35355,7 +35353,7 @@ data-spans_\_9_\_65
 
                 <dt>Mean ± Std</dt>
                 <dd>-0.000953 ±
-                    0.173
+                    0.174
 
                 </dd>
 
@@ -35449,7 +35447,7 @@ data-spans_\_9_\_65
 
                 <dt>Median ± IQR</dt>
                 <dd>-0.00364 ±
-                    0.0897
+                    0.0898
 
                 </dd>
 
@@ -35618,7 +35616,7 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.0214 ±
+                <dd>-0.0213 ±
                     0.194
 
                 </dd>
@@ -35705,8 +35703,8 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.000370 ±
-                    0.0467
+                <dd>0.000368 ±
+                    0.0468
 
                 </dd>
 
@@ -35792,7 +35790,7 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.000148 ±
+                <dd>-4.86e-05 ±
                     0.104
 
                 </dd>
@@ -35879,8 +35877,8 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00156 ±
-                    0.0776
+                <dd>-0.00161 ±
+                    0.0777
 
                 </dd>
 
@@ -35968,8 +35966,8 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.00165 ±
-                    0.0791
+                <dd>0.00171 ±
+                    0.0789
 
                 </dd>
 
@@ -36053,7 +36051,7 @@ data-spans_\_9_\_65
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00157 ±
+                <dd>-0.00240 ±
                     0.111
 
                 </dd>
@@ -36061,7 +36059,7 @@ data-spans_\_9_\_65
                 <dt>Min | Max</dt>
                 <dd>
                     <span class="min-value">-0.343</span> |
-                    <span class="max-value">0.468</span>
+                    <span class="max-value">0.467</span>
 
                 </dd>
 
@@ -36131,21 +36129,21 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-0.00298 ±
+                <dd>-0.00301 ±
                     0.130
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00926 ±
-                    0.0892
+                <dd>-0.00925 ±
+                    0.0896
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.436</span> |
+                    <span class="min-value">-0.437</span> |
                     <span class="max-value">0.485</span>
 
                 </dd>
@@ -36216,22 +36214,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.00398 ±
+                <dd>0.00397 ±
                     0.128
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.0141 ±
+                <dd>-0.0147 ±
                     0.125
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.537</span> |
-                    <span class="max-value">0.553</span>
+                    <span class="min-value">-0.538</span> |
+                    <span class="max-value">0.554</span>
 
                 </dd>
 
@@ -36303,22 +36301,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.00138 ±
+                <dd>0.00136 ±
                     0.126
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.000448 ±
-                    0.0880
+                <dd>4.18e-06 ±
+                    0.0881
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.336</span> |
-                    <span class="max-value">0.499</span>
+                    <span class="min-value">-0.334</span> |
+                    <span class="max-value">0.500</span>
 
                 </dd>
 
@@ -36392,22 +36390,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.00780 ±
+                <dd>0.00777 ±
                     0.122
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00623 ±
-                    0.0507
+                <dd>-0.00599 ±
+                    0.0480
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.327</span> |
-                    <span class="max-value">0.945</span>
+                    <span class="min-value">-0.329</span> |
+                    <span class="max-value">0.944</span>
 
                 </dd>
 
@@ -36481,22 +36479,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-0.00131 ±
+                <dd>-0.00127 ±
                     0.122
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.00409 ±
-                    0.0372
+                <dd>0.00421 ±
+                    0.0366
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
                     <span class="min-value">-0.589</span> |
-                    <span class="max-value">0.689</span>
+                    <span class="max-value">0.688</span>
 
                 </dd>
 
@@ -36568,15 +36566,15 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.00920 ±
+                <dd>0.00926 ±
                     0.119
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.00535 ±
-                    0.105
+                <dd>0.00508 ±
+                    0.106
 
                 </dd>
 
@@ -36655,22 +36653,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-0.000892 ±
+                <dd>-0.000926 ±
                     0.114
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.00148 ±
-                    0.0873
+                <dd>0.00144 ±
+                    0.0874
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
                     <span class="min-value">-0.384</span> |
-                    <span class="max-value">0.492</span>
+                    <span class="max-value">0.491</span>
 
                 </dd>
 
@@ -36744,15 +36742,15 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-0.00441 ±
+                <dd>-0.00433 ±
                     0.108
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00205 ±
-                    0.0553
+                <dd>-0.00251 ±
+                    0.0522
 
                 </dd>
 
@@ -36831,22 +36829,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.00113 ±
+                <dd>0.00120 ±
                     0.104
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.00426 ±
-                    0.0764
+                <dd>-0.00314 ±
+                    0.0697
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.297</span> |
-                    <span class="max-value">0.619</span>
+                    <span class="min-value">-0.295</span> |
+                    <span class="max-value">0.627</span>
 
                 </dd>
 
@@ -36918,22 +36916,22 @@ data-spans_\_9_\_65
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-0.00517 ±
-                    0.0974
+                <dd>-0.00584 ±
+                    0.0972
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.0100 ±
-                    0.0633
+                <dd>0.0133 ±
+                    0.0674
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.837</span> |
-                    <span class="max-value">0.194</span>
+                    <span class="min-value">-0.754</span> |
+                    <span class="max-value">0.201</span>
 
                 </dd>
 
@@ -37558,24 +37556,24 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
                     </td>
 
 
-                    <td data-value="685" data-numeric>
-                        685 (7.4%)
+                    <td data-value="687" data-numeric>
+                        687 (7.4%)
                     </td>
 
 
 
-                    <td data-value="0.22263159" data-numeric>
+                    <td data-value="0.22263697" data-numeric>
                         0.223</td>
-                    <td data-value="0.28056598" data-numeric>
+                    <td data-value="0.28057337" data-numeric>
                         0.281</td>
 
 
 
-                    <td data-value="8.4354884e-05" data-numeric>
+                    <td data-value="8.435669e-05" data-numeric>
                         8.44e-05</td>
-                    <td data-value="0.13385396" data-numeric>
+                    <td data-value="0.13385698" data-numeric>
                         0.134</td>
-                    <td data-value="1.1293705" data-numeric>
+                    <td data-value="1.1294004" data-numeric>
                         1.13</td>
 
 
@@ -37599,18 +37597,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.17926665" data-numeric>
+                    <td data-value="0.17927168" data-numeric>
                         0.179</td>
-                    <td data-value="0.2803644" data-numeric>
+                    <td data-value="0.28037125" data-numeric>
                         0.280</td>
 
 
 
-                    <td data-value="-0.5513047" data-numeric>
+                    <td data-value="-0.55131686" data-numeric>
                         -0.551</td>
-                    <td data-value="0.17697667" data-numeric>
+                    <td data-value="0.1769818" data-numeric>
                         0.177</td>
-                    <td data-value="0.7835598" data-numeric>
+                    <td data-value="0.7835802" data-numeric>
                         0.784</td>
 
 
@@ -37628,24 +37626,24 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
                     </td>
 
 
-                    <td data-value="687" data-numeric>
-                        687 (7.4%)
+                    <td data-value="685" data-numeric>
+                        685 (7.4%)
                     </td>
 
 
 
-                    <td data-value="0.0284351" data-numeric>
+                    <td data-value="0.028436946" data-numeric>
                         0.0284</td>
-                    <td data-value="0.31355053" data-numeric>
+                    <td data-value="0.31355837" data-numeric>
                         0.314</td>
 
 
 
-                    <td data-value="-0.6152659" data-numeric>
+                    <td data-value="-0.6152817" data-numeric>
                         -0.615</td>
-                    <td data-value="-0.0073858425" data-numeric>
+                    <td data-value="-0.007387356" data-numeric>
                         -0.00739</td>
-                    <td data-value="0.97687435" data-numeric>
+                    <td data-value="0.9769006" data-numeric>
                         0.977</td>
 
 
@@ -37663,24 +37661,24 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
                     </td>
 
 
-                    <td data-value="685" data-numeric>
-                        685 (7.4%)
+                    <td data-value="686" data-numeric>
+                        686 (7.4%)
                     </td>
 
 
 
-                    <td data-value="0.042775657" data-numeric>
+                    <td data-value="0.042775795" data-numeric>
                         0.0428</td>
-                    <td data-value="0.30466864" data-numeric>
+                    <td data-value="0.30467668" data-numeric>
                         0.305</td>
 
 
 
-                    <td data-value="-0.44283754" data-numeric>
+                    <td data-value="-0.44284785" data-numeric>
                         -0.443</td>
-                    <td data-value="-0.0038110975" data-numeric>
+                    <td data-value="-0.003811707" data-numeric>
                         -0.00381</td>
-                    <td data-value="1.1021445" data-numeric>
+                    <td data-value="1.1021731" data-numeric>
                         1.10</td>
 
 
@@ -37704,18 +37702,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.03786593" data-numeric>
+                    <td data-value="-0.037866488" data-numeric>
                         -0.0379</td>
-                    <td data-value="0.23309404" data-numeric>
+                    <td data-value="0.23310003" data-numeric>
                         0.233</td>
 
 
 
-                    <td data-value="-0.7744521" data-numeric>
+                    <td data-value="-0.77447414" data-numeric>
                         -0.774</td>
-                    <td data-value="-0.008007304" data-numeric>
+                    <td data-value="-0.008007316" data-numeric>
                         -0.00801</td>
-                    <td data-value="0.36173454" data-numeric>
+                    <td data-value="0.36174896" data-numeric>
                         0.362</td>
 
 
@@ -37739,18 +37737,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.043022968" data-numeric>
+                    <td data-value="-0.043024138" data-numeric>
                         -0.0430</td>
-                    <td data-value="0.2178469" data-numeric>
+                    <td data-value="0.21785259" data-numeric>
                         0.218</td>
 
 
 
-                    <td data-value="-0.6776263" data-numeric>
+                    <td data-value="-0.6776449" data-numeric>
                         -0.678</td>
-                    <td data-value="-0.043494813" data-numeric>
+                    <td data-value="-0.043500368" data-numeric>
                         -0.0435</td>
-                    <td data-value="0.6908112" data-numeric>
+                    <td data-value="0.6908298" data-numeric>
                         0.691</td>
 
 
@@ -37774,18 +37772,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.01152612" data-numeric>
+                    <td data-value="0.01152639" data-numeric>
                         0.0115</td>
-                    <td data-value="0.21174617" data-numeric>
+                    <td data-value="0.21175158" data-numeric>
                         0.212</td>
 
 
 
-                    <td data-value="-0.33807516" data-numeric>
+                    <td data-value="-0.33807653" data-numeric>
                         -0.338</td>
-                    <td data-value="-0.004425263" data-numeric>
-                        -0.00443</td>
-                    <td data-value="1.1972905" data-numeric>
+                    <td data-value="-0.0044232216" data-numeric>
+                        -0.00442</td>
+                    <td data-value="1.1973193" data-numeric>
                         1.20</td>
 
 
@@ -37809,18 +37807,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.0012911279" data-numeric>
+                    <td data-value="0.0012904196" data-numeric>
                         0.00129</td>
-                    <td data-value="0.20582934" data-numeric>
+                    <td data-value="0.20583464" data-numeric>
                         0.206</td>
 
 
 
-                    <td data-value="-0.8222364" data-numeric>
+                    <td data-value="-0.822257" data-numeric>
                         -0.822</td>
-                    <td data-value="-0.004783236" data-numeric>
+                    <td data-value="-0.0047781714" data-numeric>
                         -0.00478</td>
-                    <td data-value="0.9415367" data-numeric>
+                    <td data-value="0.941564" data-numeric>
                         0.942</td>
 
 
@@ -37844,18 +37842,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.014757882" data-numeric>
+                    <td data-value="-0.014758539" data-numeric>
                         -0.0148</td>
-                    <td data-value="0.19931468" data-numeric>
+                    <td data-value="0.19931981" data-numeric>
                         0.199</td>
 
 
 
-                    <td data-value="-0.82570076" data-numeric>
+                    <td data-value="-0.82572216" data-numeric>
                         -0.826</td>
-                    <td data-value="-0.012597717" data-numeric>
+                    <td data-value="-0.012597367" data-numeric>
                         -0.0126</td>
-                    <td data-value="0.6737444" data-numeric>
+                    <td data-value="0.6737643" data-numeric>
                         0.674</td>
 
 
@@ -37879,18 +37877,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.02933254" data-numeric>
+                    <td data-value="0.02933272" data-numeric>
                         0.0293</td>
-                    <td data-value="0.1881416" data-numeric>
+                    <td data-value="0.18814655" data-numeric>
                         0.188</td>
 
 
 
-                    <td data-value="-0.17804253" data-numeric>
+                    <td data-value="-0.17802285" data-numeric>
                         -0.178</td>
-                    <td data-value="0.0018067235" data-numeric>
-                        0.00181</td>
-                    <td data-value="1.3131127" data-numeric>
+                    <td data-value="0.0017648531" data-numeric>
+                        0.00176</td>
+                    <td data-value="1.3131487" data-numeric>
                         1.31</td>
 
 
@@ -37914,18 +37912,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.0012525888" data-numeric>
+                    <td data-value="0.0012531846" data-numeric>
                         0.00125</td>
-                    <td data-value="0.18505532" data-numeric>
+                    <td data-value="0.18506007" data-numeric>
                         0.185</td>
 
 
 
-                    <td data-value="-0.5505967" data-numeric>
+                    <td data-value="-0.5505953" data-numeric>
                         -0.551</td>
-                    <td data-value="0.003347893" data-numeric>
+                    <td data-value="0.0033469168" data-numeric>
                         0.00335</td>
-                    <td data-value="1.070467" data-numeric>
+                    <td data-value="1.0704994" data-numeric>
                         1.07</td>
 
 
@@ -37949,18 +37947,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.019211322" data-numeric>
+                    <td data-value="0.019210035" data-numeric>
                         0.0192</td>
-                    <td data-value="0.17533502" data-numeric>
+                    <td data-value="0.17533974" data-numeric>
                         0.175</td>
 
 
 
-                    <td data-value="-0.6372942" data-numeric>
+                    <td data-value="-0.6373296" data-numeric>
                         -0.637</td>
-                    <td data-value="0.0065889563" data-numeric>
-                        0.00659</td>
-                    <td data-value="0.61241466" data-numeric>
+                    <td data-value="0.0062880283" data-numeric>
+                        0.00629</td>
+                    <td data-value="0.6124053" data-numeric>
                         0.612</td>
 
 
@@ -37984,18 +37982,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.012706916" data-numeric>
+                    <td data-value="0.012710973" data-numeric>
                         0.0127</td>
-                    <td data-value="0.1687509" data-numeric>
+                    <td data-value="0.168755" data-numeric>
                         0.169</td>
 
 
 
-                    <td data-value="-0.6261955" data-numeric>
+                    <td data-value="-0.62617177" data-numeric>
                         -0.626</td>
-                    <td data-value="-0.0048826397" data-numeric>
+                    <td data-value="-0.0048770173" data-numeric>
                         -0.00488</td>
-                    <td data-value="0.91905904" data-numeric>
+                    <td data-value="0.91904503" data-numeric>
                         0.919</td>
 
 
@@ -38019,18 +38017,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.029131766" data-numeric>
+                    <td data-value="0.02913296" data-numeric>
                         0.0291</td>
-                    <td data-value="0.15697517" data-numeric>
+                    <td data-value="0.15697904" data-numeric>
                         0.157</td>
 
 
 
-                    <td data-value="-0.39793205" data-numeric>
+                    <td data-value="-0.39806533" data-numeric>
                         -0.398</td>
-                    <td data-value="-0.00023383339" data-numeric>
-                        -0.000234</td>
-                    <td data-value="1.0110341" data-numeric>
+                    <td data-value="-0.00024649155" data-numeric>
+                        -0.000246</td>
+                    <td data-value="1.0111127" data-numeric>
                         1.01</td>
 
 
@@ -38054,18 +38052,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.012474587" data-numeric>
+                    <td data-value="-0.012473099" data-numeric>
                         -0.0125</td>
-                    <td data-value="0.15422499" data-numeric>
+                    <td data-value="0.15422924" data-numeric>
                         0.154</td>
 
 
 
-                    <td data-value="-0.5034236" data-numeric>
+                    <td data-value="-0.50339985" data-numeric>
                         -0.503</td>
-                    <td data-value="-0.004718208" data-numeric>
-                        -0.00472</td>
-                    <td data-value="0.5587838" data-numeric>
+                    <td data-value="-0.004740567" data-numeric>
+                        -0.00474</td>
+                    <td data-value="0.5585283" data-numeric>
                         0.559</td>
 
 
@@ -38089,18 +38087,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.010145274" data-numeric>
-                        0.0101</td>
-                    <td data-value="0.15119983" data-numeric>
+                    <td data-value="0.010150008" data-numeric>
+                        0.0102</td>
+                    <td data-value="0.15120232" data-numeric>
                         0.151</td>
 
 
 
-                    <td data-value="-0.5798746" data-numeric>
+                    <td data-value="-0.5804855" data-numeric>
                         -0.580</td>
-                    <td data-value="0.0073539778" data-numeric>
-                        0.00735</td>
-                    <td data-value="0.752867" data-numeric>
+                    <td data-value="0.0073556066" data-numeric>
+                        0.00736</td>
+                    <td data-value="0.7532922" data-numeric>
                         0.753</td>
 
 
@@ -38124,19 +38122,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.0013444974" data-numeric>
-                        0.00134</td>
-                    <td data-value="0.14794768" data-numeric>
+                    <td data-value="0.0013257706" data-numeric>
+                        0.00133</td>
+                    <td data-value="0.14794894" data-numeric>
                         0.148</td>
 
 
 
-                    <td data-value="-0.5250084" data-numeric>
+                    <td data-value="-0.52503777" data-numeric>
                         -0.525</td>
-                    <td data-value="-0.0023992069" data-numeric>
-                        -0.00240</td>
-                    <td data-value="0.553697" data-numeric>
-                        0.554</td>
+                    <td data-value="-0.0024236504" data-numeric>
+                        -0.00242</td>
+                    <td data-value="0.5528545" data-numeric>
+                        0.553</td>
 
 
                 </tr>
@@ -38159,18 +38157,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.020442722" data-numeric>
+                    <td data-value="-0.020427682" data-numeric>
                         -0.0204</td>
-                    <td data-value="0.1402043" data-numeric>
+                    <td data-value="0.1402106" data-numeric>
                         0.140</td>
 
 
 
-                    <td data-value="-0.42433512" data-numeric>
-                        -0.424</td>
-                    <td data-value="0.0008101066" data-numeric>
-                        0.000810</td>
-                    <td data-value="0.49054316" data-numeric>
+                    <td data-value="-0.4254986" data-numeric>
+                        -0.425</td>
+                    <td data-value="0.0011567846" data-numeric>
+                        0.00116</td>
+                    <td data-value="0.4908548" data-numeric>
                         0.491</td>
 
 
@@ -38194,19 +38192,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.015307459" data-numeric>
+                    <td data-value="0.015332443" data-numeric>
                         0.0153</td>
-                    <td data-value="0.14037552" data-numeric>
+                    <td data-value="0.14037669" data-numeric>
                         0.140</td>
 
 
 
-                    <td data-value="-0.6114677" data-numeric>
-                        -0.611</td>
-                    <td data-value="0.0073745726" data-numeric>
-                        0.00737</td>
-                    <td data-value="0.5072779" data-numeric>
-                        0.507</td>
+                    <td data-value="-0.6080634" data-numeric>
+                        -0.608</td>
+                    <td data-value="0.0073854923" data-numeric>
+                        0.00739</td>
+                    <td data-value="0.50939274" data-numeric>
+                        0.509</td>
 
 
                 </tr>
@@ -38229,19 +38227,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.002048268" data-numeric>
-                        0.00205</td>
-                    <td data-value="0.13999727" data-numeric>
+                    <td data-value="0.0019089058" data-numeric>
+                        0.00191</td>
+                    <td data-value="0.13999791" data-numeric>
                         0.140</td>
 
 
 
-                    <td data-value="-0.40836346" data-numeric>
-                        -0.408</td>
-                    <td data-value="0.0021296784" data-numeric>
-                        0.00213</td>
-                    <td data-value="0.555245" data-numeric>
-                        0.555</td>
+                    <td data-value="-0.4090839" data-numeric>
+                        -0.409</td>
+                    <td data-value="0.0008340594" data-numeric>
+                        0.000834</td>
+                    <td data-value="0.556719" data-numeric>
+                        0.557</td>
 
 
                 </tr>
@@ -38264,19 +38262,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.008715677" data-numeric>
-                        0.00872</td>
-                    <td data-value="0.13223922" data-numeric>
+                    <td data-value="0.008819719" data-numeric>
+                        0.00882</td>
+                    <td data-value="0.13223234" data-numeric>
                         0.132</td>
 
 
 
-                    <td data-value="-0.6596272" data-numeric>
+                    <td data-value="-0.66037273" data-numeric>
                         -0.660</td>
-                    <td data-value="-0.001483738" data-numeric>
-                        -0.00148</td>
-                    <td data-value="0.55279535" data-numeric>
-                        0.553</td>
+                    <td data-value="-0.0014949342" data-numeric>
+                        -0.00149</td>
+                    <td data-value="0.5594491" data-numeric>
+                        0.559</td>
 
 
                 </tr>
@@ -38299,18 +38297,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.006416167" data-numeric>
-                        -0.00642</td>
-                    <td data-value="0.13082494" data-numeric>
+                    <td data-value="-0.0062608346" data-numeric>
+                        -0.00626</td>
+                    <td data-value="0.13079144" data-numeric>
                         0.131</td>
 
 
 
-                    <td data-value="-0.49219337" data-numeric>
-                        -0.492</td>
-                    <td data-value="0.00032018984" data-numeric>
-                        0.000320</td>
-                    <td data-value="0.8224877" data-numeric>
+                    <td data-value="-0.49086025" data-numeric>
+                        -0.491</td>
+                    <td data-value="0.00050216506" data-numeric>
+                        0.000502</td>
+                    <td data-value="0.8216082" data-numeric>
                         0.822</td>
 
 
@@ -38334,19 +38332,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.0066562053" data-numeric>
-                        -0.00666</td>
-                    <td data-value="0.12713163" data-numeric>
+                    <td data-value="-0.006648122" data-numeric>
+                        -0.00665</td>
+                    <td data-value="0.12709898" data-numeric>
                         0.127</td>
 
 
 
-                    <td data-value="-0.4449886" data-numeric>
-                        -0.445</td>
-                    <td data-value="-0.0015134813" data-numeric>
-                        -0.00151</td>
-                    <td data-value="0.5346908" data-numeric>
-                        0.535</td>
+                    <td data-value="-0.44098395" data-numeric>
+                        -0.441</td>
+                    <td data-value="-0.0013726762" data-numeric>
+                        -0.00137</td>
+                    <td data-value="0.5370808" data-numeric>
+                        0.537</td>
 
 
                 </tr>
@@ -38369,19 +38367,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.0027768197" data-numeric>
-                        -0.00278</td>
-                    <td data-value="0.121025294" data-numeric>
+                    <td data-value="-0.0030021907" data-numeric>
+                        -0.00300</td>
+                    <td data-value="0.12112868" data-numeric>
                         0.121</td>
 
 
 
-                    <td data-value="-0.6812421" data-numeric>
-                        -0.681</td>
-                    <td data-value="0.0004695802" data-numeric>
-                        0.000470</td>
-                    <td data-value="0.53127587" data-numeric>
-                        0.531</td>
+                    <td data-value="-0.6781208" data-numeric>
+                        -0.678</td>
+                    <td data-value="0.0011682066" data-numeric>
+                        0.00117</td>
+                    <td data-value="0.51801795" data-numeric>
+                        0.518</td>
 
 
                 </tr>
@@ -38404,19 +38402,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.0029121852" data-numeric>
-                        0.00291</td>
-                    <td data-value="0.11853826" data-numeric>
+                    <td data-value="-0.0022812441" data-numeric>
+                        -0.00228</td>
+                    <td data-value="0.118747264" data-numeric>
                         0.119</td>
 
 
 
-                    <td data-value="-0.7476561" data-numeric>
-                        -0.748</td>
-                    <td data-value="5.85748e-05" data-numeric>
-                        5.86e-05</td>
-                    <td data-value="0.5947057" data-numeric>
-                        0.595</td>
+                    <td data-value="-0.5605465" data-numeric>
+                        -0.561</td>
+                    <td data-value="-0.00023590561" data-numeric>
+                        -0.000236</td>
+                    <td data-value="0.7536648" data-numeric>
+                        0.754</td>
 
 
                 </tr>
@@ -38439,19 +38437,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.0032389702" data-numeric>
-                        0.00324</td>
-                    <td data-value="0.1159198" data-numeric>
+                    <td data-value="0.0031653345" data-numeric>
+                        0.00317</td>
+                    <td data-value="0.11583758" data-numeric>
                         0.116</td>
 
 
 
-                    <td data-value="-0.3742997" data-numeric>
-                        -0.374</td>
-                    <td data-value="0.0058577396" data-numeric>
-                        0.00586</td>
-                    <td data-value="0.7711919" data-numeric>
-                        0.771</td>
+                    <td data-value="-0.4406096" data-numeric>
+                        -0.441</td>
+                    <td data-value="0.00694646" data-numeric>
+                        0.00695</td>
+                    <td data-value="0.7504279" data-numeric>
+                        0.750</td>
 
 
                 </tr>
@@ -38474,19 +38472,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.0009786743" data-numeric>
-                        0.000979</td>
-                    <td data-value="0.11473464" data-numeric>
+                    <td data-value="-0.0009785938" data-numeric>
+                        -0.000979</td>
+                    <td data-value="0.1147601" data-numeric>
                         0.115</td>
 
 
 
-                    <td data-value="-0.298801" data-numeric>
-                        -0.299</td>
-                    <td data-value="-0.004796986" data-numeric>
-                        -0.00480</td>
-                    <td data-value="0.7709998" data-numeric>
-                        0.771</td>
+                    <td data-value="-0.32964155" data-numeric>
+                        -0.330</td>
+                    <td data-value="-0.003913334" data-numeric>
+                        -0.00391</td>
+                    <td data-value="0.69210774" data-numeric>
+                        0.692</td>
 
 
                 </tr>
@@ -38509,19 +38507,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.008998043" data-numeric>
-                        0.00900</td>
-                    <td data-value="0.1125883" data-numeric>
+                    <td data-value="0.00781376" data-numeric>
+                        0.00781</td>
+                    <td data-value="0.11271477" data-numeric>
                         0.113</td>
 
 
 
-                    <td data-value="-0.46606997" data-numeric>
-                        -0.466</td>
-                    <td data-value="-0.0020231772" data-numeric>
-                        -0.00202</td>
-                    <td data-value="0.5310253" data-numeric>
-                        0.531</td>
+                    <td data-value="-0.38133353" data-numeric>
+                        -0.381</td>
+                    <td data-value="-0.0020644306" data-numeric>
+                        -0.00206</td>
+                    <td data-value="0.5044566" data-numeric>
+                        0.504</td>
 
 
                 </tr>
@@ -38544,19 +38542,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.004528706" data-numeric>
-                        0.00453</td>
-                    <td data-value="0.10879747" data-numeric>
+                    <td data-value="0.004224604" data-numeric>
+                        0.00422</td>
+                    <td data-value="0.1087247" data-numeric>
                         0.109</td>
 
 
 
-                    <td data-value="-0.3958758" data-numeric>
-                        -0.396</td>
-                    <td data-value="-0.003201021" data-numeric>
-                        -0.00320</td>
-                    <td data-value="0.5616384" data-numeric>
-                        0.562</td>
+                    <td data-value="-0.3809666" data-numeric>
+                        -0.381</td>
+                    <td data-value="-0.0033951013" data-numeric>
+                        -0.00340</td>
+                    <td data-value="0.5212235" data-numeric>
+                        0.521</td>
 
 
                 </tr>
@@ -38579,19 +38577,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.0002704791" data-numeric>
-                        0.000270</td>
-                    <td data-value="0.106559835" data-numeric>
-                        0.107</td>
+                    <td data-value="-0.001269578" data-numeric>
+                        -0.00127</td>
+                    <td data-value="0.10610135" data-numeric>
+                        0.106</td>
 
 
 
-                    <td data-value="-0.33796757" data-numeric>
-                        -0.338</td>
-                    <td data-value="-0.0013881522" data-numeric>
-                        -0.00139</td>
-                    <td data-value="0.53038365" data-numeric>
-                        0.530</td>
+                    <td data-value="-0.55080515" data-numeric>
+                        -0.551</td>
+                    <td data-value="0.0002417847" data-numeric>
+                        0.000242</td>
+                    <td data-value="0.3036957" data-numeric>
+                        0.304</td>
 
 
                 </tr>
@@ -38644,18 +38642,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.23043112" data-numeric>
+                    <td data-value="0.23043732" data-numeric>
                         0.230</td>
-                    <td data-value="0.3146484" data-numeric>
+                    <td data-value="0.3146565" data-numeric>
                         0.315</td>
 
 
 
-                    <td data-value="0.000534429" data-numeric>
+                    <td data-value="0.0005344484" data-numeric>
                         0.000534</td>
-                    <td data-value="0.08879951" data-numeric>
+                    <td data-value="0.08880181" data-numeric>
                         0.0888</td>
-                    <td data-value="1.1106803" data-numeric>
+                    <td data-value="1.1107087" data-numeric>
                         1.11</td>
 
 
@@ -38679,18 +38677,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.08310416" data-numeric>
+                    <td data-value="0.08310627" data-numeric>
                         0.0831</td>
-                    <td data-value="0.33842665" data-numeric>
+                    <td data-value="0.33843535" data-numeric>
                         0.338</td>
 
 
 
-                    <td data-value="-0.3422892" data-numeric>
+                    <td data-value="-0.34230056" data-numeric>
                         -0.342</td>
-                    <td data-value="0.006428947" data-numeric>
+                    <td data-value="0.006429111" data-numeric>
                         0.00643</td>
-                    <td data-value="1.0882583" data-numeric>
+                    <td data-value="1.0882854" data-numeric>
                         1.09</td>
 
 
@@ -38714,18 +38712,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.10989212" data-numeric>
+                    <td data-value="0.10989503" data-numeric>
                         0.110</td>
-                    <td data-value="0.30054787" data-numeric>
+                    <td data-value="0.3005557" data-numeric>
                         0.301</td>
 
 
 
-                    <td data-value="-0.061825596" data-numeric>
+                    <td data-value="-0.0618274" data-numeric>
                         -0.0618</td>
-                    <td data-value="0.015577494" data-numeric>
+                    <td data-value="0.015577995" data-numeric>
                         0.0156</td>
-                    <td data-value="1.16127" data-numeric>
+                    <td data-value="1.1613001" data-numeric>
                         1.16</td>
 
 
@@ -38749,18 +38747,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.107508264" data-numeric>
+                    <td data-value="0.10751118" data-numeric>
                         0.108</td>
-                    <td data-value="0.27452955" data-numeric>
+                    <td data-value="0.27453676" data-numeric>
                         0.275</td>
 
 
 
-                    <td data-value="-0.16391617" data-numeric>
+                    <td data-value="-0.16391763" data-numeric>
                         -0.164</td>
-                    <td data-value="0.03356808" data-numeric>
+                    <td data-value="0.03356896" data-numeric>
                         0.0336</td>
-                    <td data-value="0.984091" data-numeric>
+                    <td data-value="0.98411703" data-numeric>
                         0.984</td>
 
 
@@ -38784,18 +38782,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.076603055" data-numeric>
+                    <td data-value="0.076604255" data-numeric>
                         0.0766</td>
-                    <td data-value="0.24229676" data-numeric>
+                    <td data-value="0.24230321" data-numeric>
                         0.242</td>
 
 
 
-                    <td data-value="-0.61741376" data-numeric>
+                    <td data-value="-0.6174328" data-numeric>
                         -0.617</td>
-                    <td data-value="0.043095253" data-numeric>
+                    <td data-value="0.043096088" data-numeric>
                         0.0431</td>
-                    <td data-value="0.65844697" data-numeric>
+                    <td data-value="0.6584615" data-numeric>
                         0.658</td>
 
 
@@ -38819,18 +38817,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.053194746" data-numeric>
+                    <td data-value="0.053196464" data-numeric>
                         0.0532</td>
-                    <td data-value="0.2076615" data-numeric>
+                    <td data-value="0.20766687" data-numeric>
                         0.208</td>
 
 
 
-                    <td data-value="-0.31523362" data-numeric>
+                    <td data-value="-0.3152409" data-numeric>
                         -0.315</td>
-                    <td data-value="0.0003497678" data-numeric>
-                        0.000350</td>
-                    <td data-value="0.9538134" data-numeric>
+                    <td data-value="0.00034927196" data-numeric>
+                        0.000349</td>
+                    <td data-value="0.95383745" data-numeric>
                         0.954</td>
 
 
@@ -38854,18 +38852,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.03321398" data-numeric>
+                    <td data-value="0.03321465" data-numeric>
                         0.0332</td>
-                    <td data-value="0.19214563" data-numeric>
+                    <td data-value="0.19215062" data-numeric>
                         0.192</td>
 
 
 
-                    <td data-value="-0.32318547" data-numeric>
+                    <td data-value="-0.32319632" data-numeric>
                         -0.323</td>
-                    <td data-value="0.0045484076" data-numeric>
+                    <td data-value="0.0045491755" data-numeric>
                         0.00455</td>
-                    <td data-value="0.78162026" data-numeric>
+                    <td data-value="0.7816409" data-numeric>
                         0.782</td>
 
 
@@ -38889,18 +38887,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.012349127" data-numeric>
+                    <td data-value="0.012349443" data-numeric>
                         0.0123</td>
-                    <td data-value="0.19035886" data-numeric>
+                    <td data-value="0.19036375" data-numeric>
                         0.190</td>
 
 
 
-                    <td data-value="-0.5471032" data-numeric>
+                    <td data-value="-0.54711974" data-numeric>
                         -0.547</td>
-                    <td data-value="-0.0015682833" data-numeric>
+                    <td data-value="-0.0015686599" data-numeric>
                         -0.00157</td>
-                    <td data-value="0.63967407" data-numeric>
+                    <td data-value="0.6396892" data-numeric>
                         0.640</td>
 
 
@@ -38924,18 +38922,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.035906557" data-numeric>
+                    <td data-value="0.03590782" data-numeric>
                         0.0359</td>
-                    <td data-value="0.17768916" data-numeric>
+                    <td data-value="0.17769383" data-numeric>
                         0.178</td>
 
 
 
-                    <td data-value="-0.3116798" data-numeric>
+                    <td data-value="-0.3116896" data-numeric>
                         -0.312</td>
-                    <td data-value="0.003643138" data-numeric>
+                    <td data-value="0.0036415374" data-numeric>
                         0.00364</td>
-                    <td data-value="0.59015036" data-numeric>
+                    <td data-value="0.5901648" data-numeric>
                         0.590</td>
 
 
@@ -38959,18 +38957,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.009455135" data-numeric>
+                    <td data-value="0.009456188" data-numeric>
                         0.00946</td>
-                    <td data-value="0.1807245" data-numeric>
+                    <td data-value="0.18072923" data-numeric>
                         0.181</td>
 
 
 
-                    <td data-value="-0.6202709" data-numeric>
+                    <td data-value="-0.62027425" data-numeric>
                         -0.620</td>
-                    <td data-value="-0.00299638" data-numeric>
-                        -0.00300</td>
-                    <td data-value="0.8122693" data-numeric>
+                    <td data-value="-0.0030112362" data-numeric>
+                        -0.00301</td>
+                    <td data-value="0.812314" data-numeric>
                         0.812</td>
 
 
@@ -38994,19 +38992,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.019786805" data-numeric>
+                    <td data-value="0.01978639" data-numeric>
                         0.0198</td>
-                    <td data-value="0.17514692" data-numeric>
+                    <td data-value="0.17515159" data-numeric>
                         0.175</td>
 
 
 
-                    <td data-value="-0.50344867" data-numeric>
+                    <td data-value="-0.5034592" data-numeric>
                         -0.503</td>
-                    <td data-value="-0.009487641" data-numeric>
+                    <td data-value="-0.009487692" data-numeric>
                         -0.00949</td>
-                    <td data-value="0.7304841" data-numeric>
-                        0.730</td>
+                    <td data-value="0.7305081" data-numeric>
+                        0.731</td>
 
 
                 </tr>
@@ -39029,18 +39027,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.0009530925" data-numeric>
+                    <td data-value="-0.00095310766" data-numeric>
                         -0.000953</td>
-                    <td data-value="0.17349845" data-numeric>
-                        0.173</td>
+                    <td data-value="0.17350304" data-numeric>
+                        0.174</td>
 
 
 
-                    <td data-value="-0.45783907" data-numeric>
+                    <td data-value="-0.45785373" data-numeric>
                         -0.458</td>
-                    <td data-value="0.01137263" data-numeric>
+                    <td data-value="0.011373978" data-numeric>
                         0.0114</td>
-                    <td data-value="0.8147987" data-numeric>
+                    <td data-value="0.81481826" data-numeric>
                         0.815</td>
 
 
@@ -39064,18 +39062,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.0036492911" data-numeric>
+                    <td data-value="-0.0036486338" data-numeric>
                         -0.00365</td>
-                    <td data-value="0.16793966" data-numeric>
+                    <td data-value="0.16794413" data-numeric>
                         0.168</td>
 
 
 
-                    <td data-value="-0.3322372" data-numeric>
+                    <td data-value="-0.33224493" data-numeric>
                         -0.332</td>
-                    <td data-value="-0.0036428655" data-numeric>
+                    <td data-value="-0.0036432266" data-numeric>
                         -0.00364</td>
-                    <td data-value="0.96080095" data-numeric>
+                    <td data-value="0.9608219" data-numeric>
                         0.961</td>
 
 
@@ -39099,18 +39097,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.013633926" data-numeric>
+                    <td data-value="0.013635" data-numeric>
                         0.0136</td>
-                    <td data-value="0.16469644" data-numeric>
+                    <td data-value="0.16470075" data-numeric>
                         0.165</td>
 
 
 
-                    <td data-value="-0.33113617" data-numeric>
+                    <td data-value="-0.33116284" data-numeric>
                         -0.331</td>
-                    <td data-value="0.0056469054" data-numeric>
+                    <td data-value="0.0056539285" data-numeric>
                         0.00565</td>
-                    <td data-value="0.6491192" data-numeric>
+                    <td data-value="0.6491407" data-numeric>
                         0.649</td>
 
 
@@ -39134,18 +39132,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.0015033699" data-numeric>
+                    <td data-value="0.0015043784" data-numeric>
                         0.00150</td>
-                    <td data-value="0.16123815" data-numeric>
+                    <td data-value="0.16124238" data-numeric>
                         0.161</td>
 
 
 
-                    <td data-value="-0.37523732" data-numeric>
+                    <td data-value="-0.3752578" data-numeric>
                         -0.375</td>
-                    <td data-value="-0.021358358" data-numeric>
-                        -0.0214</td>
-                    <td data-value="0.46461412" data-numeric>
+                    <td data-value="-0.021344857" data-numeric>
+                        -0.0213</td>
+                    <td data-value="0.46462354" data-numeric>
                         0.465</td>
 
 
@@ -39169,18 +39167,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.01908246" data-numeric>
+                    <td data-value="0.019083563" data-numeric>
                         0.0191</td>
-                    <td data-value="0.1547992" data-numeric>
+                    <td data-value="0.15480319" data-numeric>
                         0.155</td>
 
 
 
-                    <td data-value="-0.20289135" data-numeric>
+                    <td data-value="-0.20289521" data-numeric>
                         -0.203</td>
-                    <td data-value="0.00037039694" data-numeric>
-                        0.000370</td>
-                    <td data-value="1.0983182" data-numeric>
+                    <td data-value="0.0003677209" data-numeric>
+                        0.000368</td>
+                    <td data-value="1.0983486" data-numeric>
                         1.10</td>
 
 
@@ -39204,18 +39202,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.011269982" data-numeric>
+                    <td data-value="0.011263943" data-numeric>
                         0.0113</td>
-                    <td data-value="0.14670901" data-numeric>
+                    <td data-value="0.14671329" data-numeric>
                         0.147</td>
 
 
 
-                    <td data-value="-0.31085095" data-numeric>
+                    <td data-value="-0.31086835" data-numeric>
                         -0.311</td>
-                    <td data-value="-0.00014830934" data-numeric>
-                        -0.000148</td>
-                    <td data-value="0.8389547" data-numeric>
+                    <td data-value="-4.8554102e-05" data-numeric>
+                        -4.86e-05</td>
+                    <td data-value="0.8389757" data-numeric>
                         0.839</td>
 
 
@@ -39239,18 +39237,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.004313729" data-numeric>
+                    <td data-value="0.0043108896" data-numeric>
                         0.00431</td>
-                    <td data-value="0.14005488" data-numeric>
+                    <td data-value="0.14005856" data-numeric>
                         0.140</td>
 
 
 
-                    <td data-value="-0.25980052" data-numeric>
+                    <td data-value="-0.2597898" data-numeric>
                         -0.260</td>
-                    <td data-value="-0.0015615637" data-numeric>
-                        -0.00156</td>
-                    <td data-value="0.7574343" data-numeric>
+                    <td data-value="-0.0016147693" data-numeric>
+                        -0.00161</td>
+                    <td data-value="0.75749314" data-numeric>
                         0.757</td>
 
 
@@ -39274,18 +39272,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.0052214507" data-numeric>
+                    <td data-value="0.005224156" data-numeric>
                         0.00522</td>
-                    <td data-value="0.13692608" data-numeric>
+                    <td data-value="0.13692953" data-numeric>
                         0.137</td>
 
 
 
-                    <td data-value="-0.37659857" data-numeric>
+                    <td data-value="-0.37665233" data-numeric>
                         -0.377</td>
-                    <td data-value="0.0016532913" data-numeric>
-                        0.00165</td>
-                    <td data-value="1.0040555" data-numeric>
+                    <td data-value="0.0017142268" data-numeric>
+                        0.00171</td>
+                    <td data-value="1.0040901" data-numeric>
                         1.00</td>
 
 
@@ -39309,19 +39307,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.010391538" data-numeric>
+                    <td data-value="0.010380389" data-numeric>
                         0.0104</td>
-                    <td data-value="0.1326461" data-numeric>
+                    <td data-value="0.1326504" data-numeric>
                         0.133</td>
 
 
 
-                    <td data-value="-0.34284744" data-numeric>
+                    <td data-value="-0.34290957" data-numeric>
                         -0.343</td>
-                    <td data-value="-0.0015737491" data-numeric>
-                        -0.00157</td>
-                    <td data-value="0.46756247" data-numeric>
-                        0.468</td>
+                    <td data-value="-0.0023957458" data-numeric>
+                        -0.00240</td>
+                    <td data-value="0.46700025" data-numeric>
+                        0.467</td>
 
 
                 </tr>
@@ -39344,18 +39342,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.0029815044" data-numeric>
-                        -0.00298</td>
-                    <td data-value="0.13023204" data-numeric>
+                    <td data-value="-0.003012413" data-numeric>
+                        -0.00301</td>
+                    <td data-value="0.13023542" data-numeric>
                         0.130</td>
 
 
 
-                    <td data-value="-0.43583325" data-numeric>
-                        -0.436</td>
-                    <td data-value="-0.0092624035" data-numeric>
-                        -0.00926</td>
-                    <td data-value="0.48506996" data-numeric>
+                    <td data-value="-0.4366878" data-numeric>
+                        -0.437</td>
+                    <td data-value="-0.009249202" data-numeric>
+                        -0.00925</td>
+                    <td data-value="0.4852305" data-numeric>
                         0.485</td>
 
 
@@ -39379,19 +39377,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.0039806766" data-numeric>
-                        0.00398</td>
-                    <td data-value="0.12786937" data-numeric>
+                    <td data-value="0.003972975" data-numeric>
+                        0.00397</td>
+                    <td data-value="0.12787104" data-numeric>
                         0.128</td>
 
 
 
-                    <td data-value="-0.5372545" data-numeric>
-                        -0.537</td>
-                    <td data-value="-0.01409029" data-numeric>
-                        -0.0141</td>
-                    <td data-value="0.5531718" data-numeric>
-                        0.553</td>
+                    <td data-value="-0.5375487" data-numeric>
+                        -0.538</td>
+                    <td data-value="-0.014684005" data-numeric>
+                        -0.0147</td>
+                    <td data-value="0.5537633" data-numeric>
+                        0.554</td>
 
 
                 </tr>
@@ -39414,19 +39412,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.0013836126" data-numeric>
-                        0.00138</td>
-                    <td data-value="0.12593344" data-numeric>
+                    <td data-value="0.0013586269" data-numeric>
+                        0.00136</td>
+                    <td data-value="0.12593794" data-numeric>
                         0.126</td>
 
 
 
-                    <td data-value="-0.3362638" data-numeric>
-                        -0.336</td>
-                    <td data-value="-0.00044846415" data-numeric>
-                        -0.000448</td>
-                    <td data-value="0.49903116" data-numeric>
-                        0.499</td>
+                    <td data-value="-0.33390078" data-numeric>
+                        -0.334</td>
+                    <td data-value="4.1833114e-06" data-numeric>
+                        4.18e-06</td>
+                    <td data-value="0.4998192" data-numeric>
+                        0.500</td>
 
 
                 </tr>
@@ -39449,19 +39447,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.007795605" data-numeric>
-                        0.00780</td>
-                    <td data-value="0.12245155" data-numeric>
+                    <td data-value="0.0077725705" data-numeric>
+                        0.00777</td>
+                    <td data-value="0.12245358" data-numeric>
                         0.122</td>
 
 
 
-                    <td data-value="-0.3270867" data-numeric>
-                        -0.327</td>
-                    <td data-value="-0.0062324647" data-numeric>
-                        -0.00623</td>
-                    <td data-value="0.94511145" data-numeric>
-                        0.945</td>
+                    <td data-value="-0.3287949" data-numeric>
+                        -0.329</td>
+                    <td data-value="-0.005989889" data-numeric>
+                        -0.00599</td>
+                    <td data-value="0.94440746" data-numeric>
+                        0.944</td>
 
 
                 </tr>
@@ -39484,19 +39482,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.0013073961" data-numeric>
-                        -0.00131</td>
-                    <td data-value="0.12161674" data-numeric>
+                    <td data-value="-0.0012676094" data-numeric>
+                        -0.00127</td>
+                    <td data-value="0.12162043" data-numeric>
                         0.122</td>
 
 
 
-                    <td data-value="-0.5885368" data-numeric>
+                    <td data-value="-0.5886572" data-numeric>
                         -0.589</td>
-                    <td data-value="0.004088701" data-numeric>
-                        0.00409</td>
-                    <td data-value="0.6893175" data-numeric>
-                        0.689</td>
+                    <td data-value="0.0042094" data-numeric>
+                        0.00421</td>
+                    <td data-value="0.6876511" data-numeric>
+                        0.688</td>
 
 
                 </tr>
@@ -39519,18 +39517,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.009203649" data-numeric>
-                        0.00920</td>
-                    <td data-value="0.11908078" data-numeric>
+                    <td data-value="0.009256319" data-numeric>
+                        0.00926</td>
+                    <td data-value="0.119082086" data-numeric>
                         0.119</td>
 
 
 
-                    <td data-value="-0.18902391" data-numeric>
+                    <td data-value="-0.18906023" data-numeric>
                         -0.189</td>
-                    <td data-value="0.0053508426" data-numeric>
-                        0.00535</td>
-                    <td data-value="0.6611454" data-numeric>
+                    <td data-value="0.0050815674" data-numeric>
+                        0.00508</td>
+                    <td data-value="0.6611977" data-numeric>
                         0.661</td>
 
 
@@ -39554,19 +39552,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.0008917051" data-numeric>
-                        -0.000892</td>
-                    <td data-value="0.113904744" data-numeric>
+                    <td data-value="-0.00092617754" data-numeric>
+                        -0.000926</td>
+                    <td data-value="0.11390512" data-numeric>
                         0.114</td>
 
 
 
-                    <td data-value="-0.38373244" data-numeric>
+                    <td data-value="-0.3835045" data-numeric>
                         -0.384</td>
-                    <td data-value="0.0014766667" data-numeric>
-                        0.00148</td>
-                    <td data-value="0.49232596" data-numeric>
-                        0.492</td>
+                    <td data-value="0.0014428651" data-numeric>
+                        0.00144</td>
+                    <td data-value="0.491341" data-numeric>
+                        0.491</td>
 
 
                 </tr>
@@ -39589,18 +39587,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.0044082333" data-numeric>
-                        -0.00441</td>
-                    <td data-value="0.10768173" data-numeric>
+                    <td data-value="-0.004328439" data-numeric>
+                        -0.00433</td>
+                    <td data-value="0.10768106" data-numeric>
                         0.108</td>
 
 
 
-                    <td data-value="-0.47114846" data-numeric>
+                    <td data-value="-0.47054157" data-numeric>
                         -0.471</td>
-                    <td data-value="-0.002048179" data-numeric>
-                        -0.00205</td>
-                    <td data-value="0.41161096" data-numeric>
+                    <td data-value="-0.0025128045" data-numeric>
+                        -0.00251</td>
+                    <td data-value="0.41180843" data-numeric>
                         0.412</td>
 
 
@@ -39624,19 +39622,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.0011270805" data-numeric>
-                        0.00113</td>
-                    <td data-value="0.10442677" data-numeric>
+                    <td data-value="0.0012041079" data-numeric>
+                        0.00120</td>
+                    <td data-value="0.10442639" data-numeric>
                         0.104</td>
 
 
 
-                    <td data-value="-0.2970894" data-numeric>
-                        -0.297</td>
-                    <td data-value="-0.004262203" data-numeric>
-                        -0.00426</td>
-                    <td data-value="0.61879134" data-numeric>
-                        0.619</td>
+                    <td data-value="-0.2949465" data-numeric>
+                        -0.295</td>
+                    <td data-value="-0.0031368884" data-numeric>
+                        -0.00314</td>
+                    <td data-value="0.6274469" data-numeric>
+                        0.627</td>
 
 
                 </tr>
@@ -39659,19 +39657,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.0051725907" data-numeric>
-                        -0.00517</td>
-                    <td data-value="0.097433075" data-numeric>
-                        0.0974</td>
+                    <td data-value="-0.0058388086" data-numeric>
+                        -0.00584</td>
+                    <td data-value="0.09717976" data-numeric>
+                        0.0972</td>
 
 
 
-                    <td data-value="-0.8368029" data-numeric>
-                        -0.837</td>
-                    <td data-value="0.010030566" data-numeric>
-                        0.0100</td>
-                    <td data-value="0.1943615" data-numeric>
-                        0.194</td>
+                    <td data-value="-0.7541105" data-numeric>
+                        -0.754</td>
+                    <td data-value="0.013301216" data-numeric>
+                        0.0133</td>
+                    <td data-value="0.20093526" data-numeric>
+                        0.201</td>
 
 
                 </tr>
@@ -39769,7 +39767,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_c38dc335">
+    <skrub-table-report class="report" id="report_972b6e35">
     </skrub-table-report>
 
     <script type="module">
@@ -40873,7 +40871,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_c38dc335-wrapper-fallback">
+<div id="report_972b6e35-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -40884,8 +40882,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_c38dc335-wrapper").removeAttribute("hidden");
- document.getElementById("report_c38dc335-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_972b6e35-wrapper").removeAttribute("hidden");
+ document.getElementById("report_972b6e35-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -40929,8 +40927,8 @@ Xt
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_0844cba0-wrapper" hidden>
-    <template id="report_0844cba0-template">
+<div id="report_4e2a083f-wrapper" hidden>
+    <template id="report_4e2a083f-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -42358,7 +42356,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="fd71f25b"
+                id="ef97b2be"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -42388,7 +42386,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="2d0c312a"
+                id="262868b7"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42422,7 +42420,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="b2fc1d3a"
+                id="0a7380da"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42456,7 +42454,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="69061fa7"
+                id="b44bcc22"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42490,7 +42488,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="8c288c92"
+                id="ff16f6f7"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42524,7 +42522,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="53d177b7"
+                id="be313d3b"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42558,7 +42556,7 @@ data-spans_\_-1_\_4
 
 
                 <th
-                id="22184f08"
+                id="bb7f5cbb"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42592,7 +42590,7 @@ data-spans_\_-1_\_5
 
 
                 <th
-                id="32d512b9"
+                id="6ed9ad71"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42626,7 +42624,7 @@ data-spans_\_-1_\_6
 
 
                 <th
-                id="c39b44fc"
+                id="671c0470"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42660,7 +42658,7 @@ data-spans_\_-1_\_7
 
 
                 <th
-                id="cd94dcc6"
+                id="fe9ee07e"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42694,7 +42692,7 @@ data-spans_\_-1_\_8
 
 
                 <th
-                id="73269ae3"
+                id="6f3427aa"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42728,7 +42726,7 @@ data-spans_\_-1_\_9
 
 
                 <th
-                id="709ca888"
+                id="7c5fa5f2"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42762,7 +42760,7 @@ data-spans_\_-1_\_10
 
 
                 <th
-                id="8ccc937c"
+                id="be787873"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42796,7 +42794,7 @@ data-spans_\_-1_\_11
 
 
                 <th
-                id="be0186e7"
+                id="98a26311"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42830,7 +42828,7 @@ data-spans_\_-1_\_12
 
 
                 <th
-                id="3141ec67"
+                id="9be29f5d"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -42878,7 +42876,7 @@ data-spans_\_-1_\_13
 
 
                 <th
-                id="ba18f9d0"
+                id="0d1416fe"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -42906,7 +42904,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="9c9025c9"
+                id="02981bbb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -42936,7 +42934,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="a36e8fa8"
+                id="a282b2a1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -42966,7 +42964,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="b1d6d2ed"
+                id="81dd15c6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -42996,7 +42994,7 @@ data-spans_\_0_\_2
 
 
                 <td
-                id="89748230"
+                id="016280c3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43026,7 +43024,7 @@ data-spans_\_0_\_3
 
 
                 <td
-                id="6be28e19"
+                id="beba5c31"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43056,7 +43054,7 @@ data-spans_\_0_\_4
 
 
                 <td
-                id="71c4b542"
+                id="1c900165"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43086,7 +43084,7 @@ data-spans_\_0_\_5
 
 
                 <td
-                id="b7d11bdd"
+                id="ef6c225b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43107,8 +43105,8 @@ data-spans_\_0_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.11348894983530045"
-                data-value-str="0.11348894983530045"
+                data-value-repr="0.11343320459127426"
+                data-value-str="0.11343320459127426"
 
                 data-column-idx="6"
 
@@ -43116,7 +43114,7 @@ data-spans_\_0_\_6
 
 
                 <td
-                id="ba7e7071"
+                id="8e01adf9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43137,16 +43135,16 @@ data-spans_\_0_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.033078987151384354"
-                data-value-str="-0.033078987151384354"
+                data-value-repr="-0.03292425721883774"
+                data-value-str="-0.03292425721883774"
 
                 data-column-idx="7"
 
-                >-0.0331</td>
+                >-0.0329</td>
 
 
                 <td
-                id="0ddf9ca2"
+                id="6500fe95"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43167,8 +43165,8 @@ data-spans_\_0_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0338861420750618"
-                data-value-str="0.0338861420750618"
+                data-value-repr="0.0339169055223465"
+                data-value-str="0.0339169055223465"
 
                 data-column-idx="8"
 
@@ -43176,7 +43174,7 @@ data-spans_\_0_\_8
 
 
                 <td
-                id="5a1ea12a"
+                id="61bfdf33"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43197,16 +43195,16 @@ data-spans_\_0_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1321575939655304"
-                data-value-str="-0.1321575939655304"
+                data-value-repr="-0.13291355967521667"
+                data-value-str="-0.13291355967521667"
 
                 data-column-idx="9"
 
-                >-0.132</td>
+                >-0.133</td>
 
 
                 <td
-                id="912bc836"
+                id="ffa84b9f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43227,16 +43225,16 @@ data-spans_\_0_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.24645628035068512"
-                data-value-str="-0.24645628035068512"
+                data-value-repr="-0.24650955200195312"
+                data-value-str="-0.24650955200195312"
 
                 data-column-idx="10"
 
-                >-0.246</td>
+                >-0.247</td>
 
 
                 <td
-                id="fee71a90"
+                id="3a4c2724"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43257,16 +43255,16 @@ data-spans_\_0_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.12181538343429565"
-                data-value-str="0.12181538343429565"
+                data-value-repr="0.12316145747900009"
+                data-value-str="0.12316145747900009"
 
                 data-column-idx="11"
 
-                >0.122</td>
+                >0.123</td>
 
 
                 <td
-                id="421a6324"
+                id="9f3cb771"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43287,16 +43285,16 @@ data-spans_\_0_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.057828646153211594"
-                data-value-str="0.057828646153211594"
+                data-value-repr="0.055645059794187546"
+                data-value-str="0.055645059794187546"
 
                 data-column-idx="12"
 
-                >0.0578</td>
+                >0.0556</td>
 
 
                 <td
-                id="7f044480"
+                id="9807f2ae"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43317,8 +43315,8 @@ data-spans_\_0_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.3744589686393738"
-                data-value-str="0.3744589686393738"
+                data-value-repr="0.3741607666015625"
+                data-value-str="0.3741607666015625"
 
                 data-column-idx="13"
 
@@ -43330,7 +43328,7 @@ data-spans_\_0_\_13
 
 
                 <th
-                id="db8e1734"
+                id="092deec7"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -43358,7 +43356,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="167fcf9a"
+                id="d412323c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43388,7 +43386,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="05c057c4"
+                id="b43b7e77"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43418,7 +43416,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="4d5d25aa"
+                id="cc1241a8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43448,7 +43446,7 @@ data-spans_\_1_\_2
 
 
                 <td
-                id="c9c57c23"
+                id="0b311e8e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43478,7 +43476,7 @@ data-spans_\_1_\_3
 
 
                 <td
-                id="d68c0f8c"
+                id="43730062"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43508,7 +43506,7 @@ data-spans_\_1_\_4
 
 
                 <td
-                id="e1b4c678"
+                id="b2ca3a99"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43538,7 +43536,7 @@ data-spans_\_1_\_5
 
 
                 <td
-                id="550fc45d"
+                id="42cd3abe"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43559,8 +43557,8 @@ data-spans_\_1_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.4989006221294403"
-                data-value-str="0.4989006221294403"
+                data-value-repr="0.4989619851112366"
+                data-value-str="0.4989619851112366"
 
                 data-column-idx="6"
 
@@ -43568,7 +43566,7 @@ data-spans_\_1_\_6
 
 
                 <td
-                id="d4e714d7"
+                id="340411e5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43589,16 +43587,16 @@ data-spans_\_1_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.14004071056842804"
-                data-value-str="0.14004071056842804"
+                data-value-repr="0.14056909084320068"
+                data-value-str="0.14056909084320068"
 
                 data-column-idx="7"
 
-                >0.140</td>
+                >0.141</td>
 
 
                 <td
-                id="dbff3818"
+                id="dfe48e13"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43619,16 +43617,16 @@ data-spans_\_1_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.10137660801410675"
-                data-value-str="-0.10137660801410675"
+                data-value-repr="-0.10199340432882309"
+                data-value-str="-0.10199340432882309"
 
                 data-column-idx="8"
 
-                >-0.101</td>
+                >-0.102</td>
 
 
                 <td
-                id="b80ecddb"
+                id="20718fc8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43649,16 +43647,16 @@ data-spans_\_1_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.04745013266801834"
-                data-value-str="-0.04745013266801834"
+                data-value-repr="-0.04778946191072464"
+                data-value-str="-0.04778946191072464"
 
                 data-column-idx="9"
 
-                >-0.0475</td>
+                >-0.0478</td>
 
 
                 <td
-                id="2a6cb39a"
+                id="03a3d7a0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43679,16 +43677,16 @@ data-spans_\_1_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.16746243834495544"
-                data-value-str="-0.16746243834495544"
+                data-value-repr="-0.16782526671886444"
+                data-value-str="-0.16782526671886444"
 
                 data-column-idx="10"
 
-                >-0.167</td>
+                >-0.168</td>
 
 
                 <td
-                id="47cac3fc"
+                id="752124b6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43709,8 +43707,8 @@ data-spans_\_1_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.23519764840602875"
-                data-value-str="0.23519764840602875"
+                data-value-repr="0.23514822125434875"
+                data-value-str="0.23514822125434875"
 
                 data-column-idx="11"
 
@@ -43718,7 +43716,7 @@ data-spans_\_1_\_11
 
 
                 <td
-                id="dda754b4"
+                id="f14b0eeb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43739,16 +43737,16 @@ data-spans_\_1_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.025354750454425812"
-                data-value-str="-0.025354750454425812"
+                data-value-repr="-0.03017788752913475"
+                data-value-str="-0.03017788752913475"
 
                 data-column-idx="12"
 
-                >-0.0254</td>
+                >-0.0302</td>
 
 
                 <td
-                id="9edfe22e"
+                id="1af8475a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43769,12 +43767,12 @@ data-spans_\_1_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.27447330951690674"
-                data-value-str="0.27447330951690674"
+                data-value-repr="0.2758710980415344"
+                data-value-str="0.2758710980415344"
 
                 data-column-idx="13"
 
-                >0.274</td>
+                >0.276</td>
 
             </tr>
 
@@ -43782,7 +43780,7 @@ data-spans_\_1_\_13
 
 
                 <th
-                id="637febd0"
+                id="653ecfb1"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -43810,7 +43808,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="6e147f34"
+                id="957dd8c7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43840,7 +43838,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="a6b6ccb4"
+                id="95d7a5db"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43870,7 +43868,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="8fba6f67"
+                id="a68e2c90"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43900,7 +43898,7 @@ data-spans_\_2_\_2
 
 
                 <td
-                id="b0f287b1"
+                id="fd88935b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43930,7 +43928,7 @@ data-spans_\_2_\_3
 
 
                 <td
-                id="6e60e231"
+                id="8d19f243"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43960,7 +43958,7 @@ data-spans_\_2_\_4
 
 
                 <td
-                id="bff976b0"
+                id="8cf9e309"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -43990,7 +43988,7 @@ data-spans_\_2_\_5
 
 
                 <td
-                id="61c52819"
+                id="32ec01ab"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44011,16 +44009,16 @@ data-spans_\_2_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.12287291884422302"
-                data-value-str="-0.12287291884422302"
+                data-value-repr="-0.12177105247974396"
+                data-value-str="-0.12177105247974396"
 
                 data-column-idx="6"
 
-                >-0.123</td>
+                >-0.122</td>
 
 
                 <td
-                id="89a90a7d"
+                id="fa18ecf9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44041,16 +44039,16 @@ data-spans_\_2_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.12317132949829102"
-                data-value-str="-0.12317132949829102"
+                data-value-repr="-0.12534330785274506"
+                data-value-str="-0.12534330785274506"
 
                 data-column-idx="7"
 
-                >-0.123</td>
+                >-0.125</td>
 
 
                 <td
-                id="43021400"
+                id="86a58f21"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44071,8 +44069,8 @@ data-spans_\_2_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.3917979598045349"
-                data-value-str="0.3917979598045349"
+                data-value-repr="0.3924325108528137"
+                data-value-str="0.3924325108528137"
 
                 data-column-idx="8"
 
@@ -44080,7 +44078,7 @@ data-spans_\_2_\_8
 
 
                 <td
-                id="6525b079"
+                id="f471549a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44101,16 +44099,16 @@ data-spans_\_2_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.034680984914302826"
-                data-value-str="0.034680984914302826"
+                data-value-repr="0.03490469604730606"
+                data-value-str="0.03490469604730606"
 
                 data-column-idx="9"
 
-                >0.0347</td>
+                >0.0349</td>
 
 
                 <td
-                id="fe4cb028"
+                id="bb1b31cd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44131,16 +44129,16 @@ data-spans_\_2_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.10738505423069"
-                data-value-str="0.10738505423069"
+                data-value-repr="0.10818244516849518"
+                data-value-str="0.10818244516849518"
 
                 data-column-idx="10"
 
-                >0.107</td>
+                >0.108</td>
 
 
                 <td
-                id="73692d72"
+                id="48852eaf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44161,8 +44159,8 @@ data-spans_\_2_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.36949804425239563"
-                data-value-str="-0.36949804425239563"
+                data-value-repr="-0.36949989199638367"
+                data-value-str="-0.36949989199638367"
 
                 data-column-idx="11"
 
@@ -44170,7 +44168,7 @@ data-spans_\_2_\_11
 
 
                 <td
-                id="db1f947d"
+                id="243ce917"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44191,16 +44189,16 @@ data-spans_\_2_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.044514015316963196"
-                data-value-str="-0.044514015316963196"
+                data-value-repr="-0.040042631328105927"
+                data-value-str="-0.040042631328105927"
 
                 data-column-idx="12"
 
-                >-0.0445</td>
+                >-0.0400</td>
 
 
                 <td
-                id="b1b4ea4a"
+                id="69825dc1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44221,8 +44219,8 @@ data-spans_\_2_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.3651158809661865"
-                data-value-str="0.3651158809661865"
+                data-value-repr="0.3650722801685333"
+                data-value-str="0.3650722801685333"
 
                 data-column-idx="13"
 
@@ -44234,7 +44232,7 @@ data-spans_\_2_\_13
 
 
                 <th
-                id="ddcb8220"
+                id="79c3a683"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -44262,7 +44260,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="8e254949"
+                id="98ae6889"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44292,7 +44290,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="2abf1d79"
+                id="ce6ed04a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44322,7 +44320,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="6ada0a51"
+                id="8abc646b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44352,7 +44350,7 @@ data-spans_\_3_\_2
 
 
                 <td
-                id="fef41b3b"
+                id="9405f778"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44382,7 +44380,7 @@ data-spans_\_3_\_3
 
 
                 <td
-                id="b1f687a9"
+                id="47793692"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44412,7 +44410,7 @@ data-spans_\_3_\_4
 
 
                 <td
-                id="021de7bc"
+                id="deb84cd4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44442,7 +44440,7 @@ data-spans_\_3_\_5
 
 
                 <td
-                id="1c7cf685"
+                id="436cd629"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44463,8 +44461,8 @@ data-spans_\_3_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.07381615787744522"
-                data-value-str="-0.07381615787744522"
+                data-value-repr="-0.07378926873207092"
+                data-value-str="-0.07378926873207092"
 
                 data-column-idx="6"
 
@@ -44472,7 +44470,7 @@ data-spans_\_3_\_6
 
 
                 <td
-                id="0fdcb6e5"
+                id="bc9c58c9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44493,16 +44491,16 @@ data-spans_\_3_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08786603808403015"
-                data-value-str="-0.08786603808403015"
+                data-value-repr="-0.08839388191699982"
+                data-value-str="-0.08839388191699982"
 
                 data-column-idx="7"
 
-                >-0.0879</td>
+                >-0.0884</td>
 
 
                 <td
-                id="3f911356"
+                id="fdbb9812"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44523,8 +44521,8 @@ data-spans_\_3_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.16676229238510132"
-                data-value-str="0.16676229238510132"
+                data-value-repr="0.1670980155467987"
+                data-value-str="0.1670980155467987"
 
                 data-column-idx="8"
 
@@ -44532,7 +44530,7 @@ data-spans_\_3_\_8
 
 
                 <td
-                id="b7c13415"
+                id="42c3fd4a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44553,8 +44551,8 @@ data-spans_\_3_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.18441560864448547"
-                data-value-str="-0.18441560864448547"
+                data-value-repr="-0.18444781005382538"
+                data-value-str="-0.18444781005382538"
 
                 data-column-idx="9"
 
@@ -44562,7 +44560,7 @@ data-spans_\_3_\_9
 
 
                 <td
-                id="5cdf160f"
+                id="12c63a83"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44583,16 +44581,16 @@ data-spans_\_3_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.3982526659965515"
-                data-value-str="-0.3982526659965515"
+                data-value-repr="-0.39733225107192993"
+                data-value-str="-0.39733225107192993"
 
                 data-column-idx="10"
 
-                >-0.398</td>
+                >-0.397</td>
 
 
                 <td
-                id="198ac468"
+                id="5757b971"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44613,16 +44611,16 @@ data-spans_\_3_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11580536514520645"
-                data-value-str="-0.11580536514520645"
+                data-value-repr="-0.11987466365098953"
+                data-value-str="-0.11987466365098953"
 
                 data-column-idx="11"
 
-                >-0.116</td>
+                >-0.120</td>
 
 
                 <td
-                id="db7173fd"
+                id="686dabac"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44643,16 +44641,16 @@ data-spans_\_3_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.32212352752685547"
-                data-value-str="-0.32212352752685547"
+                data-value-repr="-0.3205554485321045"
+                data-value-str="-0.3205554485321045"
 
                 data-column-idx="12"
 
-                >-0.322</td>
+                >-0.321</td>
 
 
                 <td
-                id="99305a7f"
+                id="30becf6e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44673,12 +44671,12 @@ data-spans_\_3_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08934244513511658"
-                data-value-str="-0.08934244513511658"
+                data-value-repr="-0.08952341973781586"
+                data-value-str="-0.08952341973781586"
 
                 data-column-idx="13"
 
-                >-0.0893</td>
+                >-0.0895</td>
 
             </tr>
 
@@ -44686,7 +44684,7 @@ data-spans_\_3_\_13
 
 
                 <th
-                id="b0b42aa3"
+                id="cafca7a5"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -44714,7 +44712,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="05d65e17"
+                id="7aa5cdf6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44744,7 +44742,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="3d940132"
+                id="8ba561fd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44774,7 +44772,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="2d45ae4b"
+                id="ac1a3c97"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44804,7 +44802,7 @@ data-spans_\_4_\_2
 
 
                 <td
-                id="b5c72e0b"
+                id="eb973118"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44834,7 +44832,7 @@ data-spans_\_4_\_3
 
 
                 <td
-                id="5a1d9e95"
+                id="72e4b262"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44864,7 +44862,7 @@ data-spans_\_4_\_4
 
 
                 <td
-                id="c1da0282"
+                id="a89958be"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44894,7 +44892,7 @@ data-spans_\_4_\_5
 
 
                 <td
-                id="60491022"
+                id="a4d47fc9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44915,16 +44913,16 @@ data-spans_\_4_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08304522931575775"
-                data-value-str="-0.08304522931575775"
+                data-value-repr="-0.08483994752168655"
+                data-value-str="-0.08483994752168655"
 
                 data-column-idx="6"
 
-                >-0.0830</td>
+                >-0.0848</td>
 
 
                 <td
-                id="5b497e5e"
+                id="80db163e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44945,16 +44943,16 @@ data-spans_\_4_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.060335785150527954"
-                data-value-str="-0.060335785150527954"
+                data-value-repr="-0.05922597646713257"
+                data-value-str="-0.05922597646713257"
 
                 data-column-idx="7"
 
-                >-0.0603</td>
+                >-0.0592</td>
 
 
                 <td
-                id="c4a348da"
+                id="708fc6af"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -44975,8 +44973,8 @@ data-spans_\_4_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.19175821542739868"
-                data-value-str="0.19175821542739868"
+                data-value-repr="0.1918196976184845"
+                data-value-str="0.1918196976184845"
 
                 data-column-idx="8"
 
@@ -44984,7 +44982,7 @@ data-spans_\_4_\_8
 
 
                 <td
-                id="2c4130e5"
+                id="404ec4bd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45005,8 +45003,8 @@ data-spans_\_4_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.23739930987358093"
-                data-value-str="-0.23739930987358093"
+                data-value-repr="-0.23713788390159607"
+                data-value-str="-0.23713788390159607"
 
                 data-column-idx="9"
 
@@ -45014,7 +45012,7 @@ data-spans_\_4_\_9
 
 
                 <td
-                id="a9a026e5"
+                id="58a26373"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45035,16 +45033,16 @@ data-spans_\_4_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.07463863492012024"
-                data-value-str="-0.07463863492012024"
+                data-value-repr="-0.07513151317834854"
+                data-value-str="-0.07513151317834854"
 
                 data-column-idx="10"
 
-                >-0.0746</td>
+                >-0.0751</td>
 
 
                 <td
-                id="91ae37a3"
+                id="a32b26da"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45065,16 +45063,16 @@ data-spans_\_4_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.044734299182891846"
-                data-value-str="-0.044734299182891846"
+                data-value-repr="-0.042289309203624725"
+                data-value-str="-0.042289309203624725"
 
                 data-column-idx="11"
 
-                >-0.0447</td>
+                >-0.0423</td>
 
 
                 <td
-                id="cf28ae92"
+                id="9acf12cd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45095,16 +45093,16 @@ data-spans_\_4_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.20438461005687714"
-                data-value-str="0.20438461005687714"
+                data-value-repr="0.2078346312046051"
+                data-value-str="0.2078346312046051"
 
                 data-column-idx="12"
 
-                >0.204</td>
+                >0.208</td>
 
 
                 <td
-                id="5c2df68d"
+                id="4782e4db"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45125,12 +45123,12 @@ data-spans_\_4_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0651886910200119"
-                data-value-str="-0.0651886910200119"
+                data-value-repr="-0.06437461078166962"
+                data-value-str="-0.06437461078166962"
 
                 data-column-idx="13"
 
-                >-0.0652</td>
+                >-0.0644</td>
 
             </tr>
 
@@ -45298,7 +45296,7 @@ data-spans_\_4_\_13
 
 
                 <th
-                id="6bee3835"
+                id="1bd8151a"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -45326,7 +45324,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="61969751"
+                id="c845f33c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45356,7 +45354,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="6c743e56"
+                id="957d6c11"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45386,7 +45384,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="0da5fe2c"
+                id="5aa765c7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45416,7 +45414,7 @@ data-spans_\_5_\_2
 
 
                 <td
-                id="6ab9b0c4"
+                id="c9831abc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45446,7 +45444,7 @@ data-spans_\_5_\_3
 
 
                 <td
-                id="a109d5cd"
+                id="a9663713"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45476,7 +45474,7 @@ data-spans_\_5_\_4
 
 
                 <td
-                id="bca72050"
+                id="771aaf63"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45506,7 +45504,7 @@ data-spans_\_5_\_5
 
 
                 <td
-                id="810014b2"
+                id="a4894c2b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45527,8 +45525,8 @@ data-spans_\_5_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.10522030293941498"
-                data-value-str="-0.10522030293941498"
+                data-value-repr="-0.10471943020820618"
+                data-value-str="-0.10471943020820618"
 
                 data-column-idx="6"
 
@@ -45536,7 +45534,7 @@ data-spans_\_5_\_6
 
 
                 <td
-                id="96328252"
+                id="843403a3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45557,16 +45555,16 @@ data-spans_\_5_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.12361852824687958"
-                data-value-str="-0.12361852824687958"
+                data-value-repr="-0.12334545701742172"
+                data-value-str="-0.12334545701742172"
 
                 data-column-idx="7"
 
-                >-0.124</td>
+                >-0.123</td>
 
 
                 <td
-                id="210972e2"
+                id="b82e2cbe"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45587,16 +45585,16 @@ data-spans_\_5_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.40274184942245483"
-                data-value-str="0.40274184942245483"
+                data-value-repr="0.4022263288497925"
+                data-value-str="0.4022263288497925"
 
                 data-column-idx="8"
 
-                >0.403</td>
+                >0.402</td>
 
 
                 <td
-                id="15150787"
+                id="ce1cb18a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45617,8 +45615,8 @@ data-spans_\_5_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.6177768707275391"
-                data-value-str="0.6177768707275391"
+                data-value-repr="0.6183122396469116"
+                data-value-str="0.6183122396469116"
 
                 data-column-idx="9"
 
@@ -45626,7 +45624,7 @@ data-spans_\_5_\_9
 
 
                 <td
-                id="2b0ca7f9"
+                id="33b18ba8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45647,8 +45645,8 @@ data-spans_\_5_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.04567744955420494"
-                data-value-str="-0.04567744955420494"
+                data-value-repr="-0.04569185897707939"
+                data-value-str="-0.04569185897707939"
 
                 data-column-idx="10"
 
@@ -45656,7 +45654,7 @@ data-spans_\_5_\_10
 
 
                 <td
-                id="1ca31d93"
+                id="b445ad5f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45677,16 +45675,16 @@ data-spans_\_5_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.3521822392940521"
-                data-value-str="0.3521822392940521"
+                data-value-repr="0.3512686491012573"
+                data-value-str="0.3512686491012573"
 
                 data-column-idx="11"
 
-                >0.352</td>
+                >0.351</td>
 
 
                 <td
-                id="4736f10e"
+                id="89dc27e0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45707,16 +45705,16 @@ data-spans_\_5_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.012089812196791172"
-                data-value-str="0.012089812196791172"
+                data-value-repr="0.006610635668039322"
+                data-value-str="0.006610635668039322"
 
                 data-column-idx="12"
 
-                >0.0121</td>
+                >0.00661</td>
 
 
                 <td
-                id="ceda38e7"
+                id="5c997fd6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45737,12 +45735,12 @@ data-spans_\_5_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.4069339334964752"
-                data-value-str="-0.4069339334964752"
+                data-value-repr="-0.4047679603099823"
+                data-value-str="-0.4047679603099823"
 
                 data-column-idx="13"
 
-                >-0.407</td>
+                >-0.405</td>
 
             </tr>
 
@@ -45750,7 +45748,7 @@ data-spans_\_5_\_13
 
 
                 <th
-                id="afb31b3a"
+                id="01019c13"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -45778,7 +45776,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="f80013b6"
+                id="320ce6d0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45808,7 +45806,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="e7996eb3"
+                id="2a8bc21d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45838,7 +45836,7 @@ data-spans_\_6_\_1
 
 
                 <td
-                id="5b125154"
+                id="28c5a5e2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45868,7 +45866,7 @@ data-spans_\_6_\_2
 
 
                 <td
-                id="87313175"
+                id="32a74650"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45898,7 +45896,7 @@ data-spans_\_6_\_3
 
 
                 <td
-                id="b9a64a81"
+                id="20d6611e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45928,7 +45926,7 @@ data-spans_\_6_\_4
 
 
                 <td
-                id="b6bb2f3c"
+                id="2a0084b0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45958,7 +45956,7 @@ data-spans_\_6_\_5
 
 
                 <td
-                id="06f24a72"
+                id="4781d825"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -45979,8 +45977,8 @@ data-spans_\_6_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.12527649104595184"
-                data-value-str="-0.12527649104595184"
+                data-value-repr="-0.12515154480934143"
+                data-value-str="-0.12515154480934143"
 
                 data-column-idx="6"
 
@@ -45988,7 +45986,7 @@ data-spans_\_6_\_6
 
 
                 <td
-                id="75c0ff03"
+                id="3f2bebea"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46009,16 +46007,16 @@ data-spans_\_6_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.12139487266540527"
-                data-value-str="0.12139487266540527"
+                data-value-repr="0.12172013521194458"
+                data-value-str="0.12172013521194458"
 
                 data-column-idx="7"
 
-                >0.121</td>
+                >0.122</td>
 
 
                 <td
-                id="3b2eaf05"
+                id="c0920b22"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46039,16 +46037,16 @@ data-spans_\_6_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06323017179965973"
-                data-value-str="0.06323017179965973"
+                data-value-repr="0.06290832906961441"
+                data-value-str="0.06290832906961441"
 
                 data-column-idx="8"
 
-                >0.0632</td>
+                >0.0629</td>
 
 
                 <td
-                id="72915ee9"
+                id="023ef0c3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46069,16 +46067,16 @@ data-spans_\_6_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0401926226913929"
-                data-value-str="-0.0401926226913929"
+                data-value-repr="-0.04047763720154762"
+                data-value-str="-0.04047763720154762"
 
                 data-column-idx="9"
 
-                >-0.0402</td>
+                >-0.0405</td>
 
 
                 <td
-                id="cd035536"
+                id="6b4ed231"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46099,8 +46097,8 @@ data-spans_\_6_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.13551786541938782"
-                data-value-str="-0.13551786541938782"
+                data-value-repr="-0.1358962059020996"
+                data-value-str="-0.1358962059020996"
 
                 data-column-idx="10"
 
@@ -46108,7 +46106,7 @@ data-spans_\_6_\_10
 
 
                 <td
-                id="2a8f89da"
+                id="1f6d3ca9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46129,16 +46127,16 @@ data-spans_\_6_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.08620850741863251"
-                data-value-str="0.08620850741863251"
+                data-value-repr="0.08684670180082321"
+                data-value-str="0.08684670180082321"
 
                 data-column-idx="11"
 
-                >0.0862</td>
+                >0.0868</td>
 
 
                 <td
-                id="5a157e0b"
+                id="29e8ff7c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46159,16 +46157,16 @@ data-spans_\_6_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0697629302740097"
-                data-value-str="0.0697629302740097"
+                data-value-repr="0.06846736371517181"
+                data-value-str="0.06846736371517181"
 
                 data-column-idx="12"
 
-                >0.0698</td>
+                >0.0685</td>
 
 
                 <td
-                id="fc694491"
+                id="44094ac9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46189,8 +46187,8 @@ data-spans_\_6_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.13022886216640472"
-                data-value-str="0.13022886216640472"
+                data-value-repr="0.1299600452184677"
+                data-value-str="0.1299600452184677"
 
                 data-column-idx="13"
 
@@ -46202,7 +46200,7 @@ data-spans_\_6_\_13
 
 
                 <th
-                id="9daca1a9"
+                id="9942a6ee"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -46230,7 +46228,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="3f776648"
+                id="4a79ce58"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46260,7 +46258,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="65438965"
+                id="988e8fd6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46290,7 +46288,7 @@ data-spans_\_7_\_1
 
 
                 <td
-                id="281bd234"
+                id="2d9cf782"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46320,7 +46318,7 @@ data-spans_\_7_\_2
 
 
                 <td
-                id="d12ca4b6"
+                id="a1e745f8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46350,7 +46348,7 @@ data-spans_\_7_\_3
 
 
                 <td
-                id="3623acb8"
+                id="a3d1e25c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46380,7 +46378,7 @@ data-spans_\_7_\_4
 
 
                 <td
-                id="a3e3fdfc"
+                id="d23a8755"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46410,7 +46408,7 @@ data-spans_\_7_\_5
 
 
                 <td
-                id="a3c92747"
+                id="526d399b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46431,8 +46429,8 @@ data-spans_\_7_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.11619342863559723"
-                data-value-str="-0.11619342863559723"
+                data-value-repr="-0.11624376475811005"
+                data-value-str="-0.11624376475811005"
 
                 data-column-idx="6"
 
@@ -46440,7 +46438,7 @@ data-spans_\_7_\_6
 
 
                 <td
-                id="15e54045"
+                id="407d9514"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46461,16 +46459,16 @@ data-spans_\_7_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.13115370273590088"
-                data-value-str="-0.13115370273590088"
+                data-value-repr="-0.13031336665153503"
+                data-value-str="-0.13031336665153503"
 
                 data-column-idx="7"
 
-                >-0.131</td>
+                >-0.130</td>
 
 
                 <td
-                id="409ad1ce"
+                id="c513b2ac"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46491,16 +46489,16 @@ data-spans_\_7_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.306104838848114"
-                data-value-str="0.306104838848114"
+                data-value-repr="0.30532559752464294"
+                data-value-str="0.30532559752464294"
 
                 data-column-idx="8"
 
-                >0.306</td>
+                >0.305</td>
 
 
                 <td
-                id="f23cf040"
+                id="55db63e1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46521,8 +46519,8 @@ data-spans_\_7_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.20185765624046326"
-                data-value-str="0.20185765624046326"
+                data-value-repr="0.20235732197761536"
+                data-value-str="0.20235732197761536"
 
                 data-column-idx="9"
 
@@ -46530,7 +46528,7 @@ data-spans_\_7_\_9
 
 
                 <td
-                id="39e3381c"
+                id="4971aa07"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46551,16 +46549,16 @@ data-spans_\_7_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03863575682044029"
-                data-value-str="0.03863575682044029"
+                data-value-repr="0.0373140349984169"
+                data-value-str="0.0373140349984169"
 
                 data-column-idx="10"
 
-                >0.0386</td>
+                >0.0373</td>
 
 
                 <td
-                id="f93b9740"
+                id="25d4dcb1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46581,16 +46579,16 @@ data-spans_\_7_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1203153058886528"
-                data-value-str="-0.1203153058886528"
+                data-value-repr="-0.12102007865905762"
+                data-value-str="-0.12102007865905762"
 
                 data-column-idx="11"
 
-                >-0.120</td>
+                >-0.121</td>
 
 
                 <td
-                id="c9748e5d"
+                id="385fa5d3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46611,16 +46609,16 @@ data-spans_\_7_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.017534542828798294"
-                data-value-str="-0.017534542828798294"
+                data-value-repr="-0.015840275213122368"
+                data-value-str="-0.015840275213122368"
 
                 data-column-idx="12"
 
-                >-0.0175</td>
+                >-0.0158</td>
 
 
                 <td
-                id="90a5ba30"
+                id="43164cd5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46641,12 +46639,12 @@ data-spans_\_7_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.024917930364608765"
-                data-value-str="0.024917930364608765"
+                data-value-repr="0.025265799835324287"
+                data-value-str="0.025265799835324287"
 
                 data-column-idx="13"
 
-                >0.0249</td>
+                >0.0253</td>
 
             </tr>
 
@@ -46654,7 +46652,7 @@ data-spans_\_7_\_13
 
 
                 <th
-                id="ae2c40a3"
+                id="c8256c81"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -46682,7 +46680,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="15778b87"
+                id="f30e81da"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46712,7 +46710,7 @@ data-spans_\_8_\_0
 
 
                 <td
-                id="f000cbd8"
+                id="acac4a7e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46742,7 +46740,7 @@ data-spans_\_8_\_1
 
 
                 <td
-                id="5cb79a69"
+                id="73d1c9c4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46772,7 +46770,7 @@ data-spans_\_8_\_2
 
 
                 <td
-                id="d3d42565"
+                id="50cdcc41"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46802,7 +46800,7 @@ data-spans_\_8_\_3
 
 
                 <td
-                id="eb0f2ed1"
+                id="52d89dfa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46832,7 +46830,7 @@ data-spans_\_8_\_4
 
 
                 <td
-                id="80077fb5"
+                id="8aa2167f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46862,7 +46860,7 @@ data-spans_\_8_\_5
 
 
                 <td
-                id="0701eed0"
+                id="30845f74"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46883,8 +46881,8 @@ data-spans_\_8_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.12602762877941132"
-                data-value-str="-0.12602762877941132"
+                data-value-repr="-0.1258394420146942"
+                data-value-str="-0.1258394420146942"
 
                 data-column-idx="6"
 
@@ -46892,7 +46890,7 @@ data-spans_\_8_\_6
 
 
                 <td
-                id="1b3c1b0c"
+                id="ec03f8b3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46913,16 +46911,16 @@ data-spans_\_8_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03521807864308357"
-                data-value-str="0.03521807864308357"
+                data-value-repr="0.03488585352897644"
+                data-value-str="0.03488585352897644"
 
                 data-column-idx="7"
 
-                >0.0352</td>
+                >0.0349</td>
 
 
                 <td
-                id="1291c17b"
+                id="d38a9502"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46943,16 +46941,16 @@ data-spans_\_8_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.22445891797542572"
-                data-value-str="0.22445891797542572"
+                data-value-repr="0.22513678669929504"
+                data-value-str="0.22513678669929504"
 
                 data-column-idx="8"
 
-                >0.224</td>
+                >0.225</td>
 
 
                 <td
-                id="3d624166"
+                id="edc7bf90"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -46973,16 +46971,16 @@ data-spans_\_8_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.4103839695453644"
-                data-value-str="-0.4103839695453644"
+                data-value-repr="-0.41127434372901917"
+                data-value-str="-0.41127434372901917"
 
                 data-column-idx="9"
 
-                >-0.410</td>
+                >-0.411</td>
 
 
                 <td
-                id="253ed1e3"
+                id="e7fb2e16"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47003,8 +47001,8 @@ data-spans_\_8_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.6629710793495178"
-                data-value-str="0.6629710793495178"
+                data-value-repr="0.66319340467453"
+                data-value-str="0.66319340467453"
 
                 data-column-idx="10"
 
@@ -47012,7 +47010,7 @@ data-spans_\_8_\_10
 
 
                 <td
-                id="380aa9de"
+                id="3b17a5da"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47033,16 +47031,16 @@ data-spans_\_8_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.38063254952430725"
-                data-value-str="0.38063254952430725"
+                data-value-repr="0.3732396364212036"
+                data-value-str="0.3732396364212036"
 
                 data-column-idx="11"
 
-                >0.381</td>
+                >0.373</td>
 
 
                 <td
-                id="bd0b3548"
+                id="4c88c9e2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47063,16 +47061,16 @@ data-spans_\_8_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.56064373254776"
-                data-value-str="-0.56064373254776"
+                data-value-repr="-0.566981315612793"
+                data-value-str="-0.566981315612793"
 
                 data-column-idx="12"
 
-                >-0.561</td>
+                >-0.567</td>
 
 
                 <td
-                id="d4011317"
+                id="0a258b1a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47093,12 +47091,12 @@ data-spans_\_8_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.017228420823812485"
-                data-value-str="0.017228420823812485"
+                data-value-repr="0.016234589740633965"
+                data-value-str="0.016234589740633965"
 
                 data-column-idx="13"
 
-                >0.0172</td>
+                >0.0162</td>
 
             </tr>
 
@@ -47106,7 +47104,7 @@ data-spans_\_8_\_13
 
 
                 <th
-                id="7451ca78"
+                id="9e878a8e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -47134,7 +47132,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="7bb6f761"
+                id="59b2bea1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47164,7 +47162,7 @@ data-spans_\_9_\_0
 
 
                 <td
-                id="aca9162f"
+                id="ea99df38"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47194,7 +47192,7 @@ data-spans_\_9_\_1
 
 
                 <td
-                id="e9e1d9db"
+                id="ef005234"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47224,7 +47222,7 @@ data-spans_\_9_\_2
 
 
                 <td
-                id="4995e9a0"
+                id="407e344b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47254,7 +47252,7 @@ data-spans_\_9_\_3
 
 
                 <td
-                id="ead9685c"
+                id="bb0cad7f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47284,7 +47282,7 @@ data-spans_\_9_\_4
 
 
                 <td
-                id="9a9246bc"
+                id="d3679335"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47314,7 +47312,7 @@ data-spans_\_9_\_5
 
 
                 <td
-                id="51cbff59"
+                id="f3ab83af"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47335,16 +47333,16 @@ data-spans_\_9_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.12921354174613953"
-                data-value-str="-0.12921354174613953"
+                data-value-repr="-0.13026435673236847"
+                data-value-str="-0.13026435673236847"
 
                 data-column-idx="6"
 
-                >-0.129</td>
+                >-0.130</td>
 
 
                 <td
-                id="7fbb06a0"
+                id="e30ee29f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47365,16 +47363,16 @@ data-spans_\_9_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.059047963470220566"
-                data-value-str="0.059047963470220566"
+                data-value-repr="0.060690149664878845"
+                data-value-str="0.060690149664878845"
 
                 data-column-idx="7"
 
-                >0.0590</td>
+                >0.0607</td>
 
 
                 <td
-                id="82a9e415"
+                id="560273ca"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47395,8 +47393,8 @@ data-spans_\_9_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.12742874026298523"
-                data-value-str="0.12742874026298523"
+                data-value-repr="0.12686565518379211"
+                data-value-str="0.12686565518379211"
 
                 data-column-idx="8"
 
@@ -47404,7 +47402,7 @@ data-spans_\_9_\_8
 
 
                 <td
-                id="4ef64869"
+                id="5f5f749a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47425,8 +47423,8 @@ data-spans_\_9_\_9
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.16361762583255768"
-                data-value-str="-0.16361762583255768"
+                data-value-repr="-0.1635165512561798"
+                data-value-str="-0.1635165512561798"
 
                 data-column-idx="9"
 
@@ -47434,7 +47432,7 @@ data-spans_\_9_\_9
 
 
                 <td
-                id="cf6b8d4a"
+                id="316e7b39"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47455,16 +47453,16 @@ data-spans_\_9_\_10
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.08934373408555984"
-                data-value-str="-0.08934373408555984"
+                data-value-repr="-0.09084299206733704"
+                data-value-str="-0.09084299206733704"
 
                 data-column-idx="10"
 
-                >-0.0893</td>
+                >-0.0908</td>
 
 
                 <td
-                id="87d88a78"
+                id="4ea8058c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47485,16 +47483,16 @@ data-spans_\_9_\_11
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.004978936165571213"
-                data-value-str="-0.004978936165571213"
+                data-value-repr="-0.0027960781008005142"
+                data-value-str="-0.0027960781008005142"
 
                 data-column-idx="11"
 
-                >-0.00498</td>
+                >-0.00280</td>
 
 
                 <td
-                id="e4240543"
+                id="7b542f26"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47515,16 +47513,16 @@ data-spans_\_9_\_12
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.150870680809021"
-                data-value-str="0.150870680809021"
+                data-value-repr="0.15211166441440582"
+                data-value-str="0.15211166441440582"
 
                 data-column-idx="12"
 
-                >0.151</td>
+                >0.152</td>
 
 
                 <td
-                id="cc621c4a"
+                id="3660ccaf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -47545,12 +47543,12 @@ data-spans_\_9_\_13
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.0481862910091877"
-                data-value-str="0.0481862910091877"
+                data-value-repr="0.04798445850610733"
+                data-value-str="0.04798445850610733"
 
                 data-column-idx="13"
 
-                >0.0482</td>
+                >0.0480</td>
 
             </tr>
 
@@ -48034,7 +48032,7 @@ data-spans_\_9_\_13
 
 
                 <dt>Mean ± Std</dt>
-                <dd>3.92e-08 ±
+                <dd>1.53e-08 ±
                     0.476
 
                 </dd>
@@ -48042,7 +48040,7 @@ data-spans_\_9_\_13
 
                 <dt>Median ± IQR</dt>
                 <dd>-0.107 ±
-                    0.0982
+                    0.0979
 
                 </dd>
 
@@ -48104,7 +48102,7 @@ data-spans_\_9_\_13
 
                 <dt>Unique values</dt>
                 <dd>
-                    2,779 (30.1%)
+                    2,776 (30.1%)
 
                     <span class="toggletip-wrapper">
                         <div class="toggletip" data-manager="Toggletip">
@@ -48123,15 +48121,15 @@ data-spans_\_9_\_13
 
 
                 <dt>Mean ± Std</dt>
-                <dd>1.45e-08 ±
+                <dd>2.27e-08 ±
                     0.445
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.0620 ±
-                    0.160
+                <dd>-0.0614 ±
+                    0.159
 
                 </dd>
 
@@ -48189,7 +48187,7 @@ data-spans_\_9_\_13
 
                 <dt>Unique values</dt>
                 <dd>
-                    2,778 (30.1%)
+                    2,779 (30.1%)
 
                     <span class="toggletip-wrapper">
                         <div class="toggletip" data-manager="Toggletip">
@@ -48208,7 +48206,7 @@ data-spans_\_9_\_13
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-4.15e-08 ±
+                <dd>1.65e-08 ±
                     0.406
 
                 </dd>
@@ -48216,14 +48214,14 @@ data-spans_\_9_\_13
 
                 <dt>Median ± IQR</dt>
                 <dd>0.136 ±
-                    0.486
+                    0.488
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
                     <span class="min-value">-1.08</span> |
-                    <span class="max-value">0.729</span>
+                    <span class="max-value">0.728</span>
 
                 </dd>
 
@@ -48293,21 +48291,21 @@ data-spans_\_9_\_13
 
 
                 <dt>Mean ± Std</dt>
-                <dd>1.72e-08 ±
+                <dd>8.47e-09 ±
                     0.318
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.0397 ±
-                    0.330
+                <dd>-0.0396 ±
+                    0.328
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.658</span> |
+                    <span class="min-value">-0.659</span> |
                     <span class="max-value">1.33</span>
 
                 </dd>
@@ -48380,22 +48378,22 @@ data-spans_\_9_\_13
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-3.10e-10 ±
+                <dd>-2.74e-09 ±
                     0.277
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.0131 ±
-                    0.196
+                <dd>0.0137 ±
+                    0.195
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
                     <span class="min-value">-1.02</span> |
-                    <span class="max-value">0.874</span>
+                    <span class="max-value">0.877</span>
 
                 </dd>
 
@@ -48467,7 +48465,7 @@ data-spans_\_9_\_13
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-8.47e-09 ±
+                <dd>7.34e-09 ±
                     0.266
 
                 </dd>
@@ -48475,14 +48473,14 @@ data-spans_\_9_\_13
 
                 <dt>Median ± IQR</dt>
                 <dd>-0.0410 ±
-                    0.169
+                    0.168
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.714</span> |
-                    <span class="max-value">1.15</span>
+                    <span class="min-value">-0.715</span> |
+                    <span class="max-value">1.16</span>
 
                 </dd>
 
@@ -48554,22 +48552,22 @@ data-spans_\_9_\_13
 
 
                 <dt>Mean ± Std</dt>
-                <dd>5.14e-09 ±
+                <dd>-6.48e-09 ±
                     0.265
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.0129 ±
-                    0.132
+                <dd>0.0136 ±
+                    0.130
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
                     <span class="min-value">-1.12</span> |
-                    <span class="max-value">0.705</span>
+                    <span class="max-value">0.707</span>
 
                 </dd>
 
@@ -48639,22 +48637,22 @@ data-spans_\_9_\_13
 
 
                 <dt>Mean ± Std</dt>
-                <dd>3.62e-09 ±
+                <dd>4.78e-09 ±
                     0.249
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.0383 ±
-                    0.193
+                <dd>-0.0386 ±
+                    0.194
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.724</span> |
-                    <span class="max-value">0.771</span>
+                    <span class="min-value">-0.722</span> |
+                    <span class="max-value">0.773</span>
 
                 </dd>
 
@@ -49229,18 +49227,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="3.916803e-08" data-numeric>
-                        3.92e-08</td>
-                    <td data-value="0.47568965" data-numeric>
+                    <td data-value="1.5295166e-08" data-numeric>
+                        1.53e-08</td>
+                    <td data-value="0.47572324" data-numeric>
                         0.476</td>
 
 
 
-                    <td data-value="-0.5163109" data-numeric>
+                    <td data-value="-0.516143" data-numeric>
                         -0.516</td>
-                    <td data-value="-0.10687737" data-numeric>
+                    <td data-value="-0.10673171" data-numeric>
                         -0.107</td>
-                    <td data-value="1.4830164" data-numeric>
+                    <td data-value="1.4826472" data-numeric>
                         1.48</td>
 
 
@@ -49258,24 +49256,24 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
                     </td>
 
 
-                    <td data-value="2779" data-numeric>
-                        2779 (30.1%)
+                    <td data-value="2776" data-numeric>
+                        2776 (30.1%)
                     </td>
 
 
 
-                    <td data-value="1.4468401e-08" data-numeric>
-                        1.45e-08</td>
-                    <td data-value="0.4447954" data-numeric>
+                    <td data-value="2.2736058e-08" data-numeric>
+                        2.27e-08</td>
+                    <td data-value="0.44478697" data-numeric>
                         0.445</td>
 
 
 
-                    <td data-value="-0.98493123" data-numeric>
+                    <td data-value="-0.98519313" data-numeric>
                         -0.985</td>
-                    <td data-value="-0.062028818" data-numeric>
-                        -0.0620</td>
-                    <td data-value="1.2783046" data-numeric>
+                    <td data-value="-0.06142724" data-numeric>
+                        -0.0614</td>
+                    <td data-value="1.278701" data-numeric>
                         1.28</td>
 
 
@@ -49293,25 +49291,25 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
                     </td>
 
 
-                    <td data-value="2778" data-numeric>
-                        2778 (30.1%)
+                    <td data-value="2779" data-numeric>
+                        2779 (30.1%)
                     </td>
 
 
 
-                    <td data-value="-4.154498e-08" data-numeric>
-                        -4.15e-08</td>
-                    <td data-value="0.40611118" data-numeric>
+                    <td data-value="1.6535315e-08" data-numeric>
+                        1.65e-08</td>
+                    <td data-value="0.40612748" data-numeric>
                         0.406</td>
 
 
 
-                    <td data-value="-1.076232" data-numeric>
+                    <td data-value="-1.0761356" data-numeric>
                         -1.08</td>
-                    <td data-value="0.13610327" data-numeric>
+                    <td data-value="0.13589206" data-numeric>
                         0.136</td>
-                    <td data-value="0.728711" data-numeric>
-                        0.729</td>
+                    <td data-value="0.72828233" data-numeric>
+                        0.728</td>
 
 
                 </tr>
@@ -49334,18 +49332,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="1.715539e-08" data-numeric>
-                        1.72e-08</td>
-                    <td data-value="0.31830582" data-numeric>
+                    <td data-value="8.474349e-09" data-numeric>
+                        8.47e-09</td>
+                    <td data-value="0.31831083" data-numeric>
                         0.318</td>
 
 
 
-                    <td data-value="-0.65821505" data-numeric>
-                        -0.658</td>
-                    <td data-value="-0.039738886" data-numeric>
-                        -0.0397</td>
-                    <td data-value="1.3330609" data-numeric>
+                    <td data-value="-0.65867096" data-numeric>
+                        -0.659</td>
+                    <td data-value="-0.039609995" data-numeric>
+                        -0.0396</td>
+                    <td data-value="1.3334807" data-numeric>
                         1.33</td>
 
 
@@ -49369,19 +49367,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-3.1003716e-10" data-numeric>
-                        -3.10e-10</td>
-                    <td data-value="0.27697307" data-numeric>
+                    <td data-value="-2.7386615e-09" data-numeric>
+                        -2.74e-09</td>
+                    <td data-value="0.27697235" data-numeric>
                         0.277</td>
 
 
 
-                    <td data-value="-1.01582" data-numeric>
+                    <td data-value="-1.0169681" data-numeric>
                         -1.02</td>
-                    <td data-value="0.013078507" data-numeric>
-                        0.0131</td>
-                    <td data-value="0.874347" data-numeric>
-                        0.874</td>
+                    <td data-value="0.013744727" data-numeric>
+                        0.0137</td>
+                    <td data-value="0.87652755" data-numeric>
+                        0.877</td>
 
 
                 </tr>
@@ -49404,19 +49402,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-8.474349e-09" data-numeric>
-                        -8.47e-09</td>
-                    <td data-value="0.26607737" data-numeric>
+                    <td data-value="7.337546e-09" data-numeric>
+                        7.34e-09</td>
+                    <td data-value="0.2660985" data-numeric>
                         0.266</td>
 
 
 
-                    <td data-value="-0.71442693" data-numeric>
-                        -0.714</td>
-                    <td data-value="-0.04100525" data-numeric>
+                    <td data-value="-0.7154248" data-numeric>
+                        -0.715</td>
+                    <td data-value="-0.041026756" data-numeric>
                         -0.0410</td>
-                    <td data-value="1.1521492" data-numeric>
-                        1.15</td>
+                    <td data-value="1.1562738" data-numeric>
+                        1.16</td>
 
 
                 </tr>
@@ -49439,19 +49437,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="5.1414495e-09" data-numeric>
-                        5.14e-09</td>
-                    <td data-value="0.26464579" data-numeric>
+                    <td data-value="-6.484944e-09" data-numeric>
+                        -6.48e-09</td>
+                    <td data-value="0.26463622" data-numeric>
                         0.265</td>
 
 
 
-                    <td data-value="-1.1195999" data-numeric>
+                    <td data-value="-1.1170102" data-numeric>
                         -1.12</td>
-                    <td data-value="0.012942029" data-numeric>
-                        0.0129</td>
-                    <td data-value="0.7049595" data-numeric>
-                        0.705</td>
+                    <td data-value="0.013604463" data-numeric>
+                        0.0136</td>
+                    <td data-value="0.70731467" data-numeric>
+                        0.707</td>
 
 
                 </tr>
@@ -49474,19 +49472,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="3.6171002e-09" data-numeric>
-                        3.62e-09</td>
-                    <td data-value="0.24907525" data-numeric>
+                    <td data-value="4.7797397e-09" data-numeric>
+                        4.78e-09</td>
+                    <td data-value="0.24909396" data-numeric>
                         0.249</td>
 
 
 
-                    <td data-value="-0.7237439" data-numeric>
-                        -0.724</td>
-                    <td data-value="-0.038277607" data-numeric>
-                        -0.0383</td>
-                    <td data-value="0.7710003" data-numeric>
-                        0.771</td>
+                    <td data-value="-0.7218535" data-numeric>
+                        -0.722</td>
+                    <td data-value="-0.038572058" data-numeric>
+                        -0.0386</td>
+                    <td data-value="0.7732218" data-numeric>
+                        0.773</td>
 
 
                 </tr>
@@ -49519,7 +49517,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_0844cba0">
+    <skrub-table-report class="report" id="report_4e2a083f">
     </skrub-table-report>
 
     <script type="module">
@@ -50623,7 +50621,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_0844cba0-wrapper-fallback">
+<div id="report_4e2a083f-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -50634,8 +50632,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_0844cba0-wrapper").removeAttribute("hidden");
- document.getElementById("report_0844cba0-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_4e2a083f-wrapper").removeAttribute("hidden");
+ document.getElementById("report_4e2a083f-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -50676,8 +50674,8 @@ pipeline.fit_transform(Xt)
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_1415f8ee-wrapper" hidden>
-    <template id="report_1415f8ee-template">
+<div id="report_327c1b05-wrapper" hidden>
+    <template id="report_327c1b05-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -52102,7 +52100,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="ad8d9dc6"
+                id="34d03539"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -52132,7 +52130,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="a505e589"
+                id="dbcd5fd4"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -52166,7 +52164,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="426be3d6"
+                id="2aec1c34"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -52200,7 +52198,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="601f5c47"
+                id="d8cd85f7"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -52234,7 +52232,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="88d82fd9"
+                id="23b4c118"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -52268,7 +52266,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="acd282ff"
+                id="305d887c"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -52302,7 +52300,7 @@ data-spans_\_-1_\_4
 
 
                 <th
-                id="4e6f6127"
+                id="24ef4f54"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -52336,7 +52334,7 @@ data-spans_\_-1_\_5
 
 
                 <th
-                id="15e183e4"
+                id="a3871efb"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -52370,7 +52368,7 @@ data-spans_\_-1_\_6
 
 
                 <th
-                id="a2e281ba"
+                id="91783cce"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -52404,7 +52402,7 @@ data-spans_\_-1_\_7
 
 
                 <th
-                id="1ab20e45"
+                id="ece42131"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -52452,7 +52450,7 @@ data-spans_\_-1_\_8
 
 
                 <th
-                id="01eecf24"
+                id="6fd6c066"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -52480,7 +52478,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="80c2b324"
+                id="a38221ca"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52510,7 +52508,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="3b40a018"
+                id="6c83c9db"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52531,16 +52529,16 @@ data-spans_\_0_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.23859056235479534"
-                data-value-str="0.23859056235479534"
+                data-value-repr="0.2384565729620696"
+                data-value-str="0.2384565729620696"
 
                 data-column-idx="1"
 
-                >0.239</td>
+                >0.238</td>
 
 
                 <td
-                id="7483180b"
+                id="a722782d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52561,16 +52559,16 @@ data-spans_\_0_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.07437305623296896"
-                data-value-str="-0.07437305623296896"
+                data-value-repr="-0.07402659696513665"
+                data-value-str="-0.07402659696513665"
 
                 data-column-idx="2"
 
-                >-0.0744</td>
+                >-0.0740</td>
 
 
                 <td
-                id="9ac7b4ac"
+                id="20834a57"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52591,16 +52589,16 @@ data-spans_\_0_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.08344517760337045"
-                data-value-str="0.08344517760337045"
+                data-value-repr="0.08351743647741026"
+                data-value-str="0.08351743647741026"
 
                 data-column-idx="3"
 
-                >0.0834</td>
+                >0.0835</td>
 
 
                 <td
-                id="ff7c555b"
+                id="ddc5b91c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52621,16 +52619,16 @@ data-spans_\_0_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.4152131774043966"
-                data-value-str="-0.4152131774043966"
+                data-value-repr="-0.4175816963800597"
+                data-value-str="-0.4175816963800597"
 
                 data-column-idx="4"
 
-                >-0.415</td>
+                >-0.418</td>
 
 
                 <td
-                id="9dd6fd7d"
+                id="fecb619a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52651,8 +52649,8 @@ data-spans_\_0_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.8898686346272727"
-                data-value-str="-0.8898686346272727"
+                data-value-repr="-0.8900631918155857"
+                data-value-str="-0.8900631918155857"
 
                 data-column-idx="5"
 
@@ -52660,7 +52658,7 @@ data-spans_\_0_\_5
 
 
                 <td
-                id="341d9595"
+                id="30c98aec"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52681,16 +52679,16 @@ data-spans_\_0_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.457844263884525"
-                data-value-str="0.457844263884525"
+                data-value-repr="0.46286666150696754"
+                data-value-str="0.46286666150696754"
 
                 data-column-idx="6"
 
-                >0.458</td>
+                >0.463</td>
 
 
                 <td
-                id="3942bcd3"
+                id="c62a87e7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52711,16 +52709,16 @@ data-spans_\_0_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.2185252085183534"
-                data-value-str="0.2185252085183534"
+                data-value-repr="0.21028143950551495"
+                data-value-str="0.21028143950551495"
 
                 data-column-idx="7"
 
-                >0.219</td>
+                >0.210</td>
 
 
                 <td
-                id="85050438"
+                id="4d4c41e3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52741,8 +52739,8 @@ data-spans_\_0_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="1.503478419843257"
-                data-value-str="1.503478419843257"
+                data-value-repr="1.502168246107223"
+                data-value-str="1.502168246107223"
 
                 data-column-idx="8"
 
@@ -52754,7 +52752,7 @@ data-spans_\_0_\_8
 
 
                 <th
-                id="1a7018dc"
+                id="dd5ddd00"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -52782,7 +52780,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="b8a6216a"
+                id="9248ddde"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52812,7 +52810,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="373efba1"
+                id="21a7246d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52833,8 +52831,8 @@ data-spans_\_1_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="1.0488511106191012"
-                data-value-str="1.0488511106191012"
+                data-value-repr="1.0489060743982668"
+                data-value-str="1.0489060743982668"
 
                 data-column-idx="1"
 
@@ -52842,7 +52840,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="38946d7d"
+                id="0b6777a9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52863,16 +52861,16 @@ data-spans_\_1_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.3148600023817014"
-                data-value-str="0.3148600023817014"
+                data-value-repr="0.3160539671540169"
+                data-value-str="0.3160539671540169"
 
                 data-column-idx="2"
 
-                >0.315</td>
+                >0.316</td>
 
 
                 <td
-                id="10409790"
+                id="61bfa5e2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52893,16 +52891,16 @@ data-spans_\_1_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.24964114580043245"
-                data-value-str="-0.24964114580043245"
+                data-value-repr="-0.25115007627367136"
+                data-value-str="-0.25115007627367136"
 
                 data-column-idx="3"
 
-                >-0.250</td>
+                >-0.251</td>
 
 
                 <td
-                id="9ec52dd8"
+                id="cd2a7838"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52923,16 +52921,16 @@ data-spans_\_1_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1490790226912075"
-                data-value-str="-0.1490790226912075"
+                data-value-repr="-0.15014274632200378"
+                data-value-str="-0.15014274632200378"
 
                 data-column-idx="4"
 
-                >-0.149</td>
+                >-0.150</td>
 
 
                 <td
-                id="cf0ccfaa"
+                id="cfc8b6d3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52953,16 +52951,16 @@ data-spans_\_1_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.604649112722721"
-                data-value-str="-0.604649112722721"
+                data-value-repr="-0.6059606641189992"
+                data-value-str="-0.6059606641189992"
 
                 data-column-idx="5"
 
-                >-0.605</td>
+                >-0.606</td>
 
 
                 <td
-                id="5c055ae7"
+                id="744a9601"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -52983,8 +52981,8 @@ data-spans_\_1_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.8839925425807824"
-                data-value-str="0.8839925425807824"
+                data-value-repr="0.883736500575654"
+                data-value-str="0.883736500575654"
 
                 data-column-idx="6"
 
@@ -52992,7 +52990,7 @@ data-spans_\_1_\_6
 
 
                 <td
-                id="17af6419"
+                id="99519fda"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53013,16 +53011,16 @@ data-spans_\_1_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0958115746448136"
-                data-value-str="-0.0958115746448136"
+                data-value-repr="-0.11404152457328788"
+                data-value-str="-0.11404152457328788"
 
                 data-column-idx="7"
 
-                >-0.0958</td>
+                >-0.114</td>
 
 
                 <td
-                id="cf60da92"
+                id="f324e951"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53043,12 +53041,12 @@ data-spans_\_1_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="1.1020291425755073"
-                data-value-str="1.1020291425755073"
+                data-value-repr="1.1075581365707796"
+                data-value-str="1.1075581365707796"
 
                 data-column-idx="8"
 
-                >1.10</td>
+                >1.11</td>
 
             </tr>
 
@@ -53056,7 +53054,7 @@ data-spans_\_1_\_8
 
 
                 <th
-                id="dde09525"
+                id="56c45325"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -53084,7 +53082,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="c92f2f0c"
+                id="82217cf7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53114,7 +53112,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="9a946fca"
+                id="be9a6698"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53135,16 +53133,16 @@ data-spans_\_2_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.25831887519562136"
-                data-value-str="-0.25831887519562136"
+                data-value-repr="-0.25598426391082807"
+                data-value-str="-0.25598426391082807"
 
                 data-column-idx="1"
 
-                >-0.258</td>
+                >-0.256</td>
 
 
                 <td
-                id="b39ed413"
+                id="8ce6375c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53165,16 +53163,16 @@ data-spans_\_2_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.2769318547482075"
-                data-value-str="-0.2769318547482075"
+                data-value-repr="-0.28182058912292224"
+                data-value-str="-0.28182058912292224"
 
                 data-column-idx="2"
 
-                >-0.277</td>
+                >-0.282</td>
 
 
                 <td
-                id="f3ee8329"
+                id="9b7185b1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53195,16 +53193,16 @@ data-spans_\_2_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.9648077951140481"
-                data-value-str="0.9648077951140481"
+                data-value-repr="0.966331448525396"
+                data-value-str="0.966331448525396"
 
                 data-column-idx="3"
 
-                >0.965</td>
+                >0.966</td>
 
 
                 <td
-                id="b5543633"
+                id="e4055881"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53225,16 +53223,16 @@ data-spans_\_2_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.1089607676485199"
-                data-value-str="0.1089607676485199"
+                data-value-repr="0.10966193133128344"
+                data-value-str="0.10966193133128344"
 
                 data-column-idx="4"
 
-                >0.109</td>
+                >0.110</td>
 
 
                 <td
-                id="1414a08b"
+                id="b04e4d93"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53255,16 +53253,16 @@ data-spans_\_2_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.3877303998904822"
-                data-value-str="0.3877303998904822"
+                data-value-repr="0.3906104851115244"
+                data-value-str="0.3906104851115244"
 
                 data-column-idx="5"
 
-                >0.388</td>
+                >0.391</td>
 
 
                 <td
-                id="b263dc35"
+                id="a8f0b622"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53285,8 +53283,8 @@ data-spans_\_2_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-1.3887617424537635"
-                data-value-str="-1.3887617424537635"
+                data-value-repr="-1.3886584284136079"
+                data-value-str="-1.3886584284136079"
 
                 data-column-idx="6"
 
@@ -53294,7 +53292,7 @@ data-spans_\_2_\_6
 
 
                 <td
-                id="e0760a6f"
+                id="a76205c6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53315,16 +53313,16 @@ data-spans_\_2_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.16821137953698548"
-                data-value-str="-0.16821137953698548"
+                data-value-repr="-0.15132016680759972"
+                data-value-str="-0.15132016680759972"
 
                 data-column-idx="7"
 
-                >-0.168</td>
+                >-0.151</td>
 
 
                 <td
-                id="11b982c3"
+                id="7b6b5959"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53345,8 +53343,8 @@ data-spans_\_2_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="1.4659652821916251"
-                data-value-str="1.4659652821916251"
+                data-value-repr="1.4656800914578072"
+                data-value-str="1.4656800914578072"
 
                 data-column-idx="8"
 
@@ -53358,7 +53356,7 @@ data-spans_\_2_\_8
 
 
                 <th
-                id="440462d2"
+                id="b407b3ae"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -53386,7 +53384,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="17314715"
+                id="befe527c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53416,7 +53414,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="acc8a811"
+                id="082e4d85"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53437,8 +53435,8 @@ data-spans_\_3_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.15518562601193606"
-                data-value-str="-0.15518562601193606"
+                data-value-repr="-0.1551180907969183"
+                data-value-str="-0.1551180907969183"
 
                 data-column-idx="1"
 
@@ -53446,7 +53444,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="7798a837"
+                id="52e54d9c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53467,16 +53465,16 @@ data-spans_\_3_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1975533279632549"
-                data-value-str="-0.1975533279632549"
+                data-value-repr="-0.19874390016686821"
+                data-value-str="-0.19874390016686821"
 
                 data-column-idx="2"
 
-                >-0.198</td>
+                >-0.199</td>
 
 
                 <td
-                id="30f48931"
+                id="80e45c79"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53497,8 +53495,8 @@ data-spans_\_3_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.41065446726845095"
-                data-value-str="0.41065446726845095"
+                data-value-repr="0.4114645281007026"
+                data-value-str="0.4114645281007026"
 
                 data-column-idx="3"
 
@@ -53506,7 +53504,7 @@ data-spans_\_3_\_3
 
 
                 <td
-                id="17b89f91"
+                id="3ebde9de"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53527,8 +53525,8 @@ data-spans_\_3_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.5793975638863182"
-                data-value-str="-0.5793975638863182"
+                data-value-repr="-0.5794896187572776"
+                data-value-str="-0.5794896187572776"
 
                 data-column-idx="4"
 
@@ -53536,7 +53534,7 @@ data-spans_\_3_\_4
 
 
                 <td
-                id="2a3914eb"
+                id="86a01ead"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53557,16 +53555,16 @@ data-spans_\_3_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-1.4379530351507035"
-                data-value-str="-1.4379530351507035"
+                data-value-repr="-1.4346333036954915"
+                data-value-str="-1.4346333036954915"
 
                 data-column-idx="5"
 
-                >-1.44</td>
+                >-1.43</td>
 
 
                 <td
-                id="a1288b07"
+                id="cd931d69"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53587,16 +53585,16 @@ data-spans_\_3_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.43525549042816375"
-                data-value-str="-0.43525549042816375"
+                data-value-repr="-0.45051425726883326"
+                data-value-str="-0.45051425726883326"
 
                 data-column-idx="6"
 
-                >-0.435</td>
+                >-0.451</td>
 
 
                 <td
-                id="0426de43"
+                id="cd77f139"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53617,16 +53615,16 @@ data-spans_\_3_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-1.2172534312237941"
-                data-value-str="-1.2172534312237941"
+                data-value-repr="-1.2113717168313702"
+                data-value-str="-1.2113717168313702"
 
                 data-column-idx="7"
 
-                >-1.22</td>
+                >-1.21</td>
 
 
                 <td
-                id="b1412b8f"
+                id="be63db02"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53647,8 +53645,8 @@ data-spans_\_3_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.3587160587416383"
-                data-value-str="-0.3587160587416383"
+                data-value-repr="-0.3594156847608657"
+                data-value-str="-0.3594156847608657"
 
                 data-column-idx="8"
 
@@ -53660,7 +53658,7 @@ data-spans_\_3_\_8
 
 
                 <th
-                id="47ff9869"
+                id="11abff38"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -53688,7 +53686,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="cdaf5ad5"
+                id="d7dba2c1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53718,7 +53716,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="82ddc374"
+                id="ffc29bf3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53739,16 +53737,16 @@ data-spans_\_4_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.17458813252935806"
-                data-value-str="-0.17458813252935806"
+                data-value-repr="-0.1783485668809517"
+                data-value-str="-0.1783485668809517"
 
                 data-column-idx="1"
 
-                >-0.175</td>
+                >-0.178</td>
 
 
                 <td
-                id="2765b7ae"
+                id="16f0ea44"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53769,16 +53767,16 @@ data-spans_\_4_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.13565578138201323"
-                data-value-str="-0.13565578138201323"
+                data-value-repr="-0.1331630975646277"
+                data-value-str="-0.1331630975646277"
 
                 data-column-idx="2"
 
-                >-0.136</td>
+                >-0.133</td>
 
 
                 <td
-                id="10703577"
+                id="87e4c350"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53799,8 +53797,8 @@ data-spans_\_4_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.472207260633621"
-                data-value-str="0.472207260633621"
+                data-value-repr="0.47233955560239943"
+                data-value-str="0.47233955560239943"
 
                 data-column-idx="3"
 
@@ -53808,7 +53806,7 @@ data-spans_\_4_\_3
 
 
                 <td
-                id="ecda226a"
+                id="b5ea68bc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53829,16 +53827,16 @@ data-spans_\_4_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.745861914537276"
-                data-value-str="-0.745861914537276"
+                data-value-repr="-0.7450288538081445"
+                data-value-str="-0.7450288538081445"
 
                 data-column-idx="4"
 
-                >-0.746</td>
+                >-0.745</td>
 
 
                 <td
-                id="729c468a"
+                id="79746ec2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53859,16 +53857,16 @@ data-spans_\_4_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.2694943694925684"
-                data-value-str="-0.2694943694925684"
+                data-value-repr="-0.2712746516859046"
+                data-value-str="-0.2712746516859046"
 
                 data-column-idx="5"
 
-                >-0.269</td>
+                >-0.271</td>
 
 
                 <td
-                id="c33bfad3"
+                id="848e0dec"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53889,16 +53887,16 @@ data-spans_\_4_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.16813423974138983"
-                data-value-str="-0.16813423974138983"
+                data-value-repr="-0.15893215828208399"
+                data-value-str="-0.15893215828208399"
 
                 data-column-idx="6"
 
-                >-0.168</td>
+                >-0.159</td>
 
 
                 <td
-                id="dde52efd"
+                id="869b577c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53919,16 +53917,16 @@ data-spans_\_4_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.772336811862112"
-                data-value-str="0.772336811862112"
+                data-value-repr="0.7854023650985248"
+                data-value-str="0.7854023650985248"
 
                 data-column-idx="7"
 
-                >0.772</td>
+                >0.785</td>
 
 
                 <td
-                id="c5ee029a"
+                id="41383b77"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -53949,12 +53947,12 @@ data-spans_\_4_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.26173707977691524"
-                data-value-str="-0.26173707977691524"
+                data-value-repr="-0.2584490785825661"
+                data-value-str="-0.2584490785825661"
 
                 data-column-idx="8"
 
-                >-0.262</td>
+                >-0.258</td>
 
             </tr>
 
@@ -54072,7 +54070,7 @@ data-spans_\_4_\_8
 
 
                 <th
-                id="314dc7f0"
+                id="38254000"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -54100,7 +54098,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="27ce7d11"
+                id="672c8c34"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54130,7 +54128,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="7ed3c0f2"
+                id="242f1f10"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54151,16 +54149,16 @@ data-spans_\_5_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.22120734155630545"
-                data-value-str="-0.22120734155630545"
+                data-value-repr="-0.22013874610017892"
+                data-value-str="-0.22013874610017892"
 
                 data-column-idx="1"
 
-                >-0.221</td>
+                >-0.220</td>
 
 
                 <td
-                id="d0eca0ba"
+                id="636371b5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54181,16 +54179,16 @@ data-spans_\_5_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.2779373124691624"
-                data-value-str="-0.2779373124691624"
+                data-value-repr="-0.2773286429499187"
+                data-value-str="-0.2773286429499187"
 
                 data-column-idx="2"
 
-                >-0.278</td>
+                >-0.277</td>
 
 
                 <td
-                id="d58a7de3"
+                id="ae14d5f6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54211,16 +54209,16 @@ data-spans_\_5_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.9917572690391824"
-                data-value-str="0.9917572690391824"
+                data-value-repr="0.9904478876165504"
+                data-value-str="0.9904478876165504"
 
                 data-column-idx="3"
 
-                >0.992</td>
+                >0.990</td>
 
 
                 <td
-                id="0c88443c"
+                id="c3fe271f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54241,8 +54239,8 @@ data-spans_\_5_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="1.9409331619410364"
-                data-value-str="1.9409331619410364"
+                data-value-repr="1.9425847465356916"
+                data-value-str="1.9425847465356916"
 
                 data-column-idx="4"
 
@@ -54250,7 +54248,7 @@ data-spans_\_5_\_4
 
 
                 <td
-                id="50477c1d"
+                id="cb995179"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54271,8 +54269,8 @@ data-spans_\_5_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1649255166032974"
-                data-value-str="-0.1649255166032974"
+                data-value-repr="-0.16497794780148078"
+                data-value-str="-0.16497794780148078"
 
                 data-column-idx="5"
 
@@ -54280,7 +54278,7 @@ data-spans_\_5_\_5
 
 
                 <td
-                id="908245b6"
+                id="fb7b43de"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54301,8 +54299,8 @@ data-spans_\_5_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="1.3236801961423486"
-                data-value-str="1.3236801961423486"
+                data-value-repr="1.3201415196416073"
+                data-value-str="1.3201415196416073"
 
                 data-column-idx="6"
 
@@ -54310,7 +54308,7 @@ data-spans_\_5_\_6
 
 
                 <td
-                id="0381d9d1"
+                id="7fd8ca1b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54331,16 +54329,16 @@ data-spans_\_5_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.04568545301628752"
-                data-value-str="0.04568545301628752"
+                data-value-repr="0.02498146705667861"
+                data-value-str="0.02498146705667861"
 
                 data-column-idx="7"
 
-                >0.0457</td>
+                >0.0250</td>
 
 
                 <td
-                id="b1217719"
+                id="a6feb709"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54361,8 +54359,8 @@ data-spans_\_5_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-1.6338676613618925"
-                data-value-str="-1.6338676613618925"
+                data-value-repr="-1.6250490367542625"
+                data-value-str="-1.6250490367542625"
 
                 data-column-idx="8"
 
@@ -54374,7 +54372,7 @@ data-spans_\_5_\_8
 
 
                 <th
-                id="58223b00"
+                id="bc0e21d2"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -54402,7 +54400,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="8e8771a3"
+                id="56a872b7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54432,7 +54430,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="ce89b5fd"
+                id="f1e07d40"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54453,8 +54451,8 @@ data-spans_\_6_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.26337196483967173"
-                data-value-str="-0.26337196483967173"
+                data-value-repr="-0.2630906550846234"
+                data-value-str="-0.2630906550846234"
 
                 data-column-idx="1"
 
@@ -54462,7 +54460,7 @@ data-spans_\_6_\_1
 
 
                 <td
-                id="e555d2d2"
+                id="a71a4f5b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54483,16 +54481,16 @@ data-spans_\_6_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.27293769883671126"
-                data-value-str="0.27293769883671126"
+                data-value-repr="0.2736741795262624"
+                data-value-str="0.2736741795262624"
 
                 data-column-idx="2"
 
-                >0.273</td>
+                >0.274</td>
 
 
                 <td
-                id="7811768f"
+                id="ff074806"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54513,16 +54511,16 @@ data-spans_\_6_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.15570524157793036"
-                data-value-str="0.15570524157793036"
+                data-value-repr="0.1549063371450795"
+                data-value-str="0.1549063371450795"
 
                 data-column-idx="3"
 
-                >0.156</td>
+                >0.155</td>
 
 
                 <td
-                id="ce9b6f89"
+                id="07b9d614"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54543,16 +54541,16 @@ data-spans_\_6_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.12627735618667166"
-                data-value-str="-0.12627735618667166"
+                data-value-repr="-0.127170793906826"
+                data-value-str="-0.127170793906826"
 
                 data-column-idx="4"
 
-                >-0.126</td>
+                >-0.127</td>
 
 
                 <td
-                id="ae3f10f8"
+                id="d7ee5cc7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54573,16 +54571,16 @@ data-spans_\_6_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.4893082761975826"
-                data-value-str="-0.4893082761975826"
+                data-value-repr="-0.4906755490240979"
+                data-value-str="-0.4906755490240979"
 
                 data-column-idx="5"
 
-                >-0.489</td>
+                >-0.491</td>
 
 
                 <td
-                id="3be33aa9"
+                id="bb5bd179"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54603,16 +54601,16 @@ data-spans_\_6_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.3240154950941958"
-                data-value-str="0.3240154950941958"
+                data-value-repr="0.3263881629519682"
+                data-value-str="0.3263881629519682"
 
                 data-column-idx="6"
 
-                >0.324</td>
+                >0.326</td>
 
 
                 <td
-                id="854b86a5"
+                id="06a9f052"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54633,16 +54631,16 @@ data-spans_\_6_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.2636229639945047"
-                data-value-str="0.2636229639945047"
+                data-value-repr="0.2587366341087278"
+                data-value-str="0.2587366341087278"
 
                 data-column-idx="7"
 
-                >0.264</td>
+                >0.259</td>
 
 
                 <td
-                id="0f220c4f"
+                id="42234a86"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54663,12 +54661,12 @@ data-spans_\_6_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.5228777958026865"
-                data-value-str="0.5228777958026865"
+                data-value-repr="0.5217592689927114"
+                data-value-str="0.5217592689927114"
 
                 data-column-idx="8"
 
-                >0.523</td>
+                >0.522</td>
 
             </tr>
 
@@ -54676,7 +54674,7 @@ data-spans_\_6_\_8
 
 
                 <th
-                id="a13638cf"
+                id="f9fa8fa5"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -54704,7 +54702,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="32886a6a"
+                id="892c1be8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54734,7 +54732,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="5eaac7c6"
+                id="3f1ce2a4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54755,8 +54753,8 @@ data-spans_\_7_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.24427641673464162"
-                data-value-str="-0.24427641673464162"
+                data-value-repr="-0.24436493014215063"
+                data-value-str="-0.24436493014215063"
 
                 data-column-idx="1"
 
@@ -54764,7 +54762,7 @@ data-spans_\_7_\_1
 
 
                 <td
-                id="ce678ae9"
+                id="f35f431c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54785,16 +54783,16 @@ data-spans_\_7_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.2948789953174299"
-                data-value-str="-0.2948789953174299"
+                data-value-repr="-0.29299521547945606"
+                data-value-str="-0.29299521547945606"
 
                 data-column-idx="2"
 
-                >-0.295</td>
+                >-0.293</td>
 
 
                 <td
-                id="1736c365"
+                id="7dd9739f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54815,16 +54813,16 @@ data-spans_\_7_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.7537873435739514"
-                data-value-str="0.7537873435739514"
+                data-value-repr="0.7518381252529666"
+                data-value-str="0.7518381252529666"
 
                 data-column-idx="3"
 
-                >0.754</td>
+                >0.752</td>
 
 
                 <td
-                id="26e9ea02"
+                id="2a1163dd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54845,16 +54843,16 @@ data-spans_\_7_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.6341969325583411"
-                data-value-str="0.6341969325583411"
+                data-value-repr="0.6357568402860408"
+                data-value-str="0.6357568402860408"
 
                 data-column-idx="4"
 
-                >0.634</td>
+                >0.636</td>
 
 
                 <td
-                id="e69b76dc"
+                id="5f1b328c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54875,16 +54873,16 @@ data-spans_\_7_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.13950039561745325"
-                data-value-str="0.13950039561745325"
+                data-value-repr="0.1347284574522477"
+                data-value-str="0.1347284574522477"
 
                 data-column-idx="5"
 
-                >0.140</td>
+                >0.135</td>
 
 
                 <td
-                id="1c107210"
+                id="264641d2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54905,16 +54903,16 @@ data-spans_\_7_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.45220614391282404"
-                data-value-str="-0.45220614391282404"
+                data-value-repr="-0.4548189680566147"
+                data-value-str="-0.4548189680566147"
 
                 data-column-idx="6"
 
-                >-0.452</td>
+                >-0.455</td>
 
 
                 <td
-                id="f672a59a"
+                id="fc40cdb3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54935,16 +54933,16 @@ data-spans_\_7_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.0662602578080817"
-                data-value-str="-0.0662602578080817"
+                data-value-repr="-0.05986001404296556"
+                data-value-str="-0.05986001404296556"
 
                 data-column-idx="7"
 
-                >-0.0663</td>
+                >-0.0599</td>
 
 
                 <td
-                id="3fd1c71c"
+                id="8f817614"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -54965,12 +54963,12 @@ data-spans_\_7_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.10004718358017335"
-                data-value-str="0.10004718358017335"
+                data-value-repr="0.10143627631473408"
+                data-value-str="0.10143627631473408"
 
                 data-column-idx="8"
 
-                >0.100</td>
+                >0.101</td>
 
             </tr>
 
@@ -54978,7 +54976,7 @@ data-spans_\_7_\_8
 
 
                 <th
-                id="619d340a"
+                id="ea8925fb"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -55006,7 +55004,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="e5e1c63c"
+                id="492a07be"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55036,7 +55034,7 @@ data-spans_\_8_\_0
 
 
                 <td
-                id="11db9b01"
+                id="0edd543a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55057,8 +55055,8 @@ data-spans_\_8_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.26495110038611774"
-                data-value-str="-0.26495110038611774"
+                data-value-repr="-0.2645367363508926"
+                data-value-str="-0.2645367363508926"
 
                 data-column-idx="1"
 
@@ -55066,7 +55064,7 @@ data-spans_\_8_\_1
 
 
                 <td
-                id="ac02c093"
+                id="c108d26a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55087,16 +55085,16 @@ data-spans_\_8_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.07918240951543172"
-                data-value-str="0.07918240951543172"
+                data-value-repr="0.07843692137120345"
+                data-value-str="0.07843692137120345"
 
                 data-column-idx="2"
 
-                >0.0792</td>
+                >0.0784</td>
 
 
                 <td
-                id="d2f6efb1"
+                id="938cfa82"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55117,16 +55115,16 @@ data-spans_\_8_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.5527331761370639"
-                data-value-str="0.5527331761370639"
+                data-value-repr="0.5543800376452349"
+                data-value-str="0.5543800376452349"
 
                 data-column-idx="3"
 
-                >0.553</td>
+                >0.554</td>
 
 
                 <td
-                id="89e8f9a3"
+                id="b8b5685f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55147,8 +55145,8 @@ data-spans_\_8_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-1.2893456345652652"
-                data-value-str="-1.2893456345652652"
+                data-value-repr="-1.2921227227137255"
+                data-value-str="-1.2921227227137255"
 
                 data-column-idx="4"
 
@@ -55156,7 +55154,7 @@ data-spans_\_8_\_4
 
 
                 <td
-                id="6393511b"
+                id="640a6ec0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55177,8 +55175,8 @@ data-spans_\_8_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="2.3937599388733863"
-                data-value-str="2.3937599388733863"
+                data-value-repr="2.3945686570346023"
+                data-value-str="2.3945686570346023"
 
                 data-column-idx="5"
 
@@ -55186,7 +55184,7 @@ data-spans_\_8_\_5
 
 
                 <td
-                id="673fa2b1"
+                id="4875aabd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55207,16 +55205,16 @@ data-spans_\_8_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="1.4306109470496473"
-                data-value-str="1.4306109470496473"
+                data-value-repr="1.40271311637134"
+                data-value-str="1.40271311637134"
 
                 data-column-idx="6"
 
-                >1.43</td>
+                >1.40</td>
 
 
                 <td
-                id="d4874bff"
+                id="bc7828d4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55237,16 +55235,16 @@ data-spans_\_8_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-2.11858322807422"
-                data-value-str="-2.11858322807422"
+                data-value-repr="-2.1426094583669535"
+                data-value-str="-2.1426094583669535"
 
                 data-column-idx="7"
 
-                >-2.12</td>
+                >-2.14</td>
 
 
                 <td
-                id="42da5db9"
+                id="cbb1edc9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55267,12 +55265,12 @@ data-spans_\_8_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.06917327551386662"
-                data-value-str="0.06917327551386662"
+                data-value-repr="0.06517807281356071"
+                data-value-str="0.06517807281356071"
 
                 data-column-idx="8"
 
-                >0.0692</td>
+                >0.0652</td>
 
             </tr>
 
@@ -55280,7 +55278,7 @@ data-spans_\_8_\_8
 
 
                 <th
-                id="bab62775"
+                id="c01f1c31"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -55308,7 +55306,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="86d2e40d"
+                id="2585dc4e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55338,7 +55336,7 @@ data-spans_\_9_\_0
 
 
                 <td
-                id="1ff705ec"
+                id="dc2fd5a7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55359,16 +55357,16 @@ data-spans_\_9_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.27164892448619704"
-                data-value-str="-0.27164892448619704"
+                data-value-repr="-0.2738386876137792"
+                data-value-str="-0.2738386876137792"
 
                 data-column-idx="1"
 
-                >-0.272</td>
+                >-0.274</td>
 
 
                 <td
-                id="f0a9f9de"
+                id="76c98fcd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55389,16 +55387,16 @@ data-spans_\_9_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.13276024658347987"
-                data-value-str="0.13276024658347987"
+                data-value-repr="0.13645502123397832"
+                data-value-str="0.13645502123397832"
 
                 data-column-idx="2"
 
-                >0.133</td>
+                >0.136</td>
 
 
                 <td
-                id="7418e16f"
+                id="429dab1b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55419,16 +55417,16 @@ data-spans_\_9_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.3137950713584115"
-                data-value-str="0.3137950713584115"
+                data-value-repr="0.31239578203179097"
+                data-value-str="0.31239578203179097"
 
                 data-column-idx="3"
 
-                >0.314</td>
+                >0.312</td>
 
 
                 <td
-                id="2ba4e966"
+                id="ccfe05a7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55449,8 +55447,8 @@ data-spans_\_9_\_4
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.5140543994164085"
-                data-value-str="-0.5140543994164085"
+                data-value-repr="-0.5137287587511841"
+                data-value-str="-0.5137287587511841"
 
                 data-column-idx="4"
 
@@ -55458,7 +55456,7 @@ data-spans_\_9_\_4
 
 
                 <td
-                id="a68b7cca"
+                id="dbbe02a7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55479,16 +55477,16 @@ data-spans_\_9_\_5
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.32258941142281766"
-                data-value-str="-0.32258941142281766"
+                data-value-repr="-0.32800352518528103"
+                data-value-str="-0.32800352518528103"
 
                 data-column-idx="5"
 
-                >-0.323</td>
+                >-0.328</td>
 
 
                 <td
-                id="2300d972"
+                id="244eb838"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55509,16 +55507,16 @@ data-spans_\_9_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.01871334465696276"
-                data-value-str="-0.01871334465696276"
+                data-value-repr="-0.010508279796840023"
+                data-value-str="-0.010508279796840023"
 
                 data-column-idx="6"
 
-                >-0.0187</td>
+                >-0.0105</td>
 
 
                 <td
-                id="3cb73408"
+                id="f879cd54"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55539,16 +55537,16 @@ data-spans_\_9_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.5701162118361691"
-                data-value-str="0.5701162118361691"
+                data-value-repr="0.5748265421944446"
+                data-value-str="0.5748265421944446"
 
                 data-column-idx="7"
 
-                >0.570</td>
+                >0.575</td>
 
 
                 <td
-                id="be2b26f6"
+                id="8df0fbce"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -55569,8 +55567,8 @@ data-spans_\_9_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.19347124705041754"
-                data-value-str="0.19347124705041754"
+                data-value-repr="0.19264639552602833"
+                data-value-str="0.19264639552602833"
 
                 data-column-idx="8"
 
@@ -55760,15 +55758,15 @@ data-spans_\_9_\_8
 
 
                 <dt>Mean ± Std</dt>
-                <dd>8.85e-18 ±
+                <dd>-3.85e-18 ±
                     1.00
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.225 ±
-                    0.207
+                <dd>-0.224 ±
+                    0.206
 
                 </dd>
 
@@ -55830,7 +55828,7 @@ data-spans_\_9_\_8
 
                 <dt>Unique values</dt>
                 <dd>
-                    2,779 (30.1%)
+                    2,776 (30.1%)
 
                     <span class="toggletip-wrapper">
                         <div class="toggletip" data-manager="Toggletip">
@@ -55849,22 +55847,22 @@ data-spans_\_9_\_8
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-6.16e-18 ±
+                <dd>1.69e-17 ±
                     1.00
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.139 ±
-                    0.359
+                <dd>-0.138 ±
+                    0.358
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-2.21</span> |
-                    <span class="max-value">2.87</span>
+                    <span class="min-value">-2.22</span> |
+                    <span class="max-value">2.88</span>
 
                 </dd>
 
@@ -55915,7 +55913,7 @@ data-spans_\_9_\_8
 
                 <dt>Unique values</dt>
                 <dd>
-                    2,778 (30.1%)
+                    2,779 (30.1%)
 
                     <span class="toggletip-wrapper">
                         <div class="toggletip" data-manager="Toggletip">
@@ -55934,7 +55932,7 @@ data-spans_\_9_\_8
 
 
                 <dt>Mean ± Std</dt>
-                <dd>3.85e-18 ±
+                <dd>1.00e-17 ±
                     1.00
 
                 </dd>
@@ -56019,15 +56017,15 @@ data-spans_\_9_\_8
 
 
                 <dt>Mean ± Std</dt>
-                <dd>0.00 ±
+                <dd>3.08e-18 ±
                     1.00
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.125 ±
-                    1.04
+                <dd>-0.124 ±
+                    1.03
 
                 </dd>
 
@@ -56106,15 +56104,15 @@ data-spans_\_9_\_8
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-1.00e-17 ±
+                <dd>-1.92e-18 ±
                     1.00
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.0472 ±
-                    0.707
+                <dd>0.0496 ±
+                    0.702
 
                 </dd>
 
@@ -56193,7 +56191,7 @@ data-spans_\_9_\_8
 
 
                 <dt>Mean ± Std</dt>
-                <dd>1.23e-17 ±
+                <dd>9.24e-18 ±
                     1.00
 
                 </dd>
@@ -56201,14 +56199,14 @@ data-spans_\_9_\_8
 
                 <dt>Median ± IQR</dt>
                 <dd>-0.154 ±
-                    0.637
+                    0.633
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
                     <span class="min-value">-2.69</span> |
-                    <span class="max-value">4.33</span>
+                    <span class="max-value">4.35</span>
 
                 </dd>
 
@@ -56280,22 +56278,22 @@ data-spans_\_9_\_8
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-9.24e-18 ±
+                <dd>1.21e-17 ±
                     1.00
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.0489 ±
-                    0.499
+                <dd>0.0514 ±
+                    0.492
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-4.23</span> |
-                    <span class="max-value">2.66</span>
+                    <span class="min-value">-4.22</span> |
+                    <span class="max-value">2.67</span>
 
                 </dd>
 
@@ -56365,21 +56363,21 @@ data-spans_\_9_\_8
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-5.58e-18 ±
+                <dd>1.00e-17 ±
                     1.00
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>-0.154 ±
-                    0.776
+                <dd>-0.155 ±
+                    0.777
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-2.91</span> |
+                    <span class="min-value">-2.90</span> |
                     <span class="max-value">3.10</span>
 
                 </dd>
@@ -56805,18 +56803,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="8.854834700087941e-18" data-numeric>
-                        8.85e-18</td>
+                    <td data-value="-3.849928130473018e-18" data-numeric>
+                        -3.85e-18</td>
                     <td data-value="1.0000541873256243" data-numeric>
                         1.00</td>
 
 
 
-                    <td data-value="-1.0854532705772932" data-numeric>
+                    <td data-value="-1.085023712643526" data-numeric>
                         -1.09</td>
-                    <td data-value="-0.2246910383763932" data-numeric>
-                        -0.225</td>
-                    <td data-value="3.1177821372225036" data-numeric>
+                    <td data-value="-0.2243689190999086" data-numeric>
+                        -0.224</td>
+                    <td data-value="3.116785870931669" data-numeric>
                         3.12</td>
 
 
@@ -56834,25 +56832,25 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
                     </td>
 
 
-                    <td data-value="2779" data-numeric>
-                        2779 (30.1%)
+                    <td data-value="2776" data-numeric>
+                        2776 (30.1%)
                     </td>
 
 
 
-                    <td data-value="-6.1598850087568285e-18" data-numeric>
-                        -6.16e-18</td>
+                    <td data-value="1.693968377408128e-17" data-numeric>
+                        1.69e-17</td>
                     <td data-value="1.0000541873256243" data-numeric>
                         1.00</td>
 
 
 
-                    <td data-value="-2.214466673107101" data-numeric>
-                        -2.21</td>
-                    <td data-value="-0.139462305410223" data-numeric>
-                        -0.139</td>
-                    <td data-value="2.8740715307523863" data-numeric>
-                        2.87</td>
+                    <td data-value="-2.215097620985958" data-numeric>
+                        -2.22</td>
+                    <td data-value="-0.13811239313345616" data-numeric>
+                        -0.138</td>
+                    <td data-value="2.8750173034885593" data-numeric>
+                        2.88</td>
 
 
                 </tr>
@@ -56869,24 +56867,24 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
                     </td>
 
 
-                    <td data-value="2778" data-numeric>
-                        2778 (30.1%)
+                    <td data-value="2779" data-numeric>
+                        2779 (30.1%)
                     </td>
 
 
 
-                    <td data-value="3.849928130473018e-18" data-numeric>
-                        3.85e-18</td>
+                    <td data-value="1.0009813139229847e-17" data-numeric>
+                        1.00e-17</td>
                     <td data-value="1.0000541873256243" data-numeric>
                         1.00</td>
 
 
 
-                    <td data-value="-2.650235423660553" data-numeric>
+                    <td data-value="-2.649891995759736" data-numeric>
                         -2.65</td>
-                    <td data-value="0.3351562223592255" data-numeric>
+                    <td data-value="0.3346225401281452" data-numeric>
                         0.335</td>
-                    <td data-value="1.794460665529749" data-numeric>
+                    <td data-value="1.793332906803172" data-numeric>
                         1.79</td>
 
 
@@ -56910,18 +56908,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.0" data-numeric>
-                        0.00</td>
+                    <td data-value="3.0799425043784143e-18" data-numeric>
+                        3.08e-18</td>
                     <td data-value="1.0000541873256243" data-numeric>
                         1.00</td>
 
 
 
-                    <td data-value="-2.067982049996876" data-numeric>
+                    <td data-value="-2.069381965837447" data-numeric>
                         -2.07</td>
-                    <td data-value="-0.12485180507874338" data-numeric>
-                        -0.125</td>
-                    <td data-value="4.188214536187398" data-numeric>
+                    <td data-value="-0.12444487498110819" data-numeric>
+                        -0.124</td>
+                    <td data-value="4.189467960419843" data-numeric>
                         4.19</td>
 
 
@@ -56945,18 +56943,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-1.0009813139229847e-17" data-numeric>
-                        -1.00e-17</td>
+                    <td data-value="-1.924964065236509e-18" data-numeric>
+                        -1.92e-18</td>
                     <td data-value="1.0000541873256243" data-numeric>
                         1.00</td>
 
 
 
-                    <td data-value="-3.667775801141713" data-numeric>
+                    <td data-value="-3.6719303589369696" data-numeric>
                         -3.67</td>
-                    <td data-value="0.04722198024182307" data-numeric>
-                        0.0472</td>
-                    <td data-value="3.1569653910187943" data-numeric>
+                    <td data-value="0.04962760132002772" data-numeric>
+                        0.0496</td>
+                    <td data-value="3.164846598788644" data-numeric>
                         3.16</td>
 
 
@@ -56980,19 +56978,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="1.2319770017513657e-17" data-numeric>
-                        1.23e-17</td>
+                    <td data-value="9.239827513135243e-18" data-numeric>
+                        9.24e-18</td>
                     <td data-value="1.0000541873256243" data-numeric>
                         1.00</td>
 
 
 
-                    <td data-value="-2.6851801283594927" data-numeric>
+                    <td data-value="-2.6887169834142397" data-numeric>
                         -2.69</td>
-                    <td data-value="-0.15411857457089462" data-numeric>
+                    <td data-value="-0.1541872181190432" data-numeric>
                         -0.154</td>
-                    <td data-value="4.330363327679526" data-numeric>
-                        4.33</td>
+                    <td data-value="4.345520542153633" data-numeric>
+                        4.35</td>
 
 
                 </tr>
@@ -57015,19 +57013,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-9.239827513135243e-18" data-numeric>
-                        -9.24e-18</td>
-                    <td data-value="1.0000541873256246" data-numeric>
+                    <td data-value="1.2127273610990007e-17" data-numeric>
+                        1.21e-17</td>
+                    <td data-value="1.0000541873256243" data-numeric>
                         1.00</td>
 
 
 
-                    <td data-value="-4.2307895437542475" data-numeric>
-                        -4.23</td>
-                    <td data-value="0.04890584495405119" data-numeric>
-                        0.0489</td>
-                    <td data-value="2.663929494411407" data-numeric>
-                        2.66</td>
+                    <td data-value="-4.22115622567546" data-numeric>
+                        -4.22</td>
+                    <td data-value="0.051410981616872395" data-numeric>
+                        0.0514</td>
+                    <td data-value="2.672926060805467" data-numeric>
+                        2.67</td>
 
 
                 </tr>
@@ -57050,18 +57048,18 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-5.582395789185876e-18" data-numeric>
-                        -5.58e-18</td>
+                    <td data-value="1.0009813139229847e-17" data-numeric>
+                        1.00e-17</td>
                     <td data-value="1.0000541873256243" data-numeric>
                         1.00</td>
 
 
 
-                    <td data-value="-2.9058814626008522" data-numeric>
-                        -2.91</td>
-                    <td data-value="-0.15368723382812188" data-numeric>
-                        -0.154</td>
-                    <td data-value="3.095619158703202" data-numeric>
+                    <td data-value="-2.898073549596284" data-numeric>
+                        -2.90</td>
+                    <td data-value="-0.15485784364961563" data-numeric>
+                        -0.155</td>
+                    <td data-value="3.104305243555449" data-numeric>
                         3.10</td>
 
 
@@ -57095,7 +57093,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_1415f8ee">
+    <skrub-table-report class="report" id="report_327c1b05">
     </skrub-table-report>
 
     <script type="module">
@@ -58199,7 +58197,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_1415f8ee-wrapper-fallback">
+<div id="report_327c1b05-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -58210,8 +58208,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_1415f8ee-wrapper").removeAttribute("hidden");
- document.getElementById("report_1415f8ee-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_327c1b05-wrapper").removeAttribute("hidden");
+ document.getElementById("report_327c1b05-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -58236,8 +58234,8 @@ ApplyToCols(OrdinalEncoder(), cols=s.string() & low_cardinality).fit_transform(X
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_fc01584b-wrapper" hidden>
-    <template id="report_fc01584b-template">
+<div id="report_d4be1479-wrapper" hidden>
+    <template id="report_d4be1479-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -59662,7 +59660,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="05746440"
+                id="5f238f25"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -59692,7 +59690,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="0e99ba74"
+                id="c22d8c7c"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -59726,7 +59724,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="accb0659"
+                id="4d1c45c5"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -59760,7 +59758,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="cfb1749a"
+                id="1c046f9b"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -59794,7 +59792,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="bb0c4487"
+                id="6f224e12"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -59828,7 +59826,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="9b5a4aef"
+                id="eaf1b91a"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -59862,7 +59860,7 @@ data-spans_\_-1_\_4
 
 
                 <th
-                id="3bfba0e9"
+                id="d702ba64"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -59896,7 +59894,7 @@ data-spans_\_-1_\_5
 
 
                 <th
-                id="5e376aab"
+                id="458c7ceb"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -59930,7 +59928,7 @@ data-spans_\_-1_\_6
 
 
                 <th
-                id="b9a5b7f5"
+                id="e6ea3762"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -59978,7 +59976,7 @@ data-spans_\_-1_\_7
 
 
                 <th
-                id="36741f17"
+                id="36536caa"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -60006,7 +60004,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="93528bca"
+                id="c09fe4be"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60036,7 +60034,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="777cd753"
+                id="809ae4cc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60066,7 +60064,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="8531a55c"
+                id="e00c8103"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60096,7 +60094,7 @@ data-spans_\_0_\_2
 
 
                 <td
-                id="2e06174a"
+                id="f76fa322"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60126,7 +60124,7 @@ data-spans_\_0_\_3
 
 
                 <td
-                id="4d1c3e1c"
+                id="f47f4542"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60156,7 +60154,7 @@ data-spans_\_0_\_4
 
 
                 <td
-                id="252c8254"
+                id="ec32cb51"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60186,7 +60184,7 @@ data-spans_\_0_\_5
 
 
                 <td
-                id="e785d628"
+                id="c94c1023"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60216,7 +60214,7 @@ data-spans_\_0_\_6
 
 
                 <td
-                id="50b85157"
+                id="7fd00322"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60250,7 +60248,7 @@ data-spans_\_0_\_7
 
 
                 <th
-                id="f7f7b7b6"
+                id="57acb4eb"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -60278,7 +60276,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="46a226e3"
+                id="d69223f7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60308,7 +60306,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="99a109df"
+                id="5b38575d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60338,7 +60336,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="60af5cf3"
+                id="1fcb87f1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60368,7 +60366,7 @@ data-spans_\_1_\_2
 
 
                 <td
-                id="79e71c43"
+                id="0c4efd7c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60398,7 +60396,7 @@ data-spans_\_1_\_3
 
 
                 <td
-                id="953f8f57"
+                id="7cf1cc5f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60428,7 +60426,7 @@ data-spans_\_1_\_4
 
 
                 <td
-                id="e516510e"
+                id="b8c0b99e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60458,7 +60456,7 @@ data-spans_\_1_\_5
 
 
                 <td
-                id="fc8da6a0"
+                id="324a8d1c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60488,7 +60486,7 @@ data-spans_\_1_\_6
 
 
                 <td
-                id="f11d21fc"
+                id="4616f55d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60522,7 +60520,7 @@ data-spans_\_1_\_7
 
 
                 <th
-                id="5d4b77ca"
+                id="13cb7bd5"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -60550,7 +60548,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="bd6324e0"
+                id="30095f4e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60580,7 +60578,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="9c140ec0"
+                id="01638cdd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60610,7 +60608,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="eec304e2"
+                id="62be7988"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60640,7 +60638,7 @@ data-spans_\_2_\_2
 
 
                 <td
-                id="4e6fd65d"
+                id="2043a196"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60670,7 +60668,7 @@ data-spans_\_2_\_3
 
 
                 <td
-                id="15e6c665"
+                id="57e282ad"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60700,7 +60698,7 @@ data-spans_\_2_\_4
 
 
                 <td
-                id="d4acd855"
+                id="f602c561"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60730,7 +60728,7 @@ data-spans_\_2_\_5
 
 
                 <td
-                id="67b06eca"
+                id="8d82880d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60760,7 +60758,7 @@ data-spans_\_2_\_6
 
 
                 <td
-                id="5f56d5b5"
+                id="c7b03768"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60794,7 +60792,7 @@ data-spans_\_2_\_7
 
 
                 <th
-                id="fa31627b"
+                id="04e8a494"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -60822,7 +60820,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="bf1cdcbd"
+                id="9991099a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60852,7 +60850,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="7d04de86"
+                id="87d647f5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60882,7 +60880,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="ee0b2bbf"
+                id="f62bd851"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60912,7 +60910,7 @@ data-spans_\_3_\_2
 
 
                 <td
-                id="8f7c9771"
+                id="97a6e00a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60942,7 +60940,7 @@ data-spans_\_3_\_3
 
 
                 <td
-                id="e6d9ce93"
+                id="84d2953f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -60972,7 +60970,7 @@ data-spans_\_3_\_4
 
 
                 <td
-                id="64d7d5e8"
+                id="0bba77ac"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61002,7 +61000,7 @@ data-spans_\_3_\_5
 
 
                 <td
-                id="b4e3bc61"
+                id="a289fa7b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61032,7 +61030,7 @@ data-spans_\_3_\_6
 
 
                 <td
-                id="6bb7331c"
+                id="de3e609a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61066,7 +61064,7 @@ data-spans_\_3_\_7
 
 
                 <th
-                id="5678f4d1"
+                id="89b3fb9d"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -61094,7 +61092,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="e4576326"
+                id="533a11a5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61124,7 +61122,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="a280d123"
+                id="0da11ef6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61154,7 +61152,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="8a914e5b"
+                id="5137003e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61184,7 +61182,7 @@ data-spans_\_4_\_2
 
 
                 <td
-                id="b3e2c050"
+                id="c7419d6d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61214,7 +61212,7 @@ data-spans_\_4_\_3
 
 
                 <td
-                id="0226d67c"
+                id="76cad0f2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61244,7 +61242,7 @@ data-spans_\_4_\_4
 
 
                 <td
-                id="95f7dc04"
+                id="e58f4d92"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61274,7 +61272,7 @@ data-spans_\_4_\_5
 
 
                 <td
-                id="d579f821"
+                id="5bc4abad"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61304,7 +61302,7 @@ data-spans_\_4_\_6
 
 
                 <td
-                id="dd8f3849"
+                id="02705470"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61438,7 +61436,7 @@ data-spans_\_4_\_7
 
 
                 <th
-                id="a5717b3f"
+                id="2bb771a9"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -61466,7 +61464,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="bb3995f6"
+                id="6d0dc0e1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61496,7 +61494,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="874e9668"
+                id="401783ef"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61526,7 +61524,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="88f24134"
+                id="6232c9e8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61556,7 +61554,7 @@ data-spans_\_5_\_2
 
 
                 <td
-                id="44b52908"
+                id="25514186"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61586,7 +61584,7 @@ data-spans_\_5_\_3
 
 
                 <td
-                id="55eeac7b"
+                id="929facda"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61616,7 +61614,7 @@ data-spans_\_5_\_4
 
 
                 <td
-                id="6d38dbd6"
+                id="03e6c161"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61646,7 +61644,7 @@ data-spans_\_5_\_5
 
 
                 <td
-                id="64231cf4"
+                id="cf30d70e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61676,7 +61674,7 @@ data-spans_\_5_\_6
 
 
                 <td
-                id="f0e4bf8c"
+                id="487b9022"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61710,7 +61708,7 @@ data-spans_\_5_\_7
 
 
                 <th
-                id="f411c234"
+                id="fc7e0122"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -61738,7 +61736,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="fc9a15ad"
+                id="2c669af7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61768,7 +61766,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="40b4b62a"
+                id="02cc38cf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61798,7 +61796,7 @@ data-spans_\_6_\_1
 
 
                 <td
-                id="87dfe0af"
+                id="520f3ed7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61828,7 +61826,7 @@ data-spans_\_6_\_2
 
 
                 <td
-                id="5cbb15ab"
+                id="337f1985"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61858,7 +61856,7 @@ data-spans_\_6_\_3
 
 
                 <td
-                id="2376a388"
+                id="a690d167"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61888,7 +61886,7 @@ data-spans_\_6_\_4
 
 
                 <td
-                id="d4c4bd1c"
+                id="a9fb0db7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61918,7 +61916,7 @@ data-spans_\_6_\_5
 
 
                 <td
-                id="5634c26b"
+                id="8f729572"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61948,7 +61946,7 @@ data-spans_\_6_\_6
 
 
                 <td
-                id="2cca0ae9"
+                id="0ada050b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -61982,7 +61980,7 @@ data-spans_\_6_\_7
 
 
                 <th
-                id="eebe9b14"
+                id="4fab91eb"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -62010,7 +62008,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="52b24494"
+                id="c91c40fb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62040,7 +62038,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="5579631d"
+                id="20be9e2a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62070,7 +62068,7 @@ data-spans_\_7_\_1
 
 
                 <td
-                id="b69a1224"
+                id="6f4696de"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62100,7 +62098,7 @@ data-spans_\_7_\_2
 
 
                 <td
-                id="0bc07995"
+                id="055a792b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62130,7 +62128,7 @@ data-spans_\_7_\_3
 
 
                 <td
-                id="fca4c3f6"
+                id="dd88a096"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62160,7 +62158,7 @@ data-spans_\_7_\_4
 
 
                 <td
-                id="6c6847a1"
+                id="069d6523"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62190,7 +62188,7 @@ data-spans_\_7_\_5
 
 
                 <td
-                id="a33ad8e2"
+                id="a093af36"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62220,7 +62218,7 @@ data-spans_\_7_\_6
 
 
                 <td
-                id="e819ff44"
+                id="0b63f9e7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62254,7 +62252,7 @@ data-spans_\_7_\_7
 
 
                 <th
-                id="a8efd777"
+                id="c9007400"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -62282,7 +62280,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="dd26cc75"
+                id="7d7cdce6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62312,7 +62310,7 @@ data-spans_\_8_\_0
 
 
                 <td
-                id="0aeb33be"
+                id="de165dea"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62342,7 +62340,7 @@ data-spans_\_8_\_1
 
 
                 <td
-                id="fa69ae19"
+                id="d2fecb17"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62372,7 +62370,7 @@ data-spans_\_8_\_2
 
 
                 <td
-                id="f72e6fb5"
+                id="17ceb2c6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62402,7 +62400,7 @@ data-spans_\_8_\_3
 
 
                 <td
-                id="aa8dfb7d"
+                id="2459dc34"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62432,7 +62430,7 @@ data-spans_\_8_\_4
 
 
                 <td
-                id="c12a07b8"
+                id="e546b169"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62462,7 +62460,7 @@ data-spans_\_8_\_5
 
 
                 <td
-                id="edc1b419"
+                id="fd38dd63"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62492,7 +62490,7 @@ data-spans_\_8_\_6
 
 
                 <td
-                id="938af1f5"
+                id="1a633ab3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62526,7 +62524,7 @@ data-spans_\_8_\_7
 
 
                 <th
-                id="3b5615c2"
+                id="6590ab84"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -62554,7 +62552,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="4c0693a4"
+                id="45fc73b7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62584,7 +62582,7 @@ data-spans_\_9_\_0
 
 
                 <td
-                id="6c8190eb"
+                id="e9b440cf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62614,7 +62612,7 @@ data-spans_\_9_\_1
 
 
                 <td
-                id="2a4063bc"
+                id="869ebadf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62644,7 +62642,7 @@ data-spans_\_9_\_2
 
 
                 <td
-                id="66d10ea3"
+                id="22073017"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62674,7 +62672,7 @@ data-spans_\_9_\_3
 
 
                 <td
-                id="c1d6f75f"
+                id="c03a3282"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62704,7 +62702,7 @@ data-spans_\_9_\_4
 
 
                 <td
-                id="36936998"
+                id="bd79eb2d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62734,7 +62732,7 @@ data-spans_\_9_\_5
 
 
                 <td
-                id="cb104f68"
+                id="b387fdb5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -62764,7 +62762,7 @@ data-spans_\_9_\_6
 
 
                 <td
-                id="622c3dc7"
+                id="2b92f701"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -64075,7 +64073,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_fc01584b">
+    <skrub-table-report class="report" id="report_d4be1479">
     </skrub-table-report>
 
     <script type="module">
@@ -65179,7 +65177,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_fc01584b-wrapper-fallback">
+<div id="report_d4be1479-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -65190,8 +65188,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_fc01584b-wrapper").removeAttribute("hidden");
- document.getElementById("report_fc01584b-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_d4be1479-wrapper").removeAttribute("hidden");
+ document.getElementById("report_d4be1479-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -71008,8 +71006,8 @@ forceTheme('sk-container-id-6');</script></body>
 <br />
 <br />
 
-**Total running time of the script:** (0 minutes 9.642 seconds)
+**Total running time of the script:** (0 minutes 8.993 seconds)
 
-**Estimated memory usage:**  579 MB
+**Estimated memory usage:**  591 MB
 
 <a id="sphx-glr-download-auto-examples-0010-apply-to-cols-py"></a>

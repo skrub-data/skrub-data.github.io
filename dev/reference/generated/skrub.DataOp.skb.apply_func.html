@@ -786,18 +786,26 @@
 <h1>skrub.DataOp.skb.apply_func<a class="headerlink" href="#skrub-dataop-skb-apply-func" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.apply_func">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">apply_func</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/eda81ed/skrub/_data_ops/_skrub_namespace.py#L456"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.apply_func" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">apply_func</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2926a34/skrub/_data_ops/_skrub_namespace.py#L468"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.apply_func" title="Link to this definition">#</a></dt>
 <dd><p>Apply the given function.</p>
 <p>This is a convenience function; <code class="docutils literal notranslate"><span class="pre">X.skb.apply_func(func)</span></code> is
 equivalent to <code class="docutils literal notranslate"><span class="pre">skrub.deferred(func)(X)</span></code>.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
+<dd class="field-odd"><dl>
 <dt><strong>func</strong><span class="classifier">function</span></dt><dd><p>The function to apply to the DataOp.</p>
 </dd>
 <dt><strong>args</strong></dt><dd><p>additional positional arguments passed to <code class="docutils literal notranslate"><span class="pre">func</span></code>.</p>
 </dd>
 <dt><strong>kwargs</strong></dt><dd><p>named arguments passed to <code class="docutils literal notranslate"><span class="pre">func</span></code>.</p>
+</dd>
+<dt><strong>no_cache</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default = <a class="reference external" href="https://docs.python.org/3/builtins/constants.html#False" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">False</span></code></a></span></dt><dd><p>If True, caching is forbidden for this call: it will not be
+cached even if the configuration enables caching with
+skrub.set_config(cache=’/path/to/cache_dir’).</p>
+<p>Note: if your function has a keyword-only parameter named
+<code class="docutils literal notranslate"><span class="pre">no_cache</span></code> and you need to pass a value for it, use
+<a class="reference internal" href="skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.deferred()</span></code></a> instead of <code class="docutils literal notranslate"><span class="pre">apply_func</span></code>.</p>
+<p>See <a class="reference internal" href="../../modules/data_ops/ml_pipeline/caching.html#user-guide-data-ops-caching"><span class="std std-ref">Caching for faster recomputation</span></a> for more information about caching.</p>
 </dd>
 </dl>
 </dd>

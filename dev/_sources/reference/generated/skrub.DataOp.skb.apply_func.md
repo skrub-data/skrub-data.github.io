@@ -1,6 +1,6 @@
 # skrub.DataOp.skb.apply_func
 
-#### DataOp.skb.apply_func(func, \*args, \*\*kwargs)
+#### DataOp.skb.apply_func(func, \*args, no_cache=False, \*\*kwargs)
 
 Apply the given function.
 
@@ -16,6 +16,17 @@ equivalent to `skrub.deferred(func)(X)`.
 
   **kwargs**
   : named arguments passed to `func`.
+
+  **no_cache**
+  : If True, caching is forbidden for this call: it will not be
+    cached even if the configuration enables caching with
+    skrub.set_config(cache=’/path/to/cache_dir’).
+    <br/>
+    Note: if your function has a keyword-only parameter named
+    `no_cache` and you need to pass a value for it, use
+    [`skrub.deferred()`](skrub.deferred.md#skrub.deferred) instead of `apply_func`.
+    <br/>
+    See [Caching for faster recomputation](../../modules/data_ops/ml_pipeline/caching.md#user-guide-data-ops-caching) for more information about caching.
 * **Returns:**
   data_op
   : The DataOp that evaluates to the result of calling `func` as
