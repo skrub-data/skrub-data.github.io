@@ -1,12 +1,19 @@
 # ToCategorical
 
-### *class* skrub.ToCategorical
+### *class* skrub.ToCategorical(accept_int=False)
 
 Convert a string column to Categorical dtype.
 
 This transformer ensures that a given string or categorical column has
-Categorical dtype. This is done to mark columns to be treated as categorical
+Categorical dtype so that it is treated as categorical
 by downstream transformers and learners.
+
+* **Parameters:**
+  **accept_numeric**
+  : How to handle numeric columns. If “int”, will convert integer
+    columns to categorical. If “all”, both float and integer columns
+    will be accepted. If `None`, no numeric
+    columns will be accepted.
 
 ### Notes
 
@@ -22,9 +29,14 @@ A pandas column with dtype `string` or `object` containing strings, or
 a polars column with dtype `String`, is converted to a categorical
 column. Categorical columns are passed through.
 
+If `accept_numeric` is set to `"all"`, then both integer and float
+columns are accepted and converted to categorical. If it is set to `"int"`,
+then only integer columns are accepted. The default value is `"int"`.
+
 Any other type of column is rejected by raising a `RejectColumn`
 exception. **Note:** the `TableVectorizer` only sends string or
-categorical columns to its `low_cardinality_transformer`. Therefore it is
+categorical columns to its `low_cardinality_transformer`, regardless
+of the inputted value of `accept_numeric`. Therefore it is
 always safe to use a `ToCategorical` instance as the
 `low_cardinality_transformer`.
 
@@ -91,7 +103,19 @@ Columns that are not strings nor categorical are rejected:
 >>> to_cat.fit_transform(pd.Series([1.1, 2.2], name='c'))
 Traceback (most recent call last):
     ...
-skrub.core.RejectColumn: Column 'c' does not contain strings.
+skrub.core.RejectColumn: Column 'c' does not contain only strings...
+```
+
+Unless `accept_int` is set to `True`, in which case integer
+columns are accepted:
+
+```pycon
+>>> to_cat = ToCategorical(accept_int=True)
+>>> to_cat.fit_transform(pd.Series([1, 2], name='c'))
+0    1
+1    2
+Name: c, dtype: category
+Categories (2, int64): [1, 2]
 ```
 
 `object` columns that do not contain only strings are also rejected:
@@ -101,7 +125,7 @@ skrub.core.RejectColumn: Column 'c' does not contain strings.
 >>> to_cat.fit_transform(s)
 Traceback (most recent call last):
     ...
-skrub.core.RejectColumn: Column 'c' does not contain strings.
+skrub.core.RejectColumn: Column 'c' does not contain only strings...
 ```
 
 No special handling of `StringDtype` vs `object` columns is done, the
@@ -198,7 +222,6 @@ Fit the encoder and transform a column.
 
 * **Parameters:**
   **column**
-  : The input to transform.
 
   **y**
   : Ignored.

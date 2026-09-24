@@ -20,14 +20,14 @@
   the parameters of the TableVectorizer.
   [#2152](https://github.com/skrub-data/skrub/pull/2152) by [@Khaoula Riad and Marine Michaut](https://github.com/Khaoula Riad and Marine Michaut).
 - The [`Cleaner`](reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) and [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) classes now have a
-
-  ```
-  :method:`describe_transformations`
-  ```
-
-   method that outputs a human-readable
+  [`describe_transformations()`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer.describe_transformations) method that outputs a human-readable
   summary of the columns transformed by each of its steps.
   [#2122](https://github.com/skrub-data/skrub/pull/2122) by [Eloi Massoulié](https://github.com/emassoulie).
+- Expanded dtypes accepted by [`ToCategorical`](reference/generated/skrub.ToCategoricalhtml.md#skrub.ToCategorical). Now accepts `int` columns
+  by setting the new kwarg accept_numeric to `"int"`. `float` columns are also now
+  accepted if `accept_numeric="all"`. Previous default behavior is maintained by
+  setting `accept_numeric=None`.
+  [#2252](https://github.com/skrub-data/skrub/pull/2252) by [Lisa McBride](https://github.com/lisaleemcb).
 
 ### Changes
 
