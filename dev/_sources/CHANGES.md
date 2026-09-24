@@ -22,7 +22,7 @@
 - The [`Cleaner`](reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) and [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) classes now have a
 
   ```
-  :method:`list_transformations`
+  :method:`describe_transformations`
   ```
 
    method that outputs a human-readable

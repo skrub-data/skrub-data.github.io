@@ -166,13 +166,19 @@ it 'style' --> <script>
 
 </style>
 
+# Exploring dataframes
+
 * [How to tweak the Appearance of the `TableReport`](guides/table_report/01_alter_appearancehtml.md)
 * [How to export and share the `TableReport`](guides/table_report/02_exportinghtml.md)
 * [How to find correlated columns in a dataframe](guides/table_report/03_finding_correlated_columnshtml.md)
 * [How to define custom filters for the TableReport](guides/table_report/04_custom_filtershtml.md)
+
+# Featurizing dataframes
+
+* [How to display how the `TableVectorizer` modified a dataframe](guides/featurizing/01_describe_transformationshtml.md)
+
+# Utilities
+
 * [How to configure and customize the default behavior of skrub](guides/utilities/customizing_configurationhtml.md)
-  * [Configuration parameters](guides/utilities/customizing_configurationhtml.md#configuration-parameters)
 * [How to deduplicate categorical data with `deduplicate()`](guides/utilities/deduplicate_categorical_datahtml.md)
-  * [Deduplicating values in a dataframe](guides/utilities/deduplicate_categorical_datahtml.md#deduplicating-values-in-a-dataframe)
 * [Working with the example datasets provided by skrub](guides/utilities/fetching_datasetshtml.md)
-  * [Modifying the download location of `skrub` datasets](guides/utilities/fetching_datasetshtml.md#modifying-the-download-location-of-skrub-datasets)
