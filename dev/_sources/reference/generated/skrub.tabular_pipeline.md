@@ -4,7 +4,7 @@
 
 Get a simple machine-learning pipeline for tabular data.
 
-Given either a scikit-learn estimator or one of the special-cased strings
+Given either a scikit-learn compatible estimator or one of the special-cased strings
 `'regressor'`, `'regression'`, `'classifier'`, `'classification'`, this
 function creates a scikit-learn pipeline that extracts numeric features, imputes
 missing values and scales the data if necessary, then applies the estimator.
@@ -25,7 +25,8 @@ numerical features when using linear models.
 
 * **Parameters:**
   **estimator**
-  : or sklearn.pipeline.Pipeline
+  : compatible estimator or scikit-learn pipeline
+    <br/>
     The estimator to use as the final step in the pipeline. Based on the type of
     estimator, the previous preprocessing steps and their respective parameters are
     chosen. The possible values are:

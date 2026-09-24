@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/modules/default_wrangling/tabular_pipeline.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="The tabular_pipeline() is a function that, given a scikit-learn estimator, returns a full scikit-learn Pipeline that contains a TableVectorizer followed by the given estimator. If the estimator is ..." />
+<meta property="og:description" content="The tabular_pipeline() is a function that, given a scikit-learn compatible estimator, returns a full scikit-learn Pipeline that contains a TableVectorizer followed by the given estimator. If the es..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="The tabular_pipeline() is a function that, given a scikit-learn estimator, returns a full scikit-learn Pipeline that contains a TableVectorizer followed by the given estimator. If the estimator is ..." />
+<meta name="description" content="The tabular_pipeline() is a function that, given a scikit-learn compatible estimator, returns a full scikit-learn Pipeline that contains a TableVectorizer followed by the given estimator. If the es..." />
 
     <title>Building robust ML baselines with tabular_pipeline() &#8212; skrub</title>
   
@@ -684,7 +684,7 @@
                   
   <section id="building-robust-ml-baselines-with-tabular-pipeline">
 <span id="user-guide-tabular-pipeline"></span><h1>Building robust ML baselines with <a class="reference internal" href="../../reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a><a class="headerlink" href="#building-robust-ml-baselines-with-tabular-pipeline" title="Link to this heading">#</a></h1>
-<p>The <a class="reference internal" href="../../reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a> is a function that, given a scikit-learn estimator,
+<p>The <a class="reference internal" href="../../reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a> is a function that, given a scikit-learn compatible estimator,
 returns a full scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a> that contains a <a class="reference internal" href="../../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>
 followed by the given estimator.
 If the estimator is a linear model (e.g., <code class="docutils literal notranslate"><span class="pre">Ridge</span></code>, <code class="docutils literal notranslate"><span class="pre">LogisticRegression</span></code>),
@@ -723,7 +723,7 @@ problems, but may not beat properly tuned ad-hoc pipelines.</p>
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
-<th class="head"><p><code class="docutils literal notranslate"><span class="pre">RandomForest</span></code> models</p></th>
+<th class="head"><p>Tree ensemble models (e.g. <code class="docutils literal notranslate"><span class="pre">RandomForest</span></code>)</p></th>
 <th class="head"><p><code class="docutils literal notranslate"><span class="pre">HistGradientBoosting</span></code> models</p></th>
 <th class="head"><p>Linear models and others</p></th>
 </tr>

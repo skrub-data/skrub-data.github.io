@@ -2,7 +2,7 @@
 
 # Building robust ML baselines with [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline)
 
-The [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline) is a function that, given a scikit-learn estimator,
+The [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline) is a function that, given a scikit-learn compatible estimator,
 returns a full scikit-learn [`Pipeline`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline) that contains a [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer)
 followed by the given estimator.
 If the estimator is a linear model (e.g., `Ridge`, `LogisticRegression`),
@@ -38,7 +38,7 @@ problems, but may not beat properly tuned ad-hoc pipelines.
 
 #### Parameter values choice of [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) when using  the [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline) function
 
-| Parameter                | `RandomForest` models                                                                                                                                | `HistGradientBoosting` models                                                                 | Linear models and others                                                                                                                          |
+| Parameter                | Tree ensemble models (e.g. `RandomForest`)                                                                                                           | `HistGradientBoosting` models                                                                 | Linear models and others                                                                                                                          |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | Low-cardinality encoder  | [`OrdinalEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder) | Native support                                                                                | [`OneHotEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder) |
 | High-cardinality encoder | [`StringEncoder`](../../reference/generated/skrub.StringEncoder.md#skrub.StringEncoder)                                                              | [`StringEncoder`](../../reference/generated/skrub.StringEncoder.md#skrub.StringEncoder)       | [`StringEncoder`](../../reference/generated/skrub.StringEncoder.md#skrub.StringEncoder)                                                           |

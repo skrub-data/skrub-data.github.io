@@ -690,6 +690,16 @@ as the second step.
 <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>Removed the parameter <code class="docutils literal notranslate"><span class="pre">how</span></code> of <a class="reference internal" href="reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.apply()</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2281">#2281</a> by
 <a class="reference external" href="https://github.com/emassoulie">Eloi Massoulié</a>.</p></li>
+<li><p>Made the following changes to <a class="reference internal" href="reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a>:</p>
+<ul class="simple">
+<li><p>Estimators are no longer required to inherit from <code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.BaseEstimator</span></code>.
+Instead, scikit-learn compatibility check is based on presence of the methods:
+<code class="docutils literal notranslate"><span class="pre">get_params</span></code>, <code class="docutils literal notranslate"><span class="pre">set_params</span></code>, <code class="docutils literal notranslate"><span class="pre">fit</span></code>, <code class="docutils literal notranslate"><span class="pre">predict</span></code>.</p></li>
+<li><p>Requirement for special treatment for tree ensemble/HGBT models is determined
+based on class name substring matching, rather than exact type matching.</p></li>
+</ul>
+<p><a class="reference external" href="https://github.com/skrub-data/skrub/pull/2225">#2225</a> by <a class="reference external" href="https://github.com/ljdyer">Laurence Dyer</a>.</p>
+</li>
 </ul>
 </section>
 <section id="id3">

@@ -94,6 +94,14 @@
   [Jérôme Dockès](https://github.com/jeromedockes).
 - Removed the parameter `how` of [`DataOp.skb.apply()`](reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply). [#2281](https://github.com/skrub-data/skrub/pull/2281) by
   [Eloi Massoulié](https://github.com/emassoulie).
+- Made the following changes to [`tabular_pipeline()`](reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline):
+  - Estimators are no longer required to inherit from `sklearn.BaseEstimator`.
+    Instead, scikit-learn compatibility check is based on presence of the methods:
+    `get_params`, `set_params`, `fit`, `predict`.
+  - Requirement for special treatment for tree ensemble/HGBT models is determined
+    based on class name substring matching, rather than exact type matching.
+
+  [#2225](https://github.com/skrub-data/skrub/pull/2225) by [Laurence Dyer](https://github.com/ljdyer).
 
 ### Bugfixes
 
