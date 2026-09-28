@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 
@@ -11,10 +10,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/sg_execution_times.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="23:02.510 total execution time for 20 files from all galleries:,,, Example, Time, Mem (MB),,, Various string encoders: a sentiment analysis example(../skrub/_docs/examples/01_encoding/0020_text_wit..." />
+<meta property="og:description" content="18:26.826 total execution time for 20 files from all galleries:,,, Example, Time, Mem (MB),,, Various string encoders: a sentiment analysis example(../skrub/_docs/examples/01_encoding/0020_text_wit..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="23:02.510 total execution time for 20 files from all galleries:,,, Example, Time, Mem (MB),,, Various string encoders: a sentiment analysis example(../skrub/_docs/examples/01_encoding/0020_text_wit..." />
+<meta name="description" content="18:26.826 total execution time for 20 files from all galleries:,,, Example, Time, Mem (MB),,, Various string encoders: a sentiment analysis example(../skrub/_docs/examples/01_encoding/0020_text_wit..." />
 
     <title>Computation times &#8212; skrub</title>
   
@@ -35,8 +34,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=cb8930eaaf36d9849b67" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=cb8930eaaf36d9849b67" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=64cc4de3f052d77215f0" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=64cc4de3f052d77215f0" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -50,10 +49,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=7821ceae" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="_static/scripts/fontawesome.js?digest=cb8930eaaf36d9849b67"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=64cc4de3f052d77215f0"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=cb8930eaaf36d9849b67" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=cb8930eaaf36d9849b67" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=64cc4de3f052d77215f0" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=64cc4de3f052d77215f0" />
 
     <script src="_static/documentation_options.js?v=b4d3f7eb"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
@@ -66,7 +65,7 @@
     <script data-domain="skrub-data.org" defer="defer" src="https://views.scientific-python.org/js/script.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'sg_execution_times';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.21.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.22.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.11.dev0';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
@@ -129,7 +128,7 @@
   
     <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
   </button>
   
@@ -245,7 +244,7 @@
         <div class="navbar-item navbar-persistent--container">
           
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
  <i class="fa-solid fa-magnifying-glass"></i>
  <span class="search-button__default-text">Search</span>
  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -276,15 +275,15 @@
         <div class="navbar-item">
 
 <div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
     <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
     <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
     <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
-    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
-    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
-    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
   </ul>
 </div></div>
       
@@ -343,7 +342,7 @@
   
     <div class="navbar-persistent--mobile">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
  <i class="fa-solid fa-magnifying-glass"></i>
  <span class="search-button__default-text">Search</span>
  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -352,7 +351,7 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
       <span class="fa-solid fa-outdent"></span>
     </button>
   
@@ -472,15 +471,15 @@
           <div class="navbar-item">
 
 <div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
     <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
     <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
     <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
-    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
-    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
-    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
   </ul>
 </div></div>
         
@@ -590,7 +589,7 @@
                   
   <section id="computation-times">
 <span id="sphx-glr-sg-execution-times"></span><h1>Computation times<a class="headerlink" href="#computation-times" title="Link to this heading">#</a></h1>
-<p><strong>23:02.510</strong> total execution time for 20 files <strong>from all galleries</strong>:</p>
+<p><strong>18:26.826</strong> total execution time for 20 files <strong>from all galleries</strong>:</p>
 <div class="docutils container">
 <style scoped>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
@@ -612,84 +611,84 @@ $(document).ready( function () {
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="auto_examples/01_encoding/0020_text_with_string_encoders.html#sphx-glr-auto-examples-01-encoding-0020-text-with-string-encoders-py"><span class="std std-ref">Various string encoders: a sentiment analysis example</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/01_encoding/0020_text_with_string_encoders.py</span></code>)</p></td>
-<td><p>04:00.458</p></td>
-<td><p>1325.5</p></td>
+<td><p>03:17.439</p></td>
+<td><p>1346.7</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="auto_tutorials/1111_data_ops_quick_tour.html#sphx-glr-auto-tutorials-1111-data-ops-quick-tour-py"><span class="std std-ref">Quick overview of DataOps</span></a> (<code class="docutils literal notranslate"><span class="pre">tutorials/1111_data_ops_quick_tour.py</span></code>)</p></td>
-<td><p>03:25.818</p></td>
-<td><p>578.2</p></td>
+<td><p>02:54.163</p></td>
+<td><p>564.2</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="auto_examples/02_data_ops/1120_multiple_tables.html#sphx-glr-auto-examples-02-data-ops-1120-multiple-tables-py"><span class="std std-ref">Multiples tables: building machine learning pipelines with DataOps</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/02_data_ops/1120_multiple_tables.py</span></code>)</p></td>
-<td><p>03:22.412</p></td>
-<td><p>781.8</p></td>
+<td><p>02:35.334</p></td>
+<td><p>745.8</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="auto_examples/03_joining/0070_join_aggregation.html#sphx-glr-auto-examples-03-joining-0070-join-aggregation-py"><span class="std std-ref">AggJoiner on a credit fraud dataset</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/03_joining/0070_join_aggregation.py</span></code>)</p></td>
-<td><p>03:21.152</p></td>
-<td><p>738.1</p></td>
+<td><p>02:33.741</p></td>
+<td><p>890.0</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="auto_examples/02_data_ops/1131_optuna_choices.html#sphx-glr-auto-examples-02-data-ops-1131-optuna-choices-py"><span class="std std-ref">Tuning DataOps with Optuna</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/02_data_ops/1131_optuna_choices.py</span></code>)</p></td>
-<td><p>01:59.347</p></td>
-<td><p>713.8</p></td>
+<td><p>01:15.017</p></td>
+<td><p>636.6</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="auto_examples/01_encoding/0010_encodings.html#sphx-glr-auto-examples-01-encoding-0010-encodings-py"><span class="std std-ref">Encoding: from a dataframe to a numerical matrix for machine learning</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/01_encoding/0010_encodings.py</span></code>)</p></td>
-<td><p>01:02.656</p></td>
-<td><p>575.7</p></td>
+<td><p>00:53.546</p></td>
+<td><p>567.7</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="auto_examples/03_joining/0060_multiple_key_join.html#sphx-glr-auto-examples-03-joining-0060-multiple-key-join-py"><span class="std std-ref">Spatial join for flight data: Joining across multiple columns</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/03_joining/0060_multiple_key_join.py</span></code>)</p></td>
-<td><p>00:52.299</p></td>
-<td><p>3084.1</p></td>
+<td><p>00:49.515</p></td>
+<td><p>2979.3</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="auto_examples/03_joining/0080_interpolation_join.html#sphx-glr-auto-examples-03-joining-0080-interpolation-join-py"><span class="std std-ref">Interpolation join: infer missing rows when joining two tables</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/03_joining/0080_interpolation_join.py</span></code>)</p></td>
+<td><p>00:42.271</p></td>
+<td><p>2622.7</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="auto_examples/03_joining/0040_fuzzy_joining.html#sphx-glr-auto-examples-03-joining-0040-fuzzy-joining-py"><span class="std std-ref">Fuzzy joining dirty tables with the Joiner</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/03_joining/0040_fuzzy_joining.py</span></code>)</p></td>
+<td><p>00:37.230</p></td>
+<td><p>577.8</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="auto_examples/02_data_ops/1130_choices.html#sphx-glr-auto-examples-02-data-ops-1130-choices-py"><span class="std std-ref">Hyperparameter tuning with DataOps</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/02_data_ops/1130_choices.py</span></code>)</p></td>
-<td><p>00:49.803</p></td>
-<td><p>572.6</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="auto_examples/03_joining/0080_interpolation_join.html#sphx-glr-auto-examples-03-joining-0080-interpolation-join-py"><span class="std std-ref">Interpolation join: infer missing rows when joining two tables</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/03_joining/0080_interpolation_join.py</span></code>)</p></td>
-<td><p>00:44.401</p></td>
-<td><p>2669.4</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="auto_examples/03_joining/0040_fuzzy_joining.html#sphx-glr-auto-examples-03-joining-0040-fuzzy-joining-py"><span class="std std-ref">Fuzzy joining dirty tables with the Joiner</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/03_joining/0040_fuzzy_joining.py</span></code>)</p></td>
-<td><p>00:42.278</p></td>
-<td><p>581.5</p></td>
+<td><p>00:36.672</p></td>
+<td><p>565.2</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="auto_examples/0100_squashing_scaler.html#sphx-glr-auto-examples-0100-squashing-scaler-py"><span class="std std-ref">SquashingScaler: Robust numerical preprocessing for neural networks</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/0100_squashing_scaler.py</span></code>)</p></td>
-<td><p>00:32.937</p></td>
-<td><p>575.0</p></td>
+<td><p>00:25.950</p></td>
+<td><p>571.4</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="auto_examples/02_data_ops/1160_pytorch.html#sphx-glr-auto-examples-02-data-ops-1160-pytorch-py"><span class="std std-ref">Using PyTorch (via skorch) in DataOps</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/02_data_ops/1160_pytorch.py</span></code>)</p></td>
-<td><p>00:28.345</p></td>
-<td><p>582.9</p></td>
+<td><p>00:22.663</p></td>
+<td><p>575.1</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="auto_examples/02_data_ops/1140_subsampling.html#sphx-glr-auto-examples-02-data-ops-1140-subsampling-py"><span class="std std-ref">Subsampling for faster development</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/02_data_ops/1140_subsampling.py</span></code>)</p></td>
-<td><p>00:24.013</p></td>
-<td><p>576.6</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="auto_tutorials/0000_getting_started.html#sphx-glr-auto-tutorials-0000-getting-started-py"><span class="std std-ref">Getting Started with skrub</span></a> (<code class="docutils literal notranslate"><span class="pre">tutorials/0000_getting_started.py</span></code>)</p></td>
+<td><p>00:18.200</p></td>
+<td><p>564.2</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="auto_tutorials/0000_getting_started.html#sphx-glr-auto-tutorials-0000-getting-started-py"><span class="std std-ref">Getting Started with skrub</span></a> (<code class="docutils literal notranslate"><span class="pre">tutorials/0000_getting_started.py</span></code>)</p></td>
-<td><p>00:20.339</p></td>
-<td><p>572.1</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="auto_examples/02_data_ops/1140_subsampling.html#sphx-glr-auto-examples-02-data-ops-1140-subsampling-py"><span class="std std-ref">Subsampling for faster development</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/02_data_ops/1140_subsampling.py</span></code>)</p></td>
+<td><p>00:17.314</p></td>
+<td><p>588.8</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="auto_examples/01_encoding/0030_datetime_encoder.html#sphx-glr-auto-examples-01-encoding-0030-datetime-encoder-py"><span class="std std-ref">Handling datetime features with the DatetimeEncoder</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/01_encoding/0030_datetime_encoder.py</span></code>)</p></td>
-<td><p>00:13.239</p></td>
-<td><p>575.9</p></td>
+<td><p>00:11.844</p></td>
+<td><p>567.8</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="auto_examples/02_data_ops/1150_use_case.html#sphx-glr-auto-examples-02-data-ops-1150-use-case-py"><span class="std std-ref">Use case: developing locally and deploying to production</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/02_data_ops/1150_use_case.py</span></code>)</p></td>
-<td><p>00:11.468</p></td>
-<td><p>697.8</p></td>
+<td><p>00:09.785</p></td>
+<td><p>690.8</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="auto_examples/0110_session_encoder.html#sphx-glr-auto-examples-0110-session-encoder-py"><span class="std std-ref">Sessions in time-based data: Predicting user purchases with the SessionEncoder</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/0110_session_encoder.py</span></code>)</p></td>
-<td><p>00:11.446</p></td>
-<td><p>573.0</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="auto_examples/0010_apply_to_cols.html#sphx-glr-auto-examples-0010-apply-to-cols-py"><span class="std std-ref">Hands-On with Column Selection and Transformers</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/0010_apply_to_cols.py</span></code>)</p></td>
+<td><p>00:08.960</p></td>
+<td><p>564.2</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="auto_examples/0010_apply_to_cols.html#sphx-glr-auto-examples-0010-apply-to-cols-py"><span class="std std-ref">Hands-On with Column Selection and Transformers</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/0010_apply_to_cols.py</span></code>)</p></td>
-<td><p>00:10.906</p></td>
-<td><p>572.1</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="auto_examples/0110_session_encoder.html#sphx-glr-auto-examples-0110-session-encoder-py"><span class="std std-ref">Sessions in time-based data: Predicting user purchases with the SessionEncoder</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/0110_session_encoder.py</span></code>)</p></td>
+<td><p>00:08.479</p></td>
+<td><p>564.7</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="auto_examples/03_joining/0050_deduplication.html#sphx-glr-auto-examples-03-joining-0050-deduplication-py"><span class="std std-ref">Deduplicating misspelled categories</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/03_joining/0050_deduplication.py</span></code>)</p></td>
-<td><p>00:05.780</p></td>
-<td><p>572.1</p></td>
+<td><p>00:05.756</p></td>
+<td><p>564.2</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="auto_examples/0050_deduplication.html#sphx-glr-auto-examples-0050-deduplication-py"><span class="std std-ref">Deduplicating misspelled categories</span></a> (<code class="docutils literal notranslate"><span class="pre">../skrub/_docs/examples/0050_deduplication.py</span></code>)</p></td>
-<td><p>00:03.415</p></td>
-<td><p>572.7</p></td>
+<td><p>00:02.947</p></td>
+<td><p>565.1</p></td>
 </tr>
 </tbody>
 </table>
@@ -740,8 +739,8 @@ $(document).ready( function () {
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=cb8930eaaf36d9849b67"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=cb8930eaaf36d9849b67"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=64cc4de3f052d77215f0"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=64cc4de3f052d77215f0"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
