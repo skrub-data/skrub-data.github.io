@@ -34,6 +34,9 @@
 - The minimum version of Python has been increased to 3.11. The minimum version of
   scikit-learn has been increased to 1.5.2. [#2280](https://github.com/skrub-data/skrub/pull/2280) by
   [Riccardo Cappuzzo](https://github.com/rcap107).
+- The [`SessionEncoder`](reference/generated/skrub.SessionEncoderhtml.md#skrub.SessionEncoder) has been optimized to reduce its execution time.
+  Depending on backend, we measured up to 15x speedups compared to the previous
+  version. [#2285](https://github.com/skrub-data/skrub/pull/2285) by [Riccardo Cappuzzo](https://github.com/rcap107).
 
 ### Bugfixes
 
