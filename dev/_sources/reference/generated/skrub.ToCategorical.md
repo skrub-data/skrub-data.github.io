@@ -9,11 +9,10 @@ Categorical dtype so that it is treated as categorical
 by downstream transformers and learners.
 
 * **Parameters:**
-  **accept_numeric**
-  : How to handle numeric columns. If “int”, will convert integer
-    columns to categorical. If “all”, both float and integer columns
-    will be accepted. If `None`, no numeric
-    columns will be accepted.
+  **accept_int**
+  : How to handle numeric columns. If `False`, no numeric
+    columns will be accepted. If `True`, will convert integer
+    columns to categorical.
 
 ### Notes
 
@@ -29,14 +28,13 @@ A pandas column with dtype `string` or `object` containing strings, or
 a polars column with dtype `String`, is converted to a categorical
 column. Categorical columns are passed through.
 
-If `accept_numeric` is set to `"all"`, then both integer and float
-columns are accepted and converted to categorical. If it is set to `"int"`,
-then only integer columns are accepted. The default value is `"int"`.
+If `accept_int` is set to `True`, then integer columns are also
+accepted and converted to categorical. The default value is `False`.
 
 Any other type of column is rejected by raising a `RejectColumn`
 exception. **Note:** the `TableVectorizer` only sends string or
 categorical columns to its `low_cardinality_transformer`, regardless
-of the inputted value of `accept_numeric`. Therefore it is
+of the inputted value of `accept_int`. Therefore it is
 always safe to use a `ToCategorical` instance as the
 `low_cardinality_transformer`.
 
