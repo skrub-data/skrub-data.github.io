@@ -738,26 +738,23 @@ Consider the following example:</p>
 <span class="go">2    3</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">df_do</span></code> is a Data Op that wraps <code class="docutils literal notranslate"><span class="pre">df</span></code>, so its preview shows the content of <code class="docutils literal notranslate"><span class="pre">df</span></code>.
-Then, if we now modify <code class="docutils literal notranslate"><span class="pre">df_do</span></code> by doubling the column, we can see that both steps
-(the creation of the variable, and the doubling) are now tracked by the final
-Data Op.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df_doubled</span> <span class="o">=</span> <span class="n">df_do</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">col</span><span class="o">=</span><span class="n">df_do</span><span class="p">[</span><span class="s2">"col"</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df_doubled</span>
-<span class="go">&lt;CallMethod 'assign'&gt;</span>
+<p><code class="docutils literal notranslate"><span class="pre">df_do</span></code> is a Data Op that wraps <code class="docutils literal notranslate"><span class="pre">df</span></code>, so its preview shows the content of
+<code class="docutils literal notranslate"><span class="pre">df</span></code>. Then, if we perform other operations on <code class="docutils literal notranslate"><span class="pre">df_do</span></code> by selecting a column
+and doubling it, we can see that all steps (the creation of the variable,
+selection, and the multiplication) are now tracked by the final Data Op.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">col</span> <span class="o">=</span> <span class="n">df_do</span><span class="p">[</span><span class="s2">"col"</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">col</span>
+<span class="go">&lt;BinOp: mul&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
-<span class="go">   col</span>
 <span class="go">0    2</span>
 <span class="go">1    4</span>
 <span class="go">2    6</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">df_doubled</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_steps</span><span class="p">())</span>
+<span class="go">Name: col, dtype: int64</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">col</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_steps</span><span class="p">())</span>
 <span class="go">Var 'df'</span>
-<span class="go">( Var 'df' )*</span>
 <span class="go">GetItem 'col'</span>
 <span class="go">BinOp: mul</span>
-<span class="go">CallMethod 'assign'</span>
-<span class="go">* Cached, not recomputed</span>
 </pre></div>
 </div>
 <p>On the other hand, working directly on <code class="docutils literal notranslate"><span class="pre">df</span></code> leads us to the same result, but

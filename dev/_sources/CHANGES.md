@@ -45,6 +45,9 @@
   `object` column, so they used to be rejected, whereas the equivalent polars
   `Date` column was accepted.
   [#2231](https://github.com/skrub-data/skrub/pull/2231) by [Sanjay Santhanam](https://github.com/Sanjays2402).
+- Performance: the construction of [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) and [`SkrubLearner`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner)
+  involving deep computation graphs has become much faster.
+  [#2296](https://github.com/skrub-data/skrub/pull/2296) by [Jérôme Dockès](https://github.com/jeromedockes).
 
 ### Deprecations
 

@@ -785,7 +785,7 @@
 <h1>skrub.DataOp.skb.describe_steps<a class="headerlink" href="#skrub-dataop-skb-describe-steps" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.describe_steps">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">describe_steps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ddd57a7/skrub/_data_ops/_skrub_namespace.py#L1534"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.describe_steps" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">describe_steps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/56df476/skrub/_data_ops/_skrub_namespace.py#L1534"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.describe_steps" title="Link to this definition">#</a></dt>
 <dd><p>Get a text representation of the computation graph.</p>
 <p>Usually the graphical representation provided by <a class="reference internal" href="skrub.DataOp.skb.draw_graph.html#skrub.DataOp.skb.draw_graph" title="skrub.DataOp.skb.draw_graph"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.draw_graph()</span></code></a>
 or <a class="reference internal" href="skrub.DataOp.skb.full_report.html#skrub.DataOp.skb.full_report" title="skrub.DataOp.skb.full_report"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.full_report()</span></code></a> is more useful. This is a fallback for
@@ -817,20 +817,20 @@ line.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_steps</span><span class="p">())</span>
 <span class="go">Var 'a'</span>
 <span class="go">Var 'b'</span>
-<span class="go">BinOp: add</span>
-<span class="go">( Var 'a' )*</span>
-<span class="go">( Var 'b' )*</span>
-<span class="go">( BinOp: add )*</span>
+<span class="go">BinOp: add -&gt; _2</span>
+<span class="go">Load _2 (BinOp: add)</span>
 <span class="go">BinOp: mul</span>
-<span class="go">* Cached, not recomputed</span>
 </pre></div>
 </div>
 <p>The above should be read from top to bottom as instructions for a
 simple stack machine: load the variable ‘a’, load the variable ‘b’,
 compute the addition leaving the result of (a + b) on the stack, then
-repeat this operation (but the second time no computation actually runs
-because the result of evaluating <code class="docutils literal notranslate"><span class="pre">c</span></code> has been cached in-memory), and
-finally evaluate the multiplication.</p>
+load the previous result again (the result of evaluating <code class="docutils literal notranslate"><span class="pre">c</span></code> has been
+cached in-memory), and finally evaluate the multiplication.</p>
+<p>As we can see results that are used several times are kept and not
+re-computed; this is indicated in the printed list above by <code class="docutils literal notranslate"><span class="pre">-&gt;</span> <span class="pre">_2</span></code>
+(storing, where 2 is an arbitrary id / memory location) and <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">_2</span></code>
+when reusing that result later.</p>
 </dd></dl>
 
 </section>
