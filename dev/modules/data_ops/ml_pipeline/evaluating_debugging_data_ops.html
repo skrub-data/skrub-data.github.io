@@ -701,6 +701,11 @@ title to the evaluation report this way:
 </ul>
 <p>Additionally, if computations fail in the plan, the report shows the offending
 node and the error message, which can help in debugging the plan.</p>
+<p>It is possible to pass <code class="docutils literal notranslate"><span class="pre">eval=False</span></code> to generate a report without actually
+evaluating the DataOp, without running any computations. In this case the
+information that is available without running anything (e.g. some applied
+function and estimator names and docstrings) is shown, but no outputs are
+displayed.</p>
 <p>By default, reports are saved in the <code class="docutils literal notranslate"><span class="pre">skrub_data/execution_reports</span></code> directory, but
 they can be saved to a different location with the <code class="docutils literal notranslate"><span class="pre">output_dir</span></code> parameter.
 Note that the default path can be altered with the

@@ -19,7 +19,7 @@ after fitting it.
 | [`find_fitted_estimator`](#skrub.SkrubLearner.find_fitted_estimator)(what) | Find the scikit-learn estimator that has been fitted in a `.skb.apply()` step. |
 | [`get_named_params`](#skrub.SkrubLearner.get_named_params)()               | Get the outcomes that have been set for named choices in the DataOp.           |
 | [`get_params`](#skrub.SkrubLearner.get_params)([deep])                     | Get parameters for this estimator.                                             |
-| [`report`](#skrub.SkrubLearner.report)(\*, environment, mode, ...)         | Call the method specified by `mode` and return the result and full report.     |
+| [`report`](#skrub.SkrubLearner.report)(\*[, environment, mode])            | Call the method specified by `mode` and return the result and full report.     |
 | [`set_named_params`](#skrub.SkrubLearner.set_named_params)(\*\*params)     | Set the tunable parameters (choices), indexed by choice name.                  |
 | [`set_params`](#skrub.SkrubLearner.set_params)(\*\*params)                 | Set the parameters of this estimator.                                          |
 | [`truncated_after`](#skrub.SkrubLearner.truncated_after)(what)             | Extract the part of the learner that leads up to the given step.               |
@@ -226,7 +226,7 @@ Get parameters for this estimator.
 
 <!-- !! processed by numpydoc !! -->
 
-#### report(, environment, mode, \*\*full_report_kwargs)
+#### report(, environment=None, mode=None, \*\*full_report_kwargs)
 
 Call the method specified by `mode` and return the result and full report.
 
@@ -237,10 +237,14 @@ See [`DataOp.skb.full_report()`](skrub.DataOp.skb.full_report.md#skrub.DataOp.sk
   : Bindings for variables contained in the [`DataOp`](skrub.DataOp.md#skrub.DataOp) that was
     used to create this learner
     (e.g. `{"X": X_df, "other_table": df, ...}`).
+    Must be provided unless passing eval=False, in which case it must
+    be left to None (the default).
 
   **mode**
   : The method to call in order to generate the report, such as
     `"fit"`, `"predict"`, etc.
+    Must be provided unless passing eval=False, in which case it must
+    be left to None (the default).
 
   **full_report_kwargs**
   : See [`DataOp.skb.full_report()`](skrub.DataOp.skb.full_report.md#skrub.DataOp.skb.full_report)

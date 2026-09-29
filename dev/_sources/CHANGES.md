@@ -18,6 +18,10 @@
   applied with [`.skb.apply_func`](reference/generated/skrub.DataOp.skb.apply_funchtml.md#skrub.DataOp.skb.apply_func) or
   [`deferred()`](reference/generated/skrub.deferredhtml.md#skrub.deferred) and for estimators applied with [`.skb.apply`](reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply).
   [#2292](https://github.com/skrub-data/skrub/pull/2292) by [Jérôme Dockès](https://github.com/jeromedockes).
+- It is now possible to pass `eval=False` to [`.skb.full_report`](reference/generated/skrub.DataOp.skb.full_reporthtml.md#skrub.DataOp.skb.full_report) to generate the report, containing any statically
+  available information about the DataOp, without evaluating it / running any
+  computation.
+  [#2308](https://github.com/skrub-data/skrub/pull/2308) by [Jérôme Dockès](https://github.com/jeromedockes).
 - It is now possible to unpack a [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) that evaluates to an iterable
   (of known size), for example `first, second = data_op`. Each target becomes
   a DataOp that extracts one of the items.

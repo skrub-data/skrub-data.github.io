@@ -1,6 +1,6 @@
 # skrub.DataOp.skb.full_report
 
-#### DataOp.skb.full_report(environment=None, open=True, output_dir=None, overwrite=False, title=None)
+#### DataOp.skb.full_report(environment=None, open=True, output_dir=None, overwrite=False, title=None, eval=True)
 
 Generate a full report of the DataOp’s evaluation.
 
@@ -39,6 +39,16 @@ to keep specific reports, please specify an output directory.
   **title: str (default=None)**
   : Title to display at the top of the report. If `None`, no title will be
     displayed.
+
+  **eval**
+  : If False, the DataOp is not evaluated, no computation runs. The
+    computation graph and information that is available about the
+    different nodes (such as the functions and estimators applied with
+    `skb.apply_func` and `skb.apply` ) is shown, but there are no
+    node outputs nor computation times.
+    <br/>
+    If set to `False`, `environment` must be `None` (it would be
+    unused, as the DataOp is not evaluated).
 * **Returns:**
   [`dict`](https://docs.python.org/3/builtins/stdtypes.html#dict)
   : The results of evaluating the DataOp. The keys are

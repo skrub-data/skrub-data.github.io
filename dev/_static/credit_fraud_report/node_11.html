@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -519,12 +520,9 @@ pre, code {
 
     function showNodeStatus() {
         const graphDiv = document.getElementById('graph-nav');
-        console.log(graphDiv.dataset.nodeStatus);
         const nodeStatus = JSON.parse(graphDiv.dataset.nodeStatus);
-        console.log(nodeStatus);
         for (const nodeId in nodeStatus) {
             const nodeElem = document.getElementById(`node_${nodeId}`);
-            console.log(nodeElem);
             switch (nodeStatus[nodeId]) {
             case 'success':
                 nodeElem.classList.add('success-node');
@@ -532,9 +530,13 @@ pre, code {
             case 'error':
                 nodeElem.classList.add('error-node');
                 break;
-                default:
-                    nodeElem.classList.add('skipped-node');
-                    break;
+            case 'skipped':
+                nodeElem.classList.add('skipped-node');
+                break;
+            default:
+                // eval=False was passed to full_report(), no particular styling
+                // needed on any nodes.
+                break;
             }
         }
     }
@@ -562,7 +564,7 @@ pre, code {
                         </li>
                     </ul>
                 </nav>
-                <samp>ID:</samp> <samp>16867341744840300655635295302732310224</samp>
+                <samp>ID:</samp> <samp>223273116567779389568010914372628906995</samp>
                 
                 <div>
                     
@@ -598,7 +600,7 @@ pre, code {
                 
                 <div>
                     <h3>Computation time</h3>
-                    <code>0h 0m 0.00039s</code>
+                    <code>0h 0m 0.00043s</code>
                 </div>
                 
 
@@ -614,7 +616,7 @@ pre, code {
                     <div>
                         <div style="max-height: 30em; max-width: 95%; overflow: auto;">
     <samp>
-        <pre>&lt;pandas.api.typing.DataFrameGroupBy object at 0x7bda3c3479e0&gt;</pre>
+        <pre>&lt;pandas.api.typing.DataFrameGroupBy object at 0x708b475b67b0&gt;</pre>
     </samp>
 </div>
                     </div>
