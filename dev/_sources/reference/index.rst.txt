@@ -405,9 +405,6 @@ DataOps
   DataOp.skb.freeze_after_fit
 
 
-  DataOp.skb.full_report
-
-
   DataOp.skb.get_data
 
 
@@ -445,6 +442,9 @@ DataOps
 
 
   DataOp.skb.preview
+
+
+  DataOp.skb.report
 
 
   DataOp.skb.select

@@ -124,7 +124,6 @@ The ``skb`` accessor exposes all DataOps methods and attributes.
   DataOp.skb.find
   DataOp.skb.find_X_y
   DataOp.skb.freeze_after_fit
-  DataOp.skb.full_report
   DataOp.skb.get_data
   DataOp.skb.get_vars
   DataOp.skb.if_else
@@ -138,6 +137,7 @@ The ``skb`` accessor exposes all DataOps methods and attributes.
   DataOp.skb.mark_as_y
   DataOp.skb.match
   DataOp.skb.preview
+  DataOp.skb.report
   DataOp.skb.select
   DataOp.skb.set_data
   DataOp.skb.set_description

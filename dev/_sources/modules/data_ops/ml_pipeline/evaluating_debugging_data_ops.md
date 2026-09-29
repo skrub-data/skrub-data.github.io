@@ -1,13 +1,13 @@
 <a id="user-guide-data-ops-evaluating-debugging-dataops"></a>
 
-# Evaluating and debugging the DataOps plan with [`.skb.full_report()`](../../../reference/generated/skrub.DataOp.skb.full_report.md#skrub.DataOp.skb.full_report)
+# Evaluating and debugging the DataOps plan with [`.skb.report()`](../../../reference/generated/skrub.DataOp.skb.report.md#skrub.DataOp.skb.report)
 
 All operations on DataOps are recorded in a computational graph, which can be
-inspected with [`.skb.full_report()`](../../../reference/generated/skrub.DataOp.skb.full_report.md#skrub.DataOp.skb.full_report). This method
+inspected with [`.skb.report()`](../../../reference/generated/skrub.DataOp.skb.report.md#skrub.DataOp.skb.report). This method
 generates an HTML report that shows the full plan, including all nodes, their names,
 descriptions, and the transformations applied to the data. It is possible to give a
 title to the evaluation report this way:
-`my_data_op.skb.full_report(title="my title")`.
+`my_data_op.skb.report(title="my title")`.
 
 An example of the report can be found
 [here](../../../_static/credit_fraud_report/index.html).

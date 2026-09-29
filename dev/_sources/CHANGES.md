@@ -16,13 +16,13 @@
   node-by-node basis by using the `no_cache` parameter of [`deferred()`](reference/generated/skrub.deferredhtml.md#skrub.deferred),
   [`.skb.apply`](reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply) and [`.skb.apply_func`](reference/generated/skrub.DataOp.skb.apply_funchtml.md#skrub.DataOp.skb.apply_func). See the [user guide](modules/data_ops/ml_pipeline/cachinghtml.md#user-guide-data-ops-caching) for more information.
   [#2017](https://github.com/skrub-data/skrub/pull/2017) by [Jérôme Dockès](https://github.com/jeromedockes).
-- The report created by [`.skb.full_report`](reference/generated/skrub.DataOp.skb.full_reporthtml.md#skrub.DataOp.skb.full_report) or
+- The report created by [`.skb.report`](reference/generated/skrub.DataOp.skb.reporthtml.md#skrub.DataOp.skb.report) or
   [`SkrubLearner.report()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.report) now contains links to source code where each node
   was defined, and also the docstring and link to source code for functions
   applied with [`.skb.apply_func`](reference/generated/skrub.DataOp.skb.apply_funchtml.md#skrub.DataOp.skb.apply_func) or
   [`deferred()`](reference/generated/skrub.deferredhtml.md#skrub.deferred) and for estimators applied with [`.skb.apply`](reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply).
   [#2292](https://github.com/skrub-data/skrub/pull/2292) by [Jérôme Dockès](https://github.com/jeromedockes).
-- It is now possible to pass `eval=False` to [`.skb.full_report`](reference/generated/skrub.DataOp.skb.full_reporthtml.md#skrub.DataOp.skb.full_report) to generate the report, containing any statically
+- It is now possible to pass `eval=False` to [`.skb.report`](reference/generated/skrub.DataOp.skb.reporthtml.md#skrub.DataOp.skb.report) to generate the report, containing any statically
   available information about the DataOp, without evaluating it / running any
   computation.
   [#2308](https://github.com/skrub-data/skrub/pull/2308) by [Jérôme Dockès](https://github.com/jeromedockes).
@@ -65,6 +65,9 @@
 
 ### Deprecations
 
+- `DataOp.skb.full_report()` has been renamed [`DataOp.skb.report()`](reference/generated/skrub.DataOp.skb.reporthtml.md#skrub.DataOp.skb.report).
+  The old name is still available as a deprecated alias but will be removed in a
+  future release. [#2310](https://github.com/skrub-data/skrub/pull/2310) by [Jérôme Dockès](https://github.com/jeromedockes).
 - The `TextEncoder` has been renamed [`LLMEncoder`](reference/generated/skrub.LLMEncoderhtml.md#skrub.LLMEncoder). It is still available
   as an alias, but will be removed in a future release. [#2255](https://github.com/skrub-data/skrub/pull/2255) by
   [Riccardo Cappuzzo](https://github.com/rcap107).
@@ -390,7 +393,7 @@
   faster (the overhead it removes typically becomes noticeable only in DataOps
   with 50-100 nodes or more). Moreover, the evaluation of large DataOps has also
   become faster. [#1890](https://github.com/skrub-data/skrub/pull/1890) by [Jérôme Dockès](https://github.com/jeromedockes).
-- The reports produced by [`DataOp.skb.full_report()`](reference/generated/skrub.DataOp.skb.full_reporthtml.md#skrub.DataOp.skb.full_report) and
+- The reports produced by `DataOp.skb.full_report()` and
   [`SkrubLearner.report()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.report) now also display the values provided in the
   environment. [#1920](https://github.com/skrub-data/skrub/pull/1920) by [Jérôme Dockès](https://github.com/jeromedockes).
 - [`SkrubLearner`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner), [`ParamSearch`](reference/generated/skrub.ParamSearchhtml.md#skrub.ParamSearch) and [`OptunaParamSearch`](reference/generated/skrub.OptunaParamSearchhtml.md#skrub.OptunaParamSearch) expose
@@ -523,7 +526,7 @@
   [`DataOp.skb.train_test_split()`](reference/generated/skrub.DataOp.skb.train_test_splithtml.md#skrub.DataOp.skb.train_test_split) but for multiple cross-validation splits.
   [#1653](https://github.com/skrub-data/skrub/pull/1653) by [Jérôme Dockès](https://github.com/jeromedockes).
 - [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) now supports `np.array`. [#1676](https://github.com/skrub-data/skrub/pull/1676) by [Nisma Amjad](https://github.com/Nismamjad1).
-- [`DataOp.skb.full_report()`](reference/generated/skrub.DataOp.skb.full_reporthtml.md#skrub.DataOp.skb.full_report) now accepts a new parameter, `title`, that is displayed
+- `DataOp.skb.full_report()` now accepts a new parameter, `title`, that is displayed
   in the html report.
   [#1654](https://github.com/skrub-data/skrub/pull/1654) by [Marie Sacksick](https://github.com/MarieSacksick).
 - [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) now includes the `open_tab` parameter, which lets the
@@ -540,7 +543,7 @@
   the minimum supported versions of scikit-learn and requests are 1.4.2 and 2.27.1
   respectively. Support for python 3.14 has been added.
   [#1572](https://github.com/skrub-data/skrub/pull/1572) by [Riccardo Cappuzzo](https://github.com/rcap107).
-- The [`DataOp.skb.full_report()`](reference/generated/skrub.DataOp.skb.full_reporthtml.md#skrub.DataOp.skb.full_report) method now deletes reports created with
+- The `DataOp.skb.full_report()` method now deletes reports created with
   `output_dir=None` after 7 days. [#1657](https://github.com/skrub-data/skrub/pull/1657) by [Simon Dierickx](https://github.com/simon.dierickx).
 - The [`tabular_pipeline()`](reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline) uses a [`SquashingScaler`](reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler) instead of a
   `StandardScaler` for centering and scaling numerical features
@@ -601,7 +604,7 @@
 
 ### New features
 
-- The [`DataOp.skb.full_report()`](reference/generated/skrub.DataOp.skb.full_reporthtml.md#skrub.DataOp.skb.full_report) now displays the time each node took to
+- The `DataOp.skb.full_report()` now displays the time each node took to
   evaluate. [#1596](https://github.com/skrub-data/skrub/pull/1596) by [Jérôme Dockès](https://github.com/jeromedockes).
 
 ### Changes

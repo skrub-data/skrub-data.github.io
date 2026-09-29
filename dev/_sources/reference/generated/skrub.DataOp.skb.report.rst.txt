@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.report
+=======================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.report

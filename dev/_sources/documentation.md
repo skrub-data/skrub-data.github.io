@@ -238,7 +238,7 @@ it 'style' --> <script>
     * [Applying machine-learning estimators](modules/data_ops/ml_pipeline/applying_ml_estimatorshtml.md)
     * [Applying different transformers using skrub selectors and DataOps](modules/data_ops/ml_pipeline/applying_different_transformershtml.md)
     * [Documenting the DataOps plan with node names and descriptions](modules/data_ops/ml_pipeline/documenting_data_ops_planhtml.md)
-    * [Evaluating and debugging the DataOps plan with `.skb.full_report()`](modules/data_ops/ml_pipeline/evaluating_debugging_data_opshtml.md)
+    * [Evaluating and debugging the DataOps plan with `.skb.report()`](modules/data_ops/ml_pipeline/evaluating_debugging_data_opshtml.md)
     * [Using only a part of a DataOps plan](modules/data_ops/ml_pipeline/using_part_of_data_ops_planhtml.md)
     * [Caching for faster recomputation](modules/data_ops/ml_pipeline/cachinghtml.md)
     * [Subsampling data for easier development and debugging](modules/data_ops/ml_pipeline/subsampling_datahtml.md)
