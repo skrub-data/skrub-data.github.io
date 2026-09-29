@@ -29,6 +29,7 @@ See :ref:`encoding <user_guide_encoders_index>` for further details.
   :template: base.rst
 
 
+  CatEncoder
   StringEncoder
   LLMEncoder
   MinHashEncoder

@@ -65,6 +65,7 @@
 - [DropCols](https://skrub-data.org/stable/_sources/reference/generated/skrub.DropCols.md)
 - [Drop](https://skrub-data.org/stable/_sources/reference/generated/skrub.Drop.md)
 - [Encoding a column](https://skrub-data.org/stable/_sources/reference/encoders.md)
+- [CatEncoder](https://skrub-data.org/stable/_sources/reference/generated/skrub.CatEncoder.md)
 - [StringEncoder](https://skrub-data.org/stable/_sources/reference/generated/skrub.StringEncoder.md)
 - [LLMEncoder](https://skrub-data.org/stable/_sources/reference/generated/skrub.LLMEncoder.md)
 - [MinHashEncoder](https://skrub-data.org/stable/_sources/reference/generated/skrub.MinHashEncoder.md)

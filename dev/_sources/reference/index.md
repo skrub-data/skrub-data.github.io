@@ -18,8 +18,9 @@ classes and functions may not be enough to give full guidelines on their use.
 
 ## Encoding a column
 
-| [`StringEncoder`](generated/skrub.StringEncoderhtml.md#skrub.StringEncoder)             | Encode string columns as a numeric array using Latent Semantic Analysis (LSA).                              |
+| [`CatEncoder`](generated/skrub.CatEncoderhtml.md#skrub.CatEncoder)                      | Encode a single categorical column combining OneHotEncoder and TargetEncoder.                               |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| [`StringEncoder`](generated/skrub.StringEncoderhtml.md#skrub.StringEncoder)             | Encode string columns as a numeric array using Latent Semantic Analysis (LSA).                              |
 | [`LLMEncoder`](generated/skrub.LLMEncoderhtml.md#skrub.LLMEncoder)                      | Encode string features by applying a pretrained language model         downloaded from the HuggingFace Hub. |
 | [`MinHashEncoder`](generated/skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder)          | Encode string categorical features by applying the MinHash method to n-gram     decompositions of strings.  |
 | [`GapEncoder`](generated/skrub.GapEncoderhtml.md#skrub.GapEncoder)                      | Encode string columns by constructing latent topics.                                                        |

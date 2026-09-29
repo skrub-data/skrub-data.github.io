@@ -555,6 +555,7 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="encoders.html">encoders</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.CatEncoder.html">CatEncoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.StringEncoder.html">StringEncoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.LLMEncoder.html">LLMEncoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.MinHashEncoder.html">MinHashEncoder</a></li>
@@ -808,34 +809,37 @@ classes and functions may not be enough to give full guidelines on their use.</p
 <h2>Encoding a column<a class="headerlink" href="#encoding-a-column" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StringEncoder</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.CatEncoder.html#skrub.CatEncoder" title="skrub.CatEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CatEncoder</span></code></a></p></td>
+<td><p>Encode a single categorical column combining OneHotEncoder and TargetEncoder.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StringEncoder</span></code></a></p></td>
 <td><p>Encode string columns as a numeric array using Latent Semantic Analysis (LSA).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.LLMEncoder.html#skrub.LLMEncoder" title="skrub.LLMEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LLMEncoder</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.LLMEncoder.html#skrub.LLMEncoder" title="skrub.LLMEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LLMEncoder</span></code></a></p></td>
 <td><p>Encode string features by applying a pretrained language model         downloaded from the HuggingFace Hub.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a></p></td>
 <td><p>Encode string categorical features by applying the MinHash method to n-gram     decompositions of strings.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a></p></td>
 <td><p>Encode string columns by constructing latent topics.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.SimilarityEncoder.html#skrub.SimilarityEncoder" title="skrub.SimilarityEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimilarityEncoder</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.SimilarityEncoder.html#skrub.SimilarityEncoder" title="skrub.SimilarityEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimilarityEncoder</span></code></a></p></td>
 <td><p>Encode string categories to a similarity matrix, to capture fuzziness across a few categories.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.ToCategorical.html#skrub.ToCategorical" title="skrub.ToCategorical"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToCategorical</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.ToCategorical.html#skrub.ToCategorical" title="skrub.ToCategorical"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToCategorical</span></code></a></p></td>
 <td><p>Convert a string column to Categorical dtype.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a></p></td>
 <td><p>Extract temporal features such as month, day of the week, … from a datetime column.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.SessionEncoder.html#skrub.SessionEncoder" title="skrub.SessionEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SessionEncoder</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.SessionEncoder.html#skrub.SessionEncoder" title="skrub.SessionEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SessionEncoder</span></code></a></p></td>
 <td><p>Add a session ID column to a dataframe based on time gaps and other columns.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToDatetime</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToDatetime</span></code></a></p></td>
 <td><p>Parse datetimes represented as strings and return <code class="docutils literal notranslate"><span class="pre">Datetime</span></code> columns.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.ToFloat.html#skrub.ToFloat" title="skrub.ToFloat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToFloat</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.ToFloat.html#skrub.ToFloat" title="skrub.ToFloat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToFloat</span></code></a></p></td>
 <td><p>Convert a column to 32-bit floating-point numbers.</p></td>
 </tr>
 </tbody>

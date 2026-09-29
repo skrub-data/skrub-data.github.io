@@ -10,10 +10,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: New Features: It is now possible to enable persistent caching of estimators and functions used in a DataOp, by setting a value for cache in set_config(). This caching can be tu..." />
+<meta property="og:description" content="Ongoing development: New Features: Added CatEncoder, a single column transformer that combines OneHotEncoder and TargetEncoder.#2244 by Tomasz Kazimierczak., It is now possible to enable persistent..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: New Features: It is now possible to enable persistent caching of estimators and functions used in a DataOp, by setting a value for cache in set_config(). This caching can be tu..." />
+<meta name="description" content="Ongoing development: New Features: Added CatEncoder, a single column transformer that combines OneHotEncoder and TargetEncoder.#2244 by Tomasz Kazimierczak., It is now possible to enable persistent..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -594,6 +594,10 @@
 <section id="new-features">
 <h3>New Features<a class="headerlink" href="#new-features" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>Added <a class="reference internal" href="reference/generated/skrub.CatEncoder.html#skrub.CatEncoder" title="skrub.CatEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">CatEncoder</span></code></a>, a single column transformer that combines
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a> and
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TargetEncoder</span></code></a>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2244">#2244</a> by <a class="reference external" href="https://github.com/faithlesstomas">Tomasz Kazimierczak</a>.</p></li>
 <li><p>It is now possible to enable persistent caching of estimators and functions
 used in a <a class="reference internal" href="data_ops.html#user-guide-data-ops-index"><span class="std std-ref">DataOp</span></a>, by setting a value for
 <code class="docutils literal notranslate"><span class="pre">cache</span></code> in <a class="reference internal" href="reference/generated/skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a>. This caching can be turned off on a

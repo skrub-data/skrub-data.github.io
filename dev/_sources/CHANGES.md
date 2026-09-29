@@ -6,6 +6,10 @@
 
 ### New Features
 
+- Added [`CatEncoder`](reference/generated/skrub.CatEncoderhtml.md#skrub.CatEncoder), a single column transformer that combines
+  [`OneHotEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder) and
+  [`TargetEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder).
+  [#2244](https://github.com/skrub-data/skrub/pull/2244) by [Tomasz Kazimierczak](https://github.com/faithlesstomas).
 - It is now possible to enable persistent caching of estimators and functions
   used in a [DataOp](data_opshtml.md#user-guide-data-ops-index), by setting a value for
   `cache` in [`set_config()`](reference/generated/skrub.set_confightml.md#skrub.set_config). This caching can be turned off on a

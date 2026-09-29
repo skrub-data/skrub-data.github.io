@@ -80,6 +80,9 @@ Encoding a column
   :template: base.rst
 
 
+  CatEncoder
+
+
   StringEncoder
 
 
