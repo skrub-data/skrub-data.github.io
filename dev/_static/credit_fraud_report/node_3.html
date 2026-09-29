@@ -33,6 +33,14 @@ pre, code {
     font-size: 1rem;
 }
 
+.docstring-details summary {
+    cursor: pointer;
+}
+
+.docstring-details {
+    margin: 1em 0;
+}
+
 #graph-nav text {
     transform: translateY(2px);
 }
@@ -93,6 +101,15 @@ pre, code {
 
 .node-creation-stack {
     font-size: 1rem;
+}
+
+.node-creation-stack a {
+    text-decoration: none;
+}
+
+.node-creation-stack .node-creation-stack-line {
+    display: block;
+    margin-left: 2em;
 }
 
 .main-nav:not([data-is-open]){
@@ -545,7 +562,7 @@ pre, code {
                         </li>
                     </ul>
                 </nav>
-                <samp>ID:</samp> <samp>97981871452182449575987338582499941012</samp>
+                <samp>ID:</samp> <samp>8374457294787230425848721110662595339</samp>
                 
                 <div>
                     
@@ -571,21 +588,22 @@ pre, code {
 
                 <div>
                     <h3>Where was this step created?</h3>
-                    <pre><code class="node-creation-stack">  File &#34;/home/circleci/project/doc/conf.py&#34;, line 661, in &lt;module&gt;
-    create_data_ops_report()
-  File &#34;/home/circleci/project/doc/data_ops_report.py&#34;, line 96, in create_data_ops_report
-    credit_fraud_folder = create_credit_fraud_report()
-  File &#34;/home/circleci/project/doc/data_ops_report.py&#34;, line 29, in create_credit_fraud_report
-    products = products[products[&#34;basket_ID&#34;].isin(baskets[&#34;ID&#34;])]
-</code></pre>
-                </div>
-                
-                <div>
-                    <h3>Computation time</h3>
-                    <code>0h 0m 0.0003s</code>
+                    <pre><code class="node-creation-stack">File <a href="python/47d175b745965d15adc52c6257b32538c95d31b7f96f5293ecf385645d1bb94a.html#L661">/home/circleci/project/doc/conf.py, line 661</a>, in &lt;module&gt;
+<span class="node-creation-stack-line">create_data_ops_report()</span>File <a href="python/ee7b5b76b981cd0ab813ea6b940a95e365eedd480cfe2d37d151610a849bda96.html#L96">/home/circleci/project/doc/data_ops_report.py, line 96</a>, in create_data_ops_report
+<span class="node-creation-stack-line">credit_fraud_folder = create_credit_fraud_report()</span>File <a href="python/ee7b5b76b981cd0ab813ea6b940a95e365eedd480cfe2d37d151610a849bda96.html#L29">/home/circleci/project/doc/data_ops_report.py, line 29</a>, in create_credit_fraud_report
+<span class="node-creation-stack-line">products = products[products[&#34;basket_ID&#34;].isin(baskets[&#34;ID&#34;])]</span></code></pre>
                 </div>
                 
 
+                
+                <div>
+                    <h3>Computation time</h3>
+                    <code>0h 0m 0.00028s</code>
+                </div>
+                
+
+                
+                
                 
 
                 
@@ -595,8 +613,8 @@ pre, code {
                     
                     <div>
                         
-<div id="report_01ee1e47-wrapper" hidden>
-    <template id="report_01ee1e47-template">
+<div id="report_26469236-wrapper" hidden>
+    <template id="report_26469236-template">
         <style>
          /*!
 Pure v3.0.0
@@ -2021,7 +2039,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
                 
                 
                 <th
-                id="7e2283a3"
+                id="e6a108a3"
                 class="table-cell elided-short "
                 
                 data-role="padding"
@@ -2051,7 +2069,7 @@ data-spans__-1__-1
                 
                 
                 <th
-                id="fe057a82"
+                id="9a2dede0"
                 class="table-cell elided-short clickable"
                 
                 data-role="columns-level-value"
@@ -2099,7 +2117,7 @@ data-spans__-1__0
                 
                 
                 <th
-                id="f61d4da4"
+                id="e8159981"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2127,7 +2145,7 @@ data-spans__0__-1
                 
                 
                 <td
-                id="f49c6313"
+                id="32e03414"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2161,7 +2179,7 @@ data-spans__0__0
                 
                 
                 <th
-                id="a319488c"
+                id="7a969f0e"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2189,7 +2207,7 @@ data-spans__1__-1
                 
                 
                 <td
-                id="b943ae9b"
+                id="f8bd9c76"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2223,7 +2241,7 @@ data-spans__1__0
                 
                 
                 <th
-                id="57addd45"
+                id="0abf4d74"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2251,7 +2269,7 @@ data-spans__2__-1
                 
                 
                 <td
-                id="1ea0791e"
+                id="dc9d7973"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2285,7 +2303,7 @@ data-spans__2__0
                 
                 
                 <th
-                id="09790af8"
+                id="f1baf279"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2313,7 +2331,7 @@ data-spans__3__-1
                 
                 
                 <td
-                id="bee1a027"
+                id="1a27409b"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2347,7 +2365,7 @@ data-spans__3__0
                 
                 
                 <th
-                id="63129380"
+                id="e4a97baf"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2375,7 +2393,7 @@ data-spans__4__-1
                 
                 
                 <td
-                id="510059bc"
+                id="6dc92584"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2439,7 +2457,7 @@ data-spans__4__0
                 
                 
                 <th
-                id="bdaba8f7"
+                id="f497673f"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2467,7 +2485,7 @@ data-spans__5__-1
                 
                 
                 <td
-                id="2c926ab5"
+                id="67d66c77"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2501,7 +2519,7 @@ data-spans__5__0
                 
                 
                 <th
-                id="303f04d2"
+                id="69375a37"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2529,7 +2547,7 @@ data-spans__6__-1
                 
                 
                 <td
-                id="a7cb6837"
+                id="6fab1a74"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2563,7 +2581,7 @@ data-spans__6__0
                 
                 
                 <th
-                id="af348704"
+                id="9b3f7ee9"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2591,7 +2609,7 @@ data-spans__7__-1
                 
                 
                 <td
-                id="c61c5ae4"
+                id="1a8ddbfe"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2625,7 +2643,7 @@ data-spans__7__0
                 
                 
                 <th
-                id="c3db459d"
+                id="2d5aa412"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2653,7 +2671,7 @@ data-spans__8__-1
                 
                 
                 <td
-                id="6c1d2cce"
+                id="9ec05ca1"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2687,7 +2705,7 @@ data-spans__8__0
                 
                 
                 <th
-                id="8b4b9f6e"
+                id="31598799"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2715,7 +2733,7 @@ data-spans__9__-1
                 
                 
                 <td
-                id="3816b7ad"
+                id="803f016e"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -3290,7 +3308,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_01ee1e47">
+    <skrub-table-report class="report" id="report_26469236">
     </skrub-table-report>
 
     <script type="module">
@@ -4394,7 +4412,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_01ee1e47-wrapper-fallback">
+<div id="report_26469236-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -4405,8 +4423,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_01ee1e47-wrapper").removeAttribute("hidden");
- document.getElementById("report_01ee1e47-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_26469236-wrapper").removeAttribute("hidden");
+ document.getElementById("report_26469236-wrapper-fallback").setAttribute("hidden", "");
 </script>
                     </div>
                 </div>

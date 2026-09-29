@@ -33,6 +33,14 @@ pre, code {
     font-size: 1rem;
 }
 
+.docstring-details summary {
+    cursor: pointer;
+}
+
+.docstring-details {
+    margin: 1em 0;
+}
+
 #graph-nav text {
     transform: translateY(2px);
 }
@@ -93,6 +101,15 @@ pre, code {
 
 .node-creation-stack {
     font-size: 1rem;
+}
+
+.node-creation-stack a {
+    text-decoration: none;
+}
+
+.node-creation-stack .node-creation-stack-line {
+    display: block;
+    margin-left: 2em;
 }
 
 .main-nav:not([data-is-open]){
@@ -545,7 +562,7 @@ pre, code {
                         </li>
                     </ul>
                 </nav>
-                <samp>ID:</samp> <samp>39254887170585927081093677807581972579</samp>
+                <samp>ID:</samp> <samp>265501425134046332141724134839551030813</samp>
                 
                 <div>
                     
@@ -571,21 +588,22 @@ pre, code {
 
                 <div>
                     <h3>Where was this step created?</h3>
-                    <pre><code class="node-creation-stack">  File &#34;/home/circleci/project/doc/conf.py&#34;, line 661, in &lt;module&gt;
-    create_data_ops_report()
-  File &#34;/home/circleci/project/doc/data_ops_report.py&#34;, line 96, in create_data_ops_report
-    credit_fraud_folder = create_credit_fraud_report()
-  File &#34;/home/circleci/project/doc/data_ops_report.py&#34;, line 46, in create_credit_fraud_report
-    vectorized_products.groupby(&#34;basket_ID&#34;).agg(&#34;mean&#34;).reset_index()
-</code></pre>
-                </div>
-                
-                <div>
-                    <h3>Computation time</h3>
-                    <code>0h 0m 0.0004s</code>
+                    <pre><code class="node-creation-stack">File <a href="python/47d175b745965d15adc52c6257b32538c95d31b7f96f5293ecf385645d1bb94a.html#L661">/home/circleci/project/doc/conf.py, line 661</a>, in &lt;module&gt;
+<span class="node-creation-stack-line">create_data_ops_report()</span>File <a href="python/ee7b5b76b981cd0ab813ea6b940a95e365eedd480cfe2d37d151610a849bda96.html#L96">/home/circleci/project/doc/data_ops_report.py, line 96</a>, in create_data_ops_report
+<span class="node-creation-stack-line">credit_fraud_folder = create_credit_fraud_report()</span>File <a href="python/ee7b5b76b981cd0ab813ea6b940a95e365eedd480cfe2d37d151610a849bda96.html#L46">/home/circleci/project/doc/data_ops_report.py, line 46</a>, in create_credit_fraud_report
+<span class="node-creation-stack-line">vectorized_products.groupby(&#34;basket_ID&#34;).agg(&#34;mean&#34;).reset_index()</span></code></pre>
                 </div>
                 
 
+                
+                <div>
+                    <h3>Computation time</h3>
+                    <code>0h 0m 0.00042s</code>
+                </div>
+                
+
+                
+                
                 
 
                 
@@ -596,7 +614,7 @@ pre, code {
                     <div>
                         <div style="max-height: 30em; max-width: 95%; overflow: auto;">
     <samp>
-        <pre>&lt;pandas.api.typing.DataFrameGroupBy object at 0x7fcf0810d730&gt;</pre>
+        <pre>&lt;pandas.api.typing.DataFrameGroupBy object at 0x70edb9e7b770&gt;</pre>
     </samp>
 </div>
                     </div>
