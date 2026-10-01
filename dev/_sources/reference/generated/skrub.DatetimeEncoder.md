@@ -117,7 +117,7 @@ We can also ask for the day of the week. The week starts at 1 on Monday and ends
 at 7 on Sunday. This is consistent with the
 [ISO week date system](https://en.wikipedia.org/wiki/ISO_week_date),
 the standard library
-[`datetime.isoweekday()`](https://docs.python.org/3/library/datetime.html#datetime.datetime.isoweekday) and polars
+`datetime.isoweekday()` and polars
 [`weekday`](https://docs.pola.rs/py-polars/html/reference/series/api/polars.Series.dt.weekday.html#polars.Series.dt.weekday), but not with pandas
 [`day_of_week`](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.dt.day_of_week.html#pandas.Series.dt.day_of_week), which counts days from 0.
 

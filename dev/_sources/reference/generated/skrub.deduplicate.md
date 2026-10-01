@@ -48,7 +48,7 @@ Depending on the use case, this assumption may not always hold true.
   **n_jobs**
   : The number of jobs to run in parallel.
 * **Returns:**
-  [`list`](https://docs.python.org/3/builtins/stdtypes.html#list) of [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
+  `python:list` of `python:str`
   : The deduplicated data.
 
 #### SEE ALSO

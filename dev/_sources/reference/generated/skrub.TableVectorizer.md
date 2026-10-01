@@ -433,7 +433,7 @@ Return the column names of the output of `transform` as a list of strings.
   **input_features**
   : Ignored.
 * **Returns:**
-  [`list`](https://docs.python.org/3/builtins/stdtypes.html#list) of strings
+  `python:list` of strings
   : The column names.
 
 <!-- !! processed by numpydoc !! -->

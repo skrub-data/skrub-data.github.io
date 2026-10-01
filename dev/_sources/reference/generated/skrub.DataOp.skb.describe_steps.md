@@ -9,7 +9,7 @@ or [`DataOp.skb.report()`](skrub.DataOp.skb.report.md#skrub.DataOp.skb.report) i
 inspecting the computation graph when only text output is available.
 
 * **Returns:**
-  [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
+  `python:str`
   : A string representing the different computation steps, one on each
     line.
 

@@ -152,7 +152,7 @@ Aggregate auxiliary table based on the main keys.
 Get output feature names for transformation.
 
 * **Returns:**
-  List of [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
+  List of `python:str`
   : Transformed feature names.
 
 <!-- !! processed by numpydoc !! -->
