@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=64cc4de3f052d77215f0" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=64cc4de3f052d77215f0" />
 
-    <script src="../../_static/documentation_options.js?v=f3b36f1a"></script>
+    <script src="../../_static/documentation_options.js?v=ce654c04"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -67,7 +67,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.22.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.11.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.12.dev0';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -82,7 +82,7 @@
     <link rel="prev" title="has_dtype" href="skrub.selectors.has_dtype.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.11.0" />
+  <meta name="docsearch:version" content="0.12.dev0" />
   
     
     <script src="../../_static/searchtools.js"></script>
@@ -786,7 +786,7 @@
 <h1>has_nulls<a class="headerlink" href="#has-nulls" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.has_nulls">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">has_nulls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proportion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/77b484c/skrub/selectors/_selectors.py#L844"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.has_nulls" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">has_nulls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proportion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0411582/skrub/selectors/_selectors.py#L844"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.has_nulls" title="Link to this definition">#</a></dt>
 <dd><p>Select columns that contain at least one null value, or a proportion of null     values above a given threshold.</p>
 <p>Use this selector to identify columns needing imputation or
 with excessive missing data. This is useful for data quality
