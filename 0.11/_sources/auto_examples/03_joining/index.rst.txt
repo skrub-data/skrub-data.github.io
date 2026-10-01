@@ -23,7 +23,7 @@ Joining tables with imperfect data
 
 .. only:: html
 
-  .. image:: /auto_examples/03_joining/images/thumb/sphx_glr_0040_fuzzy_joining_thumb.png
+  .. image:: /auto_examples/03_joining/images/thumb/sphx_glr_0040_fuzzy_joining_thumb.svg
     :alt:
 
   :doc:`/auto_examples/03_joining/0040_fuzzy_joining`
@@ -40,7 +40,7 @@ Joining tables with imperfect data
 
 .. only:: html
 
-  .. image:: /auto_examples/03_joining/images/thumb/sphx_glr_0050_deduplication_thumb.png
+  .. image:: /auto_examples/03_joining/images/thumb/sphx_glr_0050_deduplication_thumb.svg
     :alt:
 
   :doc:`/auto_examples/03_joining/0050_deduplication`
@@ -57,7 +57,7 @@ Joining tables with imperfect data
 
 .. only:: html
 
-  .. image:: /auto_examples/03_joining/images/thumb/sphx_glr_0060_multiple_key_join_thumb.png
+  .. image:: /auto_examples/03_joining/images/thumb/sphx_glr_0060_multiple_key_join_thumb.svg
     :alt:
 
   :doc:`/auto_examples/03_joining/0060_multiple_key_join`
@@ -74,7 +74,7 @@ Joining tables with imperfect data
 
 .. only:: html
 
-  .. image:: /auto_examples/03_joining/images/thumb/sphx_glr_0070_join_aggregation_thumb.png
+  .. image:: /auto_examples/03_joining/images/thumb/sphx_glr_0070_join_aggregation_thumb.svg
     :alt:
 
   :doc:`/auto_examples/03_joining/0070_join_aggregation`
@@ -91,7 +91,7 @@ Joining tables with imperfect data
 
 .. only:: html
 
-  .. image:: /auto_examples/03_joining/images/thumb/sphx_glr_0080_interpolation_join_thumb.png
+  .. image:: /auto_examples/03_joining/images/thumb/sphx_glr_0080_interpolation_join_thumb.svg
     :alt:
 
   :doc:`/auto_examples/03_joining/0080_interpolation_join`

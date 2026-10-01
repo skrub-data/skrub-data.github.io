@@ -39,8 +39,6 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=c83e6b79" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -54,20 +52,19 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=64cc4de3f052d77215f0" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=64cc4de3f052d77215f0" />
 
-    <script src="../../_static/documentation_options.js?v=b4d3f7eb"></script>
+    <script src="../../_static/documentation_options.js?v=f3b36f1a"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=fd10adb8"></script>
     <script src="../../_static/sg-tags.js?v=d80f6fa4"></script>
-    <script src="../../_static/jupyterlite_sphinx.js?v=96e329c5"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script data-domain="skrub-data.org" defer="defer" src="https://views.scientific-python.org/js/script.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/02_data_ops/1160_pytorch';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.22.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.11.dev0';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.11.0';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -82,7 +79,7 @@
     <link rel="prev" title="Use case: developing locally and deploying to production" href="1150_use_case.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.11.dev0" />
+  <meta name="docsearch:version" content="0.11.0" />
   
     
     <script src="../../_static/searchtools.js"></script>
@@ -651,7 +648,7 @@
   <div class="sphx-glr-download-link-note admonition note">
 <p class="admonition-title">Note</p>
 <p><a class="reference internal" href="#sphx-glr-download-auto-examples-02-data-ops-1160-pytorch-py"><span class="std std-ref">Go to the end</span></a>
-to download the full example code or to run this example in your browser via JupyterLite or Binder.</p>
+to download the full example code or to run this example in your browser via Binder.</p>
 </div>
 <section class="sphx-glr-example-title" id="using-pytorch-via-skorch-in-dataops">
 <span id="sphx-glr-auto-examples-02-data-ops-1160-pytorch-py"></span><h1>Using PyTorch (via skorch) in DataOps<a class="headerlink" href="#using-pytorch-via-skorch-in-dataops" title="Link to this heading">#</a></h1>
@@ -677,23 +674,19 @@ handwritten digit, encoded as 64 pixel intensity values and displays a
 number from 0 to 9.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn</span><span class="nn">.</span><span class="nn">datasets</span><span class="w"> </span><span class="kn">import</span> <a class="sphx-glr-backref-module-sklearn-datasets sphx-glr-backref-type-py-function reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html#sklearn.datasets.load_digits" title="sklearn.datasets.load_digits"><span class="n">load_digits</span></a><span class="w">
 </span><span class="w">
-</span><a class="sphx-glr-backref-module-sklearn-utils sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.utils.Bunch.html#sklearn.utils.Bunch" title="sklearn.utils.Bunch"><span class="n">digits</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-sklearn-datasets sphx-glr-backref-type-py-function reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html#sklearn.datasets.load_digits" title="sklearn.datasets.load_digits"><span class="n">load_digits</span></a><span class="p">(</span><span class="p">)</span><span class="w">
-</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X</span></a><span class="p">,</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">y</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">digits</span><span class="o">.</span><span class="n">data</span></a><span class="p">,</span> <a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">digits</span><span class="o">.</span><span class="n">target</span></a><span class="w">
-</span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="s2">Dataset shape: </span><span class="si">{</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X</span><span class="o">.</span><span class="n">shape</span></a><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
-</span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="s2">Number of classes: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">y</span></a><span class="p">)</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
+</span><span class="n">digits</span> <span class="o">=</span> <a class="sphx-glr-backref-module-sklearn-datasets sphx-glr-backref-type-py-function reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html#sklearn.datasets.load_digits" title="sklearn.datasets.load_digits"><span class="n">load_digits</span></a><span class="p">(</span><span class="p">)</span><span class="w">
+</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">digits</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">digits</span><span class="o">.</span><span class="n">target</span><span class="w">
+</span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="s2">Dataset shape: </span><span class="si">{</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
+</span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="s2">Number of classes: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
 </span></pre></div></div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Dataset shape: (1797, 64)
-Number of classes: 10
-</pre></div>
-</div>
 </section>
 <section id="start-of-the-dataops-plan">
 <h1>Start of the DataOps plan<a class="headerlink" href="#start-of-the-dataops-plan" title="Link to this heading">#</a></h1>
 <p>We start the DataOps plan by creating the skrub variables X and y.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span><span class="w">
 </span><span class="w">
-</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.X.html#skrub.X" title="skrub.X"><span class="n">skrub</span><span class="o">.</span><span class="n">X</span></a><span class="p">(</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X</span></a><span class="p">)</span><span class="w">
-</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">y</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.y.html#skrub.y" title="skrub.y"><span class="n">skrub</span><span class="o">.</span><span class="n">y</span></a><span class="p">(</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">y</span></a><span class="p">)</span><span class="w">
+</span><span class="n">X</span> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.X.html#skrub.X" title="skrub.X"><span class="n">skrub</span><span class="o">.</span><span class="n">X</span></a><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="w">
+</span><span class="n">y</span> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.y.html#skrub.y" title="skrub.y"><span class="n">skrub</span><span class="o">.</span><span class="n">y</span></a><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="w">
 </span></pre></div></div>
 </section>
 <section id="data-preprocessing">
@@ -713,120 +706,12 @@ dataop for prediction on new (test) data.</p>
 dimension (N) is inferred automatically from the array size.</p>
 <p>The advantage of using DataOps is that the preprocessing steps are tracked
 in the plan and will be automatically applied during prediction.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">max_value</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X</span><span class="o">.</span><span class="n">max</span></a><span class="p">(</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">freeze_after_fit</span><span class="p">(</span><span class="p">)</span><span class="w">
-</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X_scaled</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X</span></a> <span class="o">/</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">max_value</span></a><span class="w">
-</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X_reshaped</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X_scaled</span><span class="o">.</span><span class="n">reshape</span></a><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;</span><span class="s2">float32</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
-</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X_reshaped</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">draw_graph</span><span class="p">(</span><span class="p">)</span><span class="w">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span class="n">max_value</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">freeze_after_fit</span><span class="p">(</span><span class="p">)</span><span class="w">
+</span><span class="n">X_scaled</span> <span class="o">=</span> <span class="n">X</span> <span class="o">/</span> <span class="n">max_value</span><span class="w">
+</span><span class="n">X_reshaped</span> <span class="o">=</span> <span class="n">X_scaled</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;</span><span class="s2">float32</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
+</span><span class="n">X_reshaped</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">draw_graph</span><span class="p">(</span><span class="p">)</span><span class="w">
 </span></pre></div></div>
-<div class="output_subarea output_html rendered_html output_result">
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
- "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 14.1.2 (20260126.1125)
- -->
-<!-- Title: G Pages: 1 -->
-<svg width="153pt" height="289pt"
- viewBox="0.00 0.00 153.00 289.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 285.34)">
-
-<polygon fill="white" stroke="none" points="-4,4 -4,-285.34 149.39,-285.34 149.39,4 -4,4"/>
-<!-- node_0 -->
-<g id="node_0" class="node">
-
-<g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 41, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X = skrub.X(X)">
-<polygon fill="#c6d5f0" stroke="black" points="115.89,-277.34 57.87,-277.34 57.87,-255.95 115.89,-255.95 115.89,-277.34"/>
-<polygon fill="none" stroke="black" points="119.89,-281.34 53.87,-281.34 53.87,-251.95 119.89,-251.95 119.89,-281.34"/>
-<text xml:space="preserve" text-anchor="middle" x="86.88" y="-263.52" font-family="sans-serif" font-size="10.00">X: Var &#39;X&#39;</text>
-</a>
-</g>
-</g>
-<!-- node_1 -->
-<g id="node_1" class="node">
-
-<g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 66, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;max_value = X.max().skb.freeze_after_fit()">
-<polygon fill="none" stroke="black" points="97.77,-222.95 0,-222.95 0,-201.56 97.77,-201.56 97.77,-222.95"/>
-<text xml:space="preserve" text-anchor="middle" x="48.88" y="-209.13" font-family="sans-serif" font-size="10.00">CallMethod &#39;max&#39;</text>
-</a>
-</g>
-</g>
-<!-- node_0&#45;&gt;node_1 -->
-<g id="edge6" class="edge">
-
-<path fill="none" stroke="black" d="M76.7,-251.61C71.82,-244.88 65.94,-236.77 60.85,-229.75"/>
-<polygon fill="black" stroke="black" points="63.07,-228.64 56.97,-224.41 59.1,-231.51 63.07,-228.64"/>
-</g>
-<!-- node_3 -->
-<g id="node_3" class="node">
-
-<g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 67, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_scaled = X / max_value">
-<polygon fill="none" stroke="black" points="128.52,-122.17 47.25,-122.17 47.25,-100.78 128.52,-100.78 128.52,-122.17"/>
-<text xml:space="preserve" text-anchor="middle" x="87.88" y="-108.35" font-family="sans-serif" font-size="10.00">BinOp: truediv</text>
-</a>
-</g>
-</g>
-<!-- node_0&#45;&gt;node_3 -->
-<g id="edge3" class="edge">
-
-<path fill="none" stroke="black" d="M95.39,-251.59C99.76,-243.52 104.64,-233.02 106.88,-222.95 110.25,-207.85 104.74,-159.31 102.88,-151.17 101.26,-144.06 98.58,-136.52 95.92,-130"/>
-<polygon fill="black" stroke="black" points="98.27,-129.26 93.26,-123.8 93.77,-131.2 98.27,-129.26"/>
-</g>
-<!-- node_2 -->
-<g id="node_2" class="node">
-
-<g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 66, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;max_value = X.max().skb.freeze_after_fit()">
-<polygon fill="none" stroke="black" points="93.39,-172.56 14.38,-172.56 14.38,-151.17 93.39,-151.17 93.39,-172.56"/>
-<text xml:space="preserve" text-anchor="middle" x="53.88" y="-158.74" font-family="sans-serif" font-size="10.00">FreezeAfterFit</text>
-</a>
-</g>
-</g>
-<!-- node_1&#45;&gt;node_2 -->
-<g id="edge5" class="edge">
-
-<path fill="none" stroke="black" d="M49.9,-201.46C50.5,-195.64 51.28,-188.06 51.99,-181.16"/>
-<polygon fill="black" stroke="black" points="54.4,-181.7 52.68,-174.48 49.53,-181.19 54.4,-181.7"/>
-</g>
-<!-- node_2&#45;&gt;node_3 -->
-<g id="edge4" class="edge">
-
-<path fill="none" stroke="black" d="M60.77,-151.07C65.13,-144.86 70.9,-136.65 75.99,-129.4"/>
-<polygon fill="black" stroke="black" points="77.89,-130.96 79.91,-123.82 73.88,-128.14 77.89,-130.96"/>
-</g>
-<!-- node_4 -->
-<g id="node_4" class="node">
-
-<g id="a_node_4"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 68, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_reshaped = X_scaled.reshape(&#45;1, 1, 8, 8).astype(&quot;float32&quot;)">
-<polygon fill="none" stroke="black" points="145.39,-71.78 30.37,-71.78 30.37,-50.39 145.39,-50.39 145.39,-71.78"/>
-<text xml:space="preserve" text-anchor="middle" x="87.88" y="-57.96" font-family="sans-serif" font-size="10.00">CallMethod &#39;reshape&#39;</text>
-</a>
-</g>
-</g>
-<!-- node_3&#45;&gt;node_4 -->
-<g id="edge2" class="edge">
-
-<path fill="none" stroke="black" d="M87.88,-100.68C87.88,-94.86 87.88,-87.28 87.88,-80.38"/>
-<polygon fill="black" stroke="black" points="90.34,-80.71 87.89,-73.71 85.44,-80.71 90.34,-80.71"/>
-</g>
-<!-- node_5 -->
-<g id="node_5" class="node">
-
-<g id="a_node_5"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 68, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_reshaped = X_scaled.reshape(&#45;1, 1, 8, 8).astype(&quot;float32&quot;)">
-<polygon fill="none" stroke="black" points="142.39,-21.39 33.37,-21.39 33.37,0 142.39,0 142.39,-21.39"/>
-<text xml:space="preserve" text-anchor="middle" x="87.88" y="-7.57" font-family="sans-serif" font-size="10.00">CallMethod &#39;astype&#39;</text>
-</a>
-</g>
-</g>
-<!-- node_4&#45;&gt;node_5 -->
-<g id="edge1" class="edge">
-
-<path fill="none" stroke="black" d="M87.88,-50.29C87.88,-44.47 87.88,-36.89 87.88,-29.99"/>
-<polygon fill="black" stroke="black" points="90.34,-30.32 87.89,-23.32 85.44,-30.32 90.34,-30.32"/>
-</g>
-</g>
-</svg>
-
-</div>
-<br />
-<br /></section>
+</section>
 <section id="building-a-nn-classifier">
 <h1>Building a NN Classifier<a class="headerlink" href="#building-a-nn-classifier" title="Link to this heading">#</a></h1>
 <p>We’ll build a tiny CNN using PyTorch and wrap it with skorch to make it
@@ -878,11 +763,11 @@ general).</p>
 <p>We use <a class="reference internal" href="../../reference/generated/skrub.choose_from.html#skrub.choose_from" title="skrub.choose_from"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.choose_from()</span></code></a> to define hyperparameters that the DataOps
 grid search will tune: conv_channels, hidden_units, and max_epochs.
 The other parameters are set to common choices for this task and training data size.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span class="kn">from</span><span class="w"> </span><span class="nn">skorch</span><span class="w"> </span><span class="kn">import</span> <a class="sphx-glr-backref-module-sklearn-base sphx-glr-backref-type-py-class reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.ClassifierMixin.html#sklearn.base.ClassifierMixin" title="sklearn.base.ClassifierMixin"><span class="n">NeuralNetClassifier</span></a><span class="w">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span class="kn">from</span><span class="w"> </span><span class="nn">skorch</span><span class="w"> </span><span class="kn">import</span> <span class="n">NeuralNetClassifier</span><span class="w">
 </span><span class="w">
 </span><span class="n">device</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="s2">cpu</span><span class="s2">&quot;</span>  <span class="c1"># use &quot;cuda&quot; or &quot;mps&quot; if available</span><span class="w">
 </span><span class="w">
-</span><span class="n">net</span> <span class="o">=</span> <a class="sphx-glr-backref-module-sklearn-base sphx-glr-backref-type-py-class reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.ClassifierMixin.html#sklearn.base.ClassifierMixin" title="sklearn.base.ClassifierMixin"><span class="n">NeuralNetClassifier</span></a><span class="p">(</span><span class="w">
+</span><span class="n">net</span> <span class="o">=</span> <span class="n">NeuralNetClassifier</span><span class="p">(</span><span class="w">
 </span>    <span class="n">module</span><span class="o">=</span><span class="n">TinyCNN</span><span class="p">,</span><span class="w">
 </span>    <span class="c1"># These choices are intentionally small so the example runs quickly.</span><span class="w">
 </span>    <span class="n">module__conv_channels</span><span class="o">=</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.choose_from.html#skrub.choose_from" title="skrub.choose_from"><span class="n">skrub</span><span class="o">.</span><span class="n">choose_from</span></a><span class="p">(</span><span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">]</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;</span><span class="s2">conv_channels</span><span class="s2">&quot;</span><span class="p">)</span><span class="p">,</span><span class="w">
@@ -902,205 +787,30 @@ The other parameters are set to common choices for this task and training data s
 <p>We integrate the model into the DataOps plan. First, we
 convert the target labels to integers for the loss computation
 and apply the model to the preprocessed X and y.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">y_int</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">y</span><span class="o">.</span><span class="n">astype</span></a><span class="p">(</span><span class="s2">&quot;</span><span class="s2">int64</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
-</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">predictor</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X_reshaped</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">net</span><span class="p">,</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">y</span></a><span class="o">=</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">y_int</span></a><span class="p">)</span><span class="w">
-</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">predictor</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">draw_graph</span><span class="p">(</span><span class="p">)</span><span class="w">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span class="n">y_int</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;</span><span class="s2">int64</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
+</span><span class="n">predictor</span> <span class="o">=</span> <span class="n">X_reshaped</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">net</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y_int</span><span class="p">)</span><span class="w">
+</span><span class="n">predictor</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">draw_graph</span><span class="p">(</span><span class="p">)</span><span class="w">
 </span></pre></div></div>
-<div class="output_subarea output_html rendered_html output_result">
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
- "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 14.1.2 (20260126.1125)
- -->
-<!-- Title: G Pages: 1 -->
-<svg width="277pt" height="348pt"
- viewBox="0.00 0.00 277.00 348.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 343.73)">
-
-<polygon fill="white" stroke="none" points="-4,4 -4,-343.73 273.39,-343.73 273.39,4 -4,4"/>
-<!-- node_0 -->
-<g id="node_0" class="node">
-
-<g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 41, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X = skrub.X(X)">
-<polygon fill="#c6d5f0" stroke="black" points="115.89,-335.73 57.87,-335.73 57.87,-314.34 115.89,-314.34 115.89,-335.73"/>
-<polygon fill="none" stroke="black" points="119.89,-339.73 53.87,-339.73 53.87,-310.34 119.89,-310.34 119.89,-339.73"/>
-<text xml:space="preserve" text-anchor="middle" x="86.88" y="-321.91" font-family="sans-serif" font-size="10.00">X: Var &#39;X&#39;</text>
-</a>
-</g>
-</g>
-<!-- node_1 -->
-<g id="node_1" class="node">
-
-<g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 66, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;max_value = X.max().skb.freeze_after_fit()">
-<polygon fill="none" stroke="black" points="97.77,-281.34 0,-281.34 0,-259.95 97.77,-259.95 97.77,-281.34"/>
-<text xml:space="preserve" text-anchor="middle" x="48.88" y="-267.52" font-family="sans-serif" font-size="10.00">CallMethod &#39;max&#39;</text>
-</a>
-</g>
-</g>
-<!-- node_0&#45;&gt;node_1 -->
-<g id="edge8" class="edge">
-
-<path fill="none" stroke="black" d="M76.7,-310C71.82,-303.27 65.94,-295.16 60.85,-288.14"/>
-<polygon fill="black" stroke="black" points="63.07,-287.03 56.97,-282.8 59.1,-289.9 63.07,-287.03"/>
-</g>
-<!-- node_3 -->
-<g id="node_3" class="node">
-
-<g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 67, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_scaled = X / max_value">
-<polygon fill="none" stroke="black" points="128.52,-180.56 47.25,-180.56 47.25,-159.17 128.52,-159.17 128.52,-180.56"/>
-<text xml:space="preserve" text-anchor="middle" x="87.88" y="-166.74" font-family="sans-serif" font-size="10.00">BinOp: truediv</text>
-</a>
-</g>
-</g>
-<!-- node_0&#45;&gt;node_3 -->
-<g id="edge5" class="edge">
-
-<path fill="none" stroke="black" d="M95.39,-309.98C99.76,-301.91 104.64,-291.41 106.88,-281.34 110.25,-266.24 104.74,-217.7 102.88,-209.56 101.26,-202.45 98.58,-194.91 95.92,-188.39"/>
-<polygon fill="black" stroke="black" points="98.27,-187.65 93.26,-182.19 93.77,-189.59 98.27,-187.65"/>
-</g>
-<!-- node_2 -->
-<g id="node_2" class="node">
-
-<g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 66, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;max_value = X.max().skb.freeze_after_fit()">
-<polygon fill="none" stroke="black" points="93.39,-230.95 14.38,-230.95 14.38,-209.56 93.39,-209.56 93.39,-230.95"/>
-<text xml:space="preserve" text-anchor="middle" x="53.88" y="-217.13" font-family="sans-serif" font-size="10.00">FreezeAfterFit</text>
-</a>
-</g>
-</g>
-<!-- node_1&#45;&gt;node_2 -->
-<g id="edge7" class="edge">
-
-<path fill="none" stroke="black" d="M49.9,-259.85C50.5,-254.03 51.28,-246.45 51.99,-239.55"/>
-<polygon fill="black" stroke="black" points="54.4,-240.09 52.68,-232.87 49.53,-239.58 54.4,-240.09"/>
-</g>
-<!-- node_2&#45;&gt;node_3 -->
-<g id="edge6" class="edge">
-
-<path fill="none" stroke="black" d="M60.77,-209.46C65.13,-203.25 70.9,-195.04 75.99,-187.79"/>
-<polygon fill="black" stroke="black" points="77.89,-189.35 79.91,-182.21 73.88,-186.53 77.89,-189.35"/>
-</g>
-<!-- node_4 -->
-<g id="node_4" class="node">
-
-<g id="a_node_4"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 68, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_reshaped = X_scaled.reshape(&#45;1, 1, 8, 8).astype(&quot;float32&quot;)">
-<polygon fill="none" stroke="black" points="145.39,-126.17 30.37,-126.17 30.37,-104.78 145.39,-104.78 145.39,-126.17"/>
-<text xml:space="preserve" text-anchor="middle" x="87.88" y="-112.35" font-family="sans-serif" font-size="10.00">CallMethod &#39;reshape&#39;</text>
-</a>
-</g>
-</g>
-<!-- node_3&#45;&gt;node_4 -->
-<g id="edge4" class="edge">
-
-<path fill="none" stroke="black" d="M87.88,-158.76C87.88,-152.02 87.88,-142.96 87.88,-134.96"/>
-<polygon fill="black" stroke="black" points="90.34,-135.06 87.89,-128.06 85.44,-135.06 90.34,-135.06"/>
-</g>
-<!-- node_5 -->
-<g id="node_5" class="node">
-
-<g id="a_node_5"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 68, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_reshaped = X_scaled.reshape(&#45;1, 1, 8, 8).astype(&quot;float32&quot;)">
-<polygon fill="none" stroke="black" points="142.39,-71.78 33.37,-71.78 33.37,-50.39 142.39,-50.39 142.39,-71.78"/>
-<text xml:space="preserve" text-anchor="middle" x="87.88" y="-57.96" font-family="sans-serif" font-size="10.00">CallMethod &#39;astype&#39;</text>
-</a>
-</g>
-</g>
-<!-- node_4&#45;&gt;node_5 -->
-<g id="edge3" class="edge">
-
-<path fill="none" stroke="black" d="M87.88,-104.37C87.88,-97.63 87.88,-88.57 87.88,-80.57"/>
-<polygon fill="black" stroke="black" points="90.34,-80.67 87.89,-73.67 85.44,-80.67 90.34,-80.67"/>
-</g>
-<!-- node_8 -->
-<g id="node_8" class="node">
-
-<g id="a_node_8"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 157, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;predictor = X_reshaped.skb.apply(net, y=y_int)">
-<polygon fill="none" stroke="black" points="219.27,-21.39 82.5,-21.39 82.5,0 219.27,0 219.27,-21.39"/>
-<text xml:space="preserve" text-anchor="middle" x="150.88" y="-7.57" font-family="sans-serif" font-size="10.00">Apply NeuralNetClassifier</text>
-</a>
-</g>
-</g>
-<!-- node_5&#45;&gt;node_8 -->
-<g id="edge1" class="edge">
-
-<path fill="none" stroke="black" d="M100.94,-50.06C109.72,-43.31 121.46,-34.29 131.36,-26.7"/>
-<polygon fill="black" stroke="black" points="132.59,-28.84 136.65,-22.63 129.6,-24.95 132.59,-28.84"/>
-</g>
-<!-- node_6 -->
-<g id="node_6" class="node">
-
-<g id="a_node_6"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 42, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;y = skrub.y(y)">
-<polygon fill="#fad9c6" stroke="black" points="242.77,-126.17 187,-126.17 187,-104.78 242.77,-104.78 242.77,-126.17"/>
-<polygon fill="none" stroke="black" points="246.77,-130.17 183,-130.17 183,-100.78 246.77,-100.78 246.77,-130.17"/>
-<text xml:space="preserve" text-anchor="middle" x="214.88" y="-112.35" font-family="sans-serif" font-size="10.00">y: Var &#39;y&#39;</text>
-</a>
-</g>
-</g>
-<!-- node_7 -->
-<g id="node_7" class="node">
-
-<g id="a_node_7"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 156, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;y_int = y.astype(&quot;int64&quot;)">
-<polygon fill="none" stroke="black" points="269.39,-71.78 160.38,-71.78 160.38,-50.39 269.39,-50.39 269.39,-71.78"/>
-<text xml:space="preserve" text-anchor="middle" x="214.88" y="-57.96" font-family="sans-serif" font-size="10.00">CallMethod &#39;astype&#39;</text>
-</a>
-</g>
-</g>
-<!-- node_6&#45;&gt;node_7 -->
-<g id="edge9" class="edge">
-
-<path fill="none" stroke="black" d="M214.88,-100.44C214.88,-94.27 214.88,-86.94 214.88,-80.36"/>
-<polygon fill="black" stroke="black" points="217.34,-80.53 214.89,-73.53 212.44,-80.53 217.34,-80.53"/>
-</g>
-<!-- node_7&#45;&gt;node_8 -->
-<g id="edge2" class="edge">
-
-<path fill="none" stroke="black" d="M201.62,-50.06C192.7,-43.31 180.77,-34.29 170.72,-26.7"/>
-<polygon fill="black" stroke="black" points="172.4,-24.89 165.34,-22.62 169.44,-28.8 172.4,-24.89"/>
-</g>
-</g>
-</svg>
-
-</div>
-<br />
-<br /><p>Finally, we use 4-fold cross-validation for the hyperparameter
+<p>Finally, we use 4-fold cross-validation for the hyperparameter
 tuning on our DataOps plan.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn</span><span class="nn">.</span><span class="nn">model_selection</span><span class="w"> </span><span class="kn">import</span> <a class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold"><span class="n">KFold</span></a><span class="w">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn</span><span class="nn">.</span><span class="nn">model_selection</span><span class="w"> </span><span class="kn">import</span> <a class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold"><span class="n">KFold</span></a><span class="w">
 </span><span class="w">
-</span><a class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold"><span class="n">cv</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold"><span class="n">KFold</span></a><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span><span class="w">
-</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.ParamSearch.html#skrub.ParamSearch" title="skrub.ParamSearch"><span class="n">search</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">predictor</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_grid_search</span><span class="p">(</span><span class="w">
-</span>    <a class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold"><span class="n">cv</span></a><span class="o">=</span><a class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold"><span class="n">cv</span></a><span class="p">,</span><span class="w">
+</span><span class="n">cv</span> <span class="o">=</span> <a class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold"><span class="n">KFold</span></a><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span><span class="w">
+</span><span class="n">search</span> <span class="o">=</span> <span class="n">predictor</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_grid_search</span><span class="p">(</span><span class="w">
+</span>    <span class="n">cv</span><span class="o">=</span><span class="n">cv</span><span class="p">,</span><span class="w">
 </span>    <span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="w">
 </span>    <span class="n">n_jobs</span><span class="o">=</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="w">
 </span><span class="p">)</span><span class="w">
 </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Search results:</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
-</span><span class="nb">print</span><span class="p">(</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-property reference internal" href="../../reference/generated/skrub.ParamSearch.html#skrub.ParamSearch.results_" title="skrub.ParamSearch.results_"><span class="n">search</span><span class="o">.</span><span class="n">results_</span><span class="o">.</span><span class="n">to_string</span></a><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="p">)</span><span class="w">
+</span><span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">results_</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="p">)</span><span class="w">
 </span></pre></div></div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Search results:
- max_epochs  conv_channels  hidden_units  mean_test_score
-         15             16            32         0.982190
-         10             16            32         0.971622
-         15             16            16         0.968275
-         15              8            32         0.966044
-         10             16            16         0.959373
-         15              8            16         0.949364
-         10              8            32         0.948799
-         10              8            16         0.884227
-         15              8             8         0.853638
-         10             16             8         0.788492
-         10              8             8         0.775828
-         15             16             8         0.719887
-</pre></div>
-</div>
 <p>Let’s take a better look at the well-performing models by looking
 at the parallel coordinates plot. We filter to models with
 score &gt;= 0.94 to focus on the top-performing configurations.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span class="n">fig</span> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method reference internal" href="../../reference/generated/skrub.ParamSearch.html#skrub.ParamSearch.plot_results" title="skrub.ParamSearch.plot_results"><span class="n">search</span><span class="o">.</span><span class="n">plot_results</span></a><span class="p">(</span><span class="n">min_score</span><span class="o">=</span><span class="mf">0.94</span><span class="p">)</span><span class="w">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span class="n">fig</span> <span class="o">=</span> <span class="n">search</span><span class="o">.</span><span class="n">plot_results</span><span class="p">(</span><span class="n">min_score</span><span class="o">=</span><span class="mf">0.94</span><span class="p">)</span><span class="w">
 </span><span class="n">fig</span><span class="w">
 </span></pre></div></div>
-<div class="output_subarea output_html rendered_html output_result">
-<div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="fb217bad-fdaf-4273-988b-4d73c4d75196" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("fb217bad-fdaf-4273-988b-4d73c4d75196")) {                    Plotly.newPlot(                        "fb217bad-fdaf-4273-988b-4d73c4d75196",                        [{"dimensions":[{"label":"max_epochs","ticktext":["10","11","12","13","14","15"],"tickvals":[10,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkAAAAAAAAAkQB+yclAn9S1AB4iHT4L+LUAAAAAAAAAkQAAAAAAAAC5AAAAAAAAAJEA="}},{"label":"conv_channels","ticktext":["8","9","10","11","12","13","14","15","16"],"tickvals":[8,9,10,11,12,13,14,15,16],"values":{"dtype":"f8","bdata":"AAAAAAAAMEB28nRdO\u002fAvQAJm\u002fqB\u002f9S9AAAAAAAAAIEDooKLdj\u002fcvQAAAAAAAACBAfUYNXrUQIEA="}},{"label":"hidden_units","ticktext":["16","18","20","21","23","25","27","28","30","32"],"tickvals":[16,18,20,21,23,25,27,28,30,32],"values":{"dtype":"f8","bdata":"AAAAAAAAQED2KdyfePE\u002fQAAAAAAAADBAAAAAAAAAQECXwI5m+g0wQEPsBo7fDzBAAAAAAAAAQEA="}},{"label":"score time","ticktext":["0.0198","0.0207","0.0215","0.0224","0.0232","0.0240","0.0249","0.0257","0.0265","0.0274"],"tickvals":[0.019846618175506592,0.020682487222883437,0.021518356270260282,0.022354225317637127,0.023190094365013972,0.024025963412390813,0.02486183245976766,0.025697701507144503,0.02653357055452135,0.027369439601898193],"values":{"dtype":"f8","bdata":"ej5PoZpElz8ozJNCZemWP31+hZpFg5g\u002fAAAAAKxSlD8DbaP3XqqXP7EJZwHqM5Y\u002fAAAAALwGnD8="}},{"label":"fit time","ticktext":["0.79","0.83","0.88","0.93","0.97","1.02","1.06","1.11","1.15","1.20"],"tickvals":[0.788230836391449,0.8338411185476515,0.8794514007038541,0.9250616828600565,0.9706719650162591,1.0162822471724615,1.061892529328664,1.1075028114848666,1.1531130936410692,1.1987233757972717],"values":{"dtype":"f8","bdata":"a0rWilXx8j9gG3kOp1XsPwAAAJD4LfM\u002fwpQ6WhoS8D\u002fRmgYlv+7sPxdfDLPyePA\u002fAAAA4C856T8="}},{"label":"score","ticktext":["0.949","0.953","0.956","0.960","0.964","0.967","0.971","0.975","0.978","0.982"],"tickvals":[0.948798564711705,0.9525087299623305,0.9562188952129561,0.9599290604635816,0.9636392257142071,0.9673493909648327,0.9710595562154583,0.9747697214660838,0.9784798867167094,0.9821900519673349],"values":{"dtype":"f8","bdata":"8\u002f\u002f01Blu7z9Z6WtHhxfvP3wqozoc\u002fO4\u002foTU1utXp7j\u002fG6KxVLrPuP1bWmKYwYe4\u002fYLa9zo5c7j8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"8\u002f\u002f01Blu7z9Z6WtHhxfvP3wqozoc\u002fO4\u002foTU1utXp7j\u002fG6KxVLrPuP1bWmKYwYe4\u002fYLa9zo5c7j8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}}},                        {"responsive": true}                    )                };            </script>        </div>
-</div>
-<br />
-<br /></section>
+</section>
 <section id="interpreting-the-results">
 <h1>Interpreting the results<a class="headerlink" href="#interpreting-the-results" title="Link to this heading">#</a></h1>
 <p>Looking at the search results, we can observe several patterns:</p>
@@ -1136,15 +846,10 @@ in DataOps plans.</p></li>
 for more sophisticated hyperparameter search strategies with skrub DataOps.</p></li>
 </ul>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 29.926 seconds)</p>
-<p><strong>Estimated memory usage:</strong>  602 MB</p>
+<p><strong>Estimated memory usage:</strong>  0 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-02-data-ops-1160-pytorch-py">
 <div class="binder-badge docutils container">
-<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/02_data_ops/1160_pytorch.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo2.svg" style="width: 150px;" />
-</a>
-</div>
-<div class="lite-badge docutils container">
-<a class="reference external image-reference" href="../../lite/lab/index.html?path=auto_examples/02_data_ops/1160_pytorch.ipynb"><img alt="Launch JupyterLite" src="../../_images/jupyterlite_badge_logo2.svg" style="width: 150px;" />
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.11.0?urlpath=lab/tree/notebooks/auto_examples/02_data_ops/1160_pytorch.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo2.svg" style="width: 150px;" />
 </a>
 </div>
 <div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
@@ -1269,16 +974,8 @@ for more sophisticated hyperparameter search strategies with skrub DataOps.</p><
   <div class="sphx-glr-sidebar-component">
     
       
-        <div class="sphx-glr-sidebar-item lite-badge-sidebar">
-          <a href="../../lite/lab/index.html?path=auto_examples/02_data_ops/1160_pytorch.ipynb">
-            <img src="../../_images/jupyterlite_badge_logo2.svg" alt="Launch JupyterLite">
-          </a>
-        </div>
-      
-    
-      
         <div class="sphx-glr-sidebar-item binder-badge-sidebar">
-          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/02_data_ops/1160_pytorch.ipynb">
+          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/0.11.0?urlpath=lab/tree/notebooks/auto_examples/02_data_ops/1160_pytorch.ipynb">
             <img src="../../_images/binder_badge_logo2.svg" alt="Launch binder">
           </a>
         </div>

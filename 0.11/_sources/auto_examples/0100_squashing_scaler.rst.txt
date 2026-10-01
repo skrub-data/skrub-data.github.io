@@ -11,7 +11,7 @@
         :class: sphx-glr-download-link-note
 
         :ref:`Go to the end <sphx_glr_download_auto_examples_0100_squashing_scaler.py>`
-        to download the full example code or to run this example in your browser via JupyterLite or Binder.
+        to download the full example code or to run this example in your browser via Binder.
 
 .. rst-class:: sphx-glr-example-title
 
@@ -58,12 +58,6 @@ First, let's import the |SquashingScaler|, as well as the usual scikit-learn
     np.random.seed(0)  # for reproducibility
 
 
-
-
-
-
-
-
 .. GENERATED FROM PYTHON SOURCE LINES 40-44
 
 We then generate some random values sampling from a uniform distribution in the
@@ -80,12 +74,6 @@ Subtracting 50 allows to have some negative outliers in the data.
     n_outliers = 15
     outlier_indices = np.random.choice(values.shape[0], size=n_outliers, replace=False)
     values[outlier_indices] = np.random.rand(n_outliers, 1) * 100 - 50
-
-
-
-
-
-
 
 
 .. GENERATED FROM PYTHON SOURCE LINES 51-52
@@ -107,12 +95,6 @@ We then create one of each scaler and use them to scale the data independently.
 
     quantile_transformer = QuantileTransformer(n_quantiles=100)
     quantile_scaled = quantile_transformer.fit_transform(values)
-
-
-
-
-
-
 
 
 
@@ -164,23 +146,6 @@ of the inliers, which means that any detail in the inlier would be hidden.
         "Comparison of different scalers on sorted data with outliers", fontsize=20
     )
     fig.supylabel("Value")
-
-
-
-
-.. image-sg:: /auto_examples/images/sphx_glr_0100_squashing_scaler_001.png
-   :alt: Comparison of different scalers on sorted data with outliers, Original data, In range [-4, 4]
-   :srcset: /auto_examples/images/sphx_glr_0100_squashing_scaler_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-
-    Text(0.004167, 0.5, 'Value')
-
 
 
 .. GENERATED FROM PYTHON SOURCE LINES 113-127
@@ -279,38 +244,13 @@ cross-validation.
         )
 
 
-
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    Cross-validation R2 scores for StandardScaler (higher is better):
-    [0.84732303 0.83767046 0.85384756]
-
-    Cross-validation R2 scores for QuantileTransformer (higher is better):
-    [0.76501655 0.77851783 0.77978404]
-
-    Cross-validation R2 scores for SquashingScaler (higher is better):
-    [0.8870782  0.89560105 0.90700052]
-
-
-
-
-
 .. GENERATED FROM PYTHON SOURCE LINES 200-203
 
 On the employee salaries dataset, the |SquashingScaler| performs
 better than |StandardScaler| and |QuantileTransformer| on all
 cross-validation folds.
 
-
-.. rst-class:: sphx-glr-timing
-
-   **Total running time of the script:** (0 minutes 23.393 seconds)
-
-**Estimated memory usage:**  594 MB
+**Estimated memory usage:**  0 MB
 
 
 .. _sphx_glr_download_auto_examples_0100_squashing_scaler.py:
@@ -322,15 +262,8 @@ cross-validation folds.
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/0100_squashing_scaler.ipynb
+        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.11.0?urlpath=lab/tree/notebooks/auto_examples/0100_squashing_scaler.ipynb
         :alt: Launch binder
-        :width: 150 px
-
-    .. container:: lite-badge
-
-      .. image:: images/jupyterlite_badge_logo.svg
-        :target: ../lite/lab/index.html?path=auto_examples/0100_squashing_scaler.ipynb
-        :alt: Launch JupyterLite
         :width: 150 px
 
     .. container:: sphx-glr-download sphx-glr-download-jupyter

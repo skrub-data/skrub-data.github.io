@@ -39,8 +39,6 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=c83e6b79" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -54,20 +52,19 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=64cc4de3f052d77215f0" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=64cc4de3f052d77215f0" />
 
-    <script src="../../_static/documentation_options.js?v=b4d3f7eb"></script>
+    <script src="../../_static/documentation_options.js?v=f3b36f1a"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=fd10adb8"></script>
     <script src="../../_static/sg-tags.js?v=d80f6fa4"></script>
-    <script src="../../_static/jupyterlite_sphinx.js?v=96e329c5"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script data-domain="skrub-data.org" defer="defer" src="https://views.scientific-python.org/js/script.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/03_joining/0050_deduplication';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.22.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.11.dev0';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.11.0';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -82,7 +79,7 @@
     <link rel="prev" title="Fuzzy joining dirty tables with the Joiner" href="0040_fuzzy_joining.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.11.dev0" />
+  <meta name="docsearch:version" content="0.11.0" />
   
     
     <script src="../../_static/searchtools.js"></script>
@@ -651,7 +648,7 @@
   <div class="sphx-glr-download-link-note admonition note">
 <p class="admonition-title">Note</p>
 <p><a class="reference internal" href="#sphx-glr-download-auto-examples-03-joining-0050-deduplication-py"><span class="std std-ref">Go to the end</span></a>
-to download the full example code or to run this example in your browser via JupyterLite or Binder.</p>
+to download the full example code or to run this example in your browser via Binder.</p>
 </div>
 <section class="sphx-glr-example-title" id="deduplicating-misspelled-categories">
 <span id="examples-deduplication"></span><span id="sphx-glr-auto-examples-03-joining-0050-deduplication-py"></span><h1>Deduplicating misspelled categories<a class="headerlink" href="#deduplicating-misspelled-categories" title="Link to this heading">#</a></h1>
@@ -692,22 +689,19 @@ there are multiple spelling mistakes in the dataset.</p>
 </span><span class="w">
 </span><span class="n">duplicated_names</span><span class="p">[</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span><span class="w">
 </span></pre></div></div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>['Contrivan', 'Cvntrivan', 'Contrivan', 'Coqtrivan', 'Contriian']
-</pre></div>
-</div>
 <p>We then extract the unique medication names in the data and
 visualize how often they appear:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span><span class="nn">.</span><span class="nn">pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span><span class="w">
 </span><span class="w">
-</span><a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">unique_examples</span></a><span class="p">,</span> <a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">counts</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.unique.html#numpy.unique" title="numpy.unique"><span class="n">np</span><span class="o">.</span><span class="n">unique</span></a><span class="p">(</span><span class="n">duplicated_names</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="w">
+</span><span class="n">unique_examples</span><span class="p">,</span> <span class="n">counts</span> <span class="o">=</span> <a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.unique.html#numpy.unique" title="numpy.unique"><span class="n">np</span><span class="o">.</span><span class="n">unique</span></a><span class="p">(</span><span class="n">duplicated_names</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="w">
 </span><span class="w">
 </span><a class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span><span class="p">)</span><span class="w">
-</span><a class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.barh.html#matplotlib.pyplot.barh" title="matplotlib.pyplot.barh"><span class="n">plt</span><span class="o">.</span><span class="n">barh</span></a><span class="p">(</span><a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">unique_examples</span></a><span class="p">,</span> <a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">counts</span></a><span class="p">)</span><span class="w">
+</span><a class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.barh.html#matplotlib.pyplot.barh" title="matplotlib.pyplot.barh"><span class="n">plt</span><span class="o">.</span><span class="n">barh</span></a><span class="p">(</span><span class="n">unique_examples</span><span class="p">,</span> <span class="n">counts</span><span class="p">)</span><span class="w">
 </span><a class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ylabel.html#matplotlib.pyplot.ylabel" title="matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s2">&quot;</span><span class="s2">Medication name</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
 </span><a class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlabel.html#matplotlib.pyplot.xlabel" title="matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s2">&quot;</span><span class="s2">Count</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
 </span><a class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">(</span><span class="p">)</span><span class="w">
 </span></pre></div></div>
-<img src="../../_images/sphx_glr_0050_deduplication_001.png" srcset="../../_images/sphx_glr_0050_deduplication_001.png" alt="0050 deduplication" class = "sphx-glr-single-img"/><p>We clearly see the structure of the data:
+<p>We clearly see the structure of the data:
 the three original medications (“Contrivan”, “Genericon” and “Zipholan”)
 are the most common ones, but there are many spelling mistakes or
 slight variations of the original names.</p>
@@ -723,18 +717,10 @@ string similarities to group duplicated names.</p>
 <p>Let’s deduplicate our data:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><span class="n">deduplicate</span></a><span class="w">
 </span><span class="w">
-</span><a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series"><span class="n">deduplicated_data</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><span class="n">deduplicate</span></a><span class="p">(</span><span class="n">duplicated_names</span><span class="p">)</span><span class="w">
+</span><span class="n">deduplicated_data</span> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><span class="n">deduplicate</span></a><span class="p">(</span><span class="n">duplicated_names</span><span class="p">)</span><span class="w">
 </span><span class="w">
-</span><a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series"><span class="n">deduplicated_data</span></a><span class="p">[</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span><span class="w">
+</span><span class="n">deduplicated_data</span><span class="p">[</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span><span class="w">
 </span></pre></div></div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Contrivan    Contrivan
-Cvntrivan    Contrivan
-Contrivan    Contrivan
-Coqtrivan    Contrivan
-Contriian    Contrivan
-dtype: str
-</pre></div>
-</div>
 <p>And that’s it! We now have the deduplicated data.</p>
 <aside class="topic">
 <p class="topic-title">Note:</p>
@@ -744,39 +730,31 @@ automatically via the
 <a class="reference external" href="https://scikit-learn.org/stable/modules/clustering.html#silhouette-coefficient">silhouette score</a>.</p>
 </aside>
 <p>We can visualize the distribution of categories in the deduplicated data:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">deduplicated_unique_examples</span></a><span class="p">,</span> <a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">deduplicated_counts</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.unique.html#numpy.unique" title="numpy.unique"><span class="n">np</span><span class="o">.</span><span class="n">unique</span></a><span class="p">(</span><span class="w">
-</span>    <a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series"><span class="n">deduplicated_data</span></a><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="w">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span class="n">deduplicated_unique_examples</span><span class="p">,</span> <span class="n">deduplicated_counts</span> <span class="o">=</span> <a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.unique.html#numpy.unique" title="numpy.unique"><span class="n">np</span><span class="o">.</span><span class="n">unique</span></a><span class="p">(</span><span class="w">
+</span>    <span class="n">deduplicated_data</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="w">
 </span><span class="p">)</span><span class="w">
-</span><a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series"><span class="n">deduplicated_series</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series"><span class="n">pd</span><span class="o">.</span><span class="n">Series</span></a><span class="p">(</span><a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">deduplicated_counts</span></a><span class="p">,</span> <span class="n">index</span><span class="o">=</span><a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">deduplicated_unique_examples</span></a><span class="p">)</span><span class="w">
+</span><span class="n">deduplicated_series</span> <span class="o">=</span> <a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series"><span class="n">pd</span><span class="o">.</span><span class="n">Series</span></a><span class="p">(</span><span class="n">deduplicated_counts</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">deduplicated_unique_examples</span><span class="p">)</span><span class="w">
 </span><span class="w">
 </span><a class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span><span class="p">)</span><span class="w">
-</span><a class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.barh.html#matplotlib.pyplot.barh" title="matplotlib.pyplot.barh"><span class="n">plt</span><span class="o">.</span><span class="n">barh</span></a><span class="p">(</span><a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">deduplicated_unique_examples</span></a><span class="p">,</span> <a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">deduplicated_counts</span></a><span class="p">)</span><span class="w">
+</span><a class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.barh.html#matplotlib.pyplot.barh" title="matplotlib.pyplot.barh"><span class="n">plt</span><span class="o">.</span><span class="n">barh</span></a><span class="p">(</span><span class="n">deduplicated_unique_examples</span><span class="p">,</span> <span class="n">deduplicated_counts</span><span class="p">)</span><span class="w">
 </span><a class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlabel.html#matplotlib.pyplot.xlabel" title="matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s2">&quot;</span><span class="s2">Count</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
 </span><a class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ylabel.html#matplotlib.pyplot.ylabel" title="matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s2">&quot;</span><span class="s2">Medication name</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
 </span><a class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">(</span><span class="p">)</span><span class="w">
 </span></pre></div></div>
-<img src="../../_images/sphx_glr_0050_deduplication_002.png" srcset="../../_images/sphx_glr_0050_deduplication_002.png" alt="0050 deduplication" class = "sphx-glr-single-img"/><p>Here, the silhouette score finds the ideal number of
+<p>Here, the silhouette score finds the ideal number of
 clusters (3) and groups the spelling mistakes.</p>
 <p>In practice, the translation/deduplication will often be imperfect
 and require some tweaks.
 In this case, we can construct and update a translation table based on the
 data returned by <a class="reference internal" href="../../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a>.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span class="c1"># create a table that maps original to corrected categories</span><span class="w">
-</span><a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series"><span class="n">translation_table</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series"><span class="n">pd</span><span class="o">.</span><span class="n">Series</span></a><span class="p">(</span><a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series"><span class="n">deduplicated_data</span></a><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">duplicated_names</span><span class="p">)</span><span class="w">
+</span><span class="n">translation_table</span> <span class="o">=</span> <a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series"><span class="n">pd</span><span class="o">.</span><span class="n">Series</span></a><span class="p">(</span><span class="n">deduplicated_data</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">duplicated_names</span><span class="p">)</span><span class="w">
 </span><span class="w">
 </span><span class="c1"># remove duplicates in the original data</span><span class="w">
-</span><a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series"><span class="n">translation_table</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series"><span class="n">translation_table</span></a><span class="p">[</span><span class="o">~</span><a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Index.duplicated.html#pandas.Index.duplicated" title="pandas.Index.duplicated"><span class="n">translation_table</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">duplicated</span></a><span class="p">(</span><span class="n">keep</span><span class="o">=</span><span class="s2">&quot;</span><span class="s2">first</span><span class="s2">&quot;</span><span class="p">)</span><span class="p">]</span><span class="w">
+</span><span class="n">translation_table</span> <span class="o">=</span> <span class="n">translation_table</span><span class="p">[</span><span class="o">~</span><span class="n">translation_table</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">duplicated</span><span class="p">(</span><span class="n">keep</span><span class="o">=</span><span class="s2">&quot;</span><span class="s2">first</span><span class="s2">&quot;</span><span class="p">)</span><span class="p">]</span><span class="w">
 </span><span class="w">
-</span><a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.head.html#pandas.Series.head" title="pandas.Series.head"><span class="n">translation_table</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="p">)</span><span class="w">
+</span><span class="n">translation_table</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="p">)</span><span class="w">
 </span></pre></div></div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Contrivan    Contrivan
-Cvntrivan    Contrivan
-Coqtrivan    Contrivan
-Contriian    Contrivan
-Contaivan    Contrivan
-dtype: str
-</pre></div>
-</div>
 <p>In this table, we have the category name on the left,
 and the cluster it was translated to on the right.
 If we want to adapt the translation table, we can
@@ -792,15 +770,10 @@ or when the similarity across strings does not
 carry useful information for our machine learning task.
 Otherwise, we prefer using encoding methods such as <a class="reference internal" href="../../reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>
 or <a class="reference internal" href="../../reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 6.237 seconds)</p>
-<p><strong>Estimated memory usage:</strong>  590 MB</p>
+<p><strong>Estimated memory usage:</strong>  0 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-03-joining-0050-deduplication-py">
 <div class="binder-badge docutils container">
-<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/03_joining/0050_deduplication.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo3.svg" style="width: 150px;" />
-</a>
-</div>
-<div class="lite-badge docutils container">
-<a class="reference external image-reference" href="../../lite/lab/index.html?path=auto_examples/03_joining/0050_deduplication.ipynb"><img alt="Launch JupyterLite" src="../../_images/jupyterlite_badge_logo3.svg" style="width: 150px;" />
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.11.0?urlpath=lab/tree/notebooks/auto_examples/03_joining/0050_deduplication.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo3.svg" style="width: 150px;" />
 </a>
 </div>
 <div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
@@ -920,16 +893,8 @@ or <a class="reference internal" href="../../reference/generated/skrub.MinHashEn
   <div class="sphx-glr-sidebar-component">
     
       
-        <div class="sphx-glr-sidebar-item lite-badge-sidebar">
-          <a href="../../lite/lab/index.html?path=auto_examples/03_joining/0050_deduplication.ipynb">
-            <img src="../../_images/jupyterlite_badge_logo3.svg" alt="Launch JupyterLite">
-          </a>
-        </div>
-      
-    
-      
         <div class="sphx-glr-sidebar-item binder-badge-sidebar">
-          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/03_joining/0050_deduplication.ipynb">
+          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/0.11.0?urlpath=lab/tree/notebooks/auto_examples/03_joining/0050_deduplication.ipynb">
             <img src="../../_images/binder_badge_logo3.svg" alt="Launch binder">
           </a>
         </div>
