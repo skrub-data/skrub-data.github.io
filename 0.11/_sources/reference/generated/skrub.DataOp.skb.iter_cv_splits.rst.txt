@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.iter_cv_splits
+===============================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.iter_cv_splits

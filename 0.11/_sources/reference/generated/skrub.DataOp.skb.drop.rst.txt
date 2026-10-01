@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.drop
+=====================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.drop

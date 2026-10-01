@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.preview
+========================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.preview

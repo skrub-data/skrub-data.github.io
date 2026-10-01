@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.set_name
+=========================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.set_name

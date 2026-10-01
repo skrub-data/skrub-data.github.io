@@ -1,0 +1,10 @@
+﻿fetch\_midwest\_survey
+======================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_midwest_survey
+
+.. minigallery:: skrub.datasets.fetch_midwest_survey
+   :add-heading: Gallery examples
+   :heading-level: -

@@ -1,0 +1,10 @@
+﻿fetch\_movielens
+================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_movielens
+
+.. minigallery:: skrub.datasets.fetch_movielens
+   :add-heading: Gallery examples
+   :heading-level: -

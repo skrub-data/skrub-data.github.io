@@ -1,0 +1,10 @@
+﻿string
+======
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: string
+
+.. minigallery:: skrub.selectors.string
+   :add-heading: Gallery examples
+   :heading-level: -

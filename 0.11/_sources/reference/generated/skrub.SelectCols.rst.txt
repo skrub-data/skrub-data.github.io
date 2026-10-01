@@ -1,0 +1,14 @@
+﻿SelectCols
+==========
+
+.. currentmodule:: skrub
+
+.. autoclass:: SelectCols
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.SelectCols skrub.SelectCols.__init__ skrub.SelectCols.fit skrub.SelectCols.fit_transform skrub.SelectCols.get_feature_names_out skrub.SelectCols.get_metadata_routing skrub.SelectCols.get_params skrub.SelectCols.set_output skrub.SelectCols.set_params skrub.SelectCols.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

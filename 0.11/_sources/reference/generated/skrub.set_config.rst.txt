@@ -1,0 +1,10 @@
+﻿set\_config
+===========
+
+.. currentmodule:: skrub
+
+.. autofunction:: set_config
+
+.. minigallery:: skrub.set_config
+   :add-heading: Gallery examples
+   :heading-level: -

@@ -1,0 +1,14 @@
+﻿SessionEncoder
+==============
+
+.. currentmodule:: skrub
+
+.. autoclass:: SessionEncoder
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.SessionEncoder skrub.SessionEncoder.__init__ skrub.SessionEncoder.fit skrub.SessionEncoder.fit_transform skrub.SessionEncoder.get_feature_names_out skrub.SessionEncoder.get_metadata_routing skrub.SessionEncoder.get_params skrub.SessionEncoder.set_output skrub.SessionEncoder.set_params skrub.SessionEncoder.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

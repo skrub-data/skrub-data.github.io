@@ -1,0 +1,10 @@
+﻿choose\_int
+===========
+
+.. currentmodule:: skrub
+
+.. autofunction:: choose_int
+
+.. minigallery:: skrub.choose_int
+   :add-heading: Gallery examples
+   :heading-level: -

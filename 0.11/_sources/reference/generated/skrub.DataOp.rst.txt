@@ -1,0 +1,7 @@
+﻿DataOp
+======
+
+.. currentmodule:: skrub
+
+.. autoclass:: DataOp
+   :exclude-members: skb, __call__

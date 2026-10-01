@@ -1,0 +1,10 @@
+﻿fetch\_electricity\_forecasting
+===============================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_electricity_forecasting
+
+.. minigallery:: skrub.datasets.fetch_electricity_forecasting
+   :add-heading: Gallery examples
+   :heading-level: -

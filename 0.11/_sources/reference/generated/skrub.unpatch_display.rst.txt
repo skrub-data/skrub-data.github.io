@@ -1,0 +1,10 @@
+﻿unpatch\_display
+================
+
+.. currentmodule:: skrub
+
+.. autofunction:: unpatch_display
+
+.. minigallery:: skrub.unpatch_display
+   :add-heading: Gallery examples
+   :heading-level: -

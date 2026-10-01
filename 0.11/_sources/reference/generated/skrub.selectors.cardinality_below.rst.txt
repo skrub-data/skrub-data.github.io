@@ -1,0 +1,10 @@
+﻿cardinality\_below
+==================
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: cardinality_below
+
+.. minigallery:: skrub.selectors.cardinality_below
+   :add-heading: Gallery examples
+   :heading-level: -

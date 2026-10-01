@@ -1,0 +1,10 @@
+﻿choose\_from
+============
+
+.. currentmodule:: skrub
+
+.. autofunction:: choose_from
+
+.. minigallery:: skrub.choose_from
+   :add-heading: Gallery examples
+   :heading-level: -

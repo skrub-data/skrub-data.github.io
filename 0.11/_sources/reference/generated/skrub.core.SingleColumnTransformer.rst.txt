@@ -1,0 +1,14 @@
+﻿SingleColumnTransformer
+=======================
+
+.. currentmodule:: skrub.core
+
+.. autoclass:: SingleColumnTransformer
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.core.SingleColumnTransformer skrub.core.SingleColumnTransformer.__init__ skrub.core.SingleColumnTransformer.fit skrub.core.SingleColumnTransformer.get_feature_names_out skrub.core.SingleColumnTransformer.get_metadata_routing skrub.core.SingleColumnTransformer.get_params skrub.core.SingleColumnTransformer.set_fit_request skrub.core.SingleColumnTransformer.set_output skrub.core.SingleColumnTransformer.set_params 
+   :add-heading: Gallery examples
+   :heading-level: -

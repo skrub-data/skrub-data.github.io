@@ -1,0 +1,10 @@
+﻿filter\_names
+=============
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: filter_names
+
+.. minigallery:: skrub.selectors.filter_names
+   :add-heading: Gallery examples
+   :heading-level: -

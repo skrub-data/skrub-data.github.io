@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.with_scoring
+=============================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.with_scoring

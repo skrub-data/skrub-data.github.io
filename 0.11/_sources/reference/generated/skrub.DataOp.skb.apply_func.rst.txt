@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.apply_func
+===========================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.apply_func

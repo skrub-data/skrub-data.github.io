@@ -1,0 +1,10 @@
+﻿has\_dtype
+==========
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: has_dtype
+
+.. minigallery:: skrub.selectors.has_dtype
+   :add-heading: Gallery examples
+   :heading-level: -
