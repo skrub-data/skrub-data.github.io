@@ -591,7 +591,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../basics/using_previews.html">Using previews for easier development and debugging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../basics/direct_access_methods.html">DataOps allow direct access to methods of the underlying data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../basics/control_flow.html">Control flow in DataOps: eager and deferred evaluation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../basics/data_ops_vs_alternatives.html">How do skrub Data Ops differ from the alternatives?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/data_ops_vs_alternatives.html">How do skrub DataOps differ from the alternatives?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="applying_ml_estimators.html">Applying machine-learning estimators</a></li>
 <li class="toctree-l2 current active"><a aria-current="page" class="current reference internal" href="#">Applying different transformers using skrub selectors and DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="documenting_data_ops_plan.html">Documenting the DataOps plan with node names and descriptions</a></li>
@@ -716,12 +716,10 @@ example with grades.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">enc_subject</span> <span class="o">=</span> <span class="n">grades</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">cols</span><span class="o">=</span><span class="s2">"subject"</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">StringEncoder</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 </div>
-<p>For the grades, we define a <a class="reference internal" href="../../../reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a> function that maps the strings
-to the order we want.
-Remember that objects inside deferred functions are regular Python
-objects (more detail in <a class="reference internal" href="../basics/control_flow.html#user-guide-data-ops-control-flow"><span class="std std-ref">Control flow in DataOps: eager and deferred evaluation</span></a>).</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
-<span class="gp">... </span><span class="k">def</span><span class="w"> </span><span class="nf">encode_ordered</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+<p>For the grades, we define a function that maps the strings to the order we want.
+The function is only called when the DataOp is
+evaluated (more detail in <a class="reference internal" href="../basics/control_flow.html#user-guide-data-ops-control-flow"><span class="std std-ref">Control flow in DataOps: eager and deferred evaluation</span></a>).</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">encode_ordered</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="n">grade_order</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"A"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="s2">"grade"</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">grade_order</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">enc_grades</span> <span class="o">=</span> <span class="n">grades</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply_func</span><span class="p">(</span><span class="n">encode_ordered</span><span class="p">)</span>
@@ -737,7 +735,7 @@ objects (more detail in <a class="reference internal" href="../basics/control_fl
 <span class="go">Name: grade, dtype: int64</span>
 </pre></div>
 </div>
-<p>Finally, we combine the resulting dataframe and series using another deferred
+<p>Finally, we combine the resulting dataframe and series using a deferred
 function.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
 <span class="gp">... </span><span class="k">def</span><span class="w"> </span><span class="nf">combine</span><span class="p">(</span><span class="n">subjects</span><span class="p">,</span> <span class="n">grades</span><span class="p">):</span>

@@ -591,7 +591,7 @@
 <li class="toctree-l2 current active"><a aria-current="page" class="current reference internal" href="#">Using previews for easier development and debugging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="direct_access_methods.html">DataOps allow direct access to methods of the underlying data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="control_flow.html">Control flow in DataOps: eager and deferred evaluation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_ops_vs_alternatives.html">How do skrub Data Ops differ from the alternatives?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_ops_vs_alternatives.html">How do skrub DataOps differ from the alternatives?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ml_pipeline/applying_ml_estimators.html">Applying machine-learning estimators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ml_pipeline/applying_different_transformers.html">Applying different transformers using skrub selectors and DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ml_pipeline/documenting_data_ops_plan.html">Documenting the DataOps plan with node names and descriptions</a></li>
@@ -756,8 +756,8 @@ environment, and if not found the default is used.</p>
 <p>By default, as soon as a DataOp is defined, some validity checks are performed
 and the preview results are computed eagerly. In very complex DataOps plans
 (100+ nodes), running checks after adding each node can cause a noticeable overhead.
-To avoid this, it is possible to disable eager checks with the <code class="docutils literal notranslate"><span class="pre">&quot;eager_data_ops&quot;</span></code>
-is easily achieved with the <code class="docutils literal notranslate"><span class="pre">&quot;eager_data_ops&quot;</span></code> <a class="reference internal" href="../../../guides/utilities/customizing_configuration.html#user-guide-configuration-parameters"><span class="std std-ref">configuration</span></a> option.</p>
+To avoid this, eager checks can be disabled with the <code class="docutils literal notranslate"><span class="pre">eager_data_ops</span></code>
+<a class="reference internal" href="../../../guides/utilities/customizing_configuration.html#user-guide-configuration-parameters"><span class="std std-ref">configuration</span></a> option.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">skrub</span><span class="o">.</span><span class="n">config_context</span><span class="p">(</span><span class="n">eager_data_ops</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="c1"># no checks are performed when b is defined so no error in the line below:</span>
 <span class="gp">... </span>    <span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'a'</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'a'</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>

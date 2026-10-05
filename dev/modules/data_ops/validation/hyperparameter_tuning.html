@@ -591,7 +591,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../basics/using_previews.html">Using previews for easier development and debugging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../basics/direct_access_methods.html">DataOps allow direct access to methods of the underlying data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../basics/control_flow.html">Control flow in DataOps: eager and deferred evaluation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../basics/data_ops_vs_alternatives.html">How do skrub Data Ops differ from the alternatives?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/data_ops_vs_alternatives.html">How do skrub DataOps differ from the alternatives?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ml_pipeline/applying_ml_estimators.html">Applying machine-learning estimators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ml_pipeline/applying_different_transformers.html">Applying different transformers using skrub selectors and DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ml_pipeline/documenting_data_ops_plan.html">Documenting the DataOps plan with node names and descriptions</a></li>
@@ -893,7 +893,7 @@ first, we drop the column <code class="docutils literal notranslate"><span class
 <span class="go">2       0.0       1.0       0.0</span>
 </pre></div>
 </div>
-<p>We can see the generated parameter grid with <code class="xref py py-func docutils literal notranslate"><span class="pre">DataOps.skb.describe_param_grid()</span></code>.</p>
+<p>We can see the generated parameter grid with <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.describe_param_grid.html#skrub.DataOp.skb.describe_param_grid" title="skrub.DataOp.skb.describe_param_grid"><code class="xref py py-func docutils literal notranslate"><span class="pre">DataOp.skb.describe_param_grid()</span></code></a>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X_enc</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">drop</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_param_grid</span><span class="p">()</span>
 <span class="go">"- choose_from({'number': …, 'text': …}): ['number', 'text']\n"</span>
 </pre></div>

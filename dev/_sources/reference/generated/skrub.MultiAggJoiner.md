@@ -13,7 +13,7 @@ each of which will be joined on the main table.
 #### WARNING
 The auxiliary table is stored in memory as part of the state of the transformer,
 which can lead to high memory usage if the auxiliary table is large.
-Consider using the [skrub Data Ops](../../data_ops.md#user-guide-data-ops-index) and
+Consider using the [skrub DataOps](../../data_ops.md#user-guide-data-ops-index) and
 a standard dataframe library (Pandas or Polars) to perform the aggregation
 instead.
 

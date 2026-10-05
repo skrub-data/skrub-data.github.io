@@ -28,7 +28,7 @@ be returned by calling `.best_learner_`.
 
   **kwargs**
   : All other named arguments are forwarded to
-    `sklearn.search.GridSearchCV`.
+    `sklearn.model_selection.GridSearchCV`.
 * **Returns:**
   ParamSearch
   : An object implementing the hyperparameter search. Besides the usual

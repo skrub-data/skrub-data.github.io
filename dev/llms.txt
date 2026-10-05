@@ -29,7 +29,7 @@
 - [Basics of DataOps: the DataOps plan, variables, and learners](https://skrub-data.org/stable/_sources/modules/data_ops/basics/what_are_data_ops.md)
 - [Building a simple DataOps plan](https://skrub-data.org/stable/_sources/modules/data_ops/basics/building_data_ops_plan.md)
 - [Control flow in DataOps: eager and deferred evaluation](https://skrub-data.org/stable/_sources/modules/data_ops/basics/control_flow.md)
-- [How do skrub Data Ops differ from the alternatives?](https://skrub-data.org/stable/_sources/modules/data_ops/basics/data_ops_vs_alternatives.md)
+- [How do skrub DataOps differ from the alternatives?](https://skrub-data.org/stable/_sources/modules/data_ops/basics/data_ops_vs_alternatives.md)
 - [DataOps allow direct access to methods of the underlying data](https://skrub-data.org/stable/_sources/modules/data_ops/basics/direct_access_methods.md)
 - [Using previews for easier development and debugging](https://skrub-data.org/stable/_sources/modules/data_ops/basics/using_previews.md)
 - [Applying machine-learning estimators](https://skrub-data.org/stable/_sources/modules/data_ops/ml_pipeline/applying_ml_estimators.md)

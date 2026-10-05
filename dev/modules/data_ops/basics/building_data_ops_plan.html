@@ -591,7 +591,7 @@
 <li class="toctree-l2"><a class="reference internal" href="using_previews.html">Using previews for easier development and debugging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="direct_access_methods.html">DataOps allow direct access to methods of the underlying data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="control_flow.html">Control flow in DataOps: eager and deferred evaluation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_ops_vs_alternatives.html">How do skrub Data Ops differ from the alternatives?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_ops_vs_alternatives.html">How do skrub DataOps differ from the alternatives?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ml_pipeline/applying_ml_estimators.html">Applying machine-learning estimators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ml_pipeline/applying_different_transformers.html">Applying different transformers using skrub selectors and DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ml_pipeline/documenting_data_ops_plan.html">Documenting the DataOps plan with node names and descriptions</a></li>
@@ -717,8 +717,8 @@ new data:</p>
 <span class="go">17</span>
 </pre></div>
 </div>
-<p>When using Data Ops, it is important to ensure that all operations are being tracked
-by acting on the Data Ops, rather than (for example) the starting dataframe.
+<p>When using DataOps, it is important to ensure that all operations are being tracked
+by acting on the DataOp, rather than (for example) the starting dataframe.
 Consider the following example:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">"col"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]})</span>
@@ -738,10 +738,10 @@ Consider the following example:</p>
 <span class="go">2    3</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">df_do</span></code> is a Data Op that wraps <code class="docutils literal notranslate"><span class="pre">df</span></code>, so its preview shows the content of
+<p><code class="docutils literal notranslate"><span class="pre">df_do</span></code> is a DataOp that wraps <code class="docutils literal notranslate"><span class="pre">df</span></code>, so its preview shows the content of
 <code class="docutils literal notranslate"><span class="pre">df</span></code>. Then, if we perform other operations on <code class="docutils literal notranslate"><span class="pre">df_do</span></code> by selecting a column
 and doubling it, we can see that all steps (the creation of the variable,
-selection, and the multiplication) are now tracked by the final Data Op.</p>
+selection, and the multiplication) are now tracked by the final DataOp.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">col</span> <span class="o">=</span> <span class="n">df_do</span><span class="p">[</span><span class="s2">"col"</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">col</span>
 <span class="go">&lt;BinOp: mul&gt;</span>
@@ -759,7 +759,7 @@ selection, and the multiplication) are now tracked by the final Data Op.</p>
 </div>
 <p>On the other hand, working directly on <code class="docutils literal notranslate"><span class="pre">df</span></code> leads us to the same result, but
 the actual operations are not being tracked.
-By working only on Data Ops we ensure that all the operations done on the data
+By working only with the DataOps we ensure that all the operations done on the data
 are added correctly to the computational graph, which then allows the resulting
 learner to execute all steps as intended.</p>
 <p>See <a class="reference internal" href="../../../auto_tutorials/1111_data_ops_quick_tour.html#sphx-glr-auto-tutorials-1111-data-ops-quick-tour-py"><span class="std std-ref">Quick overview of DataOps</span></a> for an introductory

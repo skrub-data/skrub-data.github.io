@@ -113,7 +113,7 @@ Aggregate the target `y` based on keys from `X`.
 Get output feature names for transformation.
 
 * **Returns:**
-  List of `python:str`
+  List of [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
   : Transformed feature names.
 
 <!-- !! processed by numpydoc !! -->

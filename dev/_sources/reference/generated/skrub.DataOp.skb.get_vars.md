@@ -11,7 +11,7 @@ Get all the variables used in the DataOp.
     nodes that have a name (i.e., for which a value can be passed in the
     environment).
 * **Returns:**
-  `python:dict`
+  [`dict`](https://docs.python.org/3/builtins/stdtypes.html#dict)
   : Keys are names, and values the corresponding DataOp.
 
 #### SEE ALSO

@@ -93,7 +93,7 @@ transformer without any modification, which means that the transformer must be
 able to handle the content of the column on its own.
 
 If you need to define complex transformers to pass to a single instance of
-[`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer), consider using the [skrub Data Ops](../../data_ops.md#user-guide-data-ops-index),
+[`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer), consider using the [skrub DataOps](../../data_ops.md#user-guide-data-ops-index),
 [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols), or the [skrub selectors](../multi_column_operations/selectors.md#user-guide-selectors) instead, as
 they are more versatile and allow a higher degree
 of control over which operations are applied to which columns.

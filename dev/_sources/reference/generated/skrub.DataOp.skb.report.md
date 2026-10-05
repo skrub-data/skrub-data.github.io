@@ -50,7 +50,7 @@ to keep specific reports, please specify an output directory.
     If set to `False`, `environment` must be `None` (it would be
     unused, as the DataOp is not evaluated).
 * **Returns:**
-  `python:dict`
+  [`dict`](https://docs.python.org/3/builtins/stdtypes.html#dict)
   : The results of evaluating the DataOp. The keys are
     `'result'`, `'error'` and `'report_path'`. If the execution
     raised an exception, it is contained in `'error'` and

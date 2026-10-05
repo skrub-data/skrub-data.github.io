@@ -59,7 +59,7 @@ example:
 
 * [Quick overview of DataOps](auto_tutorials/1111_data_ops_quick_tourhtml.md)
 
-## Data Ops basic concepts
+## DataOps basic concepts
 
 * [Basics of DataOps: the DataOps plan, variables, and learners](modules/data_ops/basics/what_are_data_opshtml.md)
 * [Building a simple DataOps plan](modules/data_ops/basics/building_data_ops_planhtml.md)
@@ -73,13 +73,13 @@ example:
 * [DataOps allow direct access to methods of the underlying data](modules/data_ops/basics/direct_access_methodshtml.md)
 * [Control flow in DataOps: eager and deferred evaluation](modules/data_ops/basics/control_flowhtml.md)
   * [Unpacking multiple outputs from deferred functions](modules/data_ops/basics/control_flowhtml.md#unpacking-multiple-outputs-from-deferred-functions)
-* [How do skrub Data Ops differ from the alternatives?](modules/data_ops/basics/data_ops_vs_alternativeshtml.md)
+* [How do skrub DataOps differ from the alternatives?](modules/data_ops/basics/data_ops_vs_alternativeshtml.md)
   * [Skrub DataOps and scikit-learn `sklearn.pipeline.Pipeline`](modules/data_ops/basics/data_ops_vs_alternativeshtml.md#skrub-dataops-and-scikit-learn-sklearn-pipeline-pipeline)
   * [Skrub DataOps and orchestrators like Apache Airflow](modules/data_ops/basics/data_ops_vs_alternativeshtml.md#skrub-dataops-and-orchestrators-like-apache-airflow)
   * [Skrub DataOps and other skrub objects, like `tabular_pipeline()`](modules/data_ops/basics/data_ops_vs_alternativeshtml.md#skrub-dataops-and-other-skrub-objects-like-tabular-pipeline)
   * [Can I use library “x” with skrub DataOps?](modules/data_ops/basics/data_ops_vs_alternativeshtml.md#can-i-use-library-x-with-skrub-dataops)
 
-## Building a complex pipeline with the skrub Data Ops
+## Building a complex pipeline with the skrub DataOps
 
 * [Applying machine-learning estimators](modules/data_ops/ml_pipeline/applying_ml_estimatorshtml.md)
 * [Applying different transformers using skrub selectors and DataOps](modules/data_ops/ml_pipeline/applying_different_transformershtml.md)

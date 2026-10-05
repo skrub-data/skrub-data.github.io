@@ -41,14 +41,12 @@ We encode the subjects with the [`StringEncoder`](../../../reference/generated/s
 >>> enc_subject = grades.skb.select(cols="subject").skb.apply(StringEncoder(n_components=2))
 ```
 
-For the grades, we define a [`deferred()`](../../../reference/generated/skrub.deferred.md#skrub.deferred) function that maps the strings
-to the order we want.
-Remember that objects inside deferred functions are regular Python
-objects (more detail in [Control flow in DataOps: eager and deferred evaluation](../basics/control_flow.md#user-guide-data-ops-control-flow)).
+For the grades, we define a function that maps the strings to the order we want.
+The function is only called when the DataOp is
+evaluated (more detail in [Control flow in DataOps: eager and deferred evaluation](../basics/control_flow.md#user-guide-data-ops-control-flow)).
 
 ```pycon
->>> @skrub.deferred
-... def encode_ordered(df):
+>>> def encode_ordered(df):
 ...     grade_order = {"A": 3, "B": 2, "C": 1}
 ...     return df["grade"].map(grade_order)
 >>> enc_grades = grades.skb.apply_func(encode_ordered)
@@ -64,7 +62,7 @@ Result:
 Name: grade, dtype: int64
 ```
 
-Finally, we combine the resulting dataframe and series using another deferred
+Finally, we combine the resulting dataframe and series using a deferred
 function.
 
 ```pycon

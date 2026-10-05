@@ -87,8 +87,8 @@ See the documentation of [`var()`](../../../reference/generated/skrub.var.md#skr
 By default, as soon as a DataOp is defined, some validity checks are performed
 and the preview results are computed eagerly. In very complex DataOps plans
 (100+ nodes), running checks after adding each node can cause a noticeable overhead.
-To avoid this, it is possible to disable eager checks with the `"eager_data_ops"`
-is easily achieved with the `"eager_data_ops"` [configuration](../../../guides/utilities/customizing_configuration.md#user-guide-configuration-parameters) option.
+To avoid this, eager checks can be disabled with the `eager_data_ops`
+[configuration](../../../guides/utilities/customizing_configuration.md#user-guide-configuration-parameters) option.
 
 ```pycon
 >>> with skrub.config_context(eager_data_ops=False):

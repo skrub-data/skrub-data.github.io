@@ -192,7 +192,7 @@ Result:
 2       0.0       1.0       0.0
 ```
 
-We can see the generated parameter grid with `DataOps.skb.describe_param_grid()`.
+We can see the generated parameter grid with [`DataOp.skb.describe_param_grid()`](../../../reference/generated/skrub.DataOp.skb.describe_param_grid.md#skrub.DataOp.skb.describe_param_grid).
 
 ```pycon
 >>> X_enc.skb.apply(drop).skb.describe_param_grid()

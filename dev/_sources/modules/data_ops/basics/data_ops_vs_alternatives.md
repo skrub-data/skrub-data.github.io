@@ -1,6 +1,6 @@
 <a id="user-guide-data-ops-vs-alternatives"></a>
 
-# How do skrub Data Ops differ from the alternatives?
+# How do skrub DataOps differ from the alternatives?
 
 ## Skrub DataOps and scikit-learn [`sklearn.pipeline.Pipeline`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline)
 

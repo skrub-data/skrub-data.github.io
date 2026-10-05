@@ -591,7 +591,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/using_previews.html">Using previews for easier development and debugging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/direct_access_methods.html">DataOps allow direct access to methods of the underlying data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/control_flow.html">Control flow in DataOps: eager and deferred evaluation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/data_ops_vs_alternatives.html">How do skrub Data Ops differ from the alternatives?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/data_ops_vs_alternatives.html">How do skrub DataOps differ from the alternatives?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/applying_ml_estimators.html">Applying machine-learning estimators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/applying_different_transformers.html">Applying different transformers using skrub selectors and DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/documenting_data_ops_plan.html">Documenting the DataOps plan with node names and descriptions</a></li>
@@ -733,7 +733,7 @@ within the training set at training time, and the test set at predict time. To
 ensure this is the case, any code that performs aggregation can be wrapped in a
 scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.BaseEstimator.html#sklearn.base.BaseEstimator" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseEstimator</span></code></a> (as shown in the
 <a class="reference internal" href="../../auto_examples/0110_session_encoder.html#sphx-glr-auto-examples-0110-session-encoder-py"><span class="std std-ref">SessionEncoder example</span></a>),
-otherwise the pipeline should use the skrub <a class="reference internal" href="../data_ops/basics/building_data_ops_plan.html#user-guide-data-ops-plan"><span class="std std-ref">Data Ops framework</span></a>.</p>
+otherwise the pipeline should use the skrub <a class="reference internal" href="../data_ops/basics/building_data_ops_plan.html#user-guide-data-ops-plan"><span class="std std-ref">DataOps framework</span></a>.</p>
 <p>The <a class="reference internal" href="../../reference/generated/skrub.SessionEncoder.html#skrub.SessionEncoder" title="skrub.SessionEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionEncoder</span></code></a> includes the <code class="docutils literal notranslate"><span class="pre">suffix</span></code> parameter (by default
 <code class="docutils literal notranslate"><span class="pre">suffix=&quot;session_id&quot;</span></code>) to specify what the name of the new column should be.
 This can help with creating multiple session IDs based on the same timestamp.

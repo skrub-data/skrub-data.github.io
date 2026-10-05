@@ -21,7 +21,7 @@ means that if the auxiliary table is modified after fitting, the changes will
 not be reflected in the transformed output. If you need to update the
 auxiliary table, you will need to refit the transformer.
 
-Consider using the [skrub Data Ops](../../data_ops.md#user-guide-data-ops-index)
+Consider using the [skrub DataOps](../../data_ops.md#user-guide-data-ops-index)
 and a standard dataframe library (Pandas or Polars) to perform the
 aggregation instead.
 
@@ -152,7 +152,7 @@ Aggregate auxiliary table based on the main keys.
 Get output feature names for transformation.
 
 * **Returns:**
-  List of `python:str`
+  List of [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
   : Transformed feature names.
 
 <!-- !! processed by numpydoc !! -->

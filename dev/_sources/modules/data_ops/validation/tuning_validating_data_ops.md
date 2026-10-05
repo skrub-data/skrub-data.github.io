@@ -201,7 +201,7 @@ cross-validation we must group products by seller. We do it with
 >>> split = pred.skb.train_test_split()
 ```
 
-The train set only contains data from the “supermarket.com” seller.
+The train set only contains data from the “bestproducts.com” seller.
 
 ```pycon
 >>> split["X_train"]
@@ -211,7 +211,7 @@ The train set only contains data from the “supermarket.com” seller.
 4     charger     13
 ```
 
-The test set only contains data from the “bestproducts.com” seller.
+The test set only contains data from the “supermarket.com” seller.
 
 ```pycon
 >>> split["X_test"]

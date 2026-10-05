@@ -49,7 +49,7 @@ features are encoded differently depending on their cardinality.
     `specific_transformers`.
     Consider wrapping the `TableVectorizer` in  [`ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols)
     to select or exclude specific columns from the processing. Alternatively,
-    the [skrub Data Ops](../../data_ops.md#user-guide-data-ops-index) allow for more complex
+    the [skrub DataOps](../../data_ops.md#user-guide-data-ops-index) allow for more complex
     pre-processing.
 
   **drop_null_fraction**
@@ -433,7 +433,7 @@ Return the column names of the output of `transform` as a list of strings.
   **input_features**
   : Ignored.
 * **Returns:**
-  `python:list` of strings
+  [`list`](https://docs.python.org/3/builtins/stdtypes.html#list) of strings
   : The column names.
 
 <!-- !! processed by numpydoc !! -->

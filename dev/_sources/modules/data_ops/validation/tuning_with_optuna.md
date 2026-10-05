@@ -144,7 +144,7 @@ To use Optuna with a [`DataOp`](../../../reference/generated/skrub.DataOp.md#skr
 to [`DataOp.skb.make_learner()`](../../../reference/generated/skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner). This creates a [`SkrubLearner`](../../../reference/generated/skrub.SkrubLearner.md#skrub.SkrubLearner)
 initialized with the parameters picked by the optuna Trial.
 
-We can then cross-validate the:class:`SkrubLearner`, or score it however we prefer,
+We can then cross-validate the [`SkrubLearner`](../../../reference/generated/skrub.SkrubLearner.md#skrub.SkrubLearner), or score it however we prefer,
 and return the score so that the optuna Study can take it into account.
 
 Here we return a single score (R²), but multi-objective

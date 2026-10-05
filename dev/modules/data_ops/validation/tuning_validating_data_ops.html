@@ -591,7 +591,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../basics/using_previews.html">Using previews for easier development and debugging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../basics/direct_access_methods.html">DataOps allow direct access to methods of the underlying data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../basics/control_flow.html">Control flow in DataOps: eager and deferred evaluation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../basics/data_ops_vs_alternatives.html">How do skrub Data Ops differ from the alternatives?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/data_ops_vs_alternatives.html">How do skrub DataOps differ from the alternatives?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ml_pipeline/applying_ml_estimators.html">Applying machine-learning estimators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ml_pipeline/applying_different_transformers.html">Applying different transformers using skrub selectors and DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ml_pipeline/documenting_data_ops_plan.html">Documenting the DataOps plan with node names and descriptions</a></li>
@@ -847,7 +847,7 @@ cross-validation we must group products by seller. We do it with
 <span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>The train set only contains data from the “supermarket.com” seller.</p>
+<p>The train set only contains data from the “bestproducts.com” seller.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">"X_train"</span><span class="p">]</span>
 <span class="go">  description  price</span>
 <span class="go">1      hammer     15</span>
@@ -855,7 +855,7 @@ cross-validation we must group products by seller. We do it with
 <span class="go">4     charger     13</span>
 </pre></div>
 </div>
-<p>The test set only contains data from the “bestproducts.com” seller.</p>
+<p>The test set only contains data from the “supermarket.com” seller.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">"X_test"</span><span class="p">]</span>
 <span class="go">   description  price</span>
 <span class="go">0       screen    100</span>

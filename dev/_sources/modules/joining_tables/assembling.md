@@ -12,7 +12,7 @@ To be considered when using one of the joiners:
 **Joiners are designed for small-to-medium datasets.**
 
 - **Memory**: The auxiliary table is stored in the transformer state.
-  For tables > 1 million rows, consider using [skrub Data Ops](../../data_ops.md#user-guide-data-ops-index) with pandas/polars joins instead.
+  For tables > 1 million rows, consider using [skrub DataOps](../../data_ops.md#user-guide-data-ops-index) with pandas/polars joins instead.
 - **Computational Cost**: Fuzzy joining requires vectorizing columns
   and nearest-neighbor search. Test on samples first for large datasets.
 - **Dynamic Data**: If your auxiliary table changes after fitting,

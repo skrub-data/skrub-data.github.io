@@ -307,7 +307,7 @@
 ### Deprecations
 
 - The parameter `order_by` of [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) is deprecated. Passing
-  `order_by` now emits a `DeprecationWarning`
+  `order_by` now emits a [`DeprecationWarning`](https://docs.python.org/3/builtins/exceptions.html#DeprecationWarning)
   [#2101](https://github.com/skrub-data/skrub/pull/2101) by [Heidi Koivisto](https://github.com/uniheko).
 
 ## Release 0.9.0
@@ -700,7 +700,7 @@
   possible to skip computing column associations and generating plots when the
   number of columns in the dataframe exceeds a user-defined threshold. Columns with
   high cardinality and sorted columns are now highlighted in the report.
-- `selectors`, [`ApplyToCols`](reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) and `ApplyToFrame` are now available,
+- [`selectors`](https://docs.python.org/3/library/selectors.html#module-selectors), [`ApplyToCols`](reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) and `ApplyToFrame` are now available,
   providing utilities for selecting columns to which a transformer should be applied
   in a flexible way. For more details, see the [User guide](modules/multi_column_operations/selectorshtml.md#user-guide-selectors)
   and the [example](auto_examples/0010_apply_to_colshtml.md#sphx-glr-auto-examples-0010-apply-to-cols-py).
@@ -724,7 +724,7 @@
   through many discussions in defining the requirements and the public API.
   See [the examples](auto_examples/02_data_ops/indexhtml.md#data-ops-examples-ref) for
   an introduction.
-- The `selectors` module provides utilities for selecting columns to which
+- The [`selectors`](https://docs.python.org/3/library/selectors.html#module-selectors) module provides utilities for selecting columns to which
   a transformer should be applied in a flexible way. The module was created in
   [#895](https://github.com/skrub-data/skrub/pull/895) by [Jérôme Dockès](https://github.com/jeromedockes) and added to the public API
   in [#1341](https://github.com/skrub-data/skrub/pull/1341) by [Jérôme Dockès](https://github.com/jeromedockes).
@@ -1413,7 +1413,7 @@ package.
 
 ### Bug fixes
 
-* Fixed a bug in the [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) causing a `FutureWarning`
+* Fixed a bug in the [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) causing a [`FutureWarning`](https://docs.python.org/3/builtins/exceptions.html#FutureWarning)
   when using the `get_feature_names_out()` method. [#262](https://github.com/skrub-data/skrub/pull/262) by [Lilian Boulard](https://github.com/LilianBoulard)
 
 ## Dirty-cat Release 0.2.1
@@ -1437,7 +1437,7 @@ package.
 
 * Fixed a bug that resulted in the [`GapEncoder`](reference/generated/skrub.GapEncoderhtml.md#skrub.GapEncoder) ignoring the analyzer argument. [#242](https://github.com/skrub-data/skrub/pull/242) by [Jovan Stojanovic](https://github.com/jovan-stojanovic)
 * [`GapEncoder`](reference/generated/skrub.GapEncoderhtml.md#skrub.GapEncoder)’s `get_feature_names_out` now accepts all iterators, not just lists. [#255](https://github.com/skrub-data/skrub/pull/255) by [Lilian Boulard](https://github.com/LilianBoulard)
-* Fixed `DeprecationWarning` raised by the usage of `distutils.version.LooseVersion`. [#261](https://github.com/skrub-data/skrub/pull/261) by [Lilian Boulard](https://github.com/LilianBoulard)
+* Fixed [`DeprecationWarning`](https://docs.python.org/3/builtins/exceptions.html#DeprecationWarning) raised by the usage of `distutils.version.LooseVersion`. [#261](https://github.com/skrub-data/skrub/pull/261) by [Lilian Boulard](https://github.com/LilianBoulard)
 
 ### Notes
 
