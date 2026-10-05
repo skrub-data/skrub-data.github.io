@@ -2,11 +2,11 @@
   "content": [
     {
       "content": null,
-      "created": "2026-10-05T13:28:12.924652Z",
+      "created": "2026-10-05T13:52:20.656880Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2026-10-05T13:28:12.924652Z",
+      "last_modified": "2026-10-05T13:52:20.656880Z",
       "mimetype": null,
       "name": "jupyterlite_contents",
       "path": "jupyterlite_contents",
@@ -15,11 +15,11 @@
       "writable": true
     }
   ],
-  "created": "2026-10-05T13:28:12.916985Z",
+  "created": "2026-10-05T13:52:20.649493Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2026-10-05T13:28:12.916985Z",
+  "last_modified": "2026-10-05T13:52:20.649493Z",
   "mimetype": null,
   "name": "",
   "path": "",
