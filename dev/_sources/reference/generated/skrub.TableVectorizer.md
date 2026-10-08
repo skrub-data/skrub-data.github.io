@@ -175,6 +175,11 @@ overriding the categorization described above. This is done by providing a
 list of pairs `(transformer, list_of_columns)` as the
 `specific_transformers` parameter.
 
+The transformations applied to each column can be inspected in the `all_processing_steps_`
+attribute, which maps each column name to a list of the transformers that were applied to it.
+[`describe_transformations()`](#skrub.TableVectorizer.describe_transformations) provides a summary of the transformations
+in plain text.
+
 ### Examples
 
 ```pycon
