@@ -23,7 +23,7 @@ Encoding features
 
 .. only:: html
 
-  .. image:: /auto_examples/01_encoding/images/thumb/sphx_glr_0010_encodings_thumb.svg
+  .. image:: /auto_examples/01_encoding/images/thumb/sphx_glr_0010_encodings_thumb.png
     :alt:
 
   :doc:`/auto_examples/01_encoding/0010_encodings`
@@ -40,7 +40,7 @@ Encoding features
 
 .. only:: html
 
-  .. image:: /auto_examples/01_encoding/images/thumb/sphx_glr_0020_text_with_string_encoders_thumb.svg
+  .. image:: /auto_examples/01_encoding/images/thumb/sphx_glr_0020_text_with_string_encoders_thumb.png
     :alt:
 
   :doc:`/auto_examples/01_encoding/0020_text_with_string_encoders`
@@ -57,7 +57,7 @@ Encoding features
 
 .. only:: html
 
-  .. image:: /auto_examples/01_encoding/images/thumb/sphx_glr_0030_datetime_encoder_thumb.svg
+  .. image:: /auto_examples/01_encoding/images/thumb/sphx_glr_0030_datetime_encoder_thumb.png
     :alt:
 
   :doc:`/auto_examples/01_encoding/0030_datetime_encoder`

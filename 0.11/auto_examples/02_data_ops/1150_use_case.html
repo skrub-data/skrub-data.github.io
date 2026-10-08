@@ -39,6 +39,8 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=c83e6b79" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -58,6 +60,7 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=fd10adb8"></script>
     <script src="../../_static/sg-tags.js?v=d80f6fa4"></script>
+    <script src="../../_static/jupyterlite_sphinx.js?v=96e329c5"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script data-domain="skrub-data.org" defer="defer" src="https://views.scientific-python.org/js/script.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/02_data_ops/1150_use_case';</script>
@@ -648,7 +651,7 @@
   <div class="sphx-glr-download-link-note admonition note">
 <p class="admonition-title">Note</p>
 <p><a class="reference internal" href="#sphx-glr-download-auto-examples-02-data-ops-1150-use-case-py"><span class="std std-ref">Go to the end</span></a>
-to download the full example code or to run this example in your browser via Binder.</p>
+to download the full example code or to run this example in your browser via JupyterLite or Binder.</p>
 </div>
 <section class="sphx-glr-example-title" id="use-case-developing-locally-and-deploying-to-production">
 <span id="sphx-glr-auto-examples-02-data-ops-1150-use-case-py"></span><h1>Use case: developing locally and deploying to production<a class="headerlink" href="#use-case-developing-locally-and-deploying-to-production" title="Link to this heading">#</a></h1>
@@ -680,58 +683,58 @@ training data in dictionary form. We are going to generate a fully random data s
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span class="kn">import</span><span class="w"> </span><span class="nn">random</span><span class="w">
 </span><span class="kn">import</span><span class="w"> </span><span class="nn">string</span><span class="w">
 </span><span class="kn">import</span><span class="w"> </span><span class="nn">uuid</span><span class="w">
-</span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span><span class="w">
+</span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <a class="sphx-glr-backref-module-datetime sphx-glr-backref-type-py-class reference external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta" title="datetime.timedelta"><span class="n">timedelta</span></a><span class="w">
 </span><span class="w">
 </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span><span class="w">
 </span><span class="w">
 </span><span class="w">
 </span><span class="k">def</span><span class="w"> </span><span class="nf">generate_id</span><span class="p">(</span><span class="p">)</span><span class="p">:</span><span class="w">
-</span>    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="w">
+</span>    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><a class="sphx-glr-backref-module-uuid sphx-glr-backref-type-py-function reference external" href="https://docs.python.org/3/library/uuid.html#uuid.uuid4" title="uuid.uuid4"><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span></a><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="w">
 </span><span class="w">
 </span><span class="w">
 </span><span class="k">def</span><span class="w"> </span><span class="nf">generate_email</span><span class="p">(</span><span class="p">)</span><span class="p">:</span><span class="w">
-</span>    <span class="n">length</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span><span class="w">
-</span>    <span class="n">username</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">length</span><span class="p">)</span><span class="p">)</span><span class="w">
+</span>    <span class="n">length</span> <span class="o">=</span> <a class="sphx-glr-backref-module-random sphx-glr-backref-type-py-function reference external" href="https://docs.python.org/3/library/random.html#random.randint" title="random.randint"><span class="n">random</span><span class="o">.</span><span class="n">randint</span></a><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span><span class="w">
+</span>    <span class="n">username</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><a class="sphx-glr-backref-module-random sphx-glr-backref-type-py-function reference external" href="https://docs.python.org/3/library/random.html#random.choice" title="random.choice"><span class="n">random</span><span class="o">.</span><span class="n">choice</span></a><span class="p">(</span><a class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="str"><span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span></a><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">length</span><span class="p">)</span><span class="p">)</span><span class="w">
 </span>    <span class="n">domain</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;</span><span class="s2">google</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s2">yahoo</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s2">whatever</span><span class="s2">&quot;</span><span class="p">]</span><span class="w">
 </span>    <span class="n">tld</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;</span><span class="s2">fr</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s2">en</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s2">com</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s2">net</span><span class="s2">&quot;</span><span class="p">]</span><span class="w">
-</span>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s2">&#64;</span><span class="si">{</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">tld</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="w">
+</span>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s2">&#64;</span><span class="si">{</span><a class="sphx-glr-backref-module-random sphx-glr-backref-type-py-function reference external" href="https://docs.python.org/3/library/random.html#random.choice" title="random.choice"><span class="n">random</span><span class="o">.</span><span class="n">choice</span></a><span class="p">(</span><span class="n">domain</span><span class="p">)</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><a class="sphx-glr-backref-module-random sphx-glr-backref-type-py-function reference external" href="https://docs.python.org/3/library/random.html#random.choice" title="random.choice"><span class="n">random</span><span class="o">.</span><span class="n">choice</span></a><span class="p">(</span><span class="n">tld</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="w">
 </span><span class="w">
 </span><span class="w">
 </span><span class="k">def</span><span class="w"> </span><span class="nf">generate_datetime</span><span class="p">(</span><span class="p">)</span><span class="p">:</span><span class="w">
-</span>    <span class="n">random_seconds</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">)</span><span class="w">
-</span>    <span class="n">random_datetime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="p">)</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">random_seconds</span><span class="p">)</span><span class="w">
+</span>    <span class="n">random_seconds</span> <span class="o">=</span> <a class="sphx-glr-backref-module-random sphx-glr-backref-type-py-function reference external" href="https://docs.python.org/3/library/random.html#random.randint" title="random.randint"><span class="n">random</span><span class="o">.</span><span class="n">randint</span></a><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><a class="sphx-glr-backref-module-datetime sphx-glr-backref-type-py-class reference external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta" title="datetime.timedelta"><span class="n">timedelta</span></a><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">)</span><span class="w">
+</span>    <span class="n">random_datetime</span> <span class="o">=</span> <a class="sphx-glr-backref-module-datetime-datetime sphx-glr-backref-type-py-method reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime.now" title="datetime.datetime.now"><span class="n">datetime</span><span class="o">.</span><span class="n">now</span></a><span class="p">(</span><span class="p">)</span> <span class="o">-</span> <a class="sphx-glr-backref-module-datetime sphx-glr-backref-type-py-class reference external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta" title="datetime.timedelta"><span class="n">timedelta</span></a><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">random_seconds</span><span class="p">)</span><span class="w">
 </span>    <span class="k">return</span> <span class="n">random_datetime</span><span class="w">
 </span><span class="w">
 </span><span class="w">
 </span><span class="k">def</span><span class="w"> </span><span class="nf">generate_text</span><span class="p">(</span><span class="n">min_str_length</span><span class="p">,</span> <span class="n">max_str_length</span><span class="p">)</span><span class="p">:</span><span class="w">
-</span>    <span class="n">random_length</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">min_str_length</span><span class="p">,</span> <span class="n">max_str_length</span><span class="p">)</span><span class="w">
+</span>    <span class="n">random_length</span> <span class="o">=</span> <a class="sphx-glr-backref-module-random sphx-glr-backref-type-py-function reference external" href="https://docs.python.org/3/library/random.html#random.randint" title="random.randint"><span class="n">random</span><span class="o">.</span><span class="n">randint</span></a><span class="p">(</span><span class="n">min_str_length</span><span class="p">,</span> <span class="n">max_str_length</span><span class="p">)</span><span class="w">
 </span>    <span class="n">random_text</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="w">
-</span>        <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">digits</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">)</span><span class="w">
+</span>        <a class="sphx-glr-backref-module-random sphx-glr-backref-type-py-function reference external" href="https://docs.python.org/3/library/random.html#random.choice" title="random.choice"><span class="n">random</span><span class="o">.</span><span class="n">choice</span></a><span class="p">(</span><a class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="str"><span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span></a> <span class="o">+</span> <a class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="str"><span class="n">string</span><span class="o">.</span><span class="n">digits</span></a> <span class="o">+</span> <a class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="str"><span class="n">string</span><span class="o">.</span><span class="n">punctuation</span></a><span class="p">)</span><span class="w">
 </span>        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">random_length</span><span class="p">)</span><span class="w">
 </span>    <span class="p">)</span><span class="w">
 </span>    <span class="k">return</span> <span class="n">random_text</span><span class="w">
 </span></pre></div></div>
 <p>We generate 1000 training samples and store them in a list of dictionaries:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span class="n">n_samples</span> <span class="o">=</span> <span class="mi">1000</span><span class="w">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><a class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://docs.python.org/3/builtins/functions.html#int" title="int"><span class="n">n_samples</span></a> <span class="o">=</span> <span class="mi">1000</span><span class="w">
 </span></pre></div></div>
 <p>In this use case, the emails to be tested when the model is put in production
 are not contained in a dataframe, but in a JSON. As a result, our training data
 should also be contained in a list of dictionaries.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span class="n">X</span> <span class="o">=</span> <span class="p">[</span><span class="w">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X</span></a> <span class="o">=</span> <span class="p">[</span><span class="w">
 </span>    <span class="p">{</span><span class="w">
 </span>        <span class="s2">&quot;</span><span class="s2">id</span><span class="s2">&quot;</span><span class="p">:</span> <span class="n">generate_id</span><span class="p">(</span><span class="p">)</span><span class="p">,</span><span class="w">
 </span>        <span class="s2">&quot;</span><span class="s2">sender</span><span class="s2">&quot;</span><span class="p">:</span> <span class="n">generate_email</span><span class="p">(</span><span class="p">)</span><span class="p">,</span><span class="w">
 </span>        <span class="s2">&quot;</span><span class="s2">title</span><span class="s2">&quot;</span><span class="p">:</span> <span class="n">generate_text</span><span class="p">(</span><span class="n">max_str_length</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">min_str_length</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="p">,</span><span class="w">
 </span>        <span class="s2">&quot;</span><span class="s2">content</span><span class="s2">&quot;</span><span class="p">:</span> <span class="n">generate_text</span><span class="p">(</span><span class="n">max_str_length</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">min_str_length</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span><span class="p">,</span><span class="w">
 </span>        <span class="s2">&quot;</span><span class="s2">date</span><span class="s2">&quot;</span><span class="p">:</span> <span class="n">generate_datetime</span><span class="p">(</span><span class="p">)</span><span class="p">,</span><span class="w">
-</span>        <span class="s2">&quot;</span><span class="s2">cc_emails</span><span class="s2">&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">generate_email</span><span class="p">(</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span><span class="p">)</span><span class="p">]</span><span class="p">,</span><span class="w">
+</span>        <span class="s2">&quot;</span><span class="s2">cc_emails</span><span class="s2">&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">generate_email</span><span class="p">(</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><a class="sphx-glr-backref-module-random sphx-glr-backref-type-py-function reference external" href="https://docs.python.org/3/library/random.html#random.randint" title="random.randint"><span class="n">random</span><span class="o">.</span><span class="n">randint</span></a><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span><span class="p">)</span><span class="p">]</span><span class="p">,</span><span class="w">
 </span>    <span class="p">}</span><span class="w">
-</span>    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_samples</span><span class="p">)</span><span class="w">
+</span>    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><a class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://docs.python.org/3/builtins/functions.html#int" title="int"><span class="n">n_samples</span></a><span class="p">)</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span><span class="w">
 </span><span class="w">
 </span><span class="c1"># generate array of 1 and 0 to represent the target variable</span><span class="w">
-</span><span class="n">y</span> <span class="o">=</span> <a class="sphx-glr-backref-module-numpy-random sphx-glr-backref-type-py-function reference external" href="https://numpy.org/doc/stable/reference/random/generated/numpy.random.binomial.html#numpy.random.binomial" title="numpy.random.binomial"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">binomial</span></a><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">n_samples</span><span class="p">)</span><span class="w">
+</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">y</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-numpy-random sphx-glr-backref-type-py-function reference external" href="https://numpy.org/doc/stable/reference/random/generated/numpy.random.binomial.html#numpy.random.binomial" title="numpy.random.binomial"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">binomial</span></a><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><a class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://docs.python.org/3/builtins/functions.html#int" title="int"><span class="n">n_samples</span></a><span class="p">)</span><span class="w">
 </span></pre></div></div>
 </section>
 <section id="building-the-dataops-plan">
@@ -740,28 +743,101 @@ should also be contained in a list of dictionaries.</p>
 variables are.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span><span class="w">
 </span><span class="w">
-</span><span class="n">X</span> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.X.html#skrub.X" title="skrub.X"><span class="n">skrub</span><span class="o">.</span><span class="n">X</span></a><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="w">
-</span><span class="n">y</span> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.y.html#skrub.y" title="skrub.y"><span class="n">skrub</span><span class="o">.</span><span class="n">y</span></a><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="w">
+</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.X.html#skrub.X" title="skrub.X"><span class="n">skrub</span><span class="o">.</span><span class="n">X</span></a><span class="p">(</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X</span></a><span class="p">)</span><span class="w">
+</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">y</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.y.html#skrub.y" title="skrub.y"><span class="n">skrub</span><span class="o">.</span><span class="n">y</span></a><span class="p">(</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">y</span></a><span class="p">)</span><span class="w">
 </span></pre></div></div>
 <p>The variable X is currently a list of dictionaries, which estimators cannot
 handle directly. Let’s convert it to a pandas DataFrame using
 <a class="reference internal" href="../../reference/generated/skrub.DataOp.skb.apply_func.html#skrub.DataOp.skb.apply_func" title="skrub.DataOp.skb.apply_func"><code class="xref py py-func docutils literal notranslate"><span class="pre">apply_func()</span></code></a>.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span><span class="w">
 </span><span class="w">
-</span><span class="n">df</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply_func</span><span class="p">(</span><a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span></a><span class="p">)</span><span class="w">
+</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">df</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">X</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply_func</span><span class="p">(</span><a class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span></a><span class="p">)</span><span class="w">
 </span></pre></div></div>
 <p>For this example, we will use a strong baseline, with skrub’s
 <a class="reference internal" href="../../reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a>.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span class="n">tab_pipeline</span> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><span class="n">skrub</span><span class="o">.</span><span class="n">tabular_pipeline</span></a><span class="p">(</span><span class="s2">&quot;</span><span class="s2">classification</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><a class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><span class="n">tab_pipeline</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function reference internal" href="../../reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><span class="n">skrub</span><span class="o">.</span><span class="n">tabular_pipeline</span></a><span class="p">(</span><span class="s2">&quot;</span><span class="s2">classification</span><span class="s2">&quot;</span><span class="p">)</span><span class="w">
 </span><span class="w">
 </span><span class="c1"># We can now apply the predictive model to the data.</span><span class="w">
 </span><span class="c1"># The DataOps plan is ready after applying the model to the data.</span><span class="w">
-</span><span class="n">predictions</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">tab_pipeline</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span><span class="w">
+</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">predictions</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">df</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><a class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><span class="n">tab_pipeline</span></a><span class="p">,</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">y</span></a><span class="o">=</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">y</span></a><span class="p">)</span><span class="w">
 </span><span class="w">
 </span><span class="c1"># We can then explore the full plan:</span><span class="w">
-</span><span class="n">predictions</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">draw_graph</span><span class="p">(</span><span class="p">)</span><span class="w">
+</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">predictions</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">draw_graph</span><span class="p">(</span><span class="p">)</span><span class="w">
 </span></pre></div></div>
-<p>To end the explorative work, we need to build the learner, fit it, and save it to a
+<div class="output_subarea output_html rendered_html output_result">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 14.1.2 (20260126.1125)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="184pt" height="146pt"
+ viewBox="0.00 0.00 184.00 146.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 142.17)">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-142.17 179.52,-142.17 179.52,4 -4,4"/>
+<!-- node_0 -->
+<g id="node_0" class="node">
+
+<g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1150_use_case.py&quot;, line 106, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X = skrub.X(X)">
+<polygon fill="#c6d5f0" stroke="black" points="75.64,-134.17 17.62,-134.17 17.62,-112.78 75.64,-112.78 75.64,-134.17"/>
+<polygon fill="none" stroke="black" points="79.64,-138.17 13.62,-138.17 13.62,-108.78 79.64,-108.78 79.64,-138.17"/>
+<text xml:space="preserve" text-anchor="middle" x="46.63" y="-120.35" font-family="sans-serif" font-size="10.00">X: Var &#39;X&#39;</text>
+</a>
+</g>
+</g>
+<!-- node_1 -->
+<g id="node_1" class="node">
+
+<g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1150_use_case.py&quot;, line 115, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;df = X.skb.apply_func(pd.DataFrame)">
+<polygon fill="none" stroke="black" points="93.27,-75.78 0,-75.78 0,-54.39 93.27,-54.39 93.27,-75.78"/>
+<text xml:space="preserve" text-anchor="middle" x="46.63" y="-61.96" font-family="sans-serif" font-size="10.00">Call &#39;DataFrame&#39;</text>
+</a>
+</g>
+</g>
+<!-- node_0&#45;&gt;node_1 -->
+<g id="edge3" class="edge">
+
+<path fill="none" stroke="black" d="M46.63,-108.54C46.63,-101.32 46.63,-92.4 46.63,-84.61"/>
+<polygon fill="black" stroke="black" points="49.09,-84.66 46.64,-77.66 44.19,-84.66 49.09,-84.66"/>
+</g>
+<!-- node_3 -->
+<g id="node_3" class="node">
+
+<g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1150_use_case.py&quot;, line 124, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;predictions = df.skb.apply(tab_pipeline, y=y)">
+<polygon fill="none" stroke="black" points="135.27,-21.39 54,-21.39 54,0 135.27,0 135.27,-21.39"/>
+<text xml:space="preserve" text-anchor="middle" x="94.63" y="-7.57" font-family="sans-serif" font-size="10.00">Apply Pipeline</text>
+</a>
+</g>
+</g>
+<!-- node_1&#45;&gt;node_3 -->
+<g id="edge1" class="edge">
+
+<path fill="none" stroke="black" d="M55.89,-53.98C62.66,-46.59 71.99,-36.41 79.8,-27.88"/>
+<polygon fill="black" stroke="black" points="81.46,-29.7 84.39,-22.88 77.85,-26.39 81.46,-29.7"/>
+</g>
+<!-- node_2 -->
+<g id="node_2" class="node">
+
+<g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1150_use_case.py&quot;, line 107, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;y = skrub.y(y)">
+<polygon fill="#fad9c6" stroke="black" points="171.52,-75.78 115.75,-75.78 115.75,-54.39 171.52,-54.39 171.52,-75.78"/>
+<polygon fill="none" stroke="black" points="175.52,-79.78 111.75,-79.78 111.75,-50.39 175.52,-50.39 175.52,-79.78"/>
+<text xml:space="preserve" text-anchor="middle" x="143.63" y="-61.96" font-family="sans-serif" font-size="10.00">y: Var &#39;y&#39;</text>
+</a>
+</g>
+</g>
+<!-- node_2&#45;&gt;node_3 -->
+<g id="edge2" class="edge">
+
+<path fill="none" stroke="black" d="M130.5,-50.05C124.08,-43.18 116.31,-34.87 109.66,-27.75"/>
+<polygon fill="black" stroke="black" points="111.52,-26.17 104.95,-22.73 107.95,-29.51 111.52,-26.17"/>
+</g>
+</g>
+</svg>
+
+</div>
+<br />
+<br /><p>To end the explorative work, we need to build the learner, fit it, and save it to a
 file.
 Passing <code class="docutils literal notranslate"><span class="pre">fitted=True</span></code> to the <a class="reference internal" href="../../reference/generated/skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_learner()</span></code></a>
 function makes it so that the learner is fitted on the data that has been passed to
@@ -769,30 +845,33 @@ the variables of the DataOps plan.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span class="kn">import</span><span class="w"> </span><span class="nn">joblib</span><span class="w">
 </span><span class="w">
 </span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;</span><span class="s2">learner.pkl</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s2">wb</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span><span class="w">
-</span>    <span class="n">learner</span> <span class="o">=</span> <span class="n">predictions</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="w">
-</span>    <span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">learner</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span><span class="w">
+</span>    <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><span class="n">learner</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><span class="n">predictions</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="w">
+</span>    <span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><span class="n">learner</span></a><span class="p">,</span> <span class="n">f</span><span class="p">)</span><span class="w">
 </span></pre></div></div>
 </section>
 <section id="production-phase">
 <h2>Production phase<a class="headerlink" href="#production-phase" title="Link to this heading">#</a></h2>
 <p>In our microservice, we receive a payload in JSON format.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span class="n">X_input</span> <span class="o">=</span> <span class="p">{</span><span class="w">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><a class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://docs.python.org/3/builtins/stdtypes.html#dict" title="dict"><span class="n">X_input</span></a> <span class="o">=</span> <span class="p">{</span><span class="w">
 </span>    <span class="s2">&quot;</span><span class="s2">id</span><span class="s2">&quot;</span><span class="p">:</span> <span class="n">generate_id</span><span class="p">(</span><span class="p">)</span><span class="p">,</span><span class="w">
 </span>    <span class="s2">&quot;</span><span class="s2">sender</span><span class="s2">&quot;</span><span class="p">:</span> <span class="n">generate_email</span><span class="p">(</span><span class="p">)</span><span class="p">,</span><span class="w">
 </span>    <span class="s2">&quot;</span><span class="s2">title</span><span class="s2">&quot;</span><span class="p">:</span> <span class="n">generate_text</span><span class="p">(</span><span class="n">max_str_length</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">min_str_length</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="p">,</span><span class="w">
 </span>    <span class="s2">&quot;</span><span class="s2">content</span><span class="s2">&quot;</span><span class="p">:</span> <span class="n">generate_text</span><span class="p">(</span><span class="n">max_str_length</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">min_str_length</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span><span class="p">,</span><span class="w">
 </span>    <span class="s2">&quot;</span><span class="s2">date</span><span class="s2">&quot;</span><span class="p">:</span> <span class="n">generate_datetime</span><span class="p">(</span><span class="p">)</span><span class="p">,</span><span class="w">
-</span>    <span class="s2">&quot;</span><span class="s2">cc_emails</span><span class="s2">&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">generate_email</span><span class="p">(</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span><span class="p">)</span><span class="p">]</span><span class="p">,</span><span class="w">
+</span>    <span class="s2">&quot;</span><span class="s2">cc_emails</span><span class="s2">&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">generate_email</span><span class="p">(</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><a class="sphx-glr-backref-module-random sphx-glr-backref-type-py-function reference external" href="https://docs.python.org/3/library/random.html#random.randint" title="random.randint"><span class="n">random</span><span class="o">.</span><span class="n">randint</span></a><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span><span class="p">)</span><span class="p">]</span><span class="p">,</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span><span class="w">
 </span><span class="c1"># We just have to load the learner and use it to predict the score for this input.</span><span class="w">
 </span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;</span><span class="s2">learner.pkl</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s2">rb</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span><span class="w">
-</span>    <span class="n">loaded_learner</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span><span class="w">
+</span>    <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><span class="n">loaded_learner</span></a> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span><span class="w">
 </span><span class="c1"># ``X_input`` must be passed as a list so that it can be parsed correctly as a dataframe</span><span class="w">
 </span><span class="c1"># by Pandas.</span><span class="w">
-</span><span class="n">prediction</span> <span class="o">=</span> <span class="n">loaded_learner</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="p">{</span><span class="s2">&quot;</span><span class="s2">X</span><span class="s2">&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">X_input</span><span class="p">]</span><span class="p">}</span><span class="p">)</span><span class="w">
-</span><span class="n">prediction</span><span class="w">
+</span><a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">prediction</span></a> <span class="o">=</span> <a class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance reference internal" href="../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><span class="n">loaded_learner</span></a><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="p">{</span><span class="s2">&quot;</span><span class="s2">X</span><span class="s2">&quot;</span><span class="p">:</span> <span class="p">[</span><a class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://docs.python.org/3/builtins/stdtypes.html#dict" title="dict"><span class="n">X_input</span></a><span class="p">]</span><span class="p">}</span><span class="p">)</span><span class="w">
+</span><a class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray"><span class="n">prediction</span></a><span class="w">
 </span></pre></div></div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([1])
+</pre></div>
+</div>
 </section>
 <section id="conclusion">
 <h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
@@ -800,10 +879,15 @@ the variables of the DataOps plan.</p>
 and preprocessing done during model development are exactly the same as those done in
 production. This makes deployment straightforward and reduces the risk of errors
 when moving from development to production environments.</p>
-<p><strong>Estimated memory usage:</strong>  0 MB</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 9.000 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  691 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-02-data-ops-1150-use-case-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.11.0?urlpath=lab/tree/notebooks/auto_examples/02_data_ops/1150_use_case.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo2.svg" style="width: 150px;" />
+</a>
+</div>
+<div class="lite-badge docutils container">
+<a class="reference external image-reference" href="../../lite/lab/index.html?path=auto_examples/02_data_ops/1150_use_case.ipynb"><img alt="Launch JupyterLite" src="../../_images/jupyterlite_badge_logo2.svg" style="width: 150px;" />
 </a>
 </div>
 <div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
@@ -922,6 +1006,14 @@ when moving from development to production environments.</p>
 
 
   <div class="sphx-glr-sidebar-component">
+    
+      
+        <div class="sphx-glr-sidebar-item lite-badge-sidebar">
+          <a href="../../lite/lab/index.html?path=auto_examples/02_data_ops/1150_use_case.ipynb">
+            <img src="../../_images/jupyterlite_badge_logo2.svg" alt="Launch JupyterLite">
+          </a>
+        </div>
+      
     
       
         <div class="sphx-glr-sidebar-item binder-badge-sidebar">

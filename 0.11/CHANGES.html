@@ -39,6 +39,8 @@
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css?v=c83e6b79" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -58,6 +60,7 @@
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=fd10adb8"></script>
     <script src="_static/sg-tags.js?v=d80f6fa4"></script>
+    <script src="_static/jupyterlite_sphinx.js?v=96e329c5"></script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script data-domain="skrub-data.org" defer="defer" src="https://views.scientific-python.org/js/script.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'CHANGES';</script>
@@ -901,7 +904,7 @@ numbers between min and max) has been fixed.
 <h3>Deprecations<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The parameter <code class="docutils literal notranslate"><span class="pre">order_by</span></code> of <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> is deprecated. Passing
-<code class="docutils literal notranslate"><span class="pre">order_by</span></code> now emits a <code class="xref py py-class docutils literal notranslate"><span class="pre">DeprecationWarning</span></code>
+<code class="docutils literal notranslate"><span class="pre">order_by</span></code> now emits a <a class="reference external" href="https://docs.python.org/3/builtins/exceptions.html#DeprecationWarning" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DeprecationWarning</span></code></a>
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2101">#2101</a> by <a class="reference external" href="https://github.com/uniheko">Heidi Koivisto</a>.</p></li>
 </ul>
 </section>
@@ -1340,7 +1343,7 @@ now supported directly. It is now
 possible to skip computing column associations and generating plots when the
 number of columns in the dataframe exceeds a user-defined threshold. Columns with
 high cardinality and sorted columns are now highlighted in the report.</p></li>
-<li><p><code class="xref py py-mod docutils literal notranslate"><span class="pre">selectors</span></code>, <a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> and <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code> are now available,
+<li><p><a class="reference external" href="https://docs.python.org/3/library/selectors.html#module-selectors" title="(in Python v3.14)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">selectors</span></code></a>, <a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> and <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code> are now available,
 providing utilities for selecting columns to which a transformer should be applied
 in a flexible way. For more details, see the <a class="reference internal" href="modules/multi_column_operations/selectors.html#user-guide-selectors"><span class="std std-ref">User guide</span></a>
 and the <a class="reference internal" href="auto_examples/0010_apply_to_cols.html#sphx-glr-auto-examples-0010-apply-to-cols-py"><span class="std std-ref">example</span></a>.</p></li>
@@ -1366,7 +1369,7 @@ suggested improvements and improved the examples, <a class="reference external" 
 through many discussions in defining the requirements and the public API.
 See <a class="reference internal" href="auto_examples/02_data_ops/index.html#data-ops-examples-ref"><span class="std std-ref">the examples</span></a> for
 an introduction.</p></li>
-<li><p>The <code class="xref py py-mod docutils literal notranslate"><span class="pre">selectors</span></code> module provides utilities for selecting columns to which
+<li><p>The <a class="reference external" href="https://docs.python.org/3/library/selectors.html#module-selectors" title="(in Python v3.14)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">selectors</span></code></a> module provides utilities for selecting columns to which
 a transformer should be applied in a flexible way. The module was created in
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/895">#895</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a> and added to the public API
 in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1341">#1341</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
@@ -2156,7 +2159,7 @@ names instead of column indices for the “remainder” columns. <a class="refer
 <section id="id59">
 <h3>Bug fixes<a class="headerlink" href="#id59" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Fixed a bug in the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> causing a <code class="xref py py-class docutils literal notranslate"><span class="pre">FutureWarning</span></code>
+<li><p>Fixed a bug in the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> causing a <a class="reference external" href="https://docs.python.org/3/builtins/exceptions.html#FutureWarning" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FutureWarning</span></code></a>
 when using the <code class="xref py py-func docutils literal notranslate"><span class="pre">get_feature_names_out()</span></code> method. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/262">#262</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>
 </ul>
 </section>
@@ -2193,7 +2196,7 @@ on multiple columns.</p></li>
 <ul class="simple">
 <li><p>Fixed a bug that resulted in the <a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> ignoring the analyzer argument. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/242">#242</a> by <a class="reference external" href="https://github.com/jovan-stojanovic">Jovan Stojanovic</a></p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>’s <code class="docutils literal notranslate"><span class="pre">get_feature_names_out</span></code> now accepts all iterators, not just lists. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/255">#255</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>
-<li><p>Fixed <code class="xref py py-class docutils literal notranslate"><span class="pre">DeprecationWarning</span></code> raised by the usage of <code class="docutils literal notranslate"><span class="pre">distutils.version.LooseVersion</span></code>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/261">#261</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>
+<li><p>Fixed <a class="reference external" href="https://docs.python.org/3/builtins/exceptions.html#DeprecationWarning" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DeprecationWarning</span></code></a> raised by the usage of <code class="docutils literal notranslate"><span class="pre">distutils.version.LooseVersion</span></code>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/261">#261</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>
 </ul>
 </section>
 <section id="id62">
