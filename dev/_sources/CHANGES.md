@@ -64,6 +64,9 @@
 
 ### Bugfixes
 
+- [`SimilarityEncoder`](reference/generated/skrub.SimilarityEncoderhtml.md#skrub.SimilarityEncoder) counted n-grams longer than the string as a
+  negative number of windows, leading to an incorrect similarity score. Fixed in
+  [#2311](https://github.com/skrub-data/skrub/pull/2311) by [Sasha Mitchell](https://github.com/SashaMIT).
 - [`ToDatetime`](reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime) (and therefore [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer)) now accepts pandas
   columns containing `datetime.date` objects. Pandas stores those in an
   `object` column, so they used to be rejected, whereas the equivalent polars
