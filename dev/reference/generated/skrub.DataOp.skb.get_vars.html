@@ -642,6 +642,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.find.html">skrub.DataOp.skb.find</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.find_X_y.html">skrub.DataOp.skb.find_X_y</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.freeze_after_fit.html">skrub.DataOp.skb.freeze_after_fit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.get_choices.html">skrub.DataOp.skb.get_choices</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.get_data.html">skrub.DataOp.skb.get_data</a></li>
 <li class="toctree-l2 current active"><a aria-current="page" class="current reference internal" href="#">skrub.DataOp.skb.get_vars</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.if_else.html">skrub.DataOp.skb.if_else</a></li>
@@ -786,12 +787,12 @@
 <h1>skrub.DataOp.skb.get_vars<a class="headerlink" href="#skrub-dataop-skb-get-vars" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.get_vars">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">get_vars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_named_ops</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/35effab/skrub/_data_ops/_skrub_namespace.py#L1419"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.get_vars" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">get_vars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_named_ops</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a1ee897/skrub/_data_ops/_skrub_namespace.py#L1419"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.get_vars" title="Link to this definition">#</a></dt>
 <dd><p>Get all the variables used in the DataOp.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>all_named_ops</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default = <a class="reference external" href="https://docs.python.org/3/builtins/constants.html#False" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">False</span></code></a></span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">False</span></code>, return only actual variables (DataOps created with
+<dt><strong>all_named_ops</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#bool" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default = <a class="reference external" href="https://docs.python.org/3/builtins/constants.html#False" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">False</span></code></a></span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">False</span></code>, return only actual variables (DataOps created with
 <a class="reference internal" href="skrub.var.html#skrub.var" title="skrub.var"><code class="xref py py-func docutils literal notranslate"><span class="pre">var()</span></code></a>, <a class="reference internal" href="skrub.X.html#skrub.X" title="skrub.X"><code class="xref py py-func docutils literal notranslate"><span class="pre">X()</span></code></a> or <a class="reference internal" href="skrub.y.html#skrub.y" title="skrub.y"><code class="xref py py-func docutils literal notranslate"><span class="pre">y()</span></code></a>). If <code class="docutils literal notranslate"><span class="pre">True</span></code>, return all
 nodes that have a name (i.e., for which a value can be passed in the
 environment).</p>
@@ -800,7 +801,7 @@ environment).</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></dt><dd><p>Keys are names, and values the corresponding DataOp.</p>
+<dt><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#dict" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></dt><dd><p>Keys are names, and values the corresponding DataOp.</p>
 </dd>
 </dl>
 </dd>
@@ -813,6 +814,8 @@ environment).</p>
 <dt><a class="reference internal" href="skrub.DataOp.skb.set_data.html#skrub.DataOp.skb.set_data" title="skrub.DataOp.skb.set_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.set_data</span></code></a></dt><dd><p>Set new values for the variables.</p>
 </dd>
 <dt><a class="reference internal" href="skrub.DataOp.skb.set_name.html#skrub.DataOp.skb.set_name" title="skrub.DataOp.skb.set_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.set_name</span></code></a></dt><dd><p>Assign a name to a DataOp.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.DataOp.skb.get_choices.html#skrub.DataOp.skb.get_choices" title="skrub.DataOp.skb.get_choices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.get_choices</span></code></a></dt><dd><p>Similar function for getting the choices contained in the DataOp.</p>
 </dd>
 </dl>
 </div>
@@ -874,6 +877,18 @@ should pass to its methods such as <code class="docutils literal notranslate"><s
 <code class="docutils literal notranslate"><span class="pre">learner.fit()</span></code> should contain:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit</span><span class="p">({</span><span class="s1">'a'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">:</span> <span class="mi">3</span><span class="p">})</span>
 <span class="go">SkrubLearner(data_op=&lt;BinOp: add&gt;)</span>
+</pre></div>
+</div>
+<p>Similarly, choices can be obtained with <code class="docutils literal notranslate"><span class="pre">get_choices</span></code></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="n">d</span> <span class="o">+</span> <span class="n">skrub</span><span class="o">.</span><span class="n">choose_from</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">'e'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_choices</span><span class="p">()</span>
+<span class="go">{'e': choose_from([1, 2], name='e')}</span>
+</pre></div>
+</div>
+<p>So all the names that can be passed in an env, merging named DataOps
+and choices, are obtained with:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_vars</span><span class="p">(</span><span class="n">all_named_ops</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">|</span> <span class="n">f</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_choices</span><span class="p">(</span><span class="n">named_only</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="go">['a', 'b', 'c', 'e']</span>
 </pre></div>
 </div>
 </dd></dl>

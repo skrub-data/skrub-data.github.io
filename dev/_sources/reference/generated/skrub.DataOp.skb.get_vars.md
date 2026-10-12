@@ -24,6 +24,9 @@ Get all the variables used in the DataOp.
 [`DataOp.skb.set_name`](skrub.DataOp.skb.set_name.md#skrub.DataOp.skb.set_name)
 : Assign a name to a DataOp.
 
+[`DataOp.skb.get_choices`](skrub.DataOp.skb.get_choices.md#skrub.DataOp.skb.get_choices)
+: Similar function for getting the choices contained in the DataOp.
+
 ### Examples
 
 ```pycon
@@ -100,6 +103,22 @@ The output above tells us what keys the dict we pass to
 ```pycon
 >>> learner.fit({'a': 2, 'b': 3})
 SkrubLearner(data_op=<BinOp: add>)
+```
+
+Similarly, choices can be obtained with `get_choices`
+
+```pycon
+>>> f = d + skrub.choose_from([1, 2], name='e')
+>>> f.skb.get_choices()
+{'e': choose_from([1, 2], name='e')}
+```
+
+So all the names that can be passed in an env, merging named DataOps
+and choices, are obtained with:
+
+```pycon
+>>> list(f.skb.get_vars(all_named_ops=True) | f.skb.get_choices(named_only=True))
+['a', 'b', 'c', 'e']
 ```
 
 <!-- !! processed by numpydoc !! -->

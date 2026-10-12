@@ -6,6 +6,12 @@
 
 ### New Features
 
+- [`DataOp.skb.get_choices()`](reference/generated/skrub.DataOp.skb.get_choiceshtml.md#skrub.DataOp.skb.get_choices) allows inspecting all the choices (created
+  with [`choose_from()`](reference/generated/skrub.choose_fromhtml.md#skrub.choose_from), [`choose_float()`](reference/generated/skrub.choose_floathtml.md#skrub.choose_float), [`choose_int()`](reference/generated/skrub.choose_inthtml.md#skrub.choose_int),
+  [`choose_bool()`](reference/generated/skrub.choose_boolhtml.md#skrub.choose_bool) or [`optional()`](reference/generated/skrub.optionalhtml.md#skrub.optional)) contained in a [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp),
+  similar to what [`DataOp.skb.get_vars()`](reference/generated/skrub.DataOp.skb.get_varshtml.md#skrub.DataOp.skb.get_vars) does for variables.
+  [#2313](https://github.com/skrub-data/skrub/pull/2313) by [Jérôme Dockès](https://github.com/jeromedockes).
+
 ### Changes
 
 ### Bugfixes

@@ -140,6 +140,7 @@
 - [skrub.DataOp.skb.find](https://skrub-data.org/stable/_sources/reference/generated/skrub.DataOp.skb.find.md)
 - [skrub.DataOp.skb.find_X_y](https://skrub-data.org/stable/_sources/reference/generated/skrub.DataOp.skb.find_X_y.md)
 - [skrub.DataOp.skb.freeze_after_fit](https://skrub-data.org/stable/_sources/reference/generated/skrub.DataOp.skb.freeze_after_fit.md)
+- [skrub.DataOp.skb.get_choices](https://skrub-data.org/stable/_sources/reference/generated/skrub.DataOp.skb.get_choices.md)
 - [skrub.DataOp.skb.get_data](https://skrub-data.org/stable/_sources/reference/generated/skrub.DataOp.skb.get_data.md)
 - [skrub.DataOp.skb.get_vars](https://skrub-data.org/stable/_sources/reference/generated/skrub.DataOp.skb.get_vars.md)
 - [skrub.DataOp.skb.if_else](https://skrub-data.org/stable/_sources/reference/generated/skrub.DataOp.skb.if_else.md)

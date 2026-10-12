@@ -405,6 +405,9 @@ DataOps
   DataOp.skb.freeze_after_fit
 
 
+  DataOp.skb.get_choices
+
+
   DataOp.skb.get_data
 
 
