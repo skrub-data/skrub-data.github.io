@@ -2,7 +2,7 @@
 
 # Computation times
 
-**00:41.061** total execution time for 4 files **from auto_examples**:
+**00:46.449** total execution time for 4 files **from auto_examples**:
 
 <style scoped>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
@@ -19,7 +19,7 @@ $(document).ready( function () {
 
 | Example                                                                                                                                                                              | Time      |   Mem (MB) |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------|
-| [SquashingScaler: Robust numerical preprocessing for neural networks](0100_squashing_scaler.md#sphx-glr-auto-examples-0100-squashing-scaler-py) (`0100_squashing_scaler.py`)         | 00:22.939 |      588.3 |
-| [Hands-On with Column Selection and Transformers](0010_apply_to_cols.md#sphx-glr-auto-examples-0010-apply-to-cols-py) (`0010_apply_to_cols.py`)                                      | 00:07.960 |      584.5 |
-| [Sessions in time-based data: Predicting user purchases with the SessionEncoder](0110_session_encoder.md#sphx-glr-auto-examples-0110-session-encoder-py) (`0110_session_encoder.py`) | 00:07.638 |      585.1 |
-| [Deduplicating misspelled categories](0050_deduplication.md#sphx-glr-auto-examples-0050-deduplication-py) (`0050_deduplication.py`)                                                  | 00:02.525 |      585.1 |
+| [SquashingScaler: Robust numerical preprocessing for neural networks](0100_squashing_scaler.md#sphx-glr-auto-examples-0100-squashing-scaler-py) (`0100_squashing_scaler.py`)         | 00:26.027 |      570.8 |
+| [Sessions in time-based data: Predicting user purchases with the SessionEncoder](0110_session_encoder.md#sphx-glr-auto-examples-0110-session-encoder-py) (`0110_session_encoder.py`) | 00:09.200 |      567.8 |
+| [Hands-On with Column Selection and Transformers](0010_apply_to_cols.md#sphx-glr-auto-examples-0010-apply-to-cols-py) (`0010_apply_to_cols.py`)                                      | 00:08.726 |      567.1 |
+| [Deduplicating misspelled categories](0050_deduplication.md#sphx-glr-auto-examples-0050-deduplication-py) (`0050_deduplication.py`)                                                  | 00:02.496 |      567.7 |
