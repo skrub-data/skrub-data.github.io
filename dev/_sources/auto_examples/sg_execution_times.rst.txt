@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**00:46.449** total execution time for 4 files **from auto_examples**:
+**00:44.345** total execution time for 4 files **from auto_examples**:
 
 .. container::
 
@@ -33,14 +33,14 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_0100_squashing_scaler.py` (``0100_squashing_scaler.py``)
-     - 00:26.027
-     - 570.8
-   * - :ref:`sphx_glr_auto_examples_0110_session_encoder.py` (``0110_session_encoder.py``)
-     - 00:09.200
-     - 567.8
+     - 00:24.482
+     - 590.9
    * - :ref:`sphx_glr_auto_examples_0010_apply_to_cols.py` (``0010_apply_to_cols.py``)
-     - 00:08.726
-     - 567.1
+     - 00:08.618
+     - 587.1
+   * - :ref:`sphx_glr_auto_examples_0110_session_encoder.py` (``0110_session_encoder.py``)
+     - 00:08.442
+     - 587.6
    * - :ref:`sphx_glr_auto_examples_0050_deduplication.py` (``0050_deduplication.py``)
-     - 00:02.496
-     - 567.7
+     - 00:02.803
+     - 587.8

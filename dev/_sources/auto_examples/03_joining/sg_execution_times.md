@@ -2,7 +2,7 @@
 
 # Computation times
 
-**05:22.732** total execution time for 5 files **from auto_examples/03_joining**:
+**04:39.109** total execution time for 5 files **from auto_examples/03_joining**:
 
 <style scoped>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
@@ -19,8 +19,8 @@ $(document).ready( function () {
 
 | Example                                                                                                                                                                                  | Time      |   Mem (MB) |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------|
-| [AggJoiner on a credit fraud dataset](0070_join_aggregation.md#sphx-glr-auto-examples-03-joining-0070-join-aggregation-py) (`0070_join_aggregation.py`)                                  | 03:20.267 |      982.2 |
-| [Spatial join for flight data: Joining across multiple columns](0060_multiple_key_join.md#sphx-glr-auto-examples-03-joining-0060-multiple-key-join-py) (`0060_multiple_key_join.py`)     | 00:43.856 |     3031.3 |
-| [Interpolation join: infer missing rows when joining two tables](0080_interpolation_join.md#sphx-glr-auto-examples-03-joining-0080-interpolation-join-py) (`0080_interpolation_join.py`) | 00:39.039 |     2661.2 |
-| [Fuzzy joining dirty tables with the Joiner](0040_fuzzy_joining.md#sphx-glr-auto-examples-03-joining-0040-fuzzy-joining-py) (`0040_fuzzy_joining.py`)                                    | 00:34.335 |      576.5 |
-| [Deduplicating misspelled categories](0050_deduplication.md#sphx-glr-auto-examples-03-joining-0050-deduplication-py) (`0050_deduplication.py`)                                           | 00:05.235 |      567.1 |
+| [AggJoiner on a credit fraud dataset](0070_join_aggregation.md#sphx-glr-auto-examples-03-joining-0070-join-aggregation-py) (`0070_join_aggregation.py`)                                  | 02:35.277 |      912.2 |
+| [Spatial join for flight data: Joining across multiple columns](0060_multiple_key_join.md#sphx-glr-auto-examples-03-joining-0060-multiple-key-join-py) (`0060_multiple_key_join.py`)     | 00:42.444 |     3102   |
+| [Interpolation join: infer missing rows when joining two tables](0080_interpolation_join.md#sphx-glr-auto-examples-03-joining-0080-interpolation-join-py) (`0080_interpolation_join.py`) | 00:40.603 |     2720.1 |
+| [Fuzzy joining dirty tables with the Joiner](0040_fuzzy_joining.md#sphx-glr-auto-examples-03-joining-0040-fuzzy-joining-py) (`0040_fuzzy_joining.py`)                                    | 00:35.268 |      600.7 |
+| [Deduplicating misspelled categories](0050_deduplication.md#sphx-glr-auto-examples-03-joining-0050-deduplication-py) (`0050_deduplication.py`)                                           | 00:05.517 |      587.1 |

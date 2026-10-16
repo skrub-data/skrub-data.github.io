@@ -27,6 +27,9 @@ than a threshold, if they contain one unique value, or if all values are unique.
     This functionality can drop informative columns and is unlikely to be
     of use in practice. It is therefore deprecated and will be removed in a
     future version.
+* **Attributes:**
+  **drop_**
+  : Whether the column was found to be uninformative and should be dropped.
 
 #### SEE ALSO
 [`Cleaner`](skrub.Cleaner.md#skrub.Cleaner)
@@ -62,6 +65,8 @@ By default, only null columns are dropped:
 >>> du = DropUninformative()
 >>> du.fit_transform(df["col1"])
 []
+>>> du.drop_
+True
 ```
 
 It is also possible to drop constant columns, or specify a lower null fraction
