@@ -604,9 +604,23 @@ similar to what <a class="reference internal" href="reference/generated/skrub.Da
 </section>
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Whenever a datetime column is timezone-aware, it will be treated like a full
+datetime (and not a plain date) by <a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a>, i.e. the <code class="docutils literal notranslate"><span class="pre">hour</span></code>
+feature is extracted by default, even if all items in the column have their
+time at <code class="docutils literal notranslate"><span class="pre">00:00:00</span></code>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2334">#2334</a> by <a class="reference external" href="https://github.com/lsioctl">Laurent Steff</a>.</p></li>
+</ul>
 </section>
 <section id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> no longer raises
+<code class="docutils literal notranslate"><span class="pre">ValueError:</span> <span class="pre">...</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">nonexistent</span> <span class="pre">time</span> <span class="pre">due</span> <span class="pre">to</span> <span class="pre">...</span></code> with Pandas when trying to
+identify a date vs a datetime with <code class="docutils literal notranslate"><span class="pre">col.dt.normalize()</span></code> against some specific
+timezoned string datetime.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2334">#2334</a> by <a class="reference external" href="https://github.com/lsioctl">Laurent Steff</a>.</p></li>
+</ul>
 </section>
 <section id="deprecations">
 <h3>Deprecations<a class="headerlink" href="#deprecations" title="Link to this heading">#</a></h3>

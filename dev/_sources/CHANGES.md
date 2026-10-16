@@ -14,7 +14,19 @@
 
 ### Changes
 
+- Whenever a datetime column is timezone-aware, it will be treated like a full
+  datetime (and not a plain date) by [`DatetimeEncoder`](reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder), i.e. the `hour`
+  feature is extracted by default, even if all items in the column have their
+  time at `00:00:00`.
+  [#2334](https://github.com/skrub-data/skrub/pull/2334) by [Laurent Steff](https://github.com/lsioctl).
+
 ### Bugfixes
+
+- [`DatetimeEncoder`](reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) no longer raises
+  `ValueError: ... is a nonexistent time due to ...` with Pandas when trying to
+  identify a date vs a datetime with `col.dt.normalize()` against some specific
+  timezoned string datetime.
+  [#2334](https://github.com/skrub-data/skrub/pull/2334) by [Laurent Steff](https://github.com/lsioctl).
 
 ### Deprecations
 
