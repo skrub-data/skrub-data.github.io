@@ -2,11 +2,11 @@
   "content": [
     {
       "content": null,
-      "created": "2026-10-19T12:16:57.910479Z",
+      "created": "2026-10-19T13:19:49.757650Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2026-10-19T12:16:54.313870Z",
+      "last_modified": "2026-10-19T13:19:46.123565Z",
       "mimetype": null,
       "name": "0000_getting_started.ipynb",
       "path": "jupyterlite_contents/auto_tutorials/0000_getting_started.ipynb",
@@ -16,11 +16,11 @@
     },
     {
       "content": null,
-      "created": "2026-10-19T12:16:57.910849Z",
+      "created": "2026-10-19T13:19:49.758015Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2026-10-19T12:16:54.314619Z",
+      "last_modified": "2026-10-19T13:19:46.124823Z",
       "mimetype": null,
       "name": "1111_data_ops_quick_tour.ipynb",
       "path": "jupyterlite_contents/auto_tutorials/1111_data_ops_quick_tour.ipynb",
@@ -29,11 +29,11 @@
       "writable": true
     }
   ],
-  "created": "2026-10-19T12:16:57.910849Z",
+  "created": "2026-10-19T13:19:49.758015Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2026-10-19T12:16:57.910849Z",
+  "last_modified": "2026-10-19T13:19:49.758015Z",
   "mimetype": null,
   "name": "auto_tutorials",
   "path": "jupyterlite_contents/auto_tutorials",
