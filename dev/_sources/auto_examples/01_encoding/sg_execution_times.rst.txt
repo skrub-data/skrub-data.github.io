@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**04:04.077** total execution time for 3 files **from auto_examples/01_encoding**:
+**04:06.847** total execution time for 3 files **from auto_examples/01_encoding**:
 
 .. container::
 
@@ -33,11 +33,11 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_01_encoding_0020_text_with_string_encoders.py` (``0020_text_with_string_encoders.py``)
-     - 03:06.973
-     - 1382.4
+     - 03:05.883
+     - 1405.8
    * - :ref:`sphx_glr_auto_examples_01_encoding_0010_encodings.py` (``0010_encodings.py``)
-     - 00:44.628
-     - 578.4
+     - 00:47.518
+     - 590.4
    * - :ref:`sphx_glr_auto_examples_01_encoding_0030_datetime_encoder.py` (``0030_datetime_encoder.py``)
-     - 00:12.476
-     - 581.1
+     - 00:13.446
+     - 592.3
