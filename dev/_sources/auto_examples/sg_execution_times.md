@@ -2,7 +2,7 @@
 
 # Computation times
 
-**00:46.738** total execution time for 4 files **from auto_examples**:
+**00:44.743** total execution time for 4 files **from auto_examples**:
 
 <style scoped>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
@@ -19,7 +19,7 @@ $(document).ready( function () {
 
 | Example                                                                                                                                                                              | Time      |   Mem (MB) |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------|
-| [SquashingScaler: Robust numerical preprocessing for neural networks](0100_squashing_scaler.md#sphx-glr-auto-examples-0100-squashing-scaler-py) (`0100_squashing_scaler.py`)         | 00:25.208 |      585.8 |
-| [Hands-On with Column Selection and Transformers](0010_apply_to_cols.md#sphx-glr-auto-examples-0010-apply-to-cols-py) (`0010_apply_to_cols.py`)                                      | 00:09.495 |      582.8 |
-| [Sessions in time-based data: Predicting user purchases with the SessionEncoder](0110_session_encoder.md#sphx-glr-auto-examples-0110-session-encoder-py) (`0110_session_encoder.py`) | 00:08.816 |      583.5 |
-| [Deduplicating misspelled categories](0050_deduplication.md#sphx-glr-auto-examples-0050-deduplication-py) (`0050_deduplication.py`)                                                  | 00:03.219 |      583.5 |
+| [SquashingScaler: Robust numerical preprocessing for neural networks](0100_squashing_scaler.md#sphx-glr-auto-examples-0100-squashing-scaler-py) (`0100_squashing_scaler.py`)         | 00:25.237 |      591.9 |
+| [Hands-On with Column Selection and Transformers](0010_apply_to_cols.md#sphx-glr-auto-examples-0010-apply-to-cols-py) (`0010_apply_to_cols.py`)                                      | 00:08.377 |      588   |
+| [Sessions in time-based data: Predicting user purchases with the SessionEncoder](0110_session_encoder.md#sphx-glr-auto-examples-0110-session-encoder-py) (`0110_session_encoder.py`) | 00:08.335 |      588.6 |
+| [Deduplicating misspelled categories](0050_deduplication.md#sphx-glr-auto-examples-0050-deduplication-py) (`0050_deduplication.py`)                                                  | 00:02.794 |      588.5 |
