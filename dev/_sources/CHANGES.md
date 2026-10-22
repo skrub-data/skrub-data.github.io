@@ -11,6 +11,9 @@
   [`choose_bool()`](reference/generated/skrub.choose_boolhtml.md#skrub.choose_bool) or [`optional()`](reference/generated/skrub.optionalhtml.md#skrub.optional)) contained in a [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp),
   similar to what [`DataOp.skb.get_vars()`](reference/generated/skrub.DataOp.skb.get_varshtml.md#skrub.DataOp.skb.get_vars) does for variables.
   [#2313](https://github.com/skrub-data/skrub/pull/2313) by [Jérôme Dockès](https://github.com/jeromedockes).
+- [`TableReport.write_json()`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport.write_json) stores the report data into a JSON file,
+  similar to [`TableReport.write_html()`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport.write_html).
+  [#2356](https://github.com/skrub-data/skrub/pull/2356) by [Jad Yehya](https://github.com/Jad-yehya).
 
 ### Changes
 

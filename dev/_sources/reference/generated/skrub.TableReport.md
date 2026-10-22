@@ -158,14 +158,15 @@ in the report, selecting both columns “a” and “b”.
 
 ### Methods
 
-| [`dict`](#skrub.TableReport.dict)()                 | Get the report data in Python Dictionary format.                   |
-|-----------------------------------------------------|--------------------------------------------------------------------|
-| [`html`](#skrub.TableReport.html)()                 | Get the report as a full HTML page.                                |
-| [`html_snippet`](#skrub.TableReport.html_snippet)() | Get the report as an HTML fragment that can be inserted in a page. |
-| [`json`](#skrub.TableReport.json)()                 | Get the report data in JSON format.                                |
-| [`markdown`](#skrub.TableReport.markdown)()         | Get the report as a Markdown string.                               |
-| [`open`](#skrub.TableReport.open)()                 | Open the HTML report in a web browser.                             |
-| [`write_html`](#skrub.TableReport.write_html)(file) | Store the report into an HTML file.                                |
+| [`dict`](#skrub.TableReport.dict)()                           | Get the report data in Python Dictionary format.                   |
+|---------------------------------------------------------------|--------------------------------------------------------------------|
+| [`html`](#skrub.TableReport.html)()                           | Get the report as a full HTML page.                                |
+| [`html_snippet`](#skrub.TableReport.html_snippet)()           | Get the report as an HTML fragment that can be inserted in a page. |
+| [`json`](#skrub.TableReport.json)([indent])                   | Get the report data in JSON format.                                |
+| [`markdown`](#skrub.TableReport.markdown)()                   | Get the report as a Markdown string.                               |
+| [`open`](#skrub.TableReport.open)()                           | Open the HTML report in a web browser.                             |
+| [`write_html`](#skrub.TableReport.write_html)(file)           | Store the report into an HTML file.                                |
+| [`write_json`](#skrub.TableReport.write_json)(file[, indent]) | Store the report data into a JSON file.                            |
 <!-- !! processed by numpydoc !! -->
 
 #### dict()
@@ -198,7 +199,7 @@ Get the report as an HTML fragment that can be inserted in a page.
 
 <!-- !! processed by numpydoc !! -->
 
-#### json()
+#### json(indent=None)
 
 Get the report data in JSON format.
 
@@ -208,6 +209,11 @@ be quite verbose. Plots can be disabled by setting
 
 The schema of the JSON data is reported in [TableReport JSON schema](../table_report_json_schema.md#table-report-json-schema).
 
+* **Parameters:**
+  **indent**
+  : Indentation used to pretty-print the JSON output, passed to
+    [`json.dumps()`](https://docs.python.org/3/library/json.html#json.dumps). If `None`, the most compact representation
+    is used.
 * **Returns:**
   [`str`](https://docs.python.org/3/builtins/stdtypes.html#str)
   : The JSON data.
@@ -247,6 +253,21 @@ Store the report into an HTML file.
 * **Parameters:**
   **file**
   : The file object or path of the file to store the HTML output.
+
+<!-- !! processed by numpydoc !! -->
+
+#### write_json(file, indent=None)
+
+Store the report data into a JSON file.
+
+* **Parameters:**
+  **file**
+  : The file object or path of the file to store the JSON output.
+
+  **indent**
+  : Indentation used to pretty-print the JSON output, passed to
+    [`json.dumps()`](https://docs.python.org/3/library/json.html#json.dumps). If `None`, the most compact representation
+    is used.
 
 <!-- !! processed by numpydoc !! -->
 
