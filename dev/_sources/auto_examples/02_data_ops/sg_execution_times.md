@@ -2,7 +2,7 @@
 
 # Computation times
 
-**05:46.335** total execution time for 6 files **from auto_examples/02_data_ops**:
+**05:56.691** total execution time for 6 files **from auto_examples/02_data_ops**:
 
 <style scoped>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
@@ -19,9 +19,9 @@ $(document).ready( function () {
 
 | Example                                                                                                                                                                              | Time      |   Mem (MB) |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------|
-| [Multiples tables: building machine learning pipelines with DataOps](1120_multiple_tables.md#sphx-glr-auto-examples-02-data-ops-1120-multiple-tables-py) (`1120_multiple_tables.py`) | 02:44.395 |      732.6 |
-| [Tuning DataOps with Optuna](1131_optuna_choices.md#sphx-glr-auto-examples-02-data-ops-1131-optuna-choices-py) (`1131_optuna_choices.py`)                                            | 01:29.288 |      716.6 |
-| [Hyperparameter tuning with DataOps](1130_choices.md#sphx-glr-auto-examples-02-data-ops-1130-choices-py) (`1130_choices.py`)                                                         | 00:38.578 |      566.9 |
-| [Using PyTorch (via skorch) in DataOps](1160_pytorch.md#sphx-glr-auto-examples-02-data-ops-1160-pytorch-py) (`1160_pytorch.py`)                                                      | 00:23.908 |      579.7 |
-| [Subsampling for faster development](1140_subsampling.md#sphx-glr-auto-examples-02-data-ops-1140-subsampling-py) (`1140_subsampling.py`)                                             | 00:19.171 |      592.2 |
-| [Use case: developing locally and deploying to production](1150_use_case.md#sphx-glr-auto-examples-02-data-ops-1150-use-case-py) (`1150_use_case.py`)                                | 00:10.996 |      689.8 |
+| [Multiples tables: building machine learning pipelines with DataOps](1120_multiple_tables.md#sphx-glr-auto-examples-02-data-ops-1120-multiple-tables-py) (`1120_multiple_tables.py`) | 03:11.400 |      747.5 |
+| [Tuning DataOps with Optuna](1131_optuna_choices.md#sphx-glr-auto-examples-02-data-ops-1131-optuna-choices-py) (`1131_optuna_choices.py`)                                            | 01:04.110 |      632.7 |
+| [Hyperparameter tuning with DataOps](1130_choices.md#sphx-glr-auto-examples-02-data-ops-1130-choices-py) (`1130_choices.py`)                                                         | 00:43.376 |      553.2 |
+| [Using PyTorch (via skorch) in DataOps](1160_pytorch.md#sphx-glr-auto-examples-02-data-ops-1160-pytorch-py) (`1160_pytorch.py`)                                                      | 00:25.739 |      562   |
+| [Subsampling for faster development](1140_subsampling.md#sphx-glr-auto-examples-02-data-ops-1140-subsampling-py) (`1140_subsampling.py`)                                             | 00:20.821 |      564.1 |
+| [Use case: developing locally and deploying to production](1150_use_case.md#sphx-glr-auto-examples-02-data-ops-1150-use-case-py) (`1150_use_case.py`)                                | 00:11.245 |      674   |
