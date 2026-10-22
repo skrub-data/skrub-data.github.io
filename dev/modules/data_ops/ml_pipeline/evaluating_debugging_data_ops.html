@@ -692,6 +692,13 @@ title to the evaluation report this way:
 <code class="docutils literal notranslate"><span class="pre">my_data_op.skb.report(title=&quot;my</span> <span class="pre">title&quot;)</span></code>.</p>
 <p>An example of the report can be found
 <a class="reference external" href="../../../_static/credit_fraud_report/index.html">here</a>.</p>
+<p>The graph in the report is drawn by <a class="reference external" href="https://graphviz.org/download/">Graphviz</a>
+when it is installed (using your system’s package manager, not pip). Otherwise
+the graph is drawn by your web browser when you open the report, which requires
+JavaScript but no internet connection. The same goes for
+<a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.draw_graph.html#skrub.DataOp.skb.draw_graph" title="skrub.DataOp.skb.draw_graph"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.draw_graph()</span></code></a> and the display of DataOps in
+notebooks; in a notebook the browser also needs an internet connection to
+download the library that draws the graph.</p>
 <p>For each node in the plan, the report shows:</p>
 <ul class="simple">
 <li><p>The name and the description of the node, if present.</p></li>

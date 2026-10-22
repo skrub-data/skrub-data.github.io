@@ -12,6 +12,14 @@ title to the evaluation report this way:
 An example of the report can be found
 [here](../../../_static/credit_fraud_report/index.html).
 
+The graph in the report is drawn by [Graphviz](https://graphviz.org/download/)
+when it is installed (using your system’s package manager, not pip). Otherwise
+the graph is drawn by your web browser when you open the report, which requires
+JavaScript but no internet connection. The same goes for
+[`.skb.draw_graph()`](../../../reference/generated/skrub.DataOp.skb.draw_graph.md#skrub.DataOp.skb.draw_graph) and the display of DataOps in
+notebooks; in a notebook the browser also needs an internet connection to
+download the library that draws the graph.
+
 For each node in the plan, the report shows:
 
 - The name and the description of the node, if present.

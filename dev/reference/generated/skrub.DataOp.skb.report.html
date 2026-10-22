@@ -788,13 +788,16 @@
 <h1>skrub.DataOp.skb.report<a class="headerlink" href="#skrub-dataop-skb-report" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.report">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/51730b5/skrub/_data_ops/_skrub_namespace.py#L1806"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.report" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ec89e6a/skrub/_data_ops/_skrub_namespace.py#L1816"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.report" title="Link to this definition">#</a></dt>
 <dd><p>Generate a full report of the DataOp’s evaluation.</p>
 <p>This creates a report showing the computation graph, and for each
 intermediate computation, some information (the line of code where it
 was defined, the time it took to run, and more) and a display of the
 intermediate result (or error). By default, the report is stored in
 a timestamped subdirectory of the skrub data folder.</p>
+<p>The graph is drawn by <a class="reference external" href="https://graphviz.org/download/">Graphviz</a> if it is
+installed. Otherwise it is drawn by the web browser, so JavaScript must be
+enabled; the report does not need an internet connection.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When this function is invoked reports starting with <code class="docutils literal notranslate"><span class="pre">full_data_op_report_</span></code>
@@ -864,18 +867,14 @@ HTML files. The report can be displayed by visiting the contained
 <code class="docutils literal notranslate"><span class="pre">index.html</span></code> in a webbrowser, or passing <code class="docutils literal notranslate"><span class="pre">open=True</span></code> (the default)
 to this method.</p>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># ignore this line:</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span><span class="p">;</span> <span class="n">pytest</span><span class="o">.</span><span class="n">skip</span><span class="p">(</span><span class="s1">'graphviz may not be installed'</span><span class="p">)</span>
-</pre></div>
-</div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'a'</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'b'</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">report</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">report</span><span class="p">(</span><span class="nb">open</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">report</span><span class="p">[</span><span class="s1">'result'</span><span class="p">]</span>
 <span class="go">0.5</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">report</span><span class="p">[</span><span class="s1">'error'</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">report</span><span class="p">[</span><span class="s1">'report_path'</span><span class="p">]</span>
-<span class="go">PosixPath('.../skrub_data/execution_reports/full_data_op_report_.../index.html')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">report</span><span class="p">[</span><span class="s1">'report_path'</span><span class="p">]</span><span class="o">.</span><span class="n">name</span>
+<span class="go">'index.html'</span>
 </pre></div>
 </div>
 <p>We pass data:</p>
@@ -889,8 +888,8 @@ to this method.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">report</span><span class="p">[</span><span class="s1">'result'</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">report</span><span class="p">[</span><span class="s1">'error'</span><span class="p">]</span>
 <span class="go">ZeroDivisionError('division by zero')</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">report</span><span class="p">[</span><span class="s1">'report_path'</span><span class="p">]</span>
-<span class="go">PosixPath('.../skrub_data/execution_reports/full_data_op_report_.../index.html')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">report</span><span class="p">[</span><span class="s1">'report_path'</span><span class="p">]</span><span class="o">.</span><span class="n">name</span>
+<span class="go">'index.html'</span>
 </pre></div>
 </div>
 </dd></dl>

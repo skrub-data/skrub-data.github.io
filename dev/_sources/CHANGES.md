@@ -17,6 +17,9 @@
 
 ### Changes
 
+- The [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) graphs are now rendered in the browser when GraphViz is
+  not installed.
+  [#2227](https://github.com/skrub-data/skrub/pull/2227) by [Jérôme Dockès](https://github.com/jeromedockes).
 - Whenever a datetime column is timezone-aware, it will be treated like a full
   datetime (and not a plain date) by [`DatetimeEncoder`](reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder), i.e. the `hour`
   feature is extracted by default, even if all items in the column have their

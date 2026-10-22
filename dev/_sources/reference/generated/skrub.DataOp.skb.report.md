@@ -10,6 +10,10 @@ was defined, the time it took to run, and more) and a display of the
 intermediate result (or error). By default, the report is stored in
 a timestamped subdirectory of the skrub data folder.
 
+The graph is drawn by [Graphviz](https://graphviz.org/download/) if it is
+installed. Otherwise it is drawn by the web browser, so JavaScript must be
+enabled; the report does not need an internet connection.
+
 #### NOTE
 When this function is invoked reports starting with `full_data_op_report_`
 that are stored in the skrub data folder are automatically deleted after
@@ -79,19 +83,14 @@ to this method.
 ### Examples
 
 ```pycon
->>> # ignore this line:
->>> import pytest; pytest.skip('graphviz may not be installed')
-```
-
-```pycon
 >>> import skrub
 >>> c = skrub.var('a', 1) / skrub.var('b', 2)
 >>> report = c.skb.report(open=False)
 >>> report['result']
 0.5
 >>> report['error']
->>> report['report_path']
-PosixPath('.../skrub_data/execution_reports/full_data_op_report_.../index.html')
+>>> report['report_path'].name
+'index.html'
 ```
 
 We pass data:
@@ -109,8 +108,8 @@ And if there was an error:
 >>> report['result']
 >>> report['error']
 ZeroDivisionError('division by zero')
->>> report['report_path']
-PosixPath('.../skrub_data/execution_reports/full_data_op_report_.../index.html')
+>>> report['report_path'].name
+'index.html'
 ```
 
 <!-- !! processed by numpydoc !! -->
