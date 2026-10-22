@@ -788,7 +788,7 @@
 <h1>skrub.DataOp.skb.find_X_y<a class="headerlink" href="#skrub-dataop-skb-find-x-y" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.find_X_y">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">find_X_y</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f8612af/skrub/_data_ops/_skrub_namespace.py#L3826"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.find_X_y" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">find_X_y</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/190c73a/skrub/_data_ops/_skrub_namespace.py#L3826"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.find_X_y" title="Link to this definition">#</a></dt>
 <dd><p>Find the nodes that have been marked with <code class="docutils literal notranslate"><span class="pre">mark_as_X()</span></code> and <code class="docutils literal notranslate"><span class="pre">mark_as_y()</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -895,7 +895,7 @@ will also contain the keys <code class="docutils literal notranslate"><span clas
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">DummyClassifier</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">find_X_y</span><span class="p">()</span>
-<span class="go">{'X': &lt;X&gt;, 'cv': LeaveOneGroupOut(), 'split_kwargs': {'groups': &lt;GetItem 'seller'&gt;}, 'y': &lt;GetItem 'category'&gt;}</span>
+<span class="go">{'X': &lt;X&gt;..., 'cv': LeaveOneGroupOut(), 'split_kwargs': {'groups': &lt;GetItem 'seller'&gt;}, 'y': &lt;GetItem 'category'&gt;}</span>
 </pre></div>
 </div>
 </dd></dl>

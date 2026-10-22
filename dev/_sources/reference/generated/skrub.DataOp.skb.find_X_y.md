@@ -113,7 +113,7 @@ will also contain the keys `"cv"` and `"split_kwargs"`:
 ... )
 >>> pred = X.skb.apply(DummyClassifier(), y=y)
 >>> pred.skb.find_X_y()
-{'X': <X>, 'cv': LeaveOneGroupOut(), 'split_kwargs': {'groups': <GetItem 'seller'>}, 'y': <GetItem 'category'>}
+{'X': <X>..., 'cv': LeaveOneGroupOut(), 'split_kwargs': {'groups': <GetItem 'seller'>}, 'y': <GetItem 'category'>}
 ```
 
 <!-- !! processed by numpydoc !! -->
