@@ -213,6 +213,7 @@
 - [Deduplicating misspelled categories](https://skrub-data.org/stable/_sources/auto_examples/0050_deduplication.md)
 - [SquashingScaler: Robust numerical preprocessing for neural networks](https://skrub-data.org/stable/_sources/auto_examples/0100_squashing_scaler.md)
 - [Sessions in time-based data: Predicting user purchases with the SessionEncoder](https://skrub-data.org/stable/_sources/auto_examples/0110_session_encoder.md)
+- [Skrub as preprocessing for Table Foundation Models](https://skrub-data.org/stable/_sources/auto_examples/0120_tabicl.md)
 - [Encoding features](https://skrub-data.org/stable/_sources/auto_examples/01_encoding/index.md)
 - [Encoding: from a dataframe to a numerical matrix for machine learning](https://skrub-data.org/stable/_sources/auto_examples/01_encoding/0010_encodings.md)
 - [Various string encoders: a sentiment analysis example](https://skrub-data.org/stable/_sources/auto_examples/01_encoding/0020_text_with_string_encoders.md)

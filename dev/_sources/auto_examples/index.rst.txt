@@ -83,6 +83,23 @@ Examples
     </div>
 
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="TabICL is an open source tabular foundation model: its a powerful predictor that doesn&#x27;t need hyper-parameter tuning. In this example, skrub takes care of preparing the dataframe, and TabICL makes the predictions.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0120_tabicl_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/0120_tabicl`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Skrub as preprocessing for Table Foundation Models</div>
+    </div>
+
+
 .. thumbnail-parent-div-close
 
 .. raw:: html
@@ -97,6 +114,7 @@ Examples
    /auto_examples/0050_deduplication
    /auto_examples/0100_squashing_scaler
    /auto_examples/0110_session_encoder
+   /auto_examples/0120_tabicl
 
 Encoding features
 =================
