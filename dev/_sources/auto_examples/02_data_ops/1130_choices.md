@@ -2262,8 +2262,8 @@ X
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_85b9d069-wrapper" hidden>
-    <template id="report_85b9d069-template">
+<div id="report_4b4b1185-wrapper" hidden>
+    <template id="report_4b4b1185-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -3688,7 +3688,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="6786ee42"
+                id="ffd80f46"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -3718,7 +3718,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="245053c3"
+                id="1418b870"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -3766,7 +3766,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="3e5636f1"
+                id="7613008d"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3794,7 +3794,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="0065be7f"
+                id="33bffeb7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3828,7 +3828,7 @@ data-spans_\_0_\_0
 
 
                 <th
-                id="f6e01e17"
+                id="44071b99"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3856,7 +3856,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="4c0cde3c"
+                id="d04e2598"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3890,7 +3890,7 @@ data-spans_\_1_\_0
 
 
                 <th
-                id="20750d83"
+                id="e4184b0e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3918,7 +3918,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="221e0a04"
+                id="266a8123"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3952,7 +3952,7 @@ data-spans_\_2_\_0
 
 
                 <th
-                id="7465a24c"
+                id="143d0c2c"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3980,7 +3980,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="6e7fe089"
+                id="40a148c7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4014,7 +4014,7 @@ data-spans_\_3_\_0
 
 
                 <th
-                id="81e9c1a6"
+                id="db88e1e8"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4042,7 +4042,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="b2cd09ff"
+                id="856938b4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4106,7 +4106,7 @@ data-spans_\_4_\_0
 
 
                 <th
-                id="1696d1bb"
+                id="b16dd01a"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4134,7 +4134,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="24a9e190"
+                id="a1a57c46"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4168,7 +4168,7 @@ data-spans_\_5_\_0
 
 
                 <th
-                id="4fdc6150"
+                id="58a91ba3"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4196,7 +4196,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="e508445e"
+                id="21f8a146"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4230,7 +4230,7 @@ data-spans_\_6_\_0
 
 
                 <th
-                id="802018cb"
+                id="c0994547"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4258,7 +4258,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="49bdcb50"
+                id="b42417f0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4292,7 +4292,7 @@ data-spans_\_7_\_0
 
 
                 <th
-                id="62cd82f3"
+                id="e435f7fe"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4320,7 +4320,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="9a4ef428"
+                id="ea38efde"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4362,7 +4362,7 @@ data-spans_\_8_\_0
 
 
                 <th
-                id="b9bfab66"
+                id="6fc16b04"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4390,7 +4390,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="024b2375"
+                id="cd78be77"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4941,7 +4941,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_85b9d069">
+    <skrub-table-report class="report" id="report_4b4b1185">
     </skrub-table-report>
 
     <script type="module">
@@ -6045,7 +6045,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_85b9d069-wrapper-fallback">
+<div id="report_4b4b1185-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -6056,8 +6056,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_85b9d069-wrapper").removeAttribute("hidden");
- document.getElementById("report_85b9d069-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_4b4b1185-wrapper").removeAttribute("hidden");
+ document.getElementById("report_4b4b1185-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -6100,8 +6100,8 @@ y
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_dad1a0b2-wrapper" hidden>
-    <template id="report_dad1a0b2-template">
+<div id="report_e138e5c0-wrapper" hidden>
+    <template id="report_e138e5c0-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -7526,7 +7526,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="00a93a62"
+                id="e9f49984"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -7556,7 +7556,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="54f636e9"
+                id="3e9b881e"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -7604,7 +7604,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="b33f9efd"
+                id="c83ee25a"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7632,7 +7632,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="082c3c56"
+                id="5c20e816"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7666,7 +7666,7 @@ data-spans_\_0_\_0
 
 
                 <th
-                id="798593e4"
+                id="de409a90"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7694,7 +7694,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="9660594f"
+                id="d8cb3f70"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7728,7 +7728,7 @@ data-spans_\_1_\_0
 
 
                 <th
-                id="b710b9cd"
+                id="3358238d"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7756,7 +7756,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="3dfcce0d"
+                id="af306ded"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7790,7 +7790,7 @@ data-spans_\_2_\_0
 
 
                 <th
-                id="afaba3f4"
+                id="12d10f86"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7818,7 +7818,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="f46dfe0f"
+                id="8300c773"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7852,7 +7852,7 @@ data-spans_\_3_\_0
 
 
                 <th
-                id="118e476e"
+                id="493730b2"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7880,7 +7880,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="ed0531c9"
+                id="9d3d78cc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7944,7 +7944,7 @@ data-spans_\_4_\_0
 
 
                 <th
-                id="55f9dd9b"
+                id="56eca642"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7972,7 +7972,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="8d83d72c"
+                id="2a0ad614"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8006,7 +8006,7 @@ data-spans_\_5_\_0
 
 
                 <th
-                id="ae4ba142"
+                id="12aba327"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -8034,7 +8034,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="7e5fa9dc"
+                id="e375da6f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8068,7 +8068,7 @@ data-spans_\_6_\_0
 
 
                 <th
-                id="00ba3cc4"
+                id="ced4b5fd"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -8096,7 +8096,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="0cd3ec81"
+                id="86d2ea9f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8130,7 +8130,7 @@ data-spans_\_7_\_0
 
 
                 <th
-                id="ba6c3761"
+                id="6b8f2855"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -8158,7 +8158,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="82e0e480"
+                id="5749af30"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8192,7 +8192,7 @@ data-spans_\_8_\_0
 
 
                 <th
-                id="8addf976"
+                id="def96de3"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -8220,7 +8220,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="9bb8c75f"
+                id="bcb3ecfd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8763,7 +8763,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_dad1a0b2">
+    <skrub-table-report class="report" id="report_e138e5c0">
     </skrub-table-report>
 
     <script type="module">
@@ -9867,7 +9867,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_dad1a0b2-wrapper-fallback">
+<div id="report_e138e5c0-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -9878,8 +9878,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_dad1a0b2-wrapper").removeAttribute("hidden");
- document.getElementById("report_dad1a0b2-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_e138e5c0-wrapper").removeAttribute("hidden");
+ document.getElementById("report_e138e5c0-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -9955,8 +9955,8 @@ search.results_
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_b218713b-wrapper" hidden>
-    <template id="report_b218713b-template">
+<div id="report_d283984a-wrapper" hidden>
+    <template id="report_d283984a-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -11381,7 +11381,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="172b0109"
+                id="3cb8b7a7"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -11411,7 +11411,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="f501a2a1"
+                id="3b30023d"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -11445,7 +11445,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="e35c68d4"
+                id="a0a53f66"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -11479,7 +11479,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="5d57fe6a"
+                id="1ccf4fcb"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -11527,7 +11527,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="7a7a03c1"
+                id="64bb00b9"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11555,7 +11555,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="c2ab481c"
+                id="85befd2c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11585,7 +11585,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="2c62e85c"
+                id="82966f79"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11615,7 +11615,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="52553f6c"
+                id="c263b343"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11649,7 +11649,7 @@ data-spans_\_0_\_2
 
 
                 <th
-                id="31c322ba"
+                id="9adb1153"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11677,7 +11677,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="0f102475"
+                id="594b459a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11707,7 +11707,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="0d31138d"
+                id="f2eb35cb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11737,7 +11737,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="f5f09614"
+                id="8dbd246b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11771,7 +11771,7 @@ data-spans_\_1_\_2
 
 
                 <th
-                id="a2225f6d"
+                id="004c965e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11799,7 +11799,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="b3d3a370"
+                id="ead75724"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11829,7 +11829,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="e82af111"
+                id="420d99ab"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11859,7 +11859,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="1750e953"
+                id="093b39c8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11893,7 +11893,7 @@ data-spans_\_2_\_2
 
 
                 <th
-                id="cb12058e"
+                id="3a4e98bf"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11921,7 +11921,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="31f5221c"
+                id="1e2e2b49"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11951,7 +11951,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="e9b4b08e"
+                id="3438b405"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11981,7 +11981,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="f2eed9df"
+                id="effc907b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12015,7 +12015,7 @@ data-spans_\_3_\_2
 
 
                 <th
-                id="83f5a667"
+                id="aa345ef0"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12043,7 +12043,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="12a8ecad"
+                id="5d00eb73"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12073,7 +12073,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="f9992caa"
+                id="2ded229a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12103,7 +12103,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="5ed49489"
+                id="2cb95174"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12137,7 +12137,7 @@ data-spans_\_4_\_2
 
 
                 <th
-                id="b315ef34"
+                id="396b0b04"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12165,7 +12165,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="6aaffe5c"
+                id="92829afc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12195,7 +12195,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="0b3d8cdb"
+                id="e29f3782"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12225,7 +12225,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="b65b3e61"
+                id="0c590480"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12259,7 +12259,7 @@ data-spans_\_5_\_2
 
 
                 <th
-                id="51e61b97"
+                id="af812f52"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12287,7 +12287,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="3aebb184"
+                id="e990fa3e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12317,7 +12317,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="cd3e0c72"
+                id="2b485834"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12347,7 +12347,7 @@ data-spans_\_6_\_1
 
 
                 <td
-                id="9b9b092a"
+                id="092fab98"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12381,7 +12381,7 @@ data-spans_\_6_\_2
 
 
                 <th
-                id="05c4ca92"
+                id="7591bf5b"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12409,7 +12409,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="0a47d986"
+                id="04fd7f9d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12439,7 +12439,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="28709363"
+                id="14112e8a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12469,7 +12469,7 @@ data-spans_\_7_\_1
 
 
                 <td
-                id="b7f20671"
+                id="49ed9dbf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -13260,7 +13260,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_b218713b">
+    <skrub-table-report class="report" id="report_d283984a">
     </skrub-table-report>
 
     <script type="module">
@@ -14364,7 +14364,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_b218713b-wrapper-fallback">
+<div id="report_d283984a-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -14375,8 +14375,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_b218713b-wrapper").removeAttribute("hidden");
- document.getElementById("report_b218713b-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_d283984a-wrapper").removeAttribute("hidden");
+ document.getElementById("report_d283984a-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -14406,7 +14406,7 @@ search.plot_results()
 
 <div class="output_subarea output_html rendered_html output_result">
 <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="bb539d2b-d280-409d-82a4-0039ad8e8c07" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("bb539d2b-d280-409d-82a4-0039ad8e8c07")) {                    Plotly.newPlot(                        "bb539d2b-d280-409d-82a4-0039ad8e8c07",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"XwhRIRjTH0AAAAAAAAAuQAAAAAAAAC5AAAAAAAAAFEATKj2gtAUkQJUR2G1C+y1AT3oPIuzsI0AO6GkawgwoQA=="}},{"label":"lr","ticktext":["0.015","0.022","0.033","0.049","0.073","0.108","0.160","0.237","0.351","0.520"],"tickvals":[-4.189664084302747,-3.796791280939163,-3.403918477575579,-3.0110456742119958,-2.6181728708484115,-2.2253000674848282,-1.8324272641212445,-1.4395544607576607,-1.046681657394077,-0.6538088540304932],"values":{"dtype":"f8","bdata":"muxQKZX4CcC4rbyLAOzkv1qA0Gh79AbAbjk9TTfCEMBKYKicnhACwI5kyshucgbAd5i8FyD76b\\u002fD6loDkrD1vw=="}},{"label":"score time","ticktext":["0.045","0.048","0.051","0.053","0.056","0.059","0.061","0.064","0.067","0.069"],"tickvals":[0.04531569480895996,0.0479911274380154,0.050666560067070855,0.0533419926961263,0.056017425325181745,0.05869285795423719,0.06136829058329264,0.06404372321234808,0.06671915584140353,0.06939458847045898],"values":{"dtype":"f8","bdata":"+4J5P4cgqT9i8uaZYvutPwAAAADYw7E\\u002fZmZmZp4zpz\\u002ft8haHhT+xP2\\u002fApcgCgq8\\u002fS53V8TIQqj8DEVHV17uwPw=="}},{"label":"fit time","ticktext":["0.26","0.28","0.30","0.32","0.34","0.36","0.38","0.39","0.41","0.43"],"tickvals":[0.25623149871826173,0.2760389645894369,0.295846430460612,0.31565389633178714,0.33546136220296224,0.3552688280741374,0.3750762939453125,0.39488375981648766,0.4146912256876628,0.4344986915588379],"values":{"dtype":"f8","bdata":"1A5kVcZR0z9Ee\\u002fte0KzZP5qZmZnTzts\\u002fzczMzBhm0D9GGuKXFOvWP5qE519Seds\\u002f1HDvtsnC1j8ZU1rlZ6nYPw=="}},{"label":"score","ticktext":["0.542","0.546","0.551","0.555","0.560","0.564","0.569","0.573","0.578","0.582"],"tickvals":[0.542,0.5464444444444445,0.550888888888889,0.5553333333333333,0.5597777777777778,0.5642222222222223,0.5686666666666668,0.5731111111111111,0.5775555555555556,0.5820000000000001],"values":{"dtype":"f8","bdata":"OrTIdr6f4j+6SQwCK4fiP2ZmZmZmZuI\\u002f6Pup8dJN4j+TGARWDi3iP5ZDi2zn++E\\u002fmpmZmZmZ4T\\u002fy0k1iEFjhPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"OrTIdr6f4j+6SQwCK4fiP2ZmZmZmZuI\\u002f6Pup8dJN4j+TGARWDi3iP5ZDi2zn++E\\u002fmpmZmZmZ4T\\u002fy0k1iEFjhPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="13f8eaf5-22ca-4be8-93f7-63ca065d49b6" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("13f8eaf5-22ca-4be8-93f7-63ca065d49b6")) {                    Plotly.newPlot(                        "13f8eaf5-22ca-4be8-93f7-63ca065d49b6",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"WNZfxSjZH0AAAAAAAAAuQHjs3h0R9S1AAAAAAAAAFEBXCoIzf\\u002fIjQHw7fX8A6C1AcDNfh3kQJED+c6BQRPonQA=="}},{"label":"lr","ticktext":["0.015","0.022","0.033","0.049","0.073","0.108","0.160","0.237","0.351","0.520"],"tickvals":[-4.189664084302747,-3.796791280939163,-3.403918477575579,-3.0110456742119958,-2.6181728708484115,-2.2253000674848282,-1.8324272641212445,-1.4395544607576607,-1.046681657394077,-0.6538088540304932],"values":{"dtype":"f8","bdata":"dWqdSN7TCcC4rbyLAOzkvyN3J\\u002fPI+gbAbjk9TTfCEMCiZXE29eABwEQK8V92hwbAxjMVWW0z6b9juIrlC5\\u002f1vw=="}},{"label":"score time","ticktext":["0.033","0.036","0.040","0.044","0.048","0.052","0.056","0.059","0.063","0.067"],"tickvals":[0.032575798034667966,0.03641036881340874,0.04024493959214952,0.0440795103708903,0.047914081149631076,0.05174865192837185,0.055583222707112634,0.05941779348585341,0.06325236426459419,0.06708693504333496],"values":{"dtype":"f8","bdata":"rdyzhDdbpj+Su436E2OuPwAAAACcLLE\\u002fZmZmZsatoD9AJZvMuTeqPwAAAACcLLE\\u002ff0Sl3j8hrT9Xq1ACT7avPw=="}},{"label":"fit time","ticktext":["0.26","0.28","0.30","0.32","0.34","0.36","0.38","0.39","0.41","0.43"],"tickvals":[0.2617846965789795,0.2807356357574463,0.2996865749359131,0.3186375141143799,0.3375884532928467,0.3565393924713135,0.3754903316497803,0.3944412708282471,0.4133922100067139,0.4323431491851807],"values":{"dtype":"f8","bdata":"1fnat3kG0z9tdiKXn\\u002fXZP5qZmZmCq9s\\u002fmpmZmRTB0D9obLamd77VP\\u002fpDWB2wXNs\\u002fcNrbQDZO1T+om1a9rM3WPw=="}},{"label":"score","ticktext":["0.542","0.546","0.551","0.555","0.560","0.564","0.569","0.573","0.578","0.582"],"tickvals":[0.542,0.5464444444444445,0.550888888888889,0.5553333333333333,0.5597777777777778,0.5642222222222223,0.5686666666666668,0.5731111111111111,0.5775555555555556,0.5820000000000001],"values":{"dtype":"f8","bdata":"OrTIdr6f4j+6SQwCK4fiP2ZmZmZmZuI\\u002f6Pup8dJN4j+TGARWDi3iP5ZDi2zn++E\\u002fmpmZmZmZ4T\\u002fy0k1iEFjhPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"OrTIdr6f4j+6SQwCK4fiP2ZmZmZmZuI\\u002f6Pup8dJN4j+TGARWDi3iP5ZDi2zn++E\\u002fmpmZmZmZ4T\\u002fy0k1iEFjhPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br />
@@ -14635,8 +14635,8 @@ X.assign(
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_e5de73b0-wrapper" hidden>
-    <template id="report_e5de73b0-template">
+<div id="report_bc80b4f4-wrapper" hidden>
+    <template id="report_bc80b4f4-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -16061,7 +16061,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="569f1aad"
+                id="b8f41825"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -16091,7 +16091,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="b9268326"
+                id="09ad4dd3"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -16125,7 +16125,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="a7396a0c"
+                id="45605d75"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -16173,7 +16173,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="8fd992f0"
+                id="81a7ab97"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16201,7 +16201,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="6bb6e4af"
+                id="afe8ecf8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16231,7 +16231,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="b8a6f1e7"
+                id="bffa8487"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16265,7 +16265,7 @@ data-spans_\_0_\_1
 
 
                 <th
-                id="ea47d940"
+                id="6c5ebf77"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16293,7 +16293,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="92c3e8d3"
+                id="e195bdde"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16323,7 +16323,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="42bd1231"
+                id="4a8d752a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16357,7 +16357,7 @@ data-spans_\_1_\_1
 
 
                 <th
-                id="1b1eec41"
+                id="85a83609"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16385,7 +16385,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="4a66be1f"
+                id="12f54f30"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16415,7 +16415,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="38450ebc"
+                id="26a7b4c0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16449,7 +16449,7 @@ data-spans_\_2_\_1
 
 
                 <th
-                id="b8201406"
+                id="3f42b24b"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16477,7 +16477,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="69f466af"
+                id="677c223f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16507,7 +16507,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="b9f77482"
+                id="c028c895"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16541,7 +16541,7 @@ data-spans_\_3_\_1
 
 
                 <th
-                id="bb914796"
+                id="311d3383"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16569,7 +16569,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="73c7cd70"
+                id="8cb68286"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16599,7 +16599,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="f24d5744"
+                id="ed463f9e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16673,7 +16673,7 @@ data-spans_\_4_\_1
 
 
                 <th
-                id="2b7af948"
+                id="3c2e9d9e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16701,7 +16701,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="3a317274"
+                id="0ea96cc6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16731,7 +16731,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="478710d9"
+                id="d16fbc44"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16765,7 +16765,7 @@ data-spans_\_5_\_1
 
 
                 <th
-                id="868ab3b7"
+                id="37988cef"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16793,7 +16793,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="79ab985c"
+                id="b8fe0282"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16823,7 +16823,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="0f4f1f11"
+                id="af3673bf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16857,7 +16857,7 @@ data-spans_\_6_\_1
 
 
                 <th
-                id="86b4760b"
+                id="2ccb0b4f"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16885,7 +16885,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="20611a89"
+                id="9cdee869"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16915,7 +16915,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="5953a5a6"
+                id="bba7d304"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16949,7 +16949,7 @@ data-spans_\_7_\_1
 
 
                 <th
-                id="75820b62"
+                id="dbb20776"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16977,7 +16977,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="6968b6ca"
+                id="b7cb0434"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17015,7 +17015,7 @@ data-spans_\_8_\_0
 
 
                 <td
-                id="5065c3db"
+                id="59ceb01c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17049,7 +17049,7 @@ data-spans_\_8_\_1
 
 
                 <th
-                id="3883f067"
+                id="86695602"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -17077,7 +17077,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="6716edcf"
+                id="8f0b4af1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17107,7 +17107,7 @@ data-spans_\_9_\_0
 
 
                 <td
-                id="8e7b3ecc"
+                id="441c78ff"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17780,7 +17780,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_e5de73b0">
+    <skrub-table-report class="report" id="report_bc80b4f4">
     </skrub-table-report>
 
     <script type="module">
@@ -18884,7 +18884,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_e5de73b0-wrapper-fallback">
+<div id="report_bc80b4f4-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -18895,8 +18895,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_e5de73b0-wrapper").removeAttribute("hidden");
- document.getElementById("report_e5de73b0-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_bc80b4f4-wrapper").removeAttribute("hidden");
+ document.getElementById("report_bc80b4f4-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -18976,8 +18976,8 @@ X.skb.apply(encoder, cols="text")
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_8e10f959-wrapper" hidden>
-    <template id="report_8e10f959-template">
+<div id="report_69ee25fa-wrapper" hidden>
+    <template id="report_69ee25fa-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -20402,7 +20402,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="a25ff469"
+                id="16092c9e"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -20432,7 +20432,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="b42484c0"
+                id="e37060d6"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20466,7 +20466,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="06b242f8"
+                id="0f80b99a"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20500,7 +20500,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="5b25ca10"
+                id="c20e7b9e"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20534,7 +20534,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="6279c18b"
+                id="c953dcb3"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20568,7 +20568,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="3308a7b5"
+                id="ca4daced"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20602,7 +20602,7 @@ data-spans_\_-1_\_4
 
 
                 <th
-                id="37084280"
+                id="c345af16"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20636,7 +20636,7 @@ data-spans_\_-1_\_5
 
 
                 <th
-                id="8bf4d64a"
+                id="fbc4a88e"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20670,7 +20670,7 @@ data-spans_\_-1_\_6
 
 
                 <th
-                id="ccecd76c"
+                id="0d91831c"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20704,7 +20704,7 @@ data-spans_\_-1_\_7
 
 
                 <th
-                id="f032c1b8"
+                id="7b877ecd"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20738,7 +20738,7 @@ data-spans_\_-1_\_8
 
 
                 <th
-                id="b48c9d92"
+                id="c242671a"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -20786,7 +20786,7 @@ data-spans_\_-1_\_9
 
 
                 <th
-                id="ef35e617"
+                id="bb812159"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -20814,7 +20814,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="19159618"
+                id="b453c2fa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20844,7 +20844,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="86745f2c"
+                id="0ce6216a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20874,7 +20874,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="3dbf7110"
+                id="3a8bc258"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20904,7 +20904,7 @@ data-spans_\_0_\_2
 
 
                 <td
-                id="835b81b7"
+                id="5aac2b5c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20934,7 +20934,7 @@ data-spans_\_0_\_3
 
 
                 <td
-                id="9456e076"
+                id="698188c9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20964,7 +20964,7 @@ data-spans_\_0_\_4
 
 
                 <td
-                id="85e8f22f"
+                id="8d1cde2d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20994,7 +20994,7 @@ data-spans_\_0_\_5
 
 
                 <td
-                id="2f8160c8"
+                id="b8f45819"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21024,7 +21024,7 @@ data-spans_\_0_\_6
 
 
                 <td
-                id="19142850"
+                id="6ef9c0cd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21054,7 +21054,7 @@ data-spans_\_0_\_7
 
 
                 <td
-                id="e68b71b2"
+                id="94840929"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21084,7 +21084,7 @@ data-spans_\_0_\_8
 
 
                 <td
-                id="70b7dfde"
+                id="71abf32b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21118,7 +21118,7 @@ data-spans_\_0_\_9
 
 
                 <th
-                id="d4edc8da"
+                id="1907ce59"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -21146,7 +21146,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="85ba568d"
+                id="80f04fd8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21176,7 +21176,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="d47d86d4"
+                id="0c065a8f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21206,7 +21206,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="3eec73a6"
+                id="0c191c6f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21236,7 +21236,7 @@ data-spans_\_1_\_2
 
 
                 <td
-                id="a7ab1dbd"
+                id="d6a52b68"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21266,7 +21266,7 @@ data-spans_\_1_\_3
 
 
                 <td
-                id="d3bf2e1a"
+                id="05fb6141"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21296,7 +21296,7 @@ data-spans_\_1_\_4
 
 
                 <td
-                id="643b1f58"
+                id="9939cf5d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21326,7 +21326,7 @@ data-spans_\_1_\_5
 
 
                 <td
-                id="bac064e0"
+                id="686efa0f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21356,7 +21356,7 @@ data-spans_\_1_\_6
 
 
                 <td
-                id="6e6f3353"
+                id="1150e9a0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21386,7 +21386,7 @@ data-spans_\_1_\_7
 
 
                 <td
-                id="5efdf3d5"
+                id="ea3dae0a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21416,7 +21416,7 @@ data-spans_\_1_\_8
 
 
                 <td
-                id="32a7aa0e"
+                id="88d67652"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21450,7 +21450,7 @@ data-spans_\_1_\_9
 
 
                 <th
-                id="a4a1d929"
+                id="251d7d3f"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -21478,7 +21478,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="d7069f91"
+                id="8363a055"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21508,7 +21508,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="99bca12d"
+                id="60a6c8c8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21538,7 +21538,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="dc1b2304"
+                id="99221777"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21568,7 +21568,7 @@ data-spans_\_2_\_2
 
 
                 <td
-                id="ca4a8652"
+                id="8754215e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21598,7 +21598,7 @@ data-spans_\_2_\_3
 
 
                 <td
-                id="acda1efb"
+                id="48cfc088"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21628,7 +21628,7 @@ data-spans_\_2_\_4
 
 
                 <td
-                id="38d93650"
+                id="f5227a4c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21658,7 +21658,7 @@ data-spans_\_2_\_5
 
 
                 <td
-                id="69ef8ad3"
+                id="aba0bb1f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21688,7 +21688,7 @@ data-spans_\_2_\_6
 
 
                 <td
-                id="60ebcc43"
+                id="b337b144"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21718,7 +21718,7 @@ data-spans_\_2_\_7
 
 
                 <td
-                id="6bf803e6"
+                id="b475f43e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21748,7 +21748,7 @@ data-spans_\_2_\_8
 
 
                 <td
-                id="2b76bae9"
+                id="698925d7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21782,7 +21782,7 @@ data-spans_\_2_\_9
 
 
                 <th
-                id="a39e7f36"
+                id="6bc33435"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -21810,7 +21810,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="7236c737"
+                id="f7df9f91"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21840,7 +21840,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="3bbacc3f"
+                id="8a523f2b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21870,7 +21870,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="fdc5a9cd"
+                id="6bd9e95a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21900,7 +21900,7 @@ data-spans_\_3_\_2
 
 
                 <td
-                id="8084c255"
+                id="65a68c93"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21930,7 +21930,7 @@ data-spans_\_3_\_3
 
 
                 <td
-                id="8c7b8bbe"
+                id="224e410d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21960,7 +21960,7 @@ data-spans_\_3_\_4
 
 
                 <td
-                id="50e45d46"
+                id="81e8a568"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -21990,7 +21990,7 @@ data-spans_\_3_\_5
 
 
                 <td
-                id="7814e922"
+                id="ce295fc3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22020,7 +22020,7 @@ data-spans_\_3_\_6
 
 
                 <td
-                id="b6e8f2dc"
+                id="46ce25dc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22050,7 +22050,7 @@ data-spans_\_3_\_7
 
 
                 <td
-                id="b4a3390b"
+                id="6c42754f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22080,7 +22080,7 @@ data-spans_\_3_\_8
 
 
                 <td
-                id="8dafbef6"
+                id="ca6c6135"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22114,7 +22114,7 @@ data-spans_\_3_\_9
 
 
                 <th
-                id="d699c6da"
+                id="2b05309c"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -22142,7 +22142,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="fd5633c5"
+                id="e70987ad"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22172,7 +22172,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="f8f6bbcb"
+                id="88c63db0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22202,7 +22202,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="c1c03ff9"
+                id="e6967c86"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22232,7 +22232,7 @@ data-spans_\_4_\_2
 
 
                 <td
-                id="652cd44c"
+                id="c5b8b30b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22262,7 +22262,7 @@ data-spans_\_4_\_3
 
 
                 <td
-                id="dccfa30c"
+                id="eca9cdc9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22292,7 +22292,7 @@ data-spans_\_4_\_4
 
 
                 <td
-                id="4c3dfa35"
+                id="8004d40a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22322,7 +22322,7 @@ data-spans_\_4_\_5
 
 
                 <td
-                id="54564b92"
+                id="2bfcbbd2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22352,7 +22352,7 @@ data-spans_\_4_\_6
 
 
                 <td
-                id="859a77fa"
+                id="e334709f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22382,7 +22382,7 @@ data-spans_\_4_\_7
 
 
                 <td
-                id="e441eeb6"
+                id="71842c71"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22412,7 +22412,7 @@ data-spans_\_4_\_8
 
 
                 <td
-                id="3201d8d2"
+                id="bb03a89b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22566,7 +22566,7 @@ data-spans_\_4_\_9
 
 
                 <th
-                id="88768ed1"
+                id="58f9cc31"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -22594,7 +22594,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="3196ef38"
+                id="aa37266d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22624,7 +22624,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="f0f2cb35"
+                id="10e53804"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22654,7 +22654,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="624e6e8d"
+                id="b8707236"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22684,7 +22684,7 @@ data-spans_\_5_\_2
 
 
                 <td
-                id="7d9610fa"
+                id="6b564ca9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22714,7 +22714,7 @@ data-spans_\_5_\_3
 
 
                 <td
-                id="3e198ab4"
+                id="c4b6576c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22744,7 +22744,7 @@ data-spans_\_5_\_4
 
 
                 <td
-                id="40bf4df6"
+                id="7b5c2641"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22774,7 +22774,7 @@ data-spans_\_5_\_5
 
 
                 <td
-                id="a06f2b4a"
+                id="87b6d225"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22804,7 +22804,7 @@ data-spans_\_5_\_6
 
 
                 <td
-                id="ec2b712b"
+                id="8eaff909"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22834,7 +22834,7 @@ data-spans_\_5_\_7
 
 
                 <td
-                id="3a709acd"
+                id="c56b6afd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22864,7 +22864,7 @@ data-spans_\_5_\_8
 
 
                 <td
-                id="443f08a7"
+                id="90077293"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22898,7 +22898,7 @@ data-spans_\_5_\_9
 
 
                 <th
-                id="481fa1e6"
+                id="34ea809a"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -22926,7 +22926,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="d6ce1567"
+                id="632ddd93"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22956,7 +22956,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="e3dabd19"
+                id="5708f2e9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22986,7 +22986,7 @@ data-spans_\_6_\_1
 
 
                 <td
-                id="4be105a1"
+                id="01f7ba82"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23016,7 +23016,7 @@ data-spans_\_6_\_2
 
 
                 <td
-                id="c0a9dcb3"
+                id="35102172"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23046,7 +23046,7 @@ data-spans_\_6_\_3
 
 
                 <td
-                id="60ced08f"
+                id="6b0cbc02"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23076,7 +23076,7 @@ data-spans_\_6_\_4
 
 
                 <td
-                id="e684ef7c"
+                id="364af2de"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23106,7 +23106,7 @@ data-spans_\_6_\_5
 
 
                 <td
-                id="ccbd5b15"
+                id="f463f30c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23136,7 +23136,7 @@ data-spans_\_6_\_6
 
 
                 <td
-                id="bf56cd03"
+                id="5fae7642"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23166,7 +23166,7 @@ data-spans_\_6_\_7
 
 
                 <td
-                id="05dce96c"
+                id="fa879b81"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23196,7 +23196,7 @@ data-spans_\_6_\_8
 
 
                 <td
-                id="38b9eb58"
+                id="78fab4b6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23230,7 +23230,7 @@ data-spans_\_6_\_9
 
 
                 <th
-                id="61361653"
+                id="b561d714"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -23258,7 +23258,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="66fce7d8"
+                id="83225269"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23288,7 +23288,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="5e279405"
+                id="57afa888"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23318,7 +23318,7 @@ data-spans_\_7_\_1
 
 
                 <td
-                id="1e4a0e85"
+                id="d057a1f2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23348,7 +23348,7 @@ data-spans_\_7_\_2
 
 
                 <td
-                id="7617f08d"
+                id="60f6042b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23378,7 +23378,7 @@ data-spans_\_7_\_3
 
 
                 <td
-                id="8084e4ea"
+                id="61f28c47"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23408,7 +23408,7 @@ data-spans_\_7_\_4
 
 
                 <td
-                id="52731c69"
+                id="c4846b40"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23438,7 +23438,7 @@ data-spans_\_7_\_5
 
 
                 <td
-                id="46d4d51f"
+                id="4d23569f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23468,7 +23468,7 @@ data-spans_\_7_\_6
 
 
                 <td
-                id="0af77e8e"
+                id="45b296d0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23498,7 +23498,7 @@ data-spans_\_7_\_7
 
 
                 <td
-                id="8ade5641"
+                id="d2c2815c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23528,7 +23528,7 @@ data-spans_\_7_\_8
 
 
                 <td
-                id="c740a8f5"
+                id="5c3e69c6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23562,7 +23562,7 @@ data-spans_\_7_\_9
 
 
                 <th
-                id="7bacc67c"
+                id="6545ecb4"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -23590,7 +23590,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="7061731e"
+                id="257e4099"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23620,7 +23620,7 @@ data-spans_\_8_\_0
 
 
                 <td
-                id="5d2d0fe8"
+                id="c8e7911f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23650,7 +23650,7 @@ data-spans_\_8_\_1
 
 
                 <td
-                id="cfa51192"
+                id="82124db8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23680,7 +23680,7 @@ data-spans_\_8_\_2
 
 
                 <td
-                id="2c15971f"
+                id="6653fc70"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23710,7 +23710,7 @@ data-spans_\_8_\_3
 
 
                 <td
-                id="831a5b5a"
+                id="ff69a8fd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23740,7 +23740,7 @@ data-spans_\_8_\_4
 
 
                 <td
-                id="97216524"
+                id="43a54f53"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23770,7 +23770,7 @@ data-spans_\_8_\_5
 
 
                 <td
-                id="5e8f9178"
+                id="2624d7ac"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23800,7 +23800,7 @@ data-spans_\_8_\_6
 
 
                 <td
-                id="bf6ea5ab"
+                id="0ed36843"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23830,7 +23830,7 @@ data-spans_\_8_\_7
 
 
                 <td
-                id="742bbb34"
+                id="aa2955fc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23860,7 +23860,7 @@ data-spans_\_8_\_8
 
 
                 <td
-                id="94c2acbe"
+                id="a120baa8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23894,7 +23894,7 @@ data-spans_\_8_\_9
 
 
                 <th
-                id="3bde5dd1"
+                id="f089d5c5"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -23922,7 +23922,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="149ce070"
+                id="19490cfa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23952,7 +23952,7 @@ data-spans_\_9_\_0
 
 
                 <td
-                id="0a9591ef"
+                id="6a946ce4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23982,7 +23982,7 @@ data-spans_\_9_\_1
 
 
                 <td
-                id="d8dd928f"
+                id="6c7d12cd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24012,7 +24012,7 @@ data-spans_\_9_\_2
 
 
                 <td
-                id="e76c6452"
+                id="61d2b7ee"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24042,7 +24042,7 @@ data-spans_\_9_\_3
 
 
                 <td
-                id="11c1b402"
+                id="3a9bfa64"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24072,7 +24072,7 @@ data-spans_\_9_\_4
 
 
                 <td
-                id="9447bf1c"
+                id="9023ae17"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24102,7 +24102,7 @@ data-spans_\_9_\_5
 
 
                 <td
-                id="62623df6"
+                id="fb8953d9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24132,7 +24132,7 @@ data-spans_\_9_\_6
 
 
                 <td
-                id="326644a0"
+                id="09a0420c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24162,7 +24162,7 @@ data-spans_\_9_\_7
 
 
                 <td
-                id="a0bc7089"
+                id="b5c12af1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24192,7 +24192,7 @@ data-spans_\_9_\_8
 
 
                 <td
-                id="a09f47eb"
+                id="4d8b49ae"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25867,7 +25867,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_8e10f959">
+    <skrub-table-report class="report" id="report_69ee25fa">
     </skrub-table-report>
 
     <script type="module">
@@ -26971,7 +26971,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_8e10f959-wrapper-fallback">
+<div id="report_69ee25fa-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -26982,8 +26982,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_8e10f959-wrapper").removeAttribute("hidden");
- document.getElementById("report_8e10f959-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_69ee25fa-wrapper").removeAttribute("hidden");
+ document.getElementById("report_69ee25fa-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -27006,6 +27006,3873 @@ hgb = HistGradientBoostingClassifier(
 ridge = RidgeClassifier(alpha=skrub.choose_float(0.01, 100, log=True, name="α"))
 classifier = skrub.choose_from({"hgb": hgb, "ridge": ridge}, name="classifier")
 pred = X.skb.apply(encoder).skb.apply(classifier, y=y)
+pred
+```
+
+<div class="output_subarea output_html rendered_html output_result">
+<div>
+<strong><samp>&lt;Apply HistGradientBoostingClassifier&gt;</samp></strong><br />
+<details >
+<summary style='cursor: pointer;'><samp>Show/Hide graph</samp></summary>
+
+
+<!-- Generated by graphviz version 14.1.2 (20260126.1125)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="222pt" height="146pt"
+ viewBox="0.00 0.00 222.00 146.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 142.17)">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-142.17 217.77,-142.17 217.77,4 -4,4"/>
+<!-- node_0 -->
+<g id="node_0" class="node">
+
+<g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1130_choices.py&quot;, line 229, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X, y = skrub.X(texts), skrub.y(labels)">
+<polygon fill="#c6d5f0" stroke="black" points="91.02,-134.17 33,-134.17 33,-112.78 91.02,-112.78 91.02,-134.17"/>
+<polygon fill="none" stroke="black" points="95.02,-138.17 29,-138.17 29,-108.78 95.02,-108.78 95.02,-138.17"/>
+<text xml:space="preserve" text-anchor="middle" x="62.01" y="-120.35" font-family="sans-serif" font-size="10.00">X: Var &#39;X&#39;</text>
+</a>
+</g>
+</g>
+<!-- node_1 -->
+<g id="node_1" class="node">
+
+<g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1130_choices.py&quot;, line 256, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;pred = X.skb.apply(encoder).skb.apply(classifier, y=y)">
+<polygon fill="none" stroke="black" points="124.02,-75.78 0,-75.78 0,-54.39 124.02,-54.39 124.02,-75.78"/>
+<text xml:space="preserve" text-anchor="middle" x="62.01" y="-61.96" font-family="sans-serif" font-size="10.00">Apply MinHashEncoder</text>
+</a>
+</g>
+</g>
+<!-- node_0&#45;&gt;node_1 -->
+<g id="edge3" class="edge">
+
+<path fill="none" stroke="black" d="M62.01,-108.54C62.01,-101.32 62.01,-92.4 62.01,-84.61"/>
+<polygon fill="black" stroke="black" points="64.46,-84.66 62.01,-77.66 59.56,-84.66 64.46,-84.66"/>
+</g>
+<!-- node_3 -->
+<g id="node_3" class="node">
+
+<g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1130_choices.py&quot;, line 256, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;pred = X.skb.apply(encoder).skb.apply(classifier, y=y)">
+<polygon fill="none" stroke="black" points="213.77,-21.39 22.25,-21.39 22.25,0 213.77,0 213.77,-21.39"/>
+<text xml:space="preserve" text-anchor="middle" x="118.01" y="-7.57" font-family="sans-serif" font-size="10.00">Apply HistGradientBoostingClassifier</text>
+</a>
+</g>
+</g>
+<!-- node_1&#45;&gt;node_3 -->
+<g id="edge1" class="edge">
+
+<path fill="none" stroke="black" d="M72.81,-53.98C80.86,-46.45 92.02,-36.01 101.24,-27.38"/>
+<polygon fill="black" stroke="black" points="102.7,-29.37 106.14,-22.8 99.35,-25.79 102.7,-29.37"/>
+</g>
+<!-- node_2 -->
+<g id="node_2" class="node">
+
+<g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1130_choices.py&quot;, line 229, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X, y = skrub.X(texts), skrub.y(labels)">
+<polygon fill="#fad9c6" stroke="black" points="201.89,-75.78 146.12,-75.78 146.12,-54.39 201.89,-54.39 201.89,-75.78"/>
+<polygon fill="none" stroke="black" points="205.89,-79.78 142.12,-79.78 142.12,-50.39 205.89,-50.39 205.89,-79.78"/>
+<text xml:space="preserve" text-anchor="middle" x="174.01" y="-61.96" font-family="sans-serif" font-size="10.00">y: Var &#39;y&#39;</text>
+</a>
+</g>
+</g>
+<!-- node_2&#45;&gt;node_3 -->
+<g id="edge2" class="edge">
+
+<path fill="none" stroke="black" d="M159,-50.05C151.51,-43.04 142.42,-34.54 134.71,-27.32"/>
+<polygon fill="black" stroke="black" points="136.51,-25.65 129.73,-22.66 133.16,-29.23 136.51,-25.65"/>
+</g>
+</g>
+</svg>
+<br /><br />
+</details>
+<strong><samp>Result:</samp></strong>
+
+<div id="report_78b80d0f-wrapper" hidden>
+    <template id="report_78b80d0f-template">
+        <style>
+         /\*!
+Pure v3.0.0
+Copyright 2013 Yahoo!
+Licensed under the BSD License.
+https://github.com/pure-css/pure/blob/master/LICENSE
+\*/
+/\*!
+normalize.css v | MIT License | https://necolas.github.io/normalize.css/
+Copyright (c) Nicolas Gallagher and Jonathan Neal
+\*/
+/\*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css \*/html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}html{font-family:sans-serif}.hidden,[hidden]{display:none!important}.pure-img{max-width:100%;height:auto;display:block}
+
+/\*\*
+ \* All variables are centralized here.
+ \* This opens a possibility to create themes.
+ \*
+ \* A note on variable naming convention:
+ \* Proposal here is to use a consistent pattern: --what-where-variation-interactivity
+ \* \`what\` could be colors for now but may scale to sizes
+ \* \`where\` defines in which css rules the variable should be used (background for background, text for font color, ...)
+ \* \`variation\` values may be variable according to context a title may not have exactly the same color as a subtitle for example
+ \* \`interactivity\` value on hover for example
+ \*/
+
+:host {
+    --base-size: 1em;
+
+    /\* typography \*/
+    --font-size-xs: calc(0.8 \* var(--base-size));
+    --font-size-s: calc(0.9 \* var(--base-size));
+    --font-size-m: var(--base-size);
+    --font-size-l: calc(1.2 \* var(--base-size));
+    --font-size-xl: calc(1.5 \* var(--base-size));
+    --line-height: 1.5;
+    --font-family-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo,
+        Consolas, "DejaVu Sans Mono", Liberation Mono, monospace;
+
+    /\* buttons \*/
+    --button-size-xs: calc(1.6 \* var(--base-size));
+    --button-size-s: calc(1.8 \* var(--base-size));
+    --button-size-m: calc(2.0 \* var(--base-size));
+
+    /\* spacings \*/
+    --spacing-xs: calc(0.125 \* var(--base-size));
+    --spacing-s: calc(0.25 \* var(--base-size));
+    --spacing-m: calc(0.5 \* var(--base-size));
+    --spacing-l: calc(1 \* var(--base-size));
+    --spacing-xl: calc(1.2 \* var(--base-size));
+    --spacing-xxl: calc(1.5 \* var(--base-size));
+
+    /\* strokes & radii \*/
+    --border-s: 1px;
+    --border-m: 2px;
+    --radius: var(--spacing-s);
+
+    /\* branding \*/
+    --color-branding-orange: #f89939;
+    --color-branding-blue: #3499cd;
+
+    /\* animations \*/
+    --animation-duration: 0.3s;
+    --animation-easing: ease;
+}
+
+#report.light {
+    /\* backgrounds \*/
+    --color-background-primary: white;
+    --color-background-secondary: #f0f0f0;
+    --color-background-tertiary: #fafafa;
+    --color-background-quaternary: #d2d2d2;
+    --color-background-highlight-primary: #d6f5d6;
+    --color-background-active: #ffffaa;
+    --color-background-info: #0f4e9b;
+    --color-background-card: #f5fff5;
+    --color-background-card-header: #d6f5d6;
+
+    /\* buttons \*/
+    --color-background-button-primary: #e0e0e0;
+    --color-background-button-primary-hover: #eee;
+    --color-background-button-primary-active: #ccc;
+    --color-background-button-secondary: transparent;
+    --color-background-button-secondary-hover: #84e184;
+    --color-background-button-secondary-active: #eafaea;
+    --color-background-button-tertiary-hover: #0c3e7c;
+
+    /\* texts \*/
+    --color-text-primary: black;
+    --color-text-secondary: #555;
+    --color-text-success: #006600;
+    --color-text-info: white;
+    --color-text-warning: #ff6600;
+    --color-text-critical: #dd0000;
+    --color-text-link: #0000ee;
+    --color-text-visited: #551a8b;
+
+    /\* borders \*/
+    --color-border-primary: #aaa;
+    --color-border-secondary: #bfbfbf;
+    --color-border-card: #9fce9f;
+
+    /\* shadows \*/
+    --color-shadow: hsl(0, 0%, 63%);
+    --color-shadow-keyboard: var(--color-border-secondary);
+}
+
+#report.dark {
+    /\* backgrounds \*/
+    --color-background-primary: #202020;
+    --color-background-secondary: #242424;
+    --color-background-tertiary: #2b2b2b;
+    --color-background-quaternary: #353535;
+    --color-background-highlight-primary: #512ca4;
+    --color-background-active: #1A6154;
+    --color-background-info: #0f4e9b;
+    --color-background-card-header: #392662;
+    --color-background-card: #2c2833;
+
+    /\* buttons \*/
+    --color-background-button-primary: #212121;
+    --color-background-button-primary-hover: #313131;
+    --color-background-button-primary-active: #353535;
+    --color-background-button-secondary: transparent;
+    --color-background-button-secondary-hover: #457b9d;
+    --color-background-button-secondary-active: #1d3557;
+    --color-background-button-tertiary-hover: #0c3e7c;
+
+    /\* texts \*/
+    --color-text-primary: white;
+    --color-text-secondary: #d4d4d4;
+    --color-text-success: #6ED8CC;
+    --color-text-info: white;
+    --color-text-warning: #E8B254;
+    --color-text-critical: #F4A4A4;
+    --color-text-link: #8c8cff;
+    --color-text-visited: #ffadff;
+
+    /\* borders \*/
+    --color-border-primary: #666;
+    --color-border-secondary: #444;
+    --color-border-card: #6549a1;
+
+    /\* shadows \*/
+    --color-shadow: #0f0f0f;
+    --color-shadow-keyboard: var(--color-border-secondary);
+}
+/\* Default styles for html elements \*/
+/\* -------------------------------- \*/
+
+:host {
+    font-size: var(--font-size-m);
+    line-height: var(--line-height);
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+\*,
+\*::before,
+\*::after {
+    box-sizing: border-box;
+}
+
+#report {
+    background: var(--color-background-primary);
+    color: var(--color-text-primary);
+    color-scheme: light dark;
+    border-radius: var(--radius, 0);
+    max-width: max-content;
+}
+
+a:link {
+    color: var(--color-text-link);
+}
+
+a:visited {
+    color: var(--color-text-visited);
+}
+
+h1 {
+    font-size: var(--font-size-xl);
+}
+
+button {
+    background: var(--color-background-button-primary);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border-primary);
+    border-radius: var(--radius);
+    padding: var(--spacing-s) var(--spacing-m);
+}
+
+button:hover {
+    background: var(--color-background-button-primary-hover);
+}
+
+button:active {
+    background: var(--color-background-button-primary-active);
+}
+
+button > \* {
+    pointer-events: none;
+}
+
+select {
+    background: var(--color-background-button-primary);
+    color: var(--color-text-primary);
+    box-shadow: none;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border-primary);
+}
+
+input[type="checkbox"] {
+    width: var(--font-size-s);
+}
+
+/\* pure.css / Normalize.css overrides the default firefox blue ring around focussed \*/
+/\* elements with something almost impossible to see, making it impossible to use \*/
+/\* tab navigation. We revert it to the browser's appropriate default. \*/
+#report :focus-visible {
+    outline: revert;
+}
+
+:is(select, summary, button) {
+    cursor: pointer;
+}
+
+summary > \* {
+    display: inline;
+}
+
+p {
+    margin: var(--spacing-m) 0;
+}
+
+code {
+    overflow-wrap: anywhere;
+}
+
+pre {
+    margin: 0;
+}
+
+code,
+pre {
+    font-family: var(--font-family-monospace);
+    font-size: var(--font-size-s);
+}
+
+table {
+    font-size: var(--font-size-m);
+}
+
+#report :is(td, th) {
+    padding: var(--spacing-s) var(--spacing-m);
+    white-space: nowrap;
+}
+
+/\* Align the items of definition lists, used to show the columns metadata (number \*/
+/\* of null values, mean, etc) \*/
+
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+    column-gap: var(--spacing-m);
+    margin: 0;
+}
+
+dt {
+    grid-column-start: 1;
+    font-weight: bold;
+    justify-self: end;
+}
+
+dt::after {
+    content: ":";
+}
+
+dd {
+    grid-column-start: 2;
+    justify-self: start;
+    margin: 0;
+}
+
+/\* Generic utility classes \*/
+/\* ----------------------- \*/
+
+:is([data-hidden], [data-excluded-by-column-filter]) {
+    display: none !important;
+}
+
+[data-not-visible] {
+    visibility: hidden;
+}
+
+.wrap-long-name {
+    overflow-wrap: anywhere;
+}
+
+.margin-r-m {
+    margin-inline-end: var(--spacing-m);
+}
+
+.margin-v-m {
+    margin-block-start: var(--spacing-m);
+    margin-block-end: var(--spacing-m);
+}
+
+.margin-t-s {
+    margin-top: var(--spacing-s);
+}
+
+.margin-t-m {
+    margin-top: var(--spacing-m);
+}
+
+.padding-b-s {
+    padding-bottom: var(--spacing-s);
+}
+
+.horizontal-scroll {
+    overflow-x: auto;
+}
+
+/\* Wrap a table by making it scrollable and placing a fixed border at the bottom. \*/
+.vertical-scroll-table-wrapper {
+    overflow-y: auto;
+    max-height: 35em;
+    border-bottom: 1px solid var(--color-border-secondary);
+}
+
+.vertical-scroll-table-wrapper > table {
+    /\* Already added by the wrapper \*/
+    border-bottom: 0px;
+}
+
+/\* Make the header of a table sticky; #report is here to make it more specific
+   than the default table styling. \*/
+#report .sticky-header-table {
+    border-collapse: separate;
+    border-left: none;
+    border-top: none;
+}
+
+#report .sticky-header-table > thead > tr > th {
+  position: sticky;
+  top: 0px;
+  border-top: 1px solid var(--color-border-secondary);
+  border-bottom: 1px solid var(--color-border-secondary);
+  background-color: var(--color-background-quaternary);
+}
+
+.select-all {
+    user-select: all;
+}
+
+.select-none {
+    user-select: none;
+}
+
+.wrapper {
+    padding-inline-start: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+    padding-block-end: var(--spacing-m);
+}
+
+/\* Special-case the article (container) \*/
+article.wrapper {
+    padding-block-end: 0;
+}
+
+.flow > \* + \* {
+    margin-top: var(--spacing-m);
+}
+
+.text {
+    max-width: 100%;
+}
+
+.shrink {
+    display: flex;
+}
+
+.shrink > \* {
+    width: 0;
+    flex-grow: 1;
+}
+
+.shrinkable-text {
+    flex-basis: 20em;
+    flex-grow: 1;
+}
+
+.flex {
+    display: flex;
+    gap: var(--spacing-m);
+    align-items: center;
+}
+
+.gap-l {
+    gap: var(--spacing-xl);
+}
+
+.flex-reverse {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap > \* {
+    margin: 0;
+}
+
+#report .elided {
+    max-width: 70ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#report .elided-short {
+    max-width: 30ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+:is(.ok, .warning, .critical) {
+    font-weight: bold;
+}
+
+.ok {
+    color: var(--color-text-success);
+}
+
+.warning {
+    color: var(--color-text-warning);
+}
+
+.critical {
+    color: var(--color-text-critical);
+}
+
+.box-shadow {
+    box-shadow: 0.3px 0.5px 0.7px var(--color-shadow),
+        0.8px 1.6px 2px -0.8px var(--color-shadow),
+        2.1px 4.1px 5.2px -1.7px var(--color-shadow),
+        5px 10px 12.6px -2.5px var(--color-shadow);
+}
+
+/\* Misc tweaks \*/
+/\* ----------- \*/
+
+#report {
+    padding-top: var(--spacing-s);
+}
+
+#report svg {
+    max-width: 100%;
+}
+
+.report-header {
+    font-size: var(--font-size-l);
+    padding-block-start: var(--spacing-s);
+    padding-block-end: var(--spacing-s);
+}
+
+.report-header > h1 {
+    margin: 0;
+}
+
+.important-note {
+    background-color: var(--color-background-highlight-primary);
+    padding: var(--spacing-m);
+    border-radius: var(--radius);
+}
+
+.alert-info-dismissable {
+    position: relative;
+    padding: var(--spacing-m);
+    background-color: var(--color-background-info);
+    border-color: var(--color-border-info);
+    color: var(--color-text-info);
+    border-radius: var(--radius);
+    margin-bottom: var(--spacing-m);
+}
+
+.alert-dismiss-button {
+    height: var(--button-size-xs);
+    width: var(--button-size-xs);
+
+    padding: var(--spacing-s);
+    border: none;
+    border-radius: var(--radius);
+    background-color: var(--color-background-button-secondary);
+
+    transition: background-color var(--animation-duration)
+        var(--animation-easing);
+}
+
+.alert-dismiss-button:hover {
+    background-color: var(--color-background-button-tertiary-hover);
+}
+
+.alert-dismiss-button:active {
+    background-color: var(--color-background-button-secondary-active);
+}
+
+.alert-dismiss-button svg {
+    fill: var(--color-text-info);
+    stroke: var(--color-text-info);
+    stroke-width: var(--border-s);
+}
+
+
+.dismiss-container {
+    position: absolute;
+    top: var(--spacing-xs);
+    right: var(--spacing-xs);
+}
+.pure-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: var(--border-s) solid var(--color-border-secondary);
+}
+
+.pure-table td,
+.pure-table th {
+    border-left: var(--border-s) solid var(--color-border-secondary);
+    border-width: 0 0 0 var(--border-s);
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: var(--sacing-xs) var(--sacing-s);
+}
+
+.pure-table thead {
+    text-align: left;
+    vertical-align: bottom;
+    background-color: var(--color-background-quaternary);
+}
+
+.pure-table-bordered td {
+    border-bottom: var(--border-s) solid var(--color-border-secondary);
+}
+.pure-table-bordered tbody > tr:last-child > td {
+    border-bottom-width: 0;
+}
+
+.pure-table-horizontal td,
+.pure-table-horizontal th {
+    border-bottom: var(--border-s) solid var(--color-border-secondary);
+}
+.pure-table-horizontal tbody > tr:last-child > td {
+    border-bottom-width: 0;
+}
+/\* Boxes with copy-to-clipboard buttons \*/
+/\* ------------------------------------ \*/
+
+/\* Those are used to quickly copy some code snippets, column names, etc. \*/
+
+:host {
+    --box-min-width: calc(6 \* var(--base-size));
+    --box-max-width: calc(40 \* var(--base-size));
+    --table-box-max-width: calc(55 \* var(--base-size));
+    --box-min-height: calc(1.9 \* var(--base-size));
+    --box-max-height: calc(10 \* var(--base-size));
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border: var(--border-s) solid var(--color-border-primary);
+    padding: 0;
+    min-width: var(--box-min-width);
+    max-width: var(--box-max-width);
+    min-height: var(--box-min-height);
+    max-height: var(--box-max-height);
+}
+
+.box pre {
+    overflow-x: auto;
+    padding: var(--spacing-s);
+    padding-left: var(--spacing-m);
+    flex-grow: 1;
+    white-space: pre;
+}
+
+.copybutton {
+    margin: var(--spacing-xs);
+    padding: var(--spacing-s);
+    min-width: var(--button-size-s);
+    max-width: var(--button-size-s);
+    max-height: var(--button-size-s);
+    border-radius: 0;
+    border: none;
+    position: relative;
+}
+
+.copybutton-left {
+    order: -1;
+}
+
+.copybutton {
+    background: var(--color-background-button-primary);
+}
+
+.copybutton:hover {
+    background: var(--color-background-button-primary-hover);
+}
+
+.copybutton:active {
+    background: var(--color-background-button-primary-active);
+}
+
+.copybutton:not([data-show-checkmark]) > :not(:first-child) {
+    display: none;
+}
+
+.copybutton[data-show-checkmark] > :first-child {
+    display: none;
+}
+
+.copied-message {
+    font-size: var(--font-size-s);
+    font-weight: bold;
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+    padding: var(--spacing-s);
+    border-radius: var(--radius);
+    position: absolute;
+    top: var(--spacing-xs);
+    margin: 0;
+    right: calc(100% + var(--spacing-s));
+    filter: invert(1);
+}
+
+.copybutton-left .copied-message {
+    left: calc(100% + var(--spacing-s));
+    right: auto;
+}
+
+[data-shows-placeholder] {
+    color: var(--color-background-secondary);
+}
+
+.table-bar .box {
+    flex-grow: 1;
+    max-width: var(--table-box-max-width);
+}
+/\* The column summary cards \*/
+/\* ------------------------ \*/
+
+/\* Collection of column summary cards (as shown in the "column summaries" tab) \*/
+/\* --------------------------------------------------------------------------- \*/
+
+/\* The cards next to each other and horizontal scrolling. \*/
+.column-summary-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: var(--spacing-l);
+    width: max-content;
+}
+
+.column-summary-group > .card {
+    margin: 0;
+}
+
+/\* Individual column summary cards \*/
+/\* ------------------------------- \*/
+
+.card {
+    padding: 0;
+    margin: var(--spacing-l);
+    border-radius: var(--radius);
+    min-width: min-content;
+    border: 1px solid var(--color-border-card);
+    background-color: var(--color-background-card);
+}
+
+.card-header {
+    border-radius: var(--radius) var(--radius) 0 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: var(--spacing-l);
+
+    padding: var(--spacing-m);
+    margin-block-end: var(--spacing-m);
+    background-color: var(--color-background-card-header);
+    border-block-end: var(--border-s) solid var(--color-border-card);
+}
+
+.card-header > \* {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: var(--spacing-l);
+}
+
+.card-header input[type="checkbox"] {
+    margin-right: var(--spacing-s);
+}
+
+.column-summary-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/\* Grid of boxes with copybuttons for a column's most frequent values \*/
+
+.copybutton-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-m);
+    padding-block-start: var(--spacing-m);
+    padding-block-end: var(--spacing-m);
+}
+
+.grid-separator {
+    grid-column: 1/-1;
+    justify-self: left;
+}
+
+/\* Highlight min and max values when outliers were truncated from the histogram\*/
+
+.column-summary[data-has-low-outliers] .min-value {
+    color: var(--color-text-critical);
+    font-weight: bold;
+}
+
+.column-summary[data-has-high-outliers] .max-value {
+    color: var(--color-text-critical);
+    font-weight: bold;
+}
+
+/\* Aspects specific to the single card shown in the dataframe sample tab \*/
+/\* --------------------------------------------------------------------- \*/
+
+.columns-in-sample-tab {
+    margin-top: var(--spacing-m);
+}
+
+/\* Hide the container when it is empty \*/
+
+.columns-in-sample-tab:not(
+        :has([data-role="sample-column"]:not([data-hidden]))
+    ) {
+    display: none;
+}
+
+/\* The header has the same color as the selected cells in the table \*/
+
+.columns-in-sample-tab .card-header {
+    position: relative;
+    padding-right: calc(var(--button-size-s) + var(--spacing-m));
+}
+
+
+/\* Button for closing the card / deselecting the column in the table \*/
+
+.card .close-card-button {
+    height: var(--button-size-s);
+    width: var(--button-size-s);
+
+    padding: var(--spacing-s);
+    border: none;
+    border-radius: var(--radius);
+    background-color: var(--color-background-button-secondary);
+
+    position: absolute;
+    top: var(--spacing-s);
+    right: var(--spacing-s);
+
+    transition: background-color var(--animation-duration)
+        var(--animation-easing);
+}
+
+.card .close-card-button:hover {
+    background-color: var(--color-background-button-secondary-hover);
+}
+
+.card .close-card-button:active {
+    background-color: var(--color-background-button-secondary-active);
+}
+/\* The table showing the first few and last rows of the dataframe \*/
+/\* -------------------------------------------------------------- \*/
+
+td,
+th {
+  width: var(--spacing-xl);
+}
+
+tr {
+  height: var(--font-size-xs);
+}
+
+.table-with-selectable-cells {
+  --arrow-width: var(--base-size);
+}
+
+.table-with-selectable-cells {
+  margin: var(--border-m);
+  border: none;
+}
+
+.table-with-selectable-cells tbody {
+  border: var(--border-s) solid var(--color-border-secondary);
+}
+
+.table-with-selectable-cells .table-cell {
+  transition: background-color var(--animation-duration) var(--animation-easing);
+}
+
+.table-with-selectable-cells thead th {
+  vertical-align: top;
+  border: var(--border-s) solid var(--color-border-secondary);
+  background-color: var(--color-background-quaternary);
+}
+
+.table-with-selectable-cells tbody tr {
+  background-color: var(--color-background-tertiary);
+}
+
+.table-with-selectable-cells tbody tr:nth-child(2n -1) {
+  background-color: var(--color-background-secondary);
+}
+
+.table-with-selectable-cells thead tr .table-cell[data-is-in-active-column],
+.table-with-selectable-cells tbody tr .table-cell[data-is-in-active-column] {
+  background-color: var(--color-background-highlight-primary);
+}
+
+.table-with-selectable-cells
+  tbody
+  tr:nth-child(2n -1)
+  .table-cell[data-is-in-active-column] {
+  background-color: color-mix(
+    in srgb,
+    var(--color-background-highlight-primary),
+    var(--color-background-primary)
+  );
+}
+
+.table-with-selectable-cells thead tr .table-cell[data-is-active],
+.table-with-selectable-cells thead tr .table-cell[data-is-active]:focus,
+.table-with-selectable-cells tbody tr .table-cell[data-is-active],
+.table-with-selectable-cells tbody tr .table-cell[data-is-active]:focus {
+  background-color: var(--color-background-active);
+}
+
+.table-with-selectable-cells th[data-role="padding"] {
+  background-color: var(--color-background-primary);
+  border: none;
+  transition: none;
+}
+
+#report .table-with-selectable-cells th[data-role="columns-level-name"] {
+  text-align: right;
+  padding-right: calc(calc(2 \* var(--spacing-s)) + var(--arrow-width));
+  position: relative;
+}
+
+.table-with-selectable-cells th[data-role="columns-level-name"] > .arrow-icon {
+  position: absolute;
+  width: var(--arrow-width);
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: calc(-1 \* var(--arrow-width));
+  transform: translateX(calc(-1 \* var(--spacing-s) - var(--arrow-width)));
+  display: flex;
+  user-select: none;
+}
+
+.table-with-selectable-cells th[data-role="index-level-name"],
+.table-with-selectable-cells th[data-role="index-level-value"] {
+  background-color: var(--color-background-primary);
+  border: var(--border-s) solid var(--color-border-secondary);
+  text-align: right;
+}
+
+table:not(:focus-within):not(:has(:active)) .table-cell[data-is-active] {
+  outline: var(--border-m) dotted;
+}
+
+.table-cell[data-is-active]:focus {
+  outline-width: var(--border-m);
+  outline-style: solid;
+}
+
+#report .table-cell[data-is-active][data-just-copied]:focus {
+  outline-width: var(--border-m);
+  outline-style: dashed;
+}
+
+/\* The gap separating the head and the tail of the table \*/
+
+#report .elided-table-part,
+#report .elided-table-part td {
+  border: var(--border-m) dashed var(--color-border-secondary);
+  text-align: center;
+  border-top: 0;
+  border-bottom: 0;
+  background: var(--color-background-primary);
+}
+
+#report .ellipsis-icon {
+  display: flex;
+  flex-direction: column;
+  max-height: var(--spacing-xl);
+}
+
+#report
+  table:has([data-role="index-level-value"])
+  .elided-table-part
+  td:first-child
+  .ellipsis-icon
+  \* {
+  align-self: flex-end;
+}
+
+.table-bar-wrapper {
+  min-height: calc(var(--line-height) \* 1em + 2 \* var(--spacing-m));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: var(--spacing-s);
+}
+
+/\* Information below the table: dimensions and keyboard shortcuts \*/
+
+.table-footer {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: var(--spacing-xxl);
+  padding-top: var(--spacing-s);
+}
+
+.table-footer > \* {
+  flex-shrink: 1;
+}
+
+.keyboard-hints {
+  display: none;
+  flex-basis: max(0px, min(50%, calc((50% - 25ch) \* 99999)));
+  min-width: 0px;
+  height: 2em;
+  margin-bottom: calc(-1 \* var(--spacing-m));
+  margin-right: var(--spacing-s);
+  overflow: hidden;
+  flex-shrink: 10000;
+}
+/\*
+To make this computation binary, our two options are:
+- 40ch >= 50% -> flex-basis: 0 (no display of the buttons)
+- 40ch < 50% -> flex-basis: 50% (display of the buttons)
+
+The \*99999 makes it impossible to be in the intermediate regime where 0px < 50% - 40ch < 50%
+\*/
+.keyboard-hints-when-subsampling {
+  flex-basis: max(0px, min(50%, calc((50% - 40ch) \* 99999)));
+}
+
+.keyboard-hints > div {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2em;
+}
+
+:has(.table-with-selectable-cells:focus-within)
+  ~ .table-footer
+  .keyboard-hints {
+  display: block;
+}
+
+.keyboard-key {
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-monospace);
+  padding: 0 var(--spacing-m);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  border: var(--border-s) solid var(--color-border-secondary);
+  border-bottom: var(--border-s) solid var(--color-border-secondary);
+  box-shadow: inset 0 calc(-1 \* var(--border-s)) 0 var(--color-shadow-keyboard);
+  border-radius: 0.2em;
+  min-width: 1em;
+  text-align: center;
+  margin: var(--spacing-xs);
+  display: inline-block;
+  text-wrap: nowrap;
+  flex-shrink: 0;
+}
+.summary-stats-table {
+  margin: var(--border-m);
+
+  /\* "collapse" prevents reliably showing the right border of the sticky
+       column when it overlaps others \*/
+  border-collapse: separate;
+
+  /\* Avoid a border twice as thick on the left of the table due to separate
+       border (there is already a left border on the table cells). \*/
+  border-left: none;
+}
+
+.relative {
+  position: relative;
+}
+#report .summary-stats-table thead th {
+  background-color: var(--color-background-quaternary);
+}
+/\* pure.css puts the border on the left of each cell, but we want one on the
+   right of the second column which will overlap other columns. \*/
+#report .summary-stats-table tr > :is(th, td):nth-child(3) {
+  border-left: none;
+}
+
+/\* Make the second column sticky and allow it to overlap others. \*/
+#report .summary-stats-table tr > :is(th, td):nth-child(2) {
+  /\* We allow part of the column to be hidden to save space; seeing the end of
+       the column name should be enough to recognize to which column a row
+       belongs. \*/
+  --left-overlap: calc(4 \* var(--base-size));
+
+  position: sticky;
+  left: calc(-1 \* var(--left-overlap));
+  z-index: 10;
+
+  text-align: right;
+  max-width: calc(min(30ch, var(--left-overlap) + 40vw));
+
+  border-right: var(--border-s) solid var(--color-border-secondary);
+  /\* shadow not visible unless part of the table is actually hidden \*/
+  box-shadow: 0 0 0 0 var(--color-shadow);
+  transition: box-shadow var(--animation-duration) var(--animation-easing);
+}
+
+/\* Draw a larger & darker border when the 2nd column is overlapping others. \*/
+#report
+  [data-is-scrolling]
+  > .summary-stats-table
+  tr
+  > :is(th, td):nth-child(2) {
+  box-shadow: 2px 0 0 0 var(--color-shadow);
+  transition: box-shadow var(--animation-duration) var(--animation-easing);
+}
+
+/\* Elements in the 2nd column should have an opaque background as they overlap
+   others. \*/
+#report .summary-stats-table tr > th:nth-child(2) {
+  background-color: var(--color-background-quaternary);
+}
+#report .summary-stats-table tr > td:nth-child(2) {
+  background-color: var(--color-background-primary);
+}
+
+#report th.sort-button-group-wrapper {
+  --btn-width: var(--button-size-m);
+  --btn-group-width: calc(var(--btn-width) \* 2);
+  position: relative;
+  padding-top: var(--spacing-s);
+  padding-bottom: var(--spacing-s);
+  padding-right: calc(var(--spacing-m) + var(--btn-group-width));
+}
+
+.sort-button-group {
+    position: absolute;
+    top: 0;
+    bottom: var(--border-s);
+    right: calc(-1 \* var(--btn-group-width));
+    left: 100%;
+    transform: translateX(calc(-1 \* var(--btn-group-width)));
+    display: flex;
+    gap: 0;
+    padding: 0;
+}
+
+.sort-button {
+  box-sizing: border-box;
+  height: 100%;
+  flex-grow: 1;
+  margin: 0;
+  padding: var(--spacing-s);
+  border-radius: 0;
+  border: var(--border-s) solid var(--color-border-primary);
+  background-color: var(--color-background-button-primary);
+  color: var(--color-text-secondary);
+}
+
+.sort-button-group > .sort-button:focus-visible {
+  z-index: 2;
+}
+
+.sort-button-group > .sort-button ~ .sort-button {
+    margin-left: calc(-1 \* var(--border-s));
+}
+
+.sort-button:hover {
+  background-color: var(--color-background-button-primary-hover);
+}
+
+.sort-button:active {
+  background-color: var(--color-background-button-primary-active);
+}
+
+.sort-button[data-is-active]{
+    background: var(--color-background-button-secondary-active);
+    color: var(--color-text-primary);
+}
+/\* The report's tab panels (dataframe sample, column summaries, column associations) \*/
+/\* --------------------------------------------------------------------------------- \*/
+
+/\* The tabs (buttons that allow selecting the tab panel) \*/
+/\* ----------------------------------------------------- \*/
+
+.tab-list-wrapper {
+    align-items: flex-start;
+    border-bottom: var(--border-s) solid var(--color-border-primary);
+
+    column-gap: calc(var(--spacing-xs));
+    row-gap: var(--spacing-s);
+}
+
+.tab-list-scroller {
+    overflow: auto hidden;
+}
+
+.tab-list {
+    display: flex;
+    column-gap: var(--spacing-m);
+    padding-left: var(--spacing-m);
+    padding-right: var(--spacing-m);
+    align-items: stretch;
+    margin-bottom: calc(-1 \* var(--border-s));
+}
+
+.tab-list > \* {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: var(--border-m);
+}
+
+button.tab {
+    display: flex;
+    align-items: center;
+    column-gap: var(--spacing-s);
+    border: var(--border-s) solid transparent;
+    border-bottom: none;
+    border-radius: var(--radius) var(--radius) 0 0;
+    padding: var(--spacing-m);
+    padding-top: var(--spacing-s);
+    padding-bottom: calc(var(--spacing-s) + var(--border-s));
+    font-size: var(--font-size-m);
+    background-color: transparent;
+    color: var(--color-text-secondary);
+}
+
+.tab:hover {
+    color: var(--color-text-primary);
+}
+
+.tab[data-is-selected] {
+    border-color: var(--color-border-primary);
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+}
+
+/\* When a tab contains critical content we highlight the corresponding button so \*/
+/\* the user is more likely to click on it. ATM this is just used for the \*/
+/\* associations tab when some columns are very strongly associated. \*/
+
+.tab-list .tab .warning-sign {
+    display: none;
+    width: var(--font-size-m);
+    height: var(--font-size-m);
+    margin: var(--spacing-xs);
+}
+
+button.tab[data-has-warning] {
+    color: var(--color-text-critical);
+}
+
+button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
+    color: color-mix(in srgb, var(--color-text-critical) 75%, var(--color-text-primary));
+}
+
+.tab-list .tab[data-has-warning] .warning-sign {
+    display: inline-block;
+}
+
+/\* The panels (the main content) \*/
+/\* ----------------------------- \*/
+
+.tab-panel {
+    padding-top: var(--spacing-m);
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.report-bottom-border {
+    width: calc(100% - 2 \* var(--radius));
+    border-bottom: var(--border-s) solid var(--color-border-secondary);
+    margin: var(--spacing-s) auto 0 auto;
+}
+.toggletip-wrapper {
+    position: relative;
+}
+
+.toggletip {
+    display: inline-block;
+    --height-button: var(--font-size-xl);
+}
+
+.toggletip > button {
+    height: var(--height-button);
+    width: var(--height-button);
+    background-color: var(--color-background-info);
+    text-shadow: 0 0 1px color-mix(in srgb, var(--color-background-info) 20%, black);
+    font-family: var(--font-family-monospace);
+    font-weight: bold;
+    color: var(--color-text-info);
+    border: var(--border-s) solid var(--color-background-info);
+    border-radius: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggletip > .toggletip-info {
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(1.3 \* var(--height-button));
+    min-width: calc-size(max-content, min(size, 40dvw));
+    padding: var(--spacing-l);
+    background-color: var(--color-background-primary);
+    border: var(--border-m) solid var(--color-background-info);
+    border-radius: var(--radius);
+    z-index: 2;
+    visibility: hidden;
+    transition: visibility 0ms 400ms;
+}
+
+.toggletip:hover > .toggletip-info,
+.toggletip:has(button:is(:focus, :active, :hover)) > .toggletip-info {
+    visibility: visible;
+    transition-delay: 0ms;
+}
+
+.toggletip button:is(:focus, :active) {
+    outline: var(--border-m) solid var(--color-background-info);
+    outline-offset: var(--border-m);
+}
+.column-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-m);
+    align-items: flex-end;
+    margin-bottom: var(--spacing-s);
+    margin-left: var(--spacing-m);
+    margin-right: var(--spacing-s);
+}
+
+.column-filter > select {
+    max-width: 16ch;
+    text-overflow: ellipsis;
+    padding: var(--spacing-xs) var(--spacing-s);
+    font-size: var(--font-size-s);
+}
+        </style>
+        <div id="report"
+
+             data-test-plots-skipped
+             data-test-associations-skipped >
+
+
+
+
+
+
+
+
+
+
+<div>
+    <div class="flex-reverse tab-list-wrapper">
+        <div class="tab-list tab-list-scroller" data-manager="TabList" >
+            <div>
+                <button type="button" data-target-panel-id="dataframe-sample-panel"
+                    data-role="tab" data-is-selected data-test="sample-tab" class="tab"
+                    title="Display a few rows of the dataframe in a table.">Table</button>
+            </div>
+            <div>
+                <button type="button" data-target-panel-id="summary-statistics-panel"
+                    data-role="tab"  data-test="summary-statistics-tab" class="tab"
+                    title="Summary statistics for all columns.">Stats</button>
+            </div>
+
+        </div>
+        <div class="column-filter" data-manager="InvisibleInAssociationsTabPanel">
+    <select data-manager="ColumnFilter"
+            data-all-filters-base64="eyJhbGwoKSI6IHsiZGlzcGxheV9uYW1lIjogIkFsbCBjb2x1bW5zIiwgImNvbHVtbnMiOiBbMF19LCAiaGFzX251bGxzKDAuMCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJXaXRoIG51bGxzIiwgImNvbHVtbnMiOiBbXX0sICIofmhhc19udWxscygwLjApKSI6IHsiZGlzcGxheV9uYW1lIjogIldpdGhvdXQgbnVsbHMiLCAiY29sdW1ucyI6IFswXX0sICJudW1lcmljKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOdW1lcmljIiwgImNvbHVtbnMiOiBbXX0sICIofm51bWVyaWMoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tbnVtZXJpYyIsICJjb2x1bW5zIjogWzBdfSwgInN0cmluZygpIjogeyJkaXNwbGF5X25hbWUiOiAiU3RyaW5nIiwgImNvbHVtbnMiOiBbMF19LCAiKH5zdHJpbmcoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tc3RyaW5nIiwgImNvbHVtbnMiOiBbXX0sICJjYXRlZ29yaWNhbCgpIjogeyJkaXNwbGF5X25hbWUiOiAiQ2F0ZWdvcmljYWwiLCAiY29sdW1ucyI6IFtdfSwgIih+Y2F0ZWdvcmljYWwoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tY2F0ZWdvcmljYWwiLCAiY29sdW1ucyI6IFswXX0sICJhbnlfZGF0ZSgpIjogeyJkaXNwbGF5X25hbWUiOiAiRGF0ZXRpbWUiLCAiY29sdW1ucyI6IFtdfSwgIih+YW55X2RhdGUoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tZGF0ZXRpbWUiLCAiY29sdW1ucyI6IFswXX19"
+            data-test="column-filter-select"
+            autocomplete="off">
+        <optgroup label="Select columns to show:">
+        <option value="all()" selected disabled hidden>Filter columns</option>
+
+        <option value="all()">
+            All columns</option>
+
+        <option value="has_nulls(0.0)">
+            With nulls</option>
+
+        <option value="(~has_nulls(0.0))">
+            Without nulls</option>
+
+        <option value="numeric()">
+            Numeric</option>
+
+        <option value="(~numeric())">
+            Non-numeric</option>
+
+        <option value="string()">
+            String</option>
+
+        <option value="(~string())">
+            Non-string</option>
+
+        <option value="categorical()">
+            Categorical</option>
+
+        <option value="(~categorical())">
+            Non-categorical</option>
+
+        <option value="any_date()">
+            Datetime</option>
+
+        <option value="(~any_date())">
+            Non-datetime</option>
+
+        </optgroup>
+    </select>
+</div>
+    </div>
+</div>
+
+<div class="tab-panel" id="dataframe-sample-panel"
+    data-test="sample-panel">
+
+
+
+
+<article class="wrapper" data-show-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
+    data-hide-on="EMPTY_COLUMN_FILTER_SELECTED">
+
+
+<div class="table-bar-wrapper">
+<div class="flex flex-wrap table-bar"
+     data-manager="SampleTableBar"
+     data-hidden
+     data-show-on="SAMPLE_TABLE_CELL_ACTIVATED"
+     data-hide-on="SAMPLE_TABLE_CELL_DEACTIVATED">
+    <div class="box">
+        <pre id="sample-table-bar-display" data-role="content-display"></pre>
+
+<button
+    class="copybutton copybutton-left"
+    data-manager="CopyButton"
+    type="button"
+    data-target-id="sample-table-bar-display">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+</svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+</svg>
+    <div class="copied-message">Copied!</div>
+</button>
+
+    </div>
+</div>
+<div class="flex">
+    <div class="text important-note"
+         data-hide-on="SAMPLE_TABLE_CELL_ACTIVATED"
+         data-show-on="SAMPLE_TABLE_CELL_DEACTIVATED"
+         data-test="click-on-table-announcement">
+        Click a table cell for more info about its column.
+    </div>
+</div>
+</div>
+
+    <div class="horizontal-scroll" tabindex="-1">
+        <table class="pure-table pure-table-striped table-with-selectable-cells"
+               data-manager="SampleTable"
+        data-start-i="-2"
+        data-stop-i="10"
+        data-start-j="-1"
+        data-stop-j="1"
+        >
+
+
+            <thead>
+
+            <tr>
+
+
+                <th
+                id="9940949b"
+                class="table-cell elided-short "
+
+                data-role="padding"
+
+
+                data-i="-2"
+                data-j="-1"
+
+
+
+
+
+data-spans_\_-2_\_-1
+
+
+
+data-spans_\_-1_\_-1
+
+
+
+                rowspan="2"
+                colspan="1"
+                data-value-repr="None"
+                data-value-str="None"
+
+                ></th>
+
+
+                <th
+                id="b08deade"
+                class="table-cell elided-short clickable"
+
+                data-role="columns-level-value"
+
+
+                data-manager="SampleTableCell FilterableColumn"
+
+                data-i="-2"
+                data-j="0"
+
+
+
+
+
+data-spans_\_-2_\_0
+
+
+
+data-spans_\_-1_\_0
+
+
+
+                rowspan="2"
+                colspan="1"
+                data-value-repr="&#39;is_toxic&#39;"
+                data-value-str="is_toxic"
+
+                data-column-idx="0"
+
+                >is_toxic</th>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            </thead>
+
+
+
+            <tbody>
+
+            <tr>
+
+
+                <th
+                id="41d140d0"
+                class="table-cell elided-short clickable"
+
+                data-role="index-level-value"
+
+
+                data-manager="SampleTableCell "
+
+                data-i="0"
+                data-j="-1"
+
+
+
+
+
+data-spans_\_0_\_-1
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="507"
+                data-value-str="507"
+
+                >507</th>
+
+
+                <td
+                id="19a4834d"
+                class="table-cell elided-short clickable"
+
+                data-role="dataframe-data"
+
+
+                data-manager="SampleTableCell FilterableColumn"
+
+                data-i="0"
+                data-j="0"
+
+
+
+
+
+data-spans_\_0_\_0
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="&#39;Not Toxic&#39;"
+                data-value-str="Not Toxic"
+
+                data-column-idx="0"
+
+                >Not Toxic</td>
+
+            </tr>
+
+            <tr>
+
+
+                <th
+                id="03363488"
+                class="table-cell elided-short clickable"
+
+                data-role="index-level-value"
+
+
+                data-manager="SampleTableCell "
+
+                data-i="1"
+                data-j="-1"
+
+
+
+
+
+data-spans_\_1_\_-1
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="818"
+                data-value-str="818"
+
+                >818</th>
+
+
+                <td
+                id="acacf2f8"
+                class="table-cell elided-short clickable"
+
+                data-role="dataframe-data"
+
+
+                data-manager="SampleTableCell FilterableColumn"
+
+                data-i="1"
+                data-j="0"
+
+
+
+
+
+data-spans_\_1_\_0
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="&#39;Not Toxic&#39;"
+                data-value-str="Not Toxic"
+
+                data-column-idx="0"
+
+                >Not Toxic</td>
+
+            </tr>
+
+            <tr>
+
+
+                <th
+                id="3b7d34da"
+                class="table-cell elided-short clickable"
+
+                data-role="index-level-value"
+
+
+                data-manager="SampleTableCell "
+
+                data-i="2"
+                data-j="-1"
+
+
+
+
+
+data-spans_\_2_\_-1
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="452"
+                data-value-str="452"
+
+                >452</th>
+
+
+                <td
+                id="5cda6321"
+                class="table-cell elided-short clickable"
+
+                data-role="dataframe-data"
+
+
+                data-manager="SampleTableCell FilterableColumn"
+
+                data-i="2"
+                data-j="0"
+
+
+
+
+
+data-spans_\_2_\_0
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="&#39;Toxic&#39;"
+                data-value-str="Toxic"
+
+                data-column-idx="0"
+
+                >Toxic</td>
+
+            </tr>
+
+            <tr>
+
+
+                <th
+                id="0c234ed6"
+                class="table-cell elided-short clickable"
+
+                data-role="index-level-value"
+
+
+                data-manager="SampleTableCell "
+
+                data-i="3"
+                data-j="-1"
+
+
+
+
+
+data-spans_\_3_\_-1
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="368"
+                data-value-str="368"
+
+                >368</th>
+
+
+                <td
+                id="38d98bd3"
+                class="table-cell elided-short clickable"
+
+                data-role="dataframe-data"
+
+
+                data-manager="SampleTableCell FilterableColumn"
+
+                data-i="3"
+                data-j="0"
+
+
+
+
+
+data-spans_\_3_\_0
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="&#39;Toxic&#39;"
+                data-value-str="Toxic"
+
+                data-column-idx="0"
+
+                >Toxic</td>
+
+            </tr>
+
+            <tr>
+
+
+                <th
+                id="d61c1367"
+                class="table-cell elided-short clickable"
+
+                data-role="index-level-value"
+
+
+                data-manager="SampleTableCell "
+
+                data-i="4"
+                data-j="-1"
+
+
+
+
+
+data-spans_\_4_\_-1
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="242"
+                data-value-str="242"
+
+                >242</th>
+
+
+                <td
+                id="d314f2f3"
+                class="table-cell elided-short clickable"
+
+                data-role="dataframe-data"
+
+
+                data-manager="SampleTableCell FilterableColumn"
+
+                data-i="4"
+                data-j="0"
+
+
+
+
+
+data-spans_\_4_\_0
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="&#39;Not Toxic&#39;"
+                data-value-str="Not Toxic"
+
+                data-column-idx="0"
+
+                >Not Toxic</td>
+
+            </tr>
+
+            </tbody>
+
+
+
+            <tbody class="elided-table-part">
+                <tr>
+
+                    <td
+
+                        ><div class="ellipsis-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+</svg></div></td>
+
+                    <td
+
+                        data-manager="FilterableColumn"
+                        data-column-idx="0"
+                        data-role="ellipsis"
+
+                        ><div class="ellipsis-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+</svg></div></td>
+
+                </tr>
+            </tbody>
+
+
+
+            <tbody>
+
+            <tr>
+
+
+                <th
+                id="44e581e3"
+                class="table-cell elided-short clickable"
+
+                data-role="index-level-value"
+
+
+                data-manager="SampleTableCell "
+
+                data-i="5"
+                data-j="-1"
+
+
+
+
+
+data-spans_\_5_\_-1
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="767"
+                data-value-str="767"
+
+                >767</th>
+
+
+                <td
+                id="380b56c3"
+                class="table-cell elided-short clickable"
+
+                data-role="dataframe-data"
+
+
+                data-manager="SampleTableCell FilterableColumn"
+
+                data-i="5"
+                data-j="0"
+
+
+
+
+
+data-spans_\_5_\_0
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="&#39;Not Toxic&#39;"
+                data-value-str="Not Toxic"
+
+                data-column-idx="0"
+
+                >Not Toxic</td>
+
+            </tr>
+
+            <tr>
+
+
+                <th
+                id="cbd99fe2"
+                class="table-cell elided-short clickable"
+
+                data-role="index-level-value"
+
+
+                data-manager="SampleTableCell "
+
+                data-i="6"
+                data-j="-1"
+
+
+
+
+
+data-spans_\_6_\_-1
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="72"
+                data-value-str="72"
+
+                >72</th>
+
+
+                <td
+                id="8fd37755"
+                class="table-cell elided-short clickable"
+
+                data-role="dataframe-data"
+
+
+                data-manager="SampleTableCell FilterableColumn"
+
+                data-i="6"
+                data-j="0"
+
+
+
+
+
+data-spans_\_6_\_0
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="&#39;Toxic&#39;"
+                data-value-str="Toxic"
+
+                data-column-idx="0"
+
+                >Toxic</td>
+
+            </tr>
+
+            <tr>
+
+
+                <th
+                id="10c6aa38"
+                class="table-cell elided-short clickable"
+
+                data-role="index-level-value"
+
+
+                data-manager="SampleTableCell "
+
+                data-i="7"
+                data-j="-1"
+
+
+
+
+
+data-spans_\_7_\_-1
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="908"
+                data-value-str="908"
+
+                >908</th>
+
+
+                <td
+                id="066c8415"
+                class="table-cell elided-short clickable"
+
+                data-role="dataframe-data"
+
+
+                data-manager="SampleTableCell FilterableColumn"
+
+                data-i="7"
+                data-j="0"
+
+
+
+
+
+data-spans_\_7_\_0
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="&#39;Not Toxic&#39;"
+                data-value-str="Not Toxic"
+
+                data-column-idx="0"
+
+                >Not Toxic</td>
+
+            </tr>
+
+            <tr>
+
+
+                <th
+                id="35b6cee9"
+                class="table-cell elided-short clickable"
+
+                data-role="index-level-value"
+
+
+                data-manager="SampleTableCell "
+
+                data-i="8"
+                data-j="-1"
+
+
+
+
+
+data-spans_\_8_\_-1
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="235"
+                data-value-str="235"
+
+                >235</th>
+
+
+                <td
+                id="ebfb61e4"
+                class="table-cell elided-short clickable"
+
+                data-role="dataframe-data"
+
+
+                data-manager="SampleTableCell FilterableColumn"
+
+                data-i="8"
+                data-j="0"
+
+
+
+
+
+data-spans_\_8_\_0
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="&#39;Not Toxic&#39;"
+                data-value-str="Not Toxic"
+
+                data-column-idx="0"
+
+                >Not Toxic</td>
+
+            </tr>
+
+            <tr>
+
+
+                <th
+                id="c52a66a9"
+                class="table-cell elided-short clickable"
+
+                data-role="index-level-value"
+
+
+                data-manager="SampleTableCell "
+
+                data-i="9"
+                data-j="-1"
+
+
+
+
+
+data-spans_\_9_\_-1
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="37"
+                data-value-str="37"
+
+                >37</th>
+
+
+                <td
+                id="fd6f0446"
+                class="table-cell elided-short clickable"
+
+                data-role="dataframe-data"
+
+
+                data-manager="SampleTableCell FilterableColumn"
+
+                data-i="9"
+                data-j="0"
+
+
+
+
+
+data-spans_\_9_\_0
+
+
+
+                rowspan="1"
+                colspan="1"
+                data-value-repr="&#39;Toxic&#39;"
+                data-value-str="Toxic"
+
+                data-column-idx="0"
+
+                >Toxic</td>
+
+            </tr>
+
+            </tbody>
+
+
+        </table>
+    </div>
+
+    <div class="table-footer">
+    <div>
+        <strong>1,000</strong> rows ✕
+        <strong data-manager="ColumnFilterMatchCount"
+            data-test="n-columns-display">1</strong> columns
+
+    </div>
+    <div class=" keyboard-hints">
+        <div>
+
+<span class="keyboard-key">Ctrl-C</span>
+
+
+<span class="keyboard-key">←</span>
+
+
+<span class="keyboard-key">↑</span>
+
+
+<span class="keyboard-key">↓</span>
+
+
+<span class="keyboard-key">→</span>
+
+
+<span class="keyboard-key">Esc</span>
+
+        </div>
+    </div>
+    </div>
+
+
+    <div class="column-summary-group columns-in-sample-tab">
+
+
+
+
+
+<div class="card column-summary" id="col_0_in_sample_tab"
+    data-name-repr="&#39;is_toxic&#39;"
+    data-column-name="is_toxic"
+    data-column-idx="0"
+
+
+    data-manager="FilterableColumn SampleColumnSummary"
+
+     data-role="sample-column" data-hidden >
+    <div class="card-header">
+        <h3>
+
+            <span class="select-all wrap-long-name">is_toxic</span>
+        </h3>
+        <span>StringDtype</span>
+<button class="close-card-button"
+        type="button"
+        data-role="close-button">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg>
+</button>
+</div>
+    <div class="column-summary-content wrapper">
+        <div>
+            <dl>
+                <dt>Null values</dt>
+               <dd class="ok">0 (0.0%)</dd>
+
+
+                <dt>Unique values</dt>
+                <dd>
+                    2 (0.2%)
+
+                </dd>
+
+
+
+
+
+
+
+
+
+
+
+            </dl>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+
+    </div>
+</article>
+
+<div data-hidden
+     data-hide-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
+     data-show-on="EMPTY_COLUMN_FILTER_SELECTED"
+     class="text wrapper">
+<p>
+No columns match the selected filter: <strong data-manager="ColumnFilterName"></strong>. You can change the column filter in the dropdown menu above.
+</p>
+<p>
+    <button type="button"
+            data-manager="ResetColumnFilter"
+            data-test="show-all-columns-button">Show all columns</button>
+</p>
+</div>
+</div>
+<div class="tab-panel" id="summary-statistics-panel" data-hidden
+    data-test="summary-statistics-panel">
+
+
+
+
+<article class="wrapper relative margin-t-s" data-show-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
+    data-hide-on="EMPTY_COLUMN_FILTER_SELECTED">
+    <div class="horizontal-scroll" data-manager="StickyColTableScroller" data-sticky-col="2">
+        <table class="pure-table pure-table-bordered summary-stats-table" data-manager="SortableTable">
+            <thead>
+                <tr>
+
+<th class="sort-button-group-wrapper  " scope="col">
+
+    <span>Column</span>
+
+    <div class="sort-button-group">
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="ascending"
+            title="Sort from first column to last column">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M12.438 1.668V7H11.39V2.684h-.051l-1.211.859v-.969l1.262-.906h1.046z"/>
+  <path fill-rule="evenodd" d="M11.36 14.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.835 1.973-1.835 1.09 0 2.063.636 2.063 2.687 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="descending"
+            title="Sort from last column to first column">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.36 7.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.836 1.973-1.836 1.09 0 2.063.637 2.063 2.688 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M12.438 8.668V14H11.39V9.684h-.051l-1.211.859v-.969l1.262-.906h1.046zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+    </div>
+</th>
+
+
+<th class="sort-button-group-wrapper  elided" scope="col">
+
+    <span>Column name</span>
+
+    <div class="sort-button-group">
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="ascending"
+            title="Sort by column name from A to Z">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+  <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="descending"
+            title="Sort by column name from Z to A">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M12.96 7H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645z"/>
+  <path fill-rule="evenodd" d="M10.082 12.629 9.664 14H8.598l1.789-5.332h1.234L13.402 14h-1.12l-.419-1.371zm1.57-.785L11 9.688h-.047l-.652 2.156z"/>
+  <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+    </div>
+</th>
+
+
+<th class="sort-button-group-wrapper  " scope="col">
+
+    <span>dtype</span>
+
+    <div class="sort-button-group">
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="ascending"
+            title="Sort by dtype from A to Z">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+  <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="descending"
+            title="Sort by dtype from Z to A">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M12.96 7H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645z"/>
+  <path fill-rule="evenodd" d="M10.082 12.629 9.664 14H8.598l1.789-5.332h1.234L13.402 14h-1.12l-.419-1.371zm1.57-.785L11 9.688h-.047l-.652 2.156z"/>
+  <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+    </div>
+</th>
+
+
+<th class="sort-button-group-wrapper  " scope="col">
+
+    <span>Is sorted</span>
+
+    <div class="sort-button-group">
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="ascending"
+            title="Sort False on top">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+  <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="descending"
+            title="Sort True on top">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M12.96 7H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645z"/>
+  <path fill-rule="evenodd" d="M10.082 12.629 9.664 14H8.598l1.789-5.332h1.234L13.402 14h-1.12l-.419-1.371zm1.57-.785L11 9.688h-.047l-.652 2.156z"/>
+  <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+    </div>
+</th>
+
+
+
+<th class="sort-button-group-wrapper  " scope="col">
+
+    <span>Null values</span>
+
+    <div class="sort-button-group">
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="ascending"
+            title="Sort from columns with the fewest null values to columns with the most null values">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M12.438 1.668V7H11.39V2.684h-.051l-1.211.859v-.969l1.262-.906h1.046z"/>
+  <path fill-rule="evenodd" d="M11.36 14.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.835 1.973-1.835 1.09 0 2.063.636 2.063 2.687 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="descending"
+            title="Sort from columns with the most null values to columns with the fewest null values">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.36 7.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.836 1.973-1.836 1.09 0 2.063.637 2.063 2.688 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M12.438 8.668V14H11.39V9.684h-.051l-1.211.859v-.969l1.262-.906h1.046zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+    </div>
+</th>
+
+
+
+
+<th class="sort-button-group-wrapper  " scope="col">
+
+    <span>Unique values</span>
+
+    <div class="sort-button-group">
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="ascending"
+            title="Sort from columns with the fewest unique values to columns with the most unique values">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M12.438 1.668V7H11.39V2.684h-.051l-1.211.859v-.969l1.262-.906h1.046z"/>
+  <path fill-rule="evenodd" d="M11.36 14.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.835 1.973-1.835 1.09 0 2.063.636 2.063 2.687 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="descending"
+            title="Sort from columns with the most unique values to columns with the fewest unique values">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.36 7.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.836 1.973-1.836 1.09 0 2.063.637 2.063 2.688 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M12.438 8.668V14H11.39V9.684h-.051l-1.211.859v-.969l1.262-.906h1.046zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+    </div>
+</th>
+
+
+
+
+<th class="sort-button-group-wrapper  " scope="col">
+
+    <span>Mean</span>
+
+    <div class="sort-button-group">
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="ascending"
+            title="Sort from columns with the lowest mean to columns with the highest mean">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M12.438 1.668V7H11.39V2.684h-.051l-1.211.859v-.969l1.262-.906h1.046z"/>
+  <path fill-rule="evenodd" d="M11.36 14.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.835 1.973-1.835 1.09 0 2.063.636 2.063 2.687 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="descending"
+            title="Sort from columns with the highest mean to columns with the lowest mean">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.36 7.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.836 1.973-1.836 1.09 0 2.063.637 2.063 2.688 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M12.438 8.668V14H11.39V9.684h-.051l-1.211.859v-.969l1.262-.906h1.046zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+    </div>
+</th>
+
+
+
+
+<th class="sort-button-group-wrapper  " scope="col">
+
+    <span>Std</span>
+
+    <div class="sort-button-group">
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="ascending"
+            title="Sort from columns with the lowest standard deviation to columns with the highest standard deviation">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M12.438 1.668V7H11.39V2.684h-.051l-1.211.859v-.969l1.262-.906h1.046z"/>
+  <path fill-rule="evenodd" d="M11.36 14.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.835 1.973-1.835 1.09 0 2.063.636 2.063 2.687 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="descending"
+            title="Sort from columns with the highest standard deviation to columns with the lowest standard deviation">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.36 7.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.836 1.973-1.836 1.09 0 2.063.637 2.063 2.688 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M12.438 8.668V14H11.39V9.684h-.051l-1.211.859v-.969l1.262-.906h1.046zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+    </div>
+</th>
+
+
+
+
+<th class="sort-button-group-wrapper  " scope="col">
+
+    <span>Min</span>
+
+    <div class="sort-button-group">
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="ascending"
+            title="Sort from columns with the lowest minimum value to columns with the highest minimum value">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M12.438 1.668V7H11.39V2.684h-.051l-1.211.859v-.969l1.262-.906h1.046z"/>
+  <path fill-rule="evenodd" d="M11.36 14.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.835 1.973-1.835 1.09 0 2.063.636 2.063 2.687 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="descending"
+            title="Sort from columns with the highest minimum value to columns with the lowest minimum value">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.36 7.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.836 1.973-1.836 1.09 0 2.063.637 2.063 2.688 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M12.438 8.668V14H11.39V9.684h-.051l-1.211.859v-.969l1.262-.906h1.046zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+    </div>
+</th>
+
+
+
+
+<th class="sort-button-group-wrapper  " scope="col">
+
+    <span>Median</span>
+
+    <div class="sort-button-group">
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="ascending"
+            title="Sort from columns with the lowest median to columns with the highest median">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M12.438 1.668V7H11.39V2.684h-.051l-1.211.859v-.969l1.262-.906h1.046z"/>
+  <path fill-rule="evenodd" d="M11.36 14.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.835 1.973-1.835 1.09 0 2.063.636 2.063 2.687 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="descending"
+            title="Sort from columns with the highest median to columns with the lowest median">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.36 7.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.836 1.973-1.836 1.09 0 2.063.637 2.063 2.688 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M12.438 8.668V14H11.39V9.684h-.051l-1.211.859v-.969l1.262-.906h1.046zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+    </div>
+</th>
+
+
+
+
+<th class="sort-button-group-wrapper  " scope="col">
+
+    <span>Max</span>
+
+    <div class="sort-button-group">
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="ascending"
+            title="Sort from columns with the lowest maximum value to columns with the highest maximum value">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M12.438 1.668V7H11.39V2.684h-.051l-1.211.859v-.969l1.262-.906h1.046z"/>
+  <path fill-rule="evenodd" d="M11.36 14.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.835 1.973-1.835 1.09 0 2.063.636 2.063 2.687 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+        <button class="sort-button" type="button" data-role="sort-button" data-direction="descending"
+            title="Sort from columns with the highest maximum value to columns with the lowest maximum value">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.36 7.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.836 1.973-1.836 1.09 0 2.063.637 2.063 2.688 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98"/>
+  <path d="M12.438 8.668V14H11.39V9.684h-.051l-1.211.859v-.969l1.262-.906h1.046zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg>
+
+        </button>
+    </div>
+</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr data-manager="FilterableColumn" data-column-name="is_toxic"
+                    data-column-idx="0" data-dataframe-column-idx="0">
+                    <td data-value="0" data-numeric>0
+                    </td>
+                    <td class="elided">is_toxic</td>
+                    <td>StringDtype</td>
+                    <td>False</td>
+                    <td class="ok" data-value="0" data-numeric>
+                        0 (0.0%)
+                    </td>
+
+
+                    <td data-value="2" data-numeric>
+                        2 (0.2%)
+                    </td>
+
+
+
+                    <td data-value="nan" data-numeric></td>
+                    <td data-value="nan" data-numeric></td>
+
+
+
+                    <td data-value="nan" data-numeric></td>
+                    <td data-value="nan" data-numeric></td>
+                    <td data-value="nan" data-numeric></td>
+
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</article>
+
+<div data-hidden
+     data-hide-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
+     data-show-on="EMPTY_COLUMN_FILTER_SELECTED"
+     class="text wrapper">
+<p>
+No columns match the selected filter: <strong data-manager="ColumnFilterName"></strong>. You can change the column filter in the dropdown menu above.
+</p>
+<p>
+    <button type="button"
+            data-manager="ResetColumnFilter"
+            data-test="show-all-columns-button">Show all columns</button>
+</p>
+</div>
+</div>
+
+
+
+<div class="report-bottom-border"></div>
+
+
+        </div>
+    </template>
+
+    <skrub-table-report class="report" id="report_78b80d0f">
+    </skrub-table-report>
+
+    <script type="module">
+     if (customElements.get('skrub-table-report') === undefined) {
+
+    class Exchange {
+        constructor() {
+            this.subscribers = [];
+        }
+
+        add(sub) {
+            this.subscribers.push(sub);
+        }
+
+        send(msg) {
+            setTimeout(() => this.distribute(msg));
+        }
+
+        distribute(msg) {
+            for (let sub of this.subscribers) {
+                sub.send(msg);
+            }
+        }
+    }
+
+    class Manager {
+        constructor(elem, exchange) {
+            this.elem = elem;
+            this.exchange = exchange;
+        }
+
+        send(msg) {
+            if (msg.kind in this) {
+                this[msg.kind](msg);
+            }
+        }
+
+        hide() {
+            this.elem.dataset.hidden = "";
+        }
+
+        show() {
+            delete this.elem.dataset.hidden;
+        }
+
+        matchesColumnIdx(idx) {
+            if (!this.elem.hasAttribute("data-column-idx")) {
+                return false;
+            }
+            return Number(this.elem.dataset.columnIdx) === idx;
+        }
+
+        matchesColumnFilter({
+            acceptedColumns
+        }) {
+            return acceptedColumns.has(Number(this.elem.dataset.columnIdx));
+        }
+    }
+
+    class SkrubTableReport extends HTMLElement {
+        static managerClasses = new Map();
+
+        constructor() {
+            super();
+            this.exchange = new Exchange();
+        }
+
+        connectedCallback() {
+            const template = document.getElementById(\`${this.id}-template\`);
+            this.attachShadow({
+                mode: "open"
+            });
+            this.shadowRoot.appendChild(template.content.cloneNode(true));
+
+            setTimeout(() => this.init());
+        }
+
+        static register(managerClass) {
+            SkrubTableReport.managerClasses.set(managerClass.name, managerClass);
+        }
+
+        init() {
+            this.shadowRoot.querySelectorAll("[data-manager]").forEach((elem) => {
+                for (let className of elem.dataset.manager.split(/\\s+/)) {
+                    const cls = SkrubTableReport.managerClasses.get(
+                        className);
+                    if (cls !== undefined) {
+                        this.exchange.add(new cls(elem, this.exchange));
+                    }
+                }
+            });
+            this.shadowRoot.querySelectorAll("[data-show-on]").forEach((elem) => {
+                this.exchange.add(new ShowOn(elem, this.exchange));
+            });
+            this.shadowRoot.querySelectorAll("[data-hide-on]").forEach((elem) => {
+                this.exchange.add(new HideOn(elem, this.exchange));
+            });
+
+            const report = this.shadowRoot.getElementById("report");
+            report.classList.add(detectTheme(\`${this.id}-wrapper\`));
+            adjustAllSvgViewBoxes(report);
+        }
+
+    }
+    customElements.define("skrub-table-report", SkrubTableReport);
+
+    class ShowOn extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.showMsgKinds = this.elem.dataset.showOn.split(/\\s+/);
+        }
+
+        send(msg) {
+            if (this.showMsgKinds.includes(msg.kind)) {
+                this.show();
+            }
+        }
+    }
+
+    class HideOn extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.hideMsgKinds = this.elem.dataset.hideOn.split(/\\s+/);
+        }
+
+        send(msg) {
+            if (this.hideMsgKinds.includes(msg.kind)) {
+                this.hide();
+            }
+        }
+    }
+
+    class InvisibleInAssociationsTabPanel extends Manager {
+        TAB_SELECTED(msg) {
+            if (msg.targetPanelId === "column-associations-panel") {
+                this.elem.dataset.notVisible = "";
+            } else {
+                delete this.elem.dataset.notVisible;
+            }
+        }
+    }
+    SkrubTableReport.register(InvisibleInAssociationsTabPanel);
+
+    class ColumnFilter extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.filters = JSON.parse(atob(this.elem.dataset.allFiltersBase64));
+            this.elem.addEventListener("change", () => this.onSelectChange());
+        }
+
+        onSelectChange() {
+            const filterName = this.elem.value;
+            const filterDisplayName = this.filters[filterName]["display_name"];
+            const acceptedColumns = new Set(this.filters[filterName]["columns"]);
+            const msg = {
+                kind: "COLUMN_FILTER_CHANGED",
+                filterName,
+                filterDisplayName,
+                acceptedColumns,
+            };
+            this.exchange.send(msg);
+            const filterKind = acceptedColumns.size === 0 ? "EMPTY" : "NON_EMPTY";
+            this.exchange.send({
+                kind: \`${filterKind}_COLUMN_FILTER_SELECTED\`
+            });
+        }
+
+        RESET_COLUMN_FILTER() {
+            this.elem.value = "all()";
+            this.onSelectChange();
+        }
+
+    }
+    SkrubTableReport.register(ColumnFilter);
+
+    class ResetColumnFilter extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.elem.addEventListener("click", () => this.exchange.send({
+                kind: "RESET_COLUMN_FILTER"
+            }));
+        }
+    }
+    SkrubTableReport.register(ResetColumnFilter);
+
+    class ColumnFilterName extends Manager {
+        COLUMN_FILTER_CHANGED(msg) {
+            this.elem.textContent = msg.filterDisplayName;
+        }
+    }
+    SkrubTableReport.register(ColumnFilterName);
+
+    class ColumnFilterMatchCount extends Manager {
+        COLUMN_FILTER_CHANGED(msg) {
+            this.elem.textContent = msg.acceptedColumns.size.toString();
+        }
+    }
+    SkrubTableReport.register(ColumnFilterMatchCount);
+
+    class SampleColumnSummary extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.elem.querySelector("[data-role='close-button']").addEventListener(
+                "click",
+                () => this.close());
+        }
+
+        close() {
+            this.exchange.send({
+                kind: "SAMPLE_COLUMN_SUMMARY_CLOSED"
+            });
+        }
+
+        SAMPLE_TABLE_CELL_ACTIVATED(msg) {
+            if (this.matchesColumnIdx(msg.columnIdx)) {
+                this.show();
+            } else {
+                this.hide();
+            }
+        }
+
+        SAMPLE_TABLE_CELL_DEACTIVATED() {
+            this.hide();
+        }
+    }
+    SkrubTableReport.register(SampleColumnSummary);
+
+    class FilterableColumn extends Manager {
+        COLUMN_FILTER_CHANGED(msg) {
+            if (this.matchesColumnFilter(msg)) {
+                delete this.elem.dataset.excludedByColumnFilter;
+            } else {
+                this.elem.dataset.excludedByColumnFilter = "";
+            }
+        }
+    }
+    SkrubTableReport.register(FilterableColumn);
+
+    class SampleTableCell extends Manager {
+
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.elem.addEventListener("click", (event) => {
+                this.activate();
+                event.preventDefault();
+            });
+            // See forwardKeyboardEvent for details about captureKeys
+            this.elem.dataset.captureKeys =
+                "ArrowRight ArrowLeft ArrowUp ArrowDown Escape";
+            this.elem.setAttribute("tabindex", -1);
+            this.elem.oncopy = (event) => this.copyCell(event);
+        }
+
+        copyCell(event) {
+            const selection = document.getSelection().toString();
+            if (selection !== "") {
+                return;
+            }
+            event.clipboardData.setData("text/plain", this.elem.dataset
+                .valueRepr);
+            event.preventDefault();
+            this.elem.dataset.justCopied = "";
+            setTimeout(() => this.elem.removeAttribute("data-just-copied"), 1000);
+        }
+
+        activate() {
+            const msg = {
+                kind: "SAMPLE_TABLE_CELL_ACTIVATED",
+                cellId: this.elem.id,
+                columnIdx: Number(this.elem.dataset.columnIdx),
+                valueStr: this.elem.dataset.valueStr,
+                valueRepr: this.elem.dataset.valueRepr,
+            };
+            this.exchange.send(msg);
+        }
+
+        deactivate() {
+            if ("isActive" in this.elem.dataset) {
+                this.exchange.send({
+                    kind: "SAMPLE_TABLE_CELL_DEACTIVATED"
+                });
+            }
+        }
+
+        ACTIVATE_SAMPLE_TABLE_CELL(msg) {
+            if (msg.cellId == this.elem.id) {
+                this.activate();
+            }
+        }
+
+        SAMPLE_TABLE_CELL_DEACTIVATED() {
+            this.elem.setAttribute("tabindex", -1);
+            this.elem.blur();
+            delete this.elem.dataset.isActive;
+            delete this.elem.dataset.isInActiveColumn;
+        }
+
+        SAMPLE_TABLE_CELL_ACTIVATED(msg) {
+            if (msg.cellId === this.elem.id) {
+                this.elem.dataset.isActive = "";
+                this.elem.setAttribute("tabindex", 0);
+                this.elem.contentEditable = "true";
+                this.elem.focus({});
+                this.elem.contentEditable = "false";
+            } else {
+                delete this.elem.dataset.isActive;
+                this.elem.setAttribute("tabindex", -1);
+            }
+            if (this.matchesColumnIdx(msg.columnIdx)) {
+                this.elem.dataset.isInActiveColumn = "";
+            } else {
+                delete this.elem.dataset.isInActiveColumn;
+            }
+        }
+
+        SAMPLE_COLUMN_SUMMARY_CLOSED() {
+            this.deactivate();
+        }
+
+        COLUMN_FILTER_CHANGED(msg) {
+            if (this.elem.hasAttribute("data-column-idx") && !this
+                .matchesColumnFilter(msg)) {
+                this.deactivate();
+            }
+        }
+    }
+    SkrubTableReport.register(SampleTableCell);
+
+    class SampleTable extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.root = this.elem.getRootNode();
+            this.startI = Number(this.elem.dataset.startI) || 0;
+            this.stopI = Number(this.elem.dataset.stopI) || 0;
+            this.startJ = Number(this.elem.dataset.startJ) || 0;
+            this.stopJ = Number(this.elem.dataset.stopJ) || 0;
+            this.elem.addEventListener('keydown', (e) => this.onKeyDown(e));
+            this.elem.addEventListener('skrub-keydown', (e) => this.onKeyDown(
+                unwrapSkrubKeyDown(e)));
+            this.elem.tabIndex = "0";
+            this.elem.addEventListener('focus', (e) => this.activateFirstCell());
+        }
+
+        onKeyDown(event) {
+            if (hasModifier(event)) {
+                return;
+            }
+            const cell = event.target;
+            let {
+                i,
+                j
+            } = cell.dataset;
+            [i, j] = [Number(i), Number(j)];
+            if (isNaN(i) || isNaN(j)) {
+                return;
+            }
+            let newCellId = null;
+            switch (event.key) {
+                case "ArrowLeft":
+                    newCellId = this.findCellLeft(cell.id, i, j);
+                    break;
+                case "ArrowRight":
+                    newCellId = this.findCellRight(cell.id, i, j);
+                    break;
+                case "ArrowUp":
+                    newCellId = this.findCellUp(cell.id, i, j);
+                    break;
+                case "ArrowDown":
+                    newCellId = this.findCellDown(cell.id, i, j);
+                    break;
+                case "Escape":
+                    this.exchange.send({
+                        kind: "SAMPLE_TABLE_CELL_DEACTIVATED"
+                    });
+                    event.preventDefault();
+                    return;
+                default:
+                    return;
+            }
+            if (newCellId !== null) {
+                this.exchange.send({
+                    kind: "ACTIVATE_SAMPLE_TABLE_CELL",
+                    cellId: newCellId
+                });
+                event.preventDefault();
+                return;
+            }
+        }
+
+        findNextCell(startCellId, i, j, next, stop) {
+            [i, j] = next(i, j);
+            while (!stop(i, j)) {
+                const cell = this.elem.querySelector(\`[data-spans_\_${i}_\_${j}]\`);
+                if (cell !== null && cell.id !== startCellId && !cell.hasAttribute(
+                    "data-excluded-by-column-filter") && cell.dataset.role !==
+                    "padding" && cell.dataset.role !== "ellipsis") {
+                    return cell.id;
+                }
+                [i, j] = next(i, j);
+            }
+            return null;
+        }
+
+        findCellLeft(startCellId, i, j) {
+            return this.findNextCell(startCellId, i, j, (i, j) => [i, j - 1], (i,
+                j) => (j < this
+                    .startJ));
+        }
+        findCellRight(startCellId, i, j) {
+            return this.findNextCell(startCellId, i, j, (i, j) => [i, j + 1], (i,
+                j) => (this
+                    .stopJ <= j));
+        }
+
+        findCellUp(startCellId, i, j) {
+            return this.findNextCell(startCellId, i, j, (i, j) => [i - 1, j], (i,
+                j) => (i < this
+                    .startI));
+        }
+
+        findCellDown(startCellId, i, j) {
+            return this.findNextCell(startCellId, i, j, (i, j) => [i + 1, j], (i,
+                j) => (this
+                    .stopI <= i));
+        }
+
+        /\*
+          When no cell is active, the table itself is sequentially focusable.
+          When it receives focus, it redirects it to the first visible data cell
+          (if any). Once a cell is active, the cell is sequentially focusable
+          and the table is not. If a cell is active but the focus is given to
+          the table (by clicking one of the non-clickable elements such as the
+          ellipsis "..." cells), focus is set on the active cell rather than the
+          first one.
+         \*/
+        activateFirstCell() {
+            const activeCell = this.elem.querySelector("[data-is-active]");
+            if (activeCell) {
+                activeCell.focus();
+                return;
+            }
+            const firstCell = this.elem.querySelector(
+                "[data-role='dataframe-data']:not([data-excluded-by-column-filter])"
+            );
+            if (!firstCell) {
+                return;
+            }
+            // blur immediately to avoid the focus ring flashing before the cell
+            // grabs keyboard focus.
+            this.elem.blur();
+            this.exchange.send({
+                kind: "ACTIVATE_SAMPLE_TABLE_CELL",
+                cellId: firstCell.id
+            });
+        }
+
+        SAMPLE_TABLE_CELL_ACTIVATED() {
+            this.elem.tabIndex = "-1";
+        }
+
+        SAMPLE_TABLE_CELL_DEACTIVATED() {
+            this.elem.tabIndex = "0";
+        }
+
+    }
+    SkrubTableReport.register(SampleTable);
+
+    class SampleTableBar extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.display = elem.querySelector("[data-role='content-display']");
+            this.displayValues = new Map();
+        }
+
+        updateDisplay() {
+            this.display.textContent = this.displayValues.get(this.select.value) ||
+                "";
+        }
+
+        SAMPLE_TABLE_CELL_ACTIVATED(msg) {
+            this.display.textContent = msg.valueStr || "";
+            this.display.dataset.copyText = msg.valueRepr || "";
+        }
+
+        SAMPLE_TABLE_CELL_DEACTIVATED() {
+            this.display.textContent = "";
+            this.display.removeAttribute("data-copy-text");
+        }
+    }
+    SkrubTableReport.register(SampleTableBar);
+
+    class TabList extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.tabs = new Map();
+            let preSelectedTab = null;
+            this.elem.querySelectorAll("button[data-role='tab']").forEach(
+                tab => {
+                    const panel = tab.getRootNode().getElementById(tab.dataset
+                        .targetPanelId);
+                    this.tabs.set(tab, panel);
+                    if (!this.firstTab) {
+                        this.firstTab = tab;
+                    }
+                    this.lastTab = tab;
+                    // Check for pre-selected tab
+                    if (tab.hasAttribute('data-is-selected')) {
+                        preSelectedTab = tab;
+                    }
+                    tab.addEventListener("click", () => this.selectTab(tab));
+                    // See forwardKeyboardEvent for details about captureKeys
+                    tab.dataset.captureKeys = "ArrowRight ArrowLeft";
+                    tab.addEventListener("keydown", (event) => this.onKeyDown(
+                        event));
+                    tab.addEventListener("skrub-keydown", (event) => this
+                        .onKeyDown(
+                            unwrapSkrubKeyDown(event)));
+                });
+            // Select pre-selected tab if exists, otherwise select first tab
+            this.selectTab(preSelectedTab || this.firstTab, false);
+        }
+
+        selectTab(tabToSelect, focus = true) {
+            this.tabs.forEach((tabPanel, tab) => {
+                delete tab.dataset.isSelected;
+                tab.setAttribute("tabindex", -1);
+                tabPanel.dataset.hidden = "";
+            });
+            tabToSelect.dataset.isSelected = "";
+            tabToSelect.removeAttribute("tabindex");
+            if (focus) {
+                tabToSelect.focus();
+            }
+            delete this.tabs.get(tabToSelect).dataset.hidden;
+            this.currentTab = tabToSelect;
+            this.exchange.send({
+                kind: "TAB_SELECTED",
+                targetPanelId: this.currentTab.dataset.targetPanelId
+            });
+        }
+
+        selectPreviousTab() {
+            if (this.currentTab === this.firstTab) {
+                this.selectTab(this.lastTab);
+                return;
+            }
+            const keys = [...this.tabs.keys()];
+            const idx = keys.indexOf(this.currentTab);
+            this.selectTab(keys[idx - 1]);
+        }
+
+        selectNextTab() {
+            if (this.currentTab === this.lastTab) {
+                this.selectTab(this.firstTab);
+                return;
+            }
+            const keys = [...this.tabs.keys()];
+            const idx = keys.indexOf(this.currentTab);
+            this.selectTab(keys[idx + 1]);
+        }
+
+        onKeyDown(event) {
+            if (hasModifier(event)) {
+                return;
+            }
+            switch (event.key) {
+                case "ArrowLeft":
+                    this.selectPreviousTab();
+                    break;
+                case "ArrowRight":
+                    this.selectNextTab();
+                    break;
+                default:
+                    return;
+            }
+            event.stopPropagation();
+            event.preventDefault();
+        }
+    }
+    SkrubTableReport.register(TabList);
+
+    class SortableTable extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.elem.querySelectorAll("button[data-role='sort-button']").forEach(
+                b => b.addEventListener("click", e => this.sort(e)));
+        }
+
+        getVal(row, tableColIdx) {
+            const td = row.querySelectorAll("td")[tableColIdx];
+            if (!td.hasAttribute("data-value")) {
+                return td.textContent;
+            }
+            let value = td.dataset.value;
+            if (td.hasAttribute("data-numeric")) {
+                value = Number(value);
+            }
+            return value;
+        }
+
+        compare(rowA, rowB, tableColIdx, ascending) {
+            let valA = this.getVal(rowA, tableColIdx);
+            let valB = this.getVal(rowB, tableColIdx);
+            // NaNs go at the bottom regardless of sorting order
+            if (typeof (valA) === "number" && typeof (valB) === "number") {
+                if (isNaN(valA) && !isNaN(valB)) {
+                    return 1;
+                }
+                if (isNaN(valB) && !isNaN(valA)) {
+                    return -1;
+                }
+            }
+            // When the values are equal, keep the original dataframe column
+            // order
+            if (!(valA > valB || valB > valA)) {
+                valA = Number(rowA.dataset.dataframeColumnIdx);
+                valB = Number(rowB.dataset.dataframeColumnIdx);
+                return valA - valB;
+            }
+            // Sort
+            if (!ascending) {
+                [valA, valB] = [valB, valA];
+            }
+            return valA > valB ? 1 : -1;
+        }
+
+        sort(event) {
+            const colHeaders = Array.from(this.elem.querySelectorAll(
+                "thead tr th"));
+            const tableColIdx = colHeaders.indexOf(event.target.closest("th"));
+            const body = this.elem.querySelector("tbody");
+            const rows = Array.from(body.querySelectorAll("tr"));
+            const ascending = event.target.dataset.direction === "ascending";
+
+            rows.sort((a, b) => this.compare(a, b, tableColIdx, ascending));
+
+            this.elem.querySelectorAll("button").forEach(b => b.removeAttribute(
+                "data-is-active"));
+            event.target.dataset.isActive = "";
+
+            body.innerHTML = "";
+            for (let r of rows) {
+                body.appendChild(r);
+            }
+        }
+
+    }
+    SkrubTableReport.register(SortableTable);
+
+    /\*
+      Add the "data-is-scrolling" attribute to the scrolling div whenever a
+      given column is partially hidden; used to manage the border of the sticky
+      column in the summary statistics table.
+    \*/
+    class StickyColTableScroller extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.stickyCol = Number(this.elem.dataset.stickyCol) || 1;
+            this.registerObserver();
+        }
+
+        registerObserver() {
+            const options = {
+                root: this.elem,
+                // The first threshold is crossed when the parent becomes
+                // visible (eg when the summary statistics table is loaded, it
+                // is in a hidden tab panel so the intersection is 0). The other
+                // thresholds are crossed when the left border is just past the
+                // edge of the scrollable area.
+                threshold: [0.01, 0.93, 0.97]
+            };
+            const observer = new IntersectionObserver(e => this
+                .intersectionCallback(e), options);
+            this.elem.querySelectorAll(\`:is(th, td):nth-child(${this.stickyCol})\`)
+                .forEach((e) => observer.observe(e));
+        }
+
+        intersectionCallback(entries) {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+                if (entry.intersectionRatio >= 0.95) {
+                    this.elem.removeAttribute("data-is-scrolling");
+                } else {
+                    this.elem.dataset.isScrolling = "";
+                }
+            });
+        }
+
+    }
+    SkrubTableReport.register(StickyColTableScroller);
+
+    class SelectedColumnsDisplay extends Manager {
+
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.COLUMN_SELECTION_CHANGED();
+        }
+
+        COLUMN_SELECTION_CHANGED() {
+            const allColumns = this.elem.getRootNode().querySelectorAll(
+                "[data-role='selectable-column']");
+            const allColumnsRepr = [];
+            for (let col of allColumns) {
+                if (col.querySelector("[data-role='select-column-checkbox']")
+                    .checked) {
+                    allColumnsRepr.push(col.dataset.nameRepr);
+                }
+            }
+            this.elem.textContent = "[" + allColumnsRepr.join(", ") + "]";
+        }
+    }
+    SkrubTableReport.register(SelectedColumnsDisplay);
+
+    class SelectColumnCheckBox extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.elem.addEventListener("change", () => this.exchange.send({
+                kind: "COLUMN_SELECTION_CHANGED"
+            }));
+        }
+
+        DESELECT_ALL_COLUMNS() {
+            this.elem.checked = false;
+        }
+
+        SELECT_ALL_VISIBLE_COLUMNS() {
+            this.elem.checked = !("excludedByColumnFilter" in this.elem.closest(
+                "[data-role='selectable-column']").dataset);
+        }
+    }
+    SkrubTableReport.register(SelectColumnCheckBox);
+
+    class DeselectAllColumns extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.elem.addEventListener("click", () => {
+                this.exchange.send({
+                    kind: "DESELECT_ALL_COLUMNS"
+                });
+                this.exchange.send({
+                    kind: "COLUMN_SELECTION_CHANGED"
+                });
+            });
+        }
+    }
+    SkrubTableReport.register(DeselectAllColumns);
+
+    class SelectAllVisibleColumns extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.elem.addEventListener("click", () => {
+                this.exchange.send({
+                    kind: "SELECT_ALL_VISIBLE_COLUMNS"
+                });
+                this.exchange.send({
+                    kind: "COLUMN_SELECTION_CHANGED"
+                });
+            });
+        }
+    }
+    SkrubTableReport.register(SelectAllVisibleColumns);
+
+
+    class Toggletip extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.elem.querySelector("button").addEventListener("keydown", e => {
+                if (e.key === "Escape") {
+                    e.target.blur();
+                }
+            });
+        }
+    }
+    SkrubTableReport.register(Toggletip);
+
+    class CopyButton extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.elem.addEventListener("click", e => copyButtonClick(e));
+        }
+    }
+    SkrubTableReport.register(CopyButton);
+
+    class AlertDismissable extends Manager {
+        constructor(elem, exchange) {
+            super(elem, exchange);
+            this.elem.querySelector("[data-role='dismiss-button']")
+                .addEventListener("click", (e) => this.hide());
+        }
+
+    }
+
+    SkrubTableReport.register(AlertDismissable);
+
+
+    function detectTheme(refElementId) {
+
+        const shadowRootBody = document.querySelector('body');
+
+        // Check VSCode theme
+        const themeKindAttr = shadowRootBody.getAttribute('data-vscode-theme-kind');
+        const themeNameAttr = shadowRootBody.getAttribute('data-vscode-theme-name');
+
+        if (themeKindAttr && themeNameAttr) {
+            const themeKind = themeKindAttr.toLowerCase();
+            const themeName = themeNameAttr.toLowerCase();
+
+            if (themeKind.includes("dark") || themeName.includes("dark")) {
+                return "dark";
+            }
+            if (themeKind.includes("light") || themeName.includes("light")) {
+                return "light";
+            }
+        }
+
+        // Check Jupyter theme
+        if (shadowRootBody.getAttribute('data-jp-theme-light') === 'false') {
+            return 'dark';
+        } else if (shadowRootBody.getAttribute('data-jp-theme-light') === 'true') {
+            return 'light';
+        }
+
+        // Guess based on a reference element's color
+        const refElement = document.getElementById(refElementId);
+        const color = window.getComputedStyle(refElement, null).getPropertyValue('color');
+        const match = color.match(/^rgb\\s\*\\(\\s\*(\\d+)\\s\*,\\s\*(\\d+)\\s\*,\\s\*(\\d+)\\s\*\\)\\s\*$/i);
+        if(match){
+            const [r, g, b] = [match[1], match[2], match[3]];
+
+            // https://en.wikipedia.org/wiki/HSL_and_HSV#Lightness
+            const luma = 0.299 \* r + 0.587 \* g + 0.114 \* b;
+
+            if (luma > 180) {
+                // If the text is very bright we have a dark theme
+                return 'dark';
+            }
+            if (luma < 75 ) {
+                // If the text is very dark we have a light theme
+                return 'light';
+            }
+            // Otherwise fall back to the next heuristic.
+        }
+
+        // Fallback to system preference
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    /\*
+      In the matplotlib svg plots, the labels are stored as text (we want the
+      browser, rather than matplotlib, to choose the font & render the text, and
+      this also makes the plots smaller than letting matplotlib draw the
+      glyphs). As matplotlib may use a different font than the one eventually
+      chosen by the browser, it cannot compute the correct viewbox for the svg.
+
+      When the page loads, we render the svg plot and iterate over all children
+      to compute the correct viewbox. We then adjust the svg element's width and
+      height (otherwise if we put a wider viewbox but don't adjust the size we
+      effectively zoom out and details will appear smaller).
+
+      In the default report view, all plots are hidden (they only show up if we
+      select a column or change the displayed tab panel). Thus when the page
+      loads they are not rendered. To force rendering the svg so that we get
+      correct bounding boxes for all the child elements, we clone it and insert
+      the clone in the DOM (but with absolute positioning and a big offset so it
+      is outside of the viewport and the user does not see it). We insert the
+      clone as a child of the #report element so that we know it is displayed
+      and uses the same font family and size as the actual figure we want to
+      resize. Once we have the viewbox we remove the clone from the DOM.
+    \*/
+
+    /\*
+      Compute a tight viewbox for all elements in an svg document.
+    \*/
+    function computeViewBox(svg) {
+        try {
+            const {
+                width
+            } = svg.getBBox();
+            if (width === 0) {
+                return null;
+            }
+        } catch (e) {
+            return null;
+        }
+        let [xMin, yMin, xMax, yMax] = [null, null, null, null];
+        for (const child of svg.children) {
+            if (typeof child.getBBox !== 'function') {
+                continue;
+            }
+            const {
+                x,
+                y,
+                width,
+                height
+            } = child.getBBox();
+            if (width === 0 || height === 0) {
+                continue;
+            }
+            if (xMin === null) {
+                xMin = x;
+                yMin = y;
+                xMax = x + width;
+                yMax = y + height;
+                continue;
+            }
+            xMin = Math.min(x, xMin);
+            yMin = Math.min(y, yMin);
+            xMax = Math.max(x + width, xMax);
+            yMax = Math.max(y + height, yMax);
+        }
+        if (xMin === null) {
+            return null;
+        }
+        return {
+            x: xMin,
+            y: yMin,
+            width: xMax - xMin,
+            height: yMax - yMin
+        };
+    }
+
+    /\*
+      Adjust the svg element's width and height so that if we need to set a
+      wider viewbox, we get a bigger figure rather than zooming out while
+      keeping the figure size constant.
+    \*/
+    function adjustSvgSize(svg, newViewBox, attribute) {
+        const match = svg.getAttribute(attribute).match(/^([0-9.]+)(.+)$/);
+        if (!match) {
+            return;
+        }
+        const size = Number(match[1]);
+        if (isNaN(size)) {
+            return;
+        }
+        const unit = match[2];
+        const scale = newViewBox[attribute] / svg.viewBox.baseVal[attribute];
+        const newSize = size \* scale;
+        if (isNaN(newSize)) {
+            return;
+        }
+        svg.setAttribute(attribute, \`${newSize}${unit}\`);
+    }
+
+    /\*
+      Adjust the size and viewbox of all svg elements that require it so that
+      their content is not cropped.
+    \*/
+    function adjustAllSvgViewBoxes(reportElem) {
+        const allSvg = Array.from(reportElem.querySelectorAll(
+            '[data-svg-needs-adjust-viewbox] svg'));
+        let svgClones = [];
+        try {
+            for (const svg of allSvg) {
+                // The svg is inside a div with {display: none} in its style. So it
+                // is not rendered and all bounding boxes will have 0 width and
+                // height. We insert a clone higher up the DOM below #report, which
+                // we know is displayed. To avoid the user seeing it flash we position
+                // it outside of the viewport. The column summary cards use the same
+                // font family & size as #report so the computed sizes will be the
+                // same as those of the actual svg when it is rendered.
+
+                const clone = svg.cloneNode(true);
+                clone.style.position = 'absolute';
+                clone.style.left = '-9999px';
+                clone.style.top = '-9999px';
+                clone.style.visibility = 'hidden';
+                reportElem.appendChild(clone);
+                svgClones.push([svg, clone]);
+            }
+
+            // We use 3 separate loops so that we do not modify the document (by
+            // inserting or removing the cloned svg elements) between the
+            // getBBox() computations, to avoid re-computation of styles and
+            // layout.
+            for (const [svg, clone] of svgClones) {
+                const viewBox = clone.getBBox();
+                if (viewBox !== null) {
+                    adjustSvgSize(svg, viewBox, 'width');
+                    adjustSvgSize(svg, viewBox, 'height');
+                    svg.setAttribute('viewBox',
+                        \`${viewBox.x} ${viewBox.y} ${viewBox.width} ${viewBox.height}\`
+                    );
+                }
+            }
+
+        } finally {
+            for (const [_, clone] of svgClones) {
+                reportElem.removeChild(clone);
+            }
+        }
+    }
+
+    function copyButtonClick(event) {
+        const button = event.target;
+        button.dataset.showCheckmark = "";
+        setTimeout(() => button.removeAttribute("data-show-checkmark"), 2000);
+        const textElem = button.getRootNode().getElementById(button.dataset.targetId);
+        copyTextToClipboard(textElem);
+    }
+
+    function copyTextToClipboard(elem) {
+        if (elem.hasAttribute("data-shows-placeholder")) {
+            return;
+        }
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(elem.dataset.copyText || elem.textContent ||
+                "");
+        } else {
+            // fallback when navigator not available. in this case we just copy
+            // the text content of the element (we could create a hidden one to
+            // fill it with the data-copy-text and select that but this is
+            // probably good enough)
+            const selection = window.getSelection();
+            if (selection == null) {
+                return;
+            }
+            selection.removeAllRanges();
+            const range = document.createRange();
+            range.selectNodeContents(elem);
+            selection.addRange(range);
+            document.execCommand("copy");
+            selection.removeAllRanges();
+        }
+    }
+
+    function hasModifier(event) {
+        return event.ctrlKey || event.metaKey || event.shiftKey || event.altKey;
+    }
+
+    /\* Jupyter notebooks and vscode stop the propagation of some keyboard events
+    during the capture phase to implement their keyboard shortcuts etc. When an
+    element inside the TableReport has the keyboard focus and wants to react on
+    that event (eg in the sample table arrow keys allow selecting a neighbouring
+    cell) we need to override that behavior.
+
+    We do that by adding an event listener on the window that is triggered
+    during the capture phase. If it can make sure the key press is for a report
+    element that will react to it, we stop its propagation (to avoid eg the
+    notebook jumping to the next jupyter code cell) and dispatch an event on the
+    targeted element. To make sure it does not get handled again by the listener
+    on the window and cause infinite recursion, we dispatch a custom event
+    instead of a KeyDown event.
+
+    This capture is only enabled if we detect the report is inserted in a page
+    where it is needed, by checking if there are elements in the page with class
+    names that are used by jupyter or vscode.
+    \*/
+    function forwardKeyboardEvent(e) {
+        if (e.eventPhase !== 1) {
+            return;
+        }
+        if (e.target.tagName !== "SKRUB-TABLE-REPORT") {
+            return;
+        }
+        if (hasModifier(e)) {
+            return;
+        }
+        const target = e.target.shadowRoot.activeElement;
+        // only capture the event if the element lists the key in the keys it
+        // wants to capture ie in captureKeys
+        const wantsKey = target?.dataset.captureKeys?.split(/\\s+/).includes(e.key);
+        if (!wantsKey) {
+            return;
+        }
+        const newEvent = new CustomEvent('skrub-keydown', {
+            bubbles: true,
+            cancelable: true,
+            detail: {
+                key: e.key,
+                code: e.code,
+                shiftKey: e.shiftKey,
+                altKey: e.altKey,
+                ctrlKey: e.ctrlKey,
+                metaKey: e.metaKey,
+            }
+        });
+        target.dispatchEvent(newEvent);
+        e.stopImmediatePropagation();
+        e.preventDefault();
+    }
+
+    /\* Helper to unpack the custom event (see forwardKeyboardEvent above) and
+    make it look like a regular KeyDown event. \*/
+    function unwrapSkrubKeyDown(e) {
+        return {
+            preventDefault: () => { },
+            stopPropagation: () => { },
+            target: e.target,
+            ...e.detail
+        };
+    }
+
+    if (document.querySelector(".jp-Cell, .widgetarea, .reveal")) {
+        window.addEventListener("keydown", forwardKeyboardEvent, true);
+    }
+
+}
+    </script>
+</div>
+
+<div id="report_78b80d0f-wrapper-fallback">
+    <h2>Please enable javascript</h2>
+    <p>
+        The skrub table reports need javascript to display correctly. If you are
+        displaying a report in a Jupyter notebook and you see this message, you may need to
+        re-execute the cell or to trust the notebook (button on the top right or
+        "File &gt; Trust notebook").
+    </p>
+</div>
+
+<script>
+ document.getElementById("report_78b80d0f-wrapper").removeAttribute("hidden");
+ document.getElementById("report_78b80d0f-wrapper-fallback").setAttribute("hidden", "");
+</script>
+</div>
+</div>
+<br />
+<br />
+<!-- GENERATED FROM PYTHON SOURCE LINES 260-262 -->
+```Python
 print(pred.skb.describe_param_grid())
 ```
 
@@ -27028,7 +30895,7 @@ print(pred.skb.describe_param_grid())
   α: choose_float(0.01, 100, log=True, name='α')
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 260-265 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 263-268 -->
 ```Python
 search = pred.skb.make_randomized_search(
     n_iter=16, n_jobs=4, random_state=1, fitted=True
@@ -27038,11 +30905,11 @@ search.plot_results()
 
 <div class="output_subarea output_html rendered_html output_result">
 <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="4a389d56-0a61-4dfc-8d49-f30173ba65e3" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("4a389d56-0a61-4dfc-8d49-f30173ba65e3")) {                    Plotly.newPlot(                        "4a389d56-0a61-4dfc-8d49-f30173ba65e3",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkDN6zXLnvEXQK9oWn7b9yVAzSvmv9rVH0C+pBYI2f4rQKuSsgmeASJABw4RIpT0K0C2TF1H5BQiQAAAAAAAABRAAAAAAAAALkCUdGfnMhkkQBYBQ3\\u002fhzRdAefvIoy0mGEDybP9lgdofQB7p8RNXEyhA6ebP8KH1J0A="}},{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAABcGU9RoFZfPwAAAAAAAAAAAAAAAAAAAAAAAAAAAADwP9Pu83QD\\u002fO8\\u002fPQDLL9P27z8AAAAAAADwPz7OhyQT+u8\\u002fAAAAAAAA8D8G3Uer0\\u002fvvP\\u002fqZAWEi\\u002f+8\\u002fAAAAAAAA8D8DBdnBdPHvPwAAAAAAAPA\\u002fP1tkj6fe7z8="}},{"label":"lr","ticktext":["NaN","0.011","0.017","0.025","0.038","0.056","0.084","0.126","0.187","0.280","0.418"],"tickvals":[-4.842913055511124,-4.481931229268992,-4.080840311222178,-3.6797493931753644,-3.278658475128551,-2.877567557081737,-2.4764766390349235,-2.07538572098811,-1.6742948029412963,-1.2732038848944827,-0.872112966847669],"values":{"dtype":"f8","bdata":"KkRIirRWBMC2KpuZJF8TwPfMvc3fSfm\\u002fMFWdpODfAcD71SaA7f4RwPARuWec4gbAmOfgc1no678JEtEXXG0BwLB61uc0zPO\\u002ftiqbmSRfE8C2KpuZJF8TwMp0jh+iTxPAQDH+7IVcE8BvPBcMP1UTwLYqm5kkXxPAXA0EqZBSE8A="}},{"label":"\\u03b1","ticktext":["NaN","0.04","0.09","0.19","0.43","0.96","2.15","4.81","10.76","24.04","53.73"],"tickvals":[-3.9772483789581226,-3.253498479969906,-2.449331925538554,-1.6451653711072027,-0.8409988166758513,-0.036832262244499425,0.7673342921868525,1.5715008466182034,2.3756674010495553,3.179833955480907,3.984000509912259],"values":{"dtype":"f8","bdata":"n40dmWfRD8CZlbeemAcMQBVCzOkpkA\\u002fAn40dmWfRD8CfjR2ZZ9EPwC5nVMxFlw\\u002fAn40dmWfRD8CfjR2ZZ9EPwJYFhunUxQ\\u002fAVpDKqDvfD0Aje9M1X7z7PxtAC\\u002fM+HwbA\\u002f8gxn5sfBUBZJKhR09sJwLHAhy2eFQZA1T2TzSKSC0A="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAADwPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALb64A4r5G0\\u002fatztKhboaD9YBKn7AFpcP9LHUtg2G2Y\\u002foWRGw5Xs7z8AAAAAAADwPxYZI7mZ4e8\\u002fyLqE0vPz7z9oPGcBPdnvPyI3ib\\u002fo2u8\\u002fmVdrpiPm7z8="}},{"label":"score time","ticktext":["0.046","0.050","0.054","0.059","0.063","0.068","0.072","0.077","0.081","0.086"],"tickvals":[0.04554414749145508,0.05002140998840332,0.05449867248535156,0.058975934982299805,0.06345319747924805,0.06793045997619629,0.07240772247314453,0.07688498497009277,0.08136224746704102,0.08583950996398926],"values":{"dtype":"f8","bdata":"rnC4+aOTsz+HbR+YBkGyPzcfJmq8CrQ\\u002fEOn3sZatsj+O\\u002fllCUQ21P0NgU59TirI\\u002fW4OH8St0tD95AeUavuquPwAAAACQUac\\u002fAAAAAJT5tT8ugpl8dbGwP8daIOGK464\\u002ffanrSdonsD8OIFFWcIasPwONJkX7dLU\\u002fU4Ek+HXLtD8="}},{"label":"fit time","ticktext":["0.11","0.16","0.21","0.26","0.31","0.35","0.40","0.45","0.50","0.54"],"tickvals":[0.11463365554809571,0.16235219637552897,0.21007073720296227,0.25778927803039553,0.3055078188578288,0.35322635968526206,0.4009449005126954,0.4486634413401286,0.4963819821675619,0.5441005229949951],"values":{"dtype":"f8","bdata":"AAAAgEVp4T+GyOCgLmTQP87ooc3eGeA\\u002fHVwJeKs23j8H\\u002fnGJmLjbPwWXdQ73kdc\\u002fJCUldgaq3D9fulQntYnWP0DHLIec7M8\\u002faWrCYjUPyj+4fxTxMo3EP5qZmZmhWL0\\u002fcKH9Syesvj8C1eBsvYjEP\\u002f4h6xvI+Mc\\u002fdQfk7atnyT8="}},{"label":"score","ticktext":["0.50","0.53","0.56","0.60","0.63","0.66","0.69","0.73","0.76","0.79"],"tickvals":[0.499,0.5315555555555556,0.5641111111111111,0.5966666666666667,0.6292222222222222,0.6617777777777778,0.6943333333333334,0.7268888888888889,0.7594444444444445,0.792],"values":{"dtype":"f8","bdata":"8tJNYhBY6T8cWmQ730\\u002fpP6VwPQrXo+g\\u002fgZVDi2zn5z+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"8tJNYhBY6T8cWmQ730\\u002fpP6VwPQrXo+g\\u002fgZVDi2zn5z+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="7ada454c-3447-4339-b525-04986db5e03a" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("7ada454c-3447-4339-b525-04986db5e03a")) {                    Plotly.newPlot(                        "7ada454c-3447-4339-b525-04986db5e03a",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkBa1+we9CAYQLYKscuHCiZABNh9eecQIEBKSdXfh\\u002fwrQNBJb8w38CFA55A9j\\u002fIJLEASu8+bCOwhQAAAAAAAABRAAAAAAAAALkDFDM\\u002fBEgkkQMQP6J+U7hdAIn9RJF4qGEApNMIOzeIfQBGxhkZKFChAk0iUucPpJ0A="}},{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAACkJVvv+yRjPys6kl5UynI\\u002fAAAAAAAAAAAAAAAAAADwP9jV8N8I4+8\\u002fmLysul\\u002fj7z84uKF5O+TvP93jG3B83e8\\u002feOYBGVDs7z9w2SKzdvzvPwAAAAAAAPA\\u002fvrCfltP+7z8AAAAAAADwPwAAAAAAAPA\\u002fAAAAAAAA8D8="}},{"label":"lr","ticktext":["NaN","0.011","0.017","0.025","0.038","0.056","0.084","0.126","0.187","0.280","0.418"],"tickvals":[-4.842913055511124,-4.481931229268992,-4.080840311222178,-3.6797493931753644,-3.278658475128551,-2.877567557081737,-2.4764766390349235,-2.07538572098811,-1.6742948029412963,-1.2732038848944827,-0.872112966847669],"values":{"dtype":"f8","bdata":"kGoEi75lBMC2KpuZJF8TwKl4QTeGHPm\\u002fh11w\\u002f2\\u002fQAcBizZN0geYRwM+8gu5J7QbAmOfgc1no67\\u002fOqrF3TZIBwGFmhEiy2vO\\u002fnL8JP5VbE8ACoQSc5FwTwMSiW2ciVhPAtiqbmSRfE8CaSCoAn1UTwMix4sh0WhPAtiqbmSRfE8A="}},{"label":"\\u03b1","ticktext":["NaN","0.04","0.09","0.19","0.43","0.96","2.15","4.81","10.76","24.04","53.73"],"tickvals":[-3.9772483789581226,-3.253498479969906,-2.449331925538554,-1.6451653711072027,-0.8409988166758513,-0.036832262244499425,0.7673342921868525,1.5715008466182034,2.3756674010495553,3.179833955480907,3.984000509912259],"values":{"dtype":"f8","bdata":"n40dmWfRD8AIdw3Mu9sLQJ+NHZln0Q\\u002fAn40dmWfRD8A3FiJRk6IPwD7dG\\u002fWiuQ\\u002fAn40dmWfRD8CfjR2ZZ9EPwCf3awFJvw\\u002fAVpDKqDvfD0DO6XEaSSn8P5G0S8jWKAbAnPZyJILuBEDERSOmqjMKwMAYhb7kdQZAfh7+AxzaC0A="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAADwP4hYwyZsKUs\\u002fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA473fpAvEcz8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA8D+Xvr39T\\u002fXvPzVFHDS06+8\\u002f1Y4ZcI\\u002fo7z8AAAAAAADwPwAAAAAAAPA\\u002fUIhfxG3v7z8="}},{"label":"score time","ticktext":["0.052","0.057","0.061","0.066","0.070","0.075","0.079","0.083","0.088","0.092"],"tickvals":[0.05239877700805664,0.056819476021660695,0.06124017503526476,0.06566087404886882,0.07008157306247287,0.07450227207607693,0.078922971089681,0.08334367010328506,0.08776436911688912,0.09218506813049317],"values":{"dtype":"f8","bdata":"SAFND+IasT+fau\\u002fFpzyyP1sRu6klELE\\u002fFQlePIfMsj9d4z7\\u002fnjC1PynLqBDvv7E\\u002fd\\u002fNUTtDYsz9MpVnGzPSwP2zMyeIR3as\\u002fzczMzHCZtz\\u002fsFLCQtjOyP4n+Pv0zrKw\\u002fMzMzMwPUqj8001gSQh+vP4zDJHEPcLM\\u002f7iEp2iR+sj8="}},{"label":"fit time","ticktext":["0.12","0.16","0.21","0.25","0.30","0.34","0.39","0.43","0.47","0.52"],"tickvals":[0.1174891471862793,0.16213835610283744,0.2067875650193956,0.25143677393595376,0.2960859828525119,0.3407351917690701,0.38538440068562824,0.4300336096021864,0.47468281851874455,0.5193320274353027],"values":{"dtype":"f8","bdata":"MzMzM16e4D\\u002fj6C3VP7DPP5tqw7SmWN4\\u002foAfsgOxj3D\\u002fU5UWyA+PaP+o61+X4jdU\\u002f86M34x9H2z8x\\u002fg2uJrvVP+9+AXDGK88\\u002f8xGsnAYW0D8l4M20dY3EP83MzMzEE74\\u002fzczMzMQTvj8FqNEeUBfFP9HVadzkd8c\\u002fyR+kxXpQyD8="}},{"label":"score","ticktext":["0.50","0.53","0.56","0.60","0.63","0.66","0.70","0.73","0.76","0.80"],"tickvals":[0.499,0.5318888888888889,0.5647777777777778,0.5976666666666667,0.6305555555555555,0.6634444444444445,0.6963333333333334,0.7292222222222222,0.7621111111111112,0.795],"values":{"dtype":"f8","bdata":"cT0K16Nw6T\\u002fLoUW28\\u002f3oP3e+nxov3eg\\u002feOkmMQis6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"cT0K16Nw6T\\u002fLoUW28\\u002f3oP3e+nxov3eg\\u002feOkmMQis6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br />
-<!-- GENERATED FROM PYTHON SOURCE LINES 266-283 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 269-286 -->
 
 Now that we have a more complex plan, we can draw more conclusions from the
 parallel coordinate plot. For example, we can see that the
@@ -27062,18 +30929,18 @@ durations or not.
 For example if we wanted to include only the encoder and classifier and hide
 the fitting time:
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 285-287 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 288-290 -->
 ```Python
 search.plot_results(show_choices=["encoder", "classifier"], show_times=["score"])
 ```
 
 <div class="output_subarea output_html rendered_html output_result">
 <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="2499e8bc-a623-4dcf-8d99-8abe1db48788" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("2499e8bc-a623-4dcf-8d99-8abe1db48788")) {                    Plotly.newPlot(                        "2499e8bc-a623-4dcf-8d99-8abe1db48788",                        [{"dimensions":[{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwPwU6WsIW7e8\\u002fAAAAAAAA8D94gQt3LN3vPwAAAAAAAPA\\u002fvcCzTQzi7z9uHtG9h\\u002fnvPwR3AWQK8O8\\u002fRT+NgXnt7z\\u002fPY3oj9v3vP1o1rVMN2e8\\u002fAAAAAAAA8D8="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAADwPyTarFWqJVE\\u002fAAAAAAAAAAAAAAAAAAAAACrHmT\\u002f0024\\u002foFN0sX\\u002fGUz8AAAAAAAAAAAAAAAAAAAAAdWwg0v\\u002fj7z+Xl2nEnefvPwAAAAAAAPA\\u002fph+N0sbs7z+OBQQRjvLvPwAAAAAAAPA\\u002f6Xs8IQr77z8="}},{"label":"score time","ticktext":["0.046","0.050","0.054","0.059","0.063","0.068","0.072","0.077","0.081","0.086"],"tickvals":[0.04554414749145508,0.05002140998840332,0.05449867248535156,0.058975934982299805,0.06345319747924805,0.06793045997619629,0.07240772247314453,0.07688498497009277,0.08136224746704102,0.08583950996398926],"values":{"dtype":"f8","bdata":"gSNtu5CVsz+oAx34L0iyP8qPGKPGDrQ\\u002flj+Xttilsj8pxgmxHQq1P0ge0+iUgrI\\u002fPFuh+f50tD9ri1YmANyuPwAAAACQUac\\u002fAAAAAJT5tT+MpVUShK6wP7cesiWs9K4\\u002fR7qq6c4jsD\\u002fGOMwv8qWsPw3BIHtUZLU\\u002fIK23NfTDtD8="}},{"label":"score","ticktext":["0.50","0.53","0.56","0.60","0.63","0.66","0.69","0.73","0.76","0.79"],"tickvals":[0.499,0.5315555555555556,0.5641111111111111,0.5966666666666667,0.6292222222222222,0.6617777777777778,0.6943333333333334,0.7268888888888889,0.7594444444444445,0.792],"values":{"dtype":"f8","bdata":"8tJNYhBY6T8cWmQ730\\u002fpP6VwPQrXo+g\\u002fgZVDi2zn5z+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"8tJNYhBY6T8cWmQ730\\u002fpP6VwPQrXo+g\\u002fgZVDi2zn5z+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="b7768e68-25c7-42ab-9fa4-015fb6a03f9c" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("b7768e68-25c7-42ab-9fa4-015fb6a03f9c")) {                    Plotly.newPlot(                        "b7768e68-25c7-42ab-9fa4-015fb6a03f9c",                        [{"dimensions":[{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAADqXhrn3z2g\\u002fJKTMrAkDWT8AAAAAAADwPwAAAAAAAPA\\u002f4XL4ZyjX7z8AAAAAAADwP2qt8O763O8\\u002fAJGkFJnb7z\\u002fOo58nyfLvPxGMN02x+e8\\u002fAAAAAAAA8D9\\u002ftYgvc9jvP8blNnGt6O8\\u002fhmuFC9r67z8="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAADwPwAAAAAAAAAAml3Qm8dpaD8AAAAAAAAAAAAAAAAAAAAAuM8uDOaESD8AAAAAAAAAAAAAAAAAAAAAD7QwlfLy7z+jnD4cMuPvPxUEfZgZ6+8\\u002fMl\\u002fWsJju7z8AAAAAAADwPwAAAAAAAPA\\u002fAAAAAAAA8D8="}},{"label":"score time","ticktext":["0.052","0.057","0.061","0.066","0.070","0.075","0.079","0.083","0.088","0.092"],"tickvals":[0.05239877700805664,0.056819476021660695,0.06124017503526476,0.06566087404886882,0.07008157306247287,0.07450227207607693,0.078922971089681,0.08334367010328506,0.08776436911688912,0.09218506813049317],"values":{"dtype":"f8","bdata":"w1TCqNMTsT\\u002fpa9Oq9DKyPyPFqAzN\\u002f7A\\u002fiavUO0TOsj\\u002feDqlZCzS1P8\\u002fhY3ARx7E\\u002fM0OdnG3Esz+uQ8GT9vewPxhoCrje06s\\u002fzczMzHCZtz8hDrvMcSmyP9k2rfwZtKw\\u002fMzMzMwPUqj\\u002fJqb7QC\\u002fmuP0aI5TFphbM\\u002fptF1esx4sj8="}},{"label":"score","ticktext":["0.50","0.53","0.56","0.60","0.63","0.66","0.70","0.73","0.76","0.80"],"tickvals":[0.499,0.5318888888888889,0.5647777777777778,0.5976666666666667,0.6305555555555555,0.6634444444444445,0.6963333333333334,0.7292222222222222,0.7621111111111112,0.795],"values":{"dtype":"f8","bdata":"cT0K16Nw6T\\u002fLoUW28\\u002f3oP3e+nxov3eg\\u002feOkmMQis6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"cT0K16Nw6T\\u002fLoUW28\\u002f3oP3e+nxov3eg\\u002feOkmMQis6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br />
-<!-- GENERATED FROM PYTHON SOURCE LINES 288-299 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 291-302 -->
 
 In this example, we’ve seen how to use skrub’s `choose_from` objects to tune
 hyperparameters, choose optional configurations, and nest choices. We then
@@ -27086,8 +30953,8 @@ such as the argument of a [`deferred()`](../../reference/generated/skrub.deferre
 other DataOps’ methods or operators. Additionally, choices can be
 inter-dependent. Find more information in the [user guide](../../modules/data_ops/validation/tuning_validating_data_ops.md#user-guide-data-ops-tuning-validating-dataops).
 
-**Total running time of the script:** (0 minutes 26.473 seconds)
+**Total running time of the script:** (0 minutes 28.578 seconds)
 
-**Estimated memory usage:**  573 MB
+**Estimated memory usage:**  591 MB
 
 <a id="sphx-glr-download-auto-examples-02-data-ops-1130-choices-py"></a>
