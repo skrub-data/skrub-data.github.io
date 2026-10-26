@@ -122,8 +122,8 @@ useful! Click on any cell below to expand and read the tweet in full.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_390553d6-wrapper" hidden>
-        <template id="report_390553d6-template">
+    <div id="report_30b22a72-wrapper" hidden>
+        <template id="report_30b22a72-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1569,7 +1569,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="8b56889e"
+                    id="e80fc717"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -1599,7 +1599,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="4956b945"
+                    id="91934a32"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1633,7 +1633,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="e61c7b5d"
+                    id="411cded0"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1681,7 +1681,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="901bb9bc"
+                    id="48edb912"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1709,7 +1709,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="096e83c2"
+                    id="c366b3ca"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1739,7 +1739,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="187950d6"
+                    id="afa0b804"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1773,7 +1773,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="9b9061d5"
+                    id="9f766791"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1801,7 +1801,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="82086afd"
+                    id="b774a720"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1831,7 +1831,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="a2e0fa05"
+                    id="d477898c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1865,7 +1865,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="1cfd3feb"
+                    id="2678663a"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1893,7 +1893,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="c3846b64"
+                    id="c8322c90"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1923,7 +1923,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="ad9b07f3"
+                    id="7d9b41cd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1957,7 +1957,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="8c383181"
+                    id="32737830"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1985,7 +1985,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="5f3c5349"
+                    id="cd485abc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2015,7 +2015,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="5b132b91"
+                    id="8b66789f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2049,7 +2049,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="f4c6c089"
+                    id="3e28f94c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2077,7 +2077,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="8b5234da"
+                    id="13e56b97"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2107,7 +2107,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="a1359c9a"
+                    id="90c7738d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2181,7 +2181,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="ea56ae5c"
+                    id="76c58554"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2209,7 +2209,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="6c039bcc"
+                    id="fe91946a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2239,7 +2239,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="f1a6e98a"
+                    id="b6a876d5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2273,7 +2273,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="cb2b7171"
+                    id="2f5af1ff"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2301,7 +2301,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="9ec9d159"
+                    id="b79f88a7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2331,7 +2331,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="d305eb6a"
+                    id="cc6eb72b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2365,7 +2365,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="dc3092d7"
+                    id="27fee88c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2393,7 +2393,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="570eb4f6"
+                    id="b8172628"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2435,7 +2435,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="38ed50b1"
+                    id="d30bf54f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2469,7 +2469,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="2dd998e4"
+                    id="05d20f2e"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2497,7 +2497,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="71578c78"
+                    id="e51fc969"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2527,7 +2527,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="6aa09245"
+                    id="8156377d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2561,7 +2561,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="122cbfce"
+                    id="a88eb70b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2589,7 +2589,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="bb552a61"
+                    id="fdb47fa4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2641,7 +2641,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="a23f42ae"
+                    id="f8543ff8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2785,7 +2785,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-26T09:49:27.282654</dc:date>
+        <dc:date>2026-10-26T11:06:59.635142</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -2815,7 +2815,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 149.086214 
     L 193.6375 149.086214 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 193.6375 146.4146 
@@ -2823,7 +2823,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 135.728144 
     L 193.6375 135.728144 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 193.6375 133.056529 
@@ -2831,7 +2831,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 122.370073 
     L 193.6375 122.370073 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 193.6375 119.698459 
@@ -2839,7 +2839,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 109.012003 
     L 193.6375 109.012003 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 193.6375 106.340388 
@@ -2847,7 +2847,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 95.653932 
     L 193.6375 95.653932 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 193.6375 92.982318 
@@ -2855,7 +2855,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 82.295862 
     L 193.6375 82.295862 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 193.6375 79.624247 
@@ -2863,7 +2863,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 68.937791 
     L 193.6375 68.937791 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 193.6375 66.266177 
@@ -2871,7 +2871,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 55.579721 
     L 193.6375 55.579721 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 193.6375 52.908106 
@@ -2879,7 +2879,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 42.22165 
     L 193.6375 42.22165 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 193.6375 39.550036 
@@ -2887,18 +2887,18 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 282.780357 28.86358 
     L 193.6375 28.86358 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m58fb58e303" d="M 0 0 
+           <path id="m5dd476e5b8" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m58fb58e303" x="193.6375" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m5dd476e5b8" x="193.6375" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -2908,7 +2908,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m58fb58e303" x="238.208929" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m5dd476e5b8" x="238.208929" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -2918,7 +2918,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m58fb58e303" x="282.780357" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m5dd476e5b8" x="282.780357" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -2930,12 +2930,12 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m939a3c8579" d="M 0 0 
+           <path id="md8c7cd8e76" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -2945,7 +2945,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -2955,7 +2955,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -2965,7 +2965,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -2975,7 +2975,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -2985,7 +2985,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -2995,7 +2995,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -3005,7 +3005,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -3015,7 +3015,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -3025,7 +3025,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -3123,7 +3123,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       </g>
      </g>
      <defs>
-      <clipPath id="pbff3951765">
+      <clipPath id="p3bd5728d25">
        <rect x="193.6375" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -3453,7 +3453,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-26T09:49:27.358742</dc:date>
+        <dc:date>2026-10-26T11:06:59.713190</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -3483,7 +3483,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 148.10106 23.054545 
     L 59.314062 23.054545 
     z
-    " clip-path="url(#pac894fed9e)" style="fill: #ee854a"/>
+    " clip-path="url(#pbfa065cbff)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 59.314062 20.145455 
@@ -3491,18 +3491,18 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 148.45692 8.509091 
     L 59.314062 8.509091 
     z
-    " clip-path="url(#pac894fed9e)" style="fill: #ee854a"/>
+    " clip-path="url(#pbfa065cbff)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m09a528dc87" d="M 0 0 
+           <path id="mef87fc70c2" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m09a528dc87" x="59.314062" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mef87fc70c2" x="59.314062" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -3512,7 +3512,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m09a528dc87" x="94.900033" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mef87fc70c2" x="94.900033" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -3522,7 +3522,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m09a528dc87" x="130.486004" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mef87fc70c2" x="130.486004" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -3534,12 +3534,12 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m481c578065" d="M 0 0 
+           <path id="mfe0d6f9d32" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m481c578065" x="59.314062" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mfe0d6f9d32" x="59.314062" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -3549,7 +3549,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m481c578065" x="59.314062" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mfe0d6f9d32" x="59.314062" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -3596,7 +3596,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       </g>
      </g>
      <defs>
-      <clipPath id="pac894fed9e">
+      <clipPath id="pbfa065cbff">
        <rect x="59.314062" y="7.2" width="93.6" height="28.8"/>
       </clipPath>
      </defs>
@@ -4230,7 +4230,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-26T09:49:27.282654</dc:date>
+        <dc:date>2026-10-26T11:06:59.635142</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -4260,7 +4260,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 149.086214 
     L 193.6375 149.086214 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 193.6375 146.4146 
@@ -4268,7 +4268,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 135.728144 
     L 193.6375 135.728144 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 193.6375 133.056529 
@@ -4276,7 +4276,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 122.370073 
     L 193.6375 122.370073 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 193.6375 119.698459 
@@ -4284,7 +4284,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 109.012003 
     L 193.6375 109.012003 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 193.6375 106.340388 
@@ -4292,7 +4292,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 95.653932 
     L 193.6375 95.653932 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 193.6375 92.982318 
@@ -4300,7 +4300,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 82.295862 
     L 193.6375 82.295862 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 193.6375 79.624247 
@@ -4308,7 +4308,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 68.937791 
     L 193.6375 68.937791 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 193.6375 66.266177 
@@ -4316,7 +4316,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 55.579721 
     L 193.6375 55.579721 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 193.6375 52.908106 
@@ -4324,7 +4324,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 42.22165 
     L 193.6375 42.22165 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 193.6375 39.550036 
@@ -4332,18 +4332,18 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 282.780357 28.86358 
     L 193.6375 28.86358 
     z
-    " clip-path="url(#pbff3951765)" style="fill: #ee854a"/>
+    " clip-path="url(#p3bd5728d25)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m58fb58e303" d="M 0 0 
+           <path id="m5dd476e5b8" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m58fb58e303" x="193.6375" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m5dd476e5b8" x="193.6375" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -4353,7 +4353,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m58fb58e303" x="238.208929" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m5dd476e5b8" x="238.208929" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -4363,7 +4363,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m58fb58e303" x="282.780357" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m5dd476e5b8" x="282.780357" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -4375,12 +4375,12 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m939a3c8579" d="M 0 0 
+           <path id="md8c7cd8e76" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -4390,7 +4390,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -4400,7 +4400,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -4410,7 +4410,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -4420,7 +4420,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -4430,7 +4430,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -4440,7 +4440,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -4450,7 +4450,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -4460,7 +4460,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -4470,7 +4470,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#m939a3c8579" x="193.6375" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md8c7cd8e76" x="193.6375" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -4568,7 +4568,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       </g>
      </g>
      <defs>
-      <clipPath id="pbff3951765">
+      <clipPath id="p3bd5728d25">
        <rect x="193.6375" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -4894,7 +4894,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-26T09:49:27.358742</dc:date>
+        <dc:date>2026-10-26T11:06:59.713190</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -4924,7 +4924,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 148.10106 23.054545 
     L 59.314062 23.054545 
     z
-    " clip-path="url(#pac894fed9e)" style="fill: #ee854a"/>
+    " clip-path="url(#pbfa065cbff)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 59.314062 20.145455 
@@ -4932,18 +4932,18 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 148.45692 8.509091 
     L 59.314062 8.509091 
     z
-    " clip-path="url(#pac894fed9e)" style="fill: #ee854a"/>
+    " clip-path="url(#pbfa065cbff)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m09a528dc87" d="M 0 0 
+           <path id="mef87fc70c2" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m09a528dc87" x="59.314062" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mef87fc70c2" x="59.314062" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -4953,7 +4953,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m09a528dc87" x="94.900033" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mef87fc70c2" x="94.900033" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -4963,7 +4963,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m09a528dc87" x="130.486004" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mef87fc70c2" x="130.486004" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -4975,12 +4975,12 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m481c578065" d="M 0 0 
+           <path id="mfe0d6f9d32" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m481c578065" x="59.314062" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mfe0d6f9d32" x="59.314062" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -4990,7 +4990,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m481c578065" x="59.314062" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mfe0d6f9d32" x="59.314062" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -5037,7 +5037,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       </g>
      </g>
      <defs>
-      <clipPath id="pac894fed9e">
+      <clipPath id="pbfa065cbff">
        <rect x="59.314062" y="7.2" width="93.6" height="28.8"/>
       </clipPath>
      </defs>
@@ -5194,7 +5194,7 @@ useful! Click on any cell below to expand and read the tweet in full.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_390553d6">
+        <skrub-table-report class="report" id="report_30b22a72">
         </skrub-table-report>
 
         <script type="module">
@@ -6298,7 +6298,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         </script>
     </div>
 
-    <div id="report_390553d6-wrapper-fallback">
+    <div id="report_30b22a72-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -6309,8 +6309,8 @@ useful! Click on any cell below to expand and read the tweet in full.
     </div>
 
     <script>
-     document.getElementById("report_390553d6-wrapper").removeAttribute("hidden");
-     document.getElementById("report_390553d6-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_30b22a72-wrapper").removeAttribute("hidden");
+     document.getElementById("report_30b22a72-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -6500,11 +6500,11 @@ column in a dataframe. By default, |LLMEncoder| uses the e5-small-v2 model.
 
  .. code-block:: none
 
-    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 4271.19it/s]
-    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 7988.54it/s]
-    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 8350.53it/s]
-    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 7235.05it/s]
-    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 8976.00it/s]
+    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 3571.44it/s]
+    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 8070.31it/s]
+    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 6773.75it/s]
+    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 5633.57it/s]
+    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 4076.89it/s]
 
 
 
@@ -6701,9 +6701,9 @@ good performance at a fraction of the cost of more complex methods.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (2 minutes 38.830 seconds)
+   **Total running time of the script:** (3 minutes 15.637 seconds)
 
-**Estimated memory usage:**  1118 MB
+**Estimated memory usage:**  1149 MB
 
 
 .. _sphx_glr_download_auto_examples_01_encoding_0020_text_with_string_encoders.py:
