@@ -2,8 +2,8 @@
 
 # Caching for faster recomputation
 
-The results of estimators added to a DataOp with [`.skb.apply()`](../../../reference/generated/skrub.DataOp.skb.apply.md#skrub.DataOp.skb.apply) and of functions added with [`deferred()`](../../../reference/generated/skrub.deferred.md#skrub.deferred) or
-[`.skb.apply_func()`](../../../reference/generated/skrub.DataOp.skb.apply_func.md#skrub.DataOp.skb.apply_func) can be cached.
+The results of estimators added to a DataOp with [`.skb.apply()`](../../../reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply) and of functions added with [`deferred()`](../../../reference/generated/skrub.deferredhtml.md#skrub.deferred) or
+[`.skb.apply_func()`](../../../reference/generated/skrub.DataOp.skb.apply_funchtml.md#skrub.DataOp.skb.apply_func) can be cached.
 
 This is a fairly **experimental feature**. The feature and its API may change to
 improve the identification of identical calls, the management of the cache
@@ -53,14 +53,14 @@ caching causes errors (e.g. because the arguments or result cannot be
 serialized), if result is not deterministic and should be recomputed every time
 (for example fetching some information from the network), or if we know that the
 function is very fast and caching hinders performance instead of improving it.
-This is achieved by passing `no_cache=True` to [`deferred()`](../../../reference/generated/skrub.deferred.md#skrub.deferred),
-[`.skb.apply()`](../../../reference/generated/skrub.DataOp.skb.apply.md#skrub.DataOp.skb.apply) or [`.skb.apply_func()`](../../../reference/generated/skrub.DataOp.skb.apply_func.md#skrub.DataOp.skb.apply_func).
+This is achieved by passing `no_cache=True` to [`deferred()`](../../../reference/generated/skrub.deferredhtml.md#skrub.deferred),
+[`.skb.apply()`](../../../reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply) or [`.skb.apply_func()`](../../../reference/generated/skrub.DataOp.skb.apply_funchtml.md#skrub.DataOp.skb.apply_func).
 
 ## Limiting the cache directory size
 
 By default skrub will start a subprocess to prune the cache in order to limit
 its size, once per python program using the skrub cache. This can be controlled
-with the `target_cache_size` [`config`](../../../reference/generated/skrub.set_config.md#skrub.set_config) option. Set it to
+with the `target_cache_size` [`config`](../../../reference/generated/skrub.set_confightml.md#skrub.set_config) option. Set it to
 `None` to disable this pruning altogether, to an int for a size in bytes, or
 to a string like `'3K'`, `'3M'`, `'3G'`. The default is `'2G'`.
 
@@ -74,7 +74,7 @@ Skrub relies on `joblib` for caching. Some effort is done to detect if the
 code of cached functions has changed (thus invalidating cached results), but
 this is on a best-effort basis and is fairly brittle. For example, changes to a
 helper that is called by the cached function are not detected. Changes to the
-code of estimators passed to [`DataOp.skb.apply()`](../../../reference/generated/skrub.DataOp.skb.apply.md#skrub.DataOp.skb.apply) are not detected. (Note
+code of estimators passed to [`DataOp.skb.apply()`](../../../reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply) are not detected. (Note
 the same limitations apply to joblib in general, and for example the `memory`
 parameter of scikit-learn pipelines).
 

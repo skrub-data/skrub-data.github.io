@@ -4,9 +4,9 @@
 
 A user-defined description or comment about the DataOp.
 
-This can be set with [`DataOp.skb.set_description()`](skrub.DataOp.skb.set_description.md#skrub.DataOp.skb.set_description) and is displayed
-in the execution report generated with [`DataOp.skb.report()`](skrub.DataOp.skb.report.md#skrub.DataOp.skb.report)
-or [`report()`](skrub.SkrubLearner.md#skrub.SkrubLearner.report).
+This can be set with [`DataOp.skb.set_description()`](skrub.DataOp.skb.set_descriptionhtml.md#skrub.DataOp.skb.set_description) and is displayed
+in the execution report generated with [`DataOp.skb.report()`](skrub.DataOp.skb.reporthtml.md#skrub.DataOp.skb.report)
+or [`report()`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.report).
 
 ### Examples
 

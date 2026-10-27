@@ -1,6 +1,6 @@
 # fetch_flight_delays
 
-### skrub.datasets.fetch_flight_delays(data_home=None)
+### skrub.datasets.fetch_flight_delays(data_home=None, load_data=True)
 
 Fetch the flight delays dataset available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
 
@@ -10,6 +10,12 @@ Size on disk: 657MB.
 * **Parameters:**
   **data_home**
   : The directory where to download and unzip the files.
+
+  **load_data**
+  : Whether to load the dataframes into memory. When set to `False`,
+    only the paths to the CSV files are returned. This is useful when the
+    data should be read with custom options (for example to read only a
+    subset of a large table) to avoid loading the full dataset.
 * **Returns:**
   **bunch**
   : A dictionary-like object with the following keys:
@@ -49,6 +55,9 @@ Size on disk: 657MB.
     <br/>
     stations_path
     : The path to the stations CSV file.
+    <br/>
+    The `flights`, `airports`, `weather` and `stations` dataframes
+    are only present when `load_data=True`.
 
 ### Examples
 

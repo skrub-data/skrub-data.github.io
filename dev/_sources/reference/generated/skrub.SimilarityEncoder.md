@@ -85,16 +85,16 @@ two strings.
     (in the same order as the output of SimilarityEncoder.transform).
 
 #### SEE ALSO
-[`MinHashEncoder`](skrub.MinHashEncoder.md#skrub.MinHashEncoder)
+[`MinHashEncoder`](skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder)
 : Encode string columns as a numeric array with the minhash method.
 
-[`GapEncoder`](skrub.GapEncoder.md#skrub.GapEncoder)
+[`GapEncoder`](skrub.GapEncoderhtml.md#skrub.GapEncoder)
 : Encodes dirty categories (strings) by constructing latent topics with continuous encoding.
 
-[`LLMEncoder`](skrub.LLMEncoder.md#skrub.LLMEncoder)
+[`LLMEncoder`](skrub.LLMEncoderhtml.md#skrub.LLMEncoder)
 : Encode string columns with a pretrained language model.
 
-[`deduplicate`](skrub.deduplicate.md#skrub.deduplicate)
+[`deduplicate`](skrub.deduplicatehtml.md#skrub.deduplicate)
 : Deduplicate data by hierarchically clustering similar strings.
 
 ### Notes

@@ -94,7 +94,7 @@ those rows would contain if they existed in the table.
     trained to predict).
 
 #### SEE ALSO
-[`Joiner`](skrub.Joiner.md#skrub.Joiner)
+[`Joiner`](skrub.Joinerhtml.md#skrub.Joiner)
 : Works in a similar way but instead of inferring values, picks the closest row from the auxiliary table.
 
 ### Notes

@@ -4,8 +4,8 @@
 
 Get a text representation of the computation graph.
 
-Usually the graphical representation provided by [`DataOp.skb.draw_graph()`](skrub.DataOp.skb.draw_graph.md#skrub.DataOp.skb.draw_graph)
-or [`DataOp.skb.report()`](skrub.DataOp.skb.report.md#skrub.DataOp.skb.report) is more useful. This is a fallback for
+Usually the graphical representation provided by [`DataOp.skb.draw_graph()`](skrub.DataOp.skb.draw_graphhtml.md#skrub.DataOp.skb.draw_graph)
+or [`DataOp.skb.report()`](skrub.DataOp.skb.reporthtml.md#skrub.DataOp.skb.report) is more useful. This is a fallback for
 inspecting the computation graph when only text output is available.
 
 * **Returns:**
@@ -17,7 +17,7 @@ inspecting the computation graph when only text output is available.
 [`sklearn.model_selection.cross_validate()`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate)
 : Evaluate metric(s) by cross-validation and also record fit/score times.
 
-[`skrub.DataOp.skb.make_learner()`](skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner)
+[`skrub.DataOp.skb.make_learner()`](skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner)
 : Get a skrub learner for this DataOp.
 
 ### Examples

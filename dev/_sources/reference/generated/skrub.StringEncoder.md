@@ -61,13 +61,13 @@ and `tsvd_{component}` if it does not.
     column.
 
 #### SEE ALSO
-[`MinHashEncoder`](skrub.MinHashEncoder.md#skrub.MinHashEncoder)
+[`MinHashEncoder`](skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder)
 : Encode string columns as a numeric array with the minhash method.
 
-[`GapEncoder`](skrub.GapEncoder.md#skrub.GapEncoder)
+[`GapEncoder`](skrub.GapEncoderhtml.md#skrub.GapEncoder)
 : Encode string columns by constructing latent topics.
 
-[`LLMEncoder`](skrub.LLMEncoder.md#skrub.LLMEncoder)
+[`LLMEncoder`](skrub.LLMEncoderhtml.md#skrub.LLMEncoder)
 : Encode string columns using pre-trained language models.
 
 ### Notes

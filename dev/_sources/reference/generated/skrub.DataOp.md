@@ -9,10 +9,10 @@ prediction – in a single object that can be fitted, tuned, cross-validated, an
 saved like any scikit-learn estimator.
 
 This class is usually not instantiated manually, but through one of the functions
-[`var()`](skrub.var.md#skrub.var), [`as_data_op()`](skrub.as_data_op.md#skrub.as_data_op), [`X()`](skrub.X.md#skrub.X) or [`y()`](skrub.y.md#skrub.y), by applying a
-[`deferred()`](skrub.deferred.md#skrub.deferred) function, or by calling a method or applying an operator
+[`var()`](skrub.varhtml.md#skrub.var), [`as_data_op()`](skrub.as_data_ophtml.md#skrub.as_data_op), [`X()`](skrub.Xhtml.md#skrub.X) or [`y()`](skrub.yhtml.md#skrub.y), by applying a
+[`deferred()`](skrub.deferredhtml.md#skrub.deferred) function, or by calling a method or applying an operator
 to an existing DataOp.
 
-Refer to the [Building complete pipelines with DataOps](../../data_ops.md#user-guide-data-ops-index) page for more information.
+Refer to the [Building complete pipelines with DataOps](../../data_opshtml.md#user-guide-data-ops-index) page for more information.
 
 <!-- !! processed by numpydoc !! -->

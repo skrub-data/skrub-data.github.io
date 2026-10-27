@@ -21,7 +21,7 @@ or programmatically with `.dict()`, `.json()`, or `.markdown()`.
     etc. are computed using the whole dataframe.
     <br/>
     The default value `None` uses the global configuration (see
-    [`set_config()`](skrub.set_config.md#skrub.set_config)), which then defaults to 10.
+    [`set_config()`](skrub.set_confightml.md#skrub.set_config)), which then defaults to 10.
 
   **title**
   : Title for the report.
@@ -31,12 +31,12 @@ or programmatically with `.dict()`, `.json()`, or `.markdown()`.
     Each key is the filter named to be displayed in the dropdown menu
     (e.g. `"first_10"`), and the value is the desired filter. Filters
     may be specified as a list of column names, a list of column indices,
-    or a [skrub selectors](../../modules/multi_column_operations/selectors.md#user-guide-selectors) object.
+    or a [skrub selectors](../../modules/multi_column_operations/selectorshtml.md#user-guide-selectors) object.
     See the end of the “Examples” section below for details.
 
   **verbose**
   : Whether to print progress information while the report is being generated.
-    * verbose = `None` uses the global configuration (see [`set_config()`](skrub.set_config.md#skrub.set_config)),
+    * verbose = `None` uses the global configuration (see [`set_config()`](skrub.set_confightml.md#skrub.set_config)),
       which then defaults to 1.
     * verbose = 1 prints how many columns have been processed so far.
     * verbose = 0 silences the output.
@@ -47,7 +47,7 @@ or programmatically with `.dict()`, `.json()`, or `.markdown()`.
     - `False`: never generate plots.
     - `"auto"` (default): generate plots only when the number of columns
       does not exceed the configured `table_report_plots_threshold`
-      (see [`set_config()`](skrub.set_config.md#skrub.set_config)).
+      (see [`set_config()`](skrub.set_confightml.md#skrub.set_config)).
 
   **compute_associations**
   : Whether to compute associations between columns.
@@ -55,7 +55,7 @@ or programmatically with `.dict()`, `.json()`, or `.markdown()`.
     - `False`: never compute associations.
     - `"auto"` (default): compute associations only when the number of
       columns does not exceed the configured `table_report_associations_threshold`
-      (see [`set_config()`](skrub.set_config.md#skrub.set_config)).
+      (see [`set_config()`](skrub.set_confightml.md#skrub.set_config)).
 
   **open_tab**
   : The tab that will be displayed by default when the report is opened.
@@ -66,7 +66,7 @@ or programmatically with `.dict()`, `.json()`, or `.markdown()`.
     * “associations”: Shows column associations and similarities
 
 #### SEE ALSO
-[`patch_display`](skrub.patch_display.md#skrub.patch_display)
+[`patch_display`](skrub.patch_displayhtml.md#skrub.patch_display)
 : Replace the default DataFrame HTML displays in the output of notebook cells with a TableReport.
 
 ### Notes
@@ -129,7 +129,7 @@ dataframes with many columns.
 
 The report can also be obtained in JSON format with [`json()`](#skrub.TableReport.json), which can
 be useful for programmatic access to the report data. The schema of the
-JSON data is reported in [TableReport JSON schema](../table_report_json_schema.md#table-report-json-schema).
+JSON data is reported in [TableReport JSON schema](../table_report_json_schemahtml.md#table-report-json-schema).
 
 Note that the resulting JSON includes the plots in SVG format, which can be
 quite verbose: plots can be disabled by setting `plot_distributions=False`
@@ -207,7 +207,7 @@ By default, the JSON output includes the plots in SVG format, which can
 be quite verbose. Plots can be disabled by setting
 `plot_distributions=False` when generating the report.
 
-The schema of the JSON data is reported in [TableReport JSON schema](../table_report_json_schema.md#table-report-json-schema).
+The schema of the JSON data is reported in [TableReport JSON schema](../table_report_json_schemahtml.md#table-report-json-schema).
 
 * **Parameters:**
   **indent**

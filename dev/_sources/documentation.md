@@ -229,7 +229,6 @@ it 'style' --> <script>
   * [DataOps basic concepts](data_opshtml.md#dataops-basic-concepts)
     * [Basics of DataOps: the DataOps plan, variables, and learners](modules/data_ops/basics/what_are_data_opshtml.md)
     * [Building a simple DataOps plan](modules/data_ops/basics/building_data_ops_planhtml.md)
-    * [Quick overview of DataOps](auto_tutorials/1111_data_ops_quick_tourhtml.md)
     * [Using previews for easier development and debugging](modules/data_ops/basics/using_previewshtml.md)
     * [DataOps allow direct access to methods of the underlying data](modules/data_ops/basics/direct_access_methodshtml.md)
     * [Control flow in DataOps: eager and deferred evaluation](modules/data_ops/basics/control_flowhtml.md)

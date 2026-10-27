@@ -120,19 +120,19 @@ by raising a `RejectColumn` exception.
   : Column names of the data the Gap was fitted on.
 
 #### SEE ALSO
-[`MinHashEncoder`](skrub.MinHashEncoder.md#skrub.MinHashEncoder)
+[`MinHashEncoder`](skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder)
 : Encode string columns as a numeric array with the minhash method.
 
-[`SimilarityEncoder`](skrub.SimilarityEncoder.md#skrub.SimilarityEncoder)
+[`SimilarityEncoder`](skrub.SimilarityEncoderhtml.md#skrub.SimilarityEncoder)
 : Encode string columns as a numeric array with n-gram string similarity.
 
-[`LLMEncoder`](skrub.LLMEncoder.md#skrub.LLMEncoder)
+[`LLMEncoder`](skrub.LLMEncoderhtml.md#skrub.LLMEncoder)
 : Encode string columns with a pretrained language model.
 
-[`StringEncoder`](skrub.StringEncoder.md#skrub.StringEncoder)
+[`StringEncoder`](skrub.StringEncoderhtml.md#skrub.StringEncoder)
 : Fast n-gram encoding of string columns.
 
-[`deduplicate`](skrub.deduplicate.md#skrub.deduplicate)
+[`deduplicate`](skrub.deduplicatehtml.md#skrub.deduplicate)
 : Deduplicate data by hierarchically clustering similar strings.
 
 ### References

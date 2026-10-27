@@ -7,7 +7,7 @@ Get all the variables used in the DataOp.
 * **Parameters:**
   **all_named_ops**
   : If `False`, return only actual variables (DataOps created with
-    [`var()`](skrub.var.md#skrub.var), [`X()`](skrub.X.md#skrub.X) or [`y()`](skrub.y.md#skrub.y)). If `True`, return all
+    [`var()`](skrub.varhtml.md#skrub.var), [`X()`](skrub.Xhtml.md#skrub.X) or [`y()`](skrub.yhtml.md#skrub.y)). If `True`, return all
     nodes that have a name (i.e., for which a value can be passed in the
     environment).
 * **Returns:**
@@ -15,16 +15,16 @@ Get all the variables used in the DataOp.
   : Keys are names, and values the corresponding DataOp.
 
 #### SEE ALSO
-[`DataOp.skb.get_data`](skrub.DataOp.skb.get_data.md#skrub.DataOp.skb.get_data)
+[`DataOp.skb.get_data`](skrub.DataOp.skb.get_datahtml.md#skrub.DataOp.skb.get_data)
 : Get the values of the variables contained in the DataOp.
 
-[`DataOp.skb.set_data`](skrub.DataOp.skb.set_data.md#skrub.DataOp.skb.set_data)
+[`DataOp.skb.set_data`](skrub.DataOp.skb.set_datahtml.md#skrub.DataOp.skb.set_data)
 : Set new values for the variables.
 
-[`DataOp.skb.set_name`](skrub.DataOp.skb.set_name.md#skrub.DataOp.skb.set_name)
+[`DataOp.skb.set_name`](skrub.DataOp.skb.set_namehtml.md#skrub.DataOp.skb.set_name)
 : Assign a name to a DataOp.
 
-[`DataOp.skb.get_choices`](skrub.DataOp.skb.get_choices.md#skrub.DataOp.skb.get_choices)
+[`DataOp.skb.get_choices`](skrub.DataOp.skb.get_choiceshtml.md#skrub.DataOp.skb.get_choices)
 : Similar function for getting the choices contained in the DataOp.
 
 ### Examples
@@ -39,7 +39,7 @@ Get all the variables used in the DataOp.
 ```
 
 We assign a name to a DataOp that is not a variable with
-[`set_name()`](skrub.DataOp.skb.set_name.md#skrub.DataOp.skb.set_name):
+[`set_name()`](skrub.DataOp.skb.set_namehtml.md#skrub.DataOp.skb.set_name):
 
 ```pycon
 >>> c = (a + b).skb.set_name("c")

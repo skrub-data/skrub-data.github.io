@@ -58,16 +58,16 @@ morphological similarities between strings.
   : Names of features seen during [fit](https://scikit-learn.org/stable/glossary.html#term-fit).
 
 #### SEE ALSO
-[`GapEncoder`](skrub.GapEncoder.md#skrub.GapEncoder)
+[`GapEncoder`](skrub.GapEncoderhtml.md#skrub.GapEncoder)
 : Encodes dirty categories (strings) by constructing latent topics with continuous encoding.
 
-[`SimilarityEncoder`](skrub.SimilarityEncoder.md#skrub.SimilarityEncoder)
+[`SimilarityEncoder`](skrub.SimilarityEncoderhtml.md#skrub.SimilarityEncoder)
 : Encode string columns as a numeric array with n-gram string similarity.
 
-[`StringEncoder`](skrub.StringEncoder.md#skrub.StringEncoder)
+[`StringEncoder`](skrub.StringEncoderhtml.md#skrub.StringEncoder)
 : Fast n-gram encoding of string columns.
 
-[`deduplicate`](skrub.deduplicate.md#skrub.deduplicate)
+[`deduplicate`](skrub.deduplicatehtml.md#skrub.deduplicate)
 : Deduplicate data by hierarchically clustering similar strings.
 
 ### References

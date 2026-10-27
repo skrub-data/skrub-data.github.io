@@ -1,22 +1,22 @@
 <a id="user-guide-featurizing-describe-transformations"></a>
 
-# How to display how the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) modified a dataframe
+# How to display how the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) modified a dataframe
 
-Both the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) and the [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner) modify a given dataframe in various
+Both the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) and the [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) modify a given dataframe in various
 ways, from converting dtypes, to cleaning formats, to removing columns. In many
 situations, knowing which columns have been modified and how is important to
 understand what is happening in a pipeline.
 
 Because all of this happens automatically, it can be useful to get a summary of
-what was actually done to each column. Once a [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) or [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner) is
+what was actually done to each column. Once a [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) or [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) is
 fitted, the `describe_transformations` method returns a human-readable report
 listing:
 
 - the **preprocessing** steps and the columns they were applied to;
-- (for the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer)) the **main transformers** (one per column kind) and
+- (for the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer)) the **main transformers** (one per column kind) and
   the columns they handled.
 
-Let us fit a [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) on a small employee dataframe that contains a
+Let us fit a [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) on a small employee dataframe that contains a
 numeric column, a date stored as a string, a percentage stored as a string, and
 two string columns:
 
@@ -68,8 +68,8 @@ No high_cardinality columns have been detected.
 
 - `salary` is already numeric, so it is passed through unchanged
   (`PassThrough`).
-- `hire_date` contains dates stored as strings; the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) parsed
-  them and applied the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) to extract features such as the year,
+- `hire_date` contains dates stored as strings; the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) parsed
+  them and applied the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) to extract features such as the year,
   month and day.
 - `department`, `employee` and `bonus_pct` are string columns with few
   unique values, so they are handled by the [`OneHotEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder).
@@ -82,7 +82,7 @@ print(vectorizer.describe_transformations(max_cols=2))
 ```
 
 For a programmatic view of the same information, you can inspect the fitted
-attributes of the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer): `column_to_kind_` maps each input column
+attributes of the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer): `column_to_kind_` maps each input column
 to its kind, `transformers_` maps each column to the fitted transformer that
 was applied to it, and `all_processing_steps_` lists every processing step
 (including preprocessing and the final cast to `float32`) applied to each
@@ -111,4 +111,4 @@ DatetimeEncoder()
  {'hire_date_day': ToFloat(), 'hire_date_month': ToFloat(), ...}]
 ```
 
-The [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner) also provides the `.all_processing_steps_` method.
+The [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) also provides the `.all_processing_steps_` method.

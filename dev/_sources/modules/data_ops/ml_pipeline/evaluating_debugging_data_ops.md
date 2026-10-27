@@ -1,9 +1,9 @@
 <a id="user-guide-data-ops-evaluating-debugging-dataops"></a>
 
-# Evaluating and debugging the DataOps plan with [`.skb.report()`](../../../reference/generated/skrub.DataOp.skb.report.md#skrub.DataOp.skb.report)
+# Evaluating and debugging the DataOps plan with [`.skb.report()`](../../../reference/generated/skrub.DataOp.skb.reporthtml.md#skrub.DataOp.skb.report)
 
 All operations on DataOps are recorded in a computational graph, which can be
-inspected with [`.skb.report()`](../../../reference/generated/skrub.DataOp.skb.report.md#skrub.DataOp.skb.report). This method
+inspected with [`.skb.report()`](../../../reference/generated/skrub.DataOp.skb.reporthtml.md#skrub.DataOp.skb.report). This method
 generates an HTML report that shows the full plan, including all nodes, their names,
 descriptions, and the transformations applied to the data. It is possible to give a
 title to the evaluation report this way:
@@ -16,7 +16,7 @@ The graph in the report is drawn by [Graphviz](https://graphviz.org/download/)
 when it is installed (using your system’s package manager, not pip). Otherwise
 the graph is drawn by your web browser when you open the report, which requires
 JavaScript but no internet connection. The same goes for
-[`.skb.draw_graph()`](../../../reference/generated/skrub.DataOp.skb.draw_graph.md#skrub.DataOp.skb.draw_graph) and the display of DataOps in
+[`.skb.draw_graph()`](../../../reference/generated/skrub.DataOp.skb.draw_graphhtml.md#skrub.DataOp.skb.draw_graph) and the display of DataOps in
 notebooks; in a notebook the browser also needs an internet connection to
 download the library that draws the graph.
 
@@ -40,5 +40,5 @@ displayed.
 By default, reports are saved in the `skrub_data/execution_reports` directory, but
 they can be saved to a different location with the `output_dir` parameter.
 Note that the default path can be altered with the
-`SKB_DATA_DIRECTORY` environment variable. See [How to configure and customize the default behavior of skrub](../../../guides/utilities/customizing_configuration.md#user-guide-configuration-parameters)
+`SKB_DATA_DIRECTORY` environment variable. See [How to configure and customize the default behavior of skrub](../../../guides/utilities/customizing_configurationhtml.md#user-guide-configuration-parameters)
 for more details.

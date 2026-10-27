@@ -24,9 +24,9 @@ equivalent to `skrub.deferred(func)(X)`.
     <br/>
     Note: if your function has a keyword-only parameter named
     `no_cache` and you need to pass a value for it, use
-    [`skrub.deferred()`](skrub.deferred.md#skrub.deferred) instead of `apply_func`.
+    [`skrub.deferred()`](skrub.deferredhtml.md#skrub.deferred) instead of `apply_func`.
     <br/>
-    See [Caching for faster recomputation](../../modules/data_ops/ml_pipeline/caching.md#user-guide-data-ops-caching) for more information about caching.
+    See [Caching for faster recomputation](../../modules/data_ops/ml_pipeline/cachinghtml.md#user-guide-data-ops-caching) for more information about caching.
 * **Returns:**
   data_op
   : The DataOp that evaluates to the result of calling `func` as

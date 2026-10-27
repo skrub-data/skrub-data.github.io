@@ -24,7 +24,7 @@ microservice will accept an email’s data as a JSON payload and return a score 
 To avoid rewriting the entire data pipeline when moving from model validation to
 production deployment, which is both error-prone and inefficient, we prefer to load an
 object that encapsulates the same processing pipeline used during model development.
-This is where the [`SkrubLearner`](../../reference/generated/skrub.SkrubLearner.md#skrub.SkrubLearner) can help.
+This is where the [`SkrubLearner`](../../reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) can help.
 
 Adopting this workflow also has the benefit of forcing us to clearly define the type
 of data that will be available at the input of the microservice. It helps ensure we
@@ -133,7 +133,7 @@ y = skrub.y(y)
 
 The variable X is currently a list of dictionaries, which estimators cannot
 handle directly. Let’s convert it to a pandas DataFrame using
-[`apply_func()`](../../reference/generated/skrub.DataOp.skb.apply_func.md#skrub.DataOp.skb.apply_func).
+[`apply_func()`](../../reference/generated/skrub.DataOp.skb.apply_funchtml.md#skrub.DataOp.skb.apply_func).
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 113-117 -->
 ```Python
@@ -145,7 +145,7 @@ df = X.skb.apply_func(pd.DataFrame)
 <!-- GENERATED FROM PYTHON SOURCE LINES 118-120 -->
 
 For this example, we will use a strong baseline, with skrub’s
-[`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline).
+[`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline).
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 120-129 -->
 ```Python
@@ -237,7 +237,7 @@ predictions.skb.draw_graph()
 
 To end the explorative work, we need to build the learner, fit it, and save it to a
 file.
-Passing `fitted=True` to the [`make_learner()`](../../reference/generated/skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner)
+Passing `fitted=True` to the [`make_learner()`](../../reference/generated/skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner)
 function makes it so that the learner is fitted on the data that has been passed to
 the variables of the DataOps plan.
 
@@ -289,8 +289,8 @@ and preprocessing done during model development are exactly the same as those do
 production. This makes deployment straightforward and reduces the risk of errors
 when moving from development to production environments.
 
-**Total running time of the script:** (0 minutes 9.592 seconds)
+**Total running time of the script:** (0 minutes 9.340 seconds)
 
-**Estimated memory usage:**  636 MB
+**Estimated memory usage:**  714 MB
 
 <a id="sphx-glr-download-auto-examples-02-data-ops-1150-use-case-py"></a>

@@ -15,22 +15,22 @@ Get all the choices used in the DataOp.
     For other choices, the key is arbitrary but stable for a same
     DataOp and its clones, and is the same string that is used in the
     parallel coordinate plots produced by
-    [`ParamSearch.plot_results()`](skrub.ParamSearch.md#skrub.ParamSearch.plot_results).
+    [`ParamSearch.plot_results()`](skrub.ParamSearchhtml.md#skrub.ParamSearch.plot_results).
 * **Returns:**
   [`dict`](https://docs.python.org/3/builtins/stdtypes.html#dict)
   : Keys are names, and values the corresponding choice object.
 
 #### SEE ALSO
-[`DataOp.skb.get_vars`](skrub.DataOp.skb.get_vars.md#skrub.DataOp.skb.get_vars)
-: Similar function for getting variables created with [`var()`](skrub.var.md#skrub.var) and DataOps whose name was set with [`.skb.set_name`](skrub.DataOp.skb.set_name.md#skrub.DataOp.skb.set_name).
+[`DataOp.skb.get_vars`](skrub.DataOp.skb.get_varshtml.md#skrub.DataOp.skb.get_vars)
+: Similar function for getting variables created with [`var()`](skrub.varhtml.md#skrub.var) and DataOps whose name was set with [`.skb.set_name`](skrub.DataOp.skb.set_namehtml.md#skrub.DataOp.skb.set_name).
 
-[`DataOp.skb.describe_defaults`](skrub.DataOp.skb.describe_defaults.md#skrub.DataOp.skb.describe_defaults)
+[`DataOp.skb.describe_defaults`](skrub.DataOp.skb.describe_defaultshtml.md#skrub.DataOp.skb.describe_defaults)
 : Get a dictionary showing the default values for choices. Only choices that actually get used in the default configuration are shown.
 
-[`SkrubLearner.get_named_params`](skrub.SkrubLearner.md#skrub.SkrubLearner.get_named_params)
+[`SkrubLearner.get_named_params`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.get_named_params)
 : Get a dictionary mapping choice name to value in a SkrubLearner.
 
-[`SkrubLearner.set_named_params`](skrub.SkrubLearner.md#skrub.SkrubLearner.set_named_params)
+[`SkrubLearner.set_named_params`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.set_named_params)
 : Set choice values by name on a SkrubLearner.
 
 ### Examples
@@ -48,7 +48,7 @@ Get all the choices used in the DataOp.
 
 With `named_only` we can restrict to choices that have an actual name
 (only choices with a name can be passed in an environment, and to
-[`SkrubLearner.set_named_params()`](skrub.SkrubLearner.md#skrub.SkrubLearner.set_named_params)):
+[`SkrubLearner.set_named_params()`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.set_named_params)):
 
 ```pycon
 >>> dop.skb.get_choices(named_only=True)

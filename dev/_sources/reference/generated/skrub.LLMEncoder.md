@@ -10,7 +10,7 @@ that follows the scikit-learn API, making it usable within a scikit-learn pipeli
 #### WARNING
 To use this class, you need to install the optional `transformers`
 dependencies for skrub. See the “deep learning dependencies” section
-in the [Install](../../install.md#installation-instructions) guide for more details.
+in the [Install](../../installhtml.md#installation-instructions) guide for more details.
 
 * **Parameters:**
   **model_name**
@@ -55,7 +55,7 @@ in the [Install](../../install.md#installation-instructions) guide for more deta
 
   **cache_folder**
   : Path to store models. By default `~/skrub_data`.
-    See [`skrub.datasets.get_data_dir()`](skrub.datasets.get_data_dir.md#skrub.datasets.get_data_dir).
+    See [`skrub.datasets.get_data_dir()`](skrub.datasets.get_data_dirhtml.md#skrub.datasets.get_data_dir).
     Note that when unpickling `LLMEncoder` on another machine,
     the `cache_folder` path needs to be accessible to store the downloaded model.
 
@@ -101,16 +101,16 @@ in the [Install](../../install.md#installation-instructions) guide for more deta
     reduction.
 
 #### SEE ALSO
-[`MinHashEncoder`](skrub.MinHashEncoder.md#skrub.MinHashEncoder)
+[`MinHashEncoder`](skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder)
 : Encode string columns as a numeric array with the minhash method.
 
-[`GapEncoder`](skrub.GapEncoder.md#skrub.GapEncoder)
+[`GapEncoder`](skrub.GapEncoderhtml.md#skrub.GapEncoder)
 : Encode string columns by constructing latent topics.
 
-[`StringEncoder`](skrub.StringEncoder.md#skrub.StringEncoder)
+[`StringEncoder`](skrub.StringEncoderhtml.md#skrub.StringEncoder)
 : Fast n-gram encoding of string columns.
 
-[`SimilarityEncoder`](skrub.SimilarityEncoder.md#skrub.SimilarityEncoder)
+[`SimilarityEncoder`](skrub.SimilarityEncoderhtml.md#skrub.SimilarityEncoder)
 : Encode string columns as a numeric array with n-gram string similarity.
 
 ### Notes
@@ -125,7 +125,7 @@ pre-trained model from disk being the only difference between `fit_transform`
 and `transform`.
 
 Be aware that parallelizing this class (e.g., using
-[`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer) with `n_jobs` > 1) may be computationally
+[`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer) with `n_jobs` > 1) may be computationally
 expensive. This is because a copy of the pre-trained model is loaded into memory
 for each thread. Therefore, we recommend you to let the default n_jobs=None
 (or set to 1) of the TableVectorizer and let pytorch handle parallelism.

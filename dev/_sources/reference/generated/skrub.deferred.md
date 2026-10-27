@@ -2,7 +2,7 @@
 
 ### skrub.deferred(func=None, , no_cache=False)
 
-Wrap function calls in a DataOp [`DataOp`](skrub.DataOp.md#skrub.DataOp).
+Wrap function calls in a DataOp [`DataOp`](skrub.DataOphtml.md#skrub.DataOp).
 
 When this decorator is applied, the resulting function returns DataOps.
 The returned DataOp wraps the call to the original function, and the
@@ -21,7 +21,7 @@ and `deferred`.
     cached even if the configuration enables caching with
     skrub.set_config(cache=’/path/to/cache_dir’).
     <br/>
-    See [Caching for faster recomputation](../../modules/data_ops/ml_pipeline/caching.md#user-guide-data-ops-caching) for more information about caching.
+    See [Caching for faster recomputation](../../modules/data_ops/ml_pipeline/cachinghtml.md#user-guide-data-ops-caching) for more information about caching.
 * **Returns:**
   A new function
   : When called, rather than applying the original function immediately, it
@@ -29,10 +29,10 @@ and `deferred`.
     function.
 
 #### SEE ALSO
-[`as_data_op`](skrub.as_data_op.md#skrub.as_data_op)
+[`as_data_op`](skrub.as_data_ophtml.md#skrub.as_data_op)
 : Create a DataOp that evaluates to the given value.
 
-[`DataOp`](skrub.DataOp.md#skrub.DataOp)
+[`DataOp`](skrub.DataOphtml.md#skrub.DataOp)
 : Representation of a computation that can be used to build ML estimators.
 
 ### Examples

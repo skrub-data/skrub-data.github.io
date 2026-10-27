@@ -32,13 +32,13 @@ than a threshold, if they contain one unique value, or if all values are unique.
   : Whether the column was found to be uninformative and should be dropped.
 
 #### SEE ALSO
-[`Cleaner`](skrub.Cleaner.md#skrub.Cleaner)
+[`Cleaner`](skrub.Cleanerhtml.md#skrub.Cleaner)
 : A full-frame transformer (as opposed to single column) that can drop columns with missing values.
 
-[`DropCols`](skrub.DropCols.md#skrub.DropCols)
+[`DropCols`](skrub.DropColshtml.md#skrub.DropCols)
 : Dropping cols by name, dtypes, or general skrub selectors.
 
-[`DropSimilar`](skrub.DropSimilar.md#skrub.DropSimilar)
+[`DropSimilar`](skrub.DropSimilarhtml.md#skrub.DropSimilar)
 : Drops columns too closely correlated to the dataframe’s other columns.
 
 ### Notes

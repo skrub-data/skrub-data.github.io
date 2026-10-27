@@ -52,13 +52,13 @@ Depending on the use case, this assumption may not always hold true.
   : The deduplicated data.
 
 #### SEE ALSO
-[`GapEncoder`](skrub.GapEncoder.md#skrub.GapEncoder)
+[`GapEncoder`](skrub.GapEncoderhtml.md#skrub.GapEncoder)
 : Encodes dirty categories (strings) by constructing latent topics with continuous encoding.
 
-[`MinHashEncoder`](skrub.MinHashEncoder.md#skrub.MinHashEncoder)
+[`MinHashEncoder`](skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder)
 : Encode string columns as a numeric array with the minhash method.
 
-[`SimilarityEncoder`](skrub.SimilarityEncoder.md#skrub.SimilarityEncoder)
+[`SimilarityEncoder`](skrub.SimilarityEncoderhtml.md#skrub.SimilarityEncoder)
 : Encode string columns as a numeric array with n-gram string similarity.
 
 ### Notes
