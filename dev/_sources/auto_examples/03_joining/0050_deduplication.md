@@ -198,8 +198,8 @@ carry useful information for our machine learning task.
 Otherwise, we prefer using encoding methods such as [`GapEncoder`](../../reference/generated/skrub.GapEncoderhtml.md#skrub.GapEncoder)
 or [`MinHashEncoder`](../../reference/generated/skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder).
 
-**Total running time of the script:** (0 minutes 5.111 seconds)
+**Total running time of the script:** (0 minutes 5.476 seconds)
 
-**Estimated memory usage:**  584 MB
+**Estimated memory usage:**  569 MB
 
 <a id="sphx-glr-download-auto-examples-03-joining-0050-deduplication-py"></a>

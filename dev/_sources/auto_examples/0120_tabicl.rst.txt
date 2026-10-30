@@ -64,8 +64,8 @@ and runtime of the example low.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_fb5d7682-wrapper" hidden>
-        <template id="report_fb5d7682-template">
+    <div id="report_26716433-wrapper" hidden>
+        <template id="report_26716433-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1513,7 +1513,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="b6ab4dd4"
+                    id="b129f73e"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -1543,7 +1543,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="92e627d3"
+                    id="fcc411da"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1577,7 +1577,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="1f546301"
+                    id="9437ed99"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1611,7 +1611,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="5a868d98"
+                    id="64fba8ef"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1645,7 +1645,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="5edce31a"
+                    id="2855c788"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1679,7 +1679,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="66cb9573"
+                    id="66afac74"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1713,7 +1713,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="14fa05f6"
+                    id="2f46bb7f"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1747,7 +1747,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="f077ad1c"
+                    id="eec4fbb7"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1781,7 +1781,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="1b10dd32"
+                    id="9c93158d"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1829,7 +1829,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="c6f3f5b3"
+                    id="0674358d"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1857,7 +1857,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="8913c4e0"
+                    id="f533e38e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1887,7 +1887,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="95f10d9a"
+                    id="677694d0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1917,7 +1917,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="91cee74d"
+                    id="cfaadede"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1947,7 +1947,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="2fd0b240"
+                    id="03174bce"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1977,7 +1977,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="b7bcc428"
+                    id="6a921012"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2007,7 +2007,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="b76a6ca3"
+                    id="7b975c6b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2037,7 +2037,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="c4d74924"
+                    id="9d70e65e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2067,7 +2067,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="2c7c32d4"
+                    id="3e2d8b64"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2101,7 +2101,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="0f508fce"
+                    id="c205396b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2129,7 +2129,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="69290c0e"
+                    id="22ae0158"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2159,7 +2159,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="3cd9f7c7"
+                    id="a86afe8b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2189,7 +2189,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="a101480d"
+                    id="b83a1039"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2219,7 +2219,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="6b06fd5c"
+                    id="e66e9e04"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2249,7 +2249,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="22b40b44"
+                    id="12a93337"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2279,7 +2279,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="c1e6f4da"
+                    id="513c5fac"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2309,7 +2309,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="e7b56e2d"
+                    id="e337ee3b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2339,7 +2339,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="724dd835"
+                    id="d6218972"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2373,7 +2373,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="ec133747"
+                    id="fc367581"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2401,7 +2401,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="70537047"
+                    id="648e06a3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2431,7 +2431,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="b1744707"
+                    id="4dc0057f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2461,7 +2461,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="d77e17bb"
+                    id="62a13c8e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2491,7 +2491,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="917c7356"
+                    id="99fb6552"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2521,7 +2521,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="5f045062"
+                    id="60908980"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2551,7 +2551,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="63e35452"
+                    id="7207ccf3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2581,7 +2581,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="a93b1386"
+                    id="0b3e69d1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2611,7 +2611,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="177452de"
+                    id="26695b93"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2645,7 +2645,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="ee0d7d95"
+                    id="74d031f2"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2673,7 +2673,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="57962282"
+                    id="aa27d45a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2703,7 +2703,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="6b851747"
+                    id="b6ba2cb2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2733,7 +2733,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="5cf1fb7a"
+                    id="7369a442"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2763,7 +2763,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="b2025e10"
+                    id="8811f537"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2793,7 +2793,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="892a3ef5"
+                    id="b2e21dd0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2823,7 +2823,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="fd88f630"
+                    id="1a7ee3b5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2853,7 +2853,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="585474d8"
+                    id="f210c383"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2883,7 +2883,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="faabbaaa"
+                    id="06bbdcd5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2917,7 +2917,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="7efb8a4a"
+                    id="30f66d5f"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2945,7 +2945,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="f8bab396"
+                    id="7e8dbeca"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2975,7 +2975,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="a69542f4"
+                    id="b4d2869f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3005,7 +3005,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="e75ca55d"
+                    id="a5361615"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3035,7 +3035,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="2d0e324b"
+                    id="c3784a7a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3065,7 +3065,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="335ab315"
+                    id="97b2e711"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3095,7 +3095,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="4e64205e"
+                    id="143ac468"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3125,7 +3125,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="2ffae92e"
+                    id="ff9d56c2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3155,7 +3155,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="4f35fb8f"
+                    id="49c92b8d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3289,7 +3289,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="bc8031b6"
+                    id="b53edf03"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3317,7 +3317,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="046ff7be"
+                    id="ea5448f4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3347,7 +3347,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="81741837"
+                    id="c3c4ff74"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3377,7 +3377,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="61346b51"
+                    id="6af30057"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3407,7 +3407,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="3e488afc"
+                    id="91f5235a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3437,7 +3437,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="243413d3"
+                    id="8cee63b3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3467,7 +3467,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="9b961303"
+                    id="49a34b80"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3497,7 +3497,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="b07d389d"
+                    id="e0998ad1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3527,7 +3527,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="b5d90534"
+                    id="075bd248"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3561,7 +3561,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="01500a7a"
+                    id="349810ea"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3589,7 +3589,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="5411b173"
+                    id="93b889f5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3619,7 +3619,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="34649774"
+                    id="088463b0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3649,7 +3649,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="1ab3dbd1"
+                    id="28d40344"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3679,7 +3679,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="1e2e7d6d"
+                    id="7dcdd904"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3709,7 +3709,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="0ff472ef"
+                    id="6fb661fa"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3739,7 +3739,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="9c01fe17"
+                    id="ab495497"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3769,7 +3769,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="354a1313"
+                    id="bd4ccb84"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3799,7 +3799,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="515138d6"
+                    id="203a78dc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3833,7 +3833,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="41242fe9"
+                    id="1ccbdaf0"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3861,7 +3861,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="3a2e1f66"
+                    id="af590404"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3891,7 +3891,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="7cd33e6e"
+                    id="4238127d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3921,7 +3921,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="56790039"
+                    id="11fd6bc1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3951,7 +3951,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="28c263cf"
+                    id="65fc5e4d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3981,7 +3981,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="af7d6724"
+                    id="69c160ef"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4011,7 +4011,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="aca26ae5"
+                    id="a0ecde81"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4041,7 +4041,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="d0cff8ab"
+                    id="6e228bce"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4071,7 +4071,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="7b2bb3cf"
+                    id="b27a607a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4105,7 +4105,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="57796a90"
+                    id="1164679e"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -4133,7 +4133,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="509fe8c4"
+                    id="f3e0947c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4163,7 +4163,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="c2b11728"
+                    id="9afef76e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4193,7 +4193,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="d49cbc69"
+                    id="c6383278"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4223,7 +4223,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="eed4d7f9"
+                    id="7f5f133b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4253,7 +4253,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="0901ef89"
+                    id="52e9105a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4283,7 +4283,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="44231168"
+                    id="32fc9dfe"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4313,7 +4313,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="16668ed1"
+                    id="8d7ed816"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4343,7 +4343,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="06f46e62"
+                    id="b8263444"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4377,7 +4377,7 @@ and runtime of the example low.
                 
                 
                     <th
-                    id="39f82505"
+                    id="897d7fc0"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -4405,7 +4405,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="fbe78bf0"
+                    id="0a9145f9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4435,7 +4435,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="e8bcc996"
+                    id="c922e976"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4465,7 +4465,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="9f9d2f20"
+                    id="148ff2e2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4495,7 +4495,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="efa5b30d"
+                    id="07044890"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4525,7 +4525,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="4e5a1f86"
+                    id="e0037543"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4555,7 +4555,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="0379fdf1"
+                    id="777623df"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4585,7 +4585,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="3be7c939"
+                    id="133764b6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4615,7 +4615,7 @@ and runtime of the example low.
                 
                 
                     <td
-                    id="b17ef2cc"
+                    id="402d7505"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4751,7 +4751,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:10.936444</dc:date>
+        <dc:date>2026-10-30T15:02:54.795398</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -4781,7 +4781,7 @@ and runtime of the example low.
     L 80.008576 23.054545 
     L 22.828125 23.054545 
     z
-    " clip-path="url(#p3bcde61ebb)" style="fill: #ee854a"/>
+    " clip-path="url(#p801807398b)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 22.828125 20.145455 
@@ -4789,18 +4789,18 @@ and runtime of the example low.
     L 111.970982 8.509091 
     L 22.828125 8.509091 
     z
-    " clip-path="url(#p3bcde61ebb)" style="fill: #ee854a"/>
+    " clip-path="url(#p801807398b)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m3dae8e38a3" d="M 0 0 
+           <path id="mefb22b34d3" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m3dae8e38a3" x="22.828125" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mefb22b34d3" x="22.828125" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -4810,7 +4810,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m3dae8e38a3" x="81.474742" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mefb22b34d3" x="81.474742" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -4822,12 +4822,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="mf068cbe666" d="M 0 0 
+           <path id="mb2ccb905a1" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mf068cbe666" x="22.828125" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mb2ccb905a1" x="22.828125" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -4837,7 +4837,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#mf068cbe666" x="22.828125" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mb2ccb905a1" x="22.828125" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -4884,7 +4884,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="p3bcde61ebb">
+      <clipPath id="p801807398b">
        <rect x="22.828125" y="7.2" width="93.6" height="28.8"/>
       </clipPath>
      </defs>
@@ -5036,7 +5036,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.036753</dc:date>
+        <dc:date>2026-10-30T15:02:54.902733</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -5066,7 +5066,7 @@ and runtime of the example low.
     L 44.657771 149.086214 
     L 36.003125 149.086214 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 36.003125 146.4146 
@@ -5074,7 +5074,7 @@ and runtime of the example low.
     L 45.523236 135.728144 
     L 36.003125 135.728144 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 36.003125 133.056529 
@@ -5082,7 +5082,7 @@ and runtime of the example low.
     L 50.716024 122.370073 
     L 36.003125 122.370073 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 36.003125 119.698459 
@@ -5090,7 +5090,7 @@ and runtime of the example low.
     L 52.446953 109.012003 
     L 36.003125 109.012003 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 36.003125 106.340388 
@@ -5098,7 +5098,7 @@ and runtime of the example low.
     L 58.505205 95.653932 
     L 36.003125 95.653932 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 36.003125 92.982318 
@@ -5106,7 +5106,7 @@ and runtime of the example low.
     L 68.890781 82.295862 
     L 36.003125 82.295862 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 36.003125 79.624247 
@@ -5114,7 +5114,7 @@ and runtime of the example low.
     L 85.334609 68.937791 
     L 36.003125 68.937791 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 36.003125 66.266177 
@@ -5122,7 +5122,7 @@ and runtime of the example low.
     L 97.451114 55.579721 
     L 36.003125 55.579721 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 36.003125 52.908106 
@@ -5130,7 +5130,7 @@ and runtime of the example low.
     L 106.971225 42.22165 
     L 36.003125 42.22165 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 36.003125 39.550036 
@@ -5138,18 +5138,18 @@ and runtime of the example low.
     L 125.145982 28.86358 
     L 36.003125 28.86358 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m03e23e4184" d="M 0 0 
+           <path id="m17544f6508" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m03e23e4184" x="36.003125" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m17544f6508" x="36.003125" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -5159,7 +5159,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m03e23e4184" x="79.276357" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m17544f6508" x="79.276357" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -5169,7 +5169,7 @@ and runtime of the example low.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m03e23e4184" x="122.549588" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m17544f6508" x="122.549588" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -5181,12 +5181,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m5f0a16ea17" d="M 0 0 
+           <path id="m3fae0c0a89" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -5196,7 +5196,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -5206,7 +5206,7 @@ and runtime of the example low.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -5216,7 +5216,7 @@ and runtime of the example low.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -5226,7 +5226,7 @@ and runtime of the example low.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -5236,7 +5236,7 @@ and runtime of the example low.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -5246,7 +5246,7 @@ and runtime of the example low.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -5256,7 +5256,7 @@ and runtime of the example low.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -5266,7 +5266,7 @@ and runtime of the example low.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -5276,7 +5276,7 @@ and runtime of the example low.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -5374,7 +5374,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="pf9b6d4c9ef">
+      <clipPath id="pa5cb21387a">
        <rect x="36.003125" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -5702,7 +5702,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.159383</dc:date>
+        <dc:date>2026-10-30T15:02:55.034660</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -5732,7 +5732,7 @@ and runtime of the example low.
     L 203.434334 149.086214 
     L 194.779687 149.086214 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 194.779687 146.4146 
@@ -5740,7 +5740,7 @@ and runtime of the example low.
     L 204.299798 135.728144 
     L 194.779687 135.728144 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 194.779687 133.056529 
@@ -5748,7 +5748,7 @@ and runtime of the example low.
     L 209.492586 122.370073 
     L 194.779687 122.370073 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 194.779687 119.698459 
@@ -5756,7 +5756,7 @@ and runtime of the example low.
     L 211.223516 109.012003 
     L 194.779687 109.012003 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 194.779687 106.340388 
@@ -5764,7 +5764,7 @@ and runtime of the example low.
     L 217.281768 95.653932 
     L 194.779687 95.653932 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 194.779687 92.982318 
@@ -5772,7 +5772,7 @@ and runtime of the example low.
     L 227.667344 82.295862 
     L 194.779687 82.295862 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 194.779687 79.624247 
@@ -5780,7 +5780,7 @@ and runtime of the example low.
     L 244.111172 68.937791 
     L 194.779687 68.937791 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 194.779687 66.266177 
@@ -5788,7 +5788,7 @@ and runtime of the example low.
     L 256.227676 55.579721 
     L 194.779687 55.579721 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 194.779687 52.908106 
@@ -5796,7 +5796,7 @@ and runtime of the example low.
     L 265.747787 42.22165 
     L 194.779687 42.22165 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 194.779687 39.550036 
@@ -5804,18 +5804,18 @@ and runtime of the example low.
     L 283.922545 28.86358 
     L 194.779687 28.86358 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mfc116ea79c" d="M 0 0 
+           <path id="m4c39ccdcc3" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mfc116ea79c" x="194.779687" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m4c39ccdcc3" x="194.779687" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -5825,7 +5825,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mfc116ea79c" x="238.052919" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m4c39ccdcc3" x="238.052919" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -5835,7 +5835,7 @@ and runtime of the example low.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mfc116ea79c" x="281.326151" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m4c39ccdcc3" x="281.326151" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -5847,12 +5847,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m3ef161ad46" d="M 0 0 
+           <path id="m3442ef7a46" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -5862,7 +5862,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -5872,7 +5872,7 @@ and runtime of the example low.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -5882,7 +5882,7 @@ and runtime of the example low.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -5892,7 +5892,7 @@ and runtime of the example low.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -5902,7 +5902,7 @@ and runtime of the example low.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -5912,7 +5912,7 @@ and runtime of the example low.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -5922,7 +5922,7 @@ and runtime of the example low.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -5932,7 +5932,7 @@ and runtime of the example low.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -5942,7 +5942,7 @@ and runtime of the example low.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -6040,7 +6040,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="p6f368b1207">
+      <clipPath id="p9b60feb54c">
        <rect x="194.779687" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -6376,7 +6376,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.291326</dc:date>
+        <dc:date>2026-10-30T15:02:55.182383</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -6406,7 +6406,7 @@ and runtime of the example low.
     L 182.65 149.086214 
     L 158.65 149.086214 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 158.65 146.4146 
@@ -6414,7 +6414,7 @@ and runtime of the example low.
     L 186.078571 135.728144 
     L 158.65 135.728144 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 158.65 133.056529 
@@ -6422,7 +6422,7 @@ and runtime of the example low.
     L 186.078571 122.370073 
     L 158.65 122.370073 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 158.65 119.698459 
@@ -6430,7 +6430,7 @@ and runtime of the example low.
     L 189.507143 109.012003 
     L 158.65 109.012003 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 158.65 106.340388 
@@ -6438,7 +6438,7 @@ and runtime of the example low.
     L 199.792857 95.653932 
     L 158.65 95.653932 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 158.65 92.982318 
@@ -6446,7 +6446,7 @@ and runtime of the example low.
     L 203.221429 82.295862 
     L 158.65 82.295862 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 158.65 79.624247 
@@ -6454,7 +6454,7 @@ and runtime of the example low.
     L 203.221429 68.937791 
     L 158.65 68.937791 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 158.65 66.266177 
@@ -6462,7 +6462,7 @@ and runtime of the example low.
     L 213.507143 55.579721 
     L 158.65 55.579721 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 158.65 52.908106 
@@ -6470,7 +6470,7 @@ and runtime of the example low.
     L 216.935714 42.22165 
     L 158.65 42.22165 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 158.65 39.550036 
@@ -6478,18 +6478,18 @@ and runtime of the example low.
     L 247.792857 28.86358 
     L 158.65 28.86358 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m4f379fadd6" d="M 0 0 
+           <path id="m9f62410e7e" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m4f379fadd6" x="158.65" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9f62410e7e" x="158.65" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -6499,7 +6499,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m4f379fadd6" x="192.935714" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9f62410e7e" x="192.935714" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -6509,7 +6509,7 @@ and runtime of the example low.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m4f379fadd6" x="227.221429" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9f62410e7e" x="227.221429" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -6521,12 +6521,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m4f75b35f4b" d="M 0 0 
+           <path id="m9d6f90bf69" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -6536,7 +6536,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -6546,7 +6546,7 @@ and runtime of the example low.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -6556,7 +6556,7 @@ and runtime of the example low.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -6566,7 +6566,7 @@ and runtime of the example low.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -6576,7 +6576,7 @@ and runtime of the example low.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -6586,7 +6586,7 @@ and runtime of the example low.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -6596,7 +6596,7 @@ and runtime of the example low.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -6606,7 +6606,7 @@ and runtime of the example low.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -6616,7 +6616,7 @@ and runtime of the example low.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -6714,7 +6714,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="p2af6a28529">
+      <clipPath id="pa5ee542c94">
        <rect x="158.65" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -7042,7 +7042,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.362851</dc:date>
+        <dc:date>2026-10-30T15:02:55.264443</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -7072,7 +7072,7 @@ and runtime of the example low.
     L 108.401637 23.054545 
     L 98.496875 23.054545 
     z
-    " clip-path="url(#p84eb9bb302)" style="fill: #ee854a"/>
+    " clip-path="url(#p858915744a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 98.496875 20.145455 
@@ -7080,18 +7080,18 @@ and runtime of the example low.
     L 187.639732 8.509091 
     L 98.496875 8.509091 
     z
-    " clip-path="url(#p84eb9bb302)" style="fill: #ee854a"/>
+    " clip-path="url(#p858915744a)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m2449daa5de" d="M 0 0 
+           <path id="m03c720c825" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m2449daa5de" x="98.496875" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m03c720c825" x="98.496875" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -7101,7 +7101,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m2449daa5de" x="138.115923" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m03c720c825" x="138.115923" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -7111,7 +7111,7 @@ and runtime of the example low.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m2449daa5de" x="177.73497" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m03c720c825" x="177.73497" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -7123,12 +7123,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m6da6ed3e39" d="M 0 0 
+           <path id="m58b8f97f00" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m6da6ed3e39" x="98.496875" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m58b8f97f00" x="98.496875" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -7138,7 +7138,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m6da6ed3e39" x="98.496875" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m58b8f97f00" x="98.496875" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -7185,7 +7185,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="p84eb9bb302">
+      <clipPath id="p858915744a">
        <rect x="98.496875" y="7.2" width="93.6" height="28.8"/>
       </clipPath>
      </defs>
@@ -7345,7 +7345,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.458955</dc:date>
+        <dc:date>2026-10-30T15:02:55.367127</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -7375,7 +7375,7 @@ and runtime of the example low.
     L 208.186384 149.086214 
     L 190.357813 149.086214 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 190.357813 146.4146 
@@ -7383,7 +7383,7 @@ and runtime of the example low.
     L 208.186384 135.728144 
     L 190.357813 135.728144 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 190.357813 133.056529 
@@ -7391,7 +7391,7 @@ and runtime of the example low.
     L 210.167336 122.370073 
     L 190.357813 122.370073 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 190.357813 119.698459 
@@ -7399,7 +7399,7 @@ and runtime of the example low.
     L 216.110193 109.012003 
     L 190.357813 109.012003 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 190.357813 106.340388 
@@ -7407,7 +7407,7 @@ and runtime of the example low.
     L 218.091146 95.653932 
     L 190.357813 95.653932 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 190.357813 92.982318 
@@ -7415,7 +7415,7 @@ and runtime of the example low.
     L 218.091146 82.295862 
     L 190.357813 82.295862 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 190.357813 79.624247 
@@ -7423,7 +7423,7 @@ and runtime of the example low.
     L 218.091146 68.937791 
     L 190.357813 68.937791 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 190.357813 66.266177 
@@ -7431,7 +7431,7 @@ and runtime of the example low.
     L 218.091146 55.579721 
     L 190.357813 55.579721 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 190.357813 52.908106 
@@ -7439,7 +7439,7 @@ and runtime of the example low.
     L 241.862574 42.22165 
     L 190.357813 42.22165 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 190.357813 39.550036 
@@ -7447,18 +7447,18 @@ and runtime of the example low.
     L 279.50067 28.86358 
     L 190.357813 28.86358 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mead316afdd" d="M 0 0 
+           <path id="m1bc0506038" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mead316afdd" x="190.357813" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m1bc0506038" x="190.357813" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -7468,7 +7468,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mead316afdd" x="229.97686" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m1bc0506038" x="229.97686" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -7478,7 +7478,7 @@ and runtime of the example low.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mead316afdd" x="269.595908" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m1bc0506038" x="269.595908" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -7490,12 +7490,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m1a285b3381" d="M 0 0 
+           <path id="m95834c628e" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -7505,7 +7505,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -7515,7 +7515,7 @@ and runtime of the example low.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -7525,7 +7525,7 @@ and runtime of the example low.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -7535,7 +7535,7 @@ and runtime of the example low.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -7545,7 +7545,7 @@ and runtime of the example low.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -7555,7 +7555,7 @@ and runtime of the example low.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -7565,7 +7565,7 @@ and runtime of the example low.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -7575,7 +7575,7 @@ and runtime of the example low.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -7585,7 +7585,7 @@ and runtime of the example low.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -7683,7 +7683,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="pbaf96dc3e7">
+      <clipPath id="pf321c8efcb">
        <rect x="190.357813" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -8019,7 +8019,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.580143</dc:date>
+        <dc:date>2026-10-30T15:02:55.498911</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -8049,7 +8049,7 @@ and runtime of the example low.
     L 143.151786 149.086214 
     L 71.8375 149.086214 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 71.8375 146.4146 
@@ -8057,7 +8057,7 @@ and runtime of the example low.
     L 143.151786 135.728144 
     L 71.8375 135.728144 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 71.8375 133.056529 
@@ -8065,7 +8065,7 @@ and runtime of the example low.
     L 143.151786 122.370073 
     L 71.8375 122.370073 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 71.8375 119.698459 
@@ -8073,7 +8073,7 @@ and runtime of the example low.
     L 143.151786 109.012003 
     L 71.8375 109.012003 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 71.8375 106.340388 
@@ -8081,7 +8081,7 @@ and runtime of the example low.
     L 143.151786 95.653932 
     L 71.8375 95.653932 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 71.8375 92.982318 
@@ -8089,7 +8089,7 @@ and runtime of the example low.
     L 143.151786 82.295862 
     L 71.8375 82.295862 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 71.8375 79.624247 
@@ -8097,7 +8097,7 @@ and runtime of the example low.
     L 143.151786 68.937791 
     L 71.8375 68.937791 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 71.8375 66.266177 
@@ -8105,7 +8105,7 @@ and runtime of the example low.
     L 143.151786 55.579721 
     L 71.8375 55.579721 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 71.8375 52.908106 
@@ -8113,7 +8113,7 @@ and runtime of the example low.
     L 160.980357 42.22165 
     L 71.8375 42.22165 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 71.8375 39.550036 
@@ -8121,18 +8121,18 @@ and runtime of the example low.
     L 160.980357 28.86358 
     L 71.8375 28.86358 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m3c1486341a" d="M 0 0 
+           <path id="m05c8e212cf" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m3c1486341a" x="71.8375" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m05c8e212cf" x="71.8375" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -8142,7 +8142,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m3c1486341a" x="107.494643" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m05c8e212cf" x="107.494643" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -8152,7 +8152,7 @@ and runtime of the example low.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m3c1486341a" x="143.151786" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m05c8e212cf" x="143.151786" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -8164,12 +8164,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="mab141b170b" d="M 0 0 
+           <path id="mf70c8fea5c" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -8179,7 +8179,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -8189,7 +8189,7 @@ and runtime of the example low.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -8199,7 +8199,7 @@ and runtime of the example low.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -8209,7 +8209,7 @@ and runtime of the example low.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -8219,7 +8219,7 @@ and runtime of the example low.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -8229,7 +8229,7 @@ and runtime of the example low.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -8239,7 +8239,7 @@ and runtime of the example low.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -8249,7 +8249,7 @@ and runtime of the example low.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -8259,7 +8259,7 @@ and runtime of the example low.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -8357,7 +8357,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="pb48ad654f5">
+      <clipPath id="pa583c329fe">
        <rect x="71.8375" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -8704,7 +8704,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.647639</dc:date>
+        <dc:date>2026-10-30T15:02:55.577020</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -8734,7 +8734,7 @@ and runtime of the example low.
     L 52.923864 76.988018 
     L 39.832955 76.988018 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 52.923864 79.2 
@@ -8742,7 +8742,7 @@ and runtime of the example low.
     L 66.014773 76.988018 
     L 52.923864 76.988018 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 66.014773 79.2 
@@ -8750,7 +8750,7 @@ and runtime of the example low.
     L 79.105682 64.269124 
     L 66.014773 64.269124 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 79.105682 79.2 
@@ -8758,7 +8758,7 @@ and runtime of the example low.
     L 92.196591 67.587097 
     L 79.105682 67.587097 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 92.196591 79.2 
@@ -8766,7 +8766,7 @@ and runtime of the example low.
     L 105.2875 63.716129 
     L 92.196591 63.716129 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 105.2875 79.2 
@@ -8774,7 +8774,7 @@ and runtime of the example low.
     L 118.378409 46.573272 
     L 105.2875 46.573272 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 118.378409 79.2 
@@ -8782,7 +8782,7 @@ and runtime of the example low.
     L 131.469318 43.808295 
     L 118.378409 43.808295 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 131.469318 79.2 
@@ -8790,7 +8790,7 @@ and runtime of the example low.
     L 144.560227 13.393548 
     L 131.469318 13.393548 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 144.560227 79.2 
@@ -8798,7 +8798,7 @@ and runtime of the example low.
     L 157.651136 51.55023 
     L 144.560227 51.55023 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 157.651136 79.2 
@@ -8806,18 +8806,18 @@ and runtime of the example low.
     L 170.742045 10.628571 
     L 157.651136 10.628571 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m1d4007ff99" d="M 0 0 
+           <path id="m02eec5aa9b" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m1d4007ff99" x="46.722907" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m02eec5aa9b" x="46.722907" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -8827,7 +8827,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m1d4007ff99" x="115.622428" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m02eec5aa9b" x="115.622428" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -8839,12 +8839,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="me7a5b6a577" d="M 0 0 
+           <path id="mac2f042199" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#me7a5b6a577" x="33.2875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mac2f042199" x="33.2875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -8854,7 +8854,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#me7a5b6a577" x="33.2875" y="51.55023" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mac2f042199" x="33.2875" y="51.55023" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -8864,7 +8864,7 @@ and runtime of the example low.
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#me7a5b6a577" x="33.2875" y="23.900461" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mac2f042199" x="33.2875" y="23.900461" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -8885,7 +8885,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="pa57a0dc1dd">
+      <clipPath id="p012e038a3b">
        <rect x="33.2875" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -9622,7 +9622,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:10.936444</dc:date>
+        <dc:date>2026-10-30T15:02:54.795398</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -9652,7 +9652,7 @@ and runtime of the example low.
     L 80.008576 23.054545 
     L 22.828125 23.054545 
     z
-    " clip-path="url(#p3bcde61ebb)" style="fill: #ee854a"/>
+    " clip-path="url(#p801807398b)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 22.828125 20.145455 
@@ -9660,18 +9660,18 @@ and runtime of the example low.
     L 111.970982 8.509091 
     L 22.828125 8.509091 
     z
-    " clip-path="url(#p3bcde61ebb)" style="fill: #ee854a"/>
+    " clip-path="url(#p801807398b)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m3dae8e38a3" d="M 0 0 
+           <path id="mefb22b34d3" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m3dae8e38a3" x="22.828125" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mefb22b34d3" x="22.828125" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -9681,7 +9681,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m3dae8e38a3" x="81.474742" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mefb22b34d3" x="81.474742" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -9693,12 +9693,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="mf068cbe666" d="M 0 0 
+           <path id="mb2ccb905a1" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mf068cbe666" x="22.828125" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mb2ccb905a1" x="22.828125" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -9708,7 +9708,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#mf068cbe666" x="22.828125" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mb2ccb905a1" x="22.828125" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -9755,7 +9755,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="p3bcde61ebb">
+      <clipPath id="p801807398b">
        <rect x="22.828125" y="7.2" width="93.6" height="28.8"/>
       </clipPath>
      </defs>
@@ -9903,7 +9903,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.036753</dc:date>
+        <dc:date>2026-10-30T15:02:54.902733</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -9933,7 +9933,7 @@ and runtime of the example low.
     L 44.657771 149.086214 
     L 36.003125 149.086214 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 36.003125 146.4146 
@@ -9941,7 +9941,7 @@ and runtime of the example low.
     L 45.523236 135.728144 
     L 36.003125 135.728144 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 36.003125 133.056529 
@@ -9949,7 +9949,7 @@ and runtime of the example low.
     L 50.716024 122.370073 
     L 36.003125 122.370073 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 36.003125 119.698459 
@@ -9957,7 +9957,7 @@ and runtime of the example low.
     L 52.446953 109.012003 
     L 36.003125 109.012003 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 36.003125 106.340388 
@@ -9965,7 +9965,7 @@ and runtime of the example low.
     L 58.505205 95.653932 
     L 36.003125 95.653932 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 36.003125 92.982318 
@@ -9973,7 +9973,7 @@ and runtime of the example low.
     L 68.890781 82.295862 
     L 36.003125 82.295862 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 36.003125 79.624247 
@@ -9981,7 +9981,7 @@ and runtime of the example low.
     L 85.334609 68.937791 
     L 36.003125 68.937791 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 36.003125 66.266177 
@@ -9989,7 +9989,7 @@ and runtime of the example low.
     L 97.451114 55.579721 
     L 36.003125 55.579721 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 36.003125 52.908106 
@@ -9997,7 +9997,7 @@ and runtime of the example low.
     L 106.971225 42.22165 
     L 36.003125 42.22165 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 36.003125 39.550036 
@@ -10005,18 +10005,18 @@ and runtime of the example low.
     L 125.145982 28.86358 
     L 36.003125 28.86358 
     z
-    " clip-path="url(#pf9b6d4c9ef)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5cb21387a)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m03e23e4184" d="M 0 0 
+           <path id="m17544f6508" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m03e23e4184" x="36.003125" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m17544f6508" x="36.003125" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -10026,7 +10026,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m03e23e4184" x="79.276357" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m17544f6508" x="79.276357" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -10036,7 +10036,7 @@ and runtime of the example low.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m03e23e4184" x="122.549588" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m17544f6508" x="122.549588" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -10048,12 +10048,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m5f0a16ea17" d="M 0 0 
+           <path id="m3fae0c0a89" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -10063,7 +10063,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -10073,7 +10073,7 @@ and runtime of the example low.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -10083,7 +10083,7 @@ and runtime of the example low.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -10093,7 +10093,7 @@ and runtime of the example low.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -10103,7 +10103,7 @@ and runtime of the example low.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -10113,7 +10113,7 @@ and runtime of the example low.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -10123,7 +10123,7 @@ and runtime of the example low.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -10133,7 +10133,7 @@ and runtime of the example low.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -10143,7 +10143,7 @@ and runtime of the example low.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#m5f0a16ea17" x="36.003125" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fae0c0a89" x="36.003125" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -10241,7 +10241,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="pf9b6d4c9ef">
+      <clipPath id="pa5cb21387a">
        <rect x="36.003125" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -10565,7 +10565,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.159383</dc:date>
+        <dc:date>2026-10-30T15:02:55.034660</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -10595,7 +10595,7 @@ and runtime of the example low.
     L 203.434334 149.086214 
     L 194.779687 149.086214 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 194.779687 146.4146 
@@ -10603,7 +10603,7 @@ and runtime of the example low.
     L 204.299798 135.728144 
     L 194.779687 135.728144 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 194.779687 133.056529 
@@ -10611,7 +10611,7 @@ and runtime of the example low.
     L 209.492586 122.370073 
     L 194.779687 122.370073 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 194.779687 119.698459 
@@ -10619,7 +10619,7 @@ and runtime of the example low.
     L 211.223516 109.012003 
     L 194.779687 109.012003 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 194.779687 106.340388 
@@ -10627,7 +10627,7 @@ and runtime of the example low.
     L 217.281768 95.653932 
     L 194.779687 95.653932 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 194.779687 92.982318 
@@ -10635,7 +10635,7 @@ and runtime of the example low.
     L 227.667344 82.295862 
     L 194.779687 82.295862 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 194.779687 79.624247 
@@ -10643,7 +10643,7 @@ and runtime of the example low.
     L 244.111172 68.937791 
     L 194.779687 68.937791 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 194.779687 66.266177 
@@ -10651,7 +10651,7 @@ and runtime of the example low.
     L 256.227676 55.579721 
     L 194.779687 55.579721 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 194.779687 52.908106 
@@ -10659,7 +10659,7 @@ and runtime of the example low.
     L 265.747787 42.22165 
     L 194.779687 42.22165 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 194.779687 39.550036 
@@ -10667,18 +10667,18 @@ and runtime of the example low.
     L 283.922545 28.86358 
     L 194.779687 28.86358 
     z
-    " clip-path="url(#p6f368b1207)" style="fill: #ee854a"/>
+    " clip-path="url(#p9b60feb54c)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mfc116ea79c" d="M 0 0 
+           <path id="m4c39ccdcc3" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mfc116ea79c" x="194.779687" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m4c39ccdcc3" x="194.779687" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -10688,7 +10688,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mfc116ea79c" x="238.052919" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m4c39ccdcc3" x="238.052919" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -10698,7 +10698,7 @@ and runtime of the example low.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mfc116ea79c" x="281.326151" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m4c39ccdcc3" x="281.326151" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -10710,12 +10710,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m3ef161ad46" d="M 0 0 
+           <path id="m3442ef7a46" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -10725,7 +10725,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -10735,7 +10735,7 @@ and runtime of the example low.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -10745,7 +10745,7 @@ and runtime of the example low.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -10755,7 +10755,7 @@ and runtime of the example low.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -10765,7 +10765,7 @@ and runtime of the example low.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -10775,7 +10775,7 @@ and runtime of the example low.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -10785,7 +10785,7 @@ and runtime of the example low.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -10795,7 +10795,7 @@ and runtime of the example low.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -10805,7 +10805,7 @@ and runtime of the example low.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#m3ef161ad46" x="194.779687" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3442ef7a46" x="194.779687" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -10903,7 +10903,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="p6f368b1207">
+      <clipPath id="p9b60feb54c">
        <rect x="194.779687" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -11235,7 +11235,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.291326</dc:date>
+        <dc:date>2026-10-30T15:02:55.182383</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -11265,7 +11265,7 @@ and runtime of the example low.
     L 182.65 149.086214 
     L 158.65 149.086214 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 158.65 146.4146 
@@ -11273,7 +11273,7 @@ and runtime of the example low.
     L 186.078571 135.728144 
     L 158.65 135.728144 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 158.65 133.056529 
@@ -11281,7 +11281,7 @@ and runtime of the example low.
     L 186.078571 122.370073 
     L 158.65 122.370073 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 158.65 119.698459 
@@ -11289,7 +11289,7 @@ and runtime of the example low.
     L 189.507143 109.012003 
     L 158.65 109.012003 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 158.65 106.340388 
@@ -11297,7 +11297,7 @@ and runtime of the example low.
     L 199.792857 95.653932 
     L 158.65 95.653932 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 158.65 92.982318 
@@ -11305,7 +11305,7 @@ and runtime of the example low.
     L 203.221429 82.295862 
     L 158.65 82.295862 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 158.65 79.624247 
@@ -11313,7 +11313,7 @@ and runtime of the example low.
     L 203.221429 68.937791 
     L 158.65 68.937791 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 158.65 66.266177 
@@ -11321,7 +11321,7 @@ and runtime of the example low.
     L 213.507143 55.579721 
     L 158.65 55.579721 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 158.65 52.908106 
@@ -11329,7 +11329,7 @@ and runtime of the example low.
     L 216.935714 42.22165 
     L 158.65 42.22165 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 158.65 39.550036 
@@ -11337,18 +11337,18 @@ and runtime of the example low.
     L 247.792857 28.86358 
     L 158.65 28.86358 
     z
-    " clip-path="url(#p2af6a28529)" style="fill: #ee854a"/>
+    " clip-path="url(#pa5ee542c94)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m4f379fadd6" d="M 0 0 
+           <path id="m9f62410e7e" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m4f379fadd6" x="158.65" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9f62410e7e" x="158.65" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -11358,7 +11358,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m4f379fadd6" x="192.935714" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9f62410e7e" x="192.935714" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -11368,7 +11368,7 @@ and runtime of the example low.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m4f379fadd6" x="227.221429" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9f62410e7e" x="227.221429" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -11380,12 +11380,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m4f75b35f4b" d="M 0 0 
+           <path id="m9d6f90bf69" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -11395,7 +11395,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -11405,7 +11405,7 @@ and runtime of the example low.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -11415,7 +11415,7 @@ and runtime of the example low.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -11425,7 +11425,7 @@ and runtime of the example low.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -11435,7 +11435,7 @@ and runtime of the example low.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -11445,7 +11445,7 @@ and runtime of the example low.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -11455,7 +11455,7 @@ and runtime of the example low.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -11465,7 +11465,7 @@ and runtime of the example low.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -11475,7 +11475,7 @@ and runtime of the example low.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#m4f75b35f4b" x="158.65" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d6f90bf69" x="158.65" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -11573,7 +11573,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="p2af6a28529">
+      <clipPath id="pa5ee542c94">
        <rect x="158.65" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -11897,7 +11897,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.362851</dc:date>
+        <dc:date>2026-10-30T15:02:55.264443</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -11927,7 +11927,7 @@ and runtime of the example low.
     L 108.401637 23.054545 
     L 98.496875 23.054545 
     z
-    " clip-path="url(#p84eb9bb302)" style="fill: #ee854a"/>
+    " clip-path="url(#p858915744a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 98.496875 20.145455 
@@ -11935,18 +11935,18 @@ and runtime of the example low.
     L 187.639732 8.509091 
     L 98.496875 8.509091 
     z
-    " clip-path="url(#p84eb9bb302)" style="fill: #ee854a"/>
+    " clip-path="url(#p858915744a)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m2449daa5de" d="M 0 0 
+           <path id="m03c720c825" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m2449daa5de" x="98.496875" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m03c720c825" x="98.496875" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -11956,7 +11956,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m2449daa5de" x="138.115923" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m03c720c825" x="138.115923" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -11966,7 +11966,7 @@ and runtime of the example low.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m2449daa5de" x="177.73497" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m03c720c825" x="177.73497" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -11978,12 +11978,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m6da6ed3e39" d="M 0 0 
+           <path id="m58b8f97f00" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m6da6ed3e39" x="98.496875" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m58b8f97f00" x="98.496875" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -11993,7 +11993,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m6da6ed3e39" x="98.496875" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m58b8f97f00" x="98.496875" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -12040,7 +12040,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="p84eb9bb302">
+      <clipPath id="p858915744a">
        <rect x="98.496875" y="7.2" width="93.6" height="28.8"/>
       </clipPath>
      </defs>
@@ -12196,7 +12196,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.458955</dc:date>
+        <dc:date>2026-10-30T15:02:55.367127</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -12226,7 +12226,7 @@ and runtime of the example low.
     L 208.186384 149.086214 
     L 190.357813 149.086214 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 190.357813 146.4146 
@@ -12234,7 +12234,7 @@ and runtime of the example low.
     L 208.186384 135.728144 
     L 190.357813 135.728144 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 190.357813 133.056529 
@@ -12242,7 +12242,7 @@ and runtime of the example low.
     L 210.167336 122.370073 
     L 190.357813 122.370073 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 190.357813 119.698459 
@@ -12250,7 +12250,7 @@ and runtime of the example low.
     L 216.110193 109.012003 
     L 190.357813 109.012003 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 190.357813 106.340388 
@@ -12258,7 +12258,7 @@ and runtime of the example low.
     L 218.091146 95.653932 
     L 190.357813 95.653932 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 190.357813 92.982318 
@@ -12266,7 +12266,7 @@ and runtime of the example low.
     L 218.091146 82.295862 
     L 190.357813 82.295862 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 190.357813 79.624247 
@@ -12274,7 +12274,7 @@ and runtime of the example low.
     L 218.091146 68.937791 
     L 190.357813 68.937791 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 190.357813 66.266177 
@@ -12282,7 +12282,7 @@ and runtime of the example low.
     L 218.091146 55.579721 
     L 190.357813 55.579721 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 190.357813 52.908106 
@@ -12290,7 +12290,7 @@ and runtime of the example low.
     L 241.862574 42.22165 
     L 190.357813 42.22165 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 190.357813 39.550036 
@@ -12298,18 +12298,18 @@ and runtime of the example low.
     L 279.50067 28.86358 
     L 190.357813 28.86358 
     z
-    " clip-path="url(#pbaf96dc3e7)" style="fill: #ee854a"/>
+    " clip-path="url(#pf321c8efcb)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mead316afdd" d="M 0 0 
+           <path id="m1bc0506038" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mead316afdd" x="190.357813" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m1bc0506038" x="190.357813" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -12319,7 +12319,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mead316afdd" x="229.97686" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m1bc0506038" x="229.97686" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -12329,7 +12329,7 @@ and runtime of the example low.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mead316afdd" x="269.595908" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m1bc0506038" x="269.595908" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -12341,12 +12341,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m1a285b3381" d="M 0 0 
+           <path id="m95834c628e" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -12356,7 +12356,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -12366,7 +12366,7 @@ and runtime of the example low.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -12376,7 +12376,7 @@ and runtime of the example low.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -12386,7 +12386,7 @@ and runtime of the example low.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -12396,7 +12396,7 @@ and runtime of the example low.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -12406,7 +12406,7 @@ and runtime of the example low.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -12416,7 +12416,7 @@ and runtime of the example low.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -12426,7 +12426,7 @@ and runtime of the example low.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -12436,7 +12436,7 @@ and runtime of the example low.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#m1a285b3381" x="190.357813" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m95834c628e" x="190.357813" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -12534,7 +12534,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="pbaf96dc3e7">
+      <clipPath id="pf321c8efcb">
        <rect x="190.357813" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -12866,7 +12866,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.580143</dc:date>
+        <dc:date>2026-10-30T15:02:55.498911</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -12896,7 +12896,7 @@ and runtime of the example low.
     L 143.151786 149.086214 
     L 71.8375 149.086214 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 71.8375 146.4146 
@@ -12904,7 +12904,7 @@ and runtime of the example low.
     L 143.151786 135.728144 
     L 71.8375 135.728144 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 71.8375 133.056529 
@@ -12912,7 +12912,7 @@ and runtime of the example low.
     L 143.151786 122.370073 
     L 71.8375 122.370073 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 71.8375 119.698459 
@@ -12920,7 +12920,7 @@ and runtime of the example low.
     L 143.151786 109.012003 
     L 71.8375 109.012003 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 71.8375 106.340388 
@@ -12928,7 +12928,7 @@ and runtime of the example low.
     L 143.151786 95.653932 
     L 71.8375 95.653932 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 71.8375 92.982318 
@@ -12936,7 +12936,7 @@ and runtime of the example low.
     L 143.151786 82.295862 
     L 71.8375 82.295862 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 71.8375 79.624247 
@@ -12944,7 +12944,7 @@ and runtime of the example low.
     L 143.151786 68.937791 
     L 71.8375 68.937791 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 71.8375 66.266177 
@@ -12952,7 +12952,7 @@ and runtime of the example low.
     L 143.151786 55.579721 
     L 71.8375 55.579721 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 71.8375 52.908106 
@@ -12960,7 +12960,7 @@ and runtime of the example low.
     L 160.980357 42.22165 
     L 71.8375 42.22165 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 71.8375 39.550036 
@@ -12968,18 +12968,18 @@ and runtime of the example low.
     L 160.980357 28.86358 
     L 71.8375 28.86358 
     z
-    " clip-path="url(#pb48ad654f5)" style="fill: #ee854a"/>
+    " clip-path="url(#pa583c329fe)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m3c1486341a" d="M 0 0 
+           <path id="m05c8e212cf" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m3c1486341a" x="71.8375" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m05c8e212cf" x="71.8375" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -12989,7 +12989,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m3c1486341a" x="107.494643" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m05c8e212cf" x="107.494643" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -12999,7 +12999,7 @@ and runtime of the example low.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m3c1486341a" x="143.151786" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m05c8e212cf" x="143.151786" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -13011,12 +13011,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="mab141b170b" d="M 0 0 
+           <path id="mf70c8fea5c" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -13026,7 +13026,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -13036,7 +13036,7 @@ and runtime of the example low.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -13046,7 +13046,7 @@ and runtime of the example low.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -13056,7 +13056,7 @@ and runtime of the example low.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -13066,7 +13066,7 @@ and runtime of the example low.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -13076,7 +13076,7 @@ and runtime of the example low.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -13086,7 +13086,7 @@ and runtime of the example low.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -13096,7 +13096,7 @@ and runtime of the example low.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -13106,7 +13106,7 @@ and runtime of the example low.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#mab141b170b" x="71.8375" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf70c8fea5c" x="71.8375" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -13204,7 +13204,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="pb48ad654f5">
+      <clipPath id="pa583c329fe">
        <rect x="71.8375" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -13547,7 +13547,7 @@ and runtime of the example low.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-10-27T12:13:11.647639</dc:date>
+        <dc:date>2026-10-30T15:02:55.577020</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -13577,7 +13577,7 @@ and runtime of the example low.
     L 52.923864 76.988018 
     L 39.832955 76.988018 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 52.923864 79.2 
@@ -13585,7 +13585,7 @@ and runtime of the example low.
     L 66.014773 76.988018 
     L 52.923864 76.988018 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 66.014773 79.2 
@@ -13593,7 +13593,7 @@ and runtime of the example low.
     L 79.105682 64.269124 
     L 66.014773 64.269124 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 79.105682 79.2 
@@ -13601,7 +13601,7 @@ and runtime of the example low.
     L 92.196591 67.587097 
     L 79.105682 67.587097 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 92.196591 79.2 
@@ -13609,7 +13609,7 @@ and runtime of the example low.
     L 105.2875 63.716129 
     L 92.196591 63.716129 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 105.2875 79.2 
@@ -13617,7 +13617,7 @@ and runtime of the example low.
     L 118.378409 46.573272 
     L 105.2875 46.573272 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 118.378409 79.2 
@@ -13625,7 +13625,7 @@ and runtime of the example low.
     L 131.469318 43.808295 
     L 118.378409 43.808295 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 131.469318 79.2 
@@ -13633,7 +13633,7 @@ and runtime of the example low.
     L 144.560227 13.393548 
     L 131.469318 13.393548 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 144.560227 79.2 
@@ -13641,7 +13641,7 @@ and runtime of the example low.
     L 157.651136 51.55023 
     L 144.560227 51.55023 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 157.651136 79.2 
@@ -13649,18 +13649,18 @@ and runtime of the example low.
     L 170.742045 10.628571 
     L 157.651136 10.628571 
     z
-    " clip-path="url(#pa57a0dc1dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p012e038a3b)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m1d4007ff99" d="M 0 0 
+           <path id="m02eec5aa9b" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m1d4007ff99" x="46.722907" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m02eec5aa9b" x="46.722907" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -13670,7 +13670,7 @@ and runtime of the example low.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m1d4007ff99" x="115.622428" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m02eec5aa9b" x="115.622428" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -13682,12 +13682,12 @@ and runtime of the example low.
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="me7a5b6a577" d="M 0 0 
+           <path id="mac2f042199" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#me7a5b6a577" x="33.2875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mac2f042199" x="33.2875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -13697,7 +13697,7 @@ and runtime of the example low.
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#me7a5b6a577" x="33.2875" y="51.55023" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mac2f042199" x="33.2875" y="51.55023" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -13707,7 +13707,7 @@ and runtime of the example low.
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#me7a5b6a577" x="33.2875" y="23.900461" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mac2f042199" x="33.2875" y="23.900461" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -13728,7 +13728,7 @@ and runtime of the example low.
       </g>
      </g>
      <defs>
-      <clipPath id="pa57a0dc1dd">
+      <clipPath id="p012e038a3b">
        <rect x="33.2875" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -14082,7 +14082,7 @@ and runtime of the example low.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_fb5d7682">
+        <skrub-table-report class="report" id="report_26716433">
         </skrub-table-report>
 
         <script type="module">
@@ -15186,7 +15186,7 @@ and runtime of the example low.
         </script>
     </div>
 
-    <div id="report_fb5d7682-wrapper-fallback">
+    <div id="report_26716433-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -15197,8 +15197,8 @@ and runtime of the example low.
     </div>
 
     <script>
-     document.getElementById("report_fb5d7682-wrapper").removeAttribute("hidden");
-     document.getElementById("report_fb5d7682-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_26716433-wrapper").removeAttribute("hidden");
+     document.getElementById("report_26716433-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -16213,26 +16213,6 @@ and scaling by itself, so no imputer or scaler is added.
 
             <tr class="default">
                 <td><button type="button" class="copy-paste-icon"
-                     aria-label="Copy drop_if_unique to clipboard"
-                     onclick="copyToClipboard('drop_if_unique',
-                              this.parentElement.nextElementSibling)"
-                ></button></td>
-                <td class="param">
-            <a class="param-doc-link"
-                style="anchor-name: --doc-link-drop_if_unique;"
-                rel="noreferrer" target="_blank" href="https://skrub-data.org/stable/reference/generated/skrub.TableVectorizer.html#:~:text=drop_if_unique,-bool%2C%20default%3DFalse">
-                drop_if_unique
-                <span class="param-doc-description"
-                style="position-anchor: --doc-link-drop_if_unique;">
-                drop_if_unique: bool, default=False<br><br>If set to true, drop columns that contain only unique values, i.e., the number<br>of unique values is equal to the number of rows in the column. Numeric columns<br>are never dropped.<br><br>.. deprecated:: 0.9.0<br>This functionality can drop informative columns and is unlikely to be<br>of use in practice. It is therefore deprecated and will be removed in a<br>future version.</span>
-            </a>
-        </td>
-                <td class="value">False</td>
-            </tr>
-    
-
-            <tr class="default">
-                <td><button type="button" class="copy-paste-icon"
                      aria-label="Copy datetime_format to clipboard"
                      onclick="copyToClipboard('datetime_format',
                               this.parentElement.nextElementSibling)"
@@ -17078,9 +17058,9 @@ with other models.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 20.118 seconds)
+   **Total running time of the script:** (0 minutes 20.814 seconds)
 
-**Estimated memory usage:**  1315 MB
+**Estimated memory usage:**  1373 MB
 
 
 .. _sphx_glr_download_auto_examples_0120_tabicl.py:

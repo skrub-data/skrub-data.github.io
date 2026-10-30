@@ -1,6 +1,6 @@
 # set_config
 
-### skrub.set_config(use_table_report_data_ops=None, table_report_plots_threshold=None, table_report_associations_threshold=None, table_report_n_rows=None, table_report_verbosity=None, subsampling_seed=None, max_plot_columns=None, max_association_columns=None, enable_subsampling=None, float_precision=None, cardinality_threshold=None, data_dir=None, cache=unchanged, target_cache_size=unchanged, eager_data_ops=None, data_ops_open_graph_dropdown=None)
+### skrub.set_config(use_table_report_data_ops=None, table_report_plots_threshold=None, table_report_associations_threshold=None, table_report_n_rows=None, table_report_verbosity=None, subsampling_seed=None, enable_subsampling=None, float_precision=None, cardinality_threshold=None, data_dir=None, cache=unchanged, target_cache_size=unchanged, eager_data_ops=None, data_ops_open_graph_dropdown=None)
 
 Set global skrub configuration.
 
@@ -88,8 +88,7 @@ Set global skrub configuration.
     - Otherwise, the default is `~/skrub_data`.
     <br/>
     This configuration can also be set with the `SKB_DATA_DIRECTORY`
-    environment variable. The deprecated `SKRUB_DATA_DIRECTORY` is still
-    supported with a deprecation warning.
+    environment variable.
 
   **cache**
   : Caching to use for the evaluation of DataOps.

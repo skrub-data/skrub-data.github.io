@@ -1,6 +1,6 @@
 # TableVectorizer
 
-### *class* skrub.TableVectorizer(, cardinality_threshold=40, low_cardinality=OneHotEncoder(drop='if_binary', dtype='float32', handle_unknown='ignore', sparse_output=False), high_cardinality=StringEncoder(), numeric=PassThrough(), datetime=DatetimeEncoder(), specific_transformers=(), drop_null_fraction=1.0, drop_if_constant=False, drop_if_unique=False, datetime_format=None, null_strings=None, n_jobs=None)
+### *class* skrub.TableVectorizer(, cardinality_threshold=40, low_cardinality=OneHotEncoder(drop='if_binary', dtype='float32', handle_unknown='ignore', sparse_output=False), high_cardinality=StringEncoder(), numeric=PassThrough(), datetime=DatetimeEncoder(), specific_transformers=(), drop_null_fraction=1.0, drop_if_constant=False, datetime_format=None, null_strings=None, n_jobs=None)
 
 Transform a dataframe to a numeric (vectorized) representation.
 
@@ -64,18 +64,6 @@ features are encoded differently depending on their cardinality.
   **drop_if_constant**
   : If set to true, drop columns that contain a single unique value. Note that
     missing values are considered as one additional distinct value.
-
-  **drop_if_unique**
-  : If set to true, drop columns that contain only unique values, i.e., the number
-    of unique values is equal to the number of rows in the column. Numeric columns
-    are never dropped.
-    <br/>
-    #### Deprecated
-    Deprecated since version 0.9.0.
-    <br/>
-    This functionality can drop informative columns and is unlikely to be
-    of use in practice. It is therefore deprecated and will be removed in a
-    future version.
 
   **datetime_format**
   : The format to use when parsing dates. If None, the format is inferred.

@@ -36,6 +36,25 @@
 
 ### Deprecations
 
+- Removed the deprecated `splitter` parameter of [`.skb.train_test_split`](reference/generated/skrub.DataOp.skb.train_test_splithtml.md#skrub.DataOp.skb.train_test_split). Use `split_func` instead.
+  [#2364](https://github.com/skrub-data/skrub/pull/2364) by [Nour Cheour](https://github.com/Nour-Cheour).
+- Removed support for the deprecated `SKRUB_DATA_DIRECTORY` environment
+  variable. Use `SKB_DATA_DIRECTORY` instead.
+  [#2364](https://github.com/skrub-data/skrub/pull/2364) by [Nour Cheour](https://github.com/Nour-Cheour).
+- Removed the deprecated `TextEncoder` alias. Use [`LLMEncoder`](reference/generated/skrub.LLMEncoderhtml.md#skrub.LLMEncoder) instead.
+  [#2364](https://github.com/skrub-data/skrub/pull/2364) by [Nour Cheour](https://github.com/Nour-Cheour).
+- Removed the deprecated parameter `drop_if_unique` of
+  [`DropUninformative`](reference/generated/skrub.DropUninformativehtml.md#skrub.DropUninformative) and [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer).
+  [#2364](https://github.com/skrub-data/skrub/pull/2364) by [Nour Cheour](https://github.com/Nour-Cheour).
+- Removed the deprecated parameters `max_plot_columns` and
+  `max_association_columns` of [`set_config()`](reference/generated/skrub.set_confightml.md#skrub.set_config) and [`config_context()`](reference/generated/skrub.config_contexthtml.md#skrub.config_context),
+  and the corresponding environment variables `SKB_MAX_PLOT_COLUMNS` and
+  `SKB_MAX_ASSOCIATION_COLUMNS`. Use `table_report_plots_threshold` and
+  `table_report_associations_threshold` (and the environment variables
+  `SKB_TABLE_REPORT_PLOTS_THRESHOLD` and
+  `SKB_TABLE_REPORT_ASSOCIATIONS_THRESHOLD`) instead.
+  [#2364](https://github.com/skrub-data/skrub/pull/2364) by [Nour Cheour](https://github.com/Nour-Cheour).
+
 ## 0.11.0
 
 ### New Features

@@ -630,6 +630,26 @@ timezoned string datetime.
 </section>
 <section id="deprecations">
 <h3>Deprecations<a class="headerlink" href="#deprecations" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Removed the deprecated <code class="docutils literal notranslate"><span class="pre">splitter</span></code> parameter of <a class="reference internal" href="reference/generated/skrub.DataOp.skb.train_test_split.html#skrub.DataOp.skb.train_test_split" title="skrub.DataOp.skb.train_test_split"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.train_test_split</span></code></a>. Use <code class="docutils literal notranslate"><span class="pre">split_func</span></code> instead.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2364">#2364</a> by <a class="reference external" href="https://github.com/Nour-Cheour">Nour Cheour</a>.</p></li>
+<li><p>Removed support for the deprecated <code class="docutils literal notranslate"><span class="pre">SKRUB_DATA_DIRECTORY</span></code> environment
+variable. Use <code class="docutils literal notranslate"><span class="pre">SKB_DATA_DIRECTORY</span></code> instead.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2364">#2364</a> by <a class="reference external" href="https://github.com/Nour-Cheour">Nour Cheour</a>.</p></li>
+<li><p>Removed the deprecated <code class="docutils literal notranslate"><span class="pre">TextEncoder</span></code> alias. Use <a class="reference internal" href="reference/generated/skrub.LLMEncoder.html#skrub.LLMEncoder" title="skrub.LLMEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code></a> instead.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2364">#2364</a> by <a class="reference external" href="https://github.com/Nour-Cheour">Nour Cheour</a>.</p></li>
+<li><p>Removed the deprecated parameter <code class="docutils literal notranslate"><span class="pre">drop_if_unique</span></code> of
+<a class="reference internal" href="reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a> and <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2364">#2364</a> by <a class="reference external" href="https://github.com/Nour-Cheour">Nour Cheour</a>.</p></li>
+<li><p>Removed the deprecated parameters <code class="docutils literal notranslate"><span class="pre">max_plot_columns</span></code> and
+<code class="docutils literal notranslate"><span class="pre">max_association_columns</span></code> of <a class="reference internal" href="reference/generated/skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.config_context.html#skrub.config_context" title="skrub.config_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">config_context()</span></code></a>,
+and the corresponding environment variables <code class="docutils literal notranslate"><span class="pre">SKB_MAX_PLOT_COLUMNS</span></code> and
+<code class="docutils literal notranslate"><span class="pre">SKB_MAX_ASSOCIATION_COLUMNS</span></code>. Use <code class="docutils literal notranslate"><span class="pre">table_report_plots_threshold</span></code> and
+<code class="docutils literal notranslate"><span class="pre">table_report_associations_threshold</span></code> (and the environment variables
+<code class="docutils literal notranslate"><span class="pre">SKB_TABLE_REPORT_PLOTS_THRESHOLD</span></code> and
+<code class="docutils literal notranslate"><span class="pre">SKB_TABLE_REPORT_ASSOCIATIONS_THRESHOLD</span></code>) instead.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2364">#2364</a> by <a class="reference external" href="https://github.com/Nour-Cheour">Nour Cheour</a>.</p></li>
+</ul>
 </section>
 </section>
 <section id="id2">

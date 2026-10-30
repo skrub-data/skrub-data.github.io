@@ -1,11 +1,11 @@
 # DropUninformative
 
-### *class* skrub.DropUninformative(drop_if_constant=False, drop_if_unique=False, drop_null_fraction=1.0)
+### *class* skrub.DropUninformative(drop_if_constant=False, drop_null_fraction=1.0)
 
 Drop column if it is found to be uninformative according to various criteria.
 
 Columns are considered “uninformative” if the fraction of missing values is larger
-than a threshold, if they contain one unique value, or if all values are unique.
+than a threshold, or if they contain one unique value.
 
 * **Parameters:**
   **drop_if_constant**
@@ -15,18 +15,6 @@ than a threshold, if they contain one unique value, or if all values are unique.
   **drop_null_fraction**
   : Drop columns with a fraction of missing values larger than threshold. If None,
     keep the column even if all its values are missing.
-
-  **drop_if_unique**
-  : If True, drop the column if all values are unique (i.e. the
-    number of unique values is equal to the number of rows). Missing values
-    do not count as unique values for this criterion.
-    <br/>
-    #### Deprecated
-    Deprecated since version 0.9.0.
-    <br/>
-    This functionality can drop informative columns and is unlikely to be
-    of use in practice. It is therefore deprecated and will be removed in a
-    future version.
 * **Attributes:**
   **drop_**
   : Whether the column was found to be uninformative and should be dropped.
