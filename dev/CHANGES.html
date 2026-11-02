@@ -621,6 +621,11 @@ time at <code class="docutils literal notranslate"><span class="pre">00:00:00</s
 <section id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> no longer maps large finite outliers to zero: an
+intermediate overflow in the computation of the soft clipping is avoided, so
+that large finite values are soft-clipped toward <code class="docutils literal notranslate"><span class="pre">max_absolute_value</span></code> as
+intended.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2370">#2370</a> by <a class="reference external" href="https://github.com/JaySingh79">Jay Singh</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> no longer raises
 <code class="docutils literal notranslate"><span class="pre">ValueError:</span> <span class="pre">...</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">nonexistent</span> <span class="pre">time</span> <span class="pre">due</span> <span class="pre">to</span> <span class="pre">...</span></code> with Pandas when trying to
 identify a date vs a datetime with <code class="docutils literal notranslate"><span class="pre">col.dt.normalize()</span></code> against some specific

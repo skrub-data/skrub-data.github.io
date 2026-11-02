@@ -223,7 +223,7 @@ Cross-validation R2 scores for QuantileTransformer (higher is better):
 [0.76501655 0.77851783 0.77978404]
 
 Cross-validation R2 scores for SquashingScaler (higher is better):
-[0.8870782  0.89560105 0.90700052]
+[0.88759596 0.89546563 0.90764698]
 ```
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 200-203 -->
@@ -232,8 +232,8 @@ On the employee salaries dataset, the [`SquashingScaler`](../reference/generated
 better than [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler) and [`QuantileTransformer`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html#sklearn.preprocessing.QuantileTransformer) on all
 cross-validation folds.
 
-**Total running time of the script:** (0 minutes 24.418 seconds)
+**Total running time of the script:** (0 minutes 25.830 seconds)
 
-**Estimated memory usage:**  573 MB
+**Estimated memory usage:**  590 MB
 
 <a id="sphx-glr-download-auto-examples-0100-squashing-scaler-py"></a>
