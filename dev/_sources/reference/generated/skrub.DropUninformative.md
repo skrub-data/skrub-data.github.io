@@ -7,6 +7,23 @@ Drop column if it is found to be uninformative according to various criteria.
 Columns are considered “uninformative” if the fraction of missing values is larger
 than a threshold, or if they contain one unique value.
 
+#### NOTE
+A note on using single column transformations
+
+`DropUninformative` is a type of [single column transformation](../../modules/column_level_featurizing/advanced_columnwise_operationshtml.md#single-column-transformer) . Unlike most scikit-learn estimators, its `fit`, `transform` and `fit_transform` methods expect a single column (e.g. Series) not a full dataframe. To apply this transformer to one or more columns in a dataframe, use it in a [`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols) or a [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer).
+
+To apply to all columns:
+
+```default
+ApplyToCols(DropUninformative())
+```
+
+To apply to selected columns:
+
+```default
+ApplyToCols(DropUninformative(), cols=['col_name_1', 'col_name_2'])
+```
+
 * **Parameters:**
   **drop_if_constant**
   : If True, drop the column if it contains only one unique value. Missing values

@@ -12,6 +12,23 @@ To use this class, you need to install the optional `transformers`
 dependencies for skrub. See the “deep learning dependencies” section
 in the [Install](../../installhtml.md#installation-instructions) guide for more details.
 
+#### NOTE
+A note on using single column transformations
+
+`LLMEncoder` is a type of [single column transformation](../../modules/column_level_featurizing/advanced_columnwise_operationshtml.md#single-column-transformer) . Unlike most scikit-learn estimators, its `fit`, `transform` and `fit_transform` methods expect a single column (e.g. Series) not a full dataframe. To apply this transformer to one or more columns in a dataframe, use it in a [`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols) or a [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer).
+
+To apply to all columns:
+
+```default
+ApplyToCols(LLMEncoder())
+```
+
+To apply to selected columns:
+
+```default
+ApplyToCols(LLMEncoder(), cols=['col_name_1', 'col_name_2'])
+```
+
 * **Parameters:**
   **model_name**
   : - If a filepath on disk is passed, this class loads the model from that path.

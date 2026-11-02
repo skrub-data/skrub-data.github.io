@@ -10,6 +10,23 @@ day, etc.), and can add new features based on the datetime (weekday, seconds
 from epoch, day of year). Circular or spline-based periodic features may also
 be included.
 
+#### NOTE
+A note on using single column transformations
+
+`DatetimeEncoder` is a type of [single column transformation](../../modules/column_level_featurizing/advanced_columnwise_operationshtml.md#single-column-transformer) . Unlike most scikit-learn estimators, its `fit`, `transform` and `fit_transform` methods expect a single column (e.g. Series) not a full dataframe. To apply this transformer to one or more columns in a dataframe, use it in a [`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols) or a [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer).
+
+To apply to all columns:
+
+```default
+ApplyToCols(DatetimeEncoder())
+```
+
+To apply to selected columns:
+
+```default
+ApplyToCols(DatetimeEncoder(), cols=['col_name_1', 'col_name_2'])
+```
+
 * **Parameters:**
   **resolution**
   : If a string, extract up to this resolution. Must be “year”, “month”,

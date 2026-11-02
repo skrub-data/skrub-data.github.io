@@ -277,7 +277,7 @@ prediction
 ```
 
 ```none
-array([0])
+array([1])
 ```
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 164-171 -->
@@ -289,8 +289,8 @@ and preprocessing done during model development are exactly the same as those do
 production. This makes deployment straightforward and reduces the risk of errors
 when moving from development to production environments.
 
-**Total running time of the script:** (0 minutes 11.363 seconds)
+**Total running time of the script:** (0 minutes 10.563 seconds)
 
-**Estimated memory usage:**  721 MB
+**Estimated memory usage:**  695 MB
 
 <a id="sphx-glr-download-auto-examples-02-data-ops-1150-use-case-py"></a>
