@@ -17,6 +17,13 @@
 
 ### Changes
 
+- Evaluating a [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) and passing an environment that has extra keys
+  (keys in the environment that do not correspond to any variable, node or
+  choice name, or node ID, in the DataOp) now causes a warning displaying the
+  extra keys to help detect typos and mistakes. It can be silenced with the
+  warnings module, or, more robustly, by adding
+  `{"_skrub_ignore_extra_keys": True}` to the environment dictionary.
+  [#2314](https://github.com/skrub-data/skrub/pull/2314) by [Jérôme Dockès](https://github.com/jeromedockes)
 - The [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) graphs are now rendered in the browser when GraphViz is
   not installed.
   [#2227](https://github.com/skrub-data/skrub/pull/2227) by [Jérôme Dockès](https://github.com/jeromedockes).

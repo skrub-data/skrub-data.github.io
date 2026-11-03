@@ -608,6 +608,13 @@ similar to <a class="reference internal" href="reference/generated/skrub.TableRe
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>Evaluating a <a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> and passing an environment that has extra keys
+(keys in the environment that do not correspond to any variable, node or
+choice name, or node ID, in the DataOp) now causes a warning displaying the
+extra keys to help detect typos and mistakes. It can be silenced with the
+warnings module, or, more robustly, by adding
+<code class="docutils literal notranslate"><span class="pre">{&quot;_skrub_ignore_extra_keys&quot;:</span> <span class="pre">True}</span></code> to the environment dictionary.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2314">#2314</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a></p></li>
 <li><p>The <a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> graphs are now rendered in the browser when GraphViz is
 not installed.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2227">#2227</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
