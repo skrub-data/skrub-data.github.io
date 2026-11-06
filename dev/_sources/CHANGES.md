@@ -35,6 +35,10 @@
 
 ### Bugfixes
 
+- [`DropSimilar`](reference/generated/skrub.DropSimilarhtml.md#skrub.DropSimilar) now checks the input dataframe with
+  `CheckInputDataFrame`, so column names that
+  are not unique strings no longer cause errors.
+  [#2360](https://github.com/skrub-data/skrub/pull/2360) by [Mann](https://github.com/m4nn2609-dot).
 - [`SquashingScaler`](reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler) no longer maps large finite outliers to zero: an
   intermediate overflow in the computation of the soft clipping is avoided, so
   that large finite values are soft-clipped toward `max_absolute_value` as
