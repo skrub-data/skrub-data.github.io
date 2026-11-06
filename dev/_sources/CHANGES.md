@@ -49,6 +49,10 @@
   identify a date vs a datetime with `col.dt.normalize()` against some specific
   timezoned string datetime.
   [#2334](https://github.com/skrub-data/skrub/pull/2334) by [Laurent Steff](https://github.com/lsioctl).
+- [`deduplicate()`](reference/generated/skrub.deduplicatehtml.md#skrub.deduplicate) no longer fails when the input contains missing values;
+  missing values (`None`, `np.nan`, `pd.NA`) are left unchanged while the
+  remaining strings are deduplicated.
+  [#2319](https://github.com/skrub-data/skrub/pull/2319) by [Vinayak Deshmuk](https://github.com/Vinayak19112003).
 
 ### Deprecations
 

@@ -7,6 +7,9 @@ Deduplicate categorical data by hierarchically clustering similar strings.
 This works best if there are a number of underlying categories that
 sometimes appear in the data with small variations and/or misspellings.
 
+Missing values (`None`, `np.nan`, `pd.NA`) do not take part in the
+clustering and are left unchanged in the output.
+
 #### WARNING
 This method can be computationally expensive for large datasets, as it
 requires computing pairwise distances between unique values and performing
