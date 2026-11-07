@@ -147,7 +147,7 @@ The fitted `PCA` can be found in the fitted attribute `transformer_`.
 ```pycon
 >>> pca = learner.find_fitted_estimator('pca')
 >>> pca
-ApplyToSubFrame(cols=glob('date_*'), transformer=PCA(n_components=2))
+ApplyToCols(cols=glob('date_*'), transformer=PCA(n_components=2))
 >>> pca.transformer_
 PCA(n_components=2)
 >>> pca.transformer_.mean_
@@ -446,7 +446,7 @@ trying to set a value directly results in an error:
 >>> best_learner.set_named_params(scaler=StandardScaler())
 Traceback (most recent call last):
     ...
-TypeError: For enumerated choices, the value must be a positional index (int). Got value StandardScaler() of type StandardScaler for choice choose_from([MinMaxScaler(), StandardScaler(), SquashingScaler()], name='scaler').
+TypeError: For enumerated choices, the value must be a positional index (int) in the list of outcomes. Got value StandardScaler() of type StandardScaler for choice choose_from([MinMaxScaler(), StandardScaler(), SquashingScaler()], name='scaler').
 ```
 
 <!-- !! processed by numpydoc !! -->
@@ -559,7 +559,7 @@ step:
 
 ```pycon
 >>> learner.find_fitted_estimator("vectorizer")
-ApplyToSubFrame(transformer=TableVectorizer(datetime=DatetimeEncoder(add_total_seconds=False)))
+ApplyToCols(transformer=TableVectorizer(datetime=DatetimeEncoder(add_total_seconds=False)))
 ```
 
 <!-- !! processed by numpydoc !! -->
