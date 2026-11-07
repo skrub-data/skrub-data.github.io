@@ -17,6 +17,12 @@
 
 ### Changes
 
+- [`set_config()`](reference/generated/skrub.set_confightml.md#skrub.set_config) and [`config_context()`](reference/generated/skrub.config_contexthtml.md#skrub.config_context) now use `UNCHANGED` as the
+  default for every parameter.
+  Explicit `None` values are no longer treated as “leave unchanged” and are
+  validated like other values. `cache=None` still disables caching and
+  `target_cache_size=None` still disables cache pruning.
+  [#2366](https://github.com/skrub-data/skrub/pull/2366) by [Jad Yehya](https://github.com/Jad-yehya).
 - Evaluating a [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) and passing an environment that has extra keys
   (keys in the environment that do not correspond to any variable, node or
   choice name, or node ID, in the DataOp) now causes a warning displaying the
@@ -35,6 +41,10 @@
 
 ### Bugfixes
 
+- [`set_config()`](reference/generated/skrub.set_confightml.md#skrub.set_config) and [`config_context()`](reference/generated/skrub.config_contexthtml.md#skrub.config_context) now correctly store the
+  `cardinality_threshold` parameter. Previously, the value was validated but
+  ignored, so the default threshold kept being used.
+  [#2366](https://github.com/skrub-data/skrub/pull/2366) by [Jad Yehya](https://github.com/Jad-yehya).
 - [`DropSimilar`](reference/generated/skrub.DropSimilarhtml.md#skrub.DropSimilar) now checks the input dataframe with
   `CheckInputDataFrame`, so column names that
   are not unique strings no longer cause errors.

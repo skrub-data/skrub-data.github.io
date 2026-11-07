@@ -633,6 +633,12 @@
 </div>
 <p>This alters the behavior of skrub in the current script. Each configuration parameter
 has an environment variable that can be used to set it permanently.</p>
+<p>Parameters omitted from <code class="docutils literal notranslate"><span class="pre">set_config</span></code> or <code class="docutils literal notranslate"><span class="pre">config_context</span></code> keep their current
+values. Both functions use <code class="docutils literal notranslate"><span class="pre">UNCHANGED</span></code> as the default for all parameters.
+Passing <code class="docutils literal notranslate"><span class="pre">None</span></code> explicitly sets the value to <code class="docutils literal notranslate"><span class="pre">None</span></code> where supported. For
+example, <code class="docutils literal notranslate"><span class="pre">set_config(cache=None)</span></code> disables caching, and
+<code class="docutils literal notranslate"><span class="pre">set_config(target_cache_size=None)</span></code> disables cache pruning. Parameters that
+do not accept <code class="docutils literal notranslate"><span class="pre">None</span></code> raise an error.</p>
 <p>Additionally, a <a class="reference internal" href="../../reference/generated/skrub.config_context.html#skrub.config_context" title="skrub.config_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">config_context()</span></code></a> is provided to allow temporarily altering the
 configuration:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>

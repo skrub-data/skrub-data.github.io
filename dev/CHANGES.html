@@ -608,6 +608,12 @@ similar to <a class="reference internal" href="reference/generated/skrub.TableRe
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.config_context.html#skrub.config_context" title="skrub.config_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">config_context()</span></code></a> now use <code class="docutils literal notranslate"><span class="pre">UNCHANGED</span></code> as the
+default for every parameter.
+Explicit <code class="docutils literal notranslate"><span class="pre">None</span></code> values are no longer treated as “leave unchanged” and are
+validated like other values. <code class="docutils literal notranslate"><span class="pre">cache=None</span></code> still disables caching and
+<code class="docutils literal notranslate"><span class="pre">target_cache_size=None</span></code> still disables cache pruning.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2366">#2366</a> by <a class="reference external" href="https://github.com/Jad-yehya">Jad Yehya</a>.</p></li>
 <li><p>Evaluating a <a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> and passing an environment that has extra keys
 (keys in the environment that do not correspond to any variable, node or
 choice name, or node ID, in the DataOp) now causes a warning displaying the
@@ -628,6 +634,10 @@ time at <code class="docutils literal notranslate"><span class="pre">00:00:00</s
 <section id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.config_context.html#skrub.config_context" title="skrub.config_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">config_context()</span></code></a> now correctly store the
+<code class="docutils literal notranslate"><span class="pre">cardinality_threshold</span></code> parameter. Previously, the value was validated but
+ignored, so the default threshold kept being used.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2366">#2366</a> by <a class="reference external" href="https://github.com/Jad-yehya">Jad Yehya</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.DropSimilar.html#skrub.DropSimilar" title="skrub.DropSimilar"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropSimilar</span></code></a> now checks the input dataframe with
 <code class="xref py py-class docutils literal notranslate"><span class="pre">CheckInputDataFrame</span></code>, so column names that
 are not unique strings no longer cause errors.

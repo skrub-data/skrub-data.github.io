@@ -1,8 +1,13 @@
 # config_context
 
-### skrub.config_context(, use_table_report_data_ops=None, table_report_plots_threshold=None, table_report_associations_threshold=None, table_report_n_rows=None, table_report_verbosity=None, subsampling_seed=None, enable_subsampling=None, float_precision=None, cardinality_threshold=None, data_dir=None, cache=unchanged, target_cache_size=unchanged, eager_data_ops=None, data_ops_open_graph_dropdown=None)
+### skrub.config_context(, use_table_report_data_ops=unchanged, table_report_plots_threshold=unchanged, table_report_associations_threshold=unchanged, table_report_n_rows=unchanged, table_report_verbosity=unchanged, subsampling_seed=unchanged, enable_subsampling=unchanged, float_precision=unchanged, cardinality_threshold=unchanged, data_dir=unchanged, cache=unchanged, target_cache_size=unchanged, eager_data_ops=unchanged, data_ops_open_graph_dropdown=unchanged)
 
 Context manager for global skrub configuration.
+
+All parameters default to `UNCHANGED`, which keeps their current values.
+Passing `None` sets a parameter to `None` if it accepts that value;
+it does not leave the parameter unchanged. The original configuration is
+restored when exiting the context.
 
 * **Parameters:**
   **use_table_report_data_ops**
@@ -24,8 +29,8 @@ Context manager for global skrub configuration.
 
   **table_report_verbosity**
   : Set the level of verbosity of the [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport).
-    Default is 0 (no verbosity). Refer to the `TableReport` documentation for
-    more details.
+    Default is 1 (print the progress bar). Refer to the `TableReport`
+    documentation for more details.
 
   **table_report_plots_threshold**
   : Maximum number of columns for which distribution plots are generated
@@ -49,6 +54,7 @@ Context manager for global skrub configuration.
   **subsampling_seed**
   : Set the random seed of subsampling in skrub DataOps
     [`skrub.DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample), when `how="random"` is passed.
+    Default is 0. If `None`, subsampling is non-deterministic.
     <br/>
     This configuration can also be set with the `SKB_SUBSAMPLING_SEED` environment
     variable.
@@ -75,14 +81,13 @@ Context manager for global skrub configuration.
   **cardinality_threshold**
   : Set the `cardinality_threshold` argument of [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer).
     Control the threshold value used to warn user if they have
-    high cardinality columns in their dataset.
+    high cardinality columns in their dataset. Default is 40.
     <br/>
     This configuration can also be set with the `SKB_CARDINALITY_THRESHOLD`
     environment variable.
 
   **data_dir**
-  : Set the data directory path for skrub datasets. If `None`, falls back to
-    the current configuration.
+  : Set the data directory path for skrub datasets.
     - If the `SKB_DATA_DIRECTORY` environment variable is set to an absolute
       path, that path will be used.
     - Otherwise, the default is `~/skrub_data`.
@@ -91,7 +96,7 @@ Context manager for global skrub configuration.
     environment variable.
 
   **cache**
-  : Caching to use for the evaluation of DataOps.
+  : Caching to use for the evaluation of DataOps. Default is `False`.
     - If False (or None), no caching is used.
     - If True, the cache directory is in a default location (data_dir / \_cache).
     - If a string (or Path), this path is used as the cache directory.
@@ -118,6 +123,7 @@ Context manager for global skrub configuration.
     compute previews if preview data is available. If disabled, those
     checks are delayed until the DataOp is actually used (e.g. by calling
     `.skb.eval()` or `make_learner()`), and previews are not computed.
+    Default is `True`.
     <br/>
     This option is used to speed-up the creation of large DataOps
     containing many nodes. It can also be useful in rare cases where a
@@ -136,7 +142,7 @@ Context manager for global skrub configuration.
     notebook, should the dropdown that reveals the computational graph
     drawing be open (if True) or close (if False). This option mostly
     exists to control the display of DataOps in the skrub documentation
-    examples. This configuration can also be set with the
+    examples. Default is `False`. This configuration can also be set with the
     `SKB_DATA_OPS_OPEN_GRAPH_DROPDOWN` environment variable.
 * **Yields:**
   None.
