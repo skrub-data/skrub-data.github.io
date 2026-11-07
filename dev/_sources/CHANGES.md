@@ -53,6 +53,10 @@
   missing values (`None`, `np.nan`, `pd.NA`) are left unchanged while the
   remaining strings are deduplicated.
   [#2319](https://github.com/skrub-data/skrub/pull/2319) by [Vinayak Deshmuk](https://github.com/Vinayak19112003).
+- [`SessionEncoder`](reference/generated/skrub.SessionEncoderhtml.md#skrub.SessionEncoder) no longer ignores sub-second time gaps with polars
+  dataframes: the gaps were truncated to whole seconds, so events could be
+  wrongly put in the same session and results differed from pandas.
+  [#2337](https://github.com/skrub-data/skrub/pull/2337) by [Joey Tan](https://github.com/JoeyTan21).
 
 ### Deprecations
 
