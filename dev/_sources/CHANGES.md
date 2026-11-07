@@ -49,6 +49,9 @@
   identify a date vs a datetime with `col.dt.normalize()` against some specific
   timezoned string datetime.
   [#2334](https://github.com/skrub-data/skrub/pull/2334) by [Laurent Steff](https://github.com/lsioctl).
+- [`DataOp.skb.make_randomized_search(backend='optuna')`](reference/generated/skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search): reusing an existing optuna study with incomplete
+  trials (i.e. which had been killed while running) could raise an exception.
+  This has been fixed in [#2409](https://github.com/skrub-data/skrub/pull/2409) by [Jérôme Dockès](https://github.com/jeromedockes).
 - [`deduplicate()`](reference/generated/skrub.deduplicatehtml.md#skrub.deduplicate) no longer fails when the input contains missing values;
   missing values (`None`, `np.nan`, `pd.NA`) are left unchanged while the
   remaining strings are deduplicated.
