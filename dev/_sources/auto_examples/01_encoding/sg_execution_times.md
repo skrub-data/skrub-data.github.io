@@ -2,7 +2,7 @@
 
 # Computation times
 
-**03:55.814** total execution time for 3 files **from auto_examples/01_encoding**:
+**03:36.052** total execution time for 3 files **from auto_examples/01_encoding**:
 
 <style scoped>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
@@ -19,6 +19,6 @@ $(document).ready( function () {
 
 | Example                                                                                                                                                                                                   | Time      |   Mem (MB) |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------|
-| [Various string encoders: a sentiment analysis example](0020_text_with_string_encodershtml.md#sphx-glr-auto-examples-01-encoding-0020-text-with-string-encoders-py) (`0020_text_with_string_encoders.py`) | 02:45.627 |     1170.9 |
-| [Encoding: from a dataframe to a numerical matrix for machine learning](0010_encodingshtml.md#sphx-glr-auto-examples-01-encoding-0010-encodings-py) (`0010_encodings.py`)                                 | 00:57.930 |      602.3 |
-| [Handling datetime features with the DatetimeEncoder](0030_datetime_encoderhtml.md#sphx-glr-auto-examples-01-encoding-0030-datetime-encoder-py) (`0030_datetime_encoder.py`)                              | 00:12.257 |      596.5 |
+| [Various string encoders: a sentiment analysis example](0020_text_with_string_encodershtml.md#sphx-glr-auto-examples-01-encoding-0020-text-with-string-encoders-py) (`0020_text_with_string_encoders.py`) | 02:38.453 |     1132   |
+| [Encoding: from a dataframe to a numerical matrix for machine learning](0010_encodingshtml.md#sphx-glr-auto-examples-01-encoding-0010-encodings-py) (`0010_encodings.py`)                                 | 00:45.857 |      582.4 |
+| [Handling datetime features with the DatetimeEncoder](0030_datetime_encoderhtml.md#sphx-glr-auto-examples-01-encoding-0030-datetime-encoder-py) (`0030_datetime_encoder.py`)                              | 00:11.743 |      575.1 |
