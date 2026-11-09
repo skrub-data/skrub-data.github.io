@@ -6,8 +6,12 @@ Get a skrub learner for this DataOp.
 
 Returns a [`SkrubLearner`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) with a `fit()` method so it can be fit
 to some training data and then apply it to unseen data by calling
-`transform()` or `predict()`. Unlike scikit-learn estimators, skrub
-learners accept a dictionary of inputs rather than `X` and `y` arguments.
+`transform()` or `predict()`.
+
+Unlike scikit-learn estimators, skrub learners accept a dictionary of
+inputs rather than `X` and `y` arguments. To get an estimator with
+the scikit-learn `fit(X, y)` interface, see
+[`SkrubLearner.with_sklearn_interface()`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.with_sklearn_interface).
 
 #### WARNING
 If the DataOp contains choices (e.g. `choose_from(...)`), by
@@ -66,6 +70,16 @@ pick the best value with hyperparameter tuning, use
   : A skrub learner with an interface similar to scikit-learn’s, except
     that its methods accept a dictionary of named inputs rather than
     `X` and `y` arguments.
+
+#### SEE ALSO
+[`SkrubLearner.with_sklearn_interface`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.with_sklearn_interface)
+: Wrap a learner in an estimator that has the standard scikit-learn `fit(X, y)` interface.
+
+[`DataOp.skb.make_grid_search`](skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search)
+: Find the best parameters with grid search.
+
+[`DataOp.skb.make_randomized_search`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search)
+: Find the best parameters with randomized search.
 
 ### Examples
 

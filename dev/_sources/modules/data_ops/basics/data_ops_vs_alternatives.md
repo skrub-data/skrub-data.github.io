@@ -25,6 +25,12 @@ item price in dollars:
 
 The rest of this user guide will detail how the DataOps work.
 
+Both can also be combined: a learner exported from a DataOps plan can be turned
+into a standard scikit-learn estimator (see
+[Using a learner as a standard scikit-learn estimator](../validation/exporting_data_opshtml.md#user-guide-data-ops-sklearn-interface)) and used inside a scikit-learn
+pipeline or a `GridSearchCV`. Conversely, a scikit-learn pipeline can be
+used as a step of a DataOps plan with [`.skb.apply()`](../../../reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply).
+
 ## Skrub DataOps and orchestrators like Apache Airflow
 
 Skrub pipelines are not an [orchestrator](https://huyenchip.com/2021/09/13/data-science-infrastructure.html#workflow)

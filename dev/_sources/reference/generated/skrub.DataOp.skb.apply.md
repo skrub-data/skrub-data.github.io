@@ -6,7 +6,9 @@ Apply an estimator that follows the scikit-learn API to a dataframe or numpy arr
 
 * **Parameters:**
   **estimator**
-  : The transformer or predictor to apply.
+  : The transformer or predictor to apply. Note this can be an
+    estimator created from another DataOp with
+    `.skb.make_learner().with_sklearn_interface()`.
 
   **y**
   : The prediction targets when `estimator` is a supervised estimator.
@@ -94,6 +96,9 @@ Apply an estimator that follows the scikit-learn API to a dataframe or numpy arr
 #### SEE ALSO
 [`skrub.DataOp.skb.make_learner`](skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner)
 : Get a skrub learner for this DataOp.
+
+[`skrub.SkrubLearner.with_sklearn_interface`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.with_sklearn_interface)
+: Turn a skrub learner into a standard scikit-learn estimator, which can be applied in another DataOp.
 
 [`skrub.ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols)
 : Transformer that applies a given estimator to selected columns of a dataframe.

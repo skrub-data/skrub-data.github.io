@@ -78,7 +78,7 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Advanced topics" href="../advanced.html" />
+    <link rel="next" title="XySkrubLearner" href="skrub.XySkrubLearner.html" />
     <link rel="prev" title="ParamSearch" href="skrub.ParamSearch.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="color-scheme" content="light dark"/>
@@ -674,6 +674,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.SkrubLearner.html">SkrubLearner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ParamSearch.html">ParamSearch</a></li>
 <li class="toctree-l2 current active"><a aria-current="page" class="current reference internal" href="#">OptunaParamSearch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.XySkrubLearner.html">XySkrubLearner</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../advanced.html">advanced</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -788,7 +789,7 @@
 <h1>OptunaParamSearch<a class="headerlink" href="#optunaparamsearch" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.OptunaParamSearch">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">OptunaParamSearch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_op</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scoring</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'2*n_jobs'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">nan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_train_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">storage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">study_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sampler</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0776797/skrub/__init__.py#L"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.OptunaParamSearch" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">OptunaParamSearch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_op</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scoring</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'2*n_jobs'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">nan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_train_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">storage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">study_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sampler</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a38eb54/skrub/__init__.py#L"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.OptunaParamSearch" title="Link to this definition">#</a></dt>
 <dd><p>Learner that evaluates a skrub DataOp with hyperparameter tuning.</p>
 <p>This class is not meant to be instantiated manually, <code class="docutils literal notranslate"><span class="pre">OptunaParamSearch</span></code>
 objects are created by calling
@@ -796,6 +797,9 @@ objects are created by calling
 <p>Attributes of interest are <code class="docutils literal notranslate"><span class="pre">best_learner_</span></code>, <code class="docutils literal notranslate"><span class="pre">best_score_</span></code>,
 <code class="docutils literal notranslate"><span class="pre">results_</span></code>, <code class="docutils literal notranslate"><span class="pre">detailed_results_</span></code>, and <code class="docutils literal notranslate"><span class="pre">study_</span></code> (the Optuna study used
 to find hyperparameters).</p>
+<p>Its methods accept a dictionary of inputs rather than <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>. See
+<a class="reference internal" href="#skrub.OptunaParamSearch.with_sklearn_interface" title="skrub.OptunaParamSearch.with_sklearn_interface"><code class="xref py py-meth docutils literal notranslate"><span class="pre">OptunaParamSearch.with_sklearn_interface()</span></code></a> to obtain an estimator
+with the standard scikit-learn interface.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -819,6 +823,9 @@ to find hyperparameters).</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="#skrub.OptunaParamSearch.set_params" title="skrub.OptunaParamSearch.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
 <td><p>Set the parameters of this estimator.</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.OptunaParamSearch.with_sklearn_interface" title="skrub.OptunaParamSearch.with_sklearn_interface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">with_sklearn_interface</span></code></a>([X, y])</p></td>
+<td><p>Wrap this learner in an estimator exposing the standard scikit-learn interface.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -841,7 +848,7 @@ score durations.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.OptunaParamSearch.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0776797/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.OptunaParamSearch.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a38eb54/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.OptunaParamSearch.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -862,7 +869,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.OptunaParamSearch.plot_results">
-<span class="sig-name descname"><span class="pre">plot_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorscale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bluered'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_scores</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_choices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_times</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0776797/skrub/_data_ops/_estimator.py#L1399"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.OptunaParamSearch.plot_results" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">plot_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorscale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bluered'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_scores</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_choices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_times</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a38eb54/skrub/_data_ops/_estimator.py#L1676"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.OptunaParamSearch.plot_results" title="Link to this definition">#</a></dt>
 <dd><p>Create a parallel coordinate plot of the cross-validation results.</p>
 <p>Plotly must be installed to use this method.</p>
 <dl class="field-list">
@@ -908,7 +915,7 @@ By default both are shown.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.OptunaParamSearch.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0776797/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.OptunaParamSearch.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a38eb54/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.OptunaParamSearch.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -928,6 +935,241 @@ possible to update each component of a nested object.</p>
 </dl>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.OptunaParamSearch.with_sklearn_interface">
+<span class="sig-name descname"><span class="pre">with_sklearn_interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'X'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'y'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a38eb54/skrub/_data_ops/_estimator.py#L192"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.OptunaParamSearch.with_sklearn_interface" title="Link to this definition">#</a></dt>
+<dd><p>Wrap this learner in an estimator exposing the standard scikit-learn interface.</p>
+<p>Learners created from a <a class="reference internal" href="skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> with <a class="reference internal" href="skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_learner()</span></code></a>, <a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_randomized_search()</span></code></a>, etc. accept their inputs as a
+dictionary, because there are no restrictions on the number and type of
+inputs they can process:
+<code class="docutils literal notranslate"><span class="pre">learner.fit({&quot;some_input&quot;:</span> <span class="pre">...,</span> <span class="pre">&quot;some_other_input&quot;:</span> <span class="pre">...,</span> <span class="pre">...})</span></code>.</p>
+<p>When we need the standard scikit-learn interface <code class="docutils literal notranslate"><span class="pre">fit(X,</span> <span class="pre">y)</span></code> we can
+wrap our learner in a <a class="reference internal" href="skrub.XySkrubLearner.html#skrub.XySkrubLearner" title="skrub.XySkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">XySkrubLearner</span></code></a> by calling
+<a class="reference internal" href="skrub.SkrubLearner.html#skrub.SkrubLearner.with_sklearn_interface" title="skrub.SkrubLearner.with_sklearn_interface"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.with_sklearn_interface()</span></code></a>. The returned estimator
+accepts X, y and kwargs and those are put in a dictionary that is
+passed to the wrapped SkrubLearner (or ParamSearch, or OptunaParamSearch).</p>
+<p>The parameters <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> give the names of variables that should
+be bound to the <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> arguments passed to <code class="docutils literal notranslate"><span class="pre">fit</span></code>,
+<code class="docutils literal notranslate"><span class="pre">predict</span></code>, etc. (by default “X” and “y”).</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/builtins/functions.html#int" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=”X”</span></dt><dd><p><a class="reference internal" href="skrub.DataOp.skb.name.html#skrub.DataOp.skb.name" title="skrub.DataOp.skb.name"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Name</span></code></a> or <a class="reference internal" href="skrub.DataOp.skb.id.html#skrub.DataOp.skb.id" title="skrub.DataOp.skb.id"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ID</span></code></a> of the
+node (usually a <a class="reference internal" href="skrub.var.html#skrub.var" title="skrub.var"><code class="xref py py-func docutils literal notranslate"><span class="pre">variable</span></code></a>) in the DataOp that
+receives the <code class="docutils literal notranslate"><span class="pre">X</span></code> argument.</p>
+</dd>
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/builtins/functions.html#int" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a> or <a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=”y”</span></dt><dd><p><a class="reference internal" href="skrub.DataOp.skb.name.html#skrub.DataOp.skb.name" title="skrub.DataOp.skb.name"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Name</span></code></a> or <a class="reference internal" href="skrub.DataOp.skb.id.html#skrub.DataOp.skb.id" title="skrub.DataOp.skb.id"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ID</span></code></a> of the
+node (usually a <a class="reference internal" href="skrub.var.html#skrub.var" title="skrub.var"><code class="xref py py-func docutils literal notranslate"><span class="pre">variable</span></code></a>) in the DataOp that
+receives the <code class="docutils literal notranslate"><span class="pre">y</span></code> argument. Only required if the DataOp uses a <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<p>(Passing <code class="docutils literal notranslate"><span class="pre">None</span></code> explicitly disables passing any <code class="docutils literal notranslate"><span class="pre">y</span></code> even if one
+is provided to the estimator method. Usually leaving the default is
+fine even for DataOps that do not use a <code class="docutils literal notranslate"><span class="pre">y</span></code>.)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><a class="reference internal" href="skrub.XySkrubLearner.html#skrub.XySkrubLearner" title="skrub.XySkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.XySkrubLearner</span></code></a></dt><dd><p>A wrapper that adapts this learner to the standard scikit-learn
+<code class="docutils literal notranslate"><span class="pre">fit(X,</span> <span class="pre">y)</span></code> interface.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.XySkrubLearner.html#skrub.XySkrubLearner" title="skrub.XySkrubLearner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XySkrubLearner</span></code></a></dt><dd><p>The class of the returned estimator.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.XySkrubLearner.html#skrub.XySkrubLearner.get_param_grid" title="skrub.XySkrubLearner.get_param_grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XySkrubLearner.get_param_grid</span></code></a></dt><dd><p>Param grid for tuning the learner’s choices with scikit-learn’s <code class="docutils literal notranslate"><span class="pre">GridSearchCV</span></code> or <code class="docutils literal notranslate"><span class="pre">RandomizedSearchCV</span></code>.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.make_learner</span></code></a></dt><dd><p>Get a skrub learner for a DataOp.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric">Notes</p>
+<p>The returned estimator can be used wherever a scikit-learn estimator is
+expected, for example in a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>, with
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="(in scikit-learn v1.9)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.cross_validate()</span></code></a>, or as the <code class="docutils literal notranslate"><span class="pre">estimator</span></code>
+in <a class="reference internal" href="skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.apply()</span></code></a> to nest the DataOp in another one. Skrub
+functions that expect a skrub learner, such as
+<a class="reference internal" href="skrub.cross_validate.html#skrub.cross_validate" title="skrub.cross_validate"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.cross_validate()</span></code></a>, should be given the original learner
+instead.</p>
+<p>See also the <a class="reference internal" href="../../modules/data_ops/validation/exporting_data_ops.html#user-guide-data-ops-sklearn-interface"><span class="std std-ref">user guide</span></a>
+and this <a class="reference internal" href="../../auto_examples/02_data_ops/1170_sklearn_interface_learner.html#example-with-sklearn-interface"><span class="std std-ref">example</span></a>.</p>
+<p class="rubric">Examples</p>
+<p>We show examples with <a class="reference internal" href="skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_learner()</span></code></a> here, which returns a <a class="reference internal" href="skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner</span></code></a>,
+but this method works similarly for <a class="reference internal" href="skrub.ParamSearch.html#skrub.ParamSearch" title="skrub.ParamSearch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamSearch</span></code></a> and
+<a class="reference internal" href="#skrub.OptunaParamSearch" title="skrub.OptunaParamSearch"><code class="xref py py-class docutils literal notranslate"><span class="pre">OptunaParamSearch</span></code></a> (created by <a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html#skrub.DataOp.skb.make_grid_search" title="skrub.DataOp.skb.make_grid_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_grid_search()</span></code></a> and <a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_randomized_search()</span></code></a>).</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">sklearn</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.utils.fixes</span><span class="w"> </span><span class="kn">import</span> <span class="n">parse_version</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">parse_version</span><span class="p">(</span><span class="n">sklearn</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">parse_version</span><span class="p">(</span><span class="s2">"1.9"</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+<span class="gp">... </span>    <span class="k">raise</span> <span class="n">pytest</span><span class="o">.</span><span class="n">skip</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">TargetEncoder</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">KFold</span>
+</pre></div>
+</div>
+<p><strong>Example data</strong></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">toy_orders</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">orders_df</span><span class="p">,</span> <span class="n">delayed_col</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"X"</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s2">"y"</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">orders_df</span>
+<span class="go">   ID product  quantity        date</span>
+<span class="go">0   1     pen         2  2020-04-03</span>
+<span class="go">1   2     cup         3  2020-04-04</span>
+<span class="go">2   3     cup         5  2020-04-04</span>
+<span class="go">3   4   spoon         1  2020-04-05</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">delayed_col</span>
+<span class="go">0    False</span>
+<span class="go">1    False</span>
+<span class="go">2     True</span>
+<span class="go">3    False</span>
+<span class="go">Name: delayed, dtype: bool</span>
+</pre></div>
+</div>
+<p><strong>Skrub learner and scikit-learn adapter</strong></p>
+<p>Let us define a DataOp that preprocesses the orders dataframe,
+and build the corresponding skrub learner:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cv</span> <span class="o">=</span> <span class="n">KFold</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="p">(</span>
+<span class="gp">... </span>    <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"X"</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">Cleaner</span><span class="p">())</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">add_total_seconds</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="s2">"date"</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">TargetEncoder</span><span class="p">(</span><span class="n">cv</span><span class="o">=</span><span class="n">cv</span><span class="p">),</span> <span class="n">y</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"y"</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="s2">"product"</span><span class="p">)</span>
+<span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The SkrubLearner accepts an ‘environment’ dictionary, containing
+values for all the variables in the DataOp (here, X and y):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">({</span><span class="s2">"X"</span><span class="p">:</span> <span class="n">orders_df</span><span class="p">,</span> <span class="s2">"y"</span><span class="p">:</span> <span class="n">delayed_col</span><span class="p">})</span>
+<span class="go">   ID  quantity  date_year  date_month  date_day  product</span>
+<span class="go">0   1         2     2020.0         4.0       3.0      0.5</span>
+<span class="go">1   2         3     2020.0         4.0       4.0      1.0</span>
+<span class="go">2   3         5     2020.0         4.0       4.0      0.0</span>
+<span class="go">3   4         1     2020.0         4.0       5.0      0.0</span>
+</pre></div>
+</div>
+<p>If we need an estimator that has the standard scikit-learn
+interface, we can use <code class="docutils literal notranslate"><span class="pre">with_sklearn_interface()</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">with_sklearn_interface</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">orders_df</span><span class="p">,</span> <span class="n">delayed_col</span><span class="p">)</span>
+<span class="go">   ID  quantity  date_year  date_month  date_day  product</span>
+<span class="go">0   1         2     2020.0         4.0       3.0      0.5</span>
+<span class="go">1   2         3     2020.0         4.0       4.0      1.0</span>
+<span class="go">2   3         5     2020.0         4.0       4.0      0.0</span>
+<span class="go">3   4         1     2020.0         4.0       5.0      0.0</span>
+</pre></div>
+</div>
+<p>In this case the <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> passed to <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> are
+mapped to the <code class="docutils literal notranslate"><span class="pre">&quot;X&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;y&quot;</span></code> keys in the environment.</p>
+<p>If the DataOp contains no supervised estimators, <code class="docutils literal notranslate"><span class="pre">y</span></code> can be
+omitted. Here <code class="docutils literal notranslate"><span class="pre">y</span></code> is needed because the TargetEncoder requires
+it.</p>
+<p><strong>The learner and its wrapper share state.</strong></p>
+<p>The estimator returned by <code class="docutils literal notranslate"><span class="pre">with_sklearn_interface</span></code> wraps the
+original learner (and not a copy), so any fitted attributes are
+shared. Thus it can also be obtained from an already-fitted
+model. Here our <code class="docutils literal notranslate"><span class="pre">learner</span></code> has been fitted, so we can call
+<code class="docutils literal notranslate"><span class="pre">transform</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">with_sklearn_interface</span><span class="p">()</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">orders_df</span><span class="p">,</span> <span class="n">delayed_col</span><span class="p">)</span>
+<span class="go">   ID  quantity  date_year  date_month  date_day  product</span>
+<span class="go">0   1         2     2020.0         4.0       3.0      0.0</span>
+<span class="go">1   2         3     2020.0         4.0       4.0      0.4</span>
+<span class="go">2   3         5     2020.0         4.0       4.0      0.4</span>
+<span class="go">3   4         1     2020.0         4.0       5.0      0.0</span>
+</pre></div>
+</div>
+<p>The wrapped learner can be obtained from the <code class="docutils literal notranslate"><span class="pre">learner</span></code>
+attribute:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">with_sklearn_interface</span><span class="p">()</span><span class="o">.</span><span class="n">learner</span> <span class="ow">is</span> <span class="n">learner</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p><strong>Using different variable names than X and y.</strong></p>
+<p>If the names of our variables are different than <code class="docutils literal notranslate"><span class="pre">&quot;X&quot;</span></code> and
+<code class="docutils literal notranslate"><span class="pre">&quot;y&quot;</span></code>, we can specify the names to use in the call to
+<code class="docutils literal notranslate"><span class="pre">with_sklearn_interface</span></code>. For example here we use the names
+<code class="docutils literal notranslate"><span class="pre">&quot;orders&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;delayed&quot;</span></code> instead:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="p">(</span>
+<span class="gp">... </span>    <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"orders"</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">Cleaner</span><span class="p">())</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">add_total_seconds</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="s2">"date"</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">TargetEncoder</span><span class="p">(</span><span class="n">cv</span><span class="o">=</span><span class="n">cv</span><span class="p">),</span> <span class="n">y</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"delayed"</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="s2">"product"</span><span class="p">)</span>
+<span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">({</span><span class="s2">"orders"</span><span class="p">:</span> <span class="n">orders_df</span><span class="p">,</span> <span class="s2">"delayed"</span><span class="p">:</span> <span class="n">delayed_col</span><span class="p">})</span>
+<span class="go">   ID  quantity  date_year  date_month  date_day  product</span>
+<span class="go">0   1         2     2020.0         4.0       3.0      0.5</span>
+<span class="go">1   2         3     2020.0         4.0       4.0      1.0</span>
+<span class="go">2   3         5     2020.0         4.0       4.0      0.0</span>
+<span class="go">3   4         1     2020.0         4.0       5.0      0.0</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">with_sklearn_interface</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="s2">"orders"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"delayed"</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">orders_df</span><span class="p">,</span> <span class="n">delayed_col</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="go">   ID  quantity  date_year  date_month  date_day  product</span>
+<span class="go">0   1         2     2020.0         4.0       3.0      0.5</span>
+<span class="go">1   2         3     2020.0         4.0       4.0      1.0</span>
+<span class="go">2   3         5     2020.0         4.0       4.0      0.0</span>
+<span class="go">3   4         1     2020.0         4.0       5.0      0.0</span>
+</pre></div>
+</div>
+<p>Moreover, the names to which we map <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> are not required to
+belong to skrub variables (created with <a class="reference internal" href="skrub.var.html#skrub.var" title="skrub.var"><code class="xref py py-func docutils literal notranslate"><span class="pre">var()</span></code></a>, shown here).
+They can be any type of node with a name (set with
+<a class="reference internal" href="skrub.DataOp.skb.set_name.html#skrub.DataOp.skb.set_name" title="skrub.DataOp.skb.set_name"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.set_name()</span></code></a>), or they can also be a
+node ID rather than a string (see <a class="reference internal" href="skrub.DataOp.skb.id.html#skrub.DataOp.skb.id" title="skrub.DataOp.skb.id"><code class="xref py py-attr docutils literal notranslate"><span class="pre">.skb.id</span></code></a>).</p>
+<p><strong>Additional variables can be passed as kwargs.</strong></p>
+<p>When our DataOp has more than those 2 inputs, additional data can
+be passed to the sklearn interface through kwargs. Suppose we
+have a third table containing information about the products:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">products_df</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">products</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">products_df</span>
+<span class="go">  product  price</span>
+<span class="go">0     cup      5</span>
+<span class="go">1     pen      2</span>
+<span class="go">2   spoon      3</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="p">(</span>
+<span class="gp">... </span>    <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"orders"</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"products"</span><span class="p">),</span> <span class="n">on</span><span class="o">=</span><span class="s2">"product"</span><span class="p">)</span>  <span class="c1"># ⟵ Add the price information</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">Cleaner</span><span class="p">())</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">add_total_seconds</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="s2">"date"</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">TargetEncoder</span><span class="p">(</span><span class="n">cv</span><span class="o">=</span><span class="n">cv</span><span class="p">),</span> <span class="n">y</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"delayed"</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="s2">"product"</span><span class="p">)</span>
+<span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>In the usual SkrubLearner interface, bindings for all the
+variables are passed in the environment:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">"orders"</span><span class="p">:</span> <span class="n">orders_df</span><span class="p">,</span> <span class="s2">"delayed"</span><span class="p">:</span> <span class="n">delayed_col</span><span class="p">,</span> <span class="s2">"products"</span><span class="p">:</span> <span class="n">products_df</span><span class="p">}</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="go">   ID  quantity  date_year  date_month  date_day  price  product</span>
+<span class="go">0   1         2     2020.0         4.0       3.0      2      0.5</span>
+<span class="go">1   2         3     2020.0         4.0       4.0      5      1.0</span>
+<span class="go">2   3         5     2020.0         4.0       4.0      5      0.0</span>
+<span class="go">3   4         1     2020.0         4.0       5.0      3      0.0</span>
+</pre></div>
+</div>
+<p>In the scikit-learn-compatible wrapper, additional inputs are
+passed as named arguments (the name corresponds to the variable
+name, here “products”):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">with_sklearn_interface</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="s2">"orders"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"delayed"</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">orders_df</span><span class="p">,</span> <span class="n">delayed_col</span><span class="p">,</span> <span class="n">products</span><span class="o">=</span><span class="n">products_df</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="go">   ID  quantity  date_year  date_month  date_day  price  product</span>
+<span class="go">0   1         2     2020.0         4.0       3.0      2      0.5</span>
+<span class="go">1   2         3     2020.0         4.0       4.0      5      1.0</span>
+<span class="go">2   3         5     2020.0         4.0       4.0      5      0.0</span>
+<span class="go">3   4         1     2020.0         4.0       5.0      3      0.0</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </dd></dl>
@@ -963,11 +1205,11 @@ possible to update each component of a nested object.</p>
       </div>
     </a>
     <a class="right-next"
-       href="../advanced.html"
+       href="skrub.XySkrubLearner.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Advanced topics</p>
+        <p class="prev-next-title">XySkrubLearner</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -996,6 +1238,7 @@ possible to update each component of a nested object.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.OptunaParamSearch.plot_results"><code class="docutils literal notranslate"><span class="pre">OptunaParamSearch.plot_results()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.OptunaParamSearch.results_"><code class="docutils literal notranslate"><span class="pre">OptunaParamSearch.results_</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.OptunaParamSearch.set_params"><code class="docutils literal notranslate"><span class="pre">OptunaParamSearch.set_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.OptunaParamSearch.with_sklearn_interface"><code class="docutils literal notranslate"><span class="pre">OptunaParamSearch.with_sklearn_interface()</span></code></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery-examples">Gallery examples</a></li>

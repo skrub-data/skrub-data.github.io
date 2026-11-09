@@ -102,6 +102,7 @@ example:
 * [Going beyond estimator hyperparameters: nesting choices and choosing pipelines](modules/data_ops/validation/nesting_choices_choosing_pipelineshtml.md)
 * [Linking choices depending on other choices](modules/data_ops/validation/nesting_choices_choosing_pipelineshtml.md#linking-choices-depending-on-other-choices)
 * [Exporting the DataOps plan as a learner and reusing it](modules/data_ops/validation/exporting_data_opshtml.md)
+  * [Using a learner as a standard scikit-learn estimator](modules/data_ops/validation/exporting_data_opshtml.md#using-a-learner-as-a-standard-scikit-learn-estimator)
 * [Tuning DataOps with Optuna](modules/data_ops/validation/tuning_with_optunahtml.md)
   * [Using Optuna as a backend for randomized search](modules/data_ops/validation/tuning_with_optunahtml.md#using-optuna-as-a-backend-for-randomized-search)
   * [Setting a storage for the Optuna study](modules/data_ops/validation/tuning_with_optunahtml.md#setting-a-storage-for-the-optuna-study)

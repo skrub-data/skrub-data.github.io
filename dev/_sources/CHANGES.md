@@ -6,6 +6,11 @@
 
 ### New Features
 
+- [`SkrubLearner.with_sklearn_interface()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.with_sklearn_interface) allows wrapping a SkrubLearner (or
+  skrub ParamSearch or OptunaParamSearch) in an adapter that exposes the
+  standard scikit-learn interface: `fit(X, y)` rather than the usual
+  SkrubLearner `fit({"var_name": ..., ...})`. See the [`reference`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.with_sklearn_interface) and an [example](auto_examples/02_data_ops/1170_sklearn_interface_learnerhtml.md#example-with-sklearn-interface).
+  [#2372](https://github.com/skrub-data/skrub/pull/2372) by [Jérôme Dockès](https://github.com/jeromedockes).
 - [`DataOp.skb.get_choices()`](reference/generated/skrub.DataOp.skb.get_choiceshtml.md#skrub.DataOp.skb.get_choices) allows inspecting all the choices (created
   with [`choose_from()`](reference/generated/skrub.choose_fromhtml.md#skrub.choose_from), [`choose_float()`](reference/generated/skrub.choose_floathtml.md#skrub.choose_float), [`choose_int()`](reference/generated/skrub.choose_inthtml.md#skrub.choose_int),
   [`choose_bool()`](reference/generated/skrub.choose_boolhtml.md#skrub.choose_bool) or [`optional()`](reference/generated/skrub.optionalhtml.md#skrub.optional)) contained in a [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp),

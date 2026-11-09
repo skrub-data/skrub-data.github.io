@@ -704,6 +704,11 @@ considered as the design matrix X (shown in blue) and as the target y
 processing.</p></li>
 </ul>
 <p>The rest of this user guide will detail how the DataOps work.</p>
+<p>Both can also be combined: a learner exported from a DataOps plan can be turned
+into a standard scikit-learn estimator (see
+<a class="reference internal" href="../validation/exporting_data_ops.html#user-guide-data-ops-sklearn-interface"><span class="std std-ref">Using a learner as a standard scikit-learn estimator</span></a>) and used inside a scikit-learn
+pipeline or a <code class="docutils literal notranslate"><span class="pre">GridSearchCV</span></code>. Conversely, a scikit-learn pipeline can be
+used as a step of a DataOps plan with <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.apply()</span></code></a>.</p>
 </section>
 <section id="skrub-dataops-and-orchestrators-like-apache-airflow">
 <h2>Skrub DataOps and orchestrators like Apache Airflow<a class="headerlink" href="#skrub-dataops-and-orchestrators-like-apache-airflow" title="Link to this heading">#</a></h2>

@@ -743,6 +743,37 @@ or in a different environment:</p>
 </div>
 <p>See <a class="reference internal" href="../../../auto_examples/02_data_ops/1150_use_case.html#sphx-glr-auto-examples-02-data-ops-1150-use-case-py"><span class="std std-ref">Use case: developing locally and deploying to production</span></a> for an example of how
 to use the learner in a microservice.</p>
+<section id="using-a-learner-as-a-standard-scikit-learn-estimator">
+<span id="user-guide-data-ops-sklearn-interface"></span><h2>Using a learner as a standard scikit-learn estimator<a class="headerlink" href="#using-a-learner-as-a-standard-scikit-learn-estimator" title="Link to this heading">#</a></h2>
+<p>A learner takes an environment dictionary as input, while many tools in the
+scikit-learn ecosystem expect an estimator with the usual <code class="docutils literal notranslate"><span class="pre">fit(X,</span> <span class="pre">y)</span></code> interface.
+When the DataOps plan needs only an <code class="docutils literal notranslate"><span class="pre">X</span></code> and possibly a <code class="docutils literal notranslate"><span class="pre">y</span></code>, we can obtain such an
+estimator by calling <a class="reference internal" href="../../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.with_sklearn_interface" title="skrub.SkrubLearner.with_sklearn_interface"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.with_sklearn_interface()</span></code></a> on the learner.
+The <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> passed to the estimator’s methods are bound to the variables
+named <code class="docutils literal notranslate"><span class="pre">&quot;X&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;y&quot;</span></code> (this can be changed with the parameters of
+<code class="docutils literal notranslate"><span class="pre">with_sklearn_interface</span></code>):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"X"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"y"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">LogisticRegression</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">estimator</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">with_sklearn_interface</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="p">[[</span><span class="mf">0.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.0</span><span class="p">]],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mf">0.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.0</span><span class="p">]])</span>
+<span class="go">array([0, 1])</span>
+</pre></div>
+</div>
+<p>The returned <a class="reference internal" href="../../../reference/generated/skrub.XySkrubLearner.html#skrub.XySkrubLearner" title="skrub.XySkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">XySkrubLearner</span></code></a> can then be used in a scikit-learn
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>, in
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html#sklearn.model_selection.cross_val_score" title="(in scikit-learn v1.9)"><code class="xref py py-func docutils literal notranslate"><span class="pre">cross_val_score()</span></code></a>, or as the estimator of
+another DataOp’s <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.apply()</span></code></a>. Learners returned by
+<a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.make_grid_search.html#skrub.DataOp.skb.make_grid_search" title="skrub.DataOp.skb.make_grid_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_grid_search()</span></code></a> and
+<a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_randomized_search()</span></code></a> can be
+wrapped in the same way.</p>
+<p>See <a class="reference internal" href="../../../auto_examples/02_data_ops/1170_sklearn_interface_learner.html#example-with-sklearn-interface"><span class="std std-ref">Turn a DataOp into a “standard” scikit-learn estimator</span></a> for a more complete example and
+<a class="reference internal" href="../../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.with_sklearn_interface" title="skrub.SkrubLearner.with_sklearn_interface"><code class="xref py py-meth docutils literal notranslate"><span class="pre">the</span> <span class="pre">reference</span> <span class="pre">documentation</span></code></a> for
+full details.</p>
+</section>
 </section>
 
 
@@ -783,6 +814,18 @@ to use the learner in a microservice.</p>
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-a-learner-as-a-standard-scikit-learn-estimator">Using a learner as a standard scikit-learn estimator</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 

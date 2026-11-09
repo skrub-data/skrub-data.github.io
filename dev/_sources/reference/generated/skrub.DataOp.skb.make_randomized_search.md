@@ -8,7 +8,10 @@ This function returns a [`ParamSearch`](skrub.ParamSearchhtml.md#skrub.ParamSear
 scikit-learn’s [`RandomizedSearchCV`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV), where
 the main difference is `fit()` and `predict()` accept a
 dictionary of inputs rather than `X` and `y`. The best learner is stored
-in the attribute `.best_learner_`.
+in the attribute `.best_learner_`. To get the standard `fit(X, y)`
+interface, see [`ParamSearch.with_sklearn_interface()`](skrub.ParamSearchhtml.md#skrub.ParamSearch.with_sklearn_interface) (or
+[`OptunaParamSearch.with_sklearn_interface()`](skrub.OptunaParamSearchhtml.md#skrub.OptunaParamSearch.with_sklearn_interface) when using
+`backend='optuna'`).
 
 * **Parameters:**
   **fitted**
@@ -139,6 +142,9 @@ in the attribute `.best_learner_`.
 #### SEE ALSO
 [`skrub.DataOp.skb.make_grid_search`](skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search)
 : Find the best parameters with grid search.
+
+[`skrub.ParamSearch.with_sklearn_interface`](skrub.ParamSearchhtml.md#skrub.ParamSearch.with_sklearn_interface)
+: Wrap the search in an estimator that has the standard scikit-learn `fit(X, y)` interface.
 
 [`skrub.DataOp.skb.make_learner`](skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner)
 : Make a [`SkrubLearner`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) without actually searching for the best hyperparameters. The strategy to resolve choices can be use the default value, random, or taking suggestions from an Optuna [`optuna.trial.Trial`](https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial). This allows using Optuna directly, rather than through the `make_randomized_search` interface, for more advanced use cases.

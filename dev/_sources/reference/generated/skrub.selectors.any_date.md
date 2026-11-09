@@ -74,3 +74,10 @@ Note that string columns with date-like values are not selected
 ```
 
 <!-- !! processed by numpydoc !! -->
+
+## Gallery examples
+
+<div class="sphx-glr-thumbnails">
+<!-- thumbnail-parent-div-open --><div class="sphx-glr-thumbcontainer" tooltip="When our DataOp only needs 2 inputs, X and y, we can get a learner that accepts the usual scikit-learn inputs rather than a dictionary like SkrubLearners normally do, by using SkrubLearner.with_sklearn_interface to obtain the learner wrapped in a XySkrubLearner.">  <div class="sphx-glr-thumbnail-title">Turn a DataOp into a "standard" scikit-learn estimator</div>
+</div>
+<!-- thumbnail-parent-div-close --></div>

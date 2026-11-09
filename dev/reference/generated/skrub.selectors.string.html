@@ -674,6 +674,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.SkrubLearner.html">SkrubLearner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ParamSearch.html">ParamSearch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.OptunaParamSearch.html">OptunaParamSearch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.XySkrubLearner.html">XySkrubLearner</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../advanced.html">advanced</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -788,7 +789,7 @@
 <h1>string<a class="headerlink" href="#string" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.string">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">string</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0776797/skrub/selectors/_selectors.py#L561"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.string" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">string</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a38eb54/skrub/selectors/_selectors.py#L561"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.string" title="Link to this definition">#</a></dt>
 <dd><p>Select columns that have a string data type.</p>
 <p>In pandas, object columns containing strings are also selected.</p>
 <div class="admonition seealso">
@@ -852,6 +853,9 @@ numbers) are not selected.</p>
 <div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip=" .. |ApplyToCols| replace:: ApplyToCols .. |StringEncoder| replace:: StringEncoder .. |SelectCols| replace:: SelectCols .. |DropCols| replace:: DropCols .. |TableVectorizer| replace:: TableVectorizer .. |OrdinalEncoder| replace:: OrdinalEncoder .. |PCA| replace:: PCA .. |Pipeline| replace:: Pipeline .. |ColumnTransformer| replace:: ColumnTransformer"><img alt="" src="../../_images/sphx_glr_0010_apply_to_cols_thumb.svg" />
 <p><a class="reference internal" href="../../auto_examples/0010_apply_to_cols.html"><span class="doc">Hands-On with Column Selection and Transformers</span></a></p>
   <div class="sphx-glr-thumbnail-title">Hands-On with Column Selection and Transformers</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="When our DataOp only needs 2 inputs, X and y, we can get a learner that accepts the usual scikit-learn inputs rather than a dictionary like SkrubLearners normally do, by using SkrubLearner.with_sklearn_interface to obtain the learner wrapped in a XySkrubLearner."><img alt="" src="../../_images/sphx_glr_1170_sklearn_interface_learner_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/02_data_ops/1170_sklearn_interface_learner.html"><span class="doc">Turn a DataOp into a “standard” scikit-learn estimator</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Turn a DataOp into a "standard" scikit-learn estimator</div>
 </div></div></section>
 </section>
 

@@ -674,6 +674,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.SkrubLearner.html">SkrubLearner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ParamSearch.html">ParamSearch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.OptunaParamSearch.html">OptunaParamSearch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.XySkrubLearner.html">XySkrubLearner</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../advanced.html">advanced</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -788,7 +789,7 @@
 <h1>var<a class="headerlink" href="#var" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.var">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">var</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NULL</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">becomes_default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0776797/skrub/_data_ops/_data_ops.py#L1012"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.var" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">var</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NULL</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">becomes_default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a38eb54/skrub/_data_ops/_data_ops.py#L1012"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.var" title="Link to this definition">#</a></dt>
 <dd><p>Create a skrub variable.</p>
 <p>Variables represent inputs to a DataOps plan, and the corresponding learner.
 They can be combined with other variables, constants, operators, function
@@ -927,6 +928,9 @@ gallery.</p>
 </div><div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use .skb.subsample() to speed up interactive construction of a skrub DataOps plan by computing previews on a subsampled version of the original data."><img alt="" src="../../_images/sphx_glr_1140_subsampling_thumb.svg" />
 <p><a class="reference internal" href="../../auto_examples/02_data_ops/1140_subsampling.html"><span class="doc">Subsampling for faster development</span></a></p>
   <div class="sphx-glr-thumbnail-title">Subsampling for faster development</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="When our DataOp only needs 2 inputs, X and y, we can get a learner that accepts the usual scikit-learn inputs rather than a dictionary like SkrubLearners normally do, by using SkrubLearner.with_sklearn_interface to obtain the learner wrapped in a XySkrubLearner."><img alt="" src="../../_images/sphx_glr_1170_sklearn_interface_learner_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/02_data_ops/1170_sklearn_interface_learner.html"><span class="doc">Turn a DataOp into a “standard” scikit-learn estimator</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Turn a DataOp into a "standard" scikit-learn estimator</div>
 </div></div></section>
 </section>
 

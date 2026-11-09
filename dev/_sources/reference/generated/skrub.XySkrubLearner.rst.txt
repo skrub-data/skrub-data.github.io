@@ -1,0 +1,14 @@
+﻿XySkrubLearner
+==============
+
+.. currentmodule:: skrub
+
+.. autoclass:: XySkrubLearner
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.XySkrubLearner skrub.XySkrubLearner.__init__ skrub.XySkrubLearner.get_metadata_routing skrub.XySkrubLearner.get_named_params skrub.XySkrubLearner.get_param_grid skrub.XySkrubLearner.get_params skrub.XySkrubLearner.set_named_params skrub.XySkrubLearner.set_params 
+   :add-heading: Gallery examples
+   :heading-level: -

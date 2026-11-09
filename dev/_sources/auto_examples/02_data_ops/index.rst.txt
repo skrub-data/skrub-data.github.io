@@ -121,6 +121,23 @@ Skrub DataOps
     </div>
 
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="When our DataOp only needs 2 inputs, X and y, we can get a learner that accepts the usual scikit-learn inputs rather than a dictionary like SkrubLearners normally do, by using SkrubLearner.with_sklearn_interface to obtain the learner wrapped in a XySkrubLearner.">
+
+.. only:: html
+
+  .. image:: /auto_examples/02_data_ops/images/thumb/sphx_glr_1170_sklearn_interface_learner_thumb.svg
+    :alt:
+
+  :doc:`/auto_examples/02_data_ops/1170_sklearn_interface_learner`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Turn a DataOp into a "standard" scikit-learn estimator</div>
+    </div>
+
+
 .. thumbnail-parent-div-close
 
 .. raw:: html
@@ -137,4 +154,5 @@ Skrub DataOps
    /auto_examples/02_data_ops/1140_subsampling
    /auto_examples/02_data_ops/1150_use_case
    /auto_examples/02_data_ops/1160_pytorch
+   /auto_examples/02_data_ops/1170_sklearn_interface_learner
 

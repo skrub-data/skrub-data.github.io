@@ -11,5 +11,6 @@
 </div><div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use .skb.subsample() to speed up interactive construction of a skrub DataOps plan by computing previews on a subsampled version of the original data.">  <div class="sphx-glr-thumbnail-title">Subsampling for faster development</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="Use case: developing locally and deploying to production">  <div class="sphx-glr-thumbnail-title">Use case: developing locally and deploying to production</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to wrap a PyTorch model with skorch and plug it into a skrub DataOps plan.">  <div class="sphx-glr-thumbnail-title">Using PyTorch (via skorch) in DataOps</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="When our DataOp only needs 2 inputs, X and y, we can get a learner that accepts the usual scikit-learn inputs rather than a dictionary like SkrubLearners normally do, by using SkrubLearner.with_sklearn_interface to obtain the learner wrapped in a XySkrubLearner.">  <div class="sphx-glr-thumbnail-title">Turn a DataOp into a "standard" scikit-learn estimator</div>
 </div>
 <!-- thumbnail-parent-div-close --></div>

@@ -71,3 +71,39 @@ SkrubLearner(data_op=<Apply TableVectorizer>)
 
 See [Use case: developing locally and deploying to production](../../../auto_examples/02_data_ops/1150_use_casehtml.md#sphx-glr-auto-examples-02-data-ops-1150-use-case-py) for an example of how
 to use the learner in a microservice.
+
+<a id="user-guide-data-ops-sklearn-interface"></a>
+
+## Using a learner as a standard scikit-learn estimator
+
+A learner takes an environment dictionary as input, while many tools in the
+scikit-learn ecosystem expect an estimator with the usual `fit(X, y)` interface.
+When the DataOps plan needs only an `X` and possibly a `y`, we can obtain such an
+estimator by calling [`SkrubLearner.with_sklearn_interface()`](../../../reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.with_sklearn_interface) on the learner.
+The `X` and `y` passed to the estimator’s methods are bound to the variables
+named `"X"` and `"y"` (this can be changed with the parameters of
+`with_sklearn_interface`):
+
+```pycon
+>>> from sklearn.linear_model import LogisticRegression
+>>> X = skrub.var("X")
+>>> y = skrub.var("y")
+>>> learner = X.skb.apply(LogisticRegression(), y=y).skb.make_learner()
+>>> estimator = learner.with_sklearn_interface()
+>>> estimator.fit(
+...     [[0.0], [1.0], [2.0], [3.0]], [0, 0, 1, 1]
+... ).predict([[0.0], [3.0]])
+array([0, 1])
+```
+
+The returned [`XySkrubLearner`](../../../reference/generated/skrub.XySkrubLearnerhtml.md#skrub.XySkrubLearner) can then be used in a scikit-learn
+[`Pipeline`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline), in
+[`cross_val_score()`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html#sklearn.model_selection.cross_val_score), or as the estimator of
+another DataOp’s [`.skb.apply()`](../../../reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply). Learners returned by
+[`.skb.make_grid_search()`](../../../reference/generated/skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search) and
+[`.skb.make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search) can be
+wrapped in the same way.
+
+See [Turn a DataOp into a “standard” scikit-learn estimator](../../../auto_examples/02_data_ops/1170_sklearn_interface_learnerhtml.md#example-with-sklearn-interface) for a more complete example and
+[`the reference documentation`](../../../reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.with_sklearn_interface) for
+full details.

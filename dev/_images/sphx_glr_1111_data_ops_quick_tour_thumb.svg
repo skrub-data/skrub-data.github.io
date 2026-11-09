@@ -12,7 +12,7 @@
 <!-- node_0 -->
 <g id="node_0" class="node">
 
-<g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/tutorials/1111_data_ops_quick_tour.py&quot;, line 135, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;csv_path = skrub.var(&quot;csv_path&quot;, train_dataset.path)">
+<g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/tutorials/1111_data_ops_quick_tour.py&quot;, line 142, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;csv_path = skrub.var(&quot;csv_path&quot;, train_dataset.path)">
 <polygon fill="none" stroke="black" points="181.14,-226.95 101.38,-226.95 101.38,-205.56 181.14,-205.56 181.14,-226.95"/>
 <polygon fill="none" stroke="black" points="185.14,-230.95 97.38,-230.95 97.38,-201.56 185.14,-201.56 185.14,-230.95"/>
 <text xml:space="preserve" text-anchor="middle" x="141.26" y="-213.13" font-family="sans-serif" font-size="10.00">Var &#39;csv_path&#39;</text>
@@ -22,7 +22,7 @@
 <!-- node_1 -->
 <g id="node_1" class="node">
 
-<g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/tutorials/1111_data_ops_quick_tour.py&quot;, line 148, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;full_data = csv_path.skb.apply_func(pd.read_csv)">
+<g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/tutorials/1111_data_ops_quick_tour.py&quot;, line 155, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;full_data = csv_path.skb.apply_func(pd.read_csv)">
 <polygon fill="none" stroke="black" points="182.64,-172.56 99.88,-172.56 99.88,-151.17 182.64,-151.17 182.64,-172.56"/>
 <text xml:space="preserve" text-anchor="middle" x="141.26" y="-158.74" font-family="sans-serif" font-size="10.00">Call &#39;read_csv&#39;</text>
 </a>
@@ -37,7 +37,7 @@
 <!-- node_2 -->
 <g id="node_2" class="node">
 
-<g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/tutorials/1111_data_ops_quick_tour.py&quot;, line 173, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;employee_data = full_data.drop(">
+<g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/tutorials/1111_data_ops_quick_tour.py&quot;, line 180, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;employee_data = full_data.drop(">
 <polygon fill="#c6d5f0" stroke="black" points="135.64,-122.17 22.87,-122.17 22.87,-100.78 135.64,-100.78 135.64,-122.17"/>
 <text xml:space="preserve" text-anchor="middle" x="79.26" y="-108.35" font-family="sans-serif" font-size="10.00">X: CallMethod &#39;drop&#39;</text>
 </a>
@@ -52,7 +52,7 @@
 <!-- node_4 -->
 <g id="node_4" class="node">
 
-<g id="a_node_4"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/tutorials/1111_data_ops_quick_tour.py&quot;, line 178, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;salary = full_data[&quot;current_annual_salary&quot;].skb.mark_as_y()">
+<g id="a_node_4"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/tutorials/1111_data_ops_quick_tour.py&quot;, line 185, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;salary = full_data[&quot;current_annual_salary&quot;].skb.mark_as_y()">
 <polygon fill="#fad9c6" stroke="black" points="316.14,-71.78 134.38,-71.78 134.38,-50.39 316.14,-50.39 316.14,-71.78"/>
 <text xml:space="preserve" text-anchor="middle" x="225.26" y="-57.96" font-family="sans-serif" font-size="10.00">y: GetItem &#39;current_annual_salary&#39;</text>
 </a>
@@ -67,7 +67,7 @@
 <!-- node_3 -->
 <g id="node_3" class="node">
 
-<g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/tutorials/1111_data_ops_quick_tour.py&quot;, line 185, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;pred = employee_data.skb.apply(skrub.TableVectorizer()).skb.apply(">
+<g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/tutorials/1111_data_ops_quick_tour.py&quot;, line 192, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;pred = employee_data.skb.apply(skrub.TableVectorizer()).skb.apply(">
 <polygon fill="none" stroke="black" points="116.52,-71.78 0,-71.78 0,-50.39 116.52,-50.39 116.52,-71.78"/>
 <text xml:space="preserve" text-anchor="middle" x="58.26" y="-57.96" font-family="sans-serif" font-size="10.00">Apply TableVectorizer</text>
 </a>
@@ -82,7 +82,7 @@
 <!-- node_5 -->
 <g id="node_5" class="node">
 
-<g id="a_node_5"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/tutorials/1111_data_ops_quick_tour.py&quot;, line 185, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;pred = employee_data.skb.apply(skrub.TableVectorizer()).skb.apply(">
+<g id="a_node_5"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/tutorials/1111_data_ops_quick_tour.py&quot;, line 192, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;pred = employee_data.skb.apply(skrub.TableVectorizer()).skb.apply(">
 <polygon fill="none" stroke="black" points="238.89,-21.39 43.62,-21.39 43.62,0 238.89,0 238.89,-21.39"/>
 <text xml:space="preserve" text-anchor="middle" x="141.26" y="-7.57" font-family="sans-serif" font-size="10.00">Apply HistGradientBoostingRegressor</text>
 </a>

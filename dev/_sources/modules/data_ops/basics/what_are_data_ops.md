@@ -28,3 +28,5 @@ as a **learner** with [`make_learner()`](../../../reference/generated/skrub.Data
 special object akin to a scikit-learn estimator, but that takes as input a
 dictionary of variables rather than a single design matrix `X` and a target array
 `y`.
+(When needed, [`SkrubLearner.with_sklearn_interface()`](../../../reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.with_sklearn_interface) turns it into a standard
+scikit-learn estimator with `fit(X, y)`.)

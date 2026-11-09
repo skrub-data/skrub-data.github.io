@@ -145,10 +145,11 @@ classes and functions may not be enough to give full guidelines on their use.
 | [`DataOp.skb.is_y`](generated/skrub.DataOp.skb.is_yhtml.md#skrub.DataOp.skb.is_y)                                          | Whether this DataOp has been marked with [`skb.mark_as_y()`](generated/skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y). |
 | [`DataOp.skb.name`](generated/skrub.DataOp.skb.namehtml.md#skrub.DataOp.skb.name)                                          | A user-chosen name for the DataOp.                                                                                                    |
 
-| [`SkrubLearner`](generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner)                | Learner that evaluates a skrub DataOp.                            |
-|-----------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [`ParamSearch`](generated/skrub.ParamSearchhtml.md#skrub.ParamSearch)                   | Learner that evaluates a skrub DataOp with hyperparameter tuning. |
-| [`OptunaParamSearch`](generated/skrub.OptunaParamSearchhtml.md#skrub.OptunaParamSearch) | Learner that evaluates a skrub DataOp with hyperparameter tuning. |
+| [`SkrubLearner`](generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner)                | Learner that evaluates a skrub DataOp.                                  |
+|-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| [`ParamSearch`](generated/skrub.ParamSearchhtml.md#skrub.ParamSearch)                   | Learner that evaluates a skrub DataOp with hyperparameter tuning.       |
+| [`OptunaParamSearch`](generated/skrub.OptunaParamSearchhtml.md#skrub.OptunaParamSearch) | Learner that evaluates a skrub DataOp with hyperparameter tuning.       |
+| [`XySkrubLearner`](generated/skrub.XySkrubLearnerhtml.md#skrub.XySkrubLearner)          | Wrapper to expose a standard scikit-learn interface to a skrub learner. |
 
 ## Advanced topics
 

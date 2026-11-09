@@ -8,7 +8,8 @@ This function returns a [`ParamSearch`](skrub.ParamSearchhtml.md#skrub.ParamSear
 scikit-learn’s [`GridSearchCV`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV), where
 the main difference is that `fit()` and `predict()` accept a
 dictionary of inputs rather than `X` and `y`. The best learner can
-be returned by calling `.best_learner_`.
+be returned by calling `.best_learner_`. To get the standard
+`fit(X, y)` interface, see [`ParamSearch.with_sklearn_interface()`](skrub.ParamSearchhtml.md#skrub.ParamSearch.with_sklearn_interface).
 
 * **Parameters:**
   **fitted**
@@ -39,6 +40,9 @@ be returned by calling `.best_learner_`.
 #### SEE ALSO
 [`skrub.DataOp.skb.make_randomized_search`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search)
 : Find the best parameters with randomized search.
+
+[`skrub.ParamSearch.with_sklearn_interface`](skrub.ParamSearchhtml.md#skrub.ParamSearch.with_sklearn_interface)
+: Wrap the search in an estimator that has the standard scikit-learn `fit(X, y)` interface.
 
 ### Examples
 
