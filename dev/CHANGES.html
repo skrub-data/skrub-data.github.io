@@ -664,6 +664,10 @@ This has been fixed in <a class="reference external" href="https://github.com/sk
 missing values (<code class="docutils literal notranslate"><span class="pre">None</span></code>, <code class="docutils literal notranslate"><span class="pre">np.nan</span></code>, <code class="docutils literal notranslate"><span class="pre">pd.NA</span></code>) are left unchanged while the
 remaining strings are deduplicated.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2319">#2319</a> by <a class="reference external" href="https://github.com/Vinayak19112003">Vinayak Deshmuk</a>.</p></li>
+<li><p>The icon-only buttons (copy, close and dismiss) and the column filter of the
+<a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> now have accessible names, so that screen readers can
+announce what they do.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2389">#2389</a> by <a class="reference external" href="https://github.com/eyaadouni">Eya Adouni</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.SessionEncoder.html#skrub.SessionEncoder" title="skrub.SessionEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionEncoder</span></code></a> no longer ignores sub-second time gaps with polars
 dataframes: the gaps were truncated to whole seconds, so events could be
 wrongly put in the same session and results differed from pandas.
