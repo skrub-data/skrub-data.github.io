@@ -46,6 +46,10 @@
 
 ### Bugfixes
 
+- [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) no longer counts unused pandas categories as distinct
+  values or includes them among the most frequent values. This also fixes
+  constant-column detection after filtering a categorical column.
+  [#2348](https://github.com/skrub-data/skrub/pull/2348) by [Aryan Ganjoo](https://github.com/AryanRG).
 - [`set_config()`](reference/generated/skrub.set_confightml.md#skrub.set_config) and [`config_context()`](reference/generated/skrub.config_contexthtml.md#skrub.config_context) now correctly store the
   `cardinality_threshold` parameter. Previously, the value was validated but
   ignored, so the default threshold kept being used.
@@ -79,6 +83,11 @@
   dataframes: the gaps were truncated to whole seconds, so events could be
   wrongly put in the same session and results differed from pandas.
   [#2337](https://github.com/skrub-data/skrub/pull/2337) by [Joey Tan](https://github.com/JoeyTan21).
+- [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) and the [`selectors.cardinality_below()`](reference/generated/skrub.selectors.cardinality_belowhtml.md#skrub.selectors.cardinality_below) selector no
+  longer count `NaN` as a distinct value in float columns of polars
+  dataframes. `NaN` is already counted as a missing value there, so the
+  number of distinct values was off by one and differed from pandas.
+  [#2417](https://github.com/skrub-data/skrub/pull/2417) by [Joey Tan](https://github.com/JoeyTan21).
 
 ### Deprecations
 

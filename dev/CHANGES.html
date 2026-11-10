@@ -639,6 +639,10 @@ time at <code class="docutils literal notranslate"><span class="pre">00:00:00</s
 <section id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> no longer counts unused pandas categories as distinct
+values or includes them among the most frequent values. This also fixes
+constant-column detection after filtering a categorical column.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2348">#2348</a> by <a class="reference external" href="https://github.com/AryanRG">Aryan Ganjoo</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.config_context.html#skrub.config_context" title="skrub.config_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">config_context()</span></code></a> now correctly store the
 <code class="docutils literal notranslate"><span class="pre">cardinality_threshold</span></code> parameter. Previously, the value was validated but
 ignored, so the default threshold kept being used.
@@ -672,6 +676,11 @@ announce what they do.
 dataframes: the gaps were truncated to whole seconds, so events could be
 wrongly put in the same session and results differed from pandas.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2337">#2337</a> by <a class="reference external" href="https://github.com/JoeyTan21">Joey Tan</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> and the <a class="reference internal" href="reference/generated/skrub.selectors.cardinality_below.html#skrub.selectors.cardinality_below" title="skrub.selectors.cardinality_below"><code class="xref py py-func docutils literal notranslate"><span class="pre">selectors.cardinality_below()</span></code></a> selector no
+longer count <code class="docutils literal notranslate"><span class="pre">NaN</span></code> as a distinct value in float columns of polars
+dataframes. <code class="docutils literal notranslate"><span class="pre">NaN</span></code> is already counted as a missing value there, so the
+number of distinct values was off by one and differed from pandas.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2417">#2417</a> by <a class="reference external" href="https://github.com/JoeyTan21">Joey Tan</a>.</p></li>
 </ul>
 </section>
 <section id="deprecations">
