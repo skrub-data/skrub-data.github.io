@@ -789,7 +789,7 @@
 <h1>SkrubLearner<a class="headerlink" href="#skrublearner" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.SkrubLearner">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">SkrubLearner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_op</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/62ca282/skrub/__init__.py#L"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">SkrubLearner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_op</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/14e4ae7/skrub/__init__.py#L"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner" title="Link to this definition">#</a></dt>
 <dd><p>Learner that evaluates a skrub DataOp.</p>
 <p>This class is not meant to be instantiated manually, <code class="docutils literal notranslate"><span class="pre">SkrubLearner</span></code>
 objects are created by calling <a class="reference internal" href="skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_learner()</span></code></a> on a
@@ -832,7 +832,7 @@ standard scikit-learn interface.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="#skrub.SkrubLearner.truncated_after" title="skrub.SkrubLearner.truncated_after"><code class="xref py py-obj docutils literal notranslate"><span class="pre">truncated_after</span></code></a>(what)</p></td>
 <td><p>Extract the part of the learner that leads up to the given step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.SkrubLearner.with_sklearn_interface" title="skrub.SkrubLearner.with_sklearn_interface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">with_sklearn_interface</span></code></a>([X, y])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.SkrubLearner.with_sklearn_interface" title="skrub.SkrubLearner.with_sklearn_interface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">with_sklearn_interface</span></code></a>([X, y, environment])</p></td>
 <td><p>Wrap this learner in an estimator exposing the standard scikit-learn interface.</p></td>
 </tr>
 </tbody>
@@ -848,7 +848,7 @@ standard scikit-learn interface.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.describe_params">
-<span class="sig-name descname"><span class="pre">describe_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/62ca282/skrub/_data_ops/_estimator.py#L1094"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.describe_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">describe_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/14e4ae7/skrub/_data_ops/_estimator.py#L1165"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.describe_params" title="Link to this definition">#</a></dt>
 <dd><p>Describe parameters for this learner.</p>
 <p>Returns a human-readable description (in form of a dict) of the
 parameters (outcomes of <code class="docutils literal notranslate"><span class="pre">choose_*</span></code> objects contained in the
@@ -857,7 +857,7 @@ DataOp).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.find_fitted_estimator">
-<span class="sig-name descname"><span class="pre">find_fitted_estimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">what</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/62ca282/skrub/_data_ops/_estimator.py#L852"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.find_fitted_estimator" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">find_fitted_estimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">what</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/14e4ae7/skrub/_data_ops/_estimator.py#L923"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.find_fitted_estimator" title="Link to this definition">#</a></dt>
 <dd><p>Find the scikit-learn estimator that has been fitted in a <code class="docutils literal notranslate"><span class="pre">.skb.apply()</span></code> step.</p>
 <p>This can be useful for example to inspect the fitted attributes of the
 estimator.</p>
@@ -986,7 +986,7 @@ we pass <code class="docutils literal notranslate"><span class="pre">.skb.apply(
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.get_named_params">
-<span class="sig-name descname"><span class="pre">get_named_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/62ca282/skrub/_data_ops/_estimator.py#L609"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.get_named_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_named_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/14e4ae7/skrub/_data_ops/_estimator.py#L680"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.get_named_params" title="Link to this definition">#</a></dt>
 <dd><p>Get the outcomes that have been set for named choices in the DataOp.</p>
 <p>The returned dictionary can be used with <a class="reference internal" href="#skrub.SkrubLearner.set_named_params" title="skrub.SkrubLearner.set_named_params"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.set_named_params()</span></code></a>.
 Only choices that have been given an explicit name are included in the result.</p>
@@ -1024,7 +1024,7 @@ examples.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/62ca282/skrub/_data_ops/_estimator.py#L654"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/14e4ae7/skrub/_data_ops/_estimator.py#L725"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1045,7 +1045,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.report">
-<span class="sig-name descname"><span class="pre">report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">report_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/62ca282/skrub/_data_ops/_estimator.py#L480"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.report" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">report_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/14e4ae7/skrub/_data_ops/_estimator.py#L551"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.report" title="Link to this definition">#</a></dt>
 <dd><p>Call the method specified by <code class="docutils literal notranslate"><span class="pre">mode</span></code> and return the result and full report.</p>
 <p>See <a class="reference internal" href="skrub.DataOp.skb.report.html#skrub.DataOp.skb.report" title="skrub.DataOp.skb.report"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.report()</span></code></a> for more information.</p>
 <dl class="field-list">
@@ -1112,7 +1112,7 @@ the ‘predict’ method:</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.set_named_params">
-<span class="sig-name descname"><span class="pre">set_named_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/62ca282/skrub/_data_ops/_estimator.py#L661"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.set_named_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_named_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/14e4ae7/skrub/_data_ops/_estimator.py#L732"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.set_named_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the tunable parameters (choices), indexed by choice name.</p>
 <p>Typically, the passed dictionary is created by
 <a class="reference internal" href="#skrub.SkrubLearner.get_named_params" title="skrub.SkrubLearner.get_named_params"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.get_named_params()</span></code></a>.</p>
@@ -1246,7 +1246,7 @@ outcome list:</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/62ca282/skrub/_data_ops/_estimator.py#L822"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/14e4ae7/skrub/_data_ops/_estimator.py#L893"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -1270,7 +1270,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.truncated_after">
-<span class="sig-name descname"><span class="pre">truncated_after</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">what</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/62ca282/skrub/_data_ops/_estimator.py#L997"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.truncated_after" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">truncated_after</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">what</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/14e4ae7/skrub/_data_ops/_estimator.py#L1068"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.truncated_after" title="Link to this definition">#</a></dt>
 <dd><p>Extract the part of the learner that leads up to the given step.</p>
 <p>This is similar to slicing a scikit-learn pipeline. It can be useful
 for example to drive the hyperparameter selection with a supervised
@@ -1363,7 +1363,7 @@ step:</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.with_sklearn_interface">
-<span class="sig-name descname"><span class="pre">with_sklearn_interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'X'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'y'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/62ca282/skrub/_data_ops/_estimator.py#L192"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.with_sklearn_interface" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">with_sklearn_interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'X'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'y'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/14e4ae7/skrub/_data_ops/_estimator.py#L196"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.with_sklearn_interface" title="Link to this definition">#</a></dt>
 <dd><p>Wrap this learner in an estimator exposing the standard scikit-learn interface.</p>
 <p>Learners created from a <a class="reference internal" href="skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> with <a class="reference internal" href="skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_learner()</span></code></a>, <a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_randomized_search()</span></code></a>, etc. accept their inputs as a
 dictionary, because there are no restrictions on the number and type of
@@ -1377,19 +1377,41 @@ passed to the wrapped SkrubLearner (or ParamSearch, or OptunaParamSearch).</p>
 <p>The parameters <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> give the names of variables that should
 be bound to the <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> arguments passed to <code class="docutils literal notranslate"><span class="pre">fit</span></code>,
 <code class="docutils literal notranslate"><span class="pre">predict</span></code>, etc. (by default “X” and “y”).</p>
+<p>In addition, it is possible to pass <code class="docutils literal notranslate"><span class="pre">environment</span></code> to store data
+directly in an attribute. This can be useful to pass the learner to
+scikit-learn functions such as
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.inspection.permutation_importance.html#sklearn.inspection.permutation_importance" title="(in scikit-learn v1.9)"><code class="xref py py-func docutils literal notranslate"><span class="pre">permutation_importance()</span></code></a> so that other
+variables than X and y are accessible. However for learners that we
+want to keep and reuse on new data later and possibly serialize, we
+normally do not want to keep this data attached to it. Either pass no
+<code class="docutils literal notranslate"><span class="pre">environment</span></code> or drop it with <a class="reference internal" href="skrub.XySkrubLearner.html#skrub.XySkrubLearner.drop_env" title="skrub.XySkrubLearner.drop_env"><code class="xref py py-meth docutils literal notranslate"><span class="pre">XySkrubLearner.drop_env()</span></code></a>, and
+pass the extra data through method kwargs instead.</p>
+<p>In case of name collisions, the preference order from highest to lowest
+precedence is:
+X and y &gt; kwargs &gt; environment attribute.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/builtins/functions.html#int" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=”X”</span></dt><dd><p><a class="reference internal" href="skrub.DataOp.skb.name.html#skrub.DataOp.skb.name" title="skrub.DataOp.skb.name"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Name</span></code></a> or <a class="reference internal" href="skrub.DataOp.skb.id.html#skrub.DataOp.skb.id" title="skrub.DataOp.skb.id"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ID</span></code></a> of the
 node (usually a <a class="reference internal" href="skrub.var.html#skrub.var" title="skrub.var"><code class="xref py py-func docutils literal notranslate"><span class="pre">variable</span></code></a>) in the DataOp that
-receives the <code class="docutils literal notranslate"><span class="pre">X</span></code> argument.</p>
+receives the <code class="docutils literal notranslate"><span class="pre">X</span></code> argument. Can also be “_skrub_X” to indicate the
+node marked with <a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.mark_as_X()</span></code></a>.</p>
 </dd>
 <dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/builtins/functions.html#int" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a> or <a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=”y”</span></dt><dd><p><a class="reference internal" href="skrub.DataOp.skb.name.html#skrub.DataOp.skb.name" title="skrub.DataOp.skb.name"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Name</span></code></a> or <a class="reference internal" href="skrub.DataOp.skb.id.html#skrub.DataOp.skb.id" title="skrub.DataOp.skb.id"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ID</span></code></a> of the
 node (usually a <a class="reference internal" href="skrub.var.html#skrub.var" title="skrub.var"><code class="xref py py-func docutils literal notranslate"><span class="pre">variable</span></code></a>) in the DataOp that
-receives the <code class="docutils literal notranslate"><span class="pre">y</span></code> argument. Only required if the DataOp uses a <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+receives the <code class="docutils literal notranslate"><span class="pre">y</span></code> argument. Only required if the DataOp uses a <code class="docutils literal notranslate"><span class="pre">y</span></code>.
+Can also be “_skrub_y” to indicate the node marked with
+<a class="reference internal" href="skrub.DataOp.skb.mark_as_y.html#skrub.DataOp.skb.mark_as_y" title="skrub.DataOp.skb.mark_as_y"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.mark_as_y()</span></code></a>.</p>
 <p>(Passing <code class="docutils literal notranslate"><span class="pre">None</span></code> explicitly disables passing any <code class="docutils literal notranslate"><span class="pre">y</span></code> even if one
 is provided to the estimator method. Usually leaving the default is
 fine even for DataOps that do not use a <code class="docutils literal notranslate"><span class="pre">y</span></code>.)</p>
+</dd>
+<dt><strong>environment</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#dict" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a> or <a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=None</span></dt><dd><p>Additional environment to which X and y are added before
+evaluation. This is stored as an attribute of the returned learner.
+Use only for metadata that is small and always valid for all
+inputs, or when creating a temporary object to pass it to some
+scikit-learn function such as
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.inspection.permutation_importance.html#sklearn.inspection.permutation_importance" title="(in scikit-learn v1.9)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.inspection.permutation_importance()</span></code></a>.</p>
 </dd>
 </dl>
 </dd>
@@ -1558,11 +1580,12 @@ have a third table containing information about the products:</p>
 <span class="go">0     cup      5</span>
 <span class="go">1     pen      2</span>
 <span class="go">2   spoon      3</span>
+<span class="go">3    fork      3</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="p">(</span>
 <span class="gp">... </span>    <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"orders"</span><span class="p">)</span>
-<span class="gp">... </span>    <span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"products"</span><span class="p">),</span> <span class="n">on</span><span class="o">=</span><span class="s2">"product"</span><span class="p">)</span>  <span class="c1"># ⟵ Add the price information</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"products"</span><span class="p">),</span> <span class="n">on</span><span class="o">=</span><span class="s2">"product"</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">"left"</span><span class="p">)</span>  <span class="c1"># ⟵ Add the price information</span>
 <span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">Cleaner</span><span class="p">())</span>
 <span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">add_total_seconds</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="s2">"date"</span><span class="p">)</span>
 <span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">TargetEncoder</span><span class="p">(</span><span class="n">cv</span><span class="o">=</span><span class="n">cv</span><span class="p">),</span> <span class="n">y</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"delayed"</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="s2">"product"</span><span class="p">)</span>
@@ -1592,6 +1615,40 @@ name, here “products”):</p>
 <span class="go">1   2         3     2020.0         4.0       4.0      5      1.0</span>
 <span class="go">2   3         5     2020.0         4.0       4.0      5      0.0</span>
 <span class="go">3   4         1     2020.0         4.0       5.0      3      0.0</span>
+</pre></div>
+</div>
+<p><strong>Additional variables can be attached to the learner</strong></p>
+<p>When creating a temporary learner that will be consumed by some
+scikit-learn function that fits and validates it, the additional
+variables can also be attached to the learner so scikit-learn does not
+need to forward them.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.inspection</span><span class="w"> </span><span class="kn">import</span> <span class="n">permutation_importance</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.dummy</span><span class="w"> </span><span class="kn">import</span> <span class="n">DummyClassifier</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="p">(</span>
+<span class="gp">... </span>    <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"orders"</span><span class="p">,</span> <span class="n">orders_df</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">()</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"products"</span><span class="p">,</span> <span class="n">products_df</span><span class="p">),</span> <span class="n">on</span><span class="o">=</span><span class="s2">"product"</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">"left"</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">TableVectorizer</span><span class="p">())</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">DummyClassifier</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"delayed"</span><span class="p">,</span> <span class="n">delayed_col</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">())</span>
+<span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">test_data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">toy_orders</span><span class="p">(</span><span class="n">split</span><span class="o">=</span><span class="s2">"test"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">xy_learner</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">with_sklearn_interface</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">X</span><span class="o">=</span><span class="s2">"orders"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"delayed"</span><span class="p">,</span> <span class="n">environment</span><span class="o">=</span><span class="p">{</span><span class="s2">"products"</span><span class="p">:</span> <span class="n">test_data</span><span class="p">[</span><span class="s2">"products"</span><span class="p">]}</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">permutation_importance</span><span class="p">(</span><span class="n">xy_learner</span><span class="p">,</span> <span class="n">test_data</span><span class="p">[</span><span class="s2">"orders"</span><span class="p">],</span> <span class="n">test_data</span><span class="p">[</span><span class="s2">"delayed"</span><span class="p">])[</span>
+<span class="gp">... </span>    <span class="s2">"importances_mean"</span>
+<span class="gp">... </span><span class="p">]</span>
+<span class="go">array([0., 0., 0., 0., 0.])</span>
+</pre></div>
+</div>
+<p>For learners we want to reuse, we do not want to keep data attached to
+them. Either do not pass an environment, or drop it later:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">xy_learner</span><span class="o">.</span><span class="n">drop_env</span><span class="p">()</span>
+<span class="go">XySkrubLearner(X='orders',</span>
+<span class="go">               learner=SkrubLearner(data_op=&lt;Apply DummyClassifier&gt;),</span>
+<span class="go">               y='delayed')</span>
 </pre></div>
 </div>
 </dd></dl>

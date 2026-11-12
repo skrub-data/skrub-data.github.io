@@ -1,10 +1,10 @@
 # XySkrubLearner
 
-### *class* skrub.XySkrubLearner(learner, X='X', y='y')
+### *class* skrub.XySkrubLearner(learner, X='X', y='y', environment=None)
 
 Wrapper to expose a standard scikit-learn interface to a skrub learner.
 
-This class is not usually instantiated manually, but by calling
+This class is not instantiated manually, but by calling
 [`.with_sklearn_interface()`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.with_sklearn_interface)
 on a skrub learner. Skrub learners are created from a [`DataOp`](skrub.DataOphtml.md#skrub.DataOp) with
 [`.skb.make_learner()`](skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner),
@@ -23,6 +23,9 @@ The wrapped learner can be retrieved from the `learner` attribute.
   **y**
   : Name or ID of the node that receives the `y` argument.
 
+  **environment**
+  : Additional environment to which X and y are added before evaluation.
+
 #### SEE ALSO
 [`SkrubLearner.with_sklearn_interface`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.with_sklearn_interface)
 : Create a `XySkrubLearner`. See this method for all the details.
@@ -34,14 +37,24 @@ See the [user guide](../../modules/data_ops/validation/exporting_data_opshtml.md
 
 ### Methods
 
-| [`get_param_grid`](#skrub.XySkrubLearner.get_param_grid)([key_prefix, outer_grid])   | Get a param grid for this learner (use with GridSearchCV, RandomizedSearchCV).   |
-|--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [`get_params`](#skrub.XySkrubLearner.get_params)([deep])                             | Get parameters for this estimator.                                               |
-| [`set_params`](#skrub.XySkrubLearner.set_params)(\*\*params)                         | Set the parameters of this estimator.                                            |
+| [`drop_env`](#skrub.XySkrubLearner.drop_env)()                                     | Create a new XySkrubLearner with an empty `environment` attribute.             |
+|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| [`get_param_grid`](#skrub.XySkrubLearner.get_param_grid)([key_prefix, outer_grid]) | Get a param grid for this learner (use with GridSearchCV, RandomizedSearchCV). |
+| [`get_params`](#skrub.XySkrubLearner.get_params)([deep])                           | Get parameters for this estimator.                                             |
+| [`set_params`](#skrub.XySkrubLearner.set_params)(\*\*params)                       | Set the parameters of this estimator.                                          |
 
 | **get_named_params**   |    |
 |------------------------|----|
 | **set_named_params**   |    |
+<!-- !! processed by numpydoc !! -->
+
+#### drop_env()
+
+Create a new XySkrubLearner with an empty `environment` attribute.
+
+This drops the environment but the new object wraps the same
+SkrubLearner, any fitted state is retained.
+
 <!-- !! processed by numpydoc !! -->
 
 #### get_param_grid(key_prefix='', outer_grid=None)

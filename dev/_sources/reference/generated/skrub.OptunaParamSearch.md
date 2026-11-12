@@ -27,11 +27,11 @@ with the standard scikit-learn interface.
 
 ### Methods
 
-| [`get_params`](#skrub.OptunaParamSearch.get_params)([deep])                               | Get parameters for this estimator.                                              |
-|-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [`plot_results`](#skrub.OptunaParamSearch.plot_results)(\*[, colorscale, min_score, ...]) | Create a parallel coordinate plot of the cross-validation results.              |
-| [`set_params`](#skrub.OptunaParamSearch.set_params)(\*\*params)                           | Set the parameters of this estimator.                                           |
-| [`with_sklearn_interface`](#skrub.OptunaParamSearch.with_sklearn_interface)([X, y])       | Wrap this learner in an estimator exposing the standard scikit-learn interface. |
+| [`get_params`](#skrub.OptunaParamSearch.get_params)([deep])                                      | Get parameters for this estimator.                                              |
+|--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [`plot_results`](#skrub.OptunaParamSearch.plot_results)(\*[, colorscale, min_score, ...])        | Create a parallel coordinate plot of the cross-validation results.              |
+| [`set_params`](#skrub.OptunaParamSearch.set_params)(\*\*params)                                  | Set the parameters of this estimator.                                           |
+| [`with_sklearn_interface`](#skrub.OptunaParamSearch.with_sklearn_interface)([X, y, environment]) | Wrap this learner in an estimator exposing the standard scikit-learn interface. |
 
 | **fit**   |    |
 |-----------|----|
@@ -123,7 +123,7 @@ possible to update each component of a nested object.
 
 <!-- !! processed by numpydoc !! -->
 
-#### with_sklearn_interface(X='X', y='y')
+#### with_sklearn_interface(X='X', y='y', environment=None)
 
 Wrap this learner in an estimator exposing the standard scikit-learn interface.
 
@@ -142,20 +142,45 @@ The parameters `X` and `y` give the names of variables that should
 be bound to the `X` and `y` arguments passed to `fit`,
 `predict`, etc. (by default “X” and “y”).
 
+In addition, it is possible to pass `environment` to store data
+directly in an attribute. This can be useful to pass the learner to
+scikit-learn functions such as
+[`permutation_importance()`](https://scikit-learn.org/stable/modules/generated/sklearn.inspection.permutation_importance.html#sklearn.inspection.permutation_importance) so that other
+variables than X and y are accessible. However for learners that we
+want to keep and reuse on new data later and possibly serialize, we
+normally do not want to keep this data attached to it. Either pass no
+`environment` or drop it with [`XySkrubLearner.drop_env()`](skrub.XySkrubLearnerhtml.md#skrub.XySkrubLearner.drop_env), and
+pass the extra data through method kwargs instead.
+
+In case of name collisions, the preference order from highest to lowest
+precedence is:
+X and y > kwargs > environment attribute.
+
 * **Parameters:**
   **X**
   : [`Name`](skrub.DataOp.skb.namehtml.md#skrub.DataOp.skb.name) or [`ID`](skrub.DataOp.skb.idhtml.md#skrub.DataOp.skb.id) of the
     node (usually a [`variable`](skrub.varhtml.md#skrub.var)) in the DataOp that
-    receives the `X` argument.
+    receives the `X` argument. Can also be “_skrub_X” to indicate the
+    node marked with [`DataOp.skb.mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X).
 
   **y**
   : [`Name`](skrub.DataOp.skb.namehtml.md#skrub.DataOp.skb.name) or [`ID`](skrub.DataOp.skb.idhtml.md#skrub.DataOp.skb.id) of the
     node (usually a [`variable`](skrub.varhtml.md#skrub.var)) in the DataOp that
     receives the `y` argument. Only required if the DataOp uses a `y`.
+    Can also be “_skrub_y” to indicate the node marked with
+    [`DataOp.skb.mark_as_y()`](skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y).
     <br/>
     (Passing `None` explicitly disables passing any `y` even if one
     is provided to the estimator method. Usually leaving the default is
     fine even for DataOps that do not use a `y`.)
+
+  **environment**
+  : Additional environment to which X and y are added before
+    evaluation. This is stored as an attribute of the returned learner.
+    Use only for metadata that is small and always valid for all
+    inputs, or when creating a temporary object to pass it to some
+    scikit-learn function such as
+    [`sklearn.inspection.permutation_importance()`](https://scikit-learn.org/stable/modules/generated/sklearn.inspection.permutation_importance.html#sklearn.inspection.permutation_importance).
 * **Returns:**
   [`skrub.XySkrubLearner`](skrub.XySkrubLearnerhtml.md#skrub.XySkrubLearner)
   : A wrapper that adapts this learner to the standard scikit-learn
@@ -349,12 +374,13 @@ have a third table containing information about the products:
 0     cup      5
 1     pen      2
 2   spoon      3
+3    fork      3
 ```
 
 ```pycon
 >>> learner = (
 ...     skrub.var("orders")
-...     .merge(skrub.var("products"), on="product")  # ⟵ Add the price information
+...     .merge(skrub.var("products"), on="product", how="left")  # ⟵ Add the price information
 ...     .skb.apply(skrub.Cleaner())
 ...     .skb.apply(skrub.DatetimeEncoder(add_total_seconds=False), cols="date")
 ...     .skb.apply(TargetEncoder(cv=cv), y=skrub.var("delayed"), cols="product")
@@ -388,6 +414,46 @@ name, here “products”):
 1   2         3     2020.0         4.0       4.0      5      1.0
 2   3         5     2020.0         4.0       4.0      5      0.0
 3   4         1     2020.0         4.0       5.0      3      0.0
+```
+
+**Additional variables can be attached to the learner**
+
+When creating a temporary learner that will be consumed by some
+scikit-learn function that fits and validates it, the additional
+variables can also be attached to the learner so scikit-learn does not
+need to forward them.
+
+```pycon
+>>> from sklearn.inspection import permutation_importance
+>>> from sklearn.dummy import DummyClassifier
+```
+
+```pycon
+>>> learner = (
+...     skrub.var("orders", orders_df)
+...     .skb.mark_as_X()
+...     .merge(skrub.var("products", products_df), on="product", how="left")
+...     .skb.apply(skrub.TableVectorizer())
+...     .skb.apply(DummyClassifier(), y=skrub.var("delayed", delayed_col).skb.mark_as_y())
+... ).skb.make_learner(fitted=True)
+>>> test_data = skrub.datasets.toy_orders(split="test")
+>>> xy_learner = learner.with_sklearn_interface(
+...     X="orders", y="delayed", environment={"products": test_data["products"]}
+... )
+>>> permutation_importance(xy_learner, test_data["orders"], test_data["delayed"])[
+...     "importances_mean"
+... ]
+array([0., 0., 0., 0., 0.])
+```
+
+For learners we want to reuse, we do not want to keep data attached to
+them. Either do not pass an environment, or drop it later:
+
+```pycon
+>>> xy_learner.drop_env()
+XySkrubLearner(X='orders',
+               learner=SkrubLearner(data_op=<Apply DummyClassifier>),
+               y='delayed')
 ```
 
 <!-- !! processed by numpydoc !! -->

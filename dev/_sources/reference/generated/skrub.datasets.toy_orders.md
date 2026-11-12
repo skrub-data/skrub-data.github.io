@@ -48,6 +48,7 @@ There is also a side table containing information about the products:
 0     cup      5
 1     pen      2
 2   spoon      3
+3    fork      3
 ```
 
 <!-- !! processed by numpydoc !! -->
