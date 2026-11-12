@@ -83,6 +83,10 @@
   dataframes: the gaps were truncated to whole seconds, so events could be
   wrongly put in the same session and results differed from pandas.
   [#2337](https://github.com/skrub-data/skrub/pull/2337) by [Joey Tan](https://github.com/JoeyTan21).
+- [`DataOp.skb.make_grid_search()`](reference/generated/skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search) (and randomized search) could produce NaN
+  scores when using the default (built-in score method) scoring for fully unsupervised
+  pipelines (no `y` in the final estimator’s `.score()`). This has been fixed in
+  [#2419](https://github.com/skrub-data/skrub/pull/2419) by [Jérôme Dockès](https://github.com/jeromedockes).
 - [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) and the [`selectors.cardinality_below()`](reference/generated/skrub.selectors.cardinality_belowhtml.md#skrub.selectors.cardinality_below) selector no
   longer count `NaN` as a distinct value in float columns of polars
   dataframes. `NaN` is already counted as a missing value there, so the
