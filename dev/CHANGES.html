@@ -625,8 +625,16 @@ validated like other values. <code class="docutils literal notranslate"><span cl
 choice name, or node ID, in the DataOp) now causes a warning displaying the
 extra keys to help detect typos and mistakes. It can be silenced with the
 warnings module, or, more robustly, by adding
-<code class="docutils literal notranslate"><span class="pre">{&quot;_skrub_ignore_extra_keys&quot;:</span> <span class="pre">True}</span></code> to the environment dictionary.
+<code class="docutils literal notranslate"><span class="pre">{&quot;skrub.ignore_extra_keys&quot;:</span> <span class="pre">True}</span></code> to the environment dictionary.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2314">#2314</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a></p></li>
+<li><p>The special keys used by skrub in the environment dictionaries of
+<a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> have been renamed from <code class="docutils literal notranslate"><span class="pre">_skrub_&lt;name&gt;</span></code> to <code class="docutils literal notranslate"><span class="pre">skrub.&lt;name&gt;</span></code>
+(for example <code class="docutils literal notranslate"><span class="pre">_skrub_predictions</span></code> is now <code class="docutils literal notranslate"><span class="pre">skrub.predictions</span></code>). Names of
+variables, choices and nodes starting with <code class="docutils literal notranslate"><span class="pre">skrub</span></code> or <code class="docutils literal notranslate"><span class="pre">_skrub</span></code> are now
+reserved. The old names lose their meaning, for example passing
+<code class="docutils literal notranslate"><span class="pre">&quot;_skrub_predictions&quot;</span></code> now has no effect (except possibly triggering an
+“unused key” warning).
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2420">#2420</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>The <a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> graphs are now rendered in the browser when GraphViz is
 not installed.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2227">#2227</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>

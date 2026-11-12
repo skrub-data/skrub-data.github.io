@@ -3107,7 +3107,7 @@ cross_validate(
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3117,7 +3117,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3127,7 +3127,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3137,7 +3137,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3147,14 +3147,14 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
 
   res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
 
-{'fit_time': array([1.340029  , 1.29919696, 1.27889347, 1.29578829, 1.2834723 ]), 'score_time': array([0.21555448, 0.21356201, 0.21319938, 0.21442318, 0.20943832]), 'test_score': array([-0.06975353, -0.0655087 , -0.0669843 , -0.07164151, -0.06533881])}
+{'fit_time': array([1.66827893, 1.5951643 , 1.46587658, 1.49471831, 1.61019301]), 'score_time': array([0.28831792, 0.22585654, 0.23945951, 0.27671528, 0.2554493 ]), 'test_score': array([-0.06810071, -0.06634774, -0.06779728, -0.07199945, -0.06606923])}
 ```
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 85-92 -->
@@ -3188,7 +3188,7 @@ pd.DataFrame(grid_search.cv_results_)[
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3198,7 +3198,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3208,7 +3208,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3218,7 +3218,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3228,7 +3228,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3238,7 +3238,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3248,7 +3248,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3258,7 +3258,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3268,7 +3268,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3278,7 +3278,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3288,7 +3288,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3298,7 +3298,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3308,7 +3308,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3318,7 +3318,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3328,7 +3328,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3338,7 +3338,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3348,7 +3348,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3358,7 +3358,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3368,7 +3368,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3378,7 +3378,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3388,7 +3388,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3398,7 +3398,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3408,7 +3408,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3418,7 +3418,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3428,7 +3428,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3438,7 +3438,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3448,7 +3448,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3458,7 +3458,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3468,7 +3468,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3478,7 +3478,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3488,7 +3488,7 @@ In a future version of skrub this warning may become an exception.
 ['y'].
 This usually indicates a mis-typed variable name.
 To avoid this warning, remove the extra keys from the environment
-or add {'_skrub_ignore_extra_keys': True} to the environment.
+or add {'skrub.ignore_extra_keys': True} to the environment.
 You can get all the names used in a DataOp (valid keys in the env) with:
 list(data_op.skb.get_vars(all_named_ops=True) | data_op.skb.get_choices(named_only=True))
 In a future version of skrub this warning may become an exception.
@@ -3498,8 +3498,8 @@ In a future version of skrub this warning may become an exception.
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_3a7fe68f-wrapper" hidden>
-    <template id="report_3a7fe68f-template">
+<div id="report_d386e7d0-wrapper" hidden>
+    <template id="report_d386e7d0-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -4926,7 +4926,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="8e04b2f7"
+                id="9530f295"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -4956,7 +4956,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="92e3a660"
+                id="a49cf113"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -4990,7 +4990,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="0cbc71cd"
+                id="35662d04"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -5024,7 +5024,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="d0e157e4"
+                id="ff9849bc"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -5072,7 +5072,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="19cc5bb8"
+                id="8760ff3e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -5093,14 +5093,14 @@ data-spans_\_0_\_-1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="1"
-                data-value-str="1"
+                data-value-repr="2"
+                data-value-str="2"
 
-                >1</th>
+                >2</th>
 
 
                 <td
-                id="4102afc7"
+                id="dc11e53c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5130,7 +5130,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="6c9a0a1e"
+                id="1b54d4b2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5151,16 +5151,16 @@ data-spans_\_0_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="15"
-                data-value-str="15"
+                data-value-repr="20"
+                data-value-str="20"
 
                 data-column-idx="1"
 
-                >15</td>
+                >20</td>
 
 
                 <td
-                id="ce47ce3c"
+                id="86990d37"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5181,12 +5181,12 @@ data-spans_\_0_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.907597648591748"
-                data-value-str="0.907597648591748"
+                data-value-repr="0.9055815293577549"
+                data-value-str="0.9055815293577549"
 
                 data-column-idx="2"
 
-                >0.908</td>
+                >0.906</td>
 
             </tr>
 
@@ -5194,7 +5194,7 @@ data-spans_\_0_\_2
 
 
                 <th
-                id="9a305337"
+                id="f878935b"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -5215,14 +5215,14 @@ data-spans_\_1_\_-1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="2"
-                data-value-str="2"
+                data-value-repr="1"
+                data-value-str="1"
 
-                >2</th>
+                >1</th>
 
 
                 <td
-                id="e0e66849"
+                id="3077c1d1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5252,7 +5252,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="0ba251e0"
+                id="1352fc31"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5273,16 +5273,16 @@ data-spans_\_1_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="20"
-                data-value-str="20"
+                data-value-repr="15"
+                data-value-str="15"
 
                 data-column-idx="1"
 
-                >20</td>
+                >15</td>
 
 
                 <td
-                id="9d91cab1"
+                id="d1c9b8e0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5303,12 +5303,12 @@ data-spans_\_1_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.904091113597881"
-                data-value-str="0.904091113597881"
+                data-value-repr="0.9045121398628602"
+                data-value-str="0.9045121398628602"
 
                 data-column-idx="2"
 
-                >0.904</td>
+                >0.905</td>
 
             </tr>
 
@@ -5316,7 +5316,7 @@ data-spans_\_1_\_2
 
 
                 <th
-                id="3bd59f46"
+                id="71684fc8"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -5344,7 +5344,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="35f29599"
+                id="641e6c2f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5374,7 +5374,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="21901569"
+                id="6dcb021e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5404,7 +5404,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="dc775221"
+                id="ba5816d0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5425,12 +5425,12 @@ data-spans_\_2_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.9014089756879194"
-                data-value-str="0.9014089756879194"
+                data-value-repr="0.9028608755623486"
+                data-value-str="0.9028608755623486"
 
                 data-column-idx="2"
 
-                >0.901</td>
+                >0.903</td>
 
             </tr>
 
@@ -5438,7 +5438,7 @@ data-spans_\_2_\_2
 
 
                 <th
-                id="697cfc96"
+                id="b9eee11c"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -5459,14 +5459,14 @@ data-spans_\_3_\_-1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="3"
-                data-value-str="3"
+                data-value-repr="5"
+                data-value-str="5"
 
-                >3</th>
+                >5</th>
 
 
                 <td
-                id="eeec8e46"
+                id="bce2dc4f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5496,7 +5496,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="b517bf59"
+                id="4c6262f4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5517,16 +5517,16 @@ data-spans_\_3_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="10"
-                data-value-str="10"
+                data-value-repr="20"
+                data-value-str="20"
 
                 data-column-idx="1"
 
-                >10</td>
+                >20</td>
 
 
                 <td
-                id="94e4d760"
+                id="d78ac334"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5547,12 +5547,12 @@ data-spans_\_3_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.890494530550556"
-                data-value-str="0.890494530550556"
+                data-value-repr="0.8891505812883075"
+                data-value-str="0.8891505812883075"
 
                 data-column-idx="2"
 
-                >0.890</td>
+                >0.889</td>
 
             </tr>
 
@@ -5560,7 +5560,7 @@ data-spans_\_3_\_2
 
 
                 <th
-                id="5f03a5fc"
+                id="31a6469d"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -5581,14 +5581,14 @@ data-spans_\_4_\_-1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="5"
-                data-value-str="5"
+                data-value-repr="3"
+                data-value-str="3"
 
-                >5</th>
+                >3</th>
 
 
                 <td
-                id="56d35083"
+                id="15d13128"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5618,7 +5618,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="f7848107"
+                id="c9aa533b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5639,16 +5639,16 @@ data-spans_\_4_\_1
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="20"
-                data-value-str="20"
+                data-value-repr="10"
+                data-value-str="10"
 
                 data-column-idx="1"
 
-                >20</td>
+                >10</td>
 
 
                 <td
-                id="65314272"
+                id="72a4cc96"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5669,12 +5669,12 @@ data-spans_\_4_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.886280096233796"
-                data-value-str="0.886280096233796"
+                data-value-repr="0.887407926631907"
+                data-value-str="0.887407926631907"
 
                 data-column-idx="2"
 
-                >0.886</td>
+                >0.887</td>
 
             </tr>
 
@@ -5682,7 +5682,7 @@ data-spans_\_4_\_2
 
 
                 <th
-                id="57934290"
+                id="89ed8df4"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -5710,7 +5710,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="752c8e01"
+                id="40d088b0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5740,7 +5740,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="6bc92950"
+                id="008b34f0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5770,7 +5770,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="02dfae4a"
+                id="efe3ba6e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5791,8 +5791,8 @@ data-spans_\_5_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.8857757812720486"
-                data-value-str="0.8857757812720486"
+                data-value-repr="0.8856627918804758"
+                data-value-str="0.8856627918804758"
 
                 data-column-idx="2"
 
@@ -6045,21 +6045,21 @@ data-spans_\_5_\_2
 
                 <dt>Mean ± Std</dt>
                 <dd>0.896 ±
-                    0.00958
+                    0.00937
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.890 ±
-                    0.0178
+                <dd>0.889 ±
+                    0.0171
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
                     <span class="min-value">0.886</span> |
-                    <span class="max-value">0.908</span>
+                    <span class="max-value">0.906</span>
 
                 </dd>
 
@@ -6519,19 +6519,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.8959413576556582" data-numeric>
+                    <td data-value="0.8958626407639424" data-numeric>
                         0.896</td>
-                    <td data-value="0.009576317958763814" data-numeric>
-                        0.00958</td>
+                    <td data-value="0.00936820976664374" data-numeric>
+                        0.00937</td>
 
 
 
-                    <td data-value="0.8857757812720486" data-numeric>
+                    <td data-value="0.8856627918804758" data-numeric>
                         0.886</td>
-                    <td data-value="0.890494530550556" data-numeric>
-                        0.890</td>
-                    <td data-value="0.907597648591748" data-numeric>
-                        0.908</td>
+                    <td data-value="0.8891505812883075" data-numeric>
+                        0.889</td>
+                    <td data-value="0.9055815293577549" data-numeric>
+                        0.906</td>
 
 
                 </tr>
@@ -6564,7 +6564,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_3a7fe68f">
+    <skrub-table-report class="report" id="report_d386e7d0">
     </skrub-table-report>
 
     <script type="module">
@@ -7668,7 +7668,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_3a7fe68f-wrapper-fallback">
+<div id="report_d386e7d0-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -7679,8 +7679,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_3a7fe68f-wrapper").removeAttribute("hidden");
- document.getElementById("report_3a7fe68f-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_d386e7d0-wrapper").removeAttribute("hidden");
+ document.getElementById("report_d386e7d0-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -7777,8 +7777,8 @@ pred
 <br />
 <br />
 
-**Total running time of the script:** (1 minutes 0.903 seconds)
+**Total running time of the script:** (1 minutes 13.898 seconds)
 
-**Estimated memory usage:**  569 MB
+**Estimated memory usage:**  584 MB
 
 <a id="sphx-glr-download-auto-examples-02-data-ops-1170-sklearn-interface-learner-py"></a>

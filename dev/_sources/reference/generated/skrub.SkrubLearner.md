@@ -606,14 +606,14 @@ X and y > kwargs > environment attribute.
   **X**
   : [`Name`](skrub.DataOp.skb.namehtml.md#skrub.DataOp.skb.name) or [`ID`](skrub.DataOp.skb.idhtml.md#skrub.DataOp.skb.id) of the
     node (usually a [`variable`](skrub.varhtml.md#skrub.var)) in the DataOp that
-    receives the `X` argument. Can also be “_skrub_X” to indicate the
+    receives the `X` argument. Can also be “skrub.X” to indicate the
     node marked with [`DataOp.skb.mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X).
 
   **y**
   : [`Name`](skrub.DataOp.skb.namehtml.md#skrub.DataOp.skb.name) or [`ID`](skrub.DataOp.skb.idhtml.md#skrub.DataOp.skb.id) of the
     node (usually a [`variable`](skrub.varhtml.md#skrub.var)) in the DataOp that
     receives the `y` argument. Only required if the DataOp uses a `y`.
-    Can also be “_skrub_y” to indicate the node marked with
+    Can also be “skrub.y” to indicate the node marked with
     [`DataOp.skb.mark_as_y()`](skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y).
     <br/>
     (Passing `None` explicitly disables passing any `y` even if one

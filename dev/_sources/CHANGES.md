@@ -34,8 +34,16 @@
   choice name, or node ID, in the DataOp) now causes a warning displaying the
   extra keys to help detect typos and mistakes. It can be silenced with the
   warnings module, or, more robustly, by adding
-  `{"_skrub_ignore_extra_keys": True}` to the environment dictionary.
+  `{"skrub.ignore_extra_keys": True}` to the environment dictionary.
   [#2314](https://github.com/skrub-data/skrub/pull/2314) by [Jérôme Dockès](https://github.com/jeromedockes)
+- The special keys used by skrub in the environment dictionaries of
+  [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) have been renamed from `_skrub_<name>` to `skrub.<name>`
+  (for example `_skrub_predictions` is now `skrub.predictions`). Names of
+  variables, choices and nodes starting with `skrub` or `_skrub` are now
+  reserved. The old names lose their meaning, for example passing
+  `"_skrub_predictions"` now has no effect (except possibly triggering an
+  “unused key” warning).
+  [#2420](https://github.com/skrub-data/skrub/pull/2420) by [Jérôme Dockès](https://github.com/jeromedockes).
 - The [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) graphs are now rendered in the browser when GraphViz is
   not installed.
   [#2227](https://github.com/skrub-data/skrub/pull/2227) by [Jérôme Dockès](https://github.com/jeromedockes).

@@ -15,7 +15,7 @@ See the example gallery for more information about skrub DataOps.
   : The name for this input. It corresponds to a key in the dictionary that
     is passed to the learner’s `fit()` method (see Examples below).
     Names must be unique within a learner and must not start with
-    `"_skrub_"`
+    `"skrub"` or `"_skrub"`
 
   **value**
   : Optionally, an initial value can be given to the variable. When it is

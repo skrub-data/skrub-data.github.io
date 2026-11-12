@@ -977,16 +977,16 @@ used, it will always be empty.</p>
 <p>If we happen to already have the predictions for the data we are scoring on, but
 would like to use the learner’s <code class="docutils literal notranslate"><span class="pre">score</span></code> method to get the scores, we can
 inject the precomputed predictions in the input environment, under the special
-key <code class="docutils literal notranslate"><span class="pre">&quot;_skrub_predictions&quot;</span></code>:</p>
+key <code class="docutils literal notranslate"><span class="pre">&quot;skrub.predictions&quot;</span></code>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">predict_proba</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">'test'</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">'test'</span><span class="p">]</span> <span class="o">|</span> <span class="p">{</span><span class="s1">'_skrub_predictions'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'predict_proba'</span><span class="p">:</span> <span class="n">predict_proba</span><span class="p">}})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">'test'</span><span class="p">]</span> <span class="o">|</span> <span class="p">{</span><span class="s1">'skrub.predictions'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'predict_proba'</span><span class="p">:</span> <span class="n">predict_proba</span><span class="p">}})</span>
 <span class="go">{'neg_log_loss': -0.63...}</span>
 </pre></div>
 </div>
 <p>With the above, <code class="docutils literal notranslate"><span class="pre">predict()</span></code> is not called during scoring. As for
 <code class="docutils literal notranslate"><span class="pre">return_predictions</span></code>, this only applies to scorers added with
 <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a>. If no scorer has been configured
-<code class="docutils literal notranslate"><span class="pre">'_skrub_predictions'</span></code> will be ignored.</p>
+<code class="docutils literal notranslate"><span class="pre">'skrub.predictions'</span></code> will be ignored.</p>
 </section>
 
 

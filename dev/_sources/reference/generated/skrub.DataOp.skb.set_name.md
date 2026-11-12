@@ -17,7 +17,7 @@ provided directly by providing a value for this name to
 * **Parameters:**
   **name**
   : The name for this step. Must be unique within a learner. Cannot
-    start with `"_skrub_"`.
+    start with `"skrub"` or `"_skrub"`.
 * **Returns:**
   A new DataOp with the given name.
 
