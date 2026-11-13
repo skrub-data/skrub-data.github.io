@@ -20,6 +20,10 @@
 - [`TableReport.write_json()`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport.write_json) stores the report data into a JSON file,
   similar to [`TableReport.write_html()`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport.write_html).
   [#2356](https://github.com/skrub-data/skrub/pull/2356) by [Jad Yehya](https://github.com/Jad-yehya).
+- [`ToFloat`](reference/generated/skrub.ToFloathtml.md#skrub.ToFloat) has a new `convert_percentage` parameter. When it is
+  `True`, strings with a trailing `%` such as `"12.5%"` or `"1 %"` are
+  converted to fractions (`0.125`, `0.01`).
+  [#2407](https://github.com/skrub-data/skrub/pull/2407) by [Rishav Bhattarai](https://github.com/Rishavbhattarai).
 
 ### Changes
 

@@ -609,6 +609,10 @@ similar to what <a class="reference internal" href="reference/generated/skrub.Da
 <li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport.write_json" title="skrub.TableReport.write_json"><code class="xref py py-meth docutils literal notranslate"><span class="pre">TableReport.write_json()</span></code></a> stores the report data into a JSON file,
 similar to <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport.write_html" title="skrub.TableReport.write_html"><code class="xref py py-meth docutils literal notranslate"><span class="pre">TableReport.write_html()</span></code></a>.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2356">#2356</a> by <a class="reference external" href="https://github.com/Jad-yehya">Jad Yehya</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.ToFloat.html#skrub.ToFloat" title="skrub.ToFloat"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToFloat</span></code></a> has a new <code class="docutils literal notranslate"><span class="pre">convert_percentage</span></code> parameter. When it is
+<code class="docutils literal notranslate"><span class="pre">True</span></code>, strings with a trailing <code class="docutils literal notranslate"><span class="pre">%</span></code> such as <code class="docutils literal notranslate"><span class="pre">&quot;12.5%&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;1</span> <span class="pre">%&quot;</span></code> are
+converted to fractions (<code class="docutils literal notranslate"><span class="pre">0.125</span></code>, <code class="docutils literal notranslate"><span class="pre">0.01</span></code>).
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2407">#2407</a> by <a class="reference external" href="https://github.com/Rishavbhattarai">Rishav Bhattarai</a>.</p></li>
 </ul>
 </section>
 <section id="id1">

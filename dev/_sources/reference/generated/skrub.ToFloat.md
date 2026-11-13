@@ -1,6 +1,6 @@
 # ToFloat
 
-### *class* skrub.ToFloat(decimal='.', thousand=None, parentheses=False)
+### *class* skrub.ToFloat(decimal='.', thousand=None, parentheses=False, convert_percentage=False)
 
 Convert a column to 32-bit floating-point numbers.
 
@@ -50,6 +50,11 @@ ApplyToCols(ToFloat(), cols=['col_name_1', 'col_name_2'])
   : Whether to recognize negative numbers represented using parentheses, e.g.,
     “(123.45)” → “-123.45”. If True, parentheses around numbers are replaced
     with a leading minus sign before conversion.
+
+  **convert_percentage**
+  : Whether to recognize percentages, e.g., “12.5%” → 0.125. If True, a
+    trailing “%” (and any spaces before it) is removed and the values that
+    had it are divided by 100. Values without a “%” are left as they are.
 
 ### Notes
 
@@ -228,6 +233,28 @@ If `parentheses=True`, negative numbers represented using parentheses are conver
 0   -1234.5...
 1    1234.5...
 2   -1234.5...
+dtype: float32
+```
+
+If `convert_percentage=True`, percentages are converted to fractions:
+
+```pycon
+>>> s = pd.Series(["12.5%", "1 %", "0.3"], name="pct")
+>>> ToFloat(convert_percentage=True).fit_transform(s)
+0    0.125
+1    0.010
+2    0.300
+Name: pct, dtype: float32
+```
+
+It can be combined with the other options:
+
+```pycon
+>>> ToFloat(decimal=",", parentheses=True, convert_percentage=True).fit_transform(
+...     pd.Series(["(1,5 %)", "12,5%"])
+... )
+0   -0.015
+1    0.125
 dtype: float32
 ```
 
