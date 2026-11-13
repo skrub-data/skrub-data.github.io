@@ -51,6 +51,11 @@
 - The [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) graphs are now rendered in the browser when GraphViz is
   not installed.
   [#2227](https://github.com/skrub-data/skrub/pull/2227) by [Jérôme Dockès](https://github.com/jeromedockes).
+- Navigating to different nodes in the report produced by
+  [`DataOp.skb.report()`](reference/generated/skrub.DataOp.skb.reporthtml.md#skrub.DataOp.skb.report) no longer adds entries to the browser’s Back button
+  history; node details and source code displays can be closed more easily; the
+  scrolling of the source code display is improved.
+  [#2403](https://github.com/skrub-data/skrub/pull/2403) by [Jérôme Dockès](https://github.com/jeromedockes).
 - Whenever a datetime column is timezone-aware, it will be treated like a full
   datetime (and not a plain date) by [`DatetimeEncoder`](reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder), i.e. the `hour`
   feature is extracted by default, even if all items in the column have their

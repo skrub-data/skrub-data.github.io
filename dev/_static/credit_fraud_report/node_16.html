@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8">
@@ -46,6 +46,18 @@ pre, code {
     transform: translateY(2px);
 }
 
+.graph-hint {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0 0 0.75rem;
+    padding: 10px 12px;
+    border-left: 4px solid #6b9bd2;
+    border-radius: 3px;
+    background: #eef4fb;
+    color: #1f3b5c;
+    font-size: 0.95rem;
+}
+
 .data_op-node-wrapper {
     overflow-x: auto;
 }
@@ -70,6 +82,9 @@ pre, code {
 .data_op-node > nav.main-nav {
     border-right: 2px solid #ccc;
     flex-shrink: 0;
+    resize: horizontal;
+    min-width: 8rem;
+    box-sizing: border-box;
 }
 
 .node-details {
@@ -77,22 +92,86 @@ pre, code {
     flex-shrink: 1;
 }
 
-.data_op-node > nav.main-nav {
-    resize: horizontal;
-    min-width: 8rem;
-    /* A wide graph scrolls rather than squeezing the node details. */
-    max-width: 75vw;
-    box-sizing: border-box;
-}
-
-.data_op-node > .node-frame {
-    flex-grow: 1;
-    flex-shrink: 1;
+/* Drawer displaying the selected node (or a source file) next to the graph. */
+.data_op-node > .drawer {
+    display: none;
+    flex-direction: column;
+    flex: 1 1 0;
     min-width: 0;
     padding: 0;
-    border: none;
+    overflow: hidden;
+    border-left: 2px solid #ccc;
+}
+
+.drawer-open .data_op-node > .drawer {
+    display: flex;
+}
+
+/* The node page and the source page are stacked. The one not displayed is only
+   invisible, not display: none, so that the node page keeps its scroll position
+   and the source page can scroll to its highlighted line while it loads. The
+   keyboard does not reach an invisible iframe either. */
+.drawer-body {
+    position: relative;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.drawer-body > iframe {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
+    padding: 0;
+    border: none;
+}
+
+.drawer[data-mode="node"] #source-frame,
+.drawer[data-mode="source"] #node-frame {
+    visibility: hidden;
+}
+
+.drawer[data-mode="source"] #close-drawer,
+.drawer[data-mode="node"] #back-to-node {
+    display: none;
+}
+
+.drawer-toolbar {
+    display: flex;
+    flex: none;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 6px 8px;
+    border-bottom: 1px solid #ddd;
+    background: #fafafa;
+}
+
+.header-button,
+.drawer-toolbar button {
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    color: inherit;
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.header-button:hover:not(:disabled),
+.drawer-toolbar button:hover {
+    background: #f0f0f0;
+}
+
+.header-button:disabled {
+    color: #999;
+    cursor: default;
+}
+
+.header-button:focus-visible,
+.drawer-toolbar button:focus-visible {
+    outline: 2px solid #6b9bd2;
+    outline-offset: 1px;
 }
 
 /* Node pages are displayed inside the iframe of the index page: they fill it
@@ -162,8 +241,8 @@ pre, code {
     margin-top: 2rem;
 }
 
-/* Layout of the index page: a header (toggle button and report title), below
-   it the graph and the iframe displaying the selected node. */
+/* Layout of the index page: a header with the title and graph toggle, below it
+   the graph and the drawer displaying the selected node. */
 .report-index {
     margin: 0;
     height: 100vh;
@@ -175,8 +254,10 @@ pre, code {
     flex: none;
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 6px 8px;
+    gap: 12px;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+    background: #fafafa;
 }
 
 .report-index > .data_op-node-wrapper {
@@ -191,16 +272,29 @@ pre, code {
     min-height: 0;
 }
 
-.icon-button {
+.report-index .data_op-node > nav.main-nav {
+    flex: 1 1 auto;
+}
+
+/* When the drawer is open the graph and the drawer share the width. */
+.report-index.drawer-open .data_op-node > nav.main-nav {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.header-button {
+    display: inline-flex;
     flex: none;
-    padding: 2px;
-    width: 24px;
-    height: 24px;
+    align-items: center;
+    margin-left: auto;
 }
 
 .report-title {
+    flex: 0 1 auto;
     margin: 0;
     min-width: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -216,13 +310,32 @@ pre, code {
 }
     </style>
     <script>
- // Tell index.html (which displays this page in an iframe) which node is shown
- // (null when no particular node is).
- if (window.parent !== window) {
-     window.parent.postMessage(
-         {type: "skrub-report-node-shown", nodeId: 16}, "*");
- }
-</script>
+     // Included in node pages. When a node page is displayed in the drawer of
+// index.html (see data_ops-report.js), clicks on links to other nodes or to
+// source files are not followed here: we ask the index page to display them,
+// so that it stays in charge of what is shown (and of the browser's history).
+// Nothing happens when the page is opened on its own.
+(function () {
+    if (window.parent === window) {
+        return;
+    }
+    document.addEventListener("click", (event) => {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey ||
+            event.shiftKey || event.altKey) {
+            return;
+        }
+        const link = event.target.closest('a[href^="node_"], a[href^="python/"]');
+        if (!link) {
+            return;
+        }
+        event.preventDefault();
+        // The target origin must be "*": for file:// URLs the origin is opaque,
+        // so it cannot be named.
+        window.parent.postMessage(
+            {type: "skrub-report-link", href: link.getAttribute("href")}, "*");
+    });
+})();
+    </script>
 </head>
 
 <body class="node-page">
@@ -246,7 +359,7 @@ pre, code {
                         </li>
                     </ul>
                 </nav>
-                <samp>ID:</samp> <samp>43612583953494893850663705590920385969</samp>
+                <samp>ID:</samp> <samp>4505141255857656830853983246954196619</samp>
                 
                 <h2><samp>Name: fraud_flags</samp></h2>
                 
@@ -281,7 +394,7 @@ pre, code {
                 
                 <div>
                     <h3>Computation time</h3>
-                    <code>0h 0m 1.5e-05s</code>
+                    <code>0h 0m 9.4e-06s</code>
                 </div>
                 
 
@@ -296,8 +409,8 @@ pre, code {
                     
                     <div>
                         
-<div id="report_a0372567-wrapper" hidden>
-    <template id="report_a0372567-template">
+<div id="report_362888cd-wrapper" hidden>
+    <template id="report_362888cd-template">
         <style>
          /*!
 Pure v3.0.0
@@ -1724,7 +1837,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
                 
                 
                 <th
-                id="ff476ba0"
+                id="d8085ab5"
                 class="table-cell elided-short "
                 
                 data-role="padding"
@@ -1754,7 +1867,7 @@ data-spans__-1__-1
                 
                 
                 <th
-                id="6b1236d2"
+                id="9f56092e"
                 class="table-cell elided-short clickable"
                 
                 data-role="columns-level-value"
@@ -1802,7 +1915,7 @@ data-spans__-1__0
                 
                 
                 <th
-                id="c2d70e73"
+                id="92bcfca5"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -1830,7 +1943,7 @@ data-spans__0__-1
                 
                 
                 <td
-                id="f7eddb84"
+                id="ab05400d"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -1864,7 +1977,7 @@ data-spans__0__0
                 
                 
                 <th
-                id="9352aebf"
+                id="7e1ccc78"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -1892,7 +2005,7 @@ data-spans__1__-1
                 
                 
                 <td
-                id="f6c9bf88"
+                id="c853b7b0"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -1926,7 +2039,7 @@ data-spans__1__0
                 
                 
                 <th
-                id="78dcd2c9"
+                id="14fbc649"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -1954,7 +2067,7 @@ data-spans__2__-1
                 
                 
                 <td
-                id="cfd5f995"
+                id="b7a62dd0"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -1988,7 +2101,7 @@ data-spans__2__0
                 
                 
                 <th
-                id="c9f78940"
+                id="7b3c0a07"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2016,7 +2129,7 @@ data-spans__3__-1
                 
                 
                 <td
-                id="657ef821"
+                id="0355c134"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2050,7 +2163,7 @@ data-spans__3__0
                 
                 
                 <th
-                id="fea18975"
+                id="a5c9fabc"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2078,7 +2191,7 @@ data-spans__4__-1
                 
                 
                 <td
-                id="9db3b0e8"
+                id="8cc62d9b"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2142,7 +2255,7 @@ data-spans__4__0
                 
                 
                 <th
-                id="26966790"
+                id="df0534ba"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2170,7 +2283,7 @@ data-spans__5__-1
                 
                 
                 <td
-                id="9183288c"
+                id="045553f8"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2204,7 +2317,7 @@ data-spans__5__0
                 
                 
                 <th
-                id="f95a4196"
+                id="417b7cff"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2232,7 +2345,7 @@ data-spans__6__-1
                 
                 
                 <td
-                id="6f991495"
+                id="c698ce7d"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2266,7 +2379,7 @@ data-spans__6__0
                 
                 
                 <th
-                id="52f663b0"
+                id="f0a9506a"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2294,7 +2407,7 @@ data-spans__7__-1
                 
                 
                 <td
-                id="4ecf7d3c"
+                id="5939828a"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2328,7 +2441,7 @@ data-spans__7__0
                 
                 
                 <th
-                id="2fc9e9be"
+                id="8bdf57b2"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2356,7 +2469,7 @@ data-spans__8__-1
                 
                 
                 <td
-                id="d46cbc2f"
+                id="debda744"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2390,7 +2503,7 @@ data-spans__8__0
                 
                 
                 <th
-                id="4bcb739c"
+                id="ce65ccaf"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2418,7 +2531,7 @@ data-spans__9__-1
                 
                 
                 <td
-                id="f3b10d35"
+                id="72efd335"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2986,7 +3099,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_a0372567">
+    <skrub-table-report class="report" id="report_362888cd">
     </skrub-table-report>
 
     <script type="module">
@@ -4090,7 +4203,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_a0372567-wrapper-fallback">
+<div id="report_362888cd-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -4101,8 +4214,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_a0372567-wrapper").removeAttribute("hidden");
- document.getElementById("report_a0372567-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_362888cd-wrapper").removeAttribute("hidden");
+ document.getElementById("report_362888cd-wrapper-fallback").setAttribute("hidden", "");
 </script>
                     </div>
                 </div>

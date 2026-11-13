@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8">
@@ -45,6 +45,18 @@ pre, code {
     transform: translateY(2px);
 }
 
+.graph-hint {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0 0 0.75rem;
+    padding: 10px 12px;
+    border-left: 4px solid #6b9bd2;
+    border-radius: 3px;
+    background: #eef4fb;
+    color: #1f3b5c;
+    font-size: 0.95rem;
+}
+
 .data_op-node-wrapper {
     overflow-x: auto;
 }
@@ -69,6 +81,9 @@ pre, code {
 .data_op-node > nav.main-nav {
     border-right: 2px solid #ccc;
     flex-shrink: 0;
+    resize: horizontal;
+    min-width: 8rem;
+    box-sizing: border-box;
 }
 
 .node-details {
@@ -76,22 +91,86 @@ pre, code {
     flex-shrink: 1;
 }
 
-.data_op-node > nav.main-nav {
-    resize: horizontal;
-    min-width: 8rem;
-    /* A wide graph scrolls rather than squeezing the node details. */
-    max-width: 75vw;
-    box-sizing: border-box;
-}
-
-.data_op-node > .node-frame {
-    flex-grow: 1;
-    flex-shrink: 1;
+/* Drawer displaying the selected node (or a source file) next to the graph. */
+.data_op-node > .drawer {
+    display: none;
+    flex-direction: column;
+    flex: 1 1 0;
     min-width: 0;
     padding: 0;
-    border: none;
+    overflow: hidden;
+    border-left: 2px solid #ccc;
+}
+
+.drawer-open .data_op-node > .drawer {
+    display: flex;
+}
+
+/* The node page and the source page are stacked. The one not displayed is only
+   invisible, not display: none, so that the node page keeps its scroll position
+   and the source page can scroll to its highlighted line while it loads. The
+   keyboard does not reach an invisible iframe either. */
+.drawer-body {
+    position: relative;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.drawer-body > iframe {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
+    padding: 0;
+    border: none;
+}
+
+.drawer[data-mode="node"] #source-frame,
+.drawer[data-mode="source"] #node-frame {
+    visibility: hidden;
+}
+
+.drawer[data-mode="source"] #close-drawer,
+.drawer[data-mode="node"] #back-to-node {
+    display: none;
+}
+
+.drawer-toolbar {
+    display: flex;
+    flex: none;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 6px 8px;
+    border-bottom: 1px solid #ddd;
+    background: #fafafa;
+}
+
+.header-button,
+.drawer-toolbar button {
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    color: inherit;
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.header-button:hover:not(:disabled),
+.drawer-toolbar button:hover {
+    background: #f0f0f0;
+}
+
+.header-button:disabled {
+    color: #999;
+    cursor: default;
+}
+
+.header-button:focus-visible,
+.drawer-toolbar button:focus-visible {
+    outline: 2px solid #6b9bd2;
+    outline-offset: 1px;
 }
 
 /* Node pages are displayed inside the iframe of the index page: they fill it
@@ -161,8 +240,8 @@ pre, code {
     margin-top: 2rem;
 }
 
-/* Layout of the index page: a header (toggle button and report title), below
-   it the graph and the iframe displaying the selected node. */
+/* Layout of the index page: a header with the title and graph toggle, below it
+   the graph and the drawer displaying the selected node. */
 .report-index {
     margin: 0;
     height: 100vh;
@@ -174,8 +253,10 @@ pre, code {
     flex: none;
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 6px 8px;
+    gap: 12px;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+    background: #fafafa;
 }
 
 .report-index > .data_op-node-wrapper {
@@ -190,16 +271,29 @@ pre, code {
     min-height: 0;
 }
 
-.icon-button {
+.report-index .data_op-node > nav.main-nav {
+    flex: 1 1 auto;
+}
+
+/* When the drawer is open the graph and the drawer share the width. */
+.report-index.drawer-open .data_op-node > nav.main-nav {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.header-button {
+    display: inline-flex;
     flex: none;
-    padding: 2px;
-    width: 24px;
-    height: 24px;
+    align-items: center;
+    margin-left: auto;
 }
 
 .report-title {
+    flex: 0 1 auto;
     margin: 0;
     min-width: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -217,18 +311,17 @@ pre, code {
     <style id="current-node-style"></style>
 </head>
 
-<body class="report-index">
+<body class="report-index" data-total-nodes="18">
     <header class="report-header">
-        <button type="button" class="icon-button"
-            id="toggle-nav"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-</svg></button>
-        
+        <h2 class="report-title">DataOp report</h2>
+        <button type="button" class="header-button" id="toggle-nav"
+            aria-expanded="true" disabled>Hide graph</button>
     </header>
     <div class="data_op-node-wrapper">
         <div class="data_op-node">
             
-            <nav class="main-nav" data-is-open>
+            <nav id="graph-panel" class="main-nav" data-is-open>
+                <p class="graph-hint"><strong>Click a node</strong> to display its details.</p>
                 <div id="graph-nav">
                     
 
@@ -243,7 +336,7 @@ pre, code {
 <!-- node_0 -->
 <g id="node_0" class="node">
 
-<g id="a_node_0"><a xlink:href="node_0.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 24, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;baskets = skrub.var(&quot;baskets&quot;, dataset.baskets[[&quot;ID&quot;]]).skb.mark_as_X()" target="node&#45;frame">
+<g id="a_node_0"><a xlink:href="#node_0" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 24, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;baskets = skrub.var(&quot;baskets&quot;, dataset.baskets[[&quot;ID&quot;]]).skb.mark_as_X()">
 <polygon fill="#c6d5f0" stroke="black" points="108.65,-688.46 7.12,-688.46 7.12,-667.07 108.65,-667.07 108.65,-688.46"/>
 <polygon fill="none" stroke="black" points="112.65,-692.46 3.12,-692.46 3.12,-663.07 112.65,-663.07 112.65,-692.46"/>
 <text xml:space="preserve" text-anchor="start" x="12.89" y="-675.64" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">X: Var &#39;baskets&#39;</text>
@@ -253,7 +346,7 @@ pre, code {
 <!-- node_3 -->
 <g id="node_3" class="node">
 
-<g id="a_node_3"><a xlink:href="node_3.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 29, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;products = products[products[&quot;basket_ID&quot;].isin(baskets[&quot;ID&quot;])]" target="node&#45;frame">
+<g id="a_node_3"><a xlink:href="#node_3" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 29, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;products = products[products[&quot;basket_ID&quot;].isin(baskets[&quot;ID&quot;])]">
 <polygon fill="none" stroke="black" points="115.02,-634.07 36.75,-634.07 36.75,-612.68 115.02,-612.68 115.02,-634.07"/>
 <text xml:space="preserve" text-anchor="start" x="42.51" y="-621.25" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">GetItem &#39;ID&#39;</text>
 </a>
@@ -268,7 +361,7 @@ pre, code {
 <!-- node_14 -->
 <g id="node_14" class="node">
 
-<g id="a_node_14"><a xlink:href="node_14.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 48, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;baskets = baskets.merge(" target="node&#45;frame">
+<g id="a_node_14"><a xlink:href="#node_14" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 48, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;baskets = baskets.merge(">
 <polygon fill="none" stroke="black" points="121.77,-130.17 0,-130.17 0,-108.78 121.77,-108.78 121.77,-130.17"/>
 <text xml:space="preserve" text-anchor="start" x="5.76" y="-117.35" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">CallMethod &#39;merge&#39;</text>
 </a>
@@ -283,7 +376,7 @@ pre, code {
 <!-- node_1 -->
 <g id="node_1" class="node">
 
-<g id="a_node_1"><a xlink:href="node_1.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 23, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;products = skrub.var(&quot;products&quot;, dataset.products)" target="node&#45;frame">
+<g id="a_node_1"><a xlink:href="#node_1" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 23, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;products = skrub.var(&quot;products&quot;, dataset.products)">
 <polygon fill="none" stroke="black" points="256.39,-688.46 165.38,-688.46 165.38,-667.07 256.39,-667.07 256.39,-688.46"/>
 <polygon fill="none" stroke="black" points="260.39,-692.46 161.38,-692.46 161.38,-663.07 260.39,-663.07 260.39,-692.46"/>
 <text xml:space="preserve" text-anchor="start" x="171.13" y="-675.64" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">Var &#39;products&#39;</text>
@@ -293,7 +386,7 @@ pre, code {
 <!-- node_2 -->
 <g id="node_2" class="node">
 
-<g id="a_node_2"><a xlink:href="node_2.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 29, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;products = products[products[&quot;basket_ID&quot;].isin(baskets[&quot;ID&quot;])]" target="node&#45;frame">
+<g id="a_node_2"><a xlink:href="#node_2" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 29, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;products = products[products[&quot;basket_ID&quot;].isin(baskets[&quot;ID&quot;])]">
 <polygon fill="none" stroke="black" points="254.77,-634.07 133,-634.07 133,-612.68 254.77,-612.68 254.77,-634.07"/>
 <text xml:space="preserve" text-anchor="start" x="138.76" y="-621.25" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">GetItem &#39;basket_ID&#39;</text>
 </a>
@@ -308,7 +401,7 @@ pre, code {
 <!-- node_5 -->
 <g id="node_5" class="node">
 
-<g id="a_node_5"><a xlink:href="node_5.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 29, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;products = products[products[&quot;basket_ID&quot;].isin(baskets[&quot;ID&quot;])]" target="node&#45;frame">
+<g id="a_node_5"><a xlink:href="#node_5" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 29, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;products = products[products[&quot;basket_ID&quot;].isin(baskets[&quot;ID&quot;])]">
 <polygon fill="none" stroke="black" points="284.14,-533.29 113.62,-533.29 113.62,-511.9 284.14,-511.9 284.14,-533.29"/>
 <text xml:space="preserve" text-anchor="start" x="119.38" y="-520.47" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">GetItem &lt;CallMethod &#39;isin&#39;&gt;</text>
 </a>
@@ -323,7 +416,7 @@ pre, code {
 <!-- node_4 -->
 <g id="node_4" class="node">
 
-<g id="a_node_4"><a xlink:href="node_4.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 29, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;products = products[products[&quot;basket_ID&quot;].isin(baskets[&quot;ID&quot;])]" target="node&#45;frame">
+<g id="a_node_4"><a xlink:href="#node_4" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 29, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;products = products[products[&quot;basket_ID&quot;].isin(baskets[&quot;ID&quot;])]">
 <polygon fill="none" stroke="black" points="246.52,-583.68 141.25,-583.68 141.25,-562.29 246.52,-562.29 246.52,-583.68"/>
 <text xml:space="preserve" text-anchor="start" x="147.01" y="-570.86" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">CallMethod &#39;isin&#39;</text>
 </a>
@@ -350,7 +443,7 @@ pre, code {
 <!-- node_6 -->
 <g id="node_6" class="node">
 
-<g id="a_node_6"><a xlink:href="node_6.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 31, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;total_price=products[&quot;Nbr_of_prod_purchas&quot;] * products[&quot;cash_price&quot;]" target="node&#45;frame">
+<g id="a_node_6"><a xlink:href="#node_6" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 31, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;total_price=products[&quot;Nbr_of_prod_purchas&quot;] * products[&quot;cash_price&quot;]">
 <polygon fill="none" stroke="black" points="466.02,-482.9 279.75,-482.9 279.75,-461.51 466.02,-461.51 466.02,-482.9"/>
 <text xml:space="preserve" text-anchor="start" x="285.51" y="-470.08" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">GetItem &#39;Nbr_of_prod_purchas&#39;</text>
 </a>
@@ -365,7 +458,7 @@ pre, code {
 <!-- node_7 -->
 <g id="node_7" class="node">
 
-<g id="a_node_7"><a xlink:href="node_7.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 31, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;total_price=products[&quot;Nbr_of_prod_purchas&quot;] * products[&quot;cash_price&quot;]" target="node&#45;frame">
+<g id="a_node_7"><a xlink:href="#node_7" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 31, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;total_price=products[&quot;Nbr_of_prod_purchas&quot;] * products[&quot;cash_price&quot;]">
 <polygon fill="none" stroke="black" points="262.02,-482.9 135.75,-482.9 135.75,-461.51 262.02,-461.51 262.02,-482.9"/>
 <text xml:space="preserve" text-anchor="start" x="141.51" y="-470.08" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">GetItem &#39;cash_price&#39;</text>
 </a>
@@ -380,7 +473,7 @@ pre, code {
 <!-- node_9 -->
 <g id="node_9" class="node">
 
-<g id="a_node_9"><a xlink:href="node_9.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 30, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;products = products.assign(" target="node&#45;frame">
+<g id="a_node_9"><a xlink:href="#node_9" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 30, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;products = products.assign(">
 <polygon fill="none" stroke="black" points="173.77,-382.12 52,-382.12 52,-360.73 173.77,-360.73 173.77,-382.12"/>
 <text xml:space="preserve" text-anchor="start" x="57.76" y="-369.3" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">CallMethod &#39;assign&#39;</text>
 </a>
@@ -395,7 +488,7 @@ pre, code {
 <!-- node_8 -->
 <g id="node_8" class="node">
 
-<g id="a_node_8"><a xlink:href="node_8.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 31, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;total_price=products[&quot;Nbr_of_prod_purchas&quot;] * products[&quot;cash_price&quot;]" target="node&#45;frame">
+<g id="a_node_8"><a xlink:href="#node_8" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 31, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;total_price=products[&quot;Nbr_of_prod_purchas&quot;] * products[&quot;cash_price&quot;]">
 <polygon fill="none" stroke="black" points="235.77,-432.51 162,-432.51 162,-411.12 235.77,-411.12 235.77,-432.51"/>
 <text xml:space="preserve" text-anchor="start" x="167.76" y="-419.69" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">BinOp: mul</text>
 </a>
@@ -422,7 +515,7 @@ pre, code {
 <!-- node_10 -->
 <g id="node_10" class="node">
 
-<g id="a_node_10"><a xlink:href="node_10.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 43, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;vectorized_products = products.skb.apply(vectorizer, cols=s.all() &#45; &quot;basket_ID&quot;)" target="node&#45;frame">
+<g id="a_node_10"><a xlink:href="#node_10" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 43, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;vectorized_products = products.skb.apply(vectorizer, cols=s.all() &#45; &quot;basket_ID&quot;)">
 <polygon fill="none" stroke="black" points="181.27,-331.73 44.5,-331.73 44.5,-310.34 181.27,-310.34 181.27,-331.73"/>
 <text xml:space="preserve" text-anchor="start" x="50.26" y="-318.91" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">Apply TableVectorizer</text>
 </a>
@@ -437,7 +530,7 @@ pre, code {
 <!-- node_11 -->
 <g id="node_11" class="node">
 
-<g id="a_node_11"><a xlink:href="node_11.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 46, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;vectorized_products.groupby(&quot;basket_ID&quot;).agg(&quot;mean&quot;).reset_index()" target="node&#45;frame">
+<g id="a_node_11"><a xlink:href="#node_11" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 46, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;vectorized_products.groupby(&quot;basket_ID&quot;).agg(&quot;mean&quot;).reset_index()">
 <polygon fill="none" stroke="black" points="179.4,-281.34 46.38,-281.34 46.38,-259.95 179.4,-259.95 179.4,-281.34"/>
 <text xml:space="preserve" text-anchor="start" x="52.14" y="-268.52" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">CallMethod &#39;groupby&#39;</text>
 </a>
@@ -452,7 +545,7 @@ pre, code {
 <!-- node_12 -->
 <g id="node_12" class="node">
 
-<g id="a_node_12"><a xlink:href="node_12.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 46, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;vectorized_products.groupby(&quot;basket_ID&quot;).agg(&quot;mean&quot;).reset_index()" target="node&#45;frame">
+<g id="a_node_12"><a xlink:href="#node_12" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 46, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;vectorized_products.groupby(&quot;basket_ID&quot;).agg(&quot;mean&quot;).reset_index()">
 <polygon fill="none" stroke="black" points="166.27,-230.95 59.5,-230.95 59.5,-209.56 166.27,-209.56 166.27,-230.95"/>
 <text xml:space="preserve" text-anchor="start" x="65.26" y="-218.13" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">CallMethod &#39;agg&#39;</text>
 </a>
@@ -467,7 +560,7 @@ pre, code {
 <!-- node_13 -->
 <g id="node_13" class="node">
 
-<g id="a_node_13"><a xlink:href="node_13.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 46, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;vectorized_products.groupby(&quot;basket_ID&quot;).agg(&quot;mean&quot;).reset_index()" target="node&#45;frame">
+<g id="a_node_13"><a xlink:href="#node_13" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 46, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;vectorized_products.groupby(&quot;basket_ID&quot;).agg(&quot;mean&quot;).reset_index()">
 <polygon fill="none" stroke="black" points="188.4,-180.56 37.38,-180.56 37.38,-159.17 188.4,-159.17 188.4,-180.56"/>
 <text xml:space="preserve" text-anchor="start" x="43.14" y="-167.74" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">CallMethod &#39;reset_index&#39;</text>
 </a>
@@ -488,7 +581,7 @@ pre, code {
 <!-- node_15 -->
 <g id="node_15" class="node">
 
-<g id="a_node_15"><a xlink:href="node_15.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 50, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;).drop(columns=[&quot;ID&quot;, &quot;basket_ID&quot;])" target="node&#45;frame">
+<g id="a_node_15"><a xlink:href="#node_15" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 50, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;).drop(columns=[&quot;ID&quot;, &quot;basket_ID&quot;])">
 <polygon fill="none" stroke="black" points="116.9,-75.78 4.88,-75.78 4.88,-54.39 116.9,-54.39 116.9,-75.78"/>
 <text xml:space="preserve" text-anchor="start" x="10.64" y="-62.96" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">CallMethod &#39;drop&#39;</text>
 </a>
@@ -503,7 +596,7 @@ pre, code {
 <!-- node_17 -->
 <g id="node_17" class="node">
 
-<g id="a_node_17"><a xlink:href="node_17.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 55, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;predictions = baskets.skb.apply(hgb, y=fraud_flags)" target="node&#45;frame">
+<g id="a_node_17"><a xlink:href="#node_17" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 55, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;predictions = baskets.skb.apply(hgb, y=fraud_flags)">
 <polygon fill="none" stroke="black" points="241.39,-21.39 18.37,-21.39 18.37,0 241.39,0 241.39,-21.39"/>
 <text xml:space="preserve" text-anchor="start" x="24.13" y="-8.57" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">Apply HistGradientBoostingClassifier</text>
 </a>
@@ -518,7 +611,7 @@ pre, code {
 <!-- node_16 -->
 <g id="node_16" class="node">
 
-<g id="a_node_16"><a xlink:href="node_16.html" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 25, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;fraud_flags = skrub.var(" target="node&#45;frame">
+<g id="a_node_16"><a xlink:href="#node_16" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/data_ops_report.py&quot;, line 25, in create_credit_fraud_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;fraud_flags = skrub.var(">
 <polygon fill="#fad9c6" stroke="black" points="259.02,-75.78 138.75,-75.78 138.75,-54.39 259.02,-54.39 259.02,-75.78"/>
 <polygon fill="none" stroke="black" points="263.02,-79.78 134.75,-79.78 134.75,-50.39 263.02,-50.39 263.02,-79.78"/>
 <text xml:space="preserve" text-anchor="start" x="144.51" y="-62.96" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">y: Var &#39;fraud_flags&#39;</text>
@@ -536,41 +629,192 @@ pre, code {
 
                 </div>
             </nav>
-            <iframe id="node-frame" name="node-frame" class="node-frame"
-                    title="Details of the selected node"
-                    src="placeholder.html"></iframe>
+            
+            <div id="drawer" class="drawer" data-mode="node">
+                <div class="drawer-toolbar">
+                    <button type="button" id="close-drawer">Close</button>
+                    <button type="button" id="back-to-node">Back to node details</button>
+                </div>
+                <div class="drawer-body">
+                    <iframe id="node-frame" title="Details of the selected node"></iframe>
+                    <iframe id="source-frame" title="Source code"></iframe>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 <script>
- (function() {
-    // Node pages are displayed in the iframe and tell us which node they show
-    // (see node.html). We cannot read the iframe's location ourselves: for
-    // file:// URLs browsers treat it as cross-origin.
-    //
+ // Index page of the report: the graph, plus a "drawer" showing a node page (or
+// a source file) in an iframe next to it.
+//
+// This script controls what is displayed in the iframe. The browser's back
+// button must leave the report rather than step through nodes, so the iframe is
+// always navigated with location.replace(), which adds no history entry.
+// When a link to another node ("previous", "next", ...) is clicked in the
+// node iframe, the event is captured and a message is posted so the navigation
+// can be handled here (see report-navigation.js).
+//
+// The URL hash is kept up to date with replaceState so the URL for a specific
+// node can be shared.
+//
+// The browser keeps displaying the previous node until the next one is ready.
+//
+// A source file is displayed in a second iframe, on top of the node iframe, so
+// that the node page is still there, as we left it, when we come back. It is
+// displayed once it has loaded, so that nothing flashes either.
+//
+(function() {
+    const drawer = document.getElementById('drawer');
+    const nodeFrame = document.getElementById('node-frame');
+    let sourceFrame = document.getElementById('source-frame');
+    const graphPanel = document.getElementById('graph-panel');
+    const toggleGraphButton = document.getElementById('toggle-nav');
     // The current node is highlighted with a CSS rule rather than by editing
-    // the graph, so that it does not matter whether the graph is already
-    // there: it may be rendered later by the browser (when graphviz is not
-    // installed).
-    const frame = document.getElementById('node-frame');
+    // the graph, so that it works whether the graph was drawn by python or is
+    // drawn later by the browser (in which case it may still be rendering).
     const highlightStyle = document.getElementById('current-node-style');
+    const totalNNodes = Number(document.body.dataset.totalNodes);
 
-    window.addEventListener('message', (event) => {
-        if (event.source !== frame.contentWindow) {
-            return;
+    // An empty page, with a doctype so that it is rendered in standards mode.
+    const EMPTY_PAGE = 'data:text/html,<!DOCTYPE html><title></title>';
+
+    function navigate(frame, url) {
+        frame.contentWindow.location.replace(new URL(url, window.location.href));
+    }
+
+    // Button that shows or hides the graph panel.
+    function setGraphOpen(isOpen) {
+        graphPanel.toggleAttribute('data-is-open', isOpen);
+        toggleGraphButton.setAttribute('aria-expanded', String(isOpen));
+        toggleGraphButton.textContent = isOpen ? 'Hide graph' : 'Show graph';
+    }
+
+    function nodeIdFromHash() {
+        const match = /^#node_(\d+)$/.exec(window.location.hash);
+        if (!match || Number(match[1]) >= totalNNodes) {
+            return null;
         }
-        if (!event.data || event.data.type !== 'skrub-report-node-shown') {
-            return;
+        return Number(match[1]);
+    }
+
+    // Keep the URL shareable (index.html#node_3) without adding history entries.
+    function updateState(nodeId) {
+        document.body.classList.toggle('drawer-open', nodeId !== null);
+        // Never leave the page empty: without a node there is nothing to show
+        // but the graph.
+        toggleGraphButton.disabled = nodeId === null;
+        if (nodeId === null) {
+            setGraphOpen(true);
         }
-        const nodeId = event.data.nodeId;
-        // nodeId is null for pages that do not show a particular node
-        highlightStyle.textContent = (nodeId === null) ? '' : (
-            `#node_${Number(nodeId)} polygon {` +
+        highlightStyle.textContent = nodeId === null ? '' : (
+            `#node_${nodeId} polygon {` +
             ' fill: var(--current-node-color); stroke-width: 3; }');
+        const hash = nodeId === null ? '' : `#node_${nodeId}`;
+        if (window.location.hash !== hash) {
+            const url = new URL(window.location.href);
+            url.hash = hash;
+            window.history.replaceState(null, '', url.href);
+        }
+    }
+
+    function openNode(nodeId) {
+        closeSource();
+        navigate(nodeFrame, `node_${nodeId}.html`);
+        updateState(nodeId);
+    }
+
+    // The source page is loaded in a new iframe, which replaces the previous one
+    // and is displayed (instead of the node page) once loaded. A new iframe is
+    // needed because navigating one that shows the same page (or another line of
+    // it) fires no load event. Dropping the previous iframe also drops its
+    // events: there is nothing to cancel if the user goes elsewhere while the
+    // page loads.
+    function replaceSourceFrame(url) {
+        const frame = document.createElement('iframe');
+        frame.id = 'source-frame';
+        frame.title = 'Source code';
+        if (url !== null) {
+            frame.addEventListener('load', () => {
+                drawer.dataset.mode = 'source';
+                // so that keyboard navigation continues in the page displayed
+                // (the frame can only be focused once it is visible)
+                frame.focus();
+            }, {once: true});
+            frame.src = new URL(url, window.location.href).href;
+        }
+        sourceFrame.replaceWith(frame);
+        sourceFrame = frame;
+    }
+
+    function openSource(url) {
+        replaceSourceFrame(url);
+    }
+
+    function closeSource() {
+        replaceSourceFrame(null);
+        drawer.dataset.mode = 'node';
+    }
+
+    function closeDrawer() {
+        closeSource();
+        // do not show this page again if the drawer is reopened
+        // (not 'about:blank': it has no doctype, so browsers render it in quirks
+        // mode and log a warning in the console)
+        navigate(nodeFrame, EMPTY_PAGE);
+        updateState(null);
+    }
+
+    document.getElementById('close-drawer').addEventListener('click', closeDrawer);
+    document.getElementById('back-to-node').addEventListener('click', () => {
+        closeSource();
+        nodeFrame.focus();
     });
 
-    document.getElementById('toggle-nav').addEventListener('click', () => {
-        document.querySelector('nav').toggleAttribute('data-is-open');
+    // Node pages ask us to display the node or source file their links point to.
+    window.addEventListener('message', (event) => {
+        if (event.source !== nodeFrame.contentWindow ||
+            !event.data || event.data.type !== 'skrub-report-link') {
+            return;
+        }
+        const href = String(event.data.href);
+        const node = /^node_(\d+)\.html$/.exec(href);
+        if (node) {
+            openNode(Number(node[1]));
+        } else if (/^python\/[\w-]+\.html(#L\d+)?$/.test(href)) {
+            openSource(href);
+        }
+    });
+
+    // Graph nodes link to a hash such as "#node_3". We handle the click
+    // ourselves because the default action would add a history entry. The
+    // links are in an svg, where the attribute may be xlink:href.
+    document.getElementById('graph-nav').addEventListener('click', (event) => {
+        const link = event.target.closest('a');
+        const href = link && (link.getAttribute('href') ||
+            link.getAttributeNS('http://www.w3.org/1999/xlink', 'href'));
+        const match = /^#node_(\d+)$/.exec(href);
+        if (match && !event.metaKey && !event.ctrlKey && !event.shiftKey) {
+            event.preventDefault();
+            openNode(Number(match[1]));
+        }
+    });
+
+    // The hash is edited by hand in the address bar of an open report. Our own
+    // updates (replaceState) do not trigger this event.
+    window.addEventListener('hashchange', () => {
+        const nodeId = nodeIdFromHash();
+        if (nodeId !== null) {
+            openNode(nodeId);
+        } else if (window.location.hash === '') {
+            closeDrawer();
+        }
+    });
+    if (nodeIdFromHash() !== null) {
+        openNode(nodeIdFromHash());
+    }
+
+    toggleGraphButton.addEventListener('click', () => {
+        setGraphOpen(!graphPanel.hasAttribute('data-is-open'));
     });
 })();
 </script>
