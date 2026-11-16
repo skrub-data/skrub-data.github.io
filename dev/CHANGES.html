@@ -679,6 +679,12 @@ intended.
 identify a date vs a datetime with <code class="docutils literal notranslate"><span class="pre">col.dt.normalize()</span></code> against some specific
 timezoned string datetime.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2334">#2334</a> by <a class="reference external" href="https://github.com/lsioctl">Laurent Steff</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.LLMEncoder.html#skrub.LLMEncoder" title="skrub.LLMEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code></a> no longer loads a separate copy of the language model for
+each column it encodes, e.g. in <a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> or
+<a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>. The model is now loaded once per process and shared
+by all encoders that use the same <code class="docutils literal notranslate"><span class="pre">model_name</span></code> and <code class="docutils literal notranslate"><span class="pre">device</span></code>, which
+reduces memory usage.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2367">#2367</a> by <a class="reference external" href="https://github.com/flefebv">Félix Lefebvre</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp.skb.make_randomized_search(backend='optuna')</span></code></a>: reusing an existing optuna study with incomplete
 trials (i.e. which had been killed while running) could raise an exception.
 This has been fixed in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2409">#2409</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>

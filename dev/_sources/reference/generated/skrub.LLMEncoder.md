@@ -95,6 +95,14 @@ ApplyToCols(LLMEncoder(), cols=['col_name_1', 'col_name_2'])
       disk are recommended to use this option. Note that the machine
       where the `LLMEncoder` is unpickled must have the same device than
       the machine where it was pickled.
+    <br/>
+    Note that if a model with the
+    same `model_name` and `device` is already loaded in the process
+    where the `LLMEncoder` is unpickled, that model is used instead of
+    the pickled weights. This means that if a fine-tuned model is unpickled
+    under (model_name, device), a new LLMEncoder instance with the same name
+    would load the fine-tuned model instead of the pre-trained one, which
+    may not be what you want.
 
   **random_state**
   : Used when the PCA dimension reduction mechanism is used, for reproducible
@@ -141,11 +149,15 @@ When PCA is disabled, this class is essentially stateless, with loading the
 pre-trained model from disk being the only difference between `fit_transform`
 and `transform`.
 
-Be aware that parallelizing this class (e.g., using
+The pre-trained model is loaded only once per process and shared by all the
+`LLMEncoder` instances that use the same `model_name` and `device`, for
+example when a [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer) or [`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols)
+encodes several columns. Be aware that parallelizing this class (e.g., using
 [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer) with `n_jobs` > 1) may be computationally
-expensive. This is because a copy of the pre-trained model is loaded into memory
-for each thread. Therefore, we recommend you to let the default n_jobs=None
-(or set to 1) of the TableVectorizer and let pytorch handle parallelism.
+expensive. This is because with the default joblib backend, each worker is a
+separate process which loads its own copy of the pre-trained model into memory.
+Therefore, we recommend you to let the default n_jobs=None (or set to 1) of the
+TableVectorizer and let pytorch handle parallelism.
 
 If memory usage is a concern, check the characteristics of your selected model.
 

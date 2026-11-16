@@ -86,6 +86,12 @@
   identify a date vs a datetime with `col.dt.normalize()` against some specific
   timezoned string datetime.
   [#2334](https://github.com/skrub-data/skrub/pull/2334) by [Laurent Steff](https://github.com/lsioctl).
+- [`LLMEncoder`](reference/generated/skrub.LLMEncoderhtml.md#skrub.LLMEncoder) no longer loads a separate copy of the language model for
+  each column it encodes, e.g. in [`ApplyToCols`](reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) or
+  [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer). The model is now loaded once per process and shared
+  by all encoders that use the same `model_name` and `device`, which
+  reduces memory usage.
+  [#2367](https://github.com/skrub-data/skrub/pull/2367) by [Félix Lefebvre](https://github.com/flefebv).
 - [`DataOp.skb.make_randomized_search(backend='optuna')`](reference/generated/skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search): reusing an existing optuna study with incomplete
   trials (i.e. which had been killed while running) could raise an exception.
   This has been fixed in [#2409](https://github.com/skrub-data/skrub/pull/2409) by [Jérôme Dockès](https://github.com/jeromedockes).
