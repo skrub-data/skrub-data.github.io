@@ -276,6 +276,73 @@ pre, code {
     flex: 1 1 auto;
 }
 
+/* The graph is not scrolled but panned and zoomed in a viewport filling the
+   panel (see data_ops-report.js). The viewport stays inside the panel's padding
+   so that the panel's resize handle (bottom right corner) remains reachable. */
+.report-index .data_op-node > nav.main-nav[data-is-open] {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.graph-toolbar {
+    flex: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.graph-toolbar .graph-hint {
+    margin: 0;
+}
+
+#graph-nav {
+    flex: 1 1 0;
+    min-height: 0;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    cursor: grab;
+    /* we handle touch gestures */
+    touch-action: none;
+}
+
+#graph-nav.panning {
+    cursor: grabbing;
+}
+
+#graph-canvas {
+    width: max-content;
+    user-select: none;
+}
+
+#graph-canvas svg {
+    display: block;
+}
+
+.graph-controls {
+    display: flex;
+    gap: 4px;
+}
+
+.graph-controls button {
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.95);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.graph-controls button:hover {
+    background: #eef4fb;
+}
+
 /* When the drawer is open the graph and the drawer share the width. */
 .report-index.drawer-open .data_op-node > nav.main-nav {
     flex: 0 0 auto;
@@ -357,7 +424,7 @@ pre, code {
                         </li>
                     </ul>
                 </nav>
-                <samp>ID:</samp> <samp>313336121809067180672955264910356590397</samp>
+                <samp>ID:</samp> <samp>207116281249065657775426974222599132690</samp>
                 
                 <div>
                     
@@ -393,7 +460,7 @@ pre, code {
                 
                 <div>
                     <h3>Computation time</h3>
-                    <code>0h 0m 0.72s</code>
+                    <code>0h 0m 0.92s</code>
                 </div>
                 
 
@@ -1938,7 +2005,7 @@ a.param-doc-link::before {
         </a>
     </td>
            <td class="fitted-att-type">int</td>
-           <td>43</td>
+           <td>64</td>
 
 
        </tr>
@@ -1973,7 +2040,7 @@ a.param-doc-link::before {
             train_score_: ndarray, shape (n_iter_+1,)<br><br>The scores at each iteration on the training data. The first entry<br>is the score of the ensemble before the first iteration. Scores are<br>computed according to the ``scoring`` parameter. If ``scoring`` is<br>not &#x27;loss&#x27;, scores are computed on a subset of at most 10 000<br>samples. Empty if no early stopping.</span>
         </a>
     </td>
-           <td class="fitted-att-type">ndarray[float64](44,)</td>
+           <td class="fitted-att-type">ndarray[float64](65,)</td>
            <td>[-0.07,-0.06,-0.06,...,-0.04,-0.04,-0.04]</td>
 
 
@@ -1991,7 +2058,7 @@ a.param-doc-link::before {
             validation_score_: ndarray, shape (n_iter_+1,)<br><br>The scores at each iteration on the held-out validation data. The<br>first entry is the score of the ensemble before the first iteration.<br>Scores are computed according to the ``scoring`` parameter. Empty if<br>no early stopping or if ``validation_fraction`` is None.</span>
         </a>
     </td>
-           <td class="fitted-att-type">ndarray[float64](44,)</td>
+           <td class="fitted-att-type">ndarray[float64](65,)</td>
            <td>[-0.07,-0.06,-0.06,...,-0.05,-0.05,-0.05]</td>
 
 
@@ -2185,8 +2252,8 @@ forceTheme('sk-container-id-2');</script></body>
                     
                     <div>
                         
-<div id="report_e3a11bbe-wrapper" hidden>
-    <template id="report_e3a11bbe-template">
+<div id="report_a61a3bb1-wrapper" hidden>
+    <template id="report_a61a3bb1-template">
         <style>
          /*!
 Pure v3.0.0
@@ -3613,7 +3680,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
                 
                 
                 <th
-                id="56b4e23f"
+                id="f8dde3e7"
                 class="table-cell elided-short "
                 
                 data-role="padding"
@@ -3643,7 +3710,7 @@ data-spans__-1__-1
                 
                 
                 <th
-                id="68ab5bd2"
+                id="ed7fcd02"
                 class="table-cell elided-short clickable"
                 
                 data-role="columns-level-value"
@@ -3691,7 +3758,7 @@ data-spans__-1__0
                 
                 
                 <th
-                id="34e98c95"
+                id="2537e627"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -3719,7 +3786,7 @@ data-spans__0__-1
                 
                 
                 <td
-                id="6b6fdb7e"
+                id="6497dd1e"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -3753,7 +3820,7 @@ data-spans__0__0
                 
                 
                 <th
-                id="30a73fa6"
+                id="1d62efba"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -3781,7 +3848,7 @@ data-spans__1__-1
                 
                 
                 <td
-                id="319994cd"
+                id="7ada36db"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -3815,7 +3882,7 @@ data-spans__1__0
                 
                 
                 <th
-                id="4364aeab"
+                id="902a84fa"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -3843,7 +3910,7 @@ data-spans__2__-1
                 
                 
                 <td
-                id="8e692071"
+                id="67022b36"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -3877,7 +3944,7 @@ data-spans__2__0
                 
                 
                 <th
-                id="b43887f5"
+                id="3dfd883a"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -3905,7 +3972,7 @@ data-spans__3__-1
                 
                 
                 <td
-                id="2163e5cf"
+                id="1c0d9bc8"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -3939,7 +4006,7 @@ data-spans__3__0
                 
                 
                 <th
-                id="346a1d0d"
+                id="b830fc2a"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -3967,7 +4034,7 @@ data-spans__4__-1
                 
                 
                 <td
-                id="a13be947"
+                id="5d89926c"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -4031,7 +4098,7 @@ data-spans__4__0
                 
                 
                 <th
-                id="10080362"
+                id="66431c83"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -4059,7 +4126,7 @@ data-spans__5__-1
                 
                 
                 <td
-                id="6723ffa6"
+                id="cdf6e2e5"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -4093,7 +4160,7 @@ data-spans__5__0
                 
                 
                 <th
-                id="7eae4a31"
+                id="67ba3309"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -4121,7 +4188,7 @@ data-spans__6__-1
                 
                 
                 <td
-                id="9b7e3d7e"
+                id="a0146e67"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -4155,7 +4222,7 @@ data-spans__6__0
                 
                 
                 <th
-                id="f106a8b1"
+                id="38c07d78"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -4183,7 +4250,7 @@ data-spans__7__-1
                 
                 
                 <td
-                id="f1c55540"
+                id="fa4be6cb"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -4217,7 +4284,7 @@ data-spans__7__0
                 
                 
                 <th
-                id="414275ff"
+                id="995856e9"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -4245,7 +4312,7 @@ data-spans__8__-1
                 
                 
                 <td
-                id="d1ac961d"
+                id="af2f62a6"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -4279,7 +4346,7 @@ data-spans__8__0
                 
                 
                 <th
-                id="67140ad3"
+                id="db03f20a"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -4307,7 +4374,7 @@ data-spans__9__-1
                 
                 
                 <td
-                id="c9cf25e3"
+                id="a5945942"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -4425,8 +4492,8 @@ data-spans__9__0
 
                 
                 <dt>Mean ± Std</dt>
-                <dd>0.00204 ±
-                    0.0451
+                <dd>0.00220 ±
+                    0.0469
                     
                 </dd>
                 
@@ -4830,10 +4897,10 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
                     
 
                     
-                    <td data-value="0.0020411162456524224" data-numeric>
-                        0.00204</td>
-                    <td data-value="0.04513295195179071" data-numeric>
-                        0.0451</td>
+                    <td data-value="0.002204405545304616" data-numeric>
+                        0.00220</td>
+                    <td data-value="0.046899702113316545" data-numeric>
+                        0.0469</td>
                     
 
                     
@@ -4875,7 +4942,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_e3a11bbe">
+    <skrub-table-report class="report" id="report_a61a3bb1">
     </skrub-table-report>
 
     <script type="module">
@@ -5979,7 +6046,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_e3a11bbe-wrapper-fallback">
+<div id="report_a61a3bb1-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -5990,8 +6057,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_e3a11bbe-wrapper").removeAttribute("hidden");
- document.getElementById("report_e3a11bbe-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_a61a3bb1-wrapper").removeAttribute("hidden");
+ document.getElementById("report_a61a3bb1-wrapper-fallback").setAttribute("hidden", "");
 </script>
                     </div>
                 </div>

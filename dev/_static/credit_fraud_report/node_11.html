@@ -276,6 +276,73 @@ pre, code {
     flex: 1 1 auto;
 }
 
+/* The graph is not scrolled but panned and zoomed in a viewport filling the
+   panel (see data_ops-report.js). The viewport stays inside the panel's padding
+   so that the panel's resize handle (bottom right corner) remains reachable. */
+.report-index .data_op-node > nav.main-nav[data-is-open] {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.graph-toolbar {
+    flex: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.graph-toolbar .graph-hint {
+    margin: 0;
+}
+
+#graph-nav {
+    flex: 1 1 0;
+    min-height: 0;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    cursor: grab;
+    /* we handle touch gestures */
+    touch-action: none;
+}
+
+#graph-nav.panning {
+    cursor: grabbing;
+}
+
+#graph-canvas {
+    width: max-content;
+    user-select: none;
+}
+
+#graph-canvas svg {
+    display: block;
+}
+
+.graph-controls {
+    display: flex;
+    gap: 4px;
+}
+
+.graph-controls button {
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.95);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.graph-controls button:hover {
+    background: #eef4fb;
+}
+
 /* When the drawer is open the graph and the drawer share the width. */
 .report-index.drawer-open .data_op-node > nav.main-nav {
     flex: 0 0 auto;
@@ -359,7 +426,7 @@ pre, code {
                         </li>
                     </ul>
                 </nav>
-                <samp>ID:</samp> <samp>227435008139036774565968356290941516635</samp>
+                <samp>ID:</samp> <samp>298365623871217876982596459335229939858</samp>
                 
                 <div>
                     
@@ -395,7 +462,7 @@ pre, code {
                 
                 <div>
                     <h3>Computation time</h3>
-                    <code>0h 0m 0.00037s</code>
+                    <code>0h 0m 0.00029s</code>
                 </div>
                 
 
@@ -411,7 +478,7 @@ pre, code {
                     <div>
                         <div style="max-height: 30em; max-width: 95%; overflow: auto;">
     <samp>
-        <pre>&lt;pandas.api.typing.DataFrameGroupBy object at 0x72286a509390&gt;</pre>
+        <pre>&lt;pandas.api.typing.DataFrameGroupBy object at 0x7442c75f1390&gt;</pre>
     </samp>
 </div>
                     </div>
