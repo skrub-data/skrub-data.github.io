@@ -2,7 +2,7 @@
 
 # Computation times
 
-**07:14.596** total execution time for 7 files **from auto_examples/02_data_ops**:
+**07:05.719** total execution time for 7 files **from auto_examples/02_data_ops**:
 
 <style scoped>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
@@ -19,10 +19,10 @@ $(document).ready( function () {
 
 | Example                                                                                                                                                                                                    | Time      |   Mem (MB) |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------|
-| [Multiple tables: building machine learning pipelines with DataOps](1120_multiple_tableshtml.md#sphx-glr-auto-examples-02-data-ops-1120-multiple-tables-py) (`1120_multiple_tables.py`)                    | 02:54.288 |      679   |
-| [Tuning DataOps with Optuna](1131_optuna_choiceshtml.md#sphx-glr-auto-examples-02-data-ops-1131-optuna-choices-py) (`1131_optuna_choices.py`)                                                              | 01:32.625 |      555.4 |
-| [Turn a DataOp into a “standard” scikit-learn estimator](1170_sklearn_interface_learnerhtml.md#sphx-glr-auto-examples-02-data-ops-1170-sklearn-interface-learner-py) (`1170_sklearn_interface_learner.py`) | 01:16.906 |      559.9 |
-| [Hyperparameter tuning with DataOps](1130_choiceshtml.md#sphx-glr-auto-examples-02-data-ops-1130-choices-py) (`1130_choices.py`)                                                                           | 00:34.320 |      554.9 |
-| [Using PyTorch (via skorch) in DataOps](1160_pytorchhtml.md#sphx-glr-auto-examples-02-data-ops-1160-pytorch-py) (`1160_pytorch.py`)                                                                        | 00:24.956 |      561.9 |
-| [Subsampling for faster development](1140_subsamplinghtml.md#sphx-glr-auto-examples-02-data-ops-1140-subsampling-py) (`1140_subsampling.py`)                                                               | 00:21.396 |      575.9 |
-| [Use case: developing locally and deploying to production](1150_use_casehtml.md#sphx-glr-auto-examples-02-data-ops-1150-use-case-py) (`1150_use_case.py`)                                                  | 00:10.103 |      685.9 |
+| [Multiple tables: building machine learning pipelines with DataOps](1120_multiple_tableshtml.md#sphx-glr-auto-examples-02-data-ops-1120-multiple-tables-py) (`1120_multiple_tables.py`)                    | 03:08.957 |      718.1 |
+| [Tuning DataOps with Optuna](1131_optuna_choiceshtml.md#sphx-glr-auto-examples-02-data-ops-1131-optuna-choices-py) (`1131_optuna_choices.py`)                                                              | 01:14.897 |      595   |
+| [Turn a DataOp into a “standard” scikit-learn estimator](1170_sklearn_interface_learnerhtml.md#sphx-glr-auto-examples-02-data-ops-1170-sklearn-interface-learner-py) (`1170_sklearn_interface_learner.py`) | 01:06.905 |      559.8 |
+| [Hyperparameter tuning with DataOps](1130_choiceshtml.md#sphx-glr-auto-examples-02-data-ops-1130-choices-py) (`1130_choices.py`)                                                                           | 00:38.105 |      556.8 |
+| [Using PyTorch (via skorch) in DataOps](1160_pytorchhtml.md#sphx-glr-auto-examples-02-data-ops-1160-pytorch-py) (`1160_pytorch.py`)                                                                        | 00:23.798 |      572.4 |
+| [Subsampling for faster development](1140_subsamplinghtml.md#sphx-glr-auto-examples-02-data-ops-1140-subsampling-py) (`1140_subsampling.py`)                                                               | 00:21.640 |      591.5 |
+| [Use case: developing locally and deploying to production](1150_use_casehtml.md#sphx-glr-auto-examples-02-data-ops-1150-use-case-py) (`1150_use_case.py`)                                                  | 00:11.418 |      691.5 |
