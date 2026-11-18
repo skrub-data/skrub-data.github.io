@@ -118,6 +118,10 @@
   dataframes. `NaN` is already counted as a missing value there, so the
   number of distinct values was off by one and differed from pandas.
   [#2417](https://github.com/skrub-data/skrub/pull/2417) by [Joey Tan](https://github.com/JoeyTan21).
+- [`DatetimeEncoder`](reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) (and therefore [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer)) no longer
+  raises an `AttributeError` when fitted on a polars column with the `Date`
+  dtype.
+  [#2432](https://github.com/skrub-data/skrub/pull/2432) by [Joey Tan](https://github.com/JoeyTan21).
 
 ### Deprecations
 

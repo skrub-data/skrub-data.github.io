@@ -46,7 +46,7 @@
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-rendered-html.css?v=1277b6f3" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=6a604523" />
-    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=c454d73b" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=502c02f0" />
   
   <!-- So that users can add custom icons -->
   <script defer src="_static/scripts/fontawesome.js?digest=75c7c72ae941e8b558d8"></script>
@@ -711,6 +711,10 @@ longer count <code class="docutils literal notranslate"><span class="pre">NaN</s
 dataframes. <code class="docutils literal notranslate"><span class="pre">NaN</span></code> is already counted as a missing value there, so the
 number of distinct values was off by one and differed from pandas.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2417">#2417</a> by <a class="reference external" href="https://github.com/JoeyTan21">Joey Tan</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> (and therefore <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>) no longer
+raises an <code class="docutils literal notranslate"><span class="pre">AttributeError</span></code> when fitted on a polars column with the <code class="docutils literal notranslate"><span class="pre">Date</span></code>
+dtype.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2432">#2432</a> by <a class="reference external" href="https://github.com/JoeyTan21">Joey Tan</a>.</p></li>
 </ul>
 </section>
 <section id="deprecations">
