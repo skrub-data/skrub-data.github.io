@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DataOp report</title>
+    <style>
+     html {
+    font-family: sans-serif;
+    --current-node-color: #15ed8f;
+}
+
+h1,h2,h3,h4 {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+    margin-left: 0;
+    margin-right: 0;
+}
+h1 {
+    margin-top: 0;
+}
+
+ul {
+    margin: 0.1em;
+}
+
+* *::before, *::after {
+    box-sizing: border-box;
+}
+
+pre, code {
+    font-size: 1rem;
+}
+
+.docstring-details summary {
+    cursor: pointer;
+}
+
+.docstring-details {
+    margin: 1em 0;
+}
+
+#graph-nav text {
+    transform: translateY(2px);
+}
+
+.graph-hint {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0 0 0.75rem;
+    padding: 10px 12px;
+    border-left: 4px solid #6b9bd2;
+    border-radius: 3px;
+    background: #eef4fb;
+    color: #1f3b5c;
+    font-size: 0.95rem;
+}
+
+.data_op-node-wrapper {
+    overflow-x: auto;
+}
+
+.mini-nav > ul {
+    display: grid;
+    grid-template-columns: 10ch 10ch 10ch;
+    list-style-type: none;
+}
+
+.data_op-node {
+    display: flex;
+    height: 100%;
+}
+
+.data_op-node > * {
+    padding: 1rem;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.data_op-node > nav.main-nav {
+    border-right: 2px solid #ccc;
+    flex-shrink: 0;
+    resize: horizontal;
+    min-width: 8rem;
+    box-sizing: border-box;
+}
+
+.node-details {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* Drawer displaying the selected node (or a source file) next to the graph. */
+.data_op-node > .drawer {
+    display: none;
+    flex-direction: column;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0;
+    overflow: hidden;
+    border-left: 2px solid #ccc;
+}
+
+.drawer-open .data_op-node > .drawer {
+    display: flex;
+}
+
+/* The node page and the source page are stacked. The one not displayed is only
+   invisible, not display: none, so that the node page keeps its scroll position
+   and the source page can scroll to its highlighted line while it loads. The
+   keyboard does not reach an invisible iframe either. */
+.drawer-body {
+    position: relative;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.drawer-body > iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+}
+
+.drawer[data-mode="node"] #source-frame,
+.drawer[data-mode="source"] #node-frame {
+    visibility: hidden;
+}
+
+.drawer[data-mode="source"] #close-drawer,
+.drawer[data-mode="node"] #back-to-node {
+    display: none;
+}
+
+.drawer-toolbar {
+    display: flex;
+    flex: none;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 6px 8px;
+    border-bottom: 1px solid #ddd;
+    background: #fafafa;
+}
+
+.header-button,
+.drawer-toolbar button {
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    color: inherit;
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.header-button:hover:not(:disabled),
+.drawer-toolbar button:hover {
+    background: #f0f0f0;
+}
+
+.header-button:disabled {
+    color: #999;
+    cursor: default;
+}
+
+.header-button:focus-visible,
+.drawer-toolbar button:focus-visible {
+    outline: 2px solid #6b9bd2;
+    outline-offset: 1px;
+}
+
+/* Node pages are displayed inside the iframe of the index page: they fill it
+   and scroll as a whole. */
+.node-page {
+    margin: 0;
+}
+
+.node-page .data_op-node {
+    display: block;
+    height: auto;
+}
+
+.node-page .data_op-node > * {
+    max-height: none;
+    overflow-y: visible;
+}
+
+.node-page .node-details {
+    min-height: 100vh;
+}
+
+.node-details[data-has-error]{
+    background: #ffcccc;
+}
+
+.node-details[data-is-skipped]{
+    background: #eee;
+}
+
+.is-skipped-message{
+    background: #eee;
+    padding: 0 1em 1em 1em;
+    border: 1px solid black;
+}
+
+.is-skipped-message + * {
+    margin-top: 1em;
+}
+
+.node-creation-stack {
+    font-size: 1rem;
+}
+
+.node-creation-stack a {
+    text-decoration: none;
+}
+
+.node-creation-stack .node-creation-stack-line {
+    display: block;
+    margin-left: 2em;
+}
+
+.main-nav:not([data-is-open]){
+    display: none;
+}
+
+.nav-legend-current-node {
+    display: flex;
+    background: var(--current-node-color);
+    border: 4px solid black;
+    font-size: 1.2rem;
+    padding: 3px;
+}
+
+.nav-legend-current-node + * {
+    margin-top: 2rem;
+}
+
+/* Layout of the index page: a header with the title and graph toggle, below it
+   the graph and the drawer displaying the selected node. */
+.report-index {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.report-header {
+    flex: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+    background: #fafafa;
+}
+
+.report-index > .data_op-node-wrapper {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.report-index .data_op-node {
+    flex: 1;
+    min-height: 0;
+}
+
+.report-index .data_op-node > nav.main-nav {
+    flex: 1 1 auto;
+}
+
+/* The graph is not scrolled but panned and zoomed in a viewport filling the
+   panel (see data_ops-report.js). The viewport stays inside the panel's padding
+   so that the panel's resize handle (bottom right corner) remains reachable. */
+.report-index .data_op-node > nav.main-nav[data-is-open] {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.graph-toolbar {
+    flex: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.graph-toolbar .graph-hint {
+    margin: 0;
+}
+
+#graph-nav {
+    flex: 1 1 0;
+    min-height: 0;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    cursor: grab;
+    /* we handle touch gestures */
+    touch-action: none;
+}
+
+#graph-nav.panning {
+    cursor: grabbing;
+}
+
+#graph-canvas {
+    width: max-content;
+    user-select: none;
+}
+
+#graph-canvas svg {
+    display: block;
+}
+
+.graph-controls {
+    display: flex;
+    gap: 4px;
+}
+
+.graph-controls button {
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.95);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.graph-controls button:hover {
+    background: #eef4fb;
+}
+
+/* When the drawer is open the graph and the drawer share the width. */
+.report-index.drawer-open .data_op-node > nav.main-nav {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.header-button {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    margin-left: auto;
+}
+
+.report-title {
+    flex: 0 1 auto;
+    margin: 0;
+    min-width: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.error-node polygon {
+    stroke: red;
+    stroke-width: 3;
+}
+
+.skipped-node polygon {
+    stroke-dasharray: 4;
+}
+    </style>
+    <style id="current-node-style"></style>
+</head>
+
+<body class="report-index" data-total-nodes="4">
+    <header class="report-header">
+        <h2 class="report-title">DataOp report</h2>
+        <button type="button" class="header-button" id="toggle-nav"
+            aria-expanded="true" disabled>Hide graph</button>
+    </header>
+    <div class="data_op-node-wrapper">
+        <div class="data_op-node">
+            
+            <nav id="graph-panel" class="main-nav" data-is-open>
+                <div class="graph-toolbar">
+                    <p class="graph-hint"><strong>Click a node</strong> to display its details.
+                        <strong>Drag</strong> to pan, <strong>Ctrl + scroll</strong> to zoom.</p>
+                    
+                    <div class="graph-controls" role="group" aria-label="Graph zoom">
+                        <button type="button" id="zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
+                        <button type="button" id="zoom-out" title="Zoom out" aria-label="Zoom out">&minus;</button>
+                        <button type="button" id="zoom-reset" title="Fit the whole graph in the panel">Reset</button>
+                    </div>
+                </div>
+                
+                <div id="graph-nav">
+                    <div id="graph-canvas">
+                        
+
+<!-- Generated by graphviz version 14.1.2 (20260126.1125)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="254pt" height="146pt"
+ viewBox="0.00 0.00 254.00 146.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 142.17)">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-142.17 250.14,-142.17 250.14,4 -4,4"/>
+<!-- node_0 -->
+<g id="node_0" class="node">
+
+<g id="a_node_0"><a xlink:href="#node_0" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/employee_salaries_report.py&quot;, line 22, in create_employee_salaries_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;skrub.var(&quot;employee_data&quot;)">
+<polygon fill="none" stroke="black" points="131.89,-134.17 4.88,-134.17 4.88,-112.78 131.89,-112.78 131.89,-134.17"/>
+<polygon fill="none" stroke="black" points="135.89,-138.17 0.88,-138.17 0.88,-108.78 135.89,-108.78 135.89,-138.17"/>
+<text xml:space="preserve" text-anchor="start" x="10.63" y="-121.35" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">Var &#39;employee_data&#39;</text>
+</a>
+</g>
+</g>
+<!-- node_1 -->
+<g id="node_1" class="node">
+
+<g id="a_node_1"><a xlink:href="#node_1" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/employee_salaries_report.py&quot;, line 23, in create_employee_salaries_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;.skb.apply(TableVectorizer())">
+<polygon fill="none" stroke="black" points="136.77,-75.78 0,-75.78 0,-54.39 136.77,-54.39 136.77,-75.78"/>
+<text xml:space="preserve" text-anchor="start" x="5.76" y="-62.96" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">Apply TableVectorizer</text>
+</a>
+</g>
+</g>
+<!-- node_0&#45;&gt;node_1 -->
+<g id="edge3" class="edge">
+
+<path fill="none" stroke="black" d="M68.38,-108.54C68.38,-101.32 68.38,-92.4 68.38,-84.61"/>
+<polygon fill="black" stroke="black" points="70.84,-84.66 68.39,-77.66 65.94,-84.66 70.84,-84.66"/>
+</g>
+<!-- node_3 -->
+<g id="node_3" class="node">
+
+<g id="a_node_3"><a xlink:href="#node_3" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/employee_salaries_report.py&quot;, line 24, in create_employee_salaries_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;.skb.apply(HistGradientBoostingRegressor(), y=skrub.var(&quot;salary&quot;))">
+<polygon fill="none" stroke="black" points="246.14,-21.39 18.62,-21.39 18.62,0 246.14,0 246.14,-21.39"/>
+<text xml:space="preserve" text-anchor="start" x="24.38" y="-8.57" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">Apply HistGradientBoostingRegressor</text>
+</a>
+</g>
+</g>
+<!-- node_1&#45;&gt;node_3 -->
+<g id="edge1" class="edge">
+
+<path fill="none" stroke="black" d="M80.72,-53.98C90.02,-46.37 102.93,-35.8 113.52,-27.14"/>
+<polygon fill="black" stroke="black" points="115.05,-29.05 118.91,-22.72 111.94,-25.26 115.05,-29.05"/>
+</g>
+<!-- node_2 -->
+<g id="node_2" class="node">
+
+<g id="a_node_2"><a xlink:href="#node_2" xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/doc/employee_salaries_report.py&quot;, line 24, in create_employee_salaries_report&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;.skb.apply(HistGradientBoostingRegressor(), y=skrub.var(&quot;salary&quot;))">
+<polygon fill="none" stroke="black" points="234.39,-75.78 158.38,-75.78 158.38,-54.39 234.39,-54.39 234.39,-75.78"/>
+<polygon fill="none" stroke="black" points="238.39,-79.78 154.38,-79.78 154.38,-50.39 238.39,-50.39 238.39,-79.78"/>
+<text xml:space="preserve" text-anchor="start" x="164.13" y="-62.96" font-family="sans-serif" font-weight="bold" font-size="10.00" fill="#1a0dab">Var &#39;salary&#39;</text>
+</a>
+</g>
+</g>
+<!-- node_2&#45;&gt;node_3 -->
+<g id="edge2" class="edge">
+
+<path fill="none" stroke="black" d="M179.23,-50.05C170.5,-42.9 159.87,-34.19 150.95,-26.89"/>
+<polygon fill="black" stroke="black" points="152.65,-25.12 145.68,-22.58 149.55,-28.91 152.65,-25.12"/>
+</g>
+</g>
+</svg>
+
+                    </div>
+                </div>
+            </nav>
+            
+            <div id="drawer" class="drawer" data-mode="node">
+                <div class="drawer-toolbar">
+                    <button type="button" id="close-drawer">Close</button>
+                    <button type="button" id="back-to-node">Back to node details</button>
+                </div>
+                <div class="drawer-body">
+                    <iframe id="node-frame" title="Details of the selected node"></iframe>
+                    <iframe id="source-frame" title="Source code"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+ /**
+* Panzoom 4.6.2 for panning and zooming elements using CSS transforms
+* Copyright Timmy Willison and other contributors
+* https://github.com/timmywil/panzoom/blob/main/MIT-License.txt
+*/
+((e,t)=>{"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e="undefined"!=typeof globalThis?globalThis:e||self).Panzoom=t()})(this,function(){"undefined"!=typeof window&&(window.NodeList&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=Array.prototype.forEach),"function"!=typeof window.CustomEvent)&&(window.CustomEvent=function(e,t){t=t||{bubbles:!1,cancelable:!1,detail:null};var n=document.createEvent("CustomEvent");return n.initCustomEvent(e,t.bubbles,t.cancelable,t.detail),n});let i="undefined"!=typeof document&&!!document.documentMode,a;let l=["webkit","moz","ms"],s={};function z(e){if(s[e])return s[e];var t=a=a||document.createElement("div").style;if(e in t)return s[e]=e;var n=e[0].toUpperCase()+e.slice(1);let o=l.length;for(;o--;){var r=""+l[o]+n;if(r in t)return s[e]=r}}function r(e,t){return parseFloat(t[z(e)])||0}function c(e,t,n=window.getComputedStyle(e)){var o="border"===t?"Width":"";return{left:r(t+"Left"+o,n),right:r(t+"Right"+o,n),top:r(t+"Top"+o,n),bottom:r(t+"Bottom"+o,n)}}function X(e,t,n){e.style[z(t)]=n}function Y(e){let t=e.parentNode;t&&1===t.nodeType||(t=document.documentElement);var n=window.getComputedStyle(e),o=window.getComputedStyle(t),r=e.getBoundingClientRect(),a=t.getBoundingClientRect();return{elem:{style:n,width:r.width,height:r.height,top:r.top,bottom:r.bottom,left:r.left,right:r.right,margin:c(e,"margin",n),border:c(e,"border",n)},parent:{style:o,width:a.width,height:a.height,top:a.top,bottom:a.bottom,left:a.left,right:a.right,padding:c(t,"padding",o),border:c(t,"border",o)}}}let C={down:"mousedown",move:"mousemove",up:"mouseup mouseleave"};function N(e,t,n,o){C[e].split(" ").forEach(e=>{t.addEventListener(e,n,o)})}function T(e,t,n){C[e].split(" ").forEach(e=>{t.removeEventListener(e,n)})}function $(e,t){let n=e.length;for(;n--;)if(e[n].pointerId===t.pointerId)return n;return-1}function L(e,t){let n;if(t.touches){n=0;for(var o of t.touches)o.pointerId=n++,L(e,o)}else-1<(n=$(e,t))&&e.splice(n,1),e.push(t)}function V(e){let t=(e=e.slice(0)).pop();for(var n;n=e.pop();)t={clientX:(n.clientX-t.clientX)/2+t.clientX,clientY:(n.clientY-t.clientY)/2+t.clientY};return t}function G(e){var t;return e.length<2?0:(t=e[0],e=e[1],Math.sqrt(Math.pow(Math.abs(e.clientX-t.clientX),2)+Math.pow(Math.abs(e.clientY-t.clientY),2)))}"undefined"!=typeof window&&("function"==typeof window.PointerEvent?C={down:"pointerdown",move:"pointermove",up:"pointerup pointerleave pointercancel"}:"function"==typeof window.TouchEvent&&(C={down:"touchstart",move:"touchmove",up:"touchend touchcancel"}));let I=/^http:[\w\.\/]+svg$/;
+/**
+   * Panzoom for panning and zooming elements using CSS transforms
+   * https://github.com/timmywil/panzoom
+   *
+   * Copyright Timmy Willison and other contributors
+   * Released under the MIT license
+   * https://github.com/timmywil/panzoom/blob/main/MIT-License.txt
+   *
+   */
+let R={animate:!1,canvas:!1,cursor:"move",disablePan:!1,disableZoom:!1,disableXAxis:!1,disableYAxis:!1,duration:200,easing:"ease-in-out",exclude:[],excludeClass:"panzoom-exclude",handleStartEvent:e=>{e.preventDefault(),e.stopPropagation()},maxScale:4,minScale:.125,overflow:"hidden",panOnlyWhenZoomed:!1,pinchAndPan:!1,relative:!1,setTransform:function(e,{x:t,y:n,scale:o,isSVG:r},a){X(e,"transform",`scale(${o}) translate(${t}px, ${n}px)`),r&&i&&(o=window.getComputedStyle(e).getPropertyValue("transform"),e.setAttribute("transform",o))},startX:0,startY:0,startScale:1,step:.3,touchAction:"none"};function e(d,p){if(!d)throw new Error("Panzoom requires an element as an argument");if(1!==d.nodeType)throw new Error("Panzoom requires an element with a nodeType of 1");if(!(e=>{let t=e;for(;t&&t.parentNode;){if(t.parentNode===document)return 1;t=t.parentNode instanceof ShadowRoot?t.parentNode.host:t.parentNode}})(d))throw new Error("Panzoom should be called on elements that have been attached to the DOM");p=Object.assign(Object.assign({},R),p);e=d;let c=I.test(e.namespaceURI)&&"svg"!==e.nodeName.toLowerCase();var e;let n=d.parentNode;n.style.overflow=p.overflow,n.style.userSelect="none",n.style.touchAction=p.touchAction,(p.canvas?n:d).style.cursor=p.cursor,d.style.userSelect="none",d.style.touchAction=p.touchAction,X(d,"transformOrigin","string"==typeof p.origin?p.origin:c?"0 0":"50% 50%");let u=0,m=0,f=1,a=!1;function r(e,t,n){n.silent||(n=new CustomEvent(e,{detail:t}),d.dispatchEvent(n))}function l(t,n,e){let o={x:u,y:m,scale:f,isSVG:c,originalEvent:e};return requestAnimationFrame(()=>{var e;"boolean"==typeof n.animate&&(n.animate?(e=n,X(d,"transition",`${z("transform")} ${e.duration}ms `+e.easing)):X(d,"transition","none")),n.setTransform(d,o,n),r(t,o,n),r("panzoomchange",o,n)}),o}function s(e,t,n,o){var r,a,i,l,s=Object.assign(Object.assign({},p),o),c={x:u,y:m,opts:s};return(null!=o&&o.force||!(s.disablePan||s.panOnlyWhenZoomed&&f===s.startScale))&&(e=parseFloat(e),t=parseFloat(t),s.disableXAxis||(c.x=(s.relative?u:0)+e),s.disableYAxis||(c.y=(s.relative?m:0)+t),s.contain&&(e=((t=(e=(o=Y(d)).elem.width/f)*n)-e)/2,a=((r=(a=o.elem.height/f)*n)-a)/2,"inside"===s.contain?(i=(-o.elem.margin.left-o.parent.padding.left+e)/n,l=(o.parent.width-t-o.parent.padding.left-o.elem.margin.left-o.parent.border.left-o.parent.border.right+e)/n,c.x=Math.max(Math.min(c.x,l),i),l=(-o.elem.margin.top-o.parent.padding.top+a)/n,i=(o.parent.height-r-o.parent.padding.top-o.elem.margin.top-o.parent.border.top-o.parent.border.bottom+a)/n,c.y=Math.max(Math.min(c.y,i),l)):"outside"===s.contain&&(i=(-(t-o.parent.width)-o.parent.padding.left-o.parent.border.left-o.parent.border.right+e)/n,l=(e-o.parent.padding.left)/n,c.x=Math.max(Math.min(c.x,l),i),t=(-(r-o.parent.height)-o.parent.padding.top-o.parent.border.top-o.parent.border.bottom+a)/n,e=(a-o.parent.padding.top)/n,c.y=Math.max(Math.min(c.y,e),t))),s.roundPixels)&&(c.x=Math.round(c.x),c.y=Math.round(c.y)),c}function h(n,o){var r,a=Object.assign(Object.assign({},p),o),i={scale:f,opts:a};if(null!=o&&o.force||!a.disableZoom){let e=p.minScale,t=p.maxScale;a.contain&&(a=(o=Y(d)).elem.width/f,r=o.elem.height/f,1<a)&&1<r&&(a=(o.parent.width-o.parent.border.left-o.parent.border.right)/a,o=(o.parent.height-o.parent.border.top-o.parent.border.bottom)/r,"inside"===p.contain?t=Math.min(t,a,o):"outside"===p.contain&&(e=Math.max(e,a,o))),i.scale=Math.min(Math.max(n,e),t)}return i}function i(e,t,n,o){e=s(e,t,f,n);return u!==e.x||m!==e.y?(u=e.x,m=e.y,l("panzoompan",e.opts,o)):{x:u,y:m,scale:f,isSVG:c,originalEvent:o}}function g(n,o,r){var a=h(n,o),i=a.opts;if(null!=o&&o.force||!i.disableZoom){n=a.scale;let e=u,t=m;i.focal&&(o=i.focal,e=(o.x/n-o.x/f+u*n)/n,t=(o.y/n-o.y/f+m*n)/n);a=s(e,t,n,{relative:!1,force:!0});return u=a.x,m=a.y,f=n,l("panzoomzoom",i,r)}}function t(e,t){t=Object.assign(Object.assign(Object.assign({},p),{animate:!0}),t);return g(f*Math.exp((e?1:-1)*t.step),t)}function v(e,t,n,o){var r=Y(d);const a=r.parent.width-r.parent.padding.left-r.parent.padding.right-r.parent.border.left-r.parent.border.right,i=r.parent.height-r.parent.padding.top-r.parent.padding.bottom-r.parent.border.top-r.parent.border.bottom;let l=t.clientX-r.parent.left-r.parent.padding.left-r.parent.border.left-r.elem.margin.left,s=t.clientY-r.parent.top-r.parent.padding.top-r.parent.border.top-r.elem.margin.top;c||(l-=r.elem.width/f/2,s-=r.elem.height/f/2);t={x:l/a*(a*e),y:s/i*(i*e)};return g(e,Object.assign(Object.assign({},n),{animate:!1,focal:t}),o)}g(p.startScale,{animate:!1,force:!0}),setTimeout(()=>{i(p.startX,p.startY,{animate:!1,force:!0})});let y,b,w,x,O,E,S=[];function o(e){((t,n)=>{for(let e=t;null!=e;e=e.parentNode)if(o=e,r=n.excludeClass,1===o.nodeType&&-1<` ${o=o,(o.getAttribute("class")||"").trim()} `.indexOf(` ${r} `)||-1<n.exclude.indexOf(e))return 1;var o,r})(e.target,p)||(L(S,e),a=!0,p.handleStartEvent(e),y=u,b=m,r("panzoomstart",{x:u,y:m,scale:f,isSVG:c,originalEvent:e},p),e=V(S),w=e.clientX,x=e.clientY,O=f,E=G(S))}function M(t){if(a&&void 0!==y&&void 0!==b&&void 0!==w&&void 0!==x){L(S,t);var n,o=V(S),r=1<S.length;let e=f;r&&(0===E&&(E=G(S)),n=G(S)-E,v(e=h(n*p.step/80+O).scale,o,{animate:!1},t)),r&&!p.pinchAndPan||i(y+(o.clientX-w)/e,b+(o.clientY-x)/e,{animate:!1},t)}}function A(e){1===S.length&&r("panzoomend",{x:u,y:m,scale:f,isSVG:c,originalEvent:e},p);var t=S;if(e.touches)for(;t.length;)t.pop();else{e=$(t,e);-1<e&&t.splice(e,1)}a&&(a=!1,y=b=w=x=void 0)}let P=!1;function j(){P||(P=!0,N("down",p.canvas?n:d,o),N("move",document,M,{passive:!0}),N("up",document,A,{passive:!0}))}return p.noBind||j(),{bind:j,destroy:function(){P=!1,T("down",p.canvas?n:d,o),T("move",document,M),T("up",document,A)},eventNames:C,getPan:()=>({x:u,y:m}),getScale:()=>f,getOptions:()=>{var e,t=p,n={};for(e in t)t.hasOwnProperty(e)&&(n[e]=t[e]);return n},handleDown:o,handleMove:M,handleUp:A,pan:i,reset:function(e){var e=Object.assign(Object.assign(Object.assign({},p),{animate:!0,force:!0}),e),t=(f=h(e.startScale,e).scale,s(e.startX,e.startY,f,e));return u=t.x,m=t.y,l("panzoomreset",e)},resetStyle:function(){n.style.overflow="",n.style.userSelect="",n.style.touchAction="",n.style.cursor="",d.style.cursor="",d.style.userSelect="",d.style.touchAction="",X(d,"transformOrigin","")},setOptions:function(e={}){for(var t in e)e.hasOwnProperty(t)&&(p[t]=e[t]);(e.hasOwnProperty("cursor")||e.hasOwnProperty("canvas"))&&(n.style.cursor=d.style.cursor="",(p.canvas?n:d).style.cursor=p.cursor),e.hasOwnProperty("overflow")&&(n.style.overflow=e.overflow),e.hasOwnProperty("touchAction")&&(n.style.touchAction=e.touchAction,d.style.touchAction=e.touchAction)},setStyle:(e,t)=>X(d,e,t),zoom:g,zoomIn:function(e){return t(!0,e)},zoomOut:function(e){return t(!1,e)},zoomToPoint:v,zoomWithWheel:function(e,t){e.preventDefault();var t=Object.assign(Object.assign(Object.assign({},p),t),{animate:!1}),n=(0===e.deltaY&&e.deltaX?e.deltaX:e.deltaY)<0?1:-1;return v(h(f*Math.exp(n*t.step/3),t).scale,e,t,e)}}}return e.defaultOptions=R,e});
+</script>
+<script>
+ // Index page of the report: the graph, plus a "drawer" showing a node page (or
+// a source file) in an iframe next to it.
+//
+// This script controls what is displayed in the iframe. The browser's back
+// button must leave the report rather than step through nodes, so the iframe is
+// always navigated with location.replace(), which adds no history entry.
+// When a link to another node ("previous", "next", ...) is clicked in the
+// node iframe, the event is captured and a message is posted so the navigation
+// can be handled here (see report-navigation.js).
+//
+// The URL hash is kept up to date with replaceState so the URL for a specific
+// node can be shared.
+//
+// The browser keeps displaying the previous node until the next one is ready.
+//
+// A source file is displayed in a second iframe, on top of the node iframe, so
+// that the node page is still there, as we left it, when we come back. It is
+// displayed once it has loaded, so that nothing flashes either.
+//
+(function() {
+    //
+    // Navigation
+    // ----------
+    //
+    const drawer = document.getElementById('drawer');
+    const nodeFrame = document.getElementById('node-frame');
+    let sourceFrame = document.getElementById('source-frame');
+    const graphPanel = document.getElementById('graph-panel');
+    const toggleGraphButton = document.getElementById('toggle-nav');
+    // The current node is highlighted with a CSS rule rather than by editing
+    // the graph, so that it works whether the graph was drawn by python or is
+    // drawn later by the browser (in which case it may still be rendering).
+    const highlightStyle = document.getElementById('current-node-style');
+    const totalNNodes = Number(document.body.dataset.totalNodes);
+
+    // An empty page, with a doctype so that it is rendered in standards mode.
+    const EMPTY_PAGE = 'data:text/html,<!DOCTYPE html><title></title>';
+
+    function navigate(frame, url) {
+        frame.contentWindow.location.replace(new URL(url, window.location.href));
+    }
+
+    // Button that shows or hides the graph panel.
+    function setGraphOpen(isOpen) {
+        graphPanel.toggleAttribute('data-is-open', isOpen);
+        toggleGraphButton.setAttribute('aria-expanded', String(isOpen));
+        toggleGraphButton.textContent = isOpen ? 'Hide graph' : 'Show graph';
+    }
+
+    function nodeIdFromHash() {
+        const match = /^#node_(\d+)$/.exec(window.location.hash);
+        if (!match || Number(match[1]) >= totalNNodes) {
+            return null;
+        }
+        return Number(match[1]);
+    }
+
+    // Keep the URL shareable (index.html#node_3) without adding history entries.
+    function updateState(nodeId) {
+        document.body.classList.toggle('drawer-open', nodeId !== null);
+        // Never leave the page empty: without a node there is nothing to show
+        // but the graph.
+        toggleGraphButton.disabled = nodeId === null;
+        if (nodeId === null) {
+            setGraphOpen(true);
+        }
+        highlightStyle.textContent = nodeId === null ? '' : (
+            `#node_${nodeId} polygon {` +
+            ' fill: var(--current-node-color); stroke-width: 3; }');
+        const hash = nodeId === null ? '' : `#node_${nodeId}`;
+        if (window.location.hash !== hash) {
+            const url = new URL(window.location.href);
+            url.hash = hash;
+            window.history.replaceState(null, '', url.href);
+        }
+    }
+
+    function openNode(nodeId) {
+        closeSource();
+        navigate(nodeFrame, `node_${nodeId}.html`);
+        updateState(nodeId);
+    }
+
+    // The source page is loaded in a new iframe, which replaces the previous one
+    // and is displayed (instead of the node page) once loaded. A new iframe is
+    // needed because navigating one that shows the same page (or another line of
+    // it) fires no load event. Dropping the previous iframe also drops its
+    // events: there is nothing to cancel if the user goes elsewhere while the
+    // page loads.
+    function replaceSourceFrame(url) {
+        const frame = document.createElement('iframe');
+        frame.id = 'source-frame';
+        frame.title = 'Source code';
+        if (url !== null) {
+            frame.addEventListener('load', () => {
+                drawer.dataset.mode = 'source';
+                // so that keyboard navigation continues in the page displayed
+                // (the frame can only be focused once it is visible)
+                frame.focus();
+            }, {once: true});
+            frame.src = new URL(url, window.location.href).href;
+        }
+        sourceFrame.replaceWith(frame);
+        sourceFrame = frame;
+    }
+
+    function openSource(url) {
+        replaceSourceFrame(url);
+    }
+
+    function closeSource() {
+        replaceSourceFrame(null);
+        drawer.dataset.mode = 'node';
+    }
+
+    function closeDrawer() {
+        closeSource();
+        // do not show this page again if the drawer is reopened
+        // (not 'about:blank': it has no doctype, so browsers render it in quirks
+        // mode and log a warning in the console)
+        navigate(nodeFrame, EMPTY_PAGE);
+        updateState(null);
+    }
+
+    document.getElementById('close-drawer').addEventListener('click', closeDrawer);
+    document.getElementById('back-to-node').addEventListener('click', () => {
+        closeSource();
+        nodeFrame.focus();
+    });
+
+    // Node pages ask us to display the node or source file their links point to.
+    window.addEventListener('message', (event) => {
+        if (event.source !== nodeFrame.contentWindow ||
+            !event.data || event.data.type !== 'skrub-report-link') {
+            return;
+        }
+        const href = String(event.data.href);
+        const node = /^node_(\d+)\.html$/.exec(href);
+        if (node) {
+            openNode(Number(node[1]));
+        } else if (/^python\/[\w-]+\.html(#L\d+)?$/.test(href)) {
+            openSource(href);
+        }
+    });
+
+    // Graph nodes link to a hash such as "#node_3". We handle the click
+    // ourselves because the default action would add a history entry. The
+    // links are in an svg, where the attribute may be xlink:href.
+    document.getElementById('graph-nav').addEventListener('click', (event) => {
+        const link = event.target.closest('a');
+        const href = link && (link.getAttribute('href') ||
+            link.getAttributeNS('http://www.w3.org/1999/xlink', 'href'));
+        const match = /^#node_(\d+)$/.exec(href);
+        if (match && !event.metaKey && !event.ctrlKey && !event.shiftKey) {
+            event.preventDefault();
+            openNode(Number(match[1]));
+        }
+    });
+
+    // The hash is edited by hand in the address bar of an open report. Our own
+    // updates (replaceState) do not trigger this event.
+    window.addEventListener('hashchange', () => {
+        const nodeId = nodeIdFromHash();
+        if (nodeId !== null) {
+            openNode(nodeId);
+        } else if (window.location.hash === '') {
+            closeDrawer();
+        }
+    });
+    if (nodeIdFromHash() !== null) {
+        openNode(nodeIdFromHash());
+    }
+
+    toggleGraphButton.addEventListener('click', () => {
+        setGraphOpen(!graphPanel.hasAttribute('data-is-open'));
+    });
+
+    //
+    // Pan & zoom
+    // ----------
+    //
+    // Pan and zoom of the graph, with the Panzoom library (included in the page).
+    // - drag: pan; buttons: zoom; Ctrl (or Cmd) + wheel, or trackpad pinch: zoom
+    //   at the pointer; wheel: pan, as the graph used to scroll before. Pinching on
+    //   a touchscreen is disabled (see below).
+    // - a drag must not click the node it ends on.
+    const graphNav = document.getElementById('graph-nav');
+    const graphCanvas = document.getElementById('graph-canvas');
+    const MIN_SCALE = 0.05;
+    const MAX_SCALE = 4;
+    // Zoom per pixel of wheel movement: a classic mouse wheel notch (100 px)
+    // zooms by 10%, and the small deltas of a trackpad pinch zoom smoothly.
+    const ZOOM_PER_PIXEL = Math.log(1.1) / 100;
+    const MAX_WHEEL_ZOOM_DELTA = 100;
+    const LINE_HEIGHT = 16;
+    const panzoom = Panzoom(graphCanvas, {
+        origin: '0 0', canvas: true, cursor: 'inherit',
+        minScale: MIN_SCALE, maxScale: MAX_SCALE,
+    });
+
+    function setView(scale, x, y) {
+        panzoom.zoom(scale, {animate: false});
+        panzoom.pan(x, y, {animate: false});
+    }
+
+    // Initial view, and what the Reset button goes back to: the whole graph
+    // fits the panel (never enlarged), in its top left corner.
+    function resetView() {
+        const w = graphCanvas.offsetWidth, h = graphCanvas.offsetHeight;
+        const vw = graphNav.clientWidth, vh = graphNav.clientHeight;
+        if (!w || !h) {
+            return;
+        }
+        const scale = Math.max(Math.min(vw / w, vh / h, 1), MIN_SCALE);
+        setView(scale, 0, 0);
+    }
+
+    // Zoom keeping the point of the graph under (clientX, clientY) in place. We do
+    // it ourselves because the transform origin is the top left corner: the
+    // point under the pointer is at `p / scale - pan` in the graph's coordinates
+    // (p being the position in the viewport), and that must not change.
+    function zoomAround(factor, clientX, clientY) {
+        const rect = graphNav.getBoundingClientRect();
+        const px = clientX - rect.left - graphNav.clientLeft;
+        const py = clientY - rect.top - graphNav.clientTop;
+        const oldScale = panzoom.getScale();
+        const newScale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, oldScale * factor));
+        const pan = panzoom.getPan();
+        setView(newScale,
+                pan.x + px / newScale - px / oldScale,
+                pan.y + py / newScale - py / oldScale);
+    }
+
+    // Zoom for the buttons, around the center of the part of the graph that is
+    // visible: zooming around the center of the panel would push a graph smaller
+    // than the panel (or not centered in it) away from the center, possibly out
+    // of view.
+    function zoomAtCenter(factor) {
+        const scale = panzoom.getScale();
+        const pan = panzoom.getPan();
+        const center = (start, size, viewportSize) => {
+            const lo = Math.max(0, start * scale);
+            const hi = Math.min(viewportSize, (start + size) * scale);
+            return lo < hi ? (lo + hi) / 2 : viewportSize / 2;
+        };
+        const rect = graphNav.getBoundingClientRect();
+        zoomAround(factor,
+                   rect.left + graphNav.clientLeft + center(
+                       pan.x, graphCanvas.offsetWidth, graphNav.clientWidth),
+                   rect.top + graphNav.clientTop + center(
+                       pan.y, graphCanvas.offsetHeight, graphNav.clientHeight));
+    }
+
+    // Wheel deltas in pixels. Depending on the browser and device they can be
+    // given in lines or pages (deltaMode) rather than pixels.
+    function wheelDeltaPixels(event) {
+        let factorX = 1, factorY = 1;
+        if (event.deltaMode === WheelEvent.DOM_DELTA_LINE) {
+            factorX = factorY = LINE_HEIGHT;
+        } else if (event.deltaMode === WheelEvent.DOM_DELTA_PAGE) {
+            factorX = graphNav.clientWidth;
+            factorY = graphNav.clientHeight;
+        }
+        return {x: event.deltaX * factorX, y: event.deltaY * factorY};
+    }
+
+    graphNav.addEventListener('wheel', (event) => {
+        event.preventDefault();
+        const delta = wheelDeltaPixels(event);
+        if (event.ctrlKey || event.metaKey) {
+            // also what browsers send for a trackpad pinch
+            const amount = Math.max(
+                -MAX_WHEEL_ZOOM_DELTA, Math.min(MAX_WHEEL_ZOOM_DELTA, delta.y));
+            zoomAround(Math.exp(-amount * ZOOM_PER_PIXEL),
+                       event.clientX, event.clientY);
+        } else {
+            const scale = panzoom.getScale();
+            const pan = panzoom.getPan();
+            panzoom.pan(pan.x - delta.x / scale, pan.y - delta.y / scale,
+                        {animate: false});
+        }
+    }, {passive: false});
+
+    // No pinch-to-zoom on touchscreens (use the buttons): Panzoom's own pinch
+    // handling assumes a centered transform origin, so with ours (top left) it
+    // zooms far too fast and in the wrong direction. Panzoom starts a pinch when it
+    // sees a second pointer, so we hide the extra touches from it (a single
+    // finger still pans). Window-level capture listeners run before Panzoom's.
+    const ignoredTouches = new Set();
+    for (const name of ['pointerdown', 'pointermove', 'pointerup', 'pointercancel']) {
+        window.addEventListener(name, (event) => {
+            if (event.pointerType !== 'touch') {
+                return;
+            }
+            if (name === 'pointerdown' && !event.isPrimary
+                && graphNav.contains(event.target)) {
+                ignoredTouches.add(event.pointerId);
+            }
+            // While several fingers are down, nothing moves (the first finger
+            // would otherwise pan the graph during a pinch).
+            if (ignoredTouches.has(event.pointerId)
+                || (name === 'pointermove' && ignoredTouches.size > 0)) {
+                event.stopImmediatePropagation();
+                if (name === 'pointerup' || name === 'pointercancel') {
+                    ignoredTouches.delete(event.pointerId);
+                }
+            }
+        }, true);
+    }
+
+    // Do not treat the end of a drag as a click on a node.
+    let pointerDownAt = null;
+    let dragged = false;
+    graphNav.addEventListener('pointerdown', (event) => {
+        pointerDownAt = {x: event.clientX, y: event.clientY};
+        dragged = false;
+        graphNav.classList.add('panning');
+    });
+    graphNav.addEventListener('pointermove', (event) => {
+        if (pointerDownAt && Math.hypot(
+            event.clientX - pointerDownAt.x, event.clientY - pointerDownAt.y) > 4) {
+            dragged = true;
+        }
+    });
+    for (const name of ['pointerup', 'pointercancel']) {
+        document.addEventListener(name, () => {
+            pointerDownAt = null;
+            graphNav.classList.remove('panning');
+            // The click (if any) is dispatched right after pointerup. If the
+            // pointer was released elsewhere there is none: do not let the flag
+            // swallow a later click.
+            setTimeout(() => { dragged = false; }, 0);
+        });
+    }
+    graphNav.addEventListener('click', (event) => {
+        if (dragged) {
+            event.preventDefault();
+            event.stopPropagation();
+            dragged = false;
+        }
+    }, true);
+
+    document.getElementById('zoom-in').addEventListener('click', () => zoomAtCenter(1.5));
+    document.getElementById('zoom-out').addEventListener('click', () => zoomAtCenter(1 / 1.5));
+    document.getElementById('zoom-reset').addEventListener('click', resetView);
+
+    // The size of the graph is known once it is drawn (immediately, unless the
+    // browser draws it). Panzoom resets the pan in a timeout of its own when it is
+    // created, so we must wait for it.
+    setTimeout(resetView, 0);
+    graphNav.addEventListener('graph-rendered', resetView);
+})();
+</script>
+
+</html>
