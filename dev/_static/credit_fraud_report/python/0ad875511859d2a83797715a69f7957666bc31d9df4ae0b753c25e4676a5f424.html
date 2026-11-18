@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<title>data_ops_report</title>
+<title>credit_fraud_with_choices</title>
 
 <!-- Prism.js (v1.29.0, MIT license) is vendored in prism-1.29.0/ so that this
      page is fully standalone and does not require a network connection.
@@ -55,109 +55,86 @@ pre[data-line]{position:relative;padding:1em 0 1em 3em}.line-highlight{position:
 </head>
 <body>
 
-    <h1><code>/home/circleci/project/doc/data_ops_report.py</code></h1>
+    <h1><code>credit_fraud_example_for_home_page/credit_fraud_with_choices.py</code></h1>
 
 <div class="code-scroll">
 <pre id="code-container" class="line-numbers" data-line=""><code class="language-python" id="code">from pathlib import Path
 
-from sklearn.ensemble import (
-    HistGradientBoostingClassifier,
-    HistGradientBoostingRegressor,
-)
+from sklearn.ensemble import HistGradientBoostingClassifier
 
 import skrub
-import skrub.datasets
-from skrub import TableVectorizer
-from skrub import selectors as s
 
 
-def create_credit_fraud_report():
-    output_dir = (
-        Path(__file__).parent / &#34;_build&#34; / &#34;html&#34; / &#34;_static&#34; / &#34;credit_fraud_report&#34;
+def create_report(output_dir):
+    &#34;&#34;&#34;Build the credit fraud pipeline and write its report and graph.
+
+    The report and the graph come from the same pipeline so that the graph, the
+    interactive report and the code snippet on the homepage always describe the
+    same pipeline.
+    &#34;&#34;&#34;
+    output_dir = Path(output_dir)
+    output_dir.mkdir(exist_ok=True, parents=True)
+
+    dataset = skrub.datasets.fetch_credit_fraud(split=&#34;train&#34;)
+
+    data_source = skrub.var(
+        &#34;data_source&#34;, {&#34;orders&#34;: dataset.baskets, &#34;products&#34;: dataset.products}
     )
-    if (output_dir / &#34;index.html&#34;).exists():
-        return output_dir
 
-    dataset = skrub.datasets.fetch_credit_fraud()
+    def load_orders(data_source, order_ids=None):
+        if order_ids is None:
+            return data_source[&#34;orders&#34;]
+        return (
+            data_source[&#34;orders&#34;].set_index(&#34;ID&#34;).loc[order_ids].reset_index(drop=False)
+        )
 
-    products = skrub.var(&#34;products&#34;, dataset.products)
-    baskets = skrub.var(&#34;baskets&#34;, dataset.baskets[[&#34;ID&#34;]]).skb.mark_as_X()
-    fraud_flags = skrub.var(
-        &#34;fraud_flags&#34;, dataset.baskets[&#34;fraud_flag&#34;]
-    ).skb.mark_as_y()
+    query = skrub.var(&#34;order_IDs&#34;, dataset[&#34;baskets&#34;][&#34;ID&#34;])
+    orders = data_source.skb.apply_func(load_orders, query)
+    order_ids = orders[[&#34;ID&#34;]].skb.mark_as_X()
+    fraud_flags = orders[&#34;fraud_flag&#34;].skb.mark_as_y()
 
-    products = products[products[&#34;basket_ID&#34;].isin(baskets[&#34;ID&#34;])]
-    products = products.assign(
-        total_price=products[&#34;Nbr_of_prod_purchas&#34;] * products[&#34;cash_price&#34;]
-    )
-    n = skrub.choose_int(5, 15, log=True, name=&#34;n_components&#34;)
+    def load_products(order_ids, data_source):
+        products = data_source[&#34;products&#34;]
+        return products[products[&#34;basket_ID&#34;].isin(order_ids[&#34;ID&#34;])]
+
     encoder = skrub.choose_from(
-        {
-            &#34;MinHash&#34;: skrub.MinHashEncoder(n_components=n),
-            &#34;LSA&#34;: skrub.StringEncoder(n_components=n),
-        },
-        name=&#34;encoder&#34;,
+        {&#34;bow&#34;: skrub.StringEncoder(), &#34;llm&#34;: skrub.LLMEncoder()}
     )
-    vectorizer = skrub.TableVectorizer(high_cardinality=encoder)
-
-    vectorized_products = products.skb.apply(vectorizer, cols=s.all() - &#34;basket_ID&#34;)
-
-    aggregated_products = (
-        vectorized_products.groupby(&#34;basket_ID&#34;).agg(&#34;mean&#34;).reset_index()
-    )
-    baskets = baskets.merge(
-        aggregated_products, left_on=&#34;ID&#34;, right_on=&#34;basket_ID&#34;
-    ).drop(columns=[&#34;ID&#34;, &#34;basket_ID&#34;])
-
-    hgb = HistGradientBoostingClassifier(
-        learning_rate=skrub.choose_float(0.01, 0.9, log=True, name=&#34;learning_rate&#34;)
-    )
-    predictions = baskets.skb.apply(hgb, y=fraud_flags)
-
-    predictions.skb.report(
-        output_dir=output_dir,
-        overwrite=True,
-        open=False,
+    vectorized_products = order_ids.skb.apply_func(
+        load_products, data_source
+    ).skb.apply(
+        skrub.TableVectorizer(high_cardinality=encoder),
+        exclude_cols=&#34;basket_ID&#34;,
     )
 
-    return output_dir
+    def join_orders_products(orders, vectorized_products, agg_func):
+        return orders.merge(
+            vectorized_products.groupby(&#34;basket_ID&#34;).agg(agg_func).reset_index(),
+            left_on=&#34;ID&#34;,
+            right_on=&#34;basket_ID&#34;,
+        ).drop(columns=[&#34;ID&#34;, &#34;basket_ID&#34;])
 
-
-def create_employee_salaries_report():
-    output_dir = (
-        Path(__file__).parent
-        / &#34;_build&#34;
-        / &#34;html&#34;
-        / &#34;_static&#34;
-        / &#34;employee_salaries_report&#34;
+    features = order_ids.skb.apply_func(
+        join_orders_products,
+        vectorized_products,
+        agg_func=skrub.choose_from([&#34;mean&#34;, &#34;sum&#34;]),
     )
-    if (output_dir / &#34;index.html&#34;).exists():
-        return output_dir
-
-    pred = (
-        skrub.var(&#34;employee_data&#34;)
-        .skb.apply(TableVectorizer())
-        .skb.apply(HistGradientBoostingRegressor(), y=skrub.var(&#34;salary&#34;))
+    pred = features.skb.apply(
+        HistGradientBoostingClassifier(
+            learning_rate=skrub.choose_float(0.01, 0.5, log=True)
+        ),
+        y=fraud_flags,
     )
-
-    dataset = skrub.datasets.fetch_employee_salaries(split=&#34;train&#34;)
 
     pred.skb.report(
-        {&#34;employee_data&#34;: dataset.X, &#34;salary&#34;: dataset.y},
         output_dir=output_dir,
         overwrite=True,
         open=False,
+        title=&#34;Credit fraud prediction&#34;,
     )
 
-    return output_dir
-
-
-def create_data_ops_report():
-    credit_fraud_folder = create_credit_fraud_report()
-    employee_salary_folder = create_employee_salaries_report()
-
-    assert (credit_fraud_folder / &#34;index.html&#34;).exists()
-    assert (employee_salary_folder / &#34;index.html&#34;).exists()
+    graph = pred.skb.draw_graph()
+    (output_dir / &#34;credit_fraud_graph.svg&#34;).write_bytes(graph.svg)
 </code></pre>
 </div>
 

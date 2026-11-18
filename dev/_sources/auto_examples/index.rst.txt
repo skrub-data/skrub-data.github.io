@@ -217,7 +217,7 @@ Skrub DataOps
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Multiples tables: building machine learning pipelines with DataOps</div>
+      <div class="sphx-glr-thumbnail-title">Multiple tables: building machine learning pipelines with DataOps</div>
     </div>
 
 

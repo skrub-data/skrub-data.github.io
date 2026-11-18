@@ -220,7 +220,7 @@
 - [Various string encoders: a sentiment analysis example](https://skrub-data.org/stable/_sources/auto_examples/01_encoding/0020_text_with_string_encoders.md)
 - [Handling datetime features with the DatetimeEncoder](https://skrub-data.org/stable/_sources/auto_examples/01_encoding/0030_datetime_encoder.md)
 - [Skrub DataOps](https://skrub-data.org/stable/_sources/auto_examples/02_data_ops/index.md)
-- [Multiples tables: building machine learning pipelines with DataOps](https://skrub-data.org/stable/_sources/auto_examples/02_data_ops/1120_multiple_tables.md)
+- [Multiple tables: building machine learning pipelines with DataOps](https://skrub-data.org/stable/_sources/auto_examples/02_data_ops/1120_multiple_tables.md)
 - [Hyperparameter tuning with DataOps](https://skrub-data.org/stable/_sources/auto_examples/02_data_ops/1130_choices.md)
 - [Tuning DataOps with Optuna](https://skrub-data.org/stable/_sources/auto_examples/02_data_ops/1131_optuna_choices.md)
 - [Subsampling for faster development](https://skrub-data.org/stable/_sources/auto_examples/02_data_ops/1140_subsampling.md)

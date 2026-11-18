@@ -975,7 +975,7 @@ a.param-doc-link::before {
   justify-content: center;
   margin-top: 0.5em;
 }
-</style><body><div id="sk-container-id-15" tabindex="0" class="sk-top-container sk-global"><div class="sk-text-repr-fallback"><pre>XySkrubLearner(learner=SkrubLearner(data_op=&lt;Concat: 4 tables&gt;))</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-70" type="checkbox" ><label for="sk-estimator-id-70" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>XySkrubLearner</div></div><div><span class="sk-estimator-doc-link ">i<span>Not fitted</span></span></div></label><div class="sk-toggleable_\_content " data-param-prefix="">
+</style><body><div id="sk-container-id-13" tabindex="0" class="sk-top-container sk-global"><div class="sk-text-repr-fallback"><pre>XySkrubLearner(learner=SkrubLearner(data_op=&lt;Concat: 4 tables&gt;))</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-63" type="checkbox" ><label for="sk-estimator-id-63" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>XySkrubLearner</div></div><div><span class="sk-estimator-doc-link ">i<span>Not fitted</span></span></div></label><div class="sk-toggleable_\_content " data-param-prefix="">
         <div class="estimator-table">
             <details>
                 <summary>Parameters</summary>
@@ -1029,7 +1029,7 @@ a.param-doc-link::before {
                 </table>
             </details>
         </div>
-    </div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-71" type="checkbox" ><label for="sk-estimator-id-71" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>learner: SkrubLearner</div></div></label><div class="sk-toggleable_\_content " data-param-prefix="learner_\_"><pre>SkrubLearner(data_op=&lt;Concat: 4 tables&gt;)</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-72" type="checkbox" ><label for="sk-estimator-id-72" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>SkrubLearner</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://skrub-data.org/stable/reference/generated/skrub.SkrubLearner.html">?<span>Documentation for SkrubLearner</span></a></div></label><div class="sk-toggleable_\_content " data-param-prefix="learner_\_"><div><div>
+    </div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-64" type="checkbox" ><label for="sk-estimator-id-64" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>learner: SkrubLearner</div></div></label><div class="sk-toggleable_\_content " data-param-prefix="learner_\_"><pre>SkrubLearner(data_op=&lt;Concat: 4 tables&gt;)</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-65" type="checkbox" ><label for="sk-estimator-id-65" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>SkrubLearner</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://skrub-data.org/stable/reference/generated/skrub.SkrubLearner.html">?<span>Documentation for SkrubLearner</span></a></div></label><div class="sk-toggleable_\_content " data-param-prefix="learner_\_"><div><div>
         <div class="estimator-table">
             <details>
                 <summary>Parameters</summary>
@@ -1410,7 +1410,7 @@ function forceTheme(elementId) {
     }
 }
 
-forceTheme('sk-container-id-15');</script></body>
+forceTheme('sk-container-id-13');</script></body>
 </div>
 <br />
 <br />
@@ -2134,9 +2134,9 @@ a.param-doc-link::before {
   justify-content: center;
   margin-top: 0.5em;
 }
-</style><body><div id="sk-container-id-16" tabindex="0" class="sk-top-container sk-global"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;tv&#x27;,
+</style><body><div id="sk-container-id-14" tabindex="0" class="sk-top-container sk-global"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;tv&#x27;,
                  XySkrubLearner(learner=SkrubLearner(data_op=&lt;Concat: 4 tables&gt;))),
-                (&#x27;hgb&#x27;, HistGradientBoostingRegressor())])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-73" type="checkbox" ><label for="sk-estimator-id-73" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>Pipeline</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link ">i<span>Not fitted</span></span></div></label><div class="sk-toggleable_\_content " data-param-prefix="">
+                (&#x27;hgb&#x27;, HistGradientBoostingRegressor())])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-66" type="checkbox" ><label for="sk-estimator-id-66" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>Pipeline</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link ">i<span>Not fitted</span></span></div></label><div class="sk-toggleable_\_content " data-param-prefix="">
         <div class="estimator-table">
             <details>
                 <summary>Parameters</summary>
@@ -2226,7 +2226,7 @@ a.param-doc-link::before {
                 </table>
             </details>
         </div>
-    </div></div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-74" type="checkbox" ><label for="sk-estimator-id-74" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>tv: XySkrubLearner</div></div></label><div class="sk-toggleable_\_content " data-param-prefix="tv_\_">
+    </div></div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-67" type="checkbox" ><label for="sk-estimator-id-67" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>tv: XySkrubLearner</div></div></label><div class="sk-toggleable_\_content " data-param-prefix="tv_\_">
         <div class="estimator-table">
             <details>
                 <summary>Parameters</summary>
@@ -2280,7 +2280,7 @@ a.param-doc-link::before {
                 </table>
             </details>
         </div>
-    </div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-75" type="checkbox" ><label for="sk-estimator-id-75" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>learner: SkrubLearner</div></div></label><div class="sk-toggleable_\_content " data-param-prefix="tv_\_learner_\_"><pre>SkrubLearner(data_op=&lt;Concat: 4 tables&gt;)</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-76" type="checkbox" ><label for="sk-estimator-id-76" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>SkrubLearner</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://skrub-data.org/stable/reference/generated/skrub.SkrubLearner.html">?<span>Documentation for SkrubLearner</span></a></div></label><div class="sk-toggleable_\_content " data-param-prefix="tv_\_learner_\_"><div><div>
+    </div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-68" type="checkbox" ><label for="sk-estimator-id-68" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>learner: SkrubLearner</div></div></label><div class="sk-toggleable_\_content " data-param-prefix="tv_\_learner_\_"><pre>SkrubLearner(data_op=&lt;Concat: 4 tables&gt;)</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-69" type="checkbox" ><label for="sk-estimator-id-69" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>SkrubLearner</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://skrub-data.org/stable/reference/generated/skrub.SkrubLearner.html">?<span>Documentation for SkrubLearner</span></a></div></label><div class="sk-toggleable_\_content " data-param-prefix="tv_\_learner_\_"><div><div>
         <div class="estimator-table">
             <details>
                 <summary>Parameters</summary>
@@ -2491,7 +2491,7 @@ a.param-doc-link::before {
 </g>
 </g>
 </svg>
-</div></div></div></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-77" type="checkbox" ><label for="sk-estimator-id-77" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>HistGradientBoostingRegressor</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a></div></label><div class="sk-toggleable_\_content " data-param-prefix="hgb_\_">
+</div></div></div></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable_\_control sk-hidden--visually sk-global" id="sk-estimator-id-70" type="checkbox" ><label for="sk-estimator-id-70" class="sk-toggleable_\_label  sk-toggleable_\_label-arrow"><div><div>HistGradientBoostingRegressor</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a></div></label><div class="sk-toggleable_\_content " data-param-prefix="hgb_\_">
         <div class="estimator-table">
             <details>
                 <summary>Parameters</summary>
@@ -3091,7 +3091,7 @@ function forceTheme(elementId) {
     }
 }
 
-forceTheme('sk-container-id-16');</script></body>
+forceTheme('sk-container-id-14');</script></body>
 </div>
 <br />
 <br />
@@ -3154,7 +3154,7 @@ In a future version of skrub this warning may become an exception.
 
   res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
 
-{'fit_time': array([1.32413483, 1.28604341, 1.30391741, 1.27128458, 1.28198457]), 'score_time': array([0.21381998, 0.21349788, 0.21263409, 0.21290255, 0.21196032]), 'test_score': array([-0.06975353, -0.0655087 , -0.0669843 , -0.07164151, -0.06533881])}
+{'fit_time': array([1.90925455, 1.87021971, 1.82358956, 1.92877769, 1.81078267]), 'score_time': array([0.30130839, 0.28757381, 0.36304808, 0.27262831, 0.3060801 ]), 'test_score': array([-0.06954843, -0.06715017, -0.06792663, -0.0715831 , -0.0659127 ])}
 ```
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 85-92 -->
@@ -3498,8 +3498,8 @@ In a future version of skrub this warning may become an exception.
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_e4e3f6bf-wrapper" hidden>
-    <template id="report_e4e3f6bf-template">
+<div id="report_12710854-wrapper" hidden>
+    <template id="report_12710854-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -4926,7 +4926,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="1c0f889a"
+                id="75efc5d5"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -4956,7 +4956,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="44dd20ce"
+                id="5ef3c18b"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -4990,7 +4990,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="d94fd725"
+                id="7cc4996f"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -5024,7 +5024,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="c5683a56"
+                id="e35bd658"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -5072,7 +5072,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="459a6b8d"
+                id="62cfd485"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -5100,7 +5100,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="634bd86f"
+                id="4b535c56"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5130,7 +5130,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="c4b98715"
+                id="ca2594ea"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5160,7 +5160,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="6bde399c"
+                id="cf783e23"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5181,12 +5181,12 @@ data-spans_\_0_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.907597648591748"
-                data-value-str="0.907597648591748"
+                data-value-repr="0.9057251167826961"
+                data-value-str="0.9057251167826961"
 
                 data-column-idx="2"
 
-                >0.908</td>
+                >0.906</td>
 
             </tr>
 
@@ -5194,7 +5194,7 @@ data-spans_\_0_\_2
 
 
                 <th
-                id="6bba793c"
+                id="d2c5c56e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -5222,7 +5222,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="509a3a34"
+                id="103bee47"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5252,7 +5252,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="afb61fa0"
+                id="c61b8302"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5282,7 +5282,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="03692d80"
+                id="97216c27"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5303,8 +5303,8 @@ data-spans_\_1_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.904091113597881"
-                data-value-str="0.904091113597881"
+                data-value-repr="0.9036306590019091"
+                data-value-str="0.9036306590019091"
 
                 data-column-idx="2"
 
@@ -5316,7 +5316,7 @@ data-spans_\_1_\_2
 
 
                 <th
-                id="7426f979"
+                id="1b6e6eda"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -5344,7 +5344,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="6882c827"
+                id="97757ecf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5374,7 +5374,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="2f456b0c"
+                id="8abda389"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5404,7 +5404,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="764e658e"
+                id="8bf82acb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5425,8 +5425,8 @@ data-spans_\_2_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.9014089756879194"
-                data-value-str="0.9014089756879194"
+                data-value-repr="0.9012076812535034"
+                data-value-str="0.9012076812535034"
 
                 data-column-idx="2"
 
@@ -5438,7 +5438,7 @@ data-spans_\_2_\_2
 
 
                 <th
-                id="a477a696"
+                id="7b901d7d"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -5466,7 +5466,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="0f1c3de7"
+                id="398a970c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5496,7 +5496,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="67fa0645"
+                id="c2ad7c5c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5526,7 +5526,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="cd7d7e0f"
+                id="2bcc2f28"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5547,12 +5547,12 @@ data-spans_\_3_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.890494530550556"
-                data-value-str="0.890494530550556"
+                data-value-repr="0.8889766408936752"
+                data-value-str="0.8889766408936752"
 
                 data-column-idx="2"
 
-                >0.890</td>
+                >0.889</td>
 
             </tr>
 
@@ -5560,7 +5560,7 @@ data-spans_\_3_\_2
 
 
                 <th
-                id="488cc504"
+                id="d46d8b4f"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -5588,7 +5588,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="bb7dcb87"
+                id="ac9cb8d4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5618,7 +5618,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="a2e5a96a"
+                id="fc885301"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5648,7 +5648,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="8fd4c2a9"
+                id="437901b4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5669,12 +5669,12 @@ data-spans_\_4_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.886280096233796"
-                data-value-str="0.886280096233796"
+                data-value-repr="0.8880619457523231"
+                data-value-str="0.8880619457523231"
 
                 data-column-idx="2"
 
-                >0.886</td>
+                >0.888</td>
 
             </tr>
 
@@ -5682,7 +5682,7 @@ data-spans_\_4_\_2
 
 
                 <th
-                id="43ca3d4d"
+                id="6729c09e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -5710,7 +5710,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="6df0213f"
+                id="408432c3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5740,7 +5740,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="514a068e"
+                id="9e42fdd9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5770,7 +5770,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="030bef16"
+                id="0c4ff6b6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5791,12 +5791,12 @@ data-spans_\_5_\_2
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.8857757812720486"
-                data-value-str="0.8857757812720486"
+                data-value-repr="0.8865091707771796"
+                data-value-str="0.8865091707771796"
 
                 data-column-idx="2"
 
-                >0.886</td>
+                >0.887</td>
 
             </tr>
 
@@ -6045,21 +6045,21 @@ data-spans_\_5_\_2
 
                 <dt>Mean ± Std</dt>
                 <dd>0.896 ±
-                    0.00958
+                    0.00874
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.890 ±
-                    0.0178
+                <dd>0.889 ±
+                    0.0156
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">0.886</span> |
-                    <span class="max-value">0.908</span>
+                    <span class="min-value">0.887</span> |
+                    <span class="max-value">0.906</span>
 
                 </dd>
 
@@ -6519,19 +6519,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.8959413576556582" data-numeric>
+                    <td data-value="0.8956852024102143" data-numeric>
                         0.896</td>
-                    <td data-value="0.009576317958763814" data-numeric>
-                        0.00958</td>
+                    <td data-value="0.00873780670254924" data-numeric>
+                        0.00874</td>
 
 
 
-                    <td data-value="0.8857757812720486" data-numeric>
-                        0.886</td>
-                    <td data-value="0.890494530550556" data-numeric>
-                        0.890</td>
-                    <td data-value="0.907597648591748" data-numeric>
-                        0.908</td>
+                    <td data-value="0.8865091707771796" data-numeric>
+                        0.887</td>
+                    <td data-value="0.8889766408936752" data-numeric>
+                        0.889</td>
+                    <td data-value="0.9057251167826961" data-numeric>
+                        0.906</td>
 
 
                 </tr>
@@ -6564,7 +6564,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_e4e3f6bf">
+    <skrub-table-report class="report" id="report_12710854">
     </skrub-table-report>
 
     <script type="module">
@@ -7668,7 +7668,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_e4e3f6bf-wrapper-fallback">
+<div id="report_12710854-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -7679,8 +7679,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_e4e3f6bf-wrapper").removeAttribute("hidden");
- document.getElementById("report_e4e3f6bf-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_12710854-wrapper").removeAttribute("hidden");
+ document.getElementById("report_12710854-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -7777,8 +7777,8 @@ pred
 <br />
 <br />
 
-**Total running time of the script:** (1 minutes 0.617 seconds)
+**Total running time of the script:** (1 minutes 28.076 seconds)
 
-**Estimated memory usage:**  578 MB
+**Estimated memory usage:**  607 MB
 
 <a id="sphx-glr-download-auto-examples-02-data-ops-1170-sklearn-interface-learner-py"></a>

@@ -193,7 +193,7 @@ Finally, there are other situations where using [`deferred()`](../../../referenc
 
 - See [Quick overview of DataOps](../../../auto_tutorials/1111_data_ops_quick_tourhtml.md#sphx-glr-auto-tutorials-1111-data-ops-quick-tour-py) for an introductory
   example on how to use skrub DataOps on a single dataframe.
-- See [Multiples tables: building machine learning pipelines with DataOps](../../../auto_examples/02_data_ops/1120_multiple_tableshtml.md#sphx-glr-auto-examples-02-data-ops-1120-multiple-tables-py) for an example
+- See [Multiple tables: building machine learning pipelines with DataOps](../../../auto_examples/02_data_ops/1120_multiple_tableshtml.md#sphx-glr-auto-examples-02-data-ops-1120-multiple-tables-py) for an example
   of how skrub DataOps can be used to process multiple tables using dataframe APIs.
 - See [Hyperparameter tuning with DataOps](../../../auto_examples/02_data_ops/1130_choiceshtml.md#sphx-glr-auto-examples-02-data-ops-1130-choices-py) for an example of
   hyper-parameter tuning using skrub DataOps.
