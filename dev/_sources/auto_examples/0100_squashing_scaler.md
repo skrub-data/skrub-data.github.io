@@ -232,7 +232,7 @@ On the employee salaries dataset, the [`SquashingScaler`](../reference/generated
 better than [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler) and [`QuantileTransformer`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html#sklearn.preprocessing.QuantileTransformer) on all
 cross-validation folds.
 
-**Total running time of the script:** (0 minutes 24.451 seconds)
+**Total running time of the script:** (0 minutes 27.083 seconds)
 
 **Estimated memory usage:**  558 MB
 

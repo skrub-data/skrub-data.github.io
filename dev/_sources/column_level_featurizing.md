@@ -173,6 +173,3 @@ it 'style' --> <script>
 * [Parsing and scaling numeric features](modules/column_level_featurizing/feature_engineering_numericalhtml.md)
   * [Converting heterogeneous numeric values to uniform float32](modules/column_level_featurizing/feature_engineering_numericalhtml.md#converting-heterogeneous-numeric-values-to-uniform-float32)
   * [Robust scaling of numeric features using `SquashingScaler`](modules/column_level_featurizing/feature_engineering_numericalhtml.md#robust-scaling-of-numeric-features-using-squashingscaler)
-* [Advanced columnwise operations](modules/column_level_featurizing/advanced_columnwise_operationshtml.md)
-  * [The single column transformer](modules/column_level_featurizing/advanced_columnwise_operationshtml.md#the-single-column-transformer)
-  * [Rejection handling with `ApplyToCols` and `core.RejectColumn`](modules/column_level_featurizing/advanced_columnwise_operationshtml.md#rejection-handling-with-applytocols-and-rejectcolumn)

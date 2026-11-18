@@ -129,8 +129,8 @@ ground truth and we can compare them.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_920e9060-wrapper" hidden>
-        <template id="report_920e9060-template">
+    <div id="report_8ff453fe-wrapper" hidden>
+        <template id="report_8ff453fe-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1557,7 +1557,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="dd1f77bd"
+                    id="8534ce8f"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -1587,7 +1587,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="645ad27f"
+                    id="2a353361"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1621,7 +1621,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="02279365"
+                    id="d43271cc"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1655,7 +1655,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="396dbdc3"
+                    id="00c524e3"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1689,7 +1689,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="0dad9727"
+                    id="9c112f05"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1723,7 +1723,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="7edf20c3"
+                    id="530c4573"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1757,7 +1757,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="1722180c"
+                    id="912ae4b1"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1805,7 +1805,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="30d9e47c"
+                    id="48d0db73"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1833,7 +1833,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="d9ce26bd"
+                    id="ec6dfb3b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1863,7 +1863,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="10e4a3da"
+                    id="8be25e4d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1893,7 +1893,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="8ef56999"
+                    id="cab4de59"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1923,7 +1923,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="54d38062"
+                    id="a44ab523"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1953,7 +1953,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="b7770ae1"
+                    id="34a5e58c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1983,7 +1983,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="094ba7cb"
+                    id="1e35f578"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2017,7 +2017,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="9c7badfe"
+                    id="d7f2a552"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2045,7 +2045,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="9d964ba1"
+                    id="b2970b69"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2075,7 +2075,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="c15bbecf"
+                    id="09b6e52c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2105,7 +2105,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="5b861d82"
+                    id="4c80c0b4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2135,7 +2135,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="924b1607"
+                    id="3e4c0620"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2165,7 +2165,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="63e79a08"
+                    id="2a6d9e77"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2195,7 +2195,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="ac1de6a4"
+                    id="ad333333"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2229,7 +2229,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="51a36963"
+                    id="118a4ad0"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2257,7 +2257,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="98680eaa"
+                    id="17a3bb5e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2287,7 +2287,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="ffb3107c"
+                    id="2a7275e5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2317,7 +2317,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="dbd820f2"
+                    id="84912ad2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2347,7 +2347,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="407aabaf"
+                    id="41421c75"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2377,7 +2377,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="23742b1f"
+                    id="0c68cf0f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2407,7 +2407,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="d15a0bbb"
+                    id="da59afaa"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2441,7 +2441,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="fcfc38cc"
+                    id="751b151a"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2469,7 +2469,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="b9ce807e"
+                    id="2179ed2b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2499,7 +2499,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="94d2073e"
+                    id="833522ee"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2529,7 +2529,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="09f0c017"
+                    id="a4991aed"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2559,7 +2559,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="b17f6f08"
+                    id="7e42368c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2589,7 +2589,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="d7e67897"
+                    id="d5070888"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2619,7 +2619,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="3fd7e94e"
+                    id="55004e9a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2653,7 +2653,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="0b169225"
+                    id="ffc4bdb4"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2681,7 +2681,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="5c21e48b"
+                    id="8f635028"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2711,7 +2711,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="22618a1c"
+                    id="9ddfdd00"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2741,7 +2741,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="df88726a"
+                    id="531a992f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2771,7 +2771,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="4a0a5b4a"
+                    id="796f0566"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2801,7 +2801,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="1db27903"
+                    id="92427b41"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2831,7 +2831,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="fb356c12"
+                    id="29809901"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3907,7 +3907,7 @@ ground truth and we can compare them.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_920e9060">
+        <skrub-table-report class="report" id="report_8ff453fe">
         </skrub-table-report>
 
         <script type="module">
@@ -5011,7 +5011,7 @@ ground truth and we can compare them.
         </script>
     </div>
 
-    <div id="report_920e9060-wrapper-fallback">
+    <div id="report_8ff453fe-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -5022,8 +5022,8 @@ ground truth and we can compare them.
     </div>
 
     <script>
-     document.getElementById("report_920e9060-wrapper").removeAttribute("hidden");
-     document.getElementById("report_920e9060-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_8ff453fe-wrapper").removeAttribute("hidden");
+     document.getElementById("report_8ff453fe-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -5046,8 +5046,8 @@ ground truth and we can compare them.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_87545d69-wrapper" hidden>
-        <template id="report_87545d69-template">
+    <div id="report_167da2dc-wrapper" hidden>
+        <template id="report_167da2dc-template">
             <style>
              /*!
     Pure v3.0.0
@@ -6474,7 +6474,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="20d629c9"
+                    id="44393e1e"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -6504,7 +6504,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="ca883c98"
+                    id="ce41bfc5"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6538,7 +6538,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="b6c17ff1"
+                    id="104d2c17"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6572,7 +6572,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="b6fa16db"
+                    id="edd96e5e"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6606,7 +6606,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="1768499b"
+                    id="7d186933"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6640,7 +6640,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="8b59efdc"
+                    id="a1d86379"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6674,7 +6674,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="43b6cad2"
+                    id="c69686d6"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6722,7 +6722,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="26ff359c"
+                    id="7314c0f2"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6750,7 +6750,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="07be5b6f"
+                    id="1ae1a10d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6780,7 +6780,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="7f4fca94"
+                    id="6064446f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6810,7 +6810,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="41859117"
+                    id="f9c4a560"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6840,7 +6840,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="9ff71494"
+                    id="8171278e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6870,7 +6870,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="2a5916d4"
+                    id="d708489a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6900,7 +6900,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="b24c2e3f"
+                    id="0a5c2b73"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6934,7 +6934,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="d5502bc1"
+                    id="e7afc943"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6962,7 +6962,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="32d8707c"
+                    id="3958d25d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6992,7 +6992,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="0fdf9e4b"
+                    id="10fa6008"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7022,7 +7022,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="ead5f2f1"
+                    id="1c5bef3a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7052,7 +7052,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="963b965c"
+                    id="5980c88b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7082,7 +7082,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="2e3b5ab0"
+                    id="28234863"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7112,7 +7112,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="2d1b8c16"
+                    id="aa99cc52"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7146,7 +7146,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="a1074312"
+                    id="6cc4f870"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7174,7 +7174,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="d6f7f5b1"
+                    id="19bcbadc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7204,7 +7204,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="6e094162"
+                    id="4768883b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7234,7 +7234,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="ba159889"
+                    id="08e317c0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7264,7 +7264,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="9029625d"
+                    id="39cbb5ae"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7294,7 +7294,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="425f1f15"
+                    id="96f3650a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7324,7 +7324,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="a430ebc6"
+                    id="8765c1e8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7358,7 +7358,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="8c6dbd81"
+                    id="c63c0fe4"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7386,7 +7386,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="abdd0903"
+                    id="ea9ac134"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7416,7 +7416,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="72473982"
+                    id="14ee812c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7446,7 +7446,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="da1c871d"
+                    id="35909ac0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7476,7 +7476,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="74999d08"
+                    id="1f5b466a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7506,7 +7506,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="1909466d"
+                    id="6d646672"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7536,7 +7536,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="01710c87"
+                    id="9e32d143"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7570,7 +7570,7 @@ ground truth and we can compare them.
                 
                 
                     <th
-                    id="02f69145"
+                    id="98d9bf34"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7598,7 +7598,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="79b538c0"
+                    id="d27f4d1d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7628,7 +7628,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="6e675d25"
+                    id="935cb336"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7658,7 +7658,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="d5a1ccc7"
+                    id="aa891d21"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7688,7 +7688,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="3e3710a4"
+                    id="5e1d4340"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7718,7 +7718,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="e50739bc"
+                    id="f9940b0e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7748,7 +7748,7 @@ ground truth and we can compare them.
                 
                 
                     <td
-                    id="cfe84b51"
+                    id="618f21a4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8814,7 +8814,7 @@ ground truth and we can compare them.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_87545d69">
+        <skrub-table-report class="report" id="report_167da2dc">
         </skrub-table-report>
 
         <script type="module">
@@ -9918,7 +9918,7 @@ ground truth and we can compare them.
         </script>
     </div>
 
-    <div id="report_87545d69-wrapper-fallback">
+    <div id="report_167da2dc-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -9929,8 +9929,8 @@ ground truth and we can compare them.
     </div>
 
     <script>
-     document.getElementById("report_87545d69-wrapper").removeAttribute("hidden");
-     document.getElementById("report_87545d69-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_167da2dc-wrapper").removeAttribute("hidden");
+     document.getElementById("report_167da2dc-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -9969,8 +9969,8 @@ to the right side table column names.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_8ba8ab6a-wrapper" hidden>
-        <template id="report_8ba8ab6a-template">
+    <div id="report_2023ebb5-wrapper" hidden>
+        <template id="report_2023ebb5-template">
             <style>
              /*!
     Pure v3.0.0
@@ -11397,7 +11397,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="a3af099d"
+                    id="d9f270c0"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -11427,7 +11427,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="066fd607"
+                    id="9960cb75"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11461,7 +11461,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="5f809a7c"
+                    id="faac9dd4"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11495,7 +11495,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="1c56f67b"
+                    id="33502a0a"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11529,7 +11529,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="e6a82eb5"
+                    id="6ca525b1"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11563,7 +11563,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="7e36dfae"
+                    id="de231ff1"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11597,7 +11597,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="0fbbaf1a"
+                    id="fc52f9b2"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11631,7 +11631,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="7c412257"
+                    id="f46cc037"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11665,7 +11665,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="3f854f62"
+                    id="d5e7b6ea"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11699,7 +11699,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="5eb8a6c2"
+                    id="5d2aaa8c"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11747,7 +11747,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="1c191085"
+                    id="16382180"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11775,7 +11775,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="9251a55a"
+                    id="c5f6a7f4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11805,7 +11805,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="80fbbbe5"
+                    id="77c15537"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11835,7 +11835,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="fc75c775"
+                    id="d2b9b9d7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11865,7 +11865,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="73634028"
+                    id="0846c35f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11895,7 +11895,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="c80371a2"
+                    id="72c7f39b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11925,7 +11925,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="b697c8d9"
+                    id="b422118f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11955,7 +11955,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="b6f52620"
+                    id="6dcbfcb6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11976,16 +11976,16 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="23.814411933294853"
-                    data-value-str="23.814411933294853"
+                    data-value-repr="22.080080178712375"
+                    data-value-str="22.080080178712375"
                 
                     data-column-idx="6"
                 
-                    >23.8</td>
+                    >22.1</td>
                 
                 
                     <td
-                    id="dc888eb2"
+                    id="97bcd5f6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12006,16 +12006,16 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="20.35413081412189"
-                    data-value-str="20.35413081412189"
+                    data-value-repr="17.630656981400506"
+                    data-value-str="17.630656981400506"
                 
                     data-column-idx="7"
                 
-                    >20.4</td>
+                    >17.6</td>
                 
                 
                     <td
-                    id="147473c6"
+                    id="667b46b1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12036,12 +12036,12 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.08715529904303695"
-                    data-value-str="0.08715529904303695"
+                    data-value-repr="0.3032234446188063"
+                    data-value-str="0.3032234446188063"
                 
                     data-column-idx="8"
                 
-                    >0.0872</td>
+                    >0.303</td>
                 
                 </tr>
             
@@ -12049,7 +12049,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="8f722549"
+                    id="fcf68acb"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -12077,7 +12077,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="c0e1dcce"
+                    id="8df51a5c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12107,7 +12107,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="10aa47b8"
+                    id="05d2aa46"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12137,7 +12137,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="f71b17cd"
+                    id="e581bd81"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12167,7 +12167,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="f8f7df56"
+                    id="22be3a28"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12197,7 +12197,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="a792152a"
+                    id="8e9a4fd4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12227,7 +12227,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="06a217f1"
+                    id="6159bde4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12257,7 +12257,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="3fa5b334"
+                    id="0ef7b1a5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12278,16 +12278,16 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="31.968683215682987"
-                    data-value-str="31.968683215682987"
+                    data-value-repr="29.43307969873047"
+                    data-value-str="29.43307969873047"
                 
                     data-column-idx="6"
                 
-                    >32.0</td>
+                    >29.4</td>
                 
                 
                     <td
-                    id="69ca5a3f"
+                    id="7a4c926b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12308,16 +12308,16 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="20.632464070774475"
-                    data-value-str="20.632464070774475"
+                    data-value-repr="30.32867770581438"
+                    data-value-str="30.32867770581438"
                 
                     data-column-idx="7"
                 
-                    >20.6</td>
+                    >30.3</td>
                 
                 
                     <td
-                    id="9edfde87"
+                    id="beabc590"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12338,12 +12338,12 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="-0.08552406279437039"
-                    data-value-str="-0.08552406279437039"
+                    data-value-repr="0.08318506884050751"
+                    data-value-str="0.08318506884050751"
                 
                     data-column-idx="8"
                 
-                    >-0.0855</td>
+                    >0.0832</td>
                 
                 </tr>
             
@@ -12351,7 +12351,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="e74b1e5a"
+                    id="16e047e1"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -12379,7 +12379,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="b882996f"
+                    id="94d7ddde"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12409,7 +12409,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="e23779fc"
+                    id="75247ae6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12439,7 +12439,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="b6a83a19"
+                    id="6c1802ea"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12469,7 +12469,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="a4f1f5e1"
+                    id="bbe8ee5e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12499,7 +12499,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="2026d47d"
+                    id="f939cd70"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12529,7 +12529,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="d41302a1"
+                    id="276dfc9f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12559,7 +12559,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="8805d20f"
+                    id="ee134fce"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12580,16 +12580,16 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="29.154581126425164"
-                    data-value-str="29.154581126425164"
+                    data-value-repr="25.31376741915142"
+                    data-value-str="25.31376741915142"
                 
                     data-column-idx="6"
                 
-                    >29.2</td>
+                    >25.3</td>
                 
                 
                     <td
-                    id="89b32504"
+                    id="a2830d0a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12610,16 +12610,16 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="25.844471085716204"
-                    data-value-str="25.844471085716204"
+                    data-value-repr="22.891128450605077"
+                    data-value-str="22.891128450605077"
                 
                     data-column-idx="7"
                 
-                    >25.8</td>
+                    >22.9</td>
                 
                 
                     <td
-                    id="f3ef7b9f"
+                    id="ee039e93"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12640,12 +12640,12 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.09196184416621253"
-                    data-value-str="0.09196184416621253"
+                    data-value-repr="0.559763303139956"
+                    data-value-str="0.559763303139956"
                 
                     data-column-idx="8"
                 
-                    >0.0920</td>
+                    >0.560</td>
                 
                 </tr>
             
@@ -12653,7 +12653,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="a1c77284"
+                    id="e33c978c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -12681,7 +12681,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="263f3b03"
+                    id="86b7ccc2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12711,7 +12711,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="73db2f2c"
+                    id="8f2742e5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12741,7 +12741,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="78b0f303"
+                    id="ed2a7c4a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12771,7 +12771,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="17ed79fc"
+                    id="47da2996"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12801,7 +12801,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="f1989e29"
+                    id="45ffb880"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12831,7 +12831,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="6343ed66"
+                    id="a1d72974"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12861,7 +12861,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="b5781a3d"
+                    id="48f8f926"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12882,16 +12882,16 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="31.14118418409165"
-                    data-value-str="31.14118418409165"
+                    data-value-repr="30.072710670374114"
+                    data-value-str="30.072710670374114"
                 
                     data-column-idx="6"
                 
-                    >31.1</td>
+                    >30.1</td>
                 
                 
                     <td
-                    id="37589ad3"
+                    id="bfbb58c1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12912,16 +12912,16 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="41.332667292336936"
-                    data-value-str="41.332667292336936"
+                    data-value-repr="11.177801818479097"
+                    data-value-str="11.177801818479097"
                 
                     data-column-idx="7"
                 
-                    >41.3</td>
+                    >11.2</td>
                 
                 
                     <td
-                    id="47476bc6"
+                    id="608dcf11"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12942,12 +12942,12 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="-0.017370816429972975"
-                    data-value-str="-0.017370816429972975"
+                    data-value-repr="0.08318506884050751"
+                    data-value-str="0.08318506884050751"
                 
                     data-column-idx="8"
                 
-                    >-0.0174</td>
+                    >0.0832</td>
                 
                 </tr>
             
@@ -12955,7 +12955,7 @@ to the right side table column names.
                 
                 
                     <th
-                    id="c75f27db"
+                    id="56cfd9e7"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -12983,7 +12983,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="29e62fd0"
+                    id="4741058b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13013,7 +13013,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="a768334c"
+                    id="e02fb5f1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13043,7 +13043,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="932db8f2"
+                    id="cd785dca"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13073,7 +13073,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="3c7c8a12"
+                    id="c589fc27"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13103,7 +13103,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="8a779538"
+                    id="ec6ac1dc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13133,7 +13133,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="2a241437"
+                    id="237cc6ec"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13163,7 +13163,7 @@ to the right side table column names.
                 
                 
                     <td
-                    id="aea2d0a3"
+                    id="9d59334d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13184,16 +13184,16 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="28.894988551584294"
-                    data-value-str="28.894988551584294"
+                    data-value-repr="25.47367249530835"
+                    data-value-str="25.47367249530835"
                 
                     data-column-idx="6"
                 
-                    >28.9</td>
+                    >25.5</td>
                 
                 
                     <td
-                    id="58f78f45"
+                    id="7891cc4a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13214,16 +13214,16 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="25.021764645346163"
-                    data-value-str="25.021764645346163"
+                    data-value-repr="21.252781928546458"
+                    data-value-str="21.252781928546458"
                 
                     data-column-idx="7"
                 
-                    >25.0</td>
+                    >21.3</td>
                 
                 
                     <td
-                    id="c01ff930"
+                    id="3c978f3f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13244,12 +13244,12 @@ to the right side table column names.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="-0.03283213463490254"
-                    data-value-str="-0.03283213463490254"
+                    data-value-repr="0.12307848842150775"
+                    data-value-str="0.12307848842150775"
                 
                     data-column-idx="8"
                 
-                    >-0.0328</td>
+                    >0.123</td>
                 
                 </tr>
             
@@ -13765,22 +13765,22 @@ to the right side table column names.
 
                 
                     <dt>Mean ± Std</dt>
-                    <dd>29.0 ±
-                        3.18
+                    <dd>26.5 ±
+                        3.29
                     
                     </dd>
                 
                 
                     <dt>Median ± IQR</dt>
-                    <dd>29.2 ±
-                        2.25
+                    <dd>25.5 ±
+                        4.12
                     
                     </dd>
 
                     <dt>Min | Max</dt>
                     <dd>
-                        <span class="min-value">23.8</span> |
-                        <span class="max-value">32.0</span>
+                        <span class="min-value">22.1</span> |
+                        <span class="max-value">30.1</span>
                     
                     </dd>
                 
@@ -13843,22 +13843,22 @@ to the right side table column names.
 
                 
                     <dt>Mean ± Std</dt>
-                    <dd>26.6 ±
-                        8.58
+                    <dd>20.7 ±
+                        7.03
                     
                     </dd>
                 
                 
                     <dt>Median ± IQR</dt>
-                    <dd>25.0 ±
-                        5.21
+                    <dd>21.3 ±
+                        5.26
                     
                     </dd>
 
                     <dt>Min | Max</dt>
                     <dd>
-                        <span class="min-value">20.4</span> |
-                        <span class="max-value">41.3</span>
+                        <span class="min-value">11.2</span> |
+                        <span class="max-value">30.3</span>
                     
                     </dd>
                 
@@ -13910,7 +13910,7 @@ to the right side table column names.
                 
                     <dt>Unique values</dt>
                     <dd>
-                        5 (100.0%)
+                        4 (80.0%)
                     
                     </dd>
                 
@@ -13921,22 +13921,22 @@ to the right side table column names.
 
                 
                     <dt>Mean ± Std</dt>
-                    <dd>0.00868 ±
-                        0.0781
+                    <dd>0.230 ±
+                        0.205
                     
                     </dd>
                 
                 
                     <dt>Median ± IQR</dt>
-                    <dd>-0.0174 ±
-                        0.120
+                    <dd>0.123 ±
+                        0.220
                     
                     </dd>
 
                     <dt>Min | Max</dt>
                     <dd>
-                        <span class="min-value">-0.0855</span> |
-                        <span class="max-value">0.0920</span>
+                        <span class="min-value">0.0832</span> |
+                        <span class="max-value">0.560</span>
                     
                     </dd>
                 
@@ -14523,19 +14523,19 @@ to the right side table column names.
                     
 
                     
-                        <td data-value="28.994769802215792" data-numeric>
-                            29.0</td>
-                        <td data-value="3.1750141455172236" data-numeric>
-                            3.18</td>
+                        <td data-value="26.474662092455343" data-numeric>
+                            26.5</td>
+                        <td data-value="3.292422934363106" data-numeric>
+                            3.29</td>
                     
 
                     
-                        <td data-value="23.814411933294853" data-numeric>
-                            23.8</td>
-                        <td data-value="29.154581126425164" data-numeric>
-                            29.2</td>
-                        <td data-value="31.968683215682987" data-numeric>
-                            32.0</td>
+                        <td data-value="22.080080178712375" data-numeric>
+                            22.1</td>
+                        <td data-value="25.47367249530835" data-numeric>
+                            25.5</td>
+                        <td data-value="30.072710670374114" data-numeric>
+                            30.1</td>
                     
 
                     </tr>
@@ -14558,19 +14558,19 @@ to the right side table column names.
                     
 
                     
-                        <td data-value="26.637099581659136" data-numeric>
-                            26.6</td>
-                        <td data-value="8.583831041274571" data-numeric>
-                            8.58</td>
+                        <td data-value="20.6562093769691" data-numeric>
+                            20.7</td>
+                        <td data-value="7.033874870771509" data-numeric>
+                            7.03</td>
                     
 
                     
-                        <td data-value="20.35413081412189" data-numeric>
-                            20.4</td>
-                        <td data-value="25.021764645346163" data-numeric>
-                            25.0</td>
-                        <td data-value="41.332667292336936" data-numeric>
-                            41.3</td>
+                        <td data-value="11.177801818479097" data-numeric>
+                            11.2</td>
+                        <td data-value="21.252781928546458" data-numeric>
+                            21.3</td>
+                        <td data-value="30.32867770581438" data-numeric>
+                            30.3</td>
                     
 
                     </tr>
@@ -14587,25 +14587,25 @@ to the right side table column names.
                         </td>
 
                     
-                        <td data-value="5" data-numeric>
-                            5 (100.0%)
+                        <td data-value="4" data-numeric>
+                            4 (80.0%)
                         </td>
                     
 
                     
-                        <td data-value="0.008678025870000718" data-numeric>
-                            0.00868</td>
-                        <td data-value="0.07805534240798886" data-numeric>
-                            0.0781</td>
+                        <td data-value="0.23048707477225702" data-numeric>
+                            0.230</td>
+                        <td data-value="0.20533252323451573" data-numeric>
+                            0.205</td>
                     
 
                     
-                        <td data-value="-0.08552406279437039" data-numeric>
-                            -0.0855</td>
-                        <td data-value="-0.017370816429972975" data-numeric>
-                            -0.0174</td>
-                        <td data-value="0.09196184416621253" data-numeric>
-                            0.0920</td>
+                        <td data-value="0.08318506884050751" data-numeric>
+                            0.0832</td>
+                        <td data-value="0.12307848842150775" data-numeric>
+                            0.123</td>
+                        <td data-value="0.559763303139956" data-numeric>
+                            0.560</td>
                     
 
                     </tr>
@@ -14638,7 +14638,7 @@ to the right side table column names.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_8ba8ab6a">
+        <skrub-table-report class="report" id="report_2023ebb5">
         </skrub-table-report>
 
         <script type="module">
@@ -15742,7 +15742,7 @@ to the right side table column names.
         </script>
     </div>
 
-    <div id="report_8ba8ab6a-wrapper-fallback">
+    <div id="report_2023ebb5-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -15753,8 +15753,8 @@ to the right side table column names.
     </div>
 
     <script>
-     document.getElementById("report_8ba8ab6a-wrapper").removeAttribute("hidden");
-     document.getElementById("report_8ba8ab6a-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_2023ebb5-wrapper").removeAttribute("hidden");
+     document.getElementById("report_2023ebb5-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -15901,8 +15901,8 @@ maximum daily temperature.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_ec22edb9-wrapper" hidden>
-        <template id="report_ec22edb9-template">
+    <div id="report_c1b075f4-wrapper" hidden>
+        <template id="report_c1b075f4-template">
             <style>
              /*!
     Pure v3.0.0
@@ -17329,7 +17329,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="c087af16"
+                    id="540c59cb"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -17359,7 +17359,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="4e250946"
+                    id="27159d2c"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -17393,7 +17393,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="5a00a7e7"
+                    id="f88b91a4"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -17427,7 +17427,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="4b2cd279"
+                    id="4610cdcd"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -17461,7 +17461,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="271ef224"
+                    id="61cec13a"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -17495,7 +17495,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="b6d9245e"
+                    id="97a324dc"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -17529,7 +17529,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="86297d8e"
+                    id="671fea54"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -17563,7 +17563,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="e6f2afb3"
+                    id="3dcc8836"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -17597,7 +17597,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="92da352a"
+                    id="fec42384"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -17631,7 +17631,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="7d3f09c1"
+                    id="b9a6426b"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -17679,7 +17679,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="025d5431"
+                    id="17c246b2"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -17707,7 +17707,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="b63f048d"
+                    id="1e29972a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17737,7 +17737,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="8bbb80cb"
+                    id="cb61729e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17767,7 +17767,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="4c53f6c0"
+                    id="c25ec1db"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17797,7 +17797,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="47eb1446"
+                    id="f5432d6b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17827,7 +17827,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="0974be7f"
+                    id="e5cfa542"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17857,7 +17857,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="d87a17a5"
+                    id="690f7bcb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17887,7 +17887,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="3c2cab6d"
+                    id="c73d2cc1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17917,7 +17917,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="ea524fb0"
+                    id="27fe88a5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17947,7 +17947,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="52939eb5"
+                    id="f7309008"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17968,12 +17968,12 @@ maximum daily temperature.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="-2.354662238697354"
-                    data-value-str="-2.354662238697354"
+                    data-value-repr="-2.9352398466126908"
+                    data-value-str="-2.9352398466126908"
                 
                     data-column-idx="8"
                 
-                    >-2.35</td>
+                    >-2.94</td>
                 
                 </tr>
             
@@ -17981,7 +17981,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="7e5c8e35"
+                    id="aea64010"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -18009,7 +18009,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="b47c17e8"
+                    id="15a320c1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18039,7 +18039,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="a3d79861"
+                    id="9e6cc614"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18069,7 +18069,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="b76a8411"
+                    id="e8752169"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18099,7 +18099,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="be7e377a"
+                    id="e3a6b0f1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18129,7 +18129,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="48fc4980"
+                    id="1424a894"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18159,7 +18159,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="28e38789"
+                    id="1681002d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18189,7 +18189,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="9918a9aa"
+                    id="33b1d7ba"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18219,7 +18219,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="f8148ffd"
+                    id="e49e78f5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18249,7 +18249,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="1c0ba8b3"
+                    id="4ab9cc3b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18270,12 +18270,12 @@ maximum daily temperature.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="16.108575305749774"
-                    data-value-str="16.108575305749774"
+                    data-value-repr="17.33827363489784"
+                    data-value-str="17.33827363489784"
                 
                     data-column-idx="8"
                 
-                    >16.1</td>
+                    >17.3</td>
                 
                 </tr>
             
@@ -18283,7 +18283,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="845d0d3f"
+                    id="4a01086c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -18311,7 +18311,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="da90eaee"
+                    id="c53da070"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18341,7 +18341,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="2910eb68"
+                    id="1bfa6781"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18371,7 +18371,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="882e049b"
+                    id="66bf7bf2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18401,7 +18401,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="c36f4c4f"
+                    id="8999ed5b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18431,7 +18431,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="3038c5d1"
+                    id="efd1f647"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18461,7 +18461,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="2c6c56f5"
+                    id="9292f73c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18491,7 +18491,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="2c653128"
+                    id="d32dc8fc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18521,7 +18521,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="854565db"
+                    id="97b3bc36"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18551,7 +18551,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="7c6819d5"
+                    id="c44369e3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18572,12 +18572,12 @@ maximum daily temperature.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="17.950287752659893"
-                    data-value-str="17.950287752659893"
+                    data-value-repr="17.44927551884333"
+                    data-value-str="17.44927551884333"
                 
                     data-column-idx="8"
                 
-                    >18.0</td>
+                    >17.4</td>
                 
                 </tr>
             
@@ -18585,7 +18585,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="91aee4f7"
+                    id="436b9da7"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -18613,7 +18613,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="ff5a467e"
+                    id="60edc2b6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18643,7 +18643,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="0bcd3c56"
+                    id="141519ba"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18673,7 +18673,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="560b186e"
+                    id="2a97d8d3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18703,7 +18703,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="acc27801"
+                    id="436e03ad"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18733,7 +18733,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="202037f4"
+                    id="cb29ac96"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18763,7 +18763,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="3593971d"
+                    id="c184401c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18793,7 +18793,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="66c7b0dc"
+                    id="2ba536eb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18823,7 +18823,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="8ec1b72a"
+                    id="37575da7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18853,7 +18853,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="79829d76"
+                    id="90315733"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18874,12 +18874,12 @@ maximum daily temperature.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="12.883652115614339"
-                    data-value-str="12.883652115614339"
+                    data-value-repr="13.949472508499612"
+                    data-value-str="13.949472508499612"
                 
                     data-column-idx="8"
                 
-                    >12.9</td>
+                    >13.9</td>
                 
                 </tr>
             
@@ -18887,7 +18887,7 @@ maximum daily temperature.
                 
                 
                     <th
-                    id="950c445c"
+                    id="087b2437"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -18915,7 +18915,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="3912c658"
+                    id="adee6835"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18945,7 +18945,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="978c0cb2"
+                    id="6ea791ac"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18975,7 +18975,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="978389be"
+                    id="c08994b0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -19005,7 +19005,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="1fa68a55"
+                    id="ed635f42"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -19035,7 +19035,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="ec724aa7"
+                    id="9f89ab59"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -19065,7 +19065,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="1c356dce"
+                    id="2f1f6e28"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -19095,7 +19095,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="4de91ee8"
+                    id="fc7555a5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -19125,7 +19125,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="3b74b60c"
+                    id="502b053f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -19155,7 +19155,7 @@ maximum daily temperature.
                 
                 
                     <td
-                    id="61c36fe3"
+                    id="d296a1c7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -19176,12 +19176,12 @@ maximum daily temperature.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="6.106302074396278"
-                    data-value-str="6.106302074396278"
+                    data-value-repr="7.462533442687352"
+                    data-value-str="7.462533442687352"
                 
                     data-column-idx="8"
                 
-                    >6.11</td>
+                    >7.46</td>
                 
                 </tr>
             
@@ -19809,22 +19809,22 @@ maximum daily temperature.
 
                 
                     <dt>Mean ± Std</dt>
-                    <dd>10.1 ±
-                        8.31
+                    <dd>10.7 ±
+                        8.61
                     
                     </dd>
                 
                 
                     <dt>Median ± IQR</dt>
-                    <dd>12.9 ±
-                        10.0
+                    <dd>13.9 ±
+                        9.88
                     
                     </dd>
 
                     <dt>Min | Max</dt>
                     <dd>
-                        <span class="min-value">-2.35</span> |
-                        <span class="max-value">18.0</span>
+                        <span class="min-value">-2.94</span> |
+                        <span class="max-value">17.4</span>
                     
                     </dd>
                 
@@ -20471,19 +20471,19 @@ maximum daily temperature.
                     
 
                     
-                        <td data-value="10.138831001944585" data-numeric>
-                            10.1</td>
-                        <td data-value="8.314737059472135" data-numeric>
-                            8.31</td>
+                        <td data-value="10.652863051663088" data-numeric>
+                            10.7</td>
+                        <td data-value="8.610579457699291" data-numeric>
+                            8.61</td>
                     
 
                     
-                        <td data-value="-2.354662238697354" data-numeric>
-                            -2.35</td>
-                        <td data-value="12.883652115614339" data-numeric>
-                            12.9</td>
-                        <td data-value="17.950287752659893" data-numeric>
-                            18.0</td>
+                        <td data-value="-2.9352398466126908" data-numeric>
+                            -2.94</td>
+                        <td data-value="13.949472508499612" data-numeric>
+                            13.9</td>
+                        <td data-value="17.44927551884333" data-numeric>
+                            17.4</td>
                     
 
                     </tr>
@@ -20516,7 +20516,7 @@ maximum daily temperature.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_ec22edb9">
+        <skrub-table-report class="report" id="report_c1b075f4">
         </skrub-table-report>
 
         <script type="module">
@@ -21620,7 +21620,7 @@ maximum daily temperature.
         </script>
     </div>
 
-    <div id="report_ec22edb9-wrapper-fallback">
+    <div id="report_c1b075f4-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -21631,8 +21631,8 @@ maximum daily temperature.
     </div>
 
     <script>
-     document.getElementById("report_ec22edb9-wrapper").removeAttribute("hidden");
-     document.getElementById("report_ec22edb9-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_c1b075f4-wrapper").removeAttribute("hidden");
+     document.getElementById("report_c1b075f4-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -21680,11 +21680,11 @@ Washington, Minnesota.
 
 
     state
-    AK   -3.360151
-    MT   -0.505262
-    SD    0.417144
-    MN    1.186874
-    WA    1.212698
+    AK   -3.954756
+    MT   -0.902451
+    WA   -0.029743
+    ND    0.414203
+    SD    0.729438
     Name: TMAX, dtype: float64
 
 
@@ -21710,11 +21710,11 @@ Florida, Louisiana.
 
 
     state
-    LA    22.048098
-    FL    24.684789
-    HI    26.209807
-    PR    28.967184
-    VI    29.259403
+    LA    22.071812
+    FL    25.120258
+    HI    27.469448
+    PR    27.625338
+    VI    28.078649
     Name: TMAX, dtype: float64
 
 
@@ -21799,9 +21799,9 @@ estimators.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 19.382 seconds)
+   **Total running time of the script:** (0 minutes 18.171 seconds)
 
-**Estimated memory usage:**  555 MB
+**Estimated memory usage:**  556 MB
 
 
 .. _sphx_glr_download_auto_examples_03_joining_0080_interpolation_join.py:

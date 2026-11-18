@@ -154,4 +154,4 @@ dtype: ...
 ## Advanced usage of [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols)
 
 For more advanced use cases, refer to the examples section of the [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols)
-docstring, and to [this user guide section](../column_level_featurizing/advanced_columnwise_operationshtml.md#user-guide-single-column-transformer).
+docstring, and to [this user guide section](../../guides/column_operations/advanced_columnwise_operationshtml.md#user-guide-single-column-transformer).

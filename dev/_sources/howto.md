@@ -175,6 +175,7 @@ it 'style' --> <script>
 
 # Featurizing dataframes
 
+* [How to define your own column-wise transformer](guides/column_operations/advanced_columnwise_operationshtml.md)
 * [How to display how the `TableVectorizer` modified a dataframe](guides/featurizing/01_describe_transformationshtml.md)
 
 # Utilities

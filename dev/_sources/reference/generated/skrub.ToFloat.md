@@ -21,7 +21,7 @@ null values.
 #### NOTE
 A note on using single column transformations
 
-`ToFloat` is a type of [single column transformation](../../modules/column_level_featurizing/advanced_columnwise_operationshtml.md#single-column-transformer) . Unlike most scikit-learn estimators, its `fit`, `transform` and `fit_transform` methods expect a single column (e.g. Series) not a full dataframe. To apply this transformer to one or more columns in a dataframe, use it in a [`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols) or a [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer).
+`ToFloat` is a type of [single column transformation](../../guides/column_operations/advanced_columnwise_operationshtml.md#single-column-transformer) . Unlike most scikit-learn estimators, its `fit`, `transform` and `fit_transform` methods expect a single column (e.g. Series) not a full dataframe. To apply this transformer to one or more columns in a dataframe, use it in a [`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols) or a [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer).
 
 To apply to all columns:
 
