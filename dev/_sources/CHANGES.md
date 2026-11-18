@@ -27,6 +27,10 @@
 
 ### Changes
 
+- [`ToFloat`](reference/generated/skrub.ToFloathtml.md#skrub.ToFloat) now converts numbers padded with surrounding whitespace
+  identically on the pandas and polars backends. Previously such values were
+  cast to null, or rejected together with their column, by the polars backend.
+  [#2430](https://github.com/skrub-data/skrub/pull/2430) by [Dongze Li](https://github.com/lidongze1002).
 - [`set_config()`](reference/generated/skrub.set_confightml.md#skrub.set_config) and [`config_context()`](reference/generated/skrub.config_contexthtml.md#skrub.config_context) now use `UNCHANGED` as the
   default for every parameter.
   Explicit `None` values are no longer treated as “leave unchanged” and are

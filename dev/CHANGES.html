@@ -618,6 +618,10 @@ converted to fractions (<code class="docutils literal notranslate"><span class="
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.ToFloat.html#skrub.ToFloat" title="skrub.ToFloat"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToFloat</span></code></a> now converts numbers padded with surrounding whitespace
+identically on the pandas and polars backends. Previously such values were
+cast to null, or rejected together with their column, by the polars backend.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2430">#2430</a> by <a class="reference external" href="https://github.com/lidongze1002">Dongze Li</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.config_context.html#skrub.config_context" title="skrub.config_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">config_context()</span></code></a> now use <code class="docutils literal notranslate"><span class="pre">UNCHANGED</span></code> as the
 default for every parameter.
 Explicit <code class="docutils literal notranslate"><span class="pre">None</span></code> values are no longer treated as “leave unchanged” and are
