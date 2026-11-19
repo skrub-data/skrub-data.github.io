@@ -689,15 +689,15 @@ requirements:</p>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">GeocodeParser</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"sent"</span><span class="p">])</span>
 <span class="go">shape: (3, 2)</span>
-<span class="go">┌─────────────────┬──────────────┐</span>
-<span class="go">│ sent_department ┆ sent_commune │</span>
-<span class="go">│ ---             ┆ ---          │</span>
-<span class="go">│ str             ┆ str          │</span>
-<span class="go">╞═════════════════╪══════════════╡</span>
-<span class="go">│ 75              ┆ 001          │</span>
-<span class="go">│ 13              ┆ 001          │</span>
-<span class="go">│ 69              ┆ 002          │</span>
-<span class="go">└─────────────────┴──────────────┘</span>
+<span class="go">┌──────────┬───────────┐</span>
+<span class="go">│ sent_dep ┆ sent_city │</span>
+<span class="go">│ ---      ┆ ---       │</span>
+<span class="go">│ str      ┆ str       │</span>
+<span class="go">╞══════════╪═══════════╡</span>
+<span class="go">│ 75       ┆ 001       │</span>
+<span class="go">│ 13       ┆ 001       │</span>
+<span class="go">│ 69       ┆ 002       │</span>
+<span class="go">└──────────┴───────────┘</span>
 </pre></div>
 </div>
 <p>We can use <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> to apply this transformer to the entire dataframe at once,
@@ -705,15 +705,15 @@ and set <code class="docutils literal notranslate"><span class="pre">allow_rejec
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToCols</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToCols</span><span class="p">(</span><span class="n">GeocodeParser</span><span class="p">(),</span> <span class="n">allow_reject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">shape: (3, 5)</span>
-<span class="go">┌─────────────────┬──────────────┬─────────────────────┬──────────────────┬─────────┐</span>
-<span class="go">│ sent_department ┆ sent_commune ┆ received_department ┆ received_commune ┆ notes   │</span>
-<span class="go">│ ---             ┆ ---          ┆ ---                 ┆ ---              ┆ ---     │</span>
-<span class="go">│ str             ┆ str          ┆ str                 ┆ str              ┆ str     │</span>
-<span class="go">╞═════════════════╪══════════════╪═════════════════════╪══════════════════╪═════════╡</span>
-<span class="go">│ 75              ┆ 001          ┆ 91                  ┆ 120              ┆ Sent    │</span>
-<span class="go">│ 13              ┆ 001          ┆ 12                  ┆ 110              ┆ Missing │</span>
-<span class="go">│ 69              ┆ 002          ┆ 88                  ┆ 150              ┆ Sent    │</span>
-<span class="go">└─────────────────┴──────────────┴─────────────────────┴──────────────────┴─────────┘</span>
+<span class="go">┌──────────┬───────────┬──────────────┬───────────────┬─────────┐</span>
+<span class="go">│ sent_dep ┆ sent_city ┆ received_dep ┆ received_city ┆ notes   │</span>
+<span class="go">│ ---      ┆ ---       ┆ ---          ┆ ---           ┆ ---     │</span>
+<span class="go">│ str      ┆ str       ┆ str          ┆ str           ┆ str     │</span>
+<span class="go">╞══════════╪═══════════╪══════════════╪═══════════════╪═════════╡</span>
+<span class="go">│ 75       ┆ 001       ┆ 91           ┆ 120           ┆ Sent    │</span>
+<span class="go">│ 13       ┆ 001       ┆ 12           ┆ 110           ┆ Missing │</span>
+<span class="go">│ 69       ┆ 002       ┆ 88           ┆ 150           ┆ Sent    │</span>
+<span class="go">└──────────┴───────────┴──────────────┴───────────────┴─────────┘</span>
 </pre></div>
 </div>
 <p>Note how the <code class="docutils literal notranslate"><span class="pre">&quot;notes&quot;</span></code> column was rejected and passed through unmodified.</p>
@@ -743,7 +743,7 @@ columns: in this case, we don’t know in advance which columns should be chosen
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">birthday</span><span class="o">=</span><span class="p">[</span><span class="s2">"29/01/2024"</span><span class="p">],</span> <span class="n">city</span><span class="o">=</span><span class="p">[</span><span class="s2">"London"</span><span class="p">]))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
-<span class="go">        birthday    city</span>
+<span class="go">     birthday    city</span>
 <span class="go">0  29/01/2024  London</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
 <span class="go">birthday    ...</span>
