@@ -76,6 +76,9 @@
 
 ### Bugfixes
 
+- [`SessionEncoder`](reference/generated/skrub.SessionEncoderhtml.md#skrub.SessionEncoder) now preserves the index of pandas dataframes.
+  Previously the output had a new `RangeIndex`.
+  [#2448](https://github.com/skrub-data/skrub/pull/2448) by [LolPanda2004](https://github.com/LolPanda2004).
 - [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) no longer counts unused pandas categories as distinct
   values or includes them among the most frequent values. This also fixes
   constant-column detection after filtering a categorical column.

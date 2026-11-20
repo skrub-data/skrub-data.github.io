@@ -669,6 +669,9 @@ time at <code class="docutils literal notranslate"><span class="pre">00:00:00</s
 <section id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.SessionEncoder.html#skrub.SessionEncoder" title="skrub.SessionEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionEncoder</span></code></a> now preserves the index of pandas dataframes.
+Previously the output had a new <code class="docutils literal notranslate"><span class="pre">RangeIndex</span></code>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2448">#2448</a> by <a class="reference external" href="https://github.com/LolPanda2004">LolPanda2004</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> no longer counts unused pandas categories as distinct
 values or includes them among the most frequent values. This also fixes
 constant-column detection after filtering a categorical column.
