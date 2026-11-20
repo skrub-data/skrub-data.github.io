@@ -690,7 +690,8 @@ intended.
 <code class="docutils literal notranslate"><span class="pre">ValueError:</span> <span class="pre">...</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">nonexistent</span> <span class="pre">time</span> <span class="pre">due</span> <span class="pre">to</span> <span class="pre">...</span></code> with Pandas when trying to
 identify a date vs a datetime with <code class="docutils literal notranslate"><span class="pre">col.dt.normalize()</span></code> against some specific
 timezoned string datetime.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2334">#2334</a> by <a class="reference external" href="https://github.com/lsioctl">Laurent Steff</a>.</p></li>
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2334">#2334</a> by <a class="reference external" href="https://github.com/lsioctl">Laurent Steff</a>
+and <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2432">#2432</a> by <a class="reference external" href="https://github.com/JoeyTan21">Joey Tan</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.LLMEncoder.html#skrub.LLMEncoder" title="skrub.LLMEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code></a> no longer loads a separate copy of the language model for
 each column it encodes, e.g. in <a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> or
 <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>. The model is now loaded once per process and shared
@@ -721,10 +722,6 @@ longer count <code class="docutils literal notranslate"><span class="pre">NaN</s
 dataframes. <code class="docutils literal notranslate"><span class="pre">NaN</span></code> is already counted as a missing value there, so the
 number of distinct values was off by one and differed from pandas.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2417">#2417</a> by <a class="reference external" href="https://github.com/JoeyTan21">Joey Tan</a>.</p></li>
-<li><p><a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> (and therefore <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>) no longer
-raises an <code class="docutils literal notranslate"><span class="pre">AttributeError</span></code> when fitted on a polars column with the <code class="docutils literal notranslate"><span class="pre">Date</span></code>
-dtype.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2432">#2432</a> by <a class="reference external" href="https://github.com/JoeyTan21">Joey Tan</a>.</p></li>
 </ul>
 </section>
 <section id="deprecations">

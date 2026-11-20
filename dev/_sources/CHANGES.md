@@ -97,7 +97,8 @@
   `ValueError: ... is a nonexistent time due to ...` with Pandas when trying to
   identify a date vs a datetime with `col.dt.normalize()` against some specific
   timezoned string datetime.
-  [#2334](https://github.com/skrub-data/skrub/pull/2334) by [Laurent Steff](https://github.com/lsioctl).
+  [#2334](https://github.com/skrub-data/skrub/pull/2334) by [Laurent Steff](https://github.com/lsioctl)
+  and [#2432](https://github.com/skrub-data/skrub/pull/2432) by [Joey Tan](https://github.com/JoeyTan21).
 - [`LLMEncoder`](reference/generated/skrub.LLMEncoderhtml.md#skrub.LLMEncoder) no longer loads a separate copy of the language model for
   each column it encodes, e.g. in [`ApplyToCols`](reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) or
   [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer). The model is now loaded once per process and shared
@@ -128,10 +129,6 @@
   dataframes. `NaN` is already counted as a missing value there, so the
   number of distinct values was off by one and differed from pandas.
   [#2417](https://github.com/skrub-data/skrub/pull/2417) by [Joey Tan](https://github.com/JoeyTan21).
-- [`DatetimeEncoder`](reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) (and therefore [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer)) no longer
-  raises an `AttributeError` when fitted on a polars column with the `Date`
-  dtype.
-  [#2432](https://github.com/skrub-data/skrub/pull/2432) by [Joey Tan](https://github.com/JoeyTan21).
 
 ### Deprecations
 
