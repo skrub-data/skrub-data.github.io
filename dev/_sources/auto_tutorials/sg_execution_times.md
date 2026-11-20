@@ -2,7 +2,7 @@
 
 # Computation times
 
-**03:27.829** total execution time for 2 files **from auto_tutorials**:
+**03:13.932** total execution time for 2 files **from auto_tutorials**:
 
 <style scoped>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
@@ -19,5 +19,5 @@ $(document).ready( function () {
 
 | Example                                                                                                                                          | Time      |   Mem (MB) |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------|
-| [Quick overview of DataOps](1111_data_ops_quick_tourhtml.md#sphx-glr-auto-tutorials-1111-data-ops-quick-tour-py) (`1111_data_ops_quick_tour.py`) | 03:08.890 |      551   |
-| [Getting Started with skrub](0000_getting_startedhtml.md#sphx-glr-auto-tutorials-0000-getting-started-py) (`0000_getting_started.py`)            | 00:18.939 |      541.7 |
+| [Quick overview of DataOps](1111_data_ops_quick_tourhtml.md#sphx-glr-auto-tutorials-1111-data-ops-quick-tour-py) (`1111_data_ops_quick_tour.py`) | 02:55.372 |      556.8 |
+| [Getting Started with skrub](0000_getting_startedhtml.md#sphx-glr-auto-tutorials-0000-getting-started-py) (`0000_getting_started.py`)            | 00:18.560 |      549.2 |
