@@ -2,7 +2,7 @@
 
 # Computation times
 
-**01:04.760** total execution time for 5 files **from auto_examples**:
+**01:01.279** total execution time for 5 files **from auto_examples**:
 
 <style scoped>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
@@ -19,8 +19,8 @@ $(document).ready( function () {
 
 | Example                                                                                                                                                                                  | Time      |   Mem (MB) |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------|
-| [SquashingScaler: Robust numerical preprocessing for neural networks](0100_squashing_scalerhtml.md#sphx-glr-auto-examples-0100-squashing-scaler-py) (`0100_squashing_scaler.py`)         | 00:23.900 |      557.6 |
-| [Skrub as preprocessing for Table Foundation Models](0120_tabiclhtml.md#sphx-glr-auto-examples-0120-tabicl-py) (`0120_tabicl.py`)                                                        | 00:22.412 |     1357.2 |
-| [Hands-On with Column Selection and Transformers](0010_apply_to_colshtml.md#sphx-glr-auto-examples-0010-apply-to-cols-py) (`0010_apply_to_cols.py`)                                      | 00:07.986 |      554.9 |
-| [Sessions in time-based data: Predicting user purchases with the SessionEncoder](0110_session_encoderhtml.md#sphx-glr-auto-examples-0110-session-encoder-py) (`0110_session_encoder.py`) | 00:07.900 |      555.1 |
-| [Deduplicating misspelled categories](0050_deduplicationhtml.md#sphx-glr-auto-examples-0050-deduplication-py) (`0050_deduplication.py`)                                                  | 00:02.563 |      554.4 |
+| [SquashingScaler: Robust numerical preprocessing for neural networks](0100_squashing_scalerhtml.md#sphx-glr-auto-examples-0100-squashing-scaler-py) (`0100_squashing_scaler.py`)         | 00:23.067 |      556.6 |
+| [Skrub as preprocessing for Table Foundation Models](0120_tabiclhtml.md#sphx-glr-auto-examples-0120-tabicl-py) (`0120_tabicl.py`)                                                        | 00:19.439 |     1370.1 |
+| [Sessions in time-based data: Predicting user purchases with the SessionEncoder](0110_session_encoderhtml.md#sphx-glr-auto-examples-0110-session-encoder-py) (`0110_session_encoder.py`) | 00:08.407 |      553.8 |
+| [Hands-On with Column Selection and Transformers](0010_apply_to_colshtml.md#sphx-glr-auto-examples-0010-apply-to-cols-py) (`0010_apply_to_cols.py`)                                      | 00:08.018 |      554   |
+| [Deduplicating misspelled categories](0050_deduplicationhtml.md#sphx-glr-auto-examples-0050-deduplication-py) (`0050_deduplication.py`)                                                  | 00:02.348 |      553.6 |
