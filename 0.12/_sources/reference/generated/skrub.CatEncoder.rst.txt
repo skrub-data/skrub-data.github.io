@@ -1,0 +1,14 @@
+﻿CatEncoder
+==========
+
+.. currentmodule:: skrub
+
+.. autoclass:: CatEncoder
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.CatEncoder skrub.CatEncoder.__init__ skrub.CatEncoder.fit skrub.CatEncoder.fit_transform skrub.CatEncoder.get_feature_names_out skrub.CatEncoder.get_metadata_routing skrub.CatEncoder.get_params skrub.CatEncoder.set_fit_request skrub.CatEncoder.set_output skrub.CatEncoder.set_params skrub.CatEncoder.set_transform_request skrub.CatEncoder.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

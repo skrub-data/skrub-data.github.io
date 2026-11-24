@@ -1,0 +1,10 @@
+﻿fetch\_california\_housing
+==========================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_california_housing
+
+.. minigallery:: skrub.datasets.fetch_california_housing
+   :add-heading: Gallery examples
+   :heading-level: -

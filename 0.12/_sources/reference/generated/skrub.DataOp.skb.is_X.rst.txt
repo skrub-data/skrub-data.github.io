@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.is_X
+=====================
+
+.. currentmodule:: skrub
+
+.. autoaccessorattribute:: DataOp.skb.is_X

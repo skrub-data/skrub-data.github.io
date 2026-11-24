@@ -1,0 +1,10 @@
+﻿regex
+=====
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: regex
+
+.. minigallery:: skrub.selectors.regex
+   :add-heading: Gallery examples
+   :heading-level: -

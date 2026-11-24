@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.find_X_y
+=========================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.find_X_y

@@ -1,0 +1,10 @@
+﻿filter
+======
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: filter
+
+.. minigallery:: skrub.selectors.filter
+   :add-heading: Gallery examples
+   :heading-level: -

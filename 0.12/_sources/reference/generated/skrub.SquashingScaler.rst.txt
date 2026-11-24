@@ -1,0 +1,14 @@
+﻿SquashingScaler
+===============
+
+.. currentmodule:: skrub
+
+.. autoclass:: SquashingScaler
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.SquashingScaler skrub.SquashingScaler.__init__ skrub.SquashingScaler.fit skrub.SquashingScaler.fit_transform skrub.SquashingScaler.get_feature_names_out skrub.SquashingScaler.get_metadata_routing skrub.SquashingScaler.get_params skrub.SquashingScaler.set_output skrub.SquashingScaler.set_params skrub.SquashingScaler.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

@@ -1,0 +1,43 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-11-24T05:24:57.373942Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-11-24T05:24:57.373942Z",
+      "mimetype": null,
+      "name": "auto_examples",
+      "path": "jupyterlite_contents/auto_examples",
+      "size": null,
+      "type": "directory",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-11-24T05:24:57.376636Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-11-24T05:24:57.376636Z",
+      "mimetype": null,
+      "name": "auto_tutorials",
+      "path": "jupyterlite_contents/auto_tutorials",
+      "size": null,
+      "type": "directory",
+      "writable": true
+    }
+  ],
+  "created": "2026-11-24T05:24:57.375942Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-11-24T05:24:57.375942Z",
+  "mimetype": null,
+  "name": "jupyterlite_contents",
+  "path": "jupyterlite_contents",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

@@ -1,0 +1,14 @@
+﻿DropSimilar
+===========
+
+.. currentmodule:: skrub
+
+.. autoclass:: DropSimilar
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.DropSimilar skrub.DropSimilar.__init__ skrub.DropSimilar.fit skrub.DropSimilar.fit_transform skrub.DropSimilar.get_feature_names_out skrub.DropSimilar.get_metadata_routing skrub.DropSimilar.get_params skrub.DropSimilar.set_output skrub.DropSimilar.set_params skrub.DropSimilar.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

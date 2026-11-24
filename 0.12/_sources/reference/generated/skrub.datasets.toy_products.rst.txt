@@ -1,0 +1,10 @@
+﻿toy\_products
+=============
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: toy_products
+
+.. minigallery:: skrub.datasets.toy_products
+   :add-heading: Gallery examples
+   :heading-level: -

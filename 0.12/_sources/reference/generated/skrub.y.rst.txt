@@ -1,0 +1,10 @@
+﻿y
+=
+
+.. currentmodule:: skrub
+
+.. autofunction:: y
+
+.. minigallery:: skrub.y
+   :add-heading: Gallery examples
+   :heading-level: -

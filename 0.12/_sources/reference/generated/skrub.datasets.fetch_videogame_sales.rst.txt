@@ -1,0 +1,10 @@
+﻿fetch\_videogame\_sales
+=======================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_videogame_sales
+
+.. minigallery:: skrub.datasets.fetch_videogame_sales
+   :add-heading: Gallery examples
+   :heading-level: -

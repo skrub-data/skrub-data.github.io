@@ -1,0 +1,14 @@
+﻿LLMEncoder
+==========
+
+.. currentmodule:: skrub
+
+.. autoclass:: LLMEncoder
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.LLMEncoder skrub.LLMEncoder.__init__ skrub.LLMEncoder.fit skrub.LLMEncoder.fit_transform skrub.LLMEncoder.get_feature_names_out skrub.LLMEncoder.get_metadata_routing skrub.LLMEncoder.get_params skrub.LLMEncoder.set_fit_request skrub.LLMEncoder.set_output skrub.LLMEncoder.set_params skrub.LLMEncoder.set_transform_request skrub.LLMEncoder.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

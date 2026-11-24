@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.draw_graph
+===========================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.draw_graph

@@ -1,0 +1,637 @@
+/** Landing page *********************************************************/
+
+.bd-article {
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 1.5em;
+}
+
+.bd-content {
+    justify-content: center;
+}
+
+.landing-container {
+    padding-top: 0%;
+    max-width: 100%;
+}
+
+.bd-main .bd-content {
+    display: flex;
+    height: 100%;
+    gap: 60px;
+    /* margin: 0 20px; */
+}
+
+#skrub-prepping-tables-for-machine-learning > img {
+    background: rgba(0,0,0,0)
+}
+
+.card-body {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.card-title {
+    margin-bottom: 1.0rem;
+    text-align: left;
+}
+
+.card-body p {
+    text-align: left;
+}
+
+.sd-card  {
+    margin-block-end: 1.0rem;
+}
+
+.schema-container {
+    display: flex;
+    justify-content: center;
+    max-width: 60em;
+    /* Vertical spacing as a function of the viewport height, to use better the page on very big displays */
+    margin-top: calc(10px + 1vh);
+    margin-bottom: calc(10px + 2vh);
+}
+
+/* Tall screens: add vertical spacing */
+@media screen and (min-height: 80ex) {
+    .schema-container {
+	margin-bottom: calc(10px + 3vh);
+	margin-top: calc(10px + 2vh);
+    }
+}
+
+.sk-landing-header text-white text-monospace {
+    font-family: var(--pst-font-family-heading);
+    margin-top: -20px;
+}
+
+div.card-body div.output_result {
+    overflow-x: auto;
+}
+
+div.card-body details {
+  border-radius: 4px;
+}
+
+div.card-body summary i {
+    color: var(--pst-color-on-surface);
+    margin-left: 4em;
+}
+
+div.card-body summary {
+  /* No negative margin: it would pull the summary outside the card body and
+     overlap the card's border. Use padding for the hover target instead. */
+  margin: 0;
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
+}
+
+div.card-body summary:hover {
+  background-color: var(--pst-color-border-muted);
+}
+
+div.card-body details[open] summary {
+  margin-bottom: 0.25em;
+}
+
+div.card-body details[open] summary i {
+    display: none;
+}
+
+/** Landing page features *************************************************************/
+
+.hero-title {
+    color: #DA7007; /* Darker text color for the title */
+    font-family: var(--pst-font-family-heading);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.dataops-separator {
+    margin-bottom: 0;
+}
+
+.hero-description {
+    font-family: var(--pst-font-family-base);
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.row-padding-main-container {
+    padding-top: 1.5rem !important;
+    padding-bottom: 2.5rem !important;
+}
+
+.row-padding-between-features {
+    padding-bottom: 2rem !important;
+    padding-top: 2rem !important;
+    border-top: #aaa solid 3px;
+    border-image: linear-gradient(to right, var(--pst-color-background) 0%, #4085a7 50%, var(--pst-color-background) 100%) 1;
+}
+
+.feature-title {
+    color: #DA7007; /* Darker text color for the title */
+    font-family: var(--pst-font-family-heading);
+    font-size: 2rem;
+    margin-bottom: 1.25rem; /* Spacing below title */
+    margin-top: 0px;
+}
+
+h5.feature-title {
+    font-size: 1.5rem;
+}
+
+/* Sub-headings inside a landing-page feature column */
+.feature-subsection {
+    margin-bottom: 1.5rem;
+}
+
+.feature-subsection:last-child {
+    margin-bottom: 0;
+}
+
+.feature-subtitle {
+    color: #4085a7; /* skrub blue */
+    font-family: var(--pst-font-family-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.feature-text {
+    font-family: var(--pst-font-family-base);
+    font-size: 1.05rem; /* Regular font size for text */
+    margin-bottom: 0; /* Remove default bottom margin */
+}
+
+.feature-text-see-also {
+    font-family: var(--pst-font-family-base);
+    /* font-size: 1.1rem; */
+    margin-top: 1.75rem;
+}
+
+.feature-text-see-also a {
+    color: var(--pst-color-text-base) !important;
+    font-weight: normal;
+    transition: font-weight 0.3s ease;
+}
+
+.feature-text-see-also a:hover {
+    color: var(--pst-color-text-base) !important;
+    font-weight: bold;
+}
+
+.code-margin {
+    margin-top: 0.75em !important;
+    margin-bottom: 0.75em !important;
+}
+
+div.feature-flex {
+    display: flex;
+}
+
+div.feature-flex div {
+    flex: 1 1 auto;
+    padding-bottom: 1ex;
+}
+
+div.feature-img {
+    border-radius: 1ex;
+    overflow: clip;
+    margin-top: 8px;
+}
+
+/* For the pipeline svg */
+div.pipeline-img {
+    transform: scale(0.8);
+    transform-origin: center top;
+    text-align: center;
+    height: 283pt
+}
+
+div.pipeline-img svg > g > polygon {
+    fill: transparent;
+}
+
+div.pipeline-img svg g a polygon[fill="none"] {
+    fill: white;
+}
+
+div.pipeline-img svg g.edge path {
+    stroke: var(--sg-text-color);
+}
+
+div.pipeline-img svg g.edge polygon {
+    stroke: var(--sg-text-color);
+    fill: var(--sg-text-color);
+}
+
+/* Carousel of encoding examples on the landing page */
+.encoding-carousel {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+/* On wide screens the text column leaves a gap to the left of the
+   carousel, so let the slides extend into it while keeping the right
+   edge (and the gutter added by the column's pe-* class) unchanged. */
+@media (min-width: 768px) {
+    .encoding-carousel {
+        width: calc(100% + 3rem);
+        margin-left: -3rem;
+    }
+}
+
+.encoding-carousel .carousel-item {
+    /* Match the aspect ratio of the slide images so that
+       object-fit: contain does not add vertical whitespace. */
+    aspect-ratio: 1.49;
+    /* Slides only advance on user interaction, so use a plain slide. */
+    transition: transform .6s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .encoding-carousel .carousel-item {
+        transition: none;
+    }
+}
+
+.encoding-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Only one of the two theme variants is shown at a time */
+html[data-theme="light"] .encoding-carousel .theme-dark {
+    display: none;
+}
+
+html[data-theme="dark"] .encoding-carousel .theme-light {
+    display: none;
+}
+
+/* Controls and indicators live in a row below the slides so that the
+   buttons never overlap the plots. */
+.encoding-carousel .carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: .5rem;
+}
+
+/* The theme's default chevrons are white on light and black on dark,
+   so we draw our own controls with the skrub accent color instead. */
+.encoding-carousel .carousel-control-prev,
+.encoding-carousel .carousel-control-next {
+    position: static;
+    flex: 0 0 auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: var(--pst-color-surface);
+    border: 1px solid var(--pst-color-border);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+}
+
+.encoding-carousel .carousel-control-prev:hover,
+.encoding-carousel .carousel-control-next:hover {
+    background-color: #fbe1ca;
+    border-color: #DA7007;
+}
+
+.encoding-carousel .carousel-control-prev-icon,
+.encoding-carousel .carousel-control-next-icon {
+    width: 1rem;
+    height: 1rem;
+    filter: none;
+}
+
+.encoding-carousel .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23DA7007' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/%3E%3C/svg%3E");
+}
+
+.encoding-carousel .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23DA7007' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
+}
+
+.encoding-carousel .carousel-indicators {
+    position: static;
+    flex: 0 1 auto;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.encoding-carousel .carousel-indicators [data-bs-target] {
+    width: 1.75rem;
+    height: 3px;
+    border: 0;
+    background-color: var(--pst-color-text-muted);
+    opacity: .4;
+}
+
+.encoding-carousel .carousel-indicators .active {
+    background-color: #DA7007;
+    opacity: 1;
+}
+
+/* Estimator diagram of the tabular_pipeline demo on the landing page.
+   The sklearn HTML repr is laid out for a full-width notebook cell, so it is
+   wider than the landing-page column: shrink it to fit and let it scroll
+   horizontally if it still overflows. */
+.tabular-pipeline-diagram {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.tabular-pipeline-diagram .sk-top-container {
+    /* sklearn sets `overflow-x: scroll !important`, which would always show a
+       scrollbar; only show one when the diagram really overflows. */
+    overflow-x: auto !important;
+    font-size: 0.65rem;
+    max-width: 100%;
+}
+
+.tabular-pipeline-diagram .sk-top-container .sk-container {
+    max-width: 100%;
+}
+
+/* sklearn centers the parallel branches with `justify-content: center`. When
+   the content is wider than the container, centering pushes the left edge out
+   of reach so it cannot be scrolled to. Start-aligning keeps it reachable. */
+.tabular-pipeline-diagram .sk-parallel {
+    justify-content: flex-start;
+}
+
+.tabular-pipeline-diagram .sk-serial {
+    align-items: flex-start;
+}
+
+/* Let the labels wrap instead of forcing the diagram wider than the column. */
+.tabular-pipeline-diagram .sk-toggleable__label {
+    white-space: normal;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+/* The theme gives every <pre> a 1.5em vertical margin and basic.css gives
+   highlighted code blocks a 1em margin, which leaves a large gap between the
+   cross_val_score call and its output. Keep the output visually attached to
+   the code block above it. */
+div.doctest.tabular-pipeline-call {
+    margin-bottom: 0;
+}
+
+/* The inner <pre> margin would otherwise collapse through the wrapper. */
+div.doctest.tabular-pipeline-call pre {
+    margin-bottom: 0;
+}
+
+pre.tabular-pipeline-output {
+    margin-top: 0.25rem;
+}
+
+
+/** Styling **************************************************************/
+
+/* Make the footer a bit less visible */
+.bd-footer {
+    border-top: 1px solid var(--pst-color-on-surface);
+    opacity: .8;
+}
+
+.bd-footer p {
+    color: var(--pst-color-text-muted);
+}
+
+
+/** Adapt bootstrap colors ************************/
+:root {
+    /* Change colors on bootstrap elements to use the theme's colors */
+    --bs-nav-pills-link-active-bg: var(--pst-color-primary);
+    --bs-nav-link-color:  var(--pst-color-primary);
+    --bs-nav-link-hover-color: var(--pst-color-link-hover);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color:var(--pst-color-primary);
+}
+
+.nav-link {
+    color:var(--pst-color-primary);
+}
+
+.nav-link:focus, .nav-link:hover {
+  color: var(--pst-color-link-hover);
+}
+
+/** Landing header *******************************/
+
+header > .bd-page-width {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.sk-landing-container {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    max-width: 1200px;
+}
+
+div.sk-landing-container .text-white {
+    text-shadow: 0px 0px 8px rgb(42, 98, 128);
+}
+
+div.sk-landing-container a,
+div.sk-landing-container a:hover,
+div.sk-landing-container a:visited,
+div.sk-landing-container a:visited:hover,
+div.sk-landing-container a > code,
+div.sk-landing-container a:hover > code,
+div.sk-landing-container a:visited > code,
+div.sk-landing-container a:visited:hover > code {
+    color: #DA7007;
+}
+
+div.sk-landing-container code {
+    font-weight: normal !important;
+}
+
+ul.sk-landing-header-body {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: var(--pst-font-family-base);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+}
+
+.simple dd {
+    margin-left: 0;
+}
+
+div.sk-landing-bg-more-info dd {
+    padding-left: 0;
+}
+
+div.sk-landing-bg-more-info dd {
+    padding-left: 0;
+}
+
+div.sk-landing-bg {
+    background-image: linear-gradient(160deg, rgba(0,48,70,.75) 0%, rgba(0,118,179,.75) 17%, rgba(255,239,193,.75) 59%, rgba(255,149,40,.75) 100%);
+}
+
+div.sk-landing-bg-more-info {
+    background-color: #f8f8f8;
+    font-size: 0.96rem;
+  }
+
+.sk-landing-header {
+    font-size: 3.2rem;
+}
+
+@media (max-width: 768px) {
+    .sk-landing-header {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .sk-landing-container .col-md-4 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/** Scikit-learn buttons ***************************/
+
+a.sk-btn-orange {
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: #DA7007; /* Original sk-orange-tint-1 */
+    color: #ffffff !important; /* Changed to white for better contrast */
+    border: 2px solid #DA7007; /* Border to match background color, previous: f99f44 */
+    padding: 10px 20px; /* Added padding for better button size */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+a.sk-btn-orange:hover {
+    background-color: #fbe1ca; /* Fill with white on hover */
+    color: #DA7007 !important; /* Text color changes to match the original background color */
+    border: 2px solid #DA7007; /* Border remains the same on hover */
+}
+
+.click-table-report-hint {
+    color: #da4607;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Switch the arrow on small screens, as it needs to point down */
+@media (max-width: 720px) {
+    .visible-small-screen {
+	display: initial;
+    }
+
+    .visible-large-screen {
+	display: none;
+    }
+}
+
+@media (min-width: 720px) {
+    .visible-small-screen {
+	display: none;
+    }
+
+    .visible-large-screen {
+	display: initial;
+    }
+}
+
+/** Contributors ***************************/
+
+.contributors-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.contributor {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contributor img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.contributor-name {
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+}
+
+.more-contributors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.more-contributors a,
+.more-contributors a:visited {
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-weight: normal;
+}
+
+.more-contributors a:hover,
+.more-contributors a:visited:hover {
+    font-weight: bold;
+}
+
+
+/** Footer ***************************/
+
+.home-footer {
+    background-color: #12134b; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0; /* Padding for the footer */
+    position: relative;
+    width: 100%;
+    bottom: 0; /* Sticks footer to the bottom */
+    margin-top: 50px;
+}
+
+
+/* Download/laucher links and top hint (sphinx-gallery) */
+
+.sphx-glr-download-link-note,
+.binder-badge,
+.lite-badge,
+.sphx-glr-download-jupyter,
+.sphx-glr-download-python,
+.sphx-glr-download-zip {
+  display: none;
+}
