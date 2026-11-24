@@ -211,7 +211,6 @@
 - [TableReport JSON schema](https://skrub-data.org/stable/_sources/reference/table_report_json_schema.md)
 - [Examples](https://skrub-data.org/stable/_sources/auto_examples/index.md)
 - [Hands-On with Column Selection and Transformers](https://skrub-data.org/stable/_sources/auto_examples/0010_apply_to_cols.md)
-- [Deduplicating misspelled categories](https://skrub-data.org/stable/_sources/auto_examples/0050_deduplication.md)
 - [SquashingScaler: Robust numerical preprocessing for neural networks](https://skrub-data.org/stable/_sources/auto_examples/0100_squashing_scaler.md)
 - [Sessions in time-based data: Predicting user purchases with the SessionEncoder](https://skrub-data.org/stable/_sources/auto_examples/0110_session_encoder.md)
 - [Skrub as preprocessing for Table Foundation Models](https://skrub-data.org/stable/_sources/auto_examples/0120_tabicl.md)
