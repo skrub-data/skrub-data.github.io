@@ -10,10 +10,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing Development: New Features: Changes: Bugfixes: DataOp.skb.subsample() with how=&quot;random&quot; now selects the same rows for numpy arrays and for pandas and polars dataframes and columns...." />
+<meta property="og:description" content="Ongoing Development: New Features: Changes: Bugfixes: choose_int() now samples every integer in the range uniformly during randomized hyperparameter search when low is negative. Previously low was ..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing Development: New Features: Changes: Bugfixes: DataOp.skb.subsample() with how=&quot;random&quot; now selects the same rows for numpy arrays and for pandas and polars dataframes and columns...." />
+<meta name="description" content="Ongoing Development: New Features: Changes: Bugfixes: choose_int() now samples every integer in the range uniformly during randomized hyperparameter search when low is negative. Previously low was ..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -601,6 +601,10 @@
 <section id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.choose_int.html#skrub.choose_int" title="skrub.choose_int"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_int()</span></code></a> now samples every integer in the range uniformly during
+randomized hyperparameter search when <code class="docutils literal notranslate"><span class="pre">low</span></code> is negative. Previously
+<code class="docutils literal notranslate"><span class="pre">low</span></code> was never sampled; <code class="docutils literal notranslate"><span class="pre">high+1</span></code> could be sampled when <code class="docutils literal notranslate"><span class="pre">high</span></code> was negative and <code class="docutils literal notranslate"><span class="pre">0</span></code> sampled too frequently otherwise
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2469">#2469</a> by <a class="reference external" href="https://github.com/tomaionescu">Toma Stefan Ionescu</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.DataOp.skb.subsample.html#skrub.DataOp.skb.subsample" title="skrub.DataOp.skb.subsample"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.subsample()</span></code></a> with <code class="docutils literal notranslate"><span class="pre">how=&quot;random&quot;</span></code> now selects the same rows
 for numpy arrays and for pandas and polars dataframes and columns. Previously
 each container type used a different random generator, so <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>

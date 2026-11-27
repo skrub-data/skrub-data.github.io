@@ -10,6 +10,10 @@
 
 ### Bugfixes
 
+- [`choose_int()`](reference/generated/skrub.choose_inthtml.md#skrub.choose_int) now samples every integer in the range uniformly during
+  randomized hyperparameter search when `low` is negative. Previously
+  `low` was never sampled; `high+1` could be sampled when `high` was negative and `0` sampled too frequently otherwise
+  [#2469](https://github.com/skrub-data/skrub/pull/2469) by [Toma Stefan Ionescu](https://github.com/tomaionescu).
 - [`DataOp.skb.subsample()`](reference/generated/skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample) with `how="random"` now selects the same rows
   for numpy arrays and for pandas and polars dataframes and columns. Previously
   each container type used a different random generator, so `X` and `y`
