@@ -10,10 +10,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing Development: New Features: Changes: Bugfixes: Deprecations: 0.12.0: New Features: SkrubLearner.with_sklearn_interface() allows wrapping a SkrubLearner (or skrub ParamSearch or OptunaParamSe..." />
+<meta property="og:description" content="Ongoing Development: New Features: Changes: Bugfixes: DataOp.skb.subsample() with how=&quot;random&quot; now selects the same rows for numpy arrays and for pandas and polars dataframes and columns...." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing Development: New Features: Changes: Bugfixes: Deprecations: 0.12.0: New Features: SkrubLearner.with_sklearn_interface() allows wrapping a SkrubLearner (or skrub ParamSearch or OptunaParamSe..." />
+<meta name="description" content="Ongoing Development: New Features: Changes: Bugfixes: DataOp.skb.subsample() with how=&quot;random&quot; now selects the same rows for numpy arrays and for pandas and polars dataframes and columns...." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -600,6 +600,15 @@
 </section>
 <section id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.DataOp.skb.subsample.html#skrub.DataOp.skb.subsample" title="skrub.DataOp.skb.subsample"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.subsample()</span></code></a> with <code class="docutils literal notranslate"><span class="pre">how=&quot;random&quot;</span></code> now selects the same rows
+for numpy arrays and for pandas and polars dataframes and columns. Previously
+each container type used a different random generator, so <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>
+subsampled separately were misaligned when, for example, <code class="docutils literal notranslate"><span class="pre">X</span></code> was a
+dataframe and <code class="docutils literal notranslate"><span class="pre">y</span></code> a numpy array. Random subsamples of pandas and polars
+objects now contain different rows than before.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2470">#2470</a> by <a class="reference external" href="https://github.com/tomaionescu">Toma Stefan Ionescu</a>.</p></li>
+</ul>
 </section>
 <section id="deprecations">
 <h3>Deprecations<a class="headerlink" href="#deprecations" title="Link to this heading">#</a></h3>
@@ -684,6 +693,9 @@ time at <code class="docutils literal notranslate"><span class="pre">00:00:00</s
 <section id="id5">
 <h3>Bugfixes<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> no longer fails on pandas dataframes that contain a
+<code class="docutils literal notranslate"><span class="pre">float16</span></code> column.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2452">#2452</a> by <a class="reference external" href="https://github.com/Jeremy891102">Jeremy891102</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.SessionEncoder.html#skrub.SessionEncoder" title="skrub.SessionEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionEncoder</span></code></a> now preserves the index of pandas dataframes.
 Previously the output had a new <code class="docutils literal notranslate"><span class="pre">RangeIndex</span></code>.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2448">#2448</a> by <a class="reference external" href="https://github.com/LolPanda2004">LolPanda2004</a>.</p></li>

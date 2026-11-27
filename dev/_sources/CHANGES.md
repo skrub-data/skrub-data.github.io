@@ -10,6 +10,14 @@
 
 ### Bugfixes
 
+- [`DataOp.skb.subsample()`](reference/generated/skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample) with `how="random"` now selects the same rows
+  for numpy arrays and for pandas and polars dataframes and columns. Previously
+  each container type used a different random generator, so `X` and `y`
+  subsampled separately were misaligned when, for example, `X` was a
+  dataframe and `y` a numpy array. Random subsamples of pandas and polars
+  objects now contain different rows than before.
+  [#2470](https://github.com/skrub-data/skrub/pull/2470) by [Toma Stefan Ionescu](https://github.com/tomaionescu).
+
 ### Deprecations
 
 ## 0.12.0
@@ -86,6 +94,9 @@
 
 ### Bugfixes
 
+- [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) no longer fails on pandas dataframes that contain a
+  `float16` column.
+  [#2452](https://github.com/skrub-data/skrub/pull/2452) by [Jeremy891102](https://github.com/Jeremy891102).
 - [`SessionEncoder`](reference/generated/skrub.SessionEncoderhtml.md#skrub.SessionEncoder) now preserves the index of pandas dataframes.
   Previously the output had a new `RangeIndex`.
   [#2448](https://github.com/skrub-data/skrub/pull/2448) by [LolPanda2004](https://github.com/LolPanda2004).

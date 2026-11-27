@@ -289,8 +289,8 @@ and preprocessing done during model development are exactly the same as those do
 production. This makes deployment straightforward and reduces the risk of errors
 when moving from development to production environments.
 
-**Total running time of the script:** (0 minutes 9.437 seconds)
+**Total running time of the script:** (0 minutes 10.462 seconds)
 
-**Estimated memory usage:**  689 MB
+**Estimated memory usage:**  690 MB
 
 <a id="sphx-glr-download-auto-examples-02-data-ops-1150-use-case-py"></a>
